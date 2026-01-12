@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -18,9 +19,18 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 			{/* Sidebar */}
 			<aside className="w-64 bg-slate-900 border-r border-slate-800">
 				<div className="p-6">
-					<h2 className="text-xl font-bold text-white mb-6">
-						Machine Service
-					</h2>
+					<div className="mb-6">
+						<Image
+							src="/logo.jpeg"
+							alt="Company Logo"
+							width={48}
+							height={48}
+							className="mb-2"
+						/>
+						<h2 className="text-xl font-bold text-white">
+							Machine Service
+						</h2>
+					</div>
 					<nav className="space-y-2">
 						<Link
 							href="/dashboard"
