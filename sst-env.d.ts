@@ -17,6 +17,10 @@ declare module "sst" {
       "type": "sst.aws.Queue"
       "url": string
     }
+    "DocumentProcessingQueueDLQ": {
+      "type": "sst.aws.Queue"
+      "url": string
+    }
     "FoodToolsRouter": {
       "type": "sst.aws.Router"
       "url": string

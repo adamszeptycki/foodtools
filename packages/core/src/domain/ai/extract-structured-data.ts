@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import { zodResponseFormat } from "openai/helpers/zod";
 import { Resource } from "sst";
 import { z } from "zod";
 
@@ -93,34 +94,29 @@ ${text}
 Return the result as a JSON object with a "fixes" array containing the extracted fix object.`;
 
 	try {
-		const response = await openai.chat.completions.create({
+		const response = await openai.chat.completions.parse({
 			model: "gpt-4o-mini",
 			messages: [
 				{
 					role: "system",
 					content:
-						"You extract structured data from service documents. Always respond with valid JSON.",
+						"You extract structured data from service documents.",
 				},
 				{
 					role: "user",
 					content: prompt,
 				},
 			],
-			response_format: { type: "json_object" },
+			response_format: zodResponseFormat(FixesResponseSchema, "fixes_response"),
 			temperature: 0.1, // Low temperature for consistency
 		});
 
-		const content = response.choices[0].message.content;
-		if (!content) {
-			throw new Error("No content in OpenAI response");
+		const parsed = response.choices[0].message.parsed;
+		if (!parsed) {
+			throw new Error("No parsed content in OpenAI response");
 		}
 
-		const parsed = JSON.parse(content);
-
-		// Validate with Zod
-		const validated = FixesResponseSchema.parse(parsed);
-
-		return validated.fixes;
+		return parsed.fixes;
 	} catch (error) {
 		console.error("Error extracting structured data:", error);
 		throw new Error(

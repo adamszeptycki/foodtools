@@ -4,7 +4,23 @@ import { trpc } from "@foodtools/core-web/src/trpc/client";
 import Link from "next/link";
 
 export function DocumentList() {
+	const utils = trpc.useUtils();
 	const { data: documents, isLoading } = trpc.serviceDocuments.list.useQuery();
+
+	const reprocessMutation = trpc.serviceDocuments.reprocess.useMutation({
+		onSuccess: () => {
+			utils.serviceDocuments.list.invalidate();
+		},
+	});
+
+	const handleReprocess = (
+		e: React.MouseEvent,
+		documentId: string,
+	) => {
+		e.preventDefault();
+		e.stopPropagation();
+		reprocessMutation.mutate({ documentId });
+	};
 
 	if (isLoading) {
 		return <div className="text-slate-400">Loading documents...</div>;
@@ -35,7 +51,19 @@ export function DocumentList() {
 							</p>
 						</div>
 
-						<div className="ml-4">
+						<div className="ml-4 flex items-center gap-2">
+							<button
+								onClick={(e) => handleReprocess(e, doc.id)}
+								disabled={reprocessMutation.isPending}
+								className="px-3 py-1 text-xs font-medium rounded-full border
+									border-slate-600 bg-slate-700 text-slate-300
+									hover:bg-slate-600 hover:text-white
+									disabled:opacity-50 disabled:cursor-not-allowed
+									transition-colors"
+								title="Reprocess document"
+							>
+								{reprocessMutation.isPending ? "..." : "Restart"}
+							</button>
 							<StatusBadge status={doc.processingStatus} />
 						</div>
 					</div>

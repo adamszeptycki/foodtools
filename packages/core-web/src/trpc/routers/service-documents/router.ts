@@ -7,6 +7,7 @@ import {
 	deleteDocument,
 	listFixes,
 	semanticSearch,
+	reprocessDocument,
 } from "./functions";
 import {
 	initiateUploadSchema,
@@ -16,6 +17,7 @@ import {
 	deleteDocumentSchema,
 	listFixesSchema,
 	semanticSearchSchema,
+	reprocessDocumentSchema,
 } from "./schema";
 
 export const serviceDocumentsRouter = router({
@@ -81,5 +83,14 @@ export const serviceDocumentsRouter = router({
 		.input(semanticSearchSchema)
 		.mutation(async ({ ctx, input }) => {
 			return semanticSearch(ctx, input);
+		}),
+
+	/**
+	 * Reprocess an existing document without re-uploading
+	 */
+	reprocess: protectedProcedure
+		.input(reprocessDocumentSchema)
+		.mutation(async ({ ctx, input }) => {
+			return reprocessDocument(ctx, input);
 		}),
 });

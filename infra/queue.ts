@@ -1,16 +1,14 @@
-import { documentsBucket } from "./storage";
 import { dbUrl, openAiApiKey } from "./config";
+import { documentsBucket } from "./storage";
 
-// Queue for processing uploaded documents in the background
+export const documentProcessingQueueDlq = new sst.aws.Queue("DocumentProcessingQueueDLQ");
 export const documentProcessingQueue = new sst.aws.Queue("DocumentProcessingQueue", {
+	visibilityTimeout: "5 minutes",
+	dlq: documentProcessingQueueDlq.arn,
+});
+
+documentProcessingQueue.subscribe({
 	handler: "packages/core/src/workers/document-processor.handler",
-	timeout: "10 minutes",
+	timeout: "5 minutes",
 	link: [documentsBucket, dbUrl, openAiApiKey],
-	transform: {
-		handler: {
-			environment: {
-				DOCUMENTS_BUCKET_NAME: documentsBucket.name,
-			},
-		},
-	},
 });

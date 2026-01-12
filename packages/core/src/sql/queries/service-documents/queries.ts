@@ -18,6 +18,18 @@ export async function getDocumentById(id: string) {
 }
 
 /**
+ * Get a service document by S3 key
+ */
+export async function getDocumentByS3Key(s3Key: string) {
+	const db = getDb();
+	const [doc] = await db
+		.select()
+		.from(serviceDocuments)
+		.where(eq(serviceDocuments.s3Key, s3Key));
+	return doc;
+}
+
+/**
  * List all documents for a specific user
  */
 export async function listDocumentsByUser(userId: string) {

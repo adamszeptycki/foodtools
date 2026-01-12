@@ -16,9 +16,17 @@ function getBucketName() {
 
 function getQueueUrl() {
 	try {
-		return Resource.DocumentProcessingQueue.url;
-	} catch {
-		return process.env.QUEUE_URL || "";
+		const url = Resource.DocumentProcessingQueue.url;
+		console.log("Queue URL from Resource:", url);
+		return url;
+	} catch (e) {
+		console.log("Failed to get queue URL from Resource:", e);
+		const fallback = process.env.QUEUE_URL || "";
+		console.log("Using fallback queue URL:", fallback);
+		if (!fallback) {
+			throw new Error("Queue URL not available - DocumentProcessingQueue not linked");
+		}
+		return fallback;
 	}
 }
 import {
@@ -209,4 +217,37 @@ export async function semanticSearch(
 	);
 
 	return results;
+}
+
+/**
+ * Reprocess an existing document without re-uploading
+ * Sends message to SQS queue for background processing
+ */
+export async function reprocessDocument(
+	ctx: ProtectedContext,
+	input: { documentId: string },
+) {
+	const userId = ctx.session.user.id;
+	const doc = await getDocumentById(input.documentId);
+
+	if (!doc || doc.userId !== userId) {
+		throw new TRPCError({
+			code: "NOT_FOUND",
+			message: "Document not found",
+		});
+	}
+
+	// Send message to SQS queue to start processing
+	const queueUrl = getQueueUrl();
+
+	await sqs.send(
+		new SendMessageCommand({
+			QueueUrl: queueUrl,
+			MessageBody: JSON.stringify({
+				documentId: doc.id,
+			}),
+		}),
+	);
+
+	return { success: true };
 }

@@ -49,3 +49,15 @@ export async function deleteDocument(id: string) {
 		.returning();
 	return deleted;
 }
+
+/**
+ * Delete all fixes for a specific document (used before reprocessing)
+ */
+export async function deleteFixesByDocumentId(documentId: string) {
+	const db = getDb();
+	const { machineFixes } = await import("@foodtools/core/src/sql/schema");
+	return db
+		.delete(machineFixes)
+		.where(eq(machineFixes.documentId, documentId))
+		.returning();
+}

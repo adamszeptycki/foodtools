@@ -15,6 +15,9 @@ class Resource:
     class DocumentProcessingQueue:
         type: str
         url: str
+    class DocumentProcessingQueueDLQ:
+        type: str
+        url: str
     class FoodToolsRouter:
         type: str
         url: str

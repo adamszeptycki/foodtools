@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState } from "react";
 import { trpc } from "@foodtools/core-web/src/trpc/client";
 
 export function DocumentUpload() {
@@ -9,7 +9,6 @@ export function DocumentUpload() {
 	const [error, setError] = useState<string | null>(null);
 
 	const initiateUploadMutation = trpc.serviceDocuments.initiateUpload.useMutation();
-	const confirmUploadMutation = trpc.serviceDocuments.confirmUpload.useMutation();
 	const utils = trpc.useUtils();
 
 	const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,6 +43,7 @@ export function DocumentUpload() {
 				});
 
 			// Step 2: Upload file to S3 using presigned URL
+			// Processing is triggered automatically via S3 event notification
 			const uploadResponse = await fetch(uploadUrl, {
 				method: "PUT",
 				body: file,
@@ -55,9 +55,6 @@ export function DocumentUpload() {
 			if (!uploadResponse.ok) {
 				throw new Error("Failed to upload file to S3");
 			}
-
-			// Step 3: Confirm upload and trigger processing
-			await confirmUploadMutation.mutateAsync({ documentId });
 
 			// Reset form
 			setFile(null);
