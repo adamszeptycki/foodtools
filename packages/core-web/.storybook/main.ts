@@ -20,7 +20,7 @@ const config: StorybookConfig = {
 		if (config.resolve) {
 			config.resolve.alias = {
 				...config.resolve.alias,
-				"@airframe/core-web/src": path.resolve(__dirname, "../src"),
+				"@foodtools/core-web/src": path.resolve(__dirname, "../src"),
 			};
 		}
 		return config;

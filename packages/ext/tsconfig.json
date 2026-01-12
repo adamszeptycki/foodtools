@@ -17,9 +17,9 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@starter/core-web/*": ["../core-web/*"],
-      "@starter/web/*": ["../web/src/*"],
-      "@starter/ext/*": ["../ext/src/*"],
+      "@foodtools/core-web/*": ["../core-web/*"],
+      "@foodtools/web/*": ["../web/src/*"],
+      "@foodtools/ext/*": ["../ext/src/*"],
       "@src/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@locales/*": ["src/locales/*"],

@@ -1,6 +1,6 @@
 "use client";
 
-import { trpc } from "@starter/core-web/src/trpc/client";
+import { trpc } from "@foodtools/core-web/src/trpc/client";
 import Link from "next/link";
 
 export function DocumentList() {

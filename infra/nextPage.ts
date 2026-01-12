@@ -3,7 +3,7 @@ import { getDomain, router } from "./router";
 import { documentsBucket } from "./storage";
 import { documentProcessingQueue } from "./queue";
 
-export const nextJsPage = new sst.aws.Nextjs("StarterWeb", {
+export const nextJsPage = new sst.aws.Nextjs("FoodToolsWeb", {
 	link: [betterAuthSecret, dbUrl, resendApiKey, openAiApiKey, documentsBucket, documentProcessingQueue],
 	path: "packages/web",
 	route: $app.stage === "prod" ? { router } : undefined,

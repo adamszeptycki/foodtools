@@ -1,4 +1,4 @@
-import { getSecret } from "@starter/core/src/config/secret";
+import { getSecret } from "@foodtools/core/src/config/secret";
 
 type DatabaseCredentials = {
 	databaseUrl: string;

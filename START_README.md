@@ -44,7 +44,7 @@
 1. **Set up your database:**
 ```bash
 # Run the migration to create tables and enable pgvector
-pnpm --filter @starter/core db:migrate:local
+pnpm --filter @foodtools/core db:migrate:local
 ```
 
 2. **Configure secrets (Easy Way):**

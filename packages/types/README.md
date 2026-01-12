@@ -1,11 +1,11 @@
-# @airframe/types
+# @foodtools/types
 
 Shared schema definitions using Zod for the AirFrame project.
 
 ## Usage
 
 ```typescript
-import { exampleSchema } from '@airframe/types'
+import { exampleSchema } from '@foodtools/types'
 
 // Use the schema for validation
 const data = exampleSchema.parse({

@@ -1,10 +1,10 @@
 import type { SQSHandler } from "aws-lambda";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import { getDb } from "@starter/core/src/sql";
+import { getDb } from "@foodtools/core/src/sql";
 import {
 	serviceDocuments,
 	machineFixes,
-} from "@starter/core/src/sql/schema";
+} from "@foodtools/core/src/sql/schema";
 import { eq } from "drizzle-orm";
 import { extractTextFromPDF } from "../domain/pdf/extract-text";
 import { extractStructuredData } from "../domain/ai/extract-structured-data";
@@ -86,15 +86,17 @@ export const handler: SQSHandler = async (event) => {
 			const fixes = await extractStructuredData(extractedText);
 			console.log(`Extracted ${fixes.length} fix record(s)`);
 
-			// Step 7: Generate embeddings and store each fix
+			// Step 7: Generate embeddings and store each fix (1:1 with document)
 			for (const fix of fixes) {
-				// Create searchable text from fix data
+				// Create searchable text from fix data for embedding
 				const searchableText = `
 Machine: ${fix.machineModel || "Unknown"} (${fix.machineType || "Unknown type"})
+Serial: ${fix.serialNumber || "Unknown"}
 Problem: ${fix.problemDescription}
 Solution: ${fix.solutionApplied}
 Parts: ${fix.partsUsed || "None specified"}
 Client: ${fix.clientName || "Unknown"}
+Technician: ${fix.technicianName || "Unknown"}
         `.trim();
 
 				console.log(`Generating embeddings for fix: ${fix.problemDescription.substring(0, 50)}...`);
@@ -106,13 +108,25 @@ Client: ${fix.clientName || "Unknown"}
 				await db.insert(machineFixes).values({
 					documentId: doc.id,
 					userId: doc.userId,
+					// Client Info
+					clientName: fix.clientName,
+					clientAddress: fix.clientAddress,
+					clientPhone: fix.clientPhone,
+					// Equipment Info
 					machineModel: fix.machineModel,
 					machineType: fix.machineType,
+					serialNumber: fix.serialNumber,
+					// Service Details
 					problemDescription: fix.problemDescription,
 					solutionApplied: fix.solutionApplied,
 					partsUsed: fix.partsUsed,
-					clientName: fix.clientName,
 					serviceDate: fix.serviceDate ? new Date(fix.serviceDate) : null,
+					// Technician Info
+					technicianName: fix.technicianName,
+					technicianId: fix.technicianId,
+					// Labour
+					labourHours: fix.labourHours,
+					// Embedding
 					embedding,
 					embeddingModel: "text-embedding-3-small",
 				});

@@ -1,6 +1,6 @@
-import { getDb } from "@starter/core/src/sql";
-import type { Organization } from "@starter/core/src/sql/schema/auth";
-import { members, organizations, users } from "@starter/core/src/sql/schema/auth";
+import { getDb } from "@foodtools/core/src/sql";
+import type { Organization } from "@foodtools/core/src/sql/schema/auth";
+import { members, organizations, users } from "@foodtools/core/src/sql/schema/auth";
 import { and, eq, ilike, or } from "drizzle-orm";
 
 type GetOrganizationBySlugArgs = {

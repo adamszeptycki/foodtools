@@ -1,5 +1,5 @@
 /**
- * @airframe/types
+ * @foodtools/types
  * 
  * Shared schema definitions using Zod
  */

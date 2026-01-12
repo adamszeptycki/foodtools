@@ -15,15 +15,30 @@ const openai = new OpenAI({
 	apiKey: getOpenAIKey(),
 });
 
-// Schema for a single fix
+// Schema for a single fix with all extracted data
 const FixSchema = z.object({
+	// Client Info
+	clientName: z.string().nullable(),
+	clientAddress: z.string().nullable(),
+	clientPhone: z.string().nullable(),
+
+	// Equipment Info
 	machineModel: z.string().nullable(),
 	machineType: z.string().nullable(),
+	serialNumber: z.string().nullable(),
+
+	// Service Details
 	problemDescription: z.string(),
 	solutionApplied: z.string(),
 	partsUsed: z.string().nullable(),
-	clientName: z.string().nullable(),
 	serviceDate: z.string().nullable(), // ISO date string
+
+	// Technician Info
+	technicianName: z.string().nullable(),
+	technicianId: z.string().nullable(),
+
+	// Labour
+	labourHours: z.number().nullable(),
 });
 
 // Schema for the response containing fixes array
@@ -43,23 +58,39 @@ export async function extractStructuredData(
 ): Promise<ExtractedFix[]> {
 	const prompt = `You are an expert at extracting structured information from machine service documents.
 
-Analyze the following service document and extract ALL machine repair/fix records mentioned.
-For each fix, extract:
+Analyze the following service document and extract the machine repair/fix record.
+Extract the following information:
+
+CLIENT INFORMATION:
+- clientName: Name of the client/customer
+- clientAddress: Full address of the client (street, city, state, zip)
+- clientPhone: Phone number of the client
+
+EQUIPMENT INFORMATION:
 - machineModel: The specific model number or name of the machine
 - machineType: The type/category of machine (e.g., "CNC Mill", "Pump", "Compressor", "Motor")
-- problemDescription: What was wrong with the machine
-- solutionApplied: How the problem was fixed
-- partsUsed: List of parts that were replaced or used (can be comma-separated)
-- clientName: Name of the client/customer
-- serviceDate: Date of service (if mentioned, in ISO format YYYY-MM-DD)
+- serialNumber: The serial number of the equipment
 
-If multiple fixes are described in the document, extract them as separate objects in the fixes array.
+SERVICE DETAILS:
+- problemDescription: What was wrong with the machine (detailed description)
+- solutionApplied: How the problem was fixed (detailed description)
+- partsUsed: List of parts that were replaced or used (can be comma-separated)
+- serviceDate: Date of service (in ISO format YYYY-MM-DD)
+
+TECHNICIAN INFORMATION:
+- technicianName: Name of the technician who performed the service
+- technicianId: Employee ID or badge number of the technician
+
+LABOUR:
+- labourHours: Total hours worked on the repair (as a number)
+
 If information is not available, use null for that field.
+For labourHours, extract the numeric value only (e.g., 2.5 not "2.5 hours").
 
 Document text:
 ${text}
 
-Return the result as a JSON object with a "fixes" array containing all extracted fix objects.`;
+Return the result as a JSON object with a "fixes" array containing the extracted fix object.`;
 
 	try {
 		const response = await openai.chat.completions.create({

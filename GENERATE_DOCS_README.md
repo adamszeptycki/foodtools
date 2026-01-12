@@ -110,7 +110,7 @@ Go to http://localhost:3000/dashboard/search and try queries like:
 ### 4. Verify Extraction
 ```bash
 # Check database for extracted data
-pnpm --filter @starter/core db:studio
+pnpm --filter @foodtools/core db:studio
 ```
 
 Look at the `machineFixes` table to verify:

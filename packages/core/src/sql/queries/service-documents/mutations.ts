@@ -1,8 +1,8 @@
-import { getDb } from "@starter/core/src/sql";
+import { getDb } from "@foodtools/core/src/sql";
 import {
 	serviceDocuments,
 	type InsertServiceDocument,
-} from "@starter/core/src/sql/schema";
+} from "@foodtools/core/src/sql/schema";
 import { eq } from "drizzle-orm";
 
 /**
