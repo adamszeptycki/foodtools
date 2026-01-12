@@ -4,6 +4,14 @@ export function getDomain({
 }: { protocol?: string; skipLocalhost?: boolean }): string {
 	let result: string;
 	switch ($app.stage) {
+		case "adam":
+		case "justme":
+			if(skipLocalhost) {
+				result = "lucidiant.click";
+			} else {
+				result = "https://localhost:3000"
+			}
+			break
 		case "prod":
 			result = "starter-template.com";
 			break;

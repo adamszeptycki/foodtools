@@ -11,6 +11,8 @@ export default $config({
   },
   async run() {
     await import("./infra/config");
+    await import("./infra/storage");
+    await import("./infra/queue");
     await import("./infra/router");
     const { nextJsPage } = await import("./infra/nextPage");
     return {

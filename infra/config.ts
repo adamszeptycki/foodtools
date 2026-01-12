@@ -10,3 +10,7 @@ export const resendApiKey = new sst.Secret(
 	"RESEND_API_KEY",
 	"resend-api-placeholder-key",
 );
+export const openAiApiKey = new sst.Secret(
+	"OPENAI_API_KEY",
+	"sk-placeholder-key",
+);
