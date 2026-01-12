@@ -1,4 +1,4 @@
-import { protectedProcedure, router } from "@starter/core-web/src/trpc/trpc";
+import { protectedProcedure, router } from "@foodtools/core-web/src/trpc/trpc";
 import {
 	initiateUpload,
 	confirmUpload,

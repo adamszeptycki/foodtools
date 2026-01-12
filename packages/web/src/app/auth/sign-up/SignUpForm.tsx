@@ -44,7 +44,7 @@ export default function SignUpForm({ defaultEmail, invitationId }: SignUpFormPro
 						<input
 							type="text"
 							required
-							className="mt-1 w-full rounded border px-3 py-2 text-sm text-black"
+							className="mt-1 w-full rounded border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white placeholder:text-slate-400"
 							value={name}
 							onChange={(e) => setName(e.target.value)}
 						/>
@@ -54,7 +54,7 @@ export default function SignUpForm({ defaultEmail, invitationId }: SignUpFormPro
 						<input
 							type="email"
 							required
-							className="mt-1 w-full rounded border px-3 py-2 text-sm text-black"
+							className="mt-1 w-full rounded border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white placeholder:text-slate-400"
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 						/>
@@ -64,7 +64,7 @@ export default function SignUpForm({ defaultEmail, invitationId }: SignUpFormPro
 						<input
 							type="password"
 							required
-							className="mt-1 w-full rounded border px-3 py-2 text-sm text-black"
+							className="mt-1 w-full rounded border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white placeholder:text-slate-400"
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>

@@ -166,7 +166,7 @@ class ServiceDocumentPDFGenerator:
 
 	def _draw_parts_section(self, c, data):
 		"""Draw parts used section."""
-		y_start = self.page_height - self.margin - 7.5 * inch
+		y_start = self.page_height - self.margin - 6.3 * inch
 
 		c.setFont("Helvetica-Bold", 11)
 		c.drawString(self.margin, y_start, "PARTS USED")

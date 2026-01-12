@@ -1,6 +1,6 @@
 {
-  "name": "starter",
-  "productName": "Starter",
+  "name": "foodtools",
+  "productName": "FoodTools",
   "version": "0.0.0",
   "workspaces": [
     "packages/*"
@@ -9,7 +9,15 @@
     "dev": "pnpm dev:adam",
     "dev:adam": "dotenvx run -f .env.dev -- sst dev --stage adam",
     "typecheck": "pnpm -r run typecheck",
-    "test": "pnpm -r run test"
+    "test": "pnpm -r run test",
+    "db:migrate:prod": "pnpm --filter @foodtools/core db:migrate:prod",
+    "db:migrate:local": "pnpm --filter @foodtools/core db:migrate:local",
+    "db:nuke:up": "pnpm --filter @foodtools/core db:nuke:up",
+    "db:generate:migrations": "pnpm --filter @foodtools/core db:generate:migrations",
+    "db:nuke:up:migrate": "pnpm --filter @foodtools/core db:nuke:up:migrate",
+    "db:nuke:up:migrate:local": "pnpm --filter @foodtools/core db:nuke:up:migrate",
+    "db:nuke": "pnpm --filter @foodtools/core db:nuke",
+    "db:up": "pnpm --filter @foodtools/core db:up"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.1",

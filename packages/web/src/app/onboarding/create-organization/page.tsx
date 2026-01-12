@@ -1,4 +1,5 @@
 "use client";
+import { trpc } from "@foodtools/core-web/src/trpc/client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -6,27 +7,21 @@ export default function CreateTenantPage() {
 	const router = useRouter();
 	const [name, setName] = useState("");
 	const [slug, setSlug] = useState("");
-	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<string | null>(null);
+
+	const createOrg = trpc.organization.create.useMutation({
+		onSuccess: () => {
+			router.push("/dashboard");
+		},
+		onError: (err) => {
+			setError(err.message);
+		},
+	});
 
 	async function handleSubmit(e: React.FormEvent) {
 		e.preventDefault();
-		setLoading(true);
 		setError(null);
-		try {
-			const res = await fetch("/api/trpc/organization.create", {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ name, domain: slug }),
-				credentials: "include",
-			});
-			if (!res.ok) throw new Error("Organization creation failed");
-			router.push("/dashboard");
-		} catch (err) {
-			setError((err as Error).message);
-		} finally {
-			setLoading(false);
-		}
+		createOrg.mutate({ name, domain: slug });
 	}
 
 	return (
@@ -39,7 +34,7 @@ export default function CreateTenantPage() {
 						<input
 							type="text"
 							required
-							className="mt-1 w-full rounded border px-3 py-2 text-sm text-black"
+							className="mt-1 w-full rounded border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white placeholder:text-slate-400"
 							value={name}
 							onChange={(e) => setName(e.target.value)}
 						/>
@@ -49,7 +44,7 @@ export default function CreateTenantPage() {
 						<input
 							type="text"
 							required
-							className="mt-1 w-full rounded border px-3 py-2 text-sm text-black"
+							className="mt-1 w-full rounded border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-white placeholder:text-slate-400"
 							value={slug}
 							onChange={(e) => setSlug(e.target.value)}
 						/>
@@ -57,9 +52,9 @@ export default function CreateTenantPage() {
 					<button
 						type="submit"
 						className="w-full rounded bg-blue-600 px-4 py-2 text-white disabled:opacity-60"
-						disabled={loading}
+						disabled={createOrg.isPending}
 					>
-						{loading ? "Creating..." : "Create"}
+						{createOrg.isPending ? "Creating..." : "Create"}
 					</button>
 					{error ? <p className="text-sm text-red-500">{error}</p> : null}
 				</form>

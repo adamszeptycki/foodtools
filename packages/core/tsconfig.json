@@ -5,8 +5,8 @@
     "moduleResolution": "Bundler",
     "baseUrl": "./",
     "paths": {
-			"@starter/core/*": ["../core/*"],
-      "@starter/types/*": ["../types/*"]
+			"@foodtools/core/*": ["../core/*"],
+      "@foodtools/types/*": ["../types/*"]
 		},
     "types": ["vitest/globals"]
   },

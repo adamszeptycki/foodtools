@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { trpc } from "@starter/core-web/src/trpc/client";
+import { trpc } from "@foodtools/core-web/src/trpc/client";
 
 export function DocumentUpload() {
 	const [file, setFile] = useState<File | null>(null);

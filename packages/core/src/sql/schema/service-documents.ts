@@ -1,8 +1,9 @@
-import { defaultFields } from "@starter/core/src/sql/utils";
+import { defaultFields } from "@foodtools/core/src/sql/utils";
 import {
 	integer,
 	pgEnum,
 	pgTable,
+	real,
 	text,
 	timestamp,
 	uuid,
@@ -85,14 +86,28 @@ export const machineFixes = pgTable("machine_fixes", {
 		.notNull()
 		.references(() => users.id, { onDelete: "cascade" }),
 
-	// Structured extracted data
+	// Client Info
+	clientName: text("client_name"),
+	clientAddress: text("client_address"),
+	clientPhone: text("client_phone"),
+
+	// Equipment Info
 	machineModel: text("machine_model"),
 	machineType: text("machine_type"),
+	serialNumber: text("serial_number"),
+
+	// Service Details
 	problemDescription: text("problem_description").notNull(),
 	solutionApplied: text("solution_applied").notNull(),
 	partsUsed: text("parts_used"),
-	clientName: text("client_name"),
 	serviceDate: timestamp("service_date"),
+
+	// Technician Info
+	technicianName: text("technician_name"),
+	technicianId: text("technician_id"),
+
+	// Labour
+	labourHours: real("labour_hours"),
 
 	// Embedding and search
 	embedding: vector("embedding", { dimensions: 1536 }),
