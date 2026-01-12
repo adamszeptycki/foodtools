@@ -2,7 +2,7 @@ import {
 	protectedProcedure,
 	protectedProcedureWithOptionalOrganization,
 	router,
-} from "@starter/core-web/src/trpc/trpc";
+} from "@foodtools/core-web/src/trpc/trpc";
 import { getCurrentUser, markUserAuthenticatedFromElectron } from "./functions";
 
 export const userRouter = router({

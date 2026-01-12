@@ -1,14 +1,24 @@
+
+const baseUrl = "foodtools.jetbridge.click"
 export function getDomain({
 	protocol,
 	skipLocalhost,
 }: { protocol?: string; skipLocalhost?: boolean }): string {
 	let result: string;
 	switch ($app.stage) {
+		case "adam":
+		case "justme":
+			if(skipLocalhost) {
+				result = baseUrl;
+			} else {
+				result = "https://localhost:3000"
+			}
+			break
 		case "prod":
-			result = "starter-template.com";
+			result = baseUrl;
 			break;
 		default:
-			result = skipLocalhost ? "starter-template.local" : "https://localhost:3000";
+			result = skipLocalhost ? baseUrl : "https://localhost:3000";
 	}
 	if (protocol && !result.startsWith("http")) {
 		result = `${protocol}://${result}`;
@@ -18,7 +28,7 @@ export function getDomain({
 
 const domain = getDomain({ skipLocalhost: true });
 
-export const router = new sst.aws.Router("StarterRouter", {
+export const router = new sst.aws.Router("FoodToolsRouter", {
 	domain: {
 		name: domain,
 		aliases: [`*.${domain}`],

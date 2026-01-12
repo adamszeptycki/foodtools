@@ -1,5 +1,5 @@
 {
-	"name": "@starter/core-web",
+	"name": "@foodtools/core-web",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -13,6 +13,9 @@
 		"build-storybook": "storybook build"
 	},
 	"dependencies": {
+		"@aws-sdk/client-s3": "^3.966.0",
+		"@aws-sdk/client-sqs": "^3.966.0",
+		"@aws-sdk/s3-request-presigner": "^3.966.0",
 		"@tanstack/react-query": "^5.81.5",
 		"@trpc/client": "^11.4.3",
 		"@trpc/react-query": "^11.4.3",

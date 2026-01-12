@@ -12,6 +12,11 @@
   body {
     @apply text-primary;
   }
+  input,
+  textarea,
+  select {
+    @apply text-white;
+  }
 }
 
 @theme {

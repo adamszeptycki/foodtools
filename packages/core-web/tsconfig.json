@@ -18,11 +18,11 @@
 		],
 		"paths": {
 			"@/*": ["./src/*"],
-			"@starter/core-web/*": ["../core-web/*"],
-			"@starter/core/*": ["../core/*"],
-			"@starter/functions/*": ["../functions/*"],
-			"@starter/web/*": ["./*"],
-			"@starter/types/*": ["../types/*"]
+			"@foodtools/core-web/*": ["../core-web/*"],
+			"@foodtools/core/*": ["../core/*"],
+			"@foodtools/functions/*": ["../functions/*"],
+			"@foodtools/web/*": ["./*"],
+			"@foodtools/types/*": ["../types/*"]
 		},
 		"target": "esnext",
 		"baseUrl": "./"

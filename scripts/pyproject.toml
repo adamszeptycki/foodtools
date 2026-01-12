@@ -1,0 +1,12 @@
+[project]
+name = "foodtools-pdf-generator"
+version = "0.1.0"
+description = "Generate realistic service documents for FoodTools machines"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "reportlab>=4.0.0",
+    "faker>=22.0.0",
+    "pillow>=10.0.0",
+    "click>=8.1.0",
+]

@@ -1,0 +1,161 @@
+import type { SQSHandler } from "aws-lambda";
+import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { getDb } from "@foodtools/core/src/sql";
+import {
+	serviceDocuments,
+	machineFixes,
+} from "@foodtools/core/src/sql/schema";
+import { eq } from "drizzle-orm";
+import { extractTextFromPDF } from "../domain/pdf/extract-text";
+import { extractStructuredData } from "../domain/ai/extract-structured-data";
+import { generateEmbeddings } from "../domain/ai/generate-embeddings";
+
+const s3 = new S3Client({});
+
+/**
+ * Convert a Readable stream to a Buffer
+ */
+async function streamToBuffer(stream: any): Promise<Buffer> {
+	const chunks: Uint8Array[] = [];
+	for await (const chunk of stream) {
+		chunks.push(chunk);
+	}
+	return Buffer.concat(chunks);
+}
+
+/**
+ * SQS handler for processing uploaded service documents
+ * Triggered when a document is uploaded and ready for processing
+ */
+export const handler: SQSHandler = async (event) => {
+	const db = getDb();
+
+	for (const record of event.Records) {
+		const { documentId } = JSON.parse(record.body);
+
+		try {
+			console.log(`Processing document ${documentId}`);
+
+			// Step 1: Mark document as processing
+			await db
+				.update(serviceDocuments)
+				.set({ processingStatus: "processing" })
+				.where(eq(serviceDocuments.id, documentId));
+
+			// Step 2: Get document record from database
+			const [doc] = await db
+				.select()
+				.from(serviceDocuments)
+				.where(eq(serviceDocuments.id, documentId));
+
+			if (!doc) {
+				throw new Error(`Document ${documentId} not found in database`);
+			}
+
+			console.log(`Found document: ${doc.fileName} (S3: ${doc.s3Key})`);
+
+			// Step 3: Download PDF from S3
+			const s3Response = await s3.send(
+				new GetObjectCommand({
+					Bucket: doc.s3Bucket,
+					Key: doc.s3Key,
+				}),
+			);
+
+			if (!s3Response.Body) {
+				throw new Error("No body in S3 response");
+			}
+
+			const pdfBuffer = await streamToBuffer(s3Response.Body);
+			console.log(`Downloaded PDF (${pdfBuffer.length} bytes)`);
+
+			// Step 4: Extract text from PDF
+			const extractedText = await extractTextFromPDF(pdfBuffer);
+			console.log(`Extracted ${extractedText.length} characters of text`);
+
+			// Step 5: Update document with extracted text
+			await db
+				.update(serviceDocuments)
+				.set({
+					extractedText,
+					textLength: extractedText.length,
+				})
+				.where(eq(serviceDocuments.id, documentId));
+
+			// Step 6: Extract structured data using OpenAI
+			const fixes = await extractStructuredData(extractedText);
+			console.log(`Extracted ${fixes.length} fix record(s)`);
+
+			// Step 7: Generate embeddings and store each fix (1:1 with document)
+			for (const fix of fixes) {
+				// Create searchable text from fix data for embedding
+				const searchableText = `
+Machine: ${fix.machineModel || "Unknown"} (${fix.machineType || "Unknown type"})
+Serial: ${fix.serialNumber || "Unknown"}
+Problem: ${fix.problemDescription}
+Solution: ${fix.solutionApplied}
+Parts: ${fix.partsUsed || "None specified"}
+Client: ${fix.clientName || "Unknown"}
+Technician: ${fix.technicianName || "Unknown"}
+        `.trim();
+
+				console.log(`Generating embeddings for fix: ${fix.problemDescription.substring(0, 50)}...`);
+
+				// Generate embedding
+				const embedding = await generateEmbeddings(searchableText);
+
+				// Store fix with embedding in database
+				await db.insert(machineFixes).values({
+					documentId: doc.id,
+					userId: doc.userId,
+					// Client Info
+					clientName: fix.clientName,
+					clientAddress: fix.clientAddress,
+					clientPhone: fix.clientPhone,
+					// Equipment Info
+					machineModel: fix.machineModel,
+					machineType: fix.machineType,
+					serialNumber: fix.serialNumber,
+					// Service Details
+					problemDescription: fix.problemDescription,
+					solutionApplied: fix.solutionApplied,
+					partsUsed: fix.partsUsed,
+					serviceDate: fix.serviceDate ? new Date(fix.serviceDate) : null,
+					// Technician Info
+					technicianName: fix.technicianName,
+					technicianId: fix.technicianId,
+					// Labour
+					labourHours: fix.labourHours,
+					// Embedding
+					embedding,
+					embeddingModel: "text-embedding-3-small",
+				});
+
+				console.log(`Stored fix in database with embedding`);
+			}
+
+			// Step 8: Mark document as completed
+			await db
+				.update(serviceDocuments)
+				.set({
+					processingStatus: "completed",
+					processedAt: new Date(),
+				})
+				.where(eq(serviceDocuments.id, documentId));
+
+			console.log(`Successfully processed document ${documentId}`);
+		} catch (error) {
+			console.error(`Error processing document ${documentId}:`, error);
+
+			// Mark document as failed with error message
+			await db
+				.update(serviceDocuments)
+				.set({
+					processingStatus: "failed",
+					processingError:
+						error instanceof Error ? error.message : "Unknown error",
+				})
+				.where(eq(serviceDocuments.id, documentId));
+		}
+	}
+};

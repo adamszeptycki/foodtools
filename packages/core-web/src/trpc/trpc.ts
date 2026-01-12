@@ -1,4 +1,4 @@
-import { auth } from "@starter/core-web/src/auth/auth";
+import { auth } from "@foodtools/core-web/src/auth/auth";
 import { initTRPC, TRPCError } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";

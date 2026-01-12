@@ -1,5 +1,5 @@
 {
-  "name": "@starter/types",
+  "name": "@foodtools/types",
   "type": "module",
   "version": "0.0.0",
   "main": "./src/index.ts",

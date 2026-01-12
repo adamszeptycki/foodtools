@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+  ),
   title: "Last 10 - Answer Any Question About Your Company Data",
   description: "Transform your business data into actionable insights with Last 10. Ask questions in natural language and get instant, accurate answers powered by advanced AI.",
   keywords: "AI, business intelligence, data analytics, natural language processing, company data, insights",
