@@ -41,3 +41,7 @@ export const confirmUploadSchema = z.object({
 export const reprocessDocumentSchema = z.object({
 	documentId: z.string().uuid(),
 });
+
+export const getDocumentUrlSchema = z.object({
+	documentId: z.string().uuid(),
+});

@@ -8,6 +8,7 @@ import {
 	listFixes,
 	semanticSearch,
 	reprocessDocument,
+	getDocumentUrl,
 } from "./functions";
 import {
 	initiateUploadSchema,
@@ -18,6 +19,7 @@ import {
 	listFixesSchema,
 	semanticSearchSchema,
 	reprocessDocumentSchema,
+	getDocumentUrlSchema,
 } from "./schema";
 
 export const serviceDocumentsRouter = router({
@@ -92,5 +94,14 @@ export const serviceDocumentsRouter = router({
 		.input(reprocessDocumentSchema)
 		.mutation(async ({ ctx, input }) => {
 			return reprocessDocument(ctx, input);
+		}),
+
+	/**
+	 * Get presigned URL for viewing/downloading a document PDF
+	 */
+	getDocumentUrl: protectedProcedure
+		.input(getDocumentUrlSchema)
+		.query(async ({ ctx, input }) => {
+			return getDocumentUrl(ctx, input);
 		}),
 });
