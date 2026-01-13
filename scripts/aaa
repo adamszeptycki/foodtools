@@ -1,65 +1,82 @@
-"""Constants for service document generation - machine types, problems, solutions, and parts."""
 
-# Machine models by category (kept separate for flexibility)
-MACHINE_CATEGORIES = {
-	"Ovens": {
-		"models": [
-			"ConvectionPro 5000",
-			"RapidBake 3000",
-			"TurboHeat X-200",
-			"CombiSteam Elite",
-			"DeckMaster 480",
-		],
-	},
-	"Fryers": {
-		"models": [
-			"DeepFry Pro 450",
-			"TurboCrisp 2000",
-			"OilGuard Elite",
-			"FryMaster XL-4000",
-			"CrispKing 300",
-		],
-	},
-	"Mixers": {
-		"models": [
-			"PlanetaryMix 60",
-			"DoughMaster 80Q",
-			"SpiralPro 120",
-			"VersaMix 40",
-			"HeavyDuty 100",
-		],
-	},
-	"Refrigeration": {
-		"models": [
-			"ChillMaster 2000",
-			"WalkIn Pro Series",
-			"ReachIn Elite 3-Door",
-			"UndercounterCool 48",
-			"DisplayCase Premium",
-		],
-	},
-	"Dishwashers": {
-		"models": [
-			"SaniSpray 3000",
-			"RackMaster Conveyor",
-			"UndercounterClean Pro",
-			"DoorType HT-60",
-			"FlightType Industrial",
-		],
-	},
-	"Griddles": {
-		"models": [
-			"FlatTop Pro 48",
-			"ElectricGrill 36",
-			"GasGriddle HeavyDuty",
-			"ChromeTop Elite",
-			"ThermoStatic 60",
-		],
-	},
-}
+Generating issues for Ovens...
+  Generating batch of 15 issues...
+  Got 15 valid issues (15 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (30 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (45 total)
+  Generating batch of 5 issues...
+  Got 5 valid issues (50 total)
+  Final: 50 unique issues for Ovens
+  Saved to generated_data/ovens.json
 
-# Linked service issues: each problem has a consistent solution and valid parts
-# Generated using generate_service_data.py - replace this with AI-generated data
+Generating issues for Fryers...
+  Generating batch of 15 issues...
+  Got 15 valid issues (15 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (30 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (45 total)
+  Generating batch of 5 issues...
+  Got 5 valid issues (50 total)
+  Final: 50 unique issues for Fryers
+  Saved to generated_data/fryers.json
+
+Generating issues for Mixers...
+  Generating batch of 15 issues...
+  Got 15 valid issues (15 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (30 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (45 total)
+  Generating batch of 5 issues...
+  Got 5 valid issues (50 total)
+  Final: 50 unique issues for Mixers
+  Saved to generated_data/mixers.json
+
+Generating issues for Refrigeration...
+  Generating batch of 15 issues...
+  Got 15 valid issues (15 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (30 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (45 total)
+  Generating batch of 5 issues...
+  Got 5 valid issues (50 total)
+  Final: 50 unique issues for Refrigeration
+  Saved to generated_data/refrigeration.json
+
+Generating issues for Dishwashers...
+  Generating batch of 15 issues...
+  Got 15 valid issues (15 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (30 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (45 total)
+  Generating batch of 5 issues...
+  Got 5 valid issues (50 total)
+  Final: 50 unique issues for Dishwashers
+  Saved to generated_data/dishwashers.json
+
+Generating issues for Griddles...
+  Generating batch of 15 issues...
+  Got 15 valid issues (15 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (30 total)
+  Generating batch of 15 issues...
+  Got 15 valid issues (45 total)
+  Generating batch of 5 issues...
+  Got 5 valid issues (50 total)
+  Final: 50 unique issues for Griddles
+  Saved to generated_data/griddles.json
+
+Saved combined data to generated_data/all_issues.json
+
+============================================================
+Python code to add to constants.py:
+============================================================
+
 SERVICE_ISSUES = {
 	"Ovens": [
 		{
@@ -1574,23 +1591,3 @@ SERVICE_ISSUES = {
 		},
 	],
 }
-
-TECHNICIANS = [
-	{"name": "Mike Johnson", "id": "TECH-001", "cert": "EPA Universal Certified"},
-	{"name": "Sarah Williams", "id": "TECH-015", "cert": "CFESA Certified Master"},
-	{"name": "Carlos Rodriguez", "id": "TECH-008", "cert": "Master Technician Level 3"},
-	{"name": "Jennifer Kim", "id": "TECH-023", "cert": "CFESA Level II Certified"},
-	{"name": "David Chen", "id": "TECH-012", "cert": "EPA Type I/II Certified"},
-	{"name": "Amanda Foster", "id": "TECH-019", "cert": "Factory Certified Specialist"},
-	{"name": "Robert Taylor", "id": "TECH-005", "cert": "Senior Field Technician"},
-	{"name": "Lisa Martinez", "id": "TECH-031", "cert": "CFESA Certified Specialist"},
-]
-
-COMPANIES = [
-	"Restaurant Equipment Services LLC",
-	"Commercial Kitchen Solutions Inc",
-	"FoodService Tech Pros",
-	"National Restaurant Repair",
-	"Metro Kitchen Equipment Service",
-	"Professional Food Equipment Co",
-]

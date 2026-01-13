@@ -1,0 +1,452 @@
+[
+  {
+    "problem": "Gas fryer fails to ignite and displays error code E3, with pilot light not lighting despite gas flow being present.",
+    "solution": "Replaced faulty thermocouple that was not generating sufficient millivoltage to keep gas valve open, and cleaned pilot orifice of carbon buildup.",
+    "parts": [
+      "Thermocouple Type K 24-inch 750\u00b0F rated",
+      "Pilot orifice #56 drill size",
+      "Gas valve solenoid coil 24V"
+    ]
+  },
+  {
+    "problem": "Electric fryer heating elements cycle on and off rapidly, causing oil temperature to fluctuate between 280\u00b0F and 380\u00b0F instead of maintaining set temperature.",
+    "solution": "Replaced malfunctioning solid-state temperature controller that had internal relay failure, and calibrated new controller to proper temperature differential.",
+    "parts": [
+      "Digital temperature controller 240V with K-type input",
+      "Temperature probe RTD 1/8-inch NPT",
+      "Contactor 40-amp 240V 3-pole"
+    ]
+  },
+  {
+    "problem": "Fryer high-limit safety switch keeps tripping at 375\u00b0F, shutting down unit even though thermostat is set to 350\u00b0F.",
+    "solution": "Replaced defective high-limit switch with incorrect temperature rating and relocated temperature bulb away from direct heating element contact.",
+    "parts": [
+      "High-limit safety switch 400\u00b0F manual reset",
+      "Capillary tube 6-feet stainless steel",
+      "Temperature bulb 1/4-inch diameter"
+    ]
+  },
+  {
+    "problem": "Oil filtration system pump runs continuously but no oil circulates through filter, with pump making grinding noise.",
+    "solution": "Replaced seized pump motor and damaged impeller assembly, then primed system and adjusted flow control valve.",
+    "parts": [
+      "Pump motor 1/3 HP 115V single-phase",
+      "Impeller assembly 3-inch diameter bronze",
+      "Mechanical seal kit for pump housing"
+    ]
+  },
+  {
+    "problem": "Basket lift mechanism moves up slowly and stops halfway, requiring manual assistance to reach full height.",
+    "solution": "Rebuilt pneumatic cylinder with new seals and adjusted air pressure regulator to proper 80 PSI operating pressure.",
+    "parts": [
+      "Pneumatic cylinder rebuild kit with O-rings",
+      "Air pressure regulator 0-120 PSI",
+      "Solenoid valve 120V 1/4-inch NPT"
+    ]
+  },
+  {
+    "problem": "Gas fryer loses flame during cooking cycles and safety system shuts off gas flow, occurring randomly throughout the day.",
+    "solution": "Replaced corroded flame sensor rod that was giving intermittent signal and cleaned burner ports to ensure proper flame pattern.",
+    "parts": [
+      "Flame sensor rod 8-inch stainless steel",
+      "Gas valve safety module 24V",
+      "Burner orifice set natural gas BTU rated"
+    ]
+  },
+  {
+    "problem": "Control panel timer display is blank and touch buttons are unresponsive, though fryer heating elements still function manually.",
+    "solution": "Replaced failed control board with blown capacitors and updated firmware to latest version for improved reliability.",
+    "parts": [
+      "Control board assembly with LCD display",
+      "Membrane switch overlay keypad",
+      "Power supply board 12V/5V output"
+    ]
+  },
+  {
+    "problem": "Oil drains extremely slowly from fryer tank taking over 30 minutes to empty, with visible debris backing up in drain line.",
+    "solution": "Replaced clogged drain valve with full-port ball valve and cleared grease blockage from drain piping with mechanical snake.",
+    "parts": [
+      "Ball valve 2-inch full-port stainless steel",
+      "Drain coupling 2-inch NPT threaded",
+      "Flexible drain hose 2-inch ID food-grade"
+    ]
+  },
+  {
+    "problem": "Electric fryer heating elements glow red-hot continuously and oil temperature exceeds 450\u00b0F despite thermostat setting of 325\u00b0F.",
+    "solution": "Replaced welded-closed contactor contacts that could not open circuit and installed new temperature sensor with proper calibration.",
+    "parts": [
+      "Contactor 50-amp 240V NEMA rated",
+      "Temperature sensor RTD Pt100 6-inch probe",
+      "Control relay 24V coil DPDT contacts"
+    ]
+  },
+  {
+    "problem": "Fryer oil level sensor gives false readings showing empty tank when oil level is adequate, triggering unnecessary low-oil alarms.",
+    "solution": "Cleaned oil buildup from capacitive level sensor probe and replaced sensor electronics module with recalibrated unit.",
+    "parts": [
+      "Capacitive oil level sensor 12-inch probe",
+      "Sensor electronics module 24V DC",
+      "Mounting bracket stainless steel adjustable"
+    ]
+  },
+  {
+    "problem": "Gas fryer burner flames are yellow and sooty instead of blue, with black residue accumulating on fryer tank bottom.",
+    "solution": "Adjusted primary air shutter for proper air-gas mixture and replaced worn burner venturi tube that was restricting airflow.",
+    "parts": [
+      "Burner venturi tube assembly",
+      "Primary air shutter adjustment plate",
+      "Gas orifice spud natural gas #43 drill"
+    ]
+  },
+  {
+    "problem": "Fryer tank develops pinhole leak near heating element mounting area, causing oil to drip onto floor during operation.",
+    "solution": "Welded and reinforced tank wall with food-grade stainless steel patch, then pressure tested system before returning to service.",
+    "parts": [
+      "Stainless steel patch plate 6x6 inch 16-gauge",
+      "Food-grade welding rod 308L stainless",
+      "Tank drain gasket high-temperature rated"
+    ]
+  },
+  {
+    "problem": "Filter pump cycles on randomly every few minutes even when filtration is not requested, causing oil level fluctuations.",
+    "solution": "Replaced faulty filter pump relay that had internal contact welding and reprogrammed control logic to prevent unwanted pump activation.",
+    "parts": [
+      "Control relay 120V coil 30-amp contacts",
+      "Relay socket 11-pin octal base",
+      "Control board EPROM chip programmed"
+    ]
+  },
+  {
+    "problem": "Fryer thermostat reads 50\u00b0F lower than actual oil temperature measured with calibrated thermometer, causing overcooking of products.",
+    "solution": "Replaced temperature probe with correct resistance curve and recalibrated control system using precision temperature calibrator.",
+    "parts": [
+      "RTD temperature probe Pt1000 8-inch stem",
+      "Thermostat controller analog 0-500\u00b0F range",
+      "Calibration resistor set precision 0.1%"
+    ]
+  },
+  {
+    "problem": "Gas safety valve clicks repeatedly but will not open to allow gas flow to main burner, despite successful pilot light operation.",
+    "solution": "Replaced gas safety valve with corroded internal components and adjusted pilot gas pressure to proper millivolt output for valve operation.",
+    "parts": [
+      "Gas safety valve 3/4-inch NPT 24V",
+      "Pressure regulator 11-inch WC natural gas",
+      "Thermopile generator 750mV output rating"
+    ]
+  },
+  {
+    "problem": "Electric fryer displays error code E7 and shuts down after 10 minutes of operation, with contactors chattering and cycling rapidly during heating cycles.",
+    "solution": "Replaced worn contactors and cleaned oxidized electrical connections in control box. Adjusted voltage settings and verified proper amperage draw on all heating circuits.",
+    "parts": [
+      "Contactor 40A 240V 3-pole NEMA rated",
+      "Terminal block connector strips 12AWG",
+      "Control relay 24V SPDT 10A"
+    ]
+  },
+  {
+    "problem": "Gas fryer produces weak flames that cannot maintain oil temperature above 250\u00b0F, with gas pressure reading only 2 inches water column at manifold.",
+    "solution": "Cleaned gas orifices and replaced clogged gas regulator assembly. Adjusted gas pressure to manufacturer specification of 4 inches water column and tested flame characteristics.",
+    "parts": [
+      "Gas pressure regulator 1/2-inch NPT natural gas",
+      "Gas orifice set #54 drill size",
+      "Gas manifold gasket kit"
+    ]
+  },
+  {
+    "problem": "Fryer drain valve leaks oil continuously from handle area and will not close completely, creating safety hazard and oil loss.",
+    "solution": "Disassembled drain valve assembly and replaced worn valve seat and handle packing. Applied high-temperature thread sealant and adjusted valve stem tension.",
+    "parts": [
+      "Drain valve seat stainless steel 1-inch",
+      "Valve stem packing PTFE high-temp",
+      "Ball valve handle assembly 1-inch"
+    ]
+  },
+  {
+    "problem": "Oil filtration system creates excessive foam in fryer vat during filtering cycle, with oil overflowing and filter pump drawing air intermittently.",
+    "solution": "Replaced damaged return line diffuser and cleaned filter pump suction strainer. Adjusted pump flow rate and verified proper oil return positioning to minimize turbulence.",
+    "parts": [
+      "Oil return diffuser perforated stainless",
+      "Filter pump strainer 40-mesh stainless",
+      "Oil pump impeller assembly 1/3 HP"
+    ]
+  },
+  {
+    "problem": "Fryer temperature probe reads erratically jumping between 150\u00b0F and 400\u00b0F randomly, causing inconsistent heating and product quality issues.",
+    "solution": "Diagnosed faulty RTD temperature probe with multimeter testing and replaced entire probe assembly. Calibrated new sensor and verified accurate temperature readings throughout range.",
+    "parts": [
+      "RTD temperature probe 1000-ohm platinum",
+      "Probe well stainless steel 6-inch",
+      "Temperature sensor cable 4-wire shielded"
+    ]
+  },
+  {
+    "problem": "Electric fryer makes loud humming noise from heating elements and draws excessive amperage, tripping 50-amp breaker after 15 minutes of operation.",
+    "solution": "Found heating elements with internal short circuits and replaced complete element assembly. Tested electrical load and verified proper amperage draw within specifications.",
+    "parts": [
+      "Heating element 15kW 240V immersion type",
+      "Element gasket high-temperature silicone",
+      "Element terminal box weatherproof NEMA 4"
+    ]
+  },
+  {
+    "problem": "Basket lift mechanism jerks violently during raise cycle and motor stalls with burning smell, requiring multiple attempts to lift baskets fully.",
+    "solution": "Replaced seized lift motor bearings and cleaned accumulated grease from gear reduction box. Lubricated lift chains and adjusted motor timing controls.",
+    "parts": [
+      "Lift motor 1/2 HP 115V reversible",
+      "Motor bearing set sealed ball type",
+      "Gear reduction oil SAE 90 weight"
+    ]
+  },
+  {
+    "problem": "Fryer control panel displays correct temperature but heating system does not respond to thermostat calls, remaining cold during cooking cycles.",
+    "solution": "Diagnosed failed control relay in temperature controller and replaced solid-state relay module. Cleaned control board connections and updated temperature control parameters.",
+    "parts": [
+      "Solid state relay 25A 240V zero-cross",
+      "Control board fuse 3A slow-blow",
+      "Thermostat control module digital"
+    ]
+  },
+  {
+    "problem": "Gas fryer produces loud popping and rumbling noises during ignition sequence, with delayed ignition causing flame rollout from burner area.",
+    "solution": "Cleaned burner orifices and replaced damaged ignition electrode assembly. Adjusted gas-air mixture and synchronized ignition timing with gas valve opening sequence.",
+    "parts": [
+      "Ignition electrode ceramic insulated",
+      "Spark ignition module 120V intermittent",
+      "Burner orifice spud brass #45"
+    ]
+  },
+  {
+    "problem": "Fryer oil level drops significantly during filtration cycles and takes excessive time to return, with visible air bubbles in return oil stream.",
+    "solution": "Replaced cracked oil return line and tightened loose fittings in filtration plumbing. Cleaned filter tank and adjusted return oil flow rate to eliminate cavitation.",
+    "parts": [
+      "Oil return line 1-inch stainless flex",
+      "Compression fitting set 1-inch NPT",
+      "Filter tank drain valve 3/4-inch ball"
+    ]
+  },
+  {
+    "problem": "Electric fryer heating elements cycle properly but oil temperature never exceeds 275\u00b0F, with elements appearing to have reduced heating capacity.",
+    "solution": "Tested heating elements and found 30% voltage drop due to corroded electrical connections. Replaced contactors and cleaned all electrical connections in junction box.",
+    "parts": [
+      "Electrical contactor 30A 240V 3-pole",
+      "Wire nuts high-temperature ceramic",
+      "Junction box gasket neoprene seal"
+    ]
+  },
+  {
+    "problem": "Gas fryer safety system locks out after pilot proves but main burner fails to light, displaying fault code F4 on control panel.",
+    "solution": "Replaced faulty flame sensor with poor microamp signal and cleaned main burner crossover tubes. Adjusted pilot flame position to improve main burner ignition reliability.",
+    "parts": [
+      "Flame sensor rod stainless steel",
+      "Burner crossover tube stainless",
+      "Ignition control module Honeywell S8610"
+    ]
+  },
+  {
+    "problem": "Fryer timer functions work but cook cycle automatically extends beyond set time, with timer display showing incorrect remaining time during operation.",
+    "solution": "Diagnosed faulty timer relay in control circuit and replaced digital timer module. Recalibrated timing parameters and verified accurate cycle timing across all preset programs.",
+    "parts": [
+      "Digital timer module 24V programmable",
+      "Timer relay DPDT 10A contacts",
+      "Control circuit fuse 5A fast-blow"
+    ]
+  },
+  {
+    "problem": "Oil filtration pump motor overheats and trips thermal overload protection after 5 minutes of operation, with motor housing becoming extremely hot.",
+    "solution": "Found blocked pump impeller and cleaned debris from pump housing. Replaced worn motor bearings and verified proper motor ventilation and cooling air flow.",
+    "parts": [
+      "Pump motor 1/3 HP 115V capacitor start",
+      "Motor thermal overload switch",
+      "Pump impeller bronze with stainless shaft"
+    ]
+  },
+  {
+    "problem": "Fryer vat develops hairline crack near drain fitting causing slow oil seepage, with crack visible when oil temperature exceeds 350\u00b0F.",
+    "solution": "Drained and cleaned fryer vat completely, then applied high-temperature food-grade epoxy repair compound. Reinforced repair area with stainless steel patch plate and retested under pressure.",
+    "parts": [
+      "High-temp epoxy repair compound food-grade",
+      "Stainless steel patch plate 16-gauge",
+      "Drain fitting gasket PTFE reinforced"
+    ]
+  },
+  {
+    "problem": "Electric fryer contactor coil burns out causing loud humming sound and no heating, with visible burn marks on contactor housing and acrid smell.",
+    "solution": "Replaced failed contactor assembly and inspected electrical connections for proper wire gauge and tightness to prevent future coil burnout.",
+    "parts": [
+      "Contactor 3-pole 40A 240V",
+      "Wire nuts 12-14 AWG",
+      "Electrical cleaner spray"
+    ]
+  },
+  {
+    "problem": "Gas fryer combustion air blower motor seized causing incomplete combustion and carbon monoxide production, with motor shaft locked and windings overheated.",
+    "solution": "Installed new combustion air blower motor and cleaned burner assembly of carbon buildup to restore proper air-fuel mixture.",
+    "parts": [
+      "Blower motor 1/6 HP 115V 1750 RPM",
+      "Motor capacitor 5 MFD 370V",
+      "Burner cleaning brush set"
+    ]
+  },
+  {
+    "problem": "Fryer vat shows warping and oil pooling in corners due to overheating damage, with visible metal discoloration and uneven oil distribution during cooking.",
+    "solution": "Replaced damaged fryer vat assembly and recalibrated temperature controls to prevent future overheating and thermal damage.",
+    "parts": [
+      "Fryer vat assembly stainless steel 40-lb capacity",
+      "Vat gasket kit",
+      "Temperature calibration thermometer"
+    ]
+  },
+  {
+    "problem": "Electric fryer heating element terminal block shows signs of arcing with blackened connections and intermittent power loss during peak heating demand.",
+    "solution": "Replaced heating element terminal block and installed new high-temperature wire connections rated for continuous duty operation.",
+    "parts": [
+      "Terminal block ceramic 3-pole 50A",
+      "High-temp wire 10 AWG THWN",
+      "Terminal lugs copper 10 AWG"
+    ]
+  },
+  {
+    "problem": "Gas fryer regulator diaphragm ruptures causing erratic gas pressure and flame instability, with audible gas leakage from regulator vent.",
+    "solution": "Installed new gas pressure regulator assembly and performed leak test with soap solution to ensure all connections are gas-tight.",
+    "parts": [
+      "Gas pressure regulator 1/2 inch NPT",
+      "Pipe dope gas-rated",
+      "Gas leak detection solution"
+    ]
+  },
+  {
+    "problem": "Fryer oil return line from filter system becomes clogged with carbonized debris causing slow oil return and extended filter cycles.",
+    "solution": "Disassembled and cleaned oil return line system and installed new filter screen to prevent future debris accumulation.",
+    "parts": [
+      "Oil return tube stainless steel 1 inch diameter",
+      "Filter screen 20-mesh stainless",
+      "Pipe cleaning rod flexible"
+    ]
+  },
+  {
+    "problem": "Electric fryer heating element develops hairline crack causing oil contamination with metallic particles and electrical shorts to ground.",
+    "solution": "Replaced cracked heating element with new heavy-duty model and tested electrical isolation to ensure safe operation.",
+    "parts": [
+      "Heating element 240V 18kW tubular",
+      "Element gasket high-temperature",
+      "Megohmmeter for testing"
+    ]
+  },
+  {
+    "problem": "Gas fryer ignition transformer fails providing weak spark that cannot reliably light pilot, with transformer case showing heat damage and cracking.",
+    "solution": "Installed new ignition transformer rated for continuous duty and verified proper electrode gap and positioning for reliable ignition.",
+    "parts": [
+      "Ignition transformer 120V primary 10kV secondary",
+      "Ignition electrode assembly",
+      "Electrode wire high-voltage"
+    ]
+  },
+  {
+    "problem": "Fryer control board experiences power supply failure causing erratic operation and random shutdowns, with visible capacitor bulging and component overheating.",
+    "solution": "Replaced control board power supply section and updated firmware to latest version to improve system stability and performance.",
+    "parts": [
+      "Control board power supply module",
+      "Cooling fan 12V DC axial",
+      "Thermal interface compound"
+    ]
+  },
+  {
+    "problem": "Electric fryer ground fault circuit interrupter trips repeatedly during normal operation due to moisture infiltration in electrical connections.",
+    "solution": "Sealed all electrical connections with weatherproof connectors and installed new GFCI breaker rated for commercial kitchen environments.",
+    "parts": [
+      "GFCI breaker 2-pole 30A",
+      "Weatherproof connector kit",
+      "Electrical sealant compound"
+    ]
+  },
+  {
+    "problem": "Gas fryer manifold develops stress crack near burner connection causing gas leak and uneven flame distribution across burner tubes.",
+    "solution": "Welded manifold crack and pressure tested system, then adjusted individual burner orifices for uniform flame pattern across all tubes.",
+    "parts": [
+      "Gas manifold assembly cast iron",
+      "Burner orifice set",
+      "Manifold pressure gauge"
+    ]
+  },
+  {
+    "problem": "Fryer basket lift chain stretches and skips on drive sprocket causing jerky motion and incomplete basket travel to programmed positions.",
+    "solution": "Replaced worn lift chain and adjusted sprocket alignment to ensure smooth basket movement and accurate positioning control.",
+    "parts": [
+      "Lift chain stainless steel 1/4 inch pitch",
+      "Drive sprocket 12-tooth",
+      "Chain tensioner assembly"
+    ]
+  },
+  {
+    "problem": "Electric fryer develops short circuit in control wiring harness causing random function activation and potential fire hazard from overheating wires.",
+    "solution": "Completely rewired control system with new harness and installed protective conduit to prevent future wire damage and shorts.",
+    "parts": [
+      "Wiring harness pre-assembled",
+      "Flexible conduit 3/4 inch",
+      "Wire protection sleeve split-loom"
+    ]
+  },
+  {
+    "problem": "Gas fryer burner tubes become clogged with grease and carbon deposits reducing heat output and causing incomplete combustion with sooty exhaust.",
+    "solution": "Disassembled burner assembly and chemically cleaned all tubes, then adjusted air shutters for proper combustion air mixture.",
+    "parts": [
+      "Burner tube cleaning kit",
+      "Combustion analyzer",
+      "Air shutter adjustment tool"
+    ]
+  },
+  {
+    "problem": "Fryer oil level sight glass cracks allowing oil seepage and creating inaccurate level readings, with visible stress fractures around mounting points.",
+    "solution": "Replaced sight glass assembly with tempered glass model and installed new gasket seals to prevent oil leakage and ensure accurate readings.",
+    "parts": [
+      "Sight glass tempered 4-inch diameter",
+      "Gasket set Viton high-temperature",
+      "Glass mounting hardware stainless"
+    ]
+  },
+  {
+    "problem": "Gas fryer produces loud banging noise during ignition sequence and flames appear to roll out of burner ports intermittently. Burner assembly shows signs of corrosion and several burner orifices appear partially blocked.",
+    "solution": "Replaced corroded burner assembly and cleaned all gas orifices with proper drill bits. Adjusted gas-to-air mixture ratio and tested ignition sequence for proper flame characteristics.",
+    "parts": [
+      "Burner Assembly Model FB-8500 Natural Gas",
+      "Gas Orifice Kit #45 Drill Size 0.0820 inch",
+      "Burner Gasket Set High-Temperature Silicone"
+    ]
+  },
+  {
+    "problem": "Electric fryer contactor remains energized after unit is switched off, causing heating elements to stay powered and creating potential safety hazard. Control relay shows signs of welded contacts and burning smell is present.",
+    "solution": "Replaced faulty contactor with welded contacts and installed new control relay. Verified proper voltage isolation and tested all safety interlocks for correct operation.",
+    "parts": [
+      "Contactor 3-Pole 50 Amp 240V AC Coil",
+      "Control Relay DPDT 24V DC Coil",
+      "Wire Nuts 12 AWG High-Temperature Rated"
+    ]
+  },
+  {
+    "problem": "Fryer vat shows significant warping along bottom panel causing uneven heating patterns and hot spots that burn product. Temperature differential across cooking surface measures 75\u00b0F between center and edges.",
+    "solution": "Removed heating elements and replaced warped fryer vat with new heavy-duty stainless steel tank. Reinstalled heating elements with proper thermal expansion gaskets and verified even heat distribution.",
+    "parts": [
+      "Fryer Vat 40-Pound Capacity 316 Stainless Steel",
+      "Heating Element Gasket Kit Ceramic Fiber",
+      "Tank Drain Fitting 1.5 inch NPT Stainless"
+    ]
+  },
+  {
+    "problem": "Oil level sensor float mechanism is stuck in down position due to accumulated grease buildup, preventing automatic oil replenishment system from functioning. Low oil alarms do not activate even when tank is nearly empty.",
+    "solution": "Disassembled float chamber and thoroughly cleaned all components with degreasing solvent. Replaced worn float mechanism and recalibrated oil level detection system for accurate readings.",
+    "parts": [
+      "Float Switch Assembly Stainless Steel SPDT",
+      "Float Chamber Gasket Viton High-Temperature",
+      "Sensor Wiring Harness 12-Pin Weatherproof Connector"
+    ]
+  },
+  {
+    "problem": "Fryer produces excessive smoke and oil vapor emissions even with fresh oil, and exhaust fan cannot keep up with vapor production. Internal inspection reveals clogged heat exchanger fins and blocked ventilation passages.",
+    "solution": "Performed complete heat exchanger cleaning using specialized degreasing chemicals and high-pressure steam cleaning. Replaced damaged exhaust ducting and verified proper ventilation airflow rates.",
+    "parts": [
+      "Heat Exchanger Cleaning Kit Industrial Grade",
+      "Exhaust Duct Flexible 8-inch Diameter Aluminum",
+      "Ventilation Damper Motorized 8-inch Round 120V"
+    ]
+  }
+]

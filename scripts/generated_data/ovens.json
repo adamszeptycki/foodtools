@@ -1,0 +1,452 @@
+[
+  {
+    "problem": "Convection oven temperature fluctuating wildly between 250\u00b0F and 450\u00b0F despite thermostat set to 350\u00b0F. Kitchen staff reports uneven baking and burnt food on one side.",
+    "solution": "Replaced faulty thermocouple that was providing erratic temperature readings to the control board. Calibrated temperature controller and verified proper sensor placement.",
+    "parts": [
+      "Thermocouple Type K 18-inch with 1/4-inch NPT fitting",
+      "Temperature Controller Digital PID 240V",
+      "High-temperature ceramic wire nuts"
+    ]
+  },
+  {
+    "problem": "Gas deck oven pilot light keeps going out every 2-3 hours, causing complete loss of heat. Flame sensor appears dirty and corroded.",
+    "solution": "Cleaned flame sensor with fine steel wool and replaced faulty thermocouple assembly. Adjusted gas pressure regulator to manufacturer specifications.",
+    "parts": [
+      "Flame Sensor Rod 6-inch stainless steel",
+      "Thermocouple Assembly 24-inch universal gas",
+      "Gas Pressure Regulator 1/2-inch NPT 11-inch WC"
+    ]
+  },
+  {
+    "problem": "Combi-steam oven producing insufficient steam with visible calcium buildup around steam injection nozzles. Steam generator cycling but minimal steam output observed.",
+    "solution": "Descaled steam generator using manufacturer-approved descaling solution and replaced clogged steam injection nozzles. Flushed entire steam system and tested output pressure.",
+    "parts": [
+      "Steam Injection Nozzle Assembly brass 1/8-inch",
+      "Steam Generator Heating Element 4500W 240V",
+      "Solenoid Valve 240V 1/4-inch NPT steam-rated"
+    ]
+  },
+  {
+    "problem": "Convection fan motor making loud grinding noise and running slower than normal, causing poor air circulation and uneven cooking results.",
+    "solution": "Replaced worn convection fan motor bearings and installed new motor assembly. Cleaned fan blade and housing of grease buildup that was causing additional drag.",
+    "parts": [
+      "Convection Fan Motor 1/3 HP 240V 1725 RPM",
+      "Fan Blade 12-inch diameter aluminum",
+      "Motor Mount Bracket heavy-duty steel"
+    ]
+  },
+  {
+    "problem": "Oven door not sealing properly with visible gaps at corners, causing heat loss and longer cooking times. Door gasket appears cracked and hardened.",
+    "solution": "Removed old door gasket and installed new high-temperature silicone seal. Adjusted door hinges and latch mechanism for proper alignment and compression.",
+    "parts": [
+      "Door Gasket high-temp silicone 8-foot length",
+      "Door Hinge Pin stainless steel 3/8-inch",
+      "Door Latch Assembly spring-loaded commercial grade"
+    ]
+  },
+  {
+    "problem": "Electric heating elements in bottom of deck oven not heating evenly, with cold spots visible on stone surface. Elements appear to have burn marks.",
+    "solution": "Replaced two damaged heating elements that had developed hot spots and were drawing inconsistent amperage. Rewired connections with high-temperature wire and new terminals.",
+    "parts": [
+      "Heating Element 5000W 240V tubular",
+      "High-temperature Wire 12 AWG 500\u00b0F rated",
+      "Terminal Block ceramic 240V 30A"
+    ]
+  },
+  {
+    "problem": "Digital control display shows error code and oven will not start heating cycle. Control board appears to have moisture damage from steam exposure.",
+    "solution": "Replaced water-damaged control board and installed protective cover shield. Reprogrammed controller with original parameters and tested all safety interlocks.",
+    "parts": [
+      "Control Board PCB assembly with display",
+      "Protective Cover polycarbonate steam-resistant",
+      "Ribbon Cable 20-pin flat conductor"
+    ]
+  },
+  {
+    "problem": "High-limit safety switch tripping every 20 minutes during normal operation, shutting down oven completely. Oven cavity temperature reads normal on main thermostat.",
+    "solution": "Replaced faulty high-limit switch that was tripping at 450\u00b0F instead of rated 550\u00b0F. Cleaned temperature probe and verified proper mounting location away from direct heat sources.",
+    "parts": [
+      "High-Limit Switch 550\u00b0F manual reset",
+      "RTD Temperature Probe 100-ohm platinum",
+      "Probe Mounting Bracket stainless steel adjustable"
+    ]
+  },
+  {
+    "problem": "Rapid-bake oven conveyor belt tracking to one side and scraping against side walls, causing belt damage and uneven product heating.",
+    "solution": "Adjusted belt tracking mechanism and replaced worn conveyor drive roller with proper crown. Realigned belt guides and tensioned to manufacturer specifications.",
+    "parts": [
+      "Conveyor Drive Roller 4-inch diameter crowned",
+      "Belt Tracking Guide adjustable stainless",
+      "Drive Belt polyester mesh 24-inch width"
+    ]
+  },
+  {
+    "problem": "Oven timer stuck at 15 minutes and will not advance, causing products to overcook. Digital display flickering intermittently during operation.",
+    "solution": "Replaced defective timer motor assembly and updated control software. Cleaned timer contact points and verified proper voltage supply to timing circuit.",
+    "parts": [
+      "Timer Motor Assembly 120V synchronous",
+      "Timer Contact Switch DPDT 15A",
+      "Control Software EPROM chip latest version"
+    ]
+  },
+  {
+    "problem": "Stone deck developing cracks and uneven heating patterns, with hot spots creating burnt areas on pizza crusts. Stone appears to have absorbed grease over time.",
+    "solution": "Removed and replaced damaged stone deck with new refractory material. Sealed stone surface and adjusted heating element positioning for even heat distribution.",
+    "parts": [
+      "Refractory Stone Deck 2-inch thick cordierite",
+      "Stone Sealer food-safe high-temperature",
+      "Support Rails stainless steel adjustable"
+    ]
+  },
+  {
+    "problem": "Gas ignition system failing to light burners reliably, requiring multiple attempts and causing delayed start-up. Igniter glowing but insufficient spark observed.",
+    "solution": "Replaced worn hot surface igniter with higher amperage model and cleaned gas orifices of debris. Adjusted gas valve timing sequence for reliable ignition.",
+    "parts": [
+      "Hot Surface Igniter silicon carbide 120V",
+      "Gas Valve Solenoid dual-stage 24V",
+      "Ignition Control Module solid-state with safety timer"
+    ]
+  },
+  {
+    "problem": "Oven cavity lighting flickering and two bulbs completely burned out, making it difficult for staff to monitor food during cooking cycles.",
+    "solution": "Replaced all interior light bulbs with high-temperature LED versions and repaired loose wiring connections in light fixture junction box.",
+    "parts": [
+      "LED Light Bulb 25W 500\u00b0F rated",
+      "Light Fixture high-temp glass lens",
+      "Junction Box stainless steel vapor-proof"
+    ]
+  },
+  {
+    "problem": "Excessive grease buildup in ventilation system causing poor exhaust and smoke backing into kitchen. Exhaust fan motor running but insufficient airflow measured.",
+    "solution": "Disassembled and deep cleaned entire exhaust system removing hardened grease deposits. Replaced exhaust fan motor that had seized bearings from grease contamination.",
+    "parts": [
+      "Exhaust Fan Motor 1/2 HP 240V high-temp rated",
+      "Fan Housing stainless steel grease-resistant",
+      "Ductwork Cleaning Kit industrial scrapers and brushes"
+    ]
+  },
+  {
+    "problem": "Combi-oven water level sensor giving false readings causing unit to shut down with 'low water' error despite full reservoir. Sensor probe covered with mineral deposits.",
+    "solution": "Replaced corroded water level sensor and installed new water filtration system to prevent mineral buildup. Flushed water lines and calibrated sensor readings.",
+    "parts": [
+      "Water Level Sensor stainless steel probe type",
+      "Water Filter cartridge sediment and scale",
+      "Water Solenoid Valve 120V 3/8-inch NPT"
+    ]
+  },
+  {
+    "problem": "Electric convection oven heating elements cycling on and off rapidly every 30 seconds, preventing oven from reaching set temperature of 425\u00b0F. Temperature controller display shows erratic readings jumping between temperatures.",
+    "solution": "Replaced faulty RTD temperature sensor that was providing incorrect feedback to the controller, causing rapid cycling. Recalibrated temperature controller and verified proper sensor placement in oven cavity.",
+    "parts": [
+      "RTD Temperature Sensor PT100 3-wire 6-inch probe",
+      "Temperature Controller PID Digital 240V",
+      "Sensor mounting bracket stainless steel"
+    ]
+  },
+  {
+    "problem": "Gas convection oven burner flames burning yellow and sooty instead of blue, creating excessive carbon buildup on oven walls. Gas pressure appears normal but combustion is incomplete.",
+    "solution": "Cleaned and adjusted primary air shutters on main burners to achieve proper air-to-gas ratio. Replaced clogged orifices that were restricting gas flow and causing poor combustion.",
+    "parts": [
+      "Gas burner orifices #54 drill size brass",
+      "Primary air shutter assembly",
+      "Flame sensor rod 8-inch length"
+    ]
+  },
+  {
+    "problem": "Combi-oven drain system backing up with standing water in bottom of unit, causing error messages and automatic shutdown. Water overflowing from drain pan during rinse cycles.",
+    "solution": "Cleared blocked drain line filled with food debris and scale buildup using enzymatic cleaner and mechanical snake. Replaced damaged drain valve that was not seating properly.",
+    "parts": [
+      "Drain valve assembly 1-inch NPT solenoid",
+      "Drain line flexible hose 1-inch diameter",
+      "Water level sensor probe 12-inch"
+    ]
+  },
+  {
+    "problem": "Deck oven door hinges binding and requiring excessive force to open, causing safety concerns for kitchen staff. Door alignment appears off and gasket compressed unevenly.",
+    "solution": "Replaced worn door hinge pins and bushings that had developed excessive play from repeated use. Adjusted door alignment and replaced compressed door gasket for proper sealing.",
+    "parts": [
+      "Door hinge pin set stainless steel 5/8-inch",
+      "Hinge bushing bronze sleeve bearing",
+      "Door gasket high-temp silicone 1-inch width"
+    ]
+  },
+  {
+    "problem": "Electric oven main contactor chattering and arcing when heating elements engage, creating sparks and burning smell. Electrical connections appear loose and overheated.",
+    "solution": "Replaced main heating contactor with burned contacts and loose coil. Tightened all electrical connections and applied dielectric grease to prevent future corrosion and arcing.",
+    "parts": [
+      "Contactor 3-pole 50-amp 240V coil",
+      "Wire nuts high-temp ceramic rated",
+      "Electrical contact cleaner spray"
+    ]
+  },
+  {
+    "problem": "Rapid-bake oven variable speed drive displaying fault codes and conveyor running at incorrect speeds. Drive overheating and fan cycling constantly to cool electronics.",
+    "solution": "Replaced damaged variable frequency drive that had internal component failure from heat exposure. Installed additional ventilation fan to prevent future overheating of drive electronics.",
+    "parts": [
+      "Variable Frequency Drive 2HP 480V",
+      "Cooling fan 120V 4-inch axial",
+      "Drive mounting bracket with heat sink"
+    ]
+  },
+  {
+    "problem": "Gas oven flame rollout switch tripping during normal operation, shutting down main burners immediately after ignition. Switch appears to be sensing flames outside combustion chamber.",
+    "solution": "Cleaned blocked heat exchanger passages that were causing flame impingement and rollout. Replaced heat-damaged rollout switch that had become overly sensitive from repeated exposure.",
+    "parts": [
+      "Flame rollout switch manual reset 250\u00b0F",
+      "Heat exchanger gasket high-temp fiber",
+      "Burner tube cleaning brush kit"
+    ]
+  },
+  {
+    "problem": "Convection oven door latch mechanism not engaging properly, allowing door to open during cooking cycles and triggering safety shutdowns. Latch spring appears weakened and worn.",
+    "solution": "Replaced door latch assembly including worn spring mechanism and striker plate. Adjusted door alignment to ensure proper engagement and tested safety interlocks for proper operation.",
+    "parts": [
+      "Door latch assembly spring-loaded",
+      "Striker plate stainless steel adjustable",
+      "Safety microswitch SPDT 15-amp"
+    ]
+  },
+  {
+    "problem": "Electric deck oven bottom heating elements drawing excessive current and tripping 50-amp breaker repeatedly. Elements glowing cherry red and overheating stone deck surface.",
+    "solution": "Replaced shorted heating elements that had internal insulation breakdown causing current leakage. Tested element resistance and verified proper electrical isolation before reassembly.",
+    "parts": [
+      "Heating element 240V 5000W tubular",
+      "Element mounting bracket ceramic",
+      "High-limit switch 500\u00b0F manual reset"
+    ]
+  },
+  {
+    "problem": "Combi-oven steam generator not producing steam despite water supply being adequate and heating elements functioning. Steam chamber pressure gauge reading zero during steam mode.",
+    "solution": "Descaled steam generator chamber that was completely blocked with mineral deposits preventing steam formation. Replaced damaged steam solenoid valve that was not opening properly.",
+    "parts": [
+      "Steam solenoid valve 3/4-inch 24V",
+      "Descaling solution commercial grade",
+      "Steam chamber gasket EPDM rubber"
+    ]
+  },
+  {
+    "problem": "Oven exhaust blower motor seized and not rotating, causing excessive heat buildup in oven cavity and triggering high-limit shutdowns. Motor windings appear burned from overheating.",
+    "solution": "Replaced burned-out exhaust blower motor and cleaned grease-clogged impeller that had caused motor overload. Balanced impeller and verified proper belt tension after installation.",
+    "parts": [
+      "Exhaust blower motor 1/2HP 208V",
+      "Blower wheel 10-inch diameter",
+      "Motor drive belt B-section 62-inch"
+    ]
+  },
+  {
+    "problem": "Gas oven electronic ignition module clicking continuously but failing to light main burners. Igniter electrode gap appears correct but spark is weak and intermittent.",
+    "solution": "Replaced failed ignition module with degraded transformer output causing insufficient spark energy. Cleaned igniter electrodes and verified proper grounding of ignition system.",
+    "parts": [
+      "Electronic ignition module 120V input",
+      "Igniter electrode ceramic insulated",
+      "Ignition wire high-voltage rated 18-inch"
+    ]
+  },
+  {
+    "problem": "Programmable oven controller losing memory settings and reverting to default programs after power cycles. Clock time resetting and stored recipes being deleted randomly.",
+    "solution": "Replaced internal backup battery in controller that was no longer holding charge for memory retention. Updated controller firmware and restored all customer recipe programs from backup.",
+    "parts": [
+      "Lithium backup battery 3V coin cell",
+      "Controller firmware chip EPROM",
+      "Memory expansion module 64KB"
+    ]
+  },
+  {
+    "problem": "Deck oven stone surface developing hot and cold zones with temperature variations exceeding 100\u00b0F across baking area. Infrared temperature readings showing uneven heat distribution patterns.",
+    "solution": "Replaced damaged radiant heat deflector plates beneath stone that had warped from thermal cycling. Recalibrated zone heating controls and verified even temperature distribution across deck.",
+    "parts": [
+      "Heat deflector plate stainless steel",
+      "Zone temperature sensor thermocouple",
+      "Thermal insulation blanket ceramic fiber"
+    ]
+  },
+  {
+    "problem": "Convection oven control panel buttons becoming unresponsive and display showing garbled characters intermittently. Membrane switch overlay appears cracked and moisture damaged.",
+    "solution": "Replaced damaged membrane switch overlay and control panel display module that had moisture intrusion from steam exposure. Sealed all panel connections with waterproof gaskets.",
+    "parts": [
+      "Membrane switch overlay tactile",
+      "LCD display module 4x20 character",
+      "Panel gasket kit silicone rubber"
+    ]
+  },
+  {
+    "problem": "Combi-steam oven steam generator producing excessive noise and vibration during steam cycles, with visible mineral scale buildup on internal components. Water pump motor running continuously even when steam demand is low.",
+    "solution": "Descaled steam generator system using manufacturer-approved descaling solution and replaced worn water pump motor assembly. Calibrated water flow sensors and adjusted pump cycling parameters.",
+    "parts": [
+      "Water pump motor assembly 1/8 HP 120V with mounting bracket",
+      "Descaling solution concentrate 1-gallon commercial grade",
+      "Water flow sensor 1/4-inch NPT thread"
+    ]
+  },
+  {
+    "problem": "Electric deck oven bottom heating elements glowing bright red but producing insufficient heat, with resistance readings showing 50% higher than specification. Baking times increased significantly for pizza and bread products.",
+    "solution": "Replaced degraded heating elements that had developed internal breaks and hot spots. Verified proper voltage supply and tightened all electrical connections to prevent future element failure.",
+    "parts": [
+      "Electric heating element 5000W 240V 24-inch serpentine",
+      "High-temperature ceramic wire nuts rated 480V",
+      "Element mounting brackets stainless steel set of 4"
+    ]
+  },
+  {
+    "problem": "Convection oven exhaust blower motor running but producing minimal airflow, causing excessive moisture and grease accumulation in oven cavity. Motor amperage reading normal but fan blade damaged.",
+    "solution": "Replaced bent and cracked exhaust fan impeller assembly and rebalanced motor shaft. Cleaned accumulated grease from housing and verified proper belt tension on motor drive.",
+    "parts": [
+      "Exhaust fan impeller 12-inch diameter stainless steel",
+      "Motor drive belt 3L320 industrial grade",
+      "Motor shaft bearing assembly sealed 6203-2RS"
+    ]
+  },
+  {
+    "problem": "Gas convection oven electronic ignition module sparking continuously but failing to establish stable flame, causing burner lockout after 30 seconds. Igniter electrode gap appears correct but weak spark visible.",
+    "solution": "Replaced faulty electronic ignition control module and cleaned corroded electrode connections. Adjusted electrode gap to manufacturer specification and tested ignition sequence timing.",
+    "parts": [
+      "Electronic ignition control module 24VAC with flame sensing",
+      "Igniter electrode assembly with 3/16-inch gap setting",
+      "High-voltage ignition cable 18-inch length"
+    ]
+  },
+  {
+    "problem": "Rapid-bake oven temperature probe reading 100\u00b0F below actual cavity temperature, causing extended baking cycles and inconsistent product quality. Probe appears physically intact but temperature differential increasing.",
+    "solution": "Replaced drift-calibrated RTD temperature sensor and recalibrated temperature controller to factory specifications. Verified probe placement and thermal coupling to oven cavity.",
+    "parts": [
+      "RTD temperature sensor Pt100 Class A 6-inch probe",
+      "Temperature controller 1/16 DIN PID digital display",
+      "Probe mounting thermowell 1/2-inch NPT stainless"
+    ]
+  },
+  {
+    "problem": "Combi-oven humidity sensor providing erratic readings causing automatic cooking programs to fail mid-cycle. Sensor readings fluctuating between 20% and 95% humidity regardless of actual conditions.",
+    "solution": "Replaced contaminated humidity sensor element and cleaned sensor housing of grease and food residue. Performed sensor calibration using certified humidity reference standards.",
+    "parts": [
+      "Humidity sensor element capacitive type 0-100% RH",
+      "Sensor housing assembly IP65 rated stainless steel",
+      "Calibration kit with 75% RH salt solution"
+    ]
+  },
+  {
+    "problem": "Electric convection oven main power contactor coil overheating and dropping out intermittently, causing complete loss of heating during busy service periods. Contactor contacts showing pitting and burning.",
+    "solution": "Replaced overheated main power contactor with proper amperage rating and installed suppression circuit to reduce coil stress. Tightened all power connections and verified proper wire sizing.",
+    "parts": [
+      "Power contactor 3-pole 50A 240VAC coil with auxiliary contacts",
+      "RC suppression circuit 120VAC rated",
+      "Power terminal lugs 6 AWG crimp type set of 6"
+    ]
+  },
+  {
+    "problem": "Deck oven steam injection system producing inconsistent steam bursts with visible air bubbles in water supply lines. Steam quality poor with excessive water droplets rather than dry steam.",
+    "solution": "Replaced malfunctioning steam solenoid valve and installed water line air purge system. Adjusted steam pressure regulator and cleaned mineral deposits from injection nozzles.",
+    "parts": [
+      "Steam solenoid valve 1/2-inch NPT 24VAC normally closed",
+      "Pressure regulator 0-15 PSI adjustable with gauge",
+      "Steam injection nozzles stainless steel set of 4"
+    ]
+  },
+  {
+    "problem": "Gas deck oven flame safety sensor failing to detect pilot flame consistently, causing nuisance shutdowns every 45 minutes during normal operation. Sensor appears clean but flame detection unreliable.",
+    "solution": "Replaced aging flame safety sensor with UV-sensitive photoelectric type and adjusted sensor positioning for optimal flame detection. Cleaned and aligned pilot burner orifice.",
+    "parts": [
+      "UV flame sensor photoelectric type with 2-second response",
+      "Sensor mounting bracket adjustable stainless steel",
+      "Pilot burner orifice #54 drill natural gas"
+    ]
+  },
+  {
+    "problem": "Convection oven door latch mechanism sticking and requiring excessive force to engage, creating safety hazard for kitchen staff. Latch springs appear compressed and striker plate worn.",
+    "solution": "Replaced worn door latch assembly and striker plate, then adjusted door alignment to ensure smooth operation. Lubricated all pivot points with high-temperature food-safe grease.",
+    "parts": [
+      "Door latch assembly heavy-duty with spring return",
+      "Striker plate stainless steel with wear insert",
+      "High-temperature grease NSF certified 4-oz tube"
+    ]
+  },
+  {
+    "problem": "Electric combi-oven heating elements in steam generator compartment showing signs of corrosion and reduced heating capacity. Scale buildup visible on element surfaces affecting heat transfer efficiency.",
+    "solution": "Replaced corroded steam generator heating elements and performed complete system descaling procedure. Installed water filtration system to prevent future mineral buildup and corrosion.",
+    "parts": [
+      "Steam generator heating element 3000W 240V Incoloy sheath",
+      "Water filter cartridge 5-micron sediment type",
+      "Heating element gasket set high-temperature silicone"
+    ]
+  },
+  {
+    "problem": "Rapid-bake oven conveyor motor overheating and tripping thermal overload protection during peak usage periods. Motor housing hot to touch and belt showing signs of slippage.",
+    "solution": "Replaced overloaded conveyor drive motor with higher capacity unit and adjusted belt tension to manufacturer specifications. Cleaned accumulated flour and debris from motor ventilation.",
+    "parts": [
+      "Conveyor motor 1/2 HP 120V totally enclosed fan cooled",
+      "Drive belt V-type 4L380 oil and heat resistant",
+      "Motor thermal overload relay 5.8-8.5A adjustable"
+    ]
+  },
+  {
+    "problem": "Gas convection oven pressure regulator diaphragm ruptured causing erratic gas pressure and unstable flame patterns. Burner flames varying in height and producing incomplete combustion.",
+    "solution": "Replaced damaged gas pressure regulator assembly and tested system for proper outlet pressure regulation. Performed complete combustion analysis and adjusted air-to-gas mixture ratios.",
+    "parts": [
+      "Gas pressure regulator 1/2-inch NPT 4-12 inch WC adjustable",
+      "Regulator diaphragm kit with springs and hardware",
+      "Gas pressure gauge 0-15 inch WC liquid filled"
+    ]
+  },
+  {
+    "problem": "Electric deck oven stone surface developing hot spots and uneven temperature distribution, with pyrometer readings showing 75\u00b0F variance across baking surface. Stone appears to have hairline cracks developing.",
+    "solution": "Replaced cracked baking stone with segmented design for better thermal expansion control and rebalanced heating element power distribution. Calibrated surface temperature sensors.",
+    "parts": [
+      "Segmented baking stone set 1-inch thick cordierite",
+      "Surface temperature sensor RTD flat mounting type",
+      "Stone support rails stainless steel adjustable"
+    ]
+  },
+  {
+    "problem": "Combi-oven water level switch providing false high-level readings causing unit to overflow during fill cycles. Switch float mechanism appears to be sticking in up position.",
+    "solution": "Replaced malfunctioning water level switch assembly and cleaned mineral deposits from float chamber. Adjusted switch activation point and tested complete fill and drain cycle operation.",
+    "parts": [
+      "Water level switch assembly with adjustable float",
+      "Float chamber cleaning brush kit",
+      "Switch mounting gasket food-grade EPDM rubber"
+    ]
+  },
+  {
+    "problem": "Rapid-bake oven heating elements on one side completely dead with no power reaching the elements, causing half of products to remain raw while other half cooks normally. Electrical meter shows no continuity through affected heating circuit.",
+    "solution": "Replaced failed power relay that controls heating elements and installed new circuit breaker that was internally damaged from previous electrical surge. Tested all heating zones for proper voltage and current draw after repairs.",
+    "parts": [
+      "Power Relay 40A 240V DPDT",
+      "Circuit Breaker 30A 2-pole 240V",
+      "Wire Nuts 12AWG rated (6-pack)"
+    ]
+  },
+  {
+    "problem": "Combi-oven steam generator producing rusty water and metallic-tasting steam, with visible corrosion inside steam chamber. Water quality test shows high iron content and pH imbalance affecting food quality.",
+    "solution": "Replaced corroded steam generator tank assembly and installed new water filtration system with deionizer cartridge. Flushed entire water system with descaling solution and recalibrated water quality sensors.",
+    "parts": [
+      "Steam Generator Tank 6-gallon stainless steel",
+      "Water Filter Cartridge deionizer type",
+      "Water Quality Sensor pH/conductivity probe"
+    ]
+  },
+  {
+    "problem": "Gas deck oven experiencing delayed ignition with loud 'whooshing' sounds during startup, creating dangerous gas accumulation before lighting. Ignition sequence taking 15-20 seconds instead of normal 3-5 seconds.",
+    "solution": "Replaced worn gas valve actuator motor and cleaned clogged gas orifices that were restricting proper gas flow. Adjusted ignition timing sequence in control module to ensure safer startup cycle.",
+    "parts": [
+      "Gas Valve Actuator Motor 120V synchronous",
+      "Gas Orifice Set #54 drill size brass",
+      "Ignition Control Module programmable sequence"
+    ]
+  },
+  {
+    "problem": "Electric convection oven fan motor overheating and shutting down on thermal protection after 45 minutes of operation, causing loss of air circulation during peak cooking periods. Motor housing extremely hot to touch.",
+    "solution": "Replaced seized motor bearings and installed new thermal protection switch with higher temperature rating. Cleaned accumulated grease from motor housing and improved ventilation around motor compartment.",
+    "parts": [
+      "Motor Bearing Set 6203-2RS sealed type",
+      "Thermal Overload Switch 160\u00b0C reset",
+      "Motor Mount Gasket high-temperature silicone"
+    ]
+  },
+  {
+    "problem": "Combi-oven humidity sensor providing incorrect readings causing unit to add excessive steam during baking modes, resulting in soggy bread products. Sensor reading 90% humidity in dry heat mode.",
+    "solution": "Replaced failed capacitive humidity sensor that had moisture infiltration in sensor housing and recalibrated humidity control system. Updated sensor mounting position away from direct steam exposure area.",
+    "parts": [
+      "Humidity Sensor capacitive 0-100% RH",
+      "Sensor Housing stainless steel IP65",
+      "Calibration Kit 33% and 75% RH standards"
+    ]
+  }
+]

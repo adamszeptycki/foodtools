@@ -1,0 +1,452 @@
+[
+  {
+    "problem": "Gas griddle fails to ignite with pilot light system producing weak yellow flame instead of strong blue flame. Customer reports uneven heating and difficulty maintaining temperature.",
+    "solution": "Cleaned pilot light orifice of grease buildup and replaced clogged pilot light assembly with proper gas pressure adjustment. Verified pilot flame characteristics and tested ignition sequence.",
+    "parts": [
+      "Pilot Light Assembly NAT-500 Natural Gas",
+      "Pilot Orifice #56 Brass",
+      "Pilot Tubing 1/4-inch Copper 18-inch"
+    ]
+  },
+  {
+    "problem": "Electric griddle heating elements cycling on and off rapidly with temperature swings of 50\u00b0F above and below setpoint. Thermostat knob clicks repeatedly during operation.",
+    "solution": "Replaced faulty capillary tube thermostat that had developed internal leak causing erratic temperature sensing. Calibrated new thermostat and verified even heat distribution across cooking surface.",
+    "parts": [
+      "Capillary Thermostat 200-450\u00b0F 48-inch",
+      "Thermostat Mounting Bracket Stainless Steel",
+      "Temperature Control Knob with Dial"
+    ]
+  },
+  {
+    "problem": "Chrome griddle surface showing severe pitting and black discoloration in high-use areas with food sticking during cooking. Surface temperature varies by 75\u00b0F across the plate.",
+    "solution": "Removed old chrome-plated griddle plate and installed new surface with proper seasoning procedure. Adjusted burner orifices for even heat distribution and performed surface leveling.",
+    "parts": [
+      "Chrome Griddle Plate 36-inch x 24-inch 1/2-inch Thick",
+      "Burner Orifice Set Natural Gas #54",
+      "Griddle Plate Gasket High-Temperature Silicone"
+    ]
+  },
+  {
+    "problem": "Electronic ignition system sparks continuously without stopping after successful gas ignition. Control module LED shows constant fault code and gas valve cycles erratically.",
+    "solution": "Replaced defective flame sensor that failed to detect proper flame signal and installed new electronic ignition control module. Verified proper grounding and flame detection timing.",
+    "parts": [
+      "Electronic Ignition Control Module 24V",
+      "Flame Sensor Rod Stainless Steel 6-inch",
+      "Ignition Transformer 120V Primary 6000V Secondary"
+    ]
+  },
+  {
+    "problem": "Grease trap overflowing during busy periods with grease backing up onto cooking surface. Drain system appears blocked and grease collection drawer won't slide properly.",
+    "solution": "Disassembled and deep-cleaned entire grease management system, replaced cracked grease trough, and installed new drawer slides. Verified proper drainage angle and flow capacity.",
+    "parts": [
+      "Grease Trough Stainless Steel 36-inch",
+      "Drawer Slide Assembly Heavy-Duty 100-lb Capacity",
+      "Grease Collection Drawer 4-quart Capacity"
+    ]
+  },
+  {
+    "problem": "Gas control valve knob turns freely without resistance and griddle temperature cannot be adjusted. Gas flow appears constant regardless of control position.",
+    "solution": "Replaced worn gas control valve with stripped internal threads and installed new control knob assembly. Performed gas pressure test and leak check on all connections.",
+    "parts": [
+      "Gas Control Valve 3/4-inch NPT Natural Gas",
+      "Control Knob Assembly with Spring Return",
+      "Valve Stem Packing Kit NBR O-Rings"
+    ]
+  },
+  {
+    "problem": "Thermocouple safety system shutting down gas flow randomly during operation with pilot light remaining lit. System requires manual reset multiple times per day.",
+    "solution": "Replaced deteriorated thermocouple with millivolt output below specification and cleaned connections showing corrosion. Adjusted thermocouple position for optimal flame contact.",
+    "parts": [
+      "Thermocouple Type K 24-inch Lead 900\u00b0F Rating",
+      "Thermocouple Connection Nut 1/4-inch",
+      "Safety Gas Valve 24 Millivolt Natural Gas"
+    ]
+  },
+  {
+    "problem": "Burner manifold leaking gas at multiple connection points with visible corrosion and whistling sounds during operation. Gas pressure appears inconsistent across burners.",
+    "solution": "Replaced corroded gas manifold assembly and all connection fittings with new brass components. Performed complete pressure test and adjusted individual burner orifices for uniform output.",
+    "parts": [
+      "Gas Manifold Assembly 1-inch NPT 4-Outlet Brass",
+      "Pipe Nipples 1/2-inch NPT Black Iron Set of 4",
+      "Thread Sealant High-Temperature Gas-Rated"
+    ]
+  },
+  {
+    "problem": "Griddle surface tilted with 1/4-inch slope causing grease and food to pool on one side. Legs appear to have shifted and mounting hardware is loose.",
+    "solution": "Disassembled griddle mounting system and replaced bent adjustable legs with heavy-duty versions. Re-leveled entire unit using precision instruments and secured with grade-8 hardware.",
+    "parts": [
+      "Adjustable Leg Assembly 6-inch Stainless Steel Set of 4",
+      "Mounting Hardware Kit Grade-8 Bolts",
+      "Leveling Foot Pads Non-Slip Rubber 4-inch"
+    ]
+  },
+  {
+    "problem": "Backsplash grease shield rattling loudly during operation with visible cracks along mounting seams. Grease splatter reaching wall behind equipment.",
+    "solution": "Removed damaged backsplash assembly and installed reinforced replacement with proper mounting brackets. Applied high-temperature sealant to all joints and verified structural integrity.",
+    "parts": [
+      "Backsplash Assembly 36-inch Stainless Steel 16-gauge",
+      "Mounting Bracket Set Heavy-Duty L-Brackets",
+      "High-Temperature Sealant FDA-Approved"
+    ]
+  },
+  {
+    "problem": "Electric griddle heating elements showing visible red-hot spots with power consumption 40% higher than normal. Temperature zones reading incorrectly on digital display.",
+    "solution": "Replaced burned-out heating elements with proper wattage rating and installed new temperature sensors. Verified electrical connections and performed amperage draw test on each zone.",
+    "parts": [
+      "Heating Element 3000W 240V Tubular",
+      "Temperature Sensor RTD Probe 6-inch",
+      "Element Terminal Block 30-Amp Rating"
+    ]
+  },
+  {
+    "problem": "Pilot light won't stay lit after manual lighting with gas odor present around control area. Safety lockout engaging immediately after release of pilot button.",
+    "solution": "Replaced faulty thermopile generator that wasn't producing sufficient millivoltage to hold safety valve open. Cleaned pilot light assembly and adjusted gas-air mixture for proper combustion.",
+    "parts": [
+      "Thermopile Generator 750 Millivolt Output",
+      "Pilot Light Burner Assembly Natural Gas",
+      "Gas-Air Mixer Adjustment Screw Assembly"
+    ]
+  },
+  {
+    "problem": "Griddle surface temperature reading 100\u00b0F lower than thermostat setting with slow recovery time after food placement. Burner flames appear smaller than normal.",
+    "solution": "Cleaned clogged burner orifices restricting gas flow and replaced worn pressure regulator maintaining incorrect manifold pressure. Calibrated thermostat sensing bulb placement for accurate readings.",
+    "parts": [
+      "Pressure Regulator 11-inch WC Natural Gas",
+      "Burner Orifice Drill Set #54-#60",
+      "Thermostat Sensing Bulb 1/4-inch Diameter"
+    ]
+  },
+  {
+    "problem": "Grease channels cracked and leaking onto floor with visible structural damage around drain connections. Stainless steel showing stress corrosion at weld points.",
+    "solution": "Fabricated and installed new grease channel system with improved drainage design and reinforced mounting points. Applied food-grade welding techniques for all joints and performed leak test.",
+    "parts": [
+      "Grease Channel Assembly 36-inch 16-gauge Stainless",
+      "Drain Connection Elbow 1-inch NPT Stainless",
+      "Channel Support Brackets Reinforced Set of 6"
+    ]
+  },
+  {
+    "problem": "Electronic temperature controller display showing error codes with erratic zone control and inability to program cooking temperatures. Touch screen not responding to inputs.",
+    "solution": "Replaced failed electronic control board with updated firmware version and installed new touch screen interface. Programmed default cooking profiles and calibrated temperature sensors.",
+    "parts": [
+      "Electronic Control Board 240V Multi-Zone",
+      "Touch Screen Display 7-inch Color LCD",
+      "Control Board Wiring Harness 20-Pin Connector"
+    ]
+  },
+  {
+    "problem": "Gas griddle burner orifices clogged with carbon buildup causing uneven flame patterns and cold spots across cooking surface. Several burner ports completely blocked with no visible flame.",
+    "solution": "Removed and cleaned all burner orifices using specialized drill bits and compressed air. Replaced heavily damaged orifices and recalibrated gas flow rates.",
+    "parts": [
+      "Burner Orifice Set #54 Natural Gas 0.0465-inch",
+      "Orifice Cleaning Kit with Drill Bits",
+      "Burner Tube Assembly 24-inch Stainless Steel"
+    ]
+  },
+  {
+    "problem": "Electric griddle power distribution failing with only half the heating zones operational. Main power indicator shows normal but individual zone indicators remain dark.",
+    "solution": "Diagnosed failed main contactor and damaged power distribution block. Replaced electrical components and tested all heating circuits for proper amperage draw.",
+    "parts": [
+      "Contactor 3-Pole 40A 240V AC Coil",
+      "Power Distribution Block 6-Circuit 50A",
+      "Heating Element 3000W 240V Flat Ribbon"
+    ]
+  },
+  {
+    "problem": "Chrome griddle top showing extensive rust formation under chrome plating with surface becoming rough and difficult to clean. Chrome flaking off in multiple areas.",
+    "solution": "Removed damaged chrome griddle plate and installed new factory replacement. Sealed mounting surface and adjusted leveling to prevent moisture infiltration.",
+    "parts": [
+      "Chrome Griddle Plate 36x24-inch 1/2-inch Thick",
+      "Plate Mounting Gasket Set Food Grade",
+      "Leveling Foot Assembly Adjustable 4-inch"
+    ]
+  },
+  {
+    "problem": "Gas safety valve failing to open despite proper thermocouple signal with griddle remaining cold even when controls set to maximum temperature. Manual gas shut-off valve functions normally.",
+    "solution": "Replaced defective combination gas valve and recalibrated opening pressure. Tested safety lockout system and verified proper thermocouple millivolt output.",
+    "parts": [
+      "Combination Gas Valve 3/4-inch NPT 24V",
+      "Gas Valve Actuator Motor 24V AC",
+      "Thermocouple Lead Wire 36-inch High-Temp"
+    ]
+  },
+  {
+    "problem": "Griddle ignition transformer producing weak spark with delayed ignition and occasional failure to light. Spark gap appears correct but arc intensity insufficient.",
+    "solution": "Replaced failed ignition transformer and cleaned spark electrode assemblies. Adjusted spark gap to specification and tested ignition timing sequence.",
+    "parts": [
+      "Ignition Transformer 15000V 35mA",
+      "Spark Electrode Assembly Ceramic Insulated",
+      "High-Voltage Ignition Wire 18-inch"
+    ]
+  },
+  {
+    "problem": "Temperature probe reading 75\u00b0F higher than actual griddle surface temperature causing food to undercook. Digital controller shows steady temperature but infrared gun readings differ significantly.",
+    "solution": "Calibrated temperature controller and replaced defective RTD temperature probe. Repositioned probe for better thermal contact with griddle plate.",
+    "parts": [
+      "RTD Temperature Probe 1000-Ohm Platinum",
+      "Temperature Controller Digital Display 240V",
+      "Thermal Compound Food-Grade High-Temp"
+    ]
+  },
+  {
+    "problem": "Grease drawer guide rails bent and binding causing drawer to stick halfway during removal. Excessive force required to operate with visible track deformation.",
+    "solution": "Straightened damaged guide rails using hydraulic press and replaced worn drawer slides. Lubricated mechanism with high-temperature food-grade grease.",
+    "parts": [
+      "Heavy-Duty Drawer Slides 20-inch 100lb Capacity",
+      "Stainless Steel Guide Rails Set",
+      "Food-Grade High-Temp Bearing Grease"
+    ]
+  },
+  {
+    "problem": "Gas burner air shutters vibrating loose during operation causing improper air-fuel mixture and sooting. Flames appear yellow-orange instead of blue.",
+    "solution": "Tightened all air shutter assemblies and replaced damaged adjustment screws. Rebalanced air-fuel mixture for optimal combustion across all burners.",
+    "parts": [
+      "Air Shutter Assembly Complete with Hardware",
+      "Adjustment Screw Set Stainless Steel",
+      "Burner Venturi Tube 8-inch Natural Gas"
+    ]
+  },
+  {
+    "problem": "Griddle surface warping with visible bow in center causing oil to pool and uneven cooking results. Warpage measured at 3/16-inch deviation from flat.",
+    "solution": "Removed and replaced warped griddle plate with heavy-duty reinforced version. Upgraded support structure and adjusted mounting points for even load distribution.",
+    "parts": [
+      "Heavy-Duty Griddle Plate 1/2-inch Extra Thick",
+      "Reinforcement Support Brackets Set of 4",
+      "Plate Support Channel 36-inch Stainless"
+    ]
+  },
+  {
+    "problem": "Electric heating element connections overheating with visible discoloration and burning smell from junction box. Power consumption fluctuating during operation.",
+    "solution": "Replaced burned electrical connections and upgraded to higher-rated terminal blocks. Retorqued all connections to proper specification and tested under full load.",
+    "parts": [
+      "High-Current Terminal Block 60A Ceramic",
+      "Electrical Junction Box NEMA 4X Stainless",
+      "Heat-Resistant Wire Nuts 600V Rated"
+    ]
+  },
+  {
+    "problem": "Splash guard mounting bolts shearing under thermal expansion stress with guard becoming loose and rattling. Multiple bolt failures observed at different locations.",
+    "solution": "Replaced failed mounting hardware with thermal expansion-rated bolts and added spring washers. Reinforced mounting points with backing plates.",
+    "parts": [
+      "Thermal Expansion Bolts 1/4-20 x 2-inch",
+      "Spring Washer Set Stainless Steel",
+      "Reinforcement Backing Plates 2x2-inch"
+    ]
+  },
+  {
+    "problem": "Gas pressure regulator delivering inconsistent pressure with gauge readings varying between 8-15 inches water column. Burner flames fluctuating in size correspondingly.",
+    "solution": "Rebuilt gas pressure regulator with new diaphragm and spring assembly. Calibrated output pressure to 11 inches water column and tested under varying load conditions.",
+    "parts": [
+      "Regulator Diaphragm Kit Natural Gas",
+      "Pressure Spring Assembly Adjustable",
+      "Gas Pressure Gauge 0-20 inch WC"
+    ]
+  },
+  {
+    "problem": "Thermostat capillary tube kinked and damaged causing erratic temperature control with sudden temperature spikes. Visual inspection shows tube crushed near connection point.",
+    "solution": "Replaced entire thermostat assembly including capillary sensing bulb and calibrated temperature response. Rerouted capillary tube to prevent future damage.",
+    "parts": [
+      "Hydraulic Thermostat 200-400\u00b0F Range",
+      "Capillary Tube Assembly 48-inch",
+      "Sensing Bulb Stainless Steel 1/4-inch"
+    ]
+  },
+  {
+    "problem": "Grease collection system backing up with drain line completely blocked by solidified grease and food particles. System overflowing onto kitchen floor during peak hours.",
+    "solution": "Hydro-jetted drain lines to remove blockage and installed grease separator system. Upgraded drain capacity with larger diameter piping and improved slope.",
+    "parts": [
+      "Automatic Grease Separator Unit",
+      "PVC Drain Pipe 2-inch Schedule 40",
+      "Floor Drain Grate Heavy-Duty Stainless"
+    ]
+  },
+  {
+    "problem": "Control knob shaft stripped and spinning freely without engaging valve stem. Temperature adjustment impossible with knob rotating continuously without resistance.",
+    "solution": "Replaced damaged valve stem and control knob assembly. Repaired stripped threads in valve body and ensured proper engagement between components.",
+    "parts": [
+      "Gas Valve Stem Assembly 1/4-turn",
+      "Control Knob with Set Screw Stainless",
+      "Thread Repair Insert Kit M8x1.25"
+    ]
+  },
+  {
+    "problem": "Gas griddle pressure regulator malfunctioning with BTU output dropping 30% during peak cooking times. Flames turn orange and griddle fails to maintain temperature under heavy load.",
+    "solution": "Replaced faulty gas pressure regulator and recalibrated gas line pressure to manufacturer specifications. Cleaned and adjusted primary air shutters on all burners.",
+    "parts": [
+      "Gas Pressure Regulator 3/4-inch NPT 11-inch WC",
+      "Primary Air Shutter Assembly Set (6 pieces)",
+      "Gas Line Pressure Gauge 0-14 WC"
+    ]
+  },
+  {
+    "problem": "Electric griddle contactor chattering and arcing with visible burn marks on electrical contacts. Unit experiences intermittent power loss and tripping of circuit breakers.",
+    "solution": "Installed new contactor assembly and replaced damaged wire terminals with heat-resistant connectors. Tightened all electrical connections and verified proper voltage supply.",
+    "parts": [
+      "Definite Purpose Contactor 40A 240V 3-Pole",
+      "High-Temp Wire Terminals 10AWG (12 pack)",
+      "Electrical Contact Cleaner Spray"
+    ]
+  },
+  {
+    "problem": "Griddle drain system backing up with grease solidifying in drain lines and causing slow water evacuation. Kitchen staff reports standing water in grease trough after cleaning.",
+    "solution": "Cleared blocked drain lines using commercial degreaser and installed new drain trap with larger capacity. Repositioned drain pipe slope for improved flow.",
+    "parts": [
+      "Commercial Grease Trap 20-Gallon Capacity",
+      "Drain Line Snake 1/2-inch x 25-foot",
+      "High-Temperature Drain Pipe 2-inch Schedule 40"
+    ]
+  },
+  {
+    "problem": "Gas griddle flame sensors dirty and corroded causing erratic safety shutdowns during normal operation. System fails flame detection test and requires constant manual restarting.",
+    "solution": "Cleaned flame sensor probes with fine abrasive cloth and replaced corroded sensor leads. Adjusted sensor positioning for optimal flame detection coverage.",
+    "parts": [
+      "Flame Sensor Probe Assembly 8-inch Length",
+      "High-Temperature Sensor Wire 18AWG",
+      "Flame Sensor Mounting Bracket Stainless Steel"
+    ]
+  },
+  {
+    "problem": "Electric griddle zone control board displaying random temperature readings with cooking zones heating inconsistently. Digital readout flickering between different temperature values.",
+    "solution": "Replaced defective control board and updated firmware to latest version. Recalibrated all temperature sensors and verified proper zone isolation.",
+    "parts": [
+      "Multi-Zone Control Board 240V 6-Zone",
+      "Temperature Sensor RTD Probe 1/4-inch NPT",
+      "Control Board Mounting Hardware Kit"
+    ]
+  },
+  {
+    "problem": "Gas griddle burner tubes warped from overheating with visible deformation causing uneven gas distribution. Hot spots and cold zones apparent across cooking surface.",
+    "solution": "Installed new burner tube assembly and realigned gas manifold connections. Adjusted gas orifice sizes to ensure uniform BTU distribution across all burners.",
+    "parts": [
+      "Stainless Steel Burner Tube 36-inch Length",
+      "Gas Orifice Drill Set #53-#60",
+      "Burner Tube Support Brackets (4 pieces)"
+    ]
+  },
+  {
+    "problem": "Chrome griddle surface developing hairline cracks with grease penetrating into base metal causing discoloration. Cooking performance degraded with increased food sticking.",
+    "solution": "Resurfaced griddle plate using diamond grinding wheel and applied new chrome plating treatment. Seasoned surface with high-temperature cooking oil per manufacturer protocol.",
+    "parts": [
+      "Chrome Plating Restoration Kit Industrial Grade",
+      "Diamond Grinding Wheel 7-inch 120-Grit",
+      "High-Temperature Griddle Seasoning Oil 1-Quart"
+    ]
+  },
+  {
+    "problem": "Electric griddle heating element terminals overheating with visible discoloration and loose connections. Power draw fluctuating and causing voltage drops in kitchen panel.",
+    "solution": "Replaced all heating element terminals with high-amperage connectors and upgraded wiring to proper gauge. Applied dielectric grease to prevent future corrosion.",
+    "parts": [
+      "High-Amp Terminal Block 50A 600V",
+      "THHN Wire 8AWG Stranded 25-foot",
+      "Dielectric Terminal Compound 4-ounce Tube"
+    ]
+  },
+  {
+    "problem": "Gas griddle automatic shut-off valve sticking in closed position preventing startup after cleaning cycles. Manual override requires excessive force to operate.",
+    "solution": "Disassembled and cleaned shut-off valve mechanism removing food debris and grease buildup. Replaced worn valve seats and lubricated moving components.",
+    "parts": [
+      "Gas Shut-Off Valve 3/4-inch NPT Automatic",
+      "Valve Seat Repair Kit with O-Rings",
+      "High-Temperature Valve Lubricant Food-Safe"
+    ]
+  },
+  {
+    "problem": "Griddle splash guard mounting bolts loosening from thermal expansion cycles causing rattling and grease leakage. Guard shifting position during operation.",
+    "solution": "Installed spring-loaded mounting hardware designed for thermal expansion and applied thread-locking compound. Realigned splash guard to proper clearances.",
+    "parts": [
+      "Spring-Loaded Mounting Bolts 1/4-20 x 2-inch (8 pack)",
+      "High-Temperature Thread Locker Red",
+      "Thermal Expansion Washers Stainless Steel"
+    ]
+  },
+  {
+    "problem": "Electric griddle ground fault protection circuit tripping intermittently with no visible moisture present. Kitchen losing cooking capacity during busy periods.",
+    "solution": "Identified degraded heating element insulation and replaced affected elements. Installed new GFCI breaker with higher sensitivity rating for commercial applications.",
+    "parts": [
+      "Griddle Heating Element 240V 3000W",
+      "Commercial GFCI Breaker 30A 240V",
+      "Element Insulation Tester Megohm Meter"
+    ]
+  },
+  {
+    "problem": "Gas griddle venturi tubes blocked with grease and debris causing poor air-gas mixture and sooting. Burner flames burning yellow with carbon deposits on cooking surface.",
+    "solution": "Removed and thoroughly cleaned all venturi tubes using compressed air and degreasing solvent. Adjusted primary air intake for optimal blue flame combustion.",
+    "parts": [
+      "Venturi Tube Assembly Complete Set",
+      "Compressed Air Blow Gun with Extensions",
+      "Commercial Degreasing Solvent 1-Gallon"
+    ]
+  },
+  {
+    "problem": "Griddle surface thermometer reading incorrectly with 50\u00b0F variance from actual surface temperature. Cooking times inconsistent and food quality suffering.",
+    "solution": "Calibrated surface thermometer using precision reference standards and replaced damaged thermal sensing bulb. Adjusted mounting depth for accurate readings.",
+    "parts": [
+      "Bi-Metal Surface Thermometer 2-inch Dial",
+      "Thermometer Calibration Kit with Standards",
+      "Thermal Sensing Bulb 6-inch Probe"
+    ]
+  },
+  {
+    "problem": "Electric griddle power relay contacts welded shut causing zones to remain energized continuously. Temperature control non-functional and overheating risk present.",
+    "solution": "Replaced power relay assembly with higher-rated contacts and installed surge protection device. Added thermal overload protection for each heating zone.",
+    "parts": [
+      "Power Relay 240V 40A DPDT",
+      "Surge Protection Device 240V Commercial",
+      "Thermal Overload Switch 180\u00b0F Auto-Reset"
+    ]
+  },
+  {
+    "problem": "Gas griddle flexible connector showing stress cracks near fitting connections with slight gas odor detected during leak test. Safety inspection required immediate attention.",
+    "solution": "Replaced entire flexible gas connector with new approved commercial-grade line and upgraded to larger diameter for improved flow. Pressure tested all connections.",
+    "parts": [
+      "Flexible Gas Connector 3/4-inch x 48-inch CSA Approved",
+      "Gas Line Thread Sealant High-Pressure",
+      "Digital Gas Leak Detector Instrument"
+    ]
+  },
+  {
+    "problem": "Electric griddle shorting to ground with circuit breaker tripping repeatedly during startup. Kitchen staff reports electrical shock sensations when touching griddle frame and burning smell from control panel area.",
+    "solution": "Replaced damaged wiring harness with water intrusion damage and installed new GFCI protection circuit. Rewired control panel connections with proper grounding and sealed all electrical junction boxes.",
+    "parts": [
+      "Control panel wiring harness 240V 16-gauge THWN",
+      "GFCI breaker 50-amp 240V double-pole",
+      "Electrical junction box NEMA 4X stainless steel"
+    ]
+  },
+  {
+    "problem": "Gas griddle producing sooty yellow flames with excessive carbon monoxide readings during health inspection. Burner flames unstable and wavering with poor combustion efficiency noted.",
+    "solution": "Cleaned and adjusted primary air shutters on all burners for proper air-to-gas mixture ratio. Replaced worn gas pressure regulator and calibrated manifold pressure to manufacturer specifications.",
+    "parts": [
+      "Gas pressure regulator 1/2-inch NPT 11-inch WC",
+      "Primary air shutter assembly set of 6",
+      "Manifold pressure gauge 0-15 WC digital"
+    ]
+  },
+  {
+    "problem": "Stainless steel griddle plate warped with 3/8-inch bow causing oil to pool in center and uneven cooking results. Plate shows stress cracks near mounting bolts from thermal expansion.",
+    "solution": "Removed and replaced entire griddle plate with heavy-duty reinforced version. Installed flexible mounting system with thermal expansion joints to prevent future warping.",
+    "parts": [
+      "Griddle plate 36-inch x 24-inch 1/2-inch thick reinforced steel",
+      "Thermal expansion joint kit stainless steel",
+      "Mounting bolt set M12 x 1.75 grade 8 heat-treated"
+    ]
+  },
+  {
+    "problem": "Gas control knob stems seized and cannot be turned with internal valve mechanisms corroded from steam exposure. Multiple control valves stuck in partially open positions affecting temperature control.",
+    "solution": "Disassembled and rebuilt all gas control valves with new stems and seals rated for high-temperature operation. Applied food-grade anti-seize compound to all threaded connections.",
+    "parts": [
+      "Gas valve stem assembly 1/2-inch with packing gland",
+      "High-temperature valve seal kit Viton O-rings",
+      "Food-grade anti-seize compound 4-oz tube"
+    ]
+  },
+  {
+    "problem": "Temperature probe sensor reading 200\u00b0F high causing griddle to underheat and automatic shutdowns during peak cooking periods. Digital controller shows sensor fault intermittently with erratic temperature displays.",
+    "solution": "Replaced failed RTD temperature sensor with calibrated unit and updated controller firmware to match new sensor specifications. Recalibrated temperature zones using certified reference thermometer.",
+    "parts": [
+      "RTD temperature sensor Pt100 1/8-inch diameter 6-inch probe",
+      "Digital temperature controller firmware update chip",
+      "Sensor mounting well 1/4-inch NPT stainless steel"
+    ]
+  }
+]

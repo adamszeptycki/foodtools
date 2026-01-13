@@ -1,0 +1,2714 @@
+{
+  "Ovens": [
+    {
+      "problem": "Convection oven temperature fluctuating wildly between 250\u00b0F and 450\u00b0F despite thermostat set to 350\u00b0F. Kitchen staff reports uneven baking and burnt food on one side.",
+      "solution": "Replaced faulty thermocouple that was providing erratic temperature readings to the control board. Calibrated temperature controller and verified proper sensor placement.",
+      "parts": [
+        "Thermocouple Type K 18-inch with 1/4-inch NPT fitting",
+        "Temperature Controller Digital PID 240V",
+        "High-temperature ceramic wire nuts"
+      ]
+    },
+    {
+      "problem": "Gas deck oven pilot light keeps going out every 2-3 hours, causing complete loss of heat. Flame sensor appears dirty and corroded.",
+      "solution": "Cleaned flame sensor with fine steel wool and replaced faulty thermocouple assembly. Adjusted gas pressure regulator to manufacturer specifications.",
+      "parts": [
+        "Flame Sensor Rod 6-inch stainless steel",
+        "Thermocouple Assembly 24-inch universal gas",
+        "Gas Pressure Regulator 1/2-inch NPT 11-inch WC"
+      ]
+    },
+    {
+      "problem": "Combi-steam oven producing insufficient steam with visible calcium buildup around steam injection nozzles. Steam generator cycling but minimal steam output observed.",
+      "solution": "Descaled steam generator using manufacturer-approved descaling solution and replaced clogged steam injection nozzles. Flushed entire steam system and tested output pressure.",
+      "parts": [
+        "Steam Injection Nozzle Assembly brass 1/8-inch",
+        "Steam Generator Heating Element 4500W 240V",
+        "Solenoid Valve 240V 1/4-inch NPT steam-rated"
+      ]
+    },
+    {
+      "problem": "Convection fan motor making loud grinding noise and running slower than normal, causing poor air circulation and uneven cooking results.",
+      "solution": "Replaced worn convection fan motor bearings and installed new motor assembly. Cleaned fan blade and housing of grease buildup that was causing additional drag.",
+      "parts": [
+        "Convection Fan Motor 1/3 HP 240V 1725 RPM",
+        "Fan Blade 12-inch diameter aluminum",
+        "Motor Mount Bracket heavy-duty steel"
+      ]
+    },
+    {
+      "problem": "Oven door not sealing properly with visible gaps at corners, causing heat loss and longer cooking times. Door gasket appears cracked and hardened.",
+      "solution": "Removed old door gasket and installed new high-temperature silicone seal. Adjusted door hinges and latch mechanism for proper alignment and compression.",
+      "parts": [
+        "Door Gasket high-temp silicone 8-foot length",
+        "Door Hinge Pin stainless steel 3/8-inch",
+        "Door Latch Assembly spring-loaded commercial grade"
+      ]
+    },
+    {
+      "problem": "Electric heating elements in bottom of deck oven not heating evenly, with cold spots visible on stone surface. Elements appear to have burn marks.",
+      "solution": "Replaced two damaged heating elements that had developed hot spots and were drawing inconsistent amperage. Rewired connections with high-temperature wire and new terminals.",
+      "parts": [
+        "Heating Element 5000W 240V tubular",
+        "High-temperature Wire 12 AWG 500\u00b0F rated",
+        "Terminal Block ceramic 240V 30A"
+      ]
+    },
+    {
+      "problem": "Digital control display shows error code and oven will not start heating cycle. Control board appears to have moisture damage from steam exposure.",
+      "solution": "Replaced water-damaged control board and installed protective cover shield. Reprogrammed controller with original parameters and tested all safety interlocks.",
+      "parts": [
+        "Control Board PCB assembly with display",
+        "Protective Cover polycarbonate steam-resistant",
+        "Ribbon Cable 20-pin flat conductor"
+      ]
+    },
+    {
+      "problem": "High-limit safety switch tripping every 20 minutes during normal operation, shutting down oven completely. Oven cavity temperature reads normal on main thermostat.",
+      "solution": "Replaced faulty high-limit switch that was tripping at 450\u00b0F instead of rated 550\u00b0F. Cleaned temperature probe and verified proper mounting location away from direct heat sources.",
+      "parts": [
+        "High-Limit Switch 550\u00b0F manual reset",
+        "RTD Temperature Probe 100-ohm platinum",
+        "Probe Mounting Bracket stainless steel adjustable"
+      ]
+    },
+    {
+      "problem": "Rapid-bake oven conveyor belt tracking to one side and scraping against side walls, causing belt damage and uneven product heating.",
+      "solution": "Adjusted belt tracking mechanism and replaced worn conveyor drive roller with proper crown. Realigned belt guides and tensioned to manufacturer specifications.",
+      "parts": [
+        "Conveyor Drive Roller 4-inch diameter crowned",
+        "Belt Tracking Guide adjustable stainless",
+        "Drive Belt polyester mesh 24-inch width"
+      ]
+    },
+    {
+      "problem": "Oven timer stuck at 15 minutes and will not advance, causing products to overcook. Digital display flickering intermittently during operation.",
+      "solution": "Replaced defective timer motor assembly and updated control software. Cleaned timer contact points and verified proper voltage supply to timing circuit.",
+      "parts": [
+        "Timer Motor Assembly 120V synchronous",
+        "Timer Contact Switch DPDT 15A",
+        "Control Software EPROM chip latest version"
+      ]
+    },
+    {
+      "problem": "Stone deck developing cracks and uneven heating patterns, with hot spots creating burnt areas on pizza crusts. Stone appears to have absorbed grease over time.",
+      "solution": "Removed and replaced damaged stone deck with new refractory material. Sealed stone surface and adjusted heating element positioning for even heat distribution.",
+      "parts": [
+        "Refractory Stone Deck 2-inch thick cordierite",
+        "Stone Sealer food-safe high-temperature",
+        "Support Rails stainless steel adjustable"
+      ]
+    },
+    {
+      "problem": "Gas ignition system failing to light burners reliably, requiring multiple attempts and causing delayed start-up. Igniter glowing but insufficient spark observed.",
+      "solution": "Replaced worn hot surface igniter with higher amperage model and cleaned gas orifices of debris. Adjusted gas valve timing sequence for reliable ignition.",
+      "parts": [
+        "Hot Surface Igniter silicon carbide 120V",
+        "Gas Valve Solenoid dual-stage 24V",
+        "Ignition Control Module solid-state with safety timer"
+      ]
+    },
+    {
+      "problem": "Oven cavity lighting flickering and two bulbs completely burned out, making it difficult for staff to monitor food during cooking cycles.",
+      "solution": "Replaced all interior light bulbs with high-temperature LED versions and repaired loose wiring connections in light fixture junction box.",
+      "parts": [
+        "LED Light Bulb 25W 500\u00b0F rated",
+        "Light Fixture high-temp glass lens",
+        "Junction Box stainless steel vapor-proof"
+      ]
+    },
+    {
+      "problem": "Excessive grease buildup in ventilation system causing poor exhaust and smoke backing into kitchen. Exhaust fan motor running but insufficient airflow measured.",
+      "solution": "Disassembled and deep cleaned entire exhaust system removing hardened grease deposits. Replaced exhaust fan motor that had seized bearings from grease contamination.",
+      "parts": [
+        "Exhaust Fan Motor 1/2 HP 240V high-temp rated",
+        "Fan Housing stainless steel grease-resistant",
+        "Ductwork Cleaning Kit industrial scrapers and brushes"
+      ]
+    },
+    {
+      "problem": "Combi-oven water level sensor giving false readings causing unit to shut down with 'low water' error despite full reservoir. Sensor probe covered with mineral deposits.",
+      "solution": "Replaced corroded water level sensor and installed new water filtration system to prevent mineral buildup. Flushed water lines and calibrated sensor readings.",
+      "parts": [
+        "Water Level Sensor stainless steel probe type",
+        "Water Filter cartridge sediment and scale",
+        "Water Solenoid Valve 120V 3/8-inch NPT"
+      ]
+    },
+    {
+      "problem": "Electric convection oven heating elements cycling on and off rapidly every 30 seconds, preventing oven from reaching set temperature of 425\u00b0F. Temperature controller display shows erratic readings jumping between temperatures.",
+      "solution": "Replaced faulty RTD temperature sensor that was providing incorrect feedback to the controller, causing rapid cycling. Recalibrated temperature controller and verified proper sensor placement in oven cavity.",
+      "parts": [
+        "RTD Temperature Sensor PT100 3-wire 6-inch probe",
+        "Temperature Controller PID Digital 240V",
+        "Sensor mounting bracket stainless steel"
+      ]
+    },
+    {
+      "problem": "Gas convection oven burner flames burning yellow and sooty instead of blue, creating excessive carbon buildup on oven walls. Gas pressure appears normal but combustion is incomplete.",
+      "solution": "Cleaned and adjusted primary air shutters on main burners to achieve proper air-to-gas ratio. Replaced clogged orifices that were restricting gas flow and causing poor combustion.",
+      "parts": [
+        "Gas burner orifices #54 drill size brass",
+        "Primary air shutter assembly",
+        "Flame sensor rod 8-inch length"
+      ]
+    },
+    {
+      "problem": "Combi-oven drain system backing up with standing water in bottom of unit, causing error messages and automatic shutdown. Water overflowing from drain pan during rinse cycles.",
+      "solution": "Cleared blocked drain line filled with food debris and scale buildup using enzymatic cleaner and mechanical snake. Replaced damaged drain valve that was not seating properly.",
+      "parts": [
+        "Drain valve assembly 1-inch NPT solenoid",
+        "Drain line flexible hose 1-inch diameter",
+        "Water level sensor probe 12-inch"
+      ]
+    },
+    {
+      "problem": "Deck oven door hinges binding and requiring excessive force to open, causing safety concerns for kitchen staff. Door alignment appears off and gasket compressed unevenly.",
+      "solution": "Replaced worn door hinge pins and bushings that had developed excessive play from repeated use. Adjusted door alignment and replaced compressed door gasket for proper sealing.",
+      "parts": [
+        "Door hinge pin set stainless steel 5/8-inch",
+        "Hinge bushing bronze sleeve bearing",
+        "Door gasket high-temp silicone 1-inch width"
+      ]
+    },
+    {
+      "problem": "Electric oven main contactor chattering and arcing when heating elements engage, creating sparks and burning smell. Electrical connections appear loose and overheated.",
+      "solution": "Replaced main heating contactor with burned contacts and loose coil. Tightened all electrical connections and applied dielectric grease to prevent future corrosion and arcing.",
+      "parts": [
+        "Contactor 3-pole 50-amp 240V coil",
+        "Wire nuts high-temp ceramic rated",
+        "Electrical contact cleaner spray"
+      ]
+    },
+    {
+      "problem": "Rapid-bake oven variable speed drive displaying fault codes and conveyor running at incorrect speeds. Drive overheating and fan cycling constantly to cool electronics.",
+      "solution": "Replaced damaged variable frequency drive that had internal component failure from heat exposure. Installed additional ventilation fan to prevent future overheating of drive electronics.",
+      "parts": [
+        "Variable Frequency Drive 2HP 480V",
+        "Cooling fan 120V 4-inch axial",
+        "Drive mounting bracket with heat sink"
+      ]
+    },
+    {
+      "problem": "Gas oven flame rollout switch tripping during normal operation, shutting down main burners immediately after ignition. Switch appears to be sensing flames outside combustion chamber.",
+      "solution": "Cleaned blocked heat exchanger passages that were causing flame impingement and rollout. Replaced heat-damaged rollout switch that had become overly sensitive from repeated exposure.",
+      "parts": [
+        "Flame rollout switch manual reset 250\u00b0F",
+        "Heat exchanger gasket high-temp fiber",
+        "Burner tube cleaning brush kit"
+      ]
+    },
+    {
+      "problem": "Convection oven door latch mechanism not engaging properly, allowing door to open during cooking cycles and triggering safety shutdowns. Latch spring appears weakened and worn.",
+      "solution": "Replaced door latch assembly including worn spring mechanism and striker plate. Adjusted door alignment to ensure proper engagement and tested safety interlocks for proper operation.",
+      "parts": [
+        "Door latch assembly spring-loaded",
+        "Striker plate stainless steel adjustable",
+        "Safety microswitch SPDT 15-amp"
+      ]
+    },
+    {
+      "problem": "Electric deck oven bottom heating elements drawing excessive current and tripping 50-amp breaker repeatedly. Elements glowing cherry red and overheating stone deck surface.",
+      "solution": "Replaced shorted heating elements that had internal insulation breakdown causing current leakage. Tested element resistance and verified proper electrical isolation before reassembly.",
+      "parts": [
+        "Heating element 240V 5000W tubular",
+        "Element mounting bracket ceramic",
+        "High-limit switch 500\u00b0F manual reset"
+      ]
+    },
+    {
+      "problem": "Combi-oven steam generator not producing steam despite water supply being adequate and heating elements functioning. Steam chamber pressure gauge reading zero during steam mode.",
+      "solution": "Descaled steam generator chamber that was completely blocked with mineral deposits preventing steam formation. Replaced damaged steam solenoid valve that was not opening properly.",
+      "parts": [
+        "Steam solenoid valve 3/4-inch 24V",
+        "Descaling solution commercial grade",
+        "Steam chamber gasket EPDM rubber"
+      ]
+    },
+    {
+      "problem": "Oven exhaust blower motor seized and not rotating, causing excessive heat buildup in oven cavity and triggering high-limit shutdowns. Motor windings appear burned from overheating.",
+      "solution": "Replaced burned-out exhaust blower motor and cleaned grease-clogged impeller that had caused motor overload. Balanced impeller and verified proper belt tension after installation.",
+      "parts": [
+        "Exhaust blower motor 1/2HP 208V",
+        "Blower wheel 10-inch diameter",
+        "Motor drive belt B-section 62-inch"
+      ]
+    },
+    {
+      "problem": "Gas oven electronic ignition module clicking continuously but failing to light main burners. Igniter electrode gap appears correct but spark is weak and intermittent.",
+      "solution": "Replaced failed ignition module with degraded transformer output causing insufficient spark energy. Cleaned igniter electrodes and verified proper grounding of ignition system.",
+      "parts": [
+        "Electronic ignition module 120V input",
+        "Igniter electrode ceramic insulated",
+        "Ignition wire high-voltage rated 18-inch"
+      ]
+    },
+    {
+      "problem": "Programmable oven controller losing memory settings and reverting to default programs after power cycles. Clock time resetting and stored recipes being deleted randomly.",
+      "solution": "Replaced internal backup battery in controller that was no longer holding charge for memory retention. Updated controller firmware and restored all customer recipe programs from backup.",
+      "parts": [
+        "Lithium backup battery 3V coin cell",
+        "Controller firmware chip EPROM",
+        "Memory expansion module 64KB"
+      ]
+    },
+    {
+      "problem": "Deck oven stone surface developing hot and cold zones with temperature variations exceeding 100\u00b0F across baking area. Infrared temperature readings showing uneven heat distribution patterns.",
+      "solution": "Replaced damaged radiant heat deflector plates beneath stone that had warped from thermal cycling. Recalibrated zone heating controls and verified even temperature distribution across deck.",
+      "parts": [
+        "Heat deflector plate stainless steel",
+        "Zone temperature sensor thermocouple",
+        "Thermal insulation blanket ceramic fiber"
+      ]
+    },
+    {
+      "problem": "Convection oven control panel buttons becoming unresponsive and display showing garbled characters intermittently. Membrane switch overlay appears cracked and moisture damaged.",
+      "solution": "Replaced damaged membrane switch overlay and control panel display module that had moisture intrusion from steam exposure. Sealed all panel connections with waterproof gaskets.",
+      "parts": [
+        "Membrane switch overlay tactile",
+        "LCD display module 4x20 character",
+        "Panel gasket kit silicone rubber"
+      ]
+    },
+    {
+      "problem": "Combi-steam oven steam generator producing excessive noise and vibration during steam cycles, with visible mineral scale buildup on internal components. Water pump motor running continuously even when steam demand is low.",
+      "solution": "Descaled steam generator system using manufacturer-approved descaling solution and replaced worn water pump motor assembly. Calibrated water flow sensors and adjusted pump cycling parameters.",
+      "parts": [
+        "Water pump motor assembly 1/8 HP 120V with mounting bracket",
+        "Descaling solution concentrate 1-gallon commercial grade",
+        "Water flow sensor 1/4-inch NPT thread"
+      ]
+    },
+    {
+      "problem": "Electric deck oven bottom heating elements glowing bright red but producing insufficient heat, with resistance readings showing 50% higher than specification. Baking times increased significantly for pizza and bread products.",
+      "solution": "Replaced degraded heating elements that had developed internal breaks and hot spots. Verified proper voltage supply and tightened all electrical connections to prevent future element failure.",
+      "parts": [
+        "Electric heating element 5000W 240V 24-inch serpentine",
+        "High-temperature ceramic wire nuts rated 480V",
+        "Element mounting brackets stainless steel set of 4"
+      ]
+    },
+    {
+      "problem": "Convection oven exhaust blower motor running but producing minimal airflow, causing excessive moisture and grease accumulation in oven cavity. Motor amperage reading normal but fan blade damaged.",
+      "solution": "Replaced bent and cracked exhaust fan impeller assembly and rebalanced motor shaft. Cleaned accumulated grease from housing and verified proper belt tension on motor drive.",
+      "parts": [
+        "Exhaust fan impeller 12-inch diameter stainless steel",
+        "Motor drive belt 3L320 industrial grade",
+        "Motor shaft bearing assembly sealed 6203-2RS"
+      ]
+    },
+    {
+      "problem": "Gas convection oven electronic ignition module sparking continuously but failing to establish stable flame, causing burner lockout after 30 seconds. Igniter electrode gap appears correct but weak spark visible.",
+      "solution": "Replaced faulty electronic ignition control module and cleaned corroded electrode connections. Adjusted electrode gap to manufacturer specification and tested ignition sequence timing.",
+      "parts": [
+        "Electronic ignition control module 24VAC with flame sensing",
+        "Igniter electrode assembly with 3/16-inch gap setting",
+        "High-voltage ignition cable 18-inch length"
+      ]
+    },
+    {
+      "problem": "Rapid-bake oven temperature probe reading 100\u00b0F below actual cavity temperature, causing extended baking cycles and inconsistent product quality. Probe appears physically intact but temperature differential increasing.",
+      "solution": "Replaced drift-calibrated RTD temperature sensor and recalibrated temperature controller to factory specifications. Verified probe placement and thermal coupling to oven cavity.",
+      "parts": [
+        "RTD temperature sensor Pt100 Class A 6-inch probe",
+        "Temperature controller 1/16 DIN PID digital display",
+        "Probe mounting thermowell 1/2-inch NPT stainless"
+      ]
+    },
+    {
+      "problem": "Combi-oven humidity sensor providing erratic readings causing automatic cooking programs to fail mid-cycle. Sensor readings fluctuating between 20% and 95% humidity regardless of actual conditions.",
+      "solution": "Replaced contaminated humidity sensor element and cleaned sensor housing of grease and food residue. Performed sensor calibration using certified humidity reference standards.",
+      "parts": [
+        "Humidity sensor element capacitive type 0-100% RH",
+        "Sensor housing assembly IP65 rated stainless steel",
+        "Calibration kit with 75% RH salt solution"
+      ]
+    },
+    {
+      "problem": "Electric convection oven main power contactor coil overheating and dropping out intermittently, causing complete loss of heating during busy service periods. Contactor contacts showing pitting and burning.",
+      "solution": "Replaced overheated main power contactor with proper amperage rating and installed suppression circuit to reduce coil stress. Tightened all power connections and verified proper wire sizing.",
+      "parts": [
+        "Power contactor 3-pole 50A 240VAC coil with auxiliary contacts",
+        "RC suppression circuit 120VAC rated",
+        "Power terminal lugs 6 AWG crimp type set of 6"
+      ]
+    },
+    {
+      "problem": "Deck oven steam injection system producing inconsistent steam bursts with visible air bubbles in water supply lines. Steam quality poor with excessive water droplets rather than dry steam.",
+      "solution": "Replaced malfunctioning steam solenoid valve and installed water line air purge system. Adjusted steam pressure regulator and cleaned mineral deposits from injection nozzles.",
+      "parts": [
+        "Steam solenoid valve 1/2-inch NPT 24VAC normally closed",
+        "Pressure regulator 0-15 PSI adjustable with gauge",
+        "Steam injection nozzles stainless steel set of 4"
+      ]
+    },
+    {
+      "problem": "Gas deck oven flame safety sensor failing to detect pilot flame consistently, causing nuisance shutdowns every 45 minutes during normal operation. Sensor appears clean but flame detection unreliable.",
+      "solution": "Replaced aging flame safety sensor with UV-sensitive photoelectric type and adjusted sensor positioning for optimal flame detection. Cleaned and aligned pilot burner orifice.",
+      "parts": [
+        "UV flame sensor photoelectric type with 2-second response",
+        "Sensor mounting bracket adjustable stainless steel",
+        "Pilot burner orifice #54 drill natural gas"
+      ]
+    },
+    {
+      "problem": "Convection oven door latch mechanism sticking and requiring excessive force to engage, creating safety hazard for kitchen staff. Latch springs appear compressed and striker plate worn.",
+      "solution": "Replaced worn door latch assembly and striker plate, then adjusted door alignment to ensure smooth operation. Lubricated all pivot points with high-temperature food-safe grease.",
+      "parts": [
+        "Door latch assembly heavy-duty with spring return",
+        "Striker plate stainless steel with wear insert",
+        "High-temperature grease NSF certified 4-oz tube"
+      ]
+    },
+    {
+      "problem": "Electric combi-oven heating elements in steam generator compartment showing signs of corrosion and reduced heating capacity. Scale buildup visible on element surfaces affecting heat transfer efficiency.",
+      "solution": "Replaced corroded steam generator heating elements and performed complete system descaling procedure. Installed water filtration system to prevent future mineral buildup and corrosion.",
+      "parts": [
+        "Steam generator heating element 3000W 240V Incoloy sheath",
+        "Water filter cartridge 5-micron sediment type",
+        "Heating element gasket set high-temperature silicone"
+      ]
+    },
+    {
+      "problem": "Rapid-bake oven conveyor motor overheating and tripping thermal overload protection during peak usage periods. Motor housing hot to touch and belt showing signs of slippage.",
+      "solution": "Replaced overloaded conveyor drive motor with higher capacity unit and adjusted belt tension to manufacturer specifications. Cleaned accumulated flour and debris from motor ventilation.",
+      "parts": [
+        "Conveyor motor 1/2 HP 120V totally enclosed fan cooled",
+        "Drive belt V-type 4L380 oil and heat resistant",
+        "Motor thermal overload relay 5.8-8.5A adjustable"
+      ]
+    },
+    {
+      "problem": "Gas convection oven pressure regulator diaphragm ruptured causing erratic gas pressure and unstable flame patterns. Burner flames varying in height and producing incomplete combustion.",
+      "solution": "Replaced damaged gas pressure regulator assembly and tested system for proper outlet pressure regulation. Performed complete combustion analysis and adjusted air-to-gas mixture ratios.",
+      "parts": [
+        "Gas pressure regulator 1/2-inch NPT 4-12 inch WC adjustable",
+        "Regulator diaphragm kit with springs and hardware",
+        "Gas pressure gauge 0-15 inch WC liquid filled"
+      ]
+    },
+    {
+      "problem": "Electric deck oven stone surface developing hot spots and uneven temperature distribution, with pyrometer readings showing 75\u00b0F variance across baking surface. Stone appears to have hairline cracks developing.",
+      "solution": "Replaced cracked baking stone with segmented design for better thermal expansion control and rebalanced heating element power distribution. Calibrated surface temperature sensors.",
+      "parts": [
+        "Segmented baking stone set 1-inch thick cordierite",
+        "Surface temperature sensor RTD flat mounting type",
+        "Stone support rails stainless steel adjustable"
+      ]
+    },
+    {
+      "problem": "Combi-oven water level switch providing false high-level readings causing unit to overflow during fill cycles. Switch float mechanism appears to be sticking in up position.",
+      "solution": "Replaced malfunctioning water level switch assembly and cleaned mineral deposits from float chamber. Adjusted switch activation point and tested complete fill and drain cycle operation.",
+      "parts": [
+        "Water level switch assembly with adjustable float",
+        "Float chamber cleaning brush kit",
+        "Switch mounting gasket food-grade EPDM rubber"
+      ]
+    },
+    {
+      "problem": "Rapid-bake oven heating elements on one side completely dead with no power reaching the elements, causing half of products to remain raw while other half cooks normally. Electrical meter shows no continuity through affected heating circuit.",
+      "solution": "Replaced failed power relay that controls heating elements and installed new circuit breaker that was internally damaged from previous electrical surge. Tested all heating zones for proper voltage and current draw after repairs.",
+      "parts": [
+        "Power Relay 40A 240V DPDT",
+        "Circuit Breaker 30A 2-pole 240V",
+        "Wire Nuts 12AWG rated (6-pack)"
+      ]
+    },
+    {
+      "problem": "Combi-oven steam generator producing rusty water and metallic-tasting steam, with visible corrosion inside steam chamber. Water quality test shows high iron content and pH imbalance affecting food quality.",
+      "solution": "Replaced corroded steam generator tank assembly and installed new water filtration system with deionizer cartridge. Flushed entire water system with descaling solution and recalibrated water quality sensors.",
+      "parts": [
+        "Steam Generator Tank 6-gallon stainless steel",
+        "Water Filter Cartridge deionizer type",
+        "Water Quality Sensor pH/conductivity probe"
+      ]
+    },
+    {
+      "problem": "Gas deck oven experiencing delayed ignition with loud 'whooshing' sounds during startup, creating dangerous gas accumulation before lighting. Ignition sequence taking 15-20 seconds instead of normal 3-5 seconds.",
+      "solution": "Replaced worn gas valve actuator motor and cleaned clogged gas orifices that were restricting proper gas flow. Adjusted ignition timing sequence in control module to ensure safer startup cycle.",
+      "parts": [
+        "Gas Valve Actuator Motor 120V synchronous",
+        "Gas Orifice Set #54 drill size brass",
+        "Ignition Control Module programmable sequence"
+      ]
+    },
+    {
+      "problem": "Electric convection oven fan motor overheating and shutting down on thermal protection after 45 minutes of operation, causing loss of air circulation during peak cooking periods. Motor housing extremely hot to touch.",
+      "solution": "Replaced seized motor bearings and installed new thermal protection switch with higher temperature rating. Cleaned accumulated grease from motor housing and improved ventilation around motor compartment.",
+      "parts": [
+        "Motor Bearing Set 6203-2RS sealed type",
+        "Thermal Overload Switch 160\u00b0C reset",
+        "Motor Mount Gasket high-temperature silicone"
+      ]
+    },
+    {
+      "problem": "Combi-oven humidity sensor providing incorrect readings causing unit to add excessive steam during baking modes, resulting in soggy bread products. Sensor reading 90% humidity in dry heat mode.",
+      "solution": "Replaced failed capacitive humidity sensor that had moisture infiltration in sensor housing and recalibrated humidity control system. Updated sensor mounting position away from direct steam exposure area.",
+      "parts": [
+        "Humidity Sensor capacitive 0-100% RH",
+        "Sensor Housing stainless steel IP65",
+        "Calibration Kit 33% and 75% RH standards"
+      ]
+    }
+  ],
+  "Fryers": [
+    {
+      "problem": "Gas fryer fails to ignite and displays error code E3, with pilot light not lighting despite gas flow being present.",
+      "solution": "Replaced faulty thermocouple that was not generating sufficient millivoltage to keep gas valve open, and cleaned pilot orifice of carbon buildup.",
+      "parts": [
+        "Thermocouple Type K 24-inch 750\u00b0F rated",
+        "Pilot orifice #56 drill size",
+        "Gas valve solenoid coil 24V"
+      ]
+    },
+    {
+      "problem": "Electric fryer heating elements cycle on and off rapidly, causing oil temperature to fluctuate between 280\u00b0F and 380\u00b0F instead of maintaining set temperature.",
+      "solution": "Replaced malfunctioning solid-state temperature controller that had internal relay failure, and calibrated new controller to proper temperature differential.",
+      "parts": [
+        "Digital temperature controller 240V with K-type input",
+        "Temperature probe RTD 1/8-inch NPT",
+        "Contactor 40-amp 240V 3-pole"
+      ]
+    },
+    {
+      "problem": "Fryer high-limit safety switch keeps tripping at 375\u00b0F, shutting down unit even though thermostat is set to 350\u00b0F.",
+      "solution": "Replaced defective high-limit switch with incorrect temperature rating and relocated temperature bulb away from direct heating element contact.",
+      "parts": [
+        "High-limit safety switch 400\u00b0F manual reset",
+        "Capillary tube 6-feet stainless steel",
+        "Temperature bulb 1/4-inch diameter"
+      ]
+    },
+    {
+      "problem": "Oil filtration system pump runs continuously but no oil circulates through filter, with pump making grinding noise.",
+      "solution": "Replaced seized pump motor and damaged impeller assembly, then primed system and adjusted flow control valve.",
+      "parts": [
+        "Pump motor 1/3 HP 115V single-phase",
+        "Impeller assembly 3-inch diameter bronze",
+        "Mechanical seal kit for pump housing"
+      ]
+    },
+    {
+      "problem": "Basket lift mechanism moves up slowly and stops halfway, requiring manual assistance to reach full height.",
+      "solution": "Rebuilt pneumatic cylinder with new seals and adjusted air pressure regulator to proper 80 PSI operating pressure.",
+      "parts": [
+        "Pneumatic cylinder rebuild kit with O-rings",
+        "Air pressure regulator 0-120 PSI",
+        "Solenoid valve 120V 1/4-inch NPT"
+      ]
+    },
+    {
+      "problem": "Gas fryer loses flame during cooking cycles and safety system shuts off gas flow, occurring randomly throughout the day.",
+      "solution": "Replaced corroded flame sensor rod that was giving intermittent signal and cleaned burner ports to ensure proper flame pattern.",
+      "parts": [
+        "Flame sensor rod 8-inch stainless steel",
+        "Gas valve safety module 24V",
+        "Burner orifice set natural gas BTU rated"
+      ]
+    },
+    {
+      "problem": "Control panel timer display is blank and touch buttons are unresponsive, though fryer heating elements still function manually.",
+      "solution": "Replaced failed control board with blown capacitors and updated firmware to latest version for improved reliability.",
+      "parts": [
+        "Control board assembly with LCD display",
+        "Membrane switch overlay keypad",
+        "Power supply board 12V/5V output"
+      ]
+    },
+    {
+      "problem": "Oil drains extremely slowly from fryer tank taking over 30 minutes to empty, with visible debris backing up in drain line.",
+      "solution": "Replaced clogged drain valve with full-port ball valve and cleared grease blockage from drain piping with mechanical snake.",
+      "parts": [
+        "Ball valve 2-inch full-port stainless steel",
+        "Drain coupling 2-inch NPT threaded",
+        "Flexible drain hose 2-inch ID food-grade"
+      ]
+    },
+    {
+      "problem": "Electric fryer heating elements glow red-hot continuously and oil temperature exceeds 450\u00b0F despite thermostat setting of 325\u00b0F.",
+      "solution": "Replaced welded-closed contactor contacts that could not open circuit and installed new temperature sensor with proper calibration.",
+      "parts": [
+        "Contactor 50-amp 240V NEMA rated",
+        "Temperature sensor RTD Pt100 6-inch probe",
+        "Control relay 24V coil DPDT contacts"
+      ]
+    },
+    {
+      "problem": "Fryer oil level sensor gives false readings showing empty tank when oil level is adequate, triggering unnecessary low-oil alarms.",
+      "solution": "Cleaned oil buildup from capacitive level sensor probe and replaced sensor electronics module with recalibrated unit.",
+      "parts": [
+        "Capacitive oil level sensor 12-inch probe",
+        "Sensor electronics module 24V DC",
+        "Mounting bracket stainless steel adjustable"
+      ]
+    },
+    {
+      "problem": "Gas fryer burner flames are yellow and sooty instead of blue, with black residue accumulating on fryer tank bottom.",
+      "solution": "Adjusted primary air shutter for proper air-gas mixture and replaced worn burner venturi tube that was restricting airflow.",
+      "parts": [
+        "Burner venturi tube assembly",
+        "Primary air shutter adjustment plate",
+        "Gas orifice spud natural gas #43 drill"
+      ]
+    },
+    {
+      "problem": "Fryer tank develops pinhole leak near heating element mounting area, causing oil to drip onto floor during operation.",
+      "solution": "Welded and reinforced tank wall with food-grade stainless steel patch, then pressure tested system before returning to service.",
+      "parts": [
+        "Stainless steel patch plate 6x6 inch 16-gauge",
+        "Food-grade welding rod 308L stainless",
+        "Tank drain gasket high-temperature rated"
+      ]
+    },
+    {
+      "problem": "Filter pump cycles on randomly every few minutes even when filtration is not requested, causing oil level fluctuations.",
+      "solution": "Replaced faulty filter pump relay that had internal contact welding and reprogrammed control logic to prevent unwanted pump activation.",
+      "parts": [
+        "Control relay 120V coil 30-amp contacts",
+        "Relay socket 11-pin octal base",
+        "Control board EPROM chip programmed"
+      ]
+    },
+    {
+      "problem": "Fryer thermostat reads 50\u00b0F lower than actual oil temperature measured with calibrated thermometer, causing overcooking of products.",
+      "solution": "Replaced temperature probe with correct resistance curve and recalibrated control system using precision temperature calibrator.",
+      "parts": [
+        "RTD temperature probe Pt1000 8-inch stem",
+        "Thermostat controller analog 0-500\u00b0F range",
+        "Calibration resistor set precision 0.1%"
+      ]
+    },
+    {
+      "problem": "Gas safety valve clicks repeatedly but will not open to allow gas flow to main burner, despite successful pilot light operation.",
+      "solution": "Replaced gas safety valve with corroded internal components and adjusted pilot gas pressure to proper millivolt output for valve operation.",
+      "parts": [
+        "Gas safety valve 3/4-inch NPT 24V",
+        "Pressure regulator 11-inch WC natural gas",
+        "Thermopile generator 750mV output rating"
+      ]
+    },
+    {
+      "problem": "Electric fryer displays error code E7 and shuts down after 10 minutes of operation, with contactors chattering and cycling rapidly during heating cycles.",
+      "solution": "Replaced worn contactors and cleaned oxidized electrical connections in control box. Adjusted voltage settings and verified proper amperage draw on all heating circuits.",
+      "parts": [
+        "Contactor 40A 240V 3-pole NEMA rated",
+        "Terminal block connector strips 12AWG",
+        "Control relay 24V SPDT 10A"
+      ]
+    },
+    {
+      "problem": "Gas fryer produces weak flames that cannot maintain oil temperature above 250\u00b0F, with gas pressure reading only 2 inches water column at manifold.",
+      "solution": "Cleaned gas orifices and replaced clogged gas regulator assembly. Adjusted gas pressure to manufacturer specification of 4 inches water column and tested flame characteristics.",
+      "parts": [
+        "Gas pressure regulator 1/2-inch NPT natural gas",
+        "Gas orifice set #54 drill size",
+        "Gas manifold gasket kit"
+      ]
+    },
+    {
+      "problem": "Fryer drain valve leaks oil continuously from handle area and will not close completely, creating safety hazard and oil loss.",
+      "solution": "Disassembled drain valve assembly and replaced worn valve seat and handle packing. Applied high-temperature thread sealant and adjusted valve stem tension.",
+      "parts": [
+        "Drain valve seat stainless steel 1-inch",
+        "Valve stem packing PTFE high-temp",
+        "Ball valve handle assembly 1-inch"
+      ]
+    },
+    {
+      "problem": "Oil filtration system creates excessive foam in fryer vat during filtering cycle, with oil overflowing and filter pump drawing air intermittently.",
+      "solution": "Replaced damaged return line diffuser and cleaned filter pump suction strainer. Adjusted pump flow rate and verified proper oil return positioning to minimize turbulence.",
+      "parts": [
+        "Oil return diffuser perforated stainless",
+        "Filter pump strainer 40-mesh stainless",
+        "Oil pump impeller assembly 1/3 HP"
+      ]
+    },
+    {
+      "problem": "Fryer temperature probe reads erratically jumping between 150\u00b0F and 400\u00b0F randomly, causing inconsistent heating and product quality issues.",
+      "solution": "Diagnosed faulty RTD temperature probe with multimeter testing and replaced entire probe assembly. Calibrated new sensor and verified accurate temperature readings throughout range.",
+      "parts": [
+        "RTD temperature probe 1000-ohm platinum",
+        "Probe well stainless steel 6-inch",
+        "Temperature sensor cable 4-wire shielded"
+      ]
+    },
+    {
+      "problem": "Electric fryer makes loud humming noise from heating elements and draws excessive amperage, tripping 50-amp breaker after 15 minutes of operation.",
+      "solution": "Found heating elements with internal short circuits and replaced complete element assembly. Tested electrical load and verified proper amperage draw within specifications.",
+      "parts": [
+        "Heating element 15kW 240V immersion type",
+        "Element gasket high-temperature silicone",
+        "Element terminal box weatherproof NEMA 4"
+      ]
+    },
+    {
+      "problem": "Basket lift mechanism jerks violently during raise cycle and motor stalls with burning smell, requiring multiple attempts to lift baskets fully.",
+      "solution": "Replaced seized lift motor bearings and cleaned accumulated grease from gear reduction box. Lubricated lift chains and adjusted motor timing controls.",
+      "parts": [
+        "Lift motor 1/2 HP 115V reversible",
+        "Motor bearing set sealed ball type",
+        "Gear reduction oil SAE 90 weight"
+      ]
+    },
+    {
+      "problem": "Fryer control panel displays correct temperature but heating system does not respond to thermostat calls, remaining cold during cooking cycles.",
+      "solution": "Diagnosed failed control relay in temperature controller and replaced solid-state relay module. Cleaned control board connections and updated temperature control parameters.",
+      "parts": [
+        "Solid state relay 25A 240V zero-cross",
+        "Control board fuse 3A slow-blow",
+        "Thermostat control module digital"
+      ]
+    },
+    {
+      "problem": "Gas fryer produces loud popping and rumbling noises during ignition sequence, with delayed ignition causing flame rollout from burner area.",
+      "solution": "Cleaned burner orifices and replaced damaged ignition electrode assembly. Adjusted gas-air mixture and synchronized ignition timing with gas valve opening sequence.",
+      "parts": [
+        "Ignition electrode ceramic insulated",
+        "Spark ignition module 120V intermittent",
+        "Burner orifice spud brass #45"
+      ]
+    },
+    {
+      "problem": "Fryer oil level drops significantly during filtration cycles and takes excessive time to return, with visible air bubbles in return oil stream.",
+      "solution": "Replaced cracked oil return line and tightened loose fittings in filtration plumbing. Cleaned filter tank and adjusted return oil flow rate to eliminate cavitation.",
+      "parts": [
+        "Oil return line 1-inch stainless flex",
+        "Compression fitting set 1-inch NPT",
+        "Filter tank drain valve 3/4-inch ball"
+      ]
+    },
+    {
+      "problem": "Electric fryer heating elements cycle properly but oil temperature never exceeds 275\u00b0F, with elements appearing to have reduced heating capacity.",
+      "solution": "Tested heating elements and found 30% voltage drop due to corroded electrical connections. Replaced contactors and cleaned all electrical connections in junction box.",
+      "parts": [
+        "Electrical contactor 30A 240V 3-pole",
+        "Wire nuts high-temperature ceramic",
+        "Junction box gasket neoprene seal"
+      ]
+    },
+    {
+      "problem": "Gas fryer safety system locks out after pilot proves but main burner fails to light, displaying fault code F4 on control panel.",
+      "solution": "Replaced faulty flame sensor with poor microamp signal and cleaned main burner crossover tubes. Adjusted pilot flame position to improve main burner ignition reliability.",
+      "parts": [
+        "Flame sensor rod stainless steel",
+        "Burner crossover tube stainless",
+        "Ignition control module Honeywell S8610"
+      ]
+    },
+    {
+      "problem": "Fryer timer functions work but cook cycle automatically extends beyond set time, with timer display showing incorrect remaining time during operation.",
+      "solution": "Diagnosed faulty timer relay in control circuit and replaced digital timer module. Recalibrated timing parameters and verified accurate cycle timing across all preset programs.",
+      "parts": [
+        "Digital timer module 24V programmable",
+        "Timer relay DPDT 10A contacts",
+        "Control circuit fuse 5A fast-blow"
+      ]
+    },
+    {
+      "problem": "Oil filtration pump motor overheats and trips thermal overload protection after 5 minutes of operation, with motor housing becoming extremely hot.",
+      "solution": "Found blocked pump impeller and cleaned debris from pump housing. Replaced worn motor bearings and verified proper motor ventilation and cooling air flow.",
+      "parts": [
+        "Pump motor 1/3 HP 115V capacitor start",
+        "Motor thermal overload switch",
+        "Pump impeller bronze with stainless shaft"
+      ]
+    },
+    {
+      "problem": "Fryer vat develops hairline crack near drain fitting causing slow oil seepage, with crack visible when oil temperature exceeds 350\u00b0F.",
+      "solution": "Drained and cleaned fryer vat completely, then applied high-temperature food-grade epoxy repair compound. Reinforced repair area with stainless steel patch plate and retested under pressure.",
+      "parts": [
+        "High-temp epoxy repair compound food-grade",
+        "Stainless steel patch plate 16-gauge",
+        "Drain fitting gasket PTFE reinforced"
+      ]
+    },
+    {
+      "problem": "Electric fryer contactor coil burns out causing loud humming sound and no heating, with visible burn marks on contactor housing and acrid smell.",
+      "solution": "Replaced failed contactor assembly and inspected electrical connections for proper wire gauge and tightness to prevent future coil burnout.",
+      "parts": [
+        "Contactor 3-pole 40A 240V",
+        "Wire nuts 12-14 AWG",
+        "Electrical cleaner spray"
+      ]
+    },
+    {
+      "problem": "Gas fryer combustion air blower motor seized causing incomplete combustion and carbon monoxide production, with motor shaft locked and windings overheated.",
+      "solution": "Installed new combustion air blower motor and cleaned burner assembly of carbon buildup to restore proper air-fuel mixture.",
+      "parts": [
+        "Blower motor 1/6 HP 115V 1750 RPM",
+        "Motor capacitor 5 MFD 370V",
+        "Burner cleaning brush set"
+      ]
+    },
+    {
+      "problem": "Fryer vat shows warping and oil pooling in corners due to overheating damage, with visible metal discoloration and uneven oil distribution during cooking.",
+      "solution": "Replaced damaged fryer vat assembly and recalibrated temperature controls to prevent future overheating and thermal damage.",
+      "parts": [
+        "Fryer vat assembly stainless steel 40-lb capacity",
+        "Vat gasket kit",
+        "Temperature calibration thermometer"
+      ]
+    },
+    {
+      "problem": "Electric fryer heating element terminal block shows signs of arcing with blackened connections and intermittent power loss during peak heating demand.",
+      "solution": "Replaced heating element terminal block and installed new high-temperature wire connections rated for continuous duty operation.",
+      "parts": [
+        "Terminal block ceramic 3-pole 50A",
+        "High-temp wire 10 AWG THWN",
+        "Terminal lugs copper 10 AWG"
+      ]
+    },
+    {
+      "problem": "Gas fryer regulator diaphragm ruptures causing erratic gas pressure and flame instability, with audible gas leakage from regulator vent.",
+      "solution": "Installed new gas pressure regulator assembly and performed leak test with soap solution to ensure all connections are gas-tight.",
+      "parts": [
+        "Gas pressure regulator 1/2 inch NPT",
+        "Pipe dope gas-rated",
+        "Gas leak detection solution"
+      ]
+    },
+    {
+      "problem": "Fryer oil return line from filter system becomes clogged with carbonized debris causing slow oil return and extended filter cycles.",
+      "solution": "Disassembled and cleaned oil return line system and installed new filter screen to prevent future debris accumulation.",
+      "parts": [
+        "Oil return tube stainless steel 1 inch diameter",
+        "Filter screen 20-mesh stainless",
+        "Pipe cleaning rod flexible"
+      ]
+    },
+    {
+      "problem": "Electric fryer heating element develops hairline crack causing oil contamination with metallic particles and electrical shorts to ground.",
+      "solution": "Replaced cracked heating element with new heavy-duty model and tested electrical isolation to ensure safe operation.",
+      "parts": [
+        "Heating element 240V 18kW tubular",
+        "Element gasket high-temperature",
+        "Megohmmeter for testing"
+      ]
+    },
+    {
+      "problem": "Gas fryer ignition transformer fails providing weak spark that cannot reliably light pilot, with transformer case showing heat damage and cracking.",
+      "solution": "Installed new ignition transformer rated for continuous duty and verified proper electrode gap and positioning for reliable ignition.",
+      "parts": [
+        "Ignition transformer 120V primary 10kV secondary",
+        "Ignition electrode assembly",
+        "Electrode wire high-voltage"
+      ]
+    },
+    {
+      "problem": "Fryer control board experiences power supply failure causing erratic operation and random shutdowns, with visible capacitor bulging and component overheating.",
+      "solution": "Replaced control board power supply section and updated firmware to latest version to improve system stability and performance.",
+      "parts": [
+        "Control board power supply module",
+        "Cooling fan 12V DC axial",
+        "Thermal interface compound"
+      ]
+    },
+    {
+      "problem": "Electric fryer ground fault circuit interrupter trips repeatedly during normal operation due to moisture infiltration in electrical connections.",
+      "solution": "Sealed all electrical connections with weatherproof connectors and installed new GFCI breaker rated for commercial kitchen environments.",
+      "parts": [
+        "GFCI breaker 2-pole 30A",
+        "Weatherproof connector kit",
+        "Electrical sealant compound"
+      ]
+    },
+    {
+      "problem": "Gas fryer manifold develops stress crack near burner connection causing gas leak and uneven flame distribution across burner tubes.",
+      "solution": "Welded manifold crack and pressure tested system, then adjusted individual burner orifices for uniform flame pattern across all tubes.",
+      "parts": [
+        "Gas manifold assembly cast iron",
+        "Burner orifice set",
+        "Manifold pressure gauge"
+      ]
+    },
+    {
+      "problem": "Fryer basket lift chain stretches and skips on drive sprocket causing jerky motion and incomplete basket travel to programmed positions.",
+      "solution": "Replaced worn lift chain and adjusted sprocket alignment to ensure smooth basket movement and accurate positioning control.",
+      "parts": [
+        "Lift chain stainless steel 1/4 inch pitch",
+        "Drive sprocket 12-tooth",
+        "Chain tensioner assembly"
+      ]
+    },
+    {
+      "problem": "Electric fryer develops short circuit in control wiring harness causing random function activation and potential fire hazard from overheating wires.",
+      "solution": "Completely rewired control system with new harness and installed protective conduit to prevent future wire damage and shorts.",
+      "parts": [
+        "Wiring harness pre-assembled",
+        "Flexible conduit 3/4 inch",
+        "Wire protection sleeve split-loom"
+      ]
+    },
+    {
+      "problem": "Gas fryer burner tubes become clogged with grease and carbon deposits reducing heat output and causing incomplete combustion with sooty exhaust.",
+      "solution": "Disassembled burner assembly and chemically cleaned all tubes, then adjusted air shutters for proper combustion air mixture.",
+      "parts": [
+        "Burner tube cleaning kit",
+        "Combustion analyzer",
+        "Air shutter adjustment tool"
+      ]
+    },
+    {
+      "problem": "Fryer oil level sight glass cracks allowing oil seepage and creating inaccurate level readings, with visible stress fractures around mounting points.",
+      "solution": "Replaced sight glass assembly with tempered glass model and installed new gasket seals to prevent oil leakage and ensure accurate readings.",
+      "parts": [
+        "Sight glass tempered 4-inch diameter",
+        "Gasket set Viton high-temperature",
+        "Glass mounting hardware stainless"
+      ]
+    },
+    {
+      "problem": "Gas fryer produces loud banging noise during ignition sequence and flames appear to roll out of burner ports intermittently. Burner assembly shows signs of corrosion and several burner orifices appear partially blocked.",
+      "solution": "Replaced corroded burner assembly and cleaned all gas orifices with proper drill bits. Adjusted gas-to-air mixture ratio and tested ignition sequence for proper flame characteristics.",
+      "parts": [
+        "Burner Assembly Model FB-8500 Natural Gas",
+        "Gas Orifice Kit #45 Drill Size 0.0820 inch",
+        "Burner Gasket Set High-Temperature Silicone"
+      ]
+    },
+    {
+      "problem": "Electric fryer contactor remains energized after unit is switched off, causing heating elements to stay powered and creating potential safety hazard. Control relay shows signs of welded contacts and burning smell is present.",
+      "solution": "Replaced faulty contactor with welded contacts and installed new control relay. Verified proper voltage isolation and tested all safety interlocks for correct operation.",
+      "parts": [
+        "Contactor 3-Pole 50 Amp 240V AC Coil",
+        "Control Relay DPDT 24V DC Coil",
+        "Wire Nuts 12 AWG High-Temperature Rated"
+      ]
+    },
+    {
+      "problem": "Fryer vat shows significant warping along bottom panel causing uneven heating patterns and hot spots that burn product. Temperature differential across cooking surface measures 75\u00b0F between center and edges.",
+      "solution": "Removed heating elements and replaced warped fryer vat with new heavy-duty stainless steel tank. Reinstalled heating elements with proper thermal expansion gaskets and verified even heat distribution.",
+      "parts": [
+        "Fryer Vat 40-Pound Capacity 316 Stainless Steel",
+        "Heating Element Gasket Kit Ceramic Fiber",
+        "Tank Drain Fitting 1.5 inch NPT Stainless"
+      ]
+    },
+    {
+      "problem": "Oil level sensor float mechanism is stuck in down position due to accumulated grease buildup, preventing automatic oil replenishment system from functioning. Low oil alarms do not activate even when tank is nearly empty.",
+      "solution": "Disassembled float chamber and thoroughly cleaned all components with degreasing solvent. Replaced worn float mechanism and recalibrated oil level detection system for accurate readings.",
+      "parts": [
+        "Float Switch Assembly Stainless Steel SPDT",
+        "Float Chamber Gasket Viton High-Temperature",
+        "Sensor Wiring Harness 12-Pin Weatherproof Connector"
+      ]
+    },
+    {
+      "problem": "Fryer produces excessive smoke and oil vapor emissions even with fresh oil, and exhaust fan cannot keep up with vapor production. Internal inspection reveals clogged heat exchanger fins and blocked ventilation passages.",
+      "solution": "Performed complete heat exchanger cleaning using specialized degreasing chemicals and high-pressure steam cleaning. Replaced damaged exhaust ducting and verified proper ventilation airflow rates.",
+      "parts": [
+        "Heat Exchanger Cleaning Kit Industrial Grade",
+        "Exhaust Duct Flexible 8-inch Diameter Aluminum",
+        "Ventilation Damper Motorized 8-inch Round 120V"
+      ]
+    }
+  ],
+  "Mixers": [
+    {
+      "problem": "60-quart planetary mixer motor runs but bowl fails to rotate, with grinding noise coming from the planetary gear assembly during operation.",
+      "solution": "Disassembled planetary gear assembly and found stripped main drive gear teeth. Replaced the damaged planetary drive gear and rebuilt the entire assembly with fresh lubrication.",
+      "parts": [
+        "Planetary Drive Gear Assembly P/N PG-60-2",
+        "Gear Housing Gasket Set GS-PL60",
+        "Food Grade Gear Oil SAE 90 (1 quart)"
+      ]
+    },
+    {
+      "problem": "Spiral mixer speed controller display shows error code E04 and motor fails to start when mixing switch is engaged.",
+      "solution": "Diagnosed faulty VFD output module causing the error code. Replaced the variable frequency drive unit and reprogrammed speed parameters to factory specifications.",
+      "parts": [
+        "VFD Controller 5HP 480V 3-Phase Model VF-5480",
+        "VFD Programming Cable PC-VF5",
+        "Control Fuse 5A 250V Fast-Acting"
+      ]
+    },
+    {
+      "problem": "20-quart planetary mixer bowl lift mechanism operates sluggishly and fails to reach full height position, making loud clicking sounds during operation.",
+      "solution": "Found worn bowl lift cam and damaged limit switch assembly. Replaced the lift cam mechanism and adjusted limit switch positioning for proper bowl height detection.",
+      "parts": [
+        "Bowl Lift Cam Assembly BL-20-CAM",
+        "Bowl Height Limit Switch LS-BH20 SPDT",
+        "Lift Chain 3/8 inch 24-link stainless steel"
+      ]
+    },
+    {
+      "problem": "80-quart spiral mixer main motor bearing produces excessive heat and metal shavings are visible around the motor housing during extended mixing cycles.",
+      "solution": "Removed motor from mixer frame and replaced failed main shaft bearings. Cleaned bearing races thoroughly and reassembled with proper bearing preload specifications.",
+      "parts": [
+        "Motor Shaft Bearing 6208-2RS Deep Groove Ball",
+        "Motor Housing Bearing 6307-ZZ Shielded",
+        "High Temperature Bearing Grease 400\u00b0F rated (4 oz tube)"
+      ]
+    },
+    {
+      "problem": "Planetary mixer safety interlock prevents operation when bowl guard is properly closed and locked in position.",
+      "solution": "Tested safety interlock switches and found misaligned bowl guard switch causing false open signal. Adjusted switch mounting bracket and replaced worn actuator pin.",
+      "parts": [
+        "Safety Interlock Switch SPST-NC 15A 250V",
+        "Switch Actuator Pin 1/4 inch stainless steel",
+        "Interlock Switch Mounting Bracket SG-20"
+      ]
+    },
+    {
+      "problem": "Mixer attachment hub wobbles excessively during operation and fails to hold beater attachment securely, causing intermittent slipping.",
+      "solution": "Disassembled attachment hub and found worn hub bushing and damaged retention spring. Replaced hub bushing and spring mechanism, then realigned hub concentricity.",
+      "parts": [
+        "Attachment Hub Bushing Bronze 1.5 inch ID",
+        "Hub Retention Spring Assembly RS-ATT20",
+        "Hub Alignment Shim Set 0.005-0.020 inch"
+      ]
+    },
+    {
+      "problem": "40-quart mixer motor runs continuously regardless of timer setting and speed control position, indicating control circuit malfunction.",
+      "solution": "Located stuck motor contactor causing continuous operation. Replaced the primary motor contactor and cleaned oxidized contact surfaces on control relay.",
+      "parts": [
+        "Motor Contactor 30A 3-pole 240V coil Model MC-30-240",
+        "Control Relay 8-pin DPDT 24VDC",
+        "Contact Cleaner Spray 12 oz aerosol"
+      ]
+    },
+    {
+      "problem": "Spiral mixer gearbox temperature runs excessively hot at 180\u00b0F during normal operation and oil level appears adequate.",
+      "solution": "Found contaminated gear oil with metal particles indicating internal wear. Drained gearbox completely, replaced oil seals, and refilled with fresh food-grade gear oil.",
+      "parts": [
+        "Gearbox Output Seal 2.5 inch Viton",
+        "Input Shaft Seal 1.75 inch NBR",
+        "Food Grade Gear Oil ISO 220 (2 gallons)"
+      ]
+    },
+    {
+      "problem": "Planetary mixer operates normally at low speeds but motor trips circuit breaker when switched to high speed settings above speed 6.",
+      "solution": "Measured motor current draw and found excessive amperage due to failed start capacitor. Replaced motor start capacitor and verified proper motor current on all speed settings.",
+      "parts": [
+        "Motor Start Capacitor 250\u00b5F 330VAC",
+        "Run Capacitor 40\u00b5F 370VAC",
+        "Capacitor Mounting Bracket CAP-MNT-20"
+      ]
+    },
+    {
+      "problem": "60-quart mixer planetary shaft seized completely and cannot be rotated manually, with visible scoring marks on the shaft surface.",
+      "solution": "Removed planetary assembly and found seized planetary shaft bearings due to lubrication failure. Replaced both upper and lower planetary shaft bearings and relubricated assembly.",
+      "parts": [
+        "Upper Planetary Bearing 6004-2RS Sealed",
+        "Lower Planetary Bearing 6006-ZZ Shielded",
+        "Planetary Shaft Seal Kit PSK-60"
+      ]
+    },
+    {
+      "problem": "Mixer bowl lock mechanism engages but bowl rotates freely instead of remaining stationary during planetary mixing operation.",
+      "solution": "Inspected bowl lock assembly and found worn lock pin and damaged cam surface. Replaced bowl lock pin assembly and resurfaced the bowl lock cam.",
+      "parts": [
+        "Bowl Lock Pin Assembly BLP-40-SS",
+        "Lock Cam Surface Insert Hardened Steel",
+        "Bowl Lock Spring Heavy Duty BLS-40"
+      ]
+    },
+    {
+      "problem": "Speed controller responds to input commands but mixer operates only at maximum speed regardless of speed selector position.",
+      "solution": "Diagnosed failed speed control potentiometer providing constant maximum signal to motor controller. Replaced speed control potentiometer and calibrated speed response curve.",
+      "parts": [
+        "Speed Control Potentiometer 10k\u03a9 Linear Taper",
+        "Control Knob Assembly with Set Screw",
+        "Potentiometer Dust Cover PC-10K"
+      ]
+    },
+    {
+      "problem": "Spiral mixer automatic lubrication system fails to distribute oil to gearbox components, with lubrication pump motor running but no oil flow visible.",
+      "solution": "Found clogged oil filter and failed oil pump causing lubrication system malfunction. Replaced oil pump assembly and installed new oil filtration system.",
+      "parts": [
+        "Automatic Oil Pump 24VDC 0.5 GPM",
+        "Oil Filter Element 10 micron washable",
+        "Oil Distribution Line 1/4 inch nylon tubing (10 feet)"
+      ]
+    },
+    {
+      "problem": "Planetary mixer produces loud grinding noise during bowl rotation with visible metal debris collecting under the mixer base.",
+      "solution": "Located failed bowl drive gear at bottom of mixer causing grinding noise and debris. Replaced bowl drive gear assembly and cleaned all contaminated oil from gear housing.",
+      "parts": [
+        "Bowl Drive Gear 48-tooth hardened steel",
+        "Bowl Drive Bearing 6205-2RS",
+        "Gear Housing Drain Plug with O-ring"
+      ]
+    },
+    {
+      "problem": "Mixer motor starts normally but loses power progressively during operation until it stops completely after 10-15 minutes of runtime.",
+      "solution": "Measured motor temperature and found overheating due to failed cooling fan and clogged motor ventilation. Replaced cooling fan motor and cleaned all ventilation passages.",
+      "parts": [
+        "Motor Cooling Fan 115VAC 4-inch diameter",
+        "Fan Motor Mounting Bracket FM-20",
+        "Motor Air Filter Washable Foam Type"
+      ]
+    },
+    {
+      "problem": "80-quart planetary mixer motor capacitor bulged and leaked electrolyte, causing motor to struggle starting and run with reduced torque under load.",
+      "solution": "Replaced failed run capacitor and cleaned electrolyte residue from motor housing, tested motor current draw and operation.",
+      "parts": [
+        "Motor Run Capacitor 45\u00b5F 370VAC",
+        "Motor Start Capacitor 189-227\u00b5F 115VAC",
+        "Capacitor Mounting Bracket"
+      ]
+    },
+    {
+      "problem": "Spiral mixer VFD drive displays overheating alarm and shuts down after 5 minutes of operation, with cooling fan running but inadequate airflow.",
+      "solution": "Cleaned blocked heat sink fins and replaced failed cooling fan, updated VFD thermal protection parameters.",
+      "parts": [
+        "Axial Cooling Fan 120VAC 172mm x 51mm",
+        "VFD Heat Sink Compound",
+        "Air Filter Element 6x12 inches"
+      ]
+    },
+    {
+      "problem": "20-quart mixer agitator shaft bearing produces metallic grinding noise and exhibits 0.125-inch radial play during rotation.",
+      "solution": "Pressed out worn bearing assembly and installed new sealed ball bearing with proper preload torque specification.",
+      "parts": [
+        "Deep Groove Ball Bearing 6309-2RS",
+        "Bearing Retaining Ring 45mm",
+        "Food Grade Bearing Grease NLGI-2"
+      ]
+    },
+    {
+      "problem": "Planetary mixer electrical contactor chatters continuously when energized and fails to hold contacts closed, causing intermittent motor operation.",
+      "solution": "Replaced worn contactor assembly and adjusted control voltage to proper 24VAC level, cleaned all electrical connections.",
+      "parts": [
+        "Motor Contactor 3-Pole 40A 120VAC Coil",
+        "Auxiliary Contact Block NO/NC",
+        "Terminal Block 10-Position"
+      ]
+    },
+    {
+      "problem": "60-quart mixer bowl lift hydraulic cylinder leaks fluid internally causing bowl to drift downward under load during operation.",
+      "solution": "Rebuilt hydraulic cylinder with new seals and O-rings, replaced contaminated hydraulic fluid with food-grade oil.",
+      "parts": [
+        "Hydraulic Cylinder Seal Kit",
+        "Food Grade Hydraulic Oil ISO 32",
+        "Hydraulic Filter Element 10-Micron"
+      ]
+    },
+    {
+      "problem": "Spiral mixer transmission output shaft keyway sheared completely, preventing power transfer from motor to mixing paddle assembly.",
+      "solution": "Machined new keyway in output shaft and replaced sheared Woodruff key, aligned coupling and torqued to specification.",
+      "parts": [
+        "Woodruff Key 1/4 x 1-1/4 inch",
+        "Output Shaft Coupling",
+        "Thread Locking Compound"
+      ]
+    },
+    {
+      "problem": "Planetary mixer timer mechanism sticks at 15-minute position and fails to advance, leaving mixer running beyond set time limits.",
+      "solution": "Disassembled timer assembly and cleaned internal contacts, replaced worn timer motor and calibrated timing sequence.",
+      "parts": [
+        "Timer Motor 120VAC 1RPM",
+        "Timer Contact Assembly",
+        "Timer Dial Face"
+      ]
+    },
+    {
+      "problem": "40-quart mixer bowl clamp assembly loosens during operation allowing bowl to shift position and contact mixing attachment.",
+      "solution": "Replaced worn bowl clamp springs and adjusted clamp tension mechanism, resurfaced contact surfaces.",
+      "parts": [
+        "Bowl Clamp Spring Set",
+        "Clamp Adjustment Screw M12x1.5",
+        "Bowl Positioning Pin"
+      ]
+    },
+    {
+      "problem": "Mixer main motor overheating protection relay trips repeatedly during normal operation despite motor running at proper amperage.",
+      "solution": "Replaced defective thermal overload relay and recalibrated trip setting to motor nameplate current rating.",
+      "parts": [
+        "Thermal Overload Relay 15-22A Range",
+        "Relay Contact Block",
+        "Motor Temperature Sensor"
+      ]
+    },
+    {
+      "problem": "Spiral mixer dough hook attachment loosens during heavy mixing cycles due to worn attachment hub threads and retention mechanism.",
+      "solution": "Re-threaded attachment hub with thread repair insert and replaced worn retaining collar with new locking design.",
+      "parts": [
+        "Thread Repair Insert M24x2.0",
+        "Attachment Retaining Collar",
+        "Hub Locking Pin"
+      ]
+    },
+    {
+      "problem": "Planetary mixer speed selector switch contacts are burned and pitted, causing erratic speed changes and motor hesitation.",
+      "solution": "Replaced entire speed selector switch assembly and cleaned carbon deposits from switch housing and terminals.",
+      "parts": [
+        "Multi-Position Rotary Switch 12-Position",
+        "Switch Contact Cleaner Spray",
+        "Switch Terminal Block"
+      ]
+    },
+    {
+      "problem": "60-quart mixer transmission input bearing races show pitting and scoring, creating vibration that increases with operating speed.",
+      "solution": "Disassembled transmission and replaced both input shaft bearings, realigned input coupling to eliminate side loading.",
+      "parts": [
+        "Tapered Roller Bearing 32008",
+        "Bearing Lock Nut M40x1.5",
+        "Input Shaft Seal 40x62x8mm"
+      ]
+    },
+    {
+      "problem": "Mixer control transformer primary winding shorted to ground causing 120VAC control circuit to lose power intermittently.",
+      "solution": "Replaced damaged control transformer and upgraded to higher VA rating, installed new fuse holder with indicator.",
+      "parts": [
+        "Control Transformer 480/120VAC 250VA",
+        "Fuse Holder with LED Indicator",
+        "Control Circuit Fuse 2A Fast-Acting"
+      ]
+    },
+    {
+      "problem": "Spiral mixer bowl rotation bearing seized due to water contamination and corrosion, preventing bowl from turning during mixing.",
+      "solution": "Removed corroded bearing assembly and installed stainless steel replacement bearing with improved sealing system.",
+      "parts": [
+        "Stainless Steel Ball Bearing 6218-SS",
+        "Nitrile Bowl Seal 90x110x12mm",
+        "Bearing Housing Gasket"
+      ]
+    },
+    {
+      "problem": "Planetary mixer agitator height adjustment mechanism binding prevents proper clearance setting between beater and bowl bottom.",
+      "solution": "Disassembled height adjustment assembly and replaced worn lead screw and bronze nut, lubricated all moving parts.",
+      "parts": [
+        "Adjustment Lead Screw M16x2.0",
+        "Bronze Lead Screw Nut",
+        "Food Grade Assembly Grease"
+      ]
+    },
+    {
+      "problem": "40-quart planetary mixer emergency stop button remains stuck in pressed position and cannot be reset, preventing any mixer operation despite all other controls functioning normally.",
+      "solution": "Replaced faulty emergency stop switch assembly and cleaned accumulated flour debris from the switch housing mechanism that was preventing proper reset operation.",
+      "parts": [
+        "Emergency Stop Switch Assembly NCR 22mm Red Mushroom Head",
+        "Switch Contact Block NO/NC 10A 600V",
+        "Switch Mounting Collar Chrome Plated"
+      ]
+    },
+    {
+      "problem": "Spiral mixer transmission input shaft coupling exhibits severe wear with 0.25-inch end play, causing excessive vibration and misalignment between motor and gearbox.",
+      "solution": "Installed new flexible jaw coupling and realigned motor-to-transmission assembly using precision dial indicators to achieve 0.003-inch maximum total indicator runout.",
+      "parts": [
+        "Flexible Jaw Coupling L095 1.5-inch Bore",
+        "Coupling Spider Insert Polyurethane 95A Durometer",
+        "Motor Mounting Bolts Grade 8 M12x1.75x60mm"
+      ]
+    },
+    {
+      "problem": "20-quart mixer bowl tilt mechanism hydraulic pump motor runs continuously but fails to build pressure, with oil reservoir level dropping rapidly during operation.",
+      "solution": "Replaced worn hydraulic pump assembly and rebuilt hydraulic cylinder with new seals, then refilled system with ISO 32 hydraulic fluid and bled all air.",
+      "parts": [
+        "Hydraulic Gear Pump 0.5 GPM 1800 RPM",
+        "Hydraulic Cylinder Seal Kit 2-inch Bore",
+        "Hydraulic Fluid ISO 32 Anti-Wear 5 Gallon"
+      ]
+    },
+    {
+      "problem": "Planetary mixer dough hook attachment falls off during operation due to worn attachment hub threads that no longer maintain secure connection.",
+      "solution": "Machined hub threads to oversize specification and installed threaded insert sleeve, then applied thread-locking compound to ensure secure attachment retention.",
+      "parts": [
+        "Threaded Insert Sleeve Stainless Steel 1.25-inch",
+        "Thread-Locking Compound Loctite 243 Medium Strength",
+        "Hub Retaining Washer Hardened Steel"
+      ]
+    },
+    {
+      "problem": "80-quart spiral mixer VFD parameter settings corrupted causing motor to run in reverse direction and operate at incorrect frequency despite proper input commands.",
+      "solution": "Performed VFD factory reset and reprogrammed all operational parameters including motor nameplate data, acceleration/deceleration times, and direction control settings.",
+      "parts": [
+        "VFD Programming Cable USB to RS485",
+        "VFD Parameter Manual and Software CD",
+        "VFD Display Module Replacement LCD"
+      ]
+    },
+    {
+      "problem": "Planetary mixer bowl guard proximity sensor fails to detect closed position causing safety interlock to prevent mixer startup even with guard properly installed.",
+      "solution": "Replaced defective inductive proximity sensor and adjusted sensor mounting bracket to achieve 2mm sensing gap with proper LED indication during guard closure.",
+      "parts": [
+        "Inductive Proximity Sensor M18 PNP 10-30VDC",
+        "Sensor Mounting Bracket Adjustable Stainless Steel",
+        "Sensor Cable 3-Wire Shielded 10 Meter"
+      ]
+    },
+    {
+      "problem": "60-quart mixer planetary gear assembly oil seal leaks continuously creating oil puddle under mixer and contaminating food preparation area with lubricant.",
+      "solution": "Disassembled planetary housing and replaced worn oil seal with proper installation tools, then refilled gearbox with synthetic gear oil to specification level.",
+      "parts": [
+        "Oil Seal Double Lip Viton 2.5-inch Shaft",
+        "Synthetic Gear Oil ISO VG 220 1 Quart",
+        "Seal Installation Tool Set Metric"
+      ]
+    },
+    {
+      "problem": "Spiral mixer main motor thermal overload relay trips repeatedly after 3-5 minutes of operation under normal load conditions indicating overheating protection activation.",
+      "solution": "Cleaned motor cooling fan and air passages, then replaced thermal overload relay with correct amperage rating and verified motor current draw within specifications.",
+      "parts": [
+        "Thermal Overload Relay 15-22 Amp Range",
+        "Motor Cooling Fan Blade 6-inch Diameter",
+        "Fan Motor Bearings Sealed Ball Bearing Set"
+      ]
+    },
+    {
+      "problem": "20-quart planetary mixer speed selector switch intermittently fails to make contact at speed positions 4 and 6, causing mixer to skip these speeds during operation.",
+      "solution": "Disassembled rotary switch assembly and cleaned oxidized contacts with electrical contact cleaner, then replaced worn contact springs and applied dielectric grease.",
+      "parts": [
+        "Rotary Switch Contact Kit 8-Position",
+        "Electrical Contact Cleaner Spray 12oz",
+        "Dielectric Grease High Temperature 4oz Tube"
+      ]
+    },
+    {
+      "problem": "Mixer motor control circuit exhibits intermittent power interruption with lights dimming and motor stuttering during startup indicating loose electrical connections.",
+      "solution": "Tightened all electrical connections in control panel and motor junction box, then applied anti-oxidant compound to prevent corrosion and ensure reliable contact.",
+      "parts": [
+        "Anti-Oxidant Electrical Compound 4oz Tube",
+        "Wire Nuts Assorted Pack 10-14 AWG",
+        "Terminal Block Screws Stainless Steel M4x12mm"
+      ]
+    },
+    {
+      "problem": "Planetary mixer agitator shaft develops 0.050-inch axial play allowing vertical movement that affects mixing consistency and causes bowl contact during operation.",
+      "solution": "Replaced worn thrust bearing assembly and adjusted preload to eliminate axial play while maintaining smooth rotation without binding or excessive drag.",
+      "parts": [
+        "Thrust Bearing Assembly 1.5-inch Bore",
+        "Bearing Lock Nut KM Series M30x1.5",
+        "Bearing Preload Spring Disc Washer Set"
+      ]
+    },
+    {
+      "problem": "80-quart mixer gearbox drain plug stripped threads preventing proper oil changes and causing minor oil seepage during operation.",
+      "solution": "Drilled out damaged drain plug and installed threaded insert with sealant, then performed complete oil change with synthetic gear lubricant and new drain plug.",
+      "parts": [
+        "Threaded Insert M14x1.5 Stainless Steel",
+        "Thread Sealant Pipe Dope High Temperature",
+        "Magnetic Drain Plug M14x1.5 with Gasket"
+      ]
+    },
+    {
+      "problem": "Spiral mixer limit switch for bowl position fails to activate when bowl reaches upper limit causing bowl lift to over-travel and jam against mechanical stops.",
+      "solution": "Replaced defective limit switch and adjusted actuator arm positioning to ensure reliable switching at proper bowl height with adequate overtravel protection.",
+      "parts": [
+        "Heavy Duty Limit Switch DPDT 15A 250V",
+        "Adjustable Actuator Arm Roller Bearing Type",
+        "Limit Switch Mounting Bracket Zinc Plated"
+      ]
+    },
+    {
+      "problem": "Planetary mixer timer mechanism fails to advance properly causing mixing cycle to run continuously without automatic shut-off after preset time interval.",
+      "solution": "Replaced mechanical timer motor and gear assembly, then calibrated timing mechanism to ensure accurate cycle control within \u00b15% of set time periods.",
+      "parts": [
+        "Timer Motor Assembly 60Hz Synchronous",
+        "Timer Gear Reduction Unit 60:1 Ratio",
+        "Timer Dial Calibration Decal Set"
+      ]
+    },
+    {
+      "problem": "60-quart mixer planetary drive pinion gear exhibits chipped teeth and excessive backlash causing rough operation and metallic clicking sounds during mixing cycles.",
+      "solution": "Replaced damaged pinion gear and mating ring gear assembly, then adjusted gear mesh pattern and backlash to manufacturer specifications using dial indicator.",
+      "parts": [
+        "Planetary Drive Pinion Gear 24-Tooth Hardened Steel",
+        "Planetary Ring Gear Assembly Heat Treated",
+        "Gear Mesh Compound Blue Prussian 2oz Tube"
+      ]
+    },
+    {
+      "problem": "30-quart planetary mixer transmission oil seal failed, causing lubricant to leak onto the floor and contaminate food preparation area. Gearbox oil level dropped below minimum line and internal components show signs of inadequate lubrication.",
+      "solution": "Replaced transmission input shaft oil seal and replenished gearbox with proper grade lubricant. Cleaned contaminated areas and verified seal integrity through extended operational test.",
+      "parts": [
+        "Transmission input shaft oil seal 45mm x 65mm x 10mm Viton",
+        "Gearbox lubricant ISO VG 220 synthetic gear oil 2-liter bottle",
+        "Gasket sealant high-temperature food-grade silicone"
+      ]
+    },
+    {
+      "problem": "Spiral mixer dough hook attachment slips during heavy bread dough mixing, with visible wear on the drive hub splines. Attachment cannot maintain proper engagement under normal operating loads.",
+      "solution": "Machined and rebuilt attachment hub with oversize hardened steel splines, then fitted matching oversize splined dough hook. Torque specifications verified to manufacturer standards.",
+      "parts": [
+        "Attachment hub assembly hardened steel 1.5-inch bore with keyway",
+        "Spiral dough hook 80-quart capacity with reinforced spline connection",
+        "Drive hub retaining bolt Grade 8 M16 x 2.0 x 50mm"
+      ]
+    },
+    {
+      "problem": "40-quart planetary mixer bowl lift motor thermal protector trips repeatedly during normal operation, preventing bowl positioning. Motor housing temperature reaches 160\u00b0F within 5 minutes of operation.",
+      "solution": "Replaced bowl lift motor with identical specification unit and cleaned debris from motor cooling vents. Verified proper amperage draw and thermal protector reset functionality.",
+      "parts": [
+        "Bowl lift motor 1/3 HP 115V 1725 RPM single-phase with thermal protection",
+        "Motor mounting bracket galvanized steel with vibration dampeners",
+        "Thermal protector switch automatic reset 130\u00b0F trip point"
+      ]
+    },
+    {
+      "problem": "20-quart mixer planetary beater shaft bushing shows excessive wear causing 0.200-inch radial movement and uneven mixing patterns. Bronze bushing material is visibly scored and worn beyond service limits.",
+      "solution": "Pressed out worn bronze bushing and installed new oversized bushing, then machined shaft journal to restore proper clearances. Applied food-grade bearing grease per service manual specifications.",
+      "parts": [
+        "Planetary shaft bronze bushing 1.250-inch ID x 1.500-inch OD x 1.000-inch length",
+        "Shaft journal repair sleeve hardened steel 1.250-inch diameter",
+        "Food-grade bearing grease NLGI Grade 2 lithium complex 14-ounce cartridge"
+      ]
+    },
+    {
+      "problem": "Spiral mixer VFD parameter settings corrupted causing erratic speed control and motor stalling at low frequencies. Drive displays fault code F008 indicating parameter configuration error.",
+      "solution": "Performed factory reset of VFD parameters and reprogrammed all motor control settings according to equipment specifications. Conducted full speed range calibration and load testing.",
+      "parts": [
+        "Variable frequency drive 5 HP 480V three-phase with integrated keypad",
+        "VFD input line reactor 5% impedance 480V 10-amp rating",
+        "Parameter backup module EEPROM with factory default settings"
+      ]
+    }
+  ],
+  "Refrigeration": [
+    {
+      "problem": "Walk-in cooler compressor short cycling every 2-3 minutes with high head pressure readings of 350 PSI on R-404A system. Unit unable to maintain temperature below 45\u00b0F.",
+      "solution": "Replaced failed condenser fan motor and cleaned heavily fouled condenser coils with coil cleaner and pressure washing. Adjusted TXV superheat to 8\u00b0F.",
+      "parts": [
+        "Condenser Fan Motor 1/3 HP 208-230V 1075 RPM",
+        "TXV Valve R-404A 3 Ton Sporlan TFVE-3",
+        "Nu-Calgon Evap Foam No Rinse Coil Cleaner"
+      ]
+    },
+    {
+      "problem": "Three-door reach-in freezer experiencing ice buildup on evaporator coils with defrost cycle not completing. Temperature rising to 15\u00b0F during peak hours.",
+      "solution": "Replaced faulty defrost heater and defrost termination thermostat, then reprogrammed defrost timer for 4 cycles per 24 hours with 30-minute duration.",
+      "parts": [
+        "Defrost Heater 240V 800W 18-inch",
+        "Defrost Termination Thermostat 45\u00b0F",
+        "Paragon 8145-00 Defrost Timer"
+      ]
+    },
+    {
+      "problem": "Display case compressor running continuously with evaporator fan motor making grinding noise and reduced airflow. Case temperature at 42\u00b0F instead of target 35\u00b0F.",
+      "solution": "Replaced seized evaporator fan motor and cleaned debris from fan blade assembly. Checked and topped off refrigerant charge to proper subcooling of 12\u00b0F.",
+      "parts": [
+        "Evaporator Fan Motor 1/25 HP 115V Shaded Pole",
+        "Fan Blade 8-inch CW Rotation",
+        "R-134a Refrigerant 30 lb Cylinder"
+      ]
+    },
+    {
+      "problem": "Walk-in freezer door not sealing properly with visible gaps at corners causing frost buildup around door frame. Internal temperature fluctuating between -5\u00b0F and 5\u00b0F.",
+      "solution": "Replaced worn magnetic door gasket and adjusted door hinges for proper alignment. Applied food-grade silicone sealant to corner gaps.",
+      "parts": [
+        "Magnetic Door Gasket 84-inch x 30-inch Gray",
+        "Stainless Steel Hinge Heavy Duty 6-inch",
+        "Food Grade Silicone Sealant Clear"
+      ]
+    },
+    {
+      "problem": "Prep table refrigerator thermostat stuck at maximum cooling setting causing overcooling to 28\u00b0F and freezing stored vegetables. Compressor cycling normally but temperature cannot be adjusted.",
+      "solution": "Replaced faulty mechanical thermostat with digital temperature controller and recalibrated temperature range to 35-38\u00b0F operating band.",
+      "parts": [
+        "Digital Temperature Controller Dixell XR10CX",
+        "Temperature Sensor NTC 10K Ohm",
+        "Control Box Enclosure 6x4x2 inch NEMA 4"
+      ]
+    },
+    {
+      "problem": "Ice machine/storage bin combination unit producing ice normally but melting rapidly in storage bin. Drain pan overflowing and water pooling on floor underneath unit.",
+      "solution": "Replaced cracked drain pan and installed new drain heater assembly. Cleared blocked drain line and improved insulation around storage bin walls.",
+      "parts": [
+        "Drain Pan Assembly 24-inch Stainless Steel",
+        "Drain Heater 120V 100W",
+        "Rigid Foam Insulation 2-inch R-13"
+      ]
+    },
+    {
+      "problem": "Two-door reach-in cooler compressor not starting with start relay clicking repeatedly. Digital display showing error code and internal temperature rising above 50\u00b0F.",
+      "solution": "Diagnosed failed compressor start capacitor and potential relay. Replaced both components and tested amp draw during startup sequence.",
+      "parts": [
+        "Start Capacitor 88-108 MFD 330V",
+        "Potential Relay 220V Pickup 170V Dropout",
+        "Hard Start Kit 3-in-1 Universal"
+      ]
+    },
+    {
+      "problem": "Deli display case with curved glass front showing heavy condensation on interior glass surface obscuring product visibility. Case maintaining proper temperature but high humidity levels.",
+      "solution": "Replaced malfunctioning anti-sweat heater elements in glass frame and adjusted humidity control settings. Sealed air gaps around glass mounting hardware.",
+      "parts": [
+        "Anti-Sweat Heater Element 120V 200W",
+        "Humidity Control Switch 24V",
+        "Structural Glazing Tape 1/4-inch"
+      ]
+    },
+    {
+      "problem": "Walk-in cooler evaporator coil completely iced over with no defrost occurring. Defrost timer motor not advancing and unit running in continuous cooling mode.",
+      "solution": "Replaced seized defrost timer motor and recalibrated timer wheel position. Manually initiated defrost cycle and monitored complete ice removal.",
+      "parts": [
+        "Defrost Timer Motor 120V 60Hz Paragon",
+        "Timer Dial Assembly 24-hour",
+        "Defrost Bi-Metal Switch 35\u00b0F Open"
+      ]
+    },
+    {
+      "problem": "Beverage cooler with glass doors experiencing refrigerant leak at TXV connection with hissing sound audible. System low on charge and struggling to cool below 50\u00b0F.",
+      "solution": "Located and repaired refrigerant leak at TXV flare fitting, evacuated system to 500 microns, and recharged with proper R-134a quantity per nameplate specifications.",
+      "parts": [
+        "TXV Valve R-134a 1.5 Ton Danfoss TEN-2",
+        "Flare Fitting 1/2-inch Brass",
+        "R-134a Refrigerant 15 lb Cylinder"
+      ]
+    },
+    {
+      "problem": "Sandwich prep unit compressor overheating and shutting off on thermal protection with internal overload tripping every 10 minutes. Compressor housing too hot to touch.",
+      "solution": "Cleaned blocked condenser coils and replaced failed condenser fan capacitor causing reduced airflow. Verified proper compressor amp draw and cooling operation.",
+      "parts": [
+        "Run Capacitor 40 MFD 370V Oval",
+        "Condenser Fan Blade 12-inch CCW",
+        "Compressor Overload Protector"
+      ]
+    },
+    {
+      "problem": "Four-door freezer section losing temperature overnight with one evaporator fan not operating. Ice crystals forming on non-working fan motor housing.",
+      "solution": "Replaced burned-out evaporator fan motor and damaged wire harness connector. Tested electrical continuity and verified proper voltage supply to motor terminals.",
+      "parts": [
+        "Evaporator Fan Motor 1/40 HP 115V",
+        "Wire Harness Connector 4-pin Weatherproof",
+        "Motor Mounting Bracket Adjustable"
+      ]
+    },
+    {
+      "problem": "Salad bar refrigeration system drain line backing up causing water damage to floor and electrical components. Drain heater not warming drain pan adequately.",
+      "solution": "Cleared blocked drain line with CO2 pressure and replaced low-wattage drain heater with higher capacity unit. Installed drain pan overflow alarm.",
+      "parts": [
+        "Drain Line Heater 120V 200W",
+        "Drain Pan Alarm Float Switch",
+        "PVC Drain Fittings 3/4-inch Kit"
+      ]
+    },
+    {
+      "problem": "Pizza prep table refrigerator experiencing electrical issues with lights flickering and temperature control display intermittently going blank. Unit cooling inconsistently.",
+      "solution": "Diagnosed loose electrical connections in main control panel and replaced corroded wire terminals. Updated control board firmware and tested all electrical circuits.",
+      "parts": [
+        "Control Board Assembly Universal PCB",
+        "Wire Terminal Kit Insulated Spade",
+        "LED Light Strip 120V 36-inch"
+      ]
+    },
+    {
+      "problem": "Wine display cooler maintaining temperature but producing excessive noise from compressor area with vibrations felt throughout cabinet structure. Customer complaints about noise levels.",
+      "solution": "Replaced worn compressor mounting grommets and realigned compressor position. Installed additional vibration dampening pads and sound insulation material.",
+      "parts": [
+        "Compressor Mounting Grommets Set of 4",
+        "Vibration Dampening Pads 6x6 inch",
+        "Acoustic Foam Insulation 1-inch Thick"
+      ]
+    },
+    {
+      "problem": "Walk-in freezer condenser fan motor seized with bearing failure, causing high head pressure alarms and compressor thermal shutdown. System cycling on high pressure cutout every 5 minutes.",
+      "solution": "Replaced failed condenser fan motor and cleaned condenser coils of grease buildup. Reset high pressure cutout switch and verified proper refrigerant pressures.",
+      "parts": [
+        "Condenser Fan Motor 1/2 HP 208-230V 1075 RPM",
+        "High Pressure Cutout Switch R-404A 400/320 PSI",
+        "Motor Mounting Bracket 12-inch Galvanized Steel"
+      ]
+    },
+    {
+      "problem": "Reach-in cooler expansion valve hunting with temperature swings between 32\u00b0F and 45\u00b0F every 15 minutes. Superheat readings fluctuating between 5\u00b0F and 25\u00b0F at evaporator outlet.",
+      "solution": "Replaced thermostatic expansion valve with correct tonnage rating and adjusted superheat setting to 8-10\u00b0F. Cleaned moisture from refrigerant lines and replaced filter drier.",
+      "parts": [
+        "Thermostatic Expansion Valve R-134A 3-Ton Sporlan TFVE-3",
+        "Liquid Line Filter Drier 3/8 inch SAE Flare",
+        "Sensing Bulb Clamp 7/8 inch Copper Tube"
+      ]
+    },
+    {
+      "problem": "Bakery display case defrost heater elements burned out causing incomplete defrost cycles and ice accumulation blocking airflow. Case struggling to maintain 38\u00b0F during defrost recovery.",
+      "solution": "Replaced all three defrost heater elements and defrost termination thermostat. Reprogrammed defrost timer for 45-minute cycles every 8 hours with 35\u00b0F termination temperature.",
+      "parts": [
+        "Electric Defrost Heater 240V 500W 24-inch Stainless Steel",
+        "Defrost Termination Thermostat 35\u00b0F Cut-in/55\u00b0F Cut-out",
+        "Defrost Timer 8-Hour Cycle 240V SPDT Contacts"
+      ]
+    },
+    {
+      "problem": "Meat display case refrigeration system losing oil with oil separator malfunctioning and compressor running hot. Low oil pressure alarm triggering after 30 minutes of operation.",
+      "solution": "Replaced faulty oil separator and oil return solenoid valve. Added 32 ounces of POE oil to system and verified oil return operation through sight glass.",
+      "parts": [
+        "Oil Separator 1-5/8 inch ODF R-404A Rated",
+        "Oil Return Solenoid Valve 1/4 inch 24V AC",
+        "Polyol Ester Oil POE 32 ISO VG 1-Gallon Container"
+      ]
+    },
+    {
+      "problem": "Walk-in cooler door closer mechanism broken with door not self-closing properly, causing warm air infiltration. Internal temperature climbing to 50\u00b0F during busy periods.",
+      "solution": "Replaced hydraulic door closer assembly and adjusted closing speed and latching force. Aligned door frame and replaced worn door strike plate for proper seal engagement.",
+      "parts": [
+        "Hydraulic Door Closer Heavy Duty Commercial Grade",
+        "Door Strike Plate Stainless Steel Adjustable",
+        "Door Closer Mounting Hardware Kit Grade 8 Bolts"
+      ]
+    },
+    {
+      "problem": "Ice cream dipping cabinet compressor short cycling on low pressure cutout with refrigerant leak at evaporator coil connection. System charge critically low at 45 PSI suction pressure.",
+      "solution": "Located and repaired pinhole leak in evaporator coil using silver solder. Evacuated system to 500 microns and recharged with proper R-404A refrigerant amount per nameplate.",
+      "parts": [
+        "Silver Solder Rod 15% Silver 1/8 inch Diameter",
+        "Low Pressure Cutout Switch R-404A 5/25 PSI",
+        "Service Valve Core 1/4 inch SAE Standard"
+      ]
+    },
+    {
+      "problem": "Beverage cooler electronic temperature controller displaying 'Sensor Error' code with erratic temperature readings. Actual temperature at 55\u00b0F while display shows -20\u00b0F intermittently.",
+      "solution": "Replaced defective temperature sensor probe and controller display module. Recalibrated temperature settings and verified sensor resistance values at various temperatures.",
+      "parts": [
+        "Temperature Sensor Probe 10K Ohm Thermistor 6-foot Cable",
+        "Electronic Temperature Controller Digital Display 120V",
+        "Sensor Mounting Well 1/4 inch NPT Brass"
+      ]
+    },
+    {
+      "problem": "Deli meat slicer refrigerated base losing cooling capacity with evaporator coil frosted over and drain pan heater not functioning. Condensate backing up into cabinet interior.",
+      "solution": "Replaced failed drain pan heater and cleaned blocked drain line with hot water flush. Installed new drain pan with improved slope for proper drainage.",
+      "parts": [
+        "Drain Pan Heater 120V 80W Silicone Pad Type",
+        "Drain Pan Stainless Steel 18 x 12 x 2 inch",
+        "Drain Line 5/8 inch ID Clear Vinyl Tubing"
+      ]
+    },
+    {
+      "problem": "Produce cooler dual temperature system with one zone maintaining 34\u00b0F while other zone running at 50\u00b0F. Zone damper actuator motor not responding to temperature controller signals.",
+      "solution": "Replaced defective zone damper actuator motor and recalibrated damper position sensors. Adjusted airflow balance between zones and verified independent temperature control operation.",
+      "parts": [
+        "Zone Damper Actuator Motor 24V AC 90 Second Rotation",
+        "Temperature Control Sensor RTD Platinum 100 Ohm",
+        "Damper Blade Assembly 8 x 6 inch Aluminum Frame"
+      ]
+    },
+    {
+      "problem": "Frozen yogurt machine refrigeration condenser coil heavily blocked with lint and debris causing high ambient cutout trips. Unit shutting down every hour during peak service.",
+      "solution": "Thoroughly cleaned condenser coil using coil cleaning chemicals and high-pressure water rinse. Replaced clogged air filter and adjusted condenser fan speed for improved airflow.",
+      "parts": [
+        "Condenser Coil Cleaner Heavy Duty Alkaline 1-Gallon",
+        "Air Filter Washable Aluminum Mesh 16 x 20 x 1 inch",
+        "Fan Speed Controller Variable 115V 5-Amp Rating"
+      ]
+    },
+    {
+      "problem": "Walk-in freezer floor heating system not operating with floor ice buildup creating safety hazard. Floor heating cables showing no continuity and moisture intrusion evident.",
+      "solution": "Removed damaged floor heating cables and installed new self-regulating heating cable system. Applied waterproof membrane and sealed all cable entry points to prevent moisture infiltration.",
+      "parts": [
+        "Self-Regulating Floor Heating Cable 240V 8 Watts/Foot",
+        "Floor Heating Thermostat 35\u00b0F On/45\u00b0F Off NEMA 4X",
+        "Cable Junction Box Waterproof NEMA 4X Rating"
+      ]
+    },
+    {
+      "problem": "Cheese display case refrigeration system experiencing liquid floodback with compressor making knocking sounds during startup. Suction line warm to touch near compressor inlet.",
+      "solution": "Installed suction line accumulator to prevent liquid refrigerant from entering compressor. Adjusted TXV superheat setting higher and insulated suction line to prevent condensation.",
+      "parts": [
+        "Suction Line Accumulator 1-3/8 inch ODF R-134A Rated",
+        "Suction Line Insulation 7/8 inch ID Closed Cell Foam",
+        "TXV Superheat Spring Kit 8-12\u00b0F Range Adjustment"
+      ]
+    },
+    {
+      "problem": "Prep table refrigerator experiencing electrical power fluctuations with compressor contactor chattering and lights dimming during compressor startup. Voltage dropping to 195V during start.",
+      "solution": "Installed hard start kit with potential relay and start capacitor to reduce inrush current. Upgraded electrical supply wiring to handle compressor starting load and verified proper grounding.",
+      "parts": [
+        "Hard Start Kit Potential Relay 330V Pick-up 250V Drop-out",
+        "Start Capacitor 88-108 MFD 330V AC Electrolytic",
+        "Electrical Wire 12 AWG THHN Stranded Copper 25-foot"
+      ]
+    },
+    {
+      "problem": "Salad bar sneeze guard refrigeration coils sweating excessively with condensate dripping onto food products. Humidity levels high and air circulation inadequate around coil area.",
+      "solution": "Installed condensate management system with collection trough and improved drainage. Added circulation fan to reduce humidity levels and prevent condensation on cooling coils.",
+      "parts": [
+        "Condensate Collection Trough Stainless Steel 48-inch Length",
+        "Circulation Fan 115V 50 CFM Axial Flow",
+        "Humidity Control Damper 6-inch Motorized 24V AC"
+      ]
+    },
+    {
+      "problem": "Blast chiller refrigeration system experiencing oil foaming in sight glass with compressor running erratically and cooling capacity reduced by 40%. System recently serviced with refrigerant added.",
+      "solution": "Evacuated system and found moisture contamination causing oil breakdown. Replaced compressor oil, filter drier, and performed triple evacuation to 250 microns before recharging with dry refrigerant.",
+      "parts": [
+        "Compressor Oil POE 46 ISO VG 1-Quart Moisture-Free",
+        "Bi-Flow Filter Drier 1/2 inch ODF 100% Activated Alumina",
+        "Vacuum Pump Oil 1-Quart High Vacuum Grade"
+      ]
+    },
+    {
+      "problem": "Commercial freezer condenser coil severely blocked with grease and debris causing high discharge temperatures of 180\u00b0F and compressor overheating. System shutting down on thermal protection every 20 minutes.",
+      "solution": "Performed thorough condenser coil cleaning with coil cleaner and pressure washing, then installed condenser coil guard to prevent future contamination. Verified proper airflow and normal discharge temperatures.",
+      "parts": [
+        "Condenser Coil Guard 24x36 inch aluminum mesh",
+        "Coil cleaner concentrate Nu-Calgon Cal-Foam",
+        "High temperature cutout switch 180\u00b0F manual reset"
+      ]
+    },
+    {
+      "problem": "Reach-in refrigerator experiencing erratic temperature control with digital thermostat displaying incorrect readings 10\u00b0F higher than actual. Compressor cycling inappropriately based on false readings.",
+      "solution": "Replaced faulty temperature sensor and recalibrated digital controller to factory specifications. Verified accurate temperature readings and proper compressor cycling.",
+      "parts": [
+        "Temperature sensor probe 10K ohm thermistor 6-foot cable",
+        "Digital temperature controller Dixell XR20CX 120V",
+        "Sensor mounting bracket stainless steel"
+      ]
+    },
+    {
+      "problem": "Walk-in cooler experiencing liquid refrigerant flooding back to compressor with loud knocking sounds and oil foaming in sight glass. Compressor at risk of mechanical damage from liquid slugging.",
+      "solution": "Installed liquid line solenoid valve and adjusted TXV superheat setting to 12\u00b0F to prevent liquid flood-back. Added suction line accumulator for additional protection.",
+      "parts": [
+        "Liquid line solenoid valve Alco 240RA8T4 3/8 inch 120V",
+        "Suction accumulator Parker HAD-164-S 1-5/8 inch",
+        "TXV Sporlan ORIT-6 R-404A 3/8 x 1/2 inch"
+      ]
+    },
+    {
+      "problem": "Ice maker water curtain freezer showing premature compressor bearing failure with metallic grinding noise and excessive vibration. Compressor amperage drawing 15% above nameplate rating.",
+      "solution": "Replaced failed hermetic compressor and installed vibration dampeners to reduce cabinet stress. Added hard start kit to reduce starting torque on new compressor.",
+      "parts": [
+        "Hermetic compressor Tecumseh AEA4440EXA 1/2 HP R-404A",
+        "Hard start kit Supco 3-in-1 RCO410",
+        "Vibration dampener mounts rubber 1/4-20 thread"
+      ]
+    },
+    {
+      "problem": "Salad bar refrigeration unit drain pan heater not functioning causing ice blockage in drain line and water backing up into cabinet. Standing water creating sanitation concerns.",
+      "solution": "Replaced burned out drain pan heater element and installed new drain pan thermostat with proper temperature differential. Cleared ice blockage and sanitized affected areas.",
+      "parts": [
+        "Drain pan heater element 120V 50W silicone",
+        "Drain pan thermostat Ranco A30-3210 SPST 35\u00b0F",
+        "Drain line insulation foam tube 1/2 inch ID"
+      ]
+    },
+    {
+      "problem": "Beverage merchandiser compressor start capacitor swollen and leaking with compressor failing to start consistently. Unit attempting to start but motor not engaging properly.",
+      "solution": "Replaced failed start capacitor and tested start relay functionality. Verified proper compressor starting sequence and measured correct running amperage.",
+      "parts": [
+        "Start capacitor 88-108 MFD 330V round",
+        "Start relay Supco 3ARR3-TC73 120V",
+        "Overload protector Tecumseh 9532-007"
+      ]
+    },
+    {
+      "problem": "Deli case evaporator drain system frozen solid with ice dam preventing defrost water drainage. Water overflowing onto product shelves during defrost cycles.",
+      "solution": "Installed higher wattage drain line heater and improved insulation around drain pan. Modified drain slope for better gravity flow and added drain line thermostat.",
+      "parts": [
+        "Drain line heater cable 120V 7W per foot",
+        "Drain pan insulation kit reflective bubble wrap",
+        "Drain slope adjustment brackets stainless steel"
+      ]
+    },
+    {
+      "problem": "Walk-in freezer insulation panels showing deterioration with visible ice formation between wall panels and significant energy loss. Interior frost patterns indicating thermal bridging.",
+      "solution": "Replaced damaged insulation panels and sealed all joints with appropriate sealant. Installed vapor barrier and verified proper panel alignment to eliminate thermal bridges.",
+      "parts": [
+        "Insulation panel polyurethane 4-inch thick 4x8 foot",
+        "Panel sealant Dow Corning 732 RTV clear",
+        "Vapor barrier tape aluminum foil 3-inch width"
+      ]
+    },
+    {
+      "problem": "Reach-in cooler condenser fan motor shaft bearing seized causing fan blade wobble and reduced airflow across condenser coils. Head pressure climbing above normal operating range.",
+      "solution": "Replaced condenser fan motor and balanced fan blade assembly. Verified proper motor mounting and measured correct CFM airflow across condenser coil.",
+      "parts": [
+        "Condenser fan motor 1/6 HP 208-230V 1075 RPM",
+        "Fan blade 10-inch diameter 3-blade aluminum",
+        "Motor mounting bracket galvanized steel adjustable"
+      ]
+    },
+    {
+      "problem": "Pizza prep cooler refrigerant circuit showing signs of moisture contamination with acid formation and copper plating on compressor internals. System performance declining rapidly.",
+      "solution": "Performed complete system evacuation and installed oversized filter drier. Added sight glass with moisture indicator and recharged system with fresh refrigerant after triple evacuation.",
+      "parts": [
+        "Filter drier Sporlan C-164-S 1/2 inch liquid line",
+        "Sight glass Alco AMI-200S with moisture indicator",
+        "Refrigerant R-134a 30 lb cylinder"
+      ]
+    },
+    {
+      "problem": "Commercial chest freezer lid gasket torn and compressed allowing warm air infiltration and excessive frost buildup around lid perimeter. Compressor runtime increased 40%.",
+      "solution": "Replaced entire lid gasket and adjusted lid alignment for proper sealing. Cleaned gasket channel and applied food-grade lubricant to maintain seal flexibility.",
+      "parts": [
+        "Lid gasket magnetic strip 72-inch length gray",
+        "Gasket adhesive 3M weather strip adhesive",
+        "Food grade silicone lubricant NSF approved"
+      ]
+    },
+    {
+      "problem": "Reach-in freezer defrost timer mechanical contacts pitted and burned causing irregular defrost initiation. Some defrost cycles skipping entirely leading to coil icing.",
+      "solution": "Upgraded mechanical defrost timer to solid-state electronic controller with programmable defrost intervals. Set appropriate defrost frequency for high-traffic application.",
+      "parts": [
+        "Electronic defrost timer Paragon 8145-20 120V 4-wire",
+        "Timer mounting bracket plastic NEMA 1",
+        "Wiring harness adapter 4-pin to terminal strip"
+      ]
+    },
+    {
+      "problem": "Salad bar sneeze guard refrigeration system experiencing short cycling due to oversized TXV causing rapid temperature swings. Evaporator alternating between flooding and starving.",
+      "solution": "Replaced oversized TXV with properly rated valve and adjusted superheat to 8\u00b0F. Installed electronic expansion valve for more precise refrigerant control.",
+      "parts": [
+        "Electronic expansion valve Danfoss ETS250 R-134A",
+        "EEV controller Danfoss AK-CC55 with display",
+        "Superheat sensor Danfoss AKS41 strap-on type"
+      ]
+    },
+    {
+      "problem": "Walk-in cooler evaporator fan blade cracked and unbalanced causing excessive noise and vibration transmission through cabinet structure. Fan motor overworking due to imbalanced load.",
+      "solution": "Replaced damaged fan blade with dynamically balanced replacement and installed vibration isolation mounts on fan motor. Verified smooth operation and reduced noise levels.",
+      "parts": [
+        "Evaporator fan blade 12-inch 4-blade plastic balanced",
+        "Vibration isolation mounts rubber 10-32 thread",
+        "Fan guard wire 12-inch diameter powder coated"
+      ]
+    },
+    {
+      "problem": "Beverage cooler high pressure cutout switch contacts welded closed from electrical arcing preventing system shutdown during high pressure events. Safety system compromised with potential compressor damage risk.",
+      "solution": "Replaced faulty high pressure switch and installed pressure transducer with electronic monitoring system. Added redundant high pressure protection with manual reset capability.",
+      "parts": [
+        "High pressure switch Ranco O17-204 automatic reset 400 PSI",
+        "Pressure transducer Sporlan 0-500 PSI 4-20mA output",
+        "Electronic pressure monitor with display and alarm"
+      ]
+    },
+    {
+      "problem": "Commercial blast chiller condenser coil completely blocked with grease and debris causing system to trip on high pressure cutout at 425 PSI. Unit shutting down every 8 minutes and unable to pull temperatures below 60\u00b0F.",
+      "solution": "Thoroughly cleaned condenser coil using alkaline coil cleaner and high-pressure wash, then replaced damaged high pressure switch that was chattering. Verified proper airflow and system operation with head pressure stabilized at 280 PSI.",
+      "parts": [
+        "High Pressure Switch 425 PSI Cut-Out R-404A 1/4-inch NPT",
+        "Alkaline Coil Cleaner Concentrate 1-Gallon",
+        "Condenser Fan Motor Capacitor 35 MFD 370V"
+      ]
+    },
+    {
+      "problem": "Six-door upright freezer experiencing refrigerant migration during off cycles with liquid slugging compressor on startup. Compressor making loud knocking sounds and tripping on current overload after 3-4 minutes of operation.",
+      "solution": "Installed crankcase heater on compressor to prevent refrigerant migration and replaced damaged reed valves in compressor head. Added suction line accumulator to prevent future liquid slugging issues.",
+      "parts": [
+        "Crankcase Heater 150W 240V Wrap-Around Style",
+        "Suction Line Accumulator 1-5/8-inch ODF R-404A",
+        "Compressor Reed Valve Set Copeland Discus Series"
+      ]
+    },
+    {
+      "problem": "Undercounter refrigerator electronic expansion valve control board failing with erratic superheat control and system short cycling. EEV opening and closing randomly causing temperature swings between 30\u00b0F and 48\u00b0F.",
+      "solution": "Replaced faulty electronic expansion valve controller and recalibrated system parameters for proper superheat control. Updated firmware and performed complete system commissioning with stable 8-10\u00b0F superheat.",
+      "parts": [
+        "Electronic Expansion Valve Controller 24VAC Danfoss AK-CC550",
+        "EEV Stepper Motor ODFR-067G00 1/4-inch ODF",
+        "Superheat Sensor RTD PT1000 6-foot Lead"
+      ]
+    },
+    {
+      "problem": "Walk-in cooler using obsolete R-22 refrigerant with major leak at evaporator coil inlet requiring complete refrigerant circuit replacement. System completely out of charge and compressor oil contaminated with moisture.",
+      "solution": "Performed complete refrigerant retrofit to R-407C including new evaporator coil, filter drier, and POE oil change. Installed new TXV sized for R-407C and leak-tested entire system before charging.",
+      "parts": [
+        "Evaporator Coil R-407C 18,000 BTU 3-Row Fin Spacing",
+        "Thermostatic Expansion Valve R-407C 3-Ton External Equalizer",
+        "POE Refrigeration Oil 1-Gallon Copeland Ultra 32-3MAF"
+      ]
+    },
+    {
+      "problem": "Chest freezer interior light staying on continuously due to faulty door switch causing excessive heat load and internal temperature rising to 12\u00b0F. Light bulb burning out every few days from constant operation.",
+      "solution": "Replaced defective magnetic door switch with heavy-duty commercial grade switch and adjusted mounting bracket for proper alignment. Installed LED bulb to reduce heat generation and verified proper switch operation.",
+      "parts": [
+        "Magnetic Door Switch Heavy-Duty 10A 250VAC SPST",
+        "LED Interior Light Bulb 7W 120V Appliance Base",
+        "Door Switch Mounting Bracket Stainless Steel Adjustable"
+      ]
+    }
+  ],
+  "Dishwashers": [
+    {
+      "problem": "Door-type dishwasher wash pump motor overheating and tripping thermal overload breaker every 15 minutes during operation. Motor draws excessive amperage and makes grinding noise.",
+      "solution": "Replaced failed wash pump motor and damaged impeller housing that was causing motor bind. Cleaned debris from pump chamber and tested electrical connections.",
+      "parts": [
+        "Wash Pump Motor 2 HP 208V 3-phase",
+        "Pump Impeller Housing Assembly",
+        "Thermal Overload Relay 15-amp"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher not reaching proper sanitizing temperature of 180\u00b0F, staying at 160\u00b0F. Booster heater element shows no continuity on multimeter test.",
+      "solution": "Replaced burned-out booster heater element and faulty high-limit thermostat that was preventing proper heating cycle. Recalibrated temperature controller settings.",
+      "parts": [
+        "Booster Heater Element 18kW 208V",
+        "High-Limit Thermostat 200\u00b0F",
+        "Temperature Controller Digital Display"
+      ]
+    },
+    {
+      "problem": "Upper spray arm in undercounter dishwasher not rotating and has poor water pressure. Visible food debris blocking multiple nozzles.",
+      "solution": "Disassembled and thoroughly cleaned spray arm assembly, replacing worn bearing and spring mechanism. Cleared all nozzle blockages with wire brush.",
+      "parts": [
+        "Spray Arm Bearing Assembly",
+        "Spray Arm Spring Mechanism",
+        "Nozzle Cleaning Wire Set"
+      ]
+    },
+    {
+      "problem": "Chemical dispenser system not injecting detergent into wash cycle. Peristaltic pump motor runs but no chemical flow observed.",
+      "solution": "Replaced cracked chemical feed tubing and worn peristaltic pump rollers that had lost compression. Primed system and adjusted flow rate settings.",
+      "parts": [
+        "Chemical Feed Tubing 1/4-inch ID",
+        "Peristaltic Pump Roller Set",
+        "Check Valve 1/4-inch NPT"
+      ]
+    },
+    {
+      "problem": "Drain pump not evacuating water from wash tank, causing overflow condition. Pump motor hums but impeller not turning.",
+      "solution": "Removed and replaced seized drain pump with new unit after finding damaged impeller shaft. Cleaned drain lines and tested backflow prevention valve.",
+      "parts": [
+        "Drain Pump 1/2 HP 115V",
+        "Pump Impeller Shaft Assembly",
+        "Backflow Prevention Valve 2-inch"
+      ]
+    },
+    {
+      "problem": "Door safety interlock system malfunctioning, allowing operation with door open. Door microswitch shows intermittent continuity.",
+      "solution": "Replaced faulty door microswitch and adjusted door alignment mechanism for proper engagement. Tested all safety interlock circuits for proper operation.",
+      "parts": [
+        "Door Microswitch SPDT 15-amp",
+        "Door Hinge Pin Set",
+        "Safety Interlock Relay 24VDC"
+      ]
+    },
+    {
+      "problem": "Cycle timer stuck on wash phase, not advancing to rinse cycle. Timer motor shows 24V input but gear mechanism not advancing.",
+      "solution": "Replaced defective timer motor assembly with stripped internal gears. Calibrated new timer for proper cycle sequencing and tested all phases.",
+      "parts": [
+        "Timer Motor Assembly 24V",
+        "Timer Cam Switch Set",
+        "Timer Drive Gear Assembly"
+      ]
+    },
+    {
+      "problem": "Water fill valve not opening, causing low water level alarm and cycle interruption. Solenoid coil measures infinite resistance.",
+      "solution": "Installed new water fill valve with solenoid coil and cleaned mineral deposits from valve seat. Adjusted water level sensor calibration.",
+      "parts": [
+        "Water Fill Valve 3/4-inch NPT",
+        "Solenoid Coil 120V AC",
+        "Water Level Sensor Probe"
+      ]
+    },
+    {
+      "problem": "Exhaust fan motor making excessive noise and vibration, reducing ventilation effectiveness. Fan blade assembly visibly wobbling during operation.",
+      "solution": "Replaced worn exhaust fan motor bearings and rebalanced fan blade assembly. Tightened all mounting hardware and lubricated motor bearings.",
+      "parts": [
+        "Exhaust Fan Motor 1/3 HP 115V",
+        "Fan Blade Assembly 12-inch",
+        "Motor Bearing Set Sealed"
+      ]
+    },
+    {
+      "problem": "Tank heater not maintaining wash water temperature, dropping to 140\u00b0F during heavy use. Thermostat contacts pitted and not making reliable connection.",
+      "solution": "Replaced faulty tank thermostat and cleaned corroded electrical terminals. Tested heater element continuity and insulation resistance.",
+      "parts": [
+        "Tank Thermostat 160\u00b0F Bulb Type",
+        "Heater Element 12kW 208V",
+        "Terminal Block 3-position"
+      ]
+    },
+    {
+      "problem": "Rinse aid dispenser not functioning, leaving spots on glassware. Dispenser pump diaphragm cracked and leaking internally.",
+      "solution": "Rebuilt rinse aid dispenser pump with new diaphragm and check valves. Adjusted dispenser timing and flow rate for optimal coverage.",
+      "parts": [
+        "Dispenser Pump Diaphragm Kit",
+        "Check Valve Set 1/8-inch",
+        "Flow Control Orifice 0.5mm"
+      ]
+    },
+    {
+      "problem": "Door lift mechanism sticking and requiring excessive force to open. Pneumatic cylinder not extending smoothly and making hissing sound.",
+      "solution": "Replaced worn pneumatic cylinder seals and adjusted air pressure regulator. Lubricated all pivot points and tested door balance.",
+      "parts": [
+        "Pneumatic Cylinder Seal Kit",
+        "Air Pressure Regulator 0-100 PSI",
+        "Door Hinge Lubricant Food-Grade"
+      ]
+    },
+    {
+      "problem": "Wash water temperature sensor reading incorrectly, showing 200\u00b0F when actual temperature is 150\u00b0F. Sensor probe corroded and giving false readings.",
+      "solution": "Replaced corroded temperature sensor probe and recalibrated temperature controller. Cleaned sensor well and applied thermal compound.",
+      "parts": [
+        "RTD Temperature Sensor PT100",
+        "Sensor Well Thermowell 1/2-inch",
+        "Thermal Compound Food-Safe"
+      ]
+    },
+    {
+      "problem": "Final rinse water pressure insufficient for proper sanitizing coverage. Pressure regulator valve stuck in partially closed position.",
+      "solution": "Disassembled and cleaned pressure regulator valve, replacing worn internal springs and seals. Adjusted outlet pressure to specification.",
+      "parts": [
+        "Pressure Regulator Valve 3/4-inch",
+        "Regulator Spring Set",
+        "Valve Seal Kit Viton"
+      ]
+    },
+    {
+      "problem": "Control panel displaying error codes intermittently and cycle buttons not responding consistently. Circuit board showing signs of moisture damage and corrosion.",
+      "solution": "Replaced water-damaged main control board and installed improved ventilation shield. Sealed all electrical connections with marine-grade sealant.",
+      "parts": [
+        "Main Control Board PCB Assembly",
+        "Control Panel Membrane Switch",
+        "Electrical Connection Sealant"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher belt motor running continuously but conveyor not moving dishes through machine. Drive chain broken and hanging loose from motor sprocket.",
+      "solution": "Replaced broken drive chain and adjusted chain tension to manufacturer specifications. Lubricated chain guides and verified proper belt tracking alignment.",
+      "parts": [
+        "Drive Chain #50 Roller 10-foot length",
+        "Chain Master Link #50",
+        "Chain Tensioner Assembly Model CT-240"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher producing excessive foam during wash cycle, causing suds overflow from tank. Detergent concentration too high due to faulty metering system.",
+      "solution": "Calibrated chemical feed pump flow rate and replaced clogged flow restrictor orifice. Adjusted detergent dilution ratio to 1:240 per manufacturer specs.",
+      "parts": [
+        "Flow Restrictor Orifice 0.8mm diameter",
+        "Peristaltic Pump Tubing 6mm ID",
+        "Chemical Feed Pump Calibration Kit"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher door seal leaking water onto floor during operation. Rubber door gasket cracked and hardened from heat exposure.",
+      "solution": "Removed old door gasket and installed new heat-resistant silicone seal. Adjusted door alignment and pressure for proper sealing contact.",
+      "parts": [
+        "Door Gasket Silicone 72-inch perimeter",
+        "Gasket Adhesive High-Temp",
+        "Door Hinge Pin Stainless Steel 3/8-inch"
+      ]
+    },
+    {
+      "problem": "Booster heater cycling on and off rapidly without reaching setpoint temperature. High limit switch tripping due to scale buildup on heating elements.",
+      "solution": "Descaled heating elements with commercial deliming solution and replaced faulty high limit switch. Adjusted temperature differential to prevent short cycling.",
+      "parts": [
+        "High Limit Switch 200\u00b0F Manual Reset",
+        "Heating Element 6kW 240V",
+        "Temperature Control Relay SPDT 240V"
+      ]
+    },
+    {
+      "problem": "Wash arms not receiving adequate water flow, resulting in poor cleaning performance. Internal wash pump impeller damaged and causing cavitation noise.",
+      "solution": "Disassembled wash pump and replaced damaged impeller and worn mechanical seal. Checked pump alignment and motor coupling integrity.",
+      "parts": [
+        "Pump Impeller 6-inch diameter Bronze",
+        "Mechanical Seal Carbon/Ceramic 1.5-inch",
+        "Pump Coupling Spider Insert Polyurethane"
+      ]
+    },
+    {
+      "problem": "Final rinse water not hot enough for sanitization, measuring only 165\u00b0F instead of required 180\u00b0F. Mixing valve not blending hot and cold water properly.",
+      "solution": "Rebuilt thermostatic mixing valve with new internal components and calibrated temperature setting. Verified hot water supply temperature at 200\u00b0F minimum.",
+      "parts": [
+        "Thermostatic Mixing Valve Cartridge",
+        "Mixing Valve Seat Assembly",
+        "Temperature Adjustment Screw M6x20mm"
+      ]
+    },
+    {
+      "problem": "Control system randomly stopping mid-cycle with no error code displayed. Loose wire connections at main control board causing intermittent power loss.",
+      "solution": "Tightened all wire terminal connections and applied dielectric grease to prevent corrosion. Replaced main control board with updated firmware version.",
+      "parts": [
+        "Main Control Board PCB Assembly",
+        "Wire Terminal Connectors 14-16 AWG",
+        "Dielectric Grease 4oz tube"
+      ]
+    },
+    {
+      "problem": "Drain valve not opening at end of wash cycle, requiring manual operation to empty tank. Pneumatic actuator diaphragm ruptured and losing air pressure.",
+      "solution": "Replaced pneumatic actuator diaphragm and O-ring seals. Adjusted air pressure regulator to 25 PSI and tested valve operation timing.",
+      "parts": [
+        "Pneumatic Actuator Diaphragm 4-inch",
+        "O-Ring Kit Viton High-Temp",
+        "Air Pressure Regulator 0-60 PSI"
+      ]
+    },
+    {
+      "problem": "Water level sensor giving false high readings, causing overfill conditions and water waste. Sensor probe covered in grease and food particles affecting conductivity.",
+      "solution": "Cleaned sensor probe with degreasing solvent and replaced corroded sensor head assembly. Recalibrated water level control settings to manufacturer specifications.",
+      "parts": [
+        "Water Level Sensor Probe Assembly",
+        "Sensor Head Stainless Steel",
+        "Sensor Cable 10-foot shielded"
+      ]
+    },
+    {
+      "problem": "Prewash spray manifold clogged with grease causing poor pre-rinse performance. Multiple spray nozzles completely blocked with solidified fat deposits.",
+      "solution": "Removed spray manifold and soaked in hot alkaline cleaning solution overnight. Replaced severely clogged nozzles and reinstalled with proper alignment.",
+      "parts": [
+        "Spray Nozzle 15\u00b0 Pattern 1/8 NPT",
+        "Manifold Cleaning Brush Set",
+        "Spray Manifold Gasket Kit"
+      ]
+    },
+    {
+      "problem": "Door counterweight cable snapped causing door to slam shut dangerously. Cable frayed due to improper routing over sharp edges on door frame.",
+      "solution": "Installed new stainless steel cable with proper routing guides to prevent chafing. Adjusted counterweight tension for smooth door operation and safety.",
+      "parts": [
+        "Stainless Steel Cable 3/32-inch 10-foot",
+        "Cable End Fittings Swage Type",
+        "Door Weight Assembly 25-pound"
+      ]
+    },
+    {
+      "problem": "Scrap accumulator system not removing food debris effectively, causing drain blockages. Scrapper blade worn down and not making contact with conveyor surface.",
+      "solution": "Replaced worn scrapper blade and adjusted height for proper contact pressure. Cleaned debris chute and verified proper waste removal operation.",
+      "parts": [
+        "Scrapper Blade Polyurethane 24-inch",
+        "Blade Mounting Hardware Kit",
+        "Debris Chute Gasket Rubber"
+      ]
+    },
+    {
+      "problem": "Chemical rinse aid not dispensing consistently, resulting in water spots on dishes. Venturi injector system clogged with mineral deposits from hard water.",
+      "solution": "Disassembled venturi injector and cleaned mineral deposits with acid-based descaler. Replaced worn venturi nozzle and recalibrated injection rate.",
+      "parts": [
+        "Venturi Injector Nozzle 0.6mm orifice",
+        "Venturi Body Assembly Brass",
+        "Chemical Injection Tubing 4mm ID"
+      ]
+    },
+    {
+      "problem": "Tank overflow alarm activating falsely during normal operation. Float switch mechanism sticking in up position due to grease accumulation on pivot point.",
+      "solution": "Cleaned float switch assembly and pivot mechanism with degreasing agent. Replaced float switch with sealed magnetic reed switch type for reliability.",
+      "parts": [
+        "Magnetic Float Switch 250V 10A",
+        "Float Assembly Stainless Steel",
+        "Switch Mounting Bracket Adjustable"
+      ]
+    },
+    {
+      "problem": "Heated air drying system not functioning, leaving dishes wet at cycle completion. Blower motor seized due to bearing failure and overheating protection activated.",
+      "solution": "Replaced blower motor assembly and cleaned air intake filters. Verified heating element operation and adjusted drying cycle timer for optimal performance.",
+      "parts": [
+        "Blower Motor 1/3 HP 115V 1725 RPM",
+        "Motor Mounting Bracket Steel",
+        "Air Filter Washable Aluminum 16x20"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher making loud grinding noise from drive motor compartment and belt speed fluctuating erratically. Motor coupling shows visible wear and misalignment.",
+      "solution": "Replaced worn flexible coupling between motor and gearbox, realigned motor mount, and adjusted belt tension to manufacturer specifications.",
+      "parts": [
+        "Flexible coupling assembly 1.5-inch bore",
+        "Motor mount bracket kit stainless steel",
+        "V-belt 5L section 48-inch length"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher final rinse temperature only reaching 160\u00b0F instead of required 180\u00b0F for sanitization. Booster heater thermostat clicking but elements not energizing.",
+      "solution": "Replaced faulty contactor that was not closing properly to energize heating elements, and calibrated thermostat to correct temperature setpoint.",
+      "parts": [
+        "Contactor 3-pole 30A 240V coil",
+        "Thermostat bulb and capillary 180\u00b0F setpoint",
+        "Heating element 6kW 240V stainless steel"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher overflow sensor triggering false alarms and stopping cycles prematurely. Sensor probe covered in grease buildup and not detecting actual water level.",
+      "solution": "Cleaned sensor probe thoroughly with degreasing solution, adjusted sensor mounting height, and recalibrated control board sensitivity settings.",
+      "parts": [
+        "Water level sensor probe 6-inch stainless steel",
+        "Sensor mounting bracket adjustable",
+        "Control board calibration module"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher wash tank losing temperature rapidly during peak operation hours. Tank insulation damaged and heat exchanger coils showing scale buildup.",
+      "solution": "Replaced deteriorated foam insulation panels around tank walls and descaled heat exchanger coils using commercial descaling solution.",
+      "parts": [
+        "Foam insulation panels 2-inch thick fiberglass",
+        "Heat exchanger coil cleaning kit",
+        "Tank insulation adhesive high-temperature"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher upper wash arm assembly vibrating excessively and spraying water outside tank area. Bearing assembly worn and arm mounting loose.",
+      "solution": "Replaced worn wash arm bearing assembly, tightened mounting hardware to proper torque specifications, and balanced spray arm rotation.",
+      "parts": [
+        "Wash arm bearing assembly stainless steel",
+        "Mounting hardware kit grade 8 bolts",
+        "Wash arm balance weight set"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher detergent pump running continuously but no soap dispensing into wash water. Pump check valve stuck open causing backflow.",
+      "solution": "Replaced faulty check valve in detergent line and cleaned pump chamber of crystallized detergent deposits that were preventing proper sealing.",
+      "parts": [
+        "Check valve 1/4-inch NPT brass",
+        "Detergent pump diaphragm kit",
+        "Pump chamber gasket set"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher exhaust damper not opening automatically during wash cycles, causing excessive humidity buildup. Damper actuator solenoid not receiving power signal.",
+      "solution": "Repaired broken wire connection to damper solenoid and replaced corroded terminal connections, tested damper operation through full cycle.",
+      "parts": [
+        "Damper actuator solenoid 24V DC",
+        "Terminal connector kit weatherproof",
+        "Control wire 14 AWG 25-foot length"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher drain valve not sealing properly during wash cycle, causing continuous water loss and poor cleaning results. Valve seat pitted from chemical corrosion.",
+      "solution": "Disassembled drain valve assembly, machined valve seat smooth, and replaced valve disc and spring mechanism for proper sealing.",
+      "parts": [
+        "Drain valve disc assembly 3-inch diameter",
+        "Valve seat repair kit",
+        "Valve spring stainless steel heavy-duty"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher wash pump priming slowly and losing prime between cycles. Air leak in suction line causing cavitation and reduced flow.",
+      "solution": "Located and sealed air leak at pump housing gasket, replaced cracked suction line fitting, and adjusted pump priming sequence timing.",
+      "parts": [
+        "Pump housing gasket silicone",
+        "Suction line fitting 1.5-inch NPT",
+        "Pump priming valve assembly"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher pre-rinse section not activating when dishes enter detection zone. Photoelectric sensor lens clouded with grease and not detecting product.",
+      "solution": "Cleaned sensor lens with appropriate solvent, adjusted sensor alignment and sensitivity, and replaced sensor housing seal to prevent future contamination.",
+      "parts": [
+        "Photoelectric sensor lens assembly",
+        "Sensor mounting bracket adjustable",
+        "Housing seal kit O-ring set"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher producing inconsistent wash results with some racks poorly cleaned. Wash pump impeller partially broken and creating uneven flow patterns.",
+      "solution": "Removed wash pump assembly, replaced damaged impeller with new balanced unit, and checked pump housing for wear or damage.",
+      "parts": [
+        "Wash pump impeller 6-inch diameter bronze",
+        "Impeller key stock 1/4-inch",
+        "Pump housing wear ring"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher door gasket hardening and cracking at high-temperature areas near steam vents. Door not sealing properly during operation.",
+      "solution": "Replaced entire door gasket with high-temperature silicone version, adjusted door alignment, and applied food-grade gasket lubricant.",
+      "parts": [
+        "Door gasket high-temp silicone 10-foot length",
+        "Gasket adhesive food-grade",
+        "Door adjustment hardware kit"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher chemical feed lines becoming clogged with crystallized chemicals and causing erratic dispensing. Automatic dilution system not maintaining proper ratios.",
+      "solution": "Flushed all chemical lines with hot water solution, replaced clogged metering orifices, and recalibrated dilution system flow rates.",
+      "parts": [
+        "Metering orifice set various sizes",
+        "Chemical feed line tubing 1/4-inch",
+        "Dilution system calibration kit"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher tank heater elements showing signs of scale buildup and reduced heating efficiency. Water temperature taking excessive time to reach setpoint.",
+      "solution": "Descaled heating elements using commercial descaling solution, replaced sacrificial anode rod, and adjusted water treatment system parameters.",
+      "parts": [
+        "Sacrificial anode rod magnesium 12-inch",
+        "Descaling solution commercial grade",
+        "Element mounting gaskets high-temp"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher control board randomly resetting during operation and losing programmed cycle parameters. Power supply voltage fluctuating outside acceptable range.",
+      "solution": "Installed voltage stabilizer for control circuit, replaced control board with updated firmware version, and improved electrical connections.",
+      "parts": [
+        "Voltage stabilizer 120V 5A",
+        "Control board assembly latest revision",
+        "Electrical terminal upgrade kit"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher final rinse temperature inconsistent, fluctuating between 160\u00b0F and 185\u00b0F during cycle. Steam production varies dramatically and dishes not properly sanitized.",
+      "solution": "Replaced faulty mixing valve that was allowing cold water bypass during rinse phase. Calibrated new valve to maintain consistent 180\u00b0F final rinse temperature.",
+      "parts": [
+        "Thermostatic Mixing Valve 3/4-inch NPT 180\u00b0F Set Point",
+        "Temperature Sensor RTD Pt100 6-inch Probe",
+        "Valve Actuator 24VAC Spring Return"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher wash tank water level dropping continuously during operation, requiring constant refill. No visible external leaks but water consumption excessive.",
+      "solution": "Located internal tank crack along weld seam near heating element mount. Drained tank, cleaned area, and applied high-temperature epoxy repair followed by stainless steel reinforcement plate.",
+      "parts": [
+        "High-Temp Epoxy Repair Kit Food Grade 500\u00b0F Rating",
+        "Stainless Steel Reinforcement Plate 6x8-inch 16 Gauge",
+        "Tank Drain Valve 2-inch NPT Ball Valve"
+      ]
+    },
+    {
+      "problem": "Undercounter dishwasher producing loud banging noise during wash cycle, particularly when spray arms change direction. Customers complaining about noise level in dining area.",
+      "solution": "Diagnosed water hammer caused by worn wash pump check valve allowing backflow. Replaced check valve and installed water hammer arrestor to eliminate pressure spikes.",
+      "parts": [
+        "Swing Check Valve 1.5-inch NPT Bronze Disc",
+        "Water Hammer Arrestor Size AA 1/2-inch NPT",
+        "Pump Mounting Isolators Rubber 1/4-20 Thread"
+      ]
+    },
+    {
+      "problem": "Door-type dishwasher control system randomly shutting down mid-cycle with no error codes displayed. Power cycling unit allows restart but problem recurs unpredictably.",
+      "solution": "Found loose connection in main power contactor causing intermittent voltage drop to control board. Tightened all electrical connections and replaced worn contactor with matching amperage rating.",
+      "parts": [
+        "Power Contactor 40A 240VAC 3-Pole NEMA Size 1",
+        "Control Transformer 240V Primary 24V Secondary 100VA",
+        "Terminal Block 12-Position 600V 25A Rating"
+      ]
+    },
+    {
+      "problem": "Conveyor dishwasher chemical sanitizer concentration reading zero on test strips despite dispenser pump running. Health inspector threatening closure due to inadequate sanitization.",
+      "solution": "Discovered sanitizer supply line had developed pinhole leak allowing air infiltration and pump cavitation. Replaced entire supply line and primed system to restore proper chemical injection.",
+      "parts": [
+        "Chemical Supply Tubing 3/8-inch ID Sanitary Grade 10-foot",
+        "Tube Fitting Barb 3/8-inch to 1/4-inch NPT Polypropylene",
+        "Chemical Injection Check Valve 1/4-inch Spring Loaded"
+      ]
+    }
+  ],
+  "Griddles": [
+    {
+      "problem": "Gas griddle fails to ignite with pilot light system producing weak yellow flame instead of strong blue flame. Customer reports uneven heating and difficulty maintaining temperature.",
+      "solution": "Cleaned pilot light orifice of grease buildup and replaced clogged pilot light assembly with proper gas pressure adjustment. Verified pilot flame characteristics and tested ignition sequence.",
+      "parts": [
+        "Pilot Light Assembly NAT-500 Natural Gas",
+        "Pilot Orifice #56 Brass",
+        "Pilot Tubing 1/4-inch Copper 18-inch"
+      ]
+    },
+    {
+      "problem": "Electric griddle heating elements cycling on and off rapidly with temperature swings of 50\u00b0F above and below setpoint. Thermostat knob clicks repeatedly during operation.",
+      "solution": "Replaced faulty capillary tube thermostat that had developed internal leak causing erratic temperature sensing. Calibrated new thermostat and verified even heat distribution across cooking surface.",
+      "parts": [
+        "Capillary Thermostat 200-450\u00b0F 48-inch",
+        "Thermostat Mounting Bracket Stainless Steel",
+        "Temperature Control Knob with Dial"
+      ]
+    },
+    {
+      "problem": "Chrome griddle surface showing severe pitting and black discoloration in high-use areas with food sticking during cooking. Surface temperature varies by 75\u00b0F across the plate.",
+      "solution": "Removed old chrome-plated griddle plate and installed new surface with proper seasoning procedure. Adjusted burner orifices for even heat distribution and performed surface leveling.",
+      "parts": [
+        "Chrome Griddle Plate 36-inch x 24-inch 1/2-inch Thick",
+        "Burner Orifice Set Natural Gas #54",
+        "Griddle Plate Gasket High-Temperature Silicone"
+      ]
+    },
+    {
+      "problem": "Electronic ignition system sparks continuously without stopping after successful gas ignition. Control module LED shows constant fault code and gas valve cycles erratically.",
+      "solution": "Replaced defective flame sensor that failed to detect proper flame signal and installed new electronic ignition control module. Verified proper grounding and flame detection timing.",
+      "parts": [
+        "Electronic Ignition Control Module 24V",
+        "Flame Sensor Rod Stainless Steel 6-inch",
+        "Ignition Transformer 120V Primary 6000V Secondary"
+      ]
+    },
+    {
+      "problem": "Grease trap overflowing during busy periods with grease backing up onto cooking surface. Drain system appears blocked and grease collection drawer won't slide properly.",
+      "solution": "Disassembled and deep-cleaned entire grease management system, replaced cracked grease trough, and installed new drawer slides. Verified proper drainage angle and flow capacity.",
+      "parts": [
+        "Grease Trough Stainless Steel 36-inch",
+        "Drawer Slide Assembly Heavy-Duty 100-lb Capacity",
+        "Grease Collection Drawer 4-quart Capacity"
+      ]
+    },
+    {
+      "problem": "Gas control valve knob turns freely without resistance and griddle temperature cannot be adjusted. Gas flow appears constant regardless of control position.",
+      "solution": "Replaced worn gas control valve with stripped internal threads and installed new control knob assembly. Performed gas pressure test and leak check on all connections.",
+      "parts": [
+        "Gas Control Valve 3/4-inch NPT Natural Gas",
+        "Control Knob Assembly with Spring Return",
+        "Valve Stem Packing Kit NBR O-Rings"
+      ]
+    },
+    {
+      "problem": "Thermocouple safety system shutting down gas flow randomly during operation with pilot light remaining lit. System requires manual reset multiple times per day.",
+      "solution": "Replaced deteriorated thermocouple with millivolt output below specification and cleaned connections showing corrosion. Adjusted thermocouple position for optimal flame contact.",
+      "parts": [
+        "Thermocouple Type K 24-inch Lead 900\u00b0F Rating",
+        "Thermocouple Connection Nut 1/4-inch",
+        "Safety Gas Valve 24 Millivolt Natural Gas"
+      ]
+    },
+    {
+      "problem": "Burner manifold leaking gas at multiple connection points with visible corrosion and whistling sounds during operation. Gas pressure appears inconsistent across burners.",
+      "solution": "Replaced corroded gas manifold assembly and all connection fittings with new brass components. Performed complete pressure test and adjusted individual burner orifices for uniform output.",
+      "parts": [
+        "Gas Manifold Assembly 1-inch NPT 4-Outlet Brass",
+        "Pipe Nipples 1/2-inch NPT Black Iron Set of 4",
+        "Thread Sealant High-Temperature Gas-Rated"
+      ]
+    },
+    {
+      "problem": "Griddle surface tilted with 1/4-inch slope causing grease and food to pool on one side. Legs appear to have shifted and mounting hardware is loose.",
+      "solution": "Disassembled griddle mounting system and replaced bent adjustable legs with heavy-duty versions. Re-leveled entire unit using precision instruments and secured with grade-8 hardware.",
+      "parts": [
+        "Adjustable Leg Assembly 6-inch Stainless Steel Set of 4",
+        "Mounting Hardware Kit Grade-8 Bolts",
+        "Leveling Foot Pads Non-Slip Rubber 4-inch"
+      ]
+    },
+    {
+      "problem": "Backsplash grease shield rattling loudly during operation with visible cracks along mounting seams. Grease splatter reaching wall behind equipment.",
+      "solution": "Removed damaged backsplash assembly and installed reinforced replacement with proper mounting brackets. Applied high-temperature sealant to all joints and verified structural integrity.",
+      "parts": [
+        "Backsplash Assembly 36-inch Stainless Steel 16-gauge",
+        "Mounting Bracket Set Heavy-Duty L-Brackets",
+        "High-Temperature Sealant FDA-Approved"
+      ]
+    },
+    {
+      "problem": "Electric griddle heating elements showing visible red-hot spots with power consumption 40% higher than normal. Temperature zones reading incorrectly on digital display.",
+      "solution": "Replaced burned-out heating elements with proper wattage rating and installed new temperature sensors. Verified electrical connections and performed amperage draw test on each zone.",
+      "parts": [
+        "Heating Element 3000W 240V Tubular",
+        "Temperature Sensor RTD Probe 6-inch",
+        "Element Terminal Block 30-Amp Rating"
+      ]
+    },
+    {
+      "problem": "Pilot light won't stay lit after manual lighting with gas odor present around control area. Safety lockout engaging immediately after release of pilot button.",
+      "solution": "Replaced faulty thermopile generator that wasn't producing sufficient millivoltage to hold safety valve open. Cleaned pilot light assembly and adjusted gas-air mixture for proper combustion.",
+      "parts": [
+        "Thermopile Generator 750 Millivolt Output",
+        "Pilot Light Burner Assembly Natural Gas",
+        "Gas-Air Mixer Adjustment Screw Assembly"
+      ]
+    },
+    {
+      "problem": "Griddle surface temperature reading 100\u00b0F lower than thermostat setting with slow recovery time after food placement. Burner flames appear smaller than normal.",
+      "solution": "Cleaned clogged burner orifices restricting gas flow and replaced worn pressure regulator maintaining incorrect manifold pressure. Calibrated thermostat sensing bulb placement for accurate readings.",
+      "parts": [
+        "Pressure Regulator 11-inch WC Natural Gas",
+        "Burner Orifice Drill Set #54-#60",
+        "Thermostat Sensing Bulb 1/4-inch Diameter"
+      ]
+    },
+    {
+      "problem": "Grease channels cracked and leaking onto floor with visible structural damage around drain connections. Stainless steel showing stress corrosion at weld points.",
+      "solution": "Fabricated and installed new grease channel system with improved drainage design and reinforced mounting points. Applied food-grade welding techniques for all joints and performed leak test.",
+      "parts": [
+        "Grease Channel Assembly 36-inch 16-gauge Stainless",
+        "Drain Connection Elbow 1-inch NPT Stainless",
+        "Channel Support Brackets Reinforced Set of 6"
+      ]
+    },
+    {
+      "problem": "Electronic temperature controller display showing error codes with erratic zone control and inability to program cooking temperatures. Touch screen not responding to inputs.",
+      "solution": "Replaced failed electronic control board with updated firmware version and installed new touch screen interface. Programmed default cooking profiles and calibrated temperature sensors.",
+      "parts": [
+        "Electronic Control Board 240V Multi-Zone",
+        "Touch Screen Display 7-inch Color LCD",
+        "Control Board Wiring Harness 20-Pin Connector"
+      ]
+    },
+    {
+      "problem": "Gas griddle burner orifices clogged with carbon buildup causing uneven flame patterns and cold spots across cooking surface. Several burner ports completely blocked with no visible flame.",
+      "solution": "Removed and cleaned all burner orifices using specialized drill bits and compressed air. Replaced heavily damaged orifices and recalibrated gas flow rates.",
+      "parts": [
+        "Burner Orifice Set #54 Natural Gas 0.0465-inch",
+        "Orifice Cleaning Kit with Drill Bits",
+        "Burner Tube Assembly 24-inch Stainless Steel"
+      ]
+    },
+    {
+      "problem": "Electric griddle power distribution failing with only half the heating zones operational. Main power indicator shows normal but individual zone indicators remain dark.",
+      "solution": "Diagnosed failed main contactor and damaged power distribution block. Replaced electrical components and tested all heating circuits for proper amperage draw.",
+      "parts": [
+        "Contactor 3-Pole 40A 240V AC Coil",
+        "Power Distribution Block 6-Circuit 50A",
+        "Heating Element 3000W 240V Flat Ribbon"
+      ]
+    },
+    {
+      "problem": "Chrome griddle top showing extensive rust formation under chrome plating with surface becoming rough and difficult to clean. Chrome flaking off in multiple areas.",
+      "solution": "Removed damaged chrome griddle plate and installed new factory replacement. Sealed mounting surface and adjusted leveling to prevent moisture infiltration.",
+      "parts": [
+        "Chrome Griddle Plate 36x24-inch 1/2-inch Thick",
+        "Plate Mounting Gasket Set Food Grade",
+        "Leveling Foot Assembly Adjustable 4-inch"
+      ]
+    },
+    {
+      "problem": "Gas safety valve failing to open despite proper thermocouple signal with griddle remaining cold even when controls set to maximum temperature. Manual gas shut-off valve functions normally.",
+      "solution": "Replaced defective combination gas valve and recalibrated opening pressure. Tested safety lockout system and verified proper thermocouple millivolt output.",
+      "parts": [
+        "Combination Gas Valve 3/4-inch NPT 24V",
+        "Gas Valve Actuator Motor 24V AC",
+        "Thermocouple Lead Wire 36-inch High-Temp"
+      ]
+    },
+    {
+      "problem": "Griddle ignition transformer producing weak spark with delayed ignition and occasional failure to light. Spark gap appears correct but arc intensity insufficient.",
+      "solution": "Replaced failed ignition transformer and cleaned spark electrode assemblies. Adjusted spark gap to specification and tested ignition timing sequence.",
+      "parts": [
+        "Ignition Transformer 15000V 35mA",
+        "Spark Electrode Assembly Ceramic Insulated",
+        "High-Voltage Ignition Wire 18-inch"
+      ]
+    },
+    {
+      "problem": "Temperature probe reading 75\u00b0F higher than actual griddle surface temperature causing food to undercook. Digital controller shows steady temperature but infrared gun readings differ significantly.",
+      "solution": "Calibrated temperature controller and replaced defective RTD temperature probe. Repositioned probe for better thermal contact with griddle plate.",
+      "parts": [
+        "RTD Temperature Probe 1000-Ohm Platinum",
+        "Temperature Controller Digital Display 240V",
+        "Thermal Compound Food-Grade High-Temp"
+      ]
+    },
+    {
+      "problem": "Grease drawer guide rails bent and binding causing drawer to stick halfway during removal. Excessive force required to operate with visible track deformation.",
+      "solution": "Straightened damaged guide rails using hydraulic press and replaced worn drawer slides. Lubricated mechanism with high-temperature food-grade grease.",
+      "parts": [
+        "Heavy-Duty Drawer Slides 20-inch 100lb Capacity",
+        "Stainless Steel Guide Rails Set",
+        "Food-Grade High-Temp Bearing Grease"
+      ]
+    },
+    {
+      "problem": "Gas burner air shutters vibrating loose during operation causing improper air-fuel mixture and sooting. Flames appear yellow-orange instead of blue.",
+      "solution": "Tightened all air shutter assemblies and replaced damaged adjustment screws. Rebalanced air-fuel mixture for optimal combustion across all burners.",
+      "parts": [
+        "Air Shutter Assembly Complete with Hardware",
+        "Adjustment Screw Set Stainless Steel",
+        "Burner Venturi Tube 8-inch Natural Gas"
+      ]
+    },
+    {
+      "problem": "Griddle surface warping with visible bow in center causing oil to pool and uneven cooking results. Warpage measured at 3/16-inch deviation from flat.",
+      "solution": "Removed and replaced warped griddle plate with heavy-duty reinforced version. Upgraded support structure and adjusted mounting points for even load distribution.",
+      "parts": [
+        "Heavy-Duty Griddle Plate 1/2-inch Extra Thick",
+        "Reinforcement Support Brackets Set of 4",
+        "Plate Support Channel 36-inch Stainless"
+      ]
+    },
+    {
+      "problem": "Electric heating element connections overheating with visible discoloration and burning smell from junction box. Power consumption fluctuating during operation.",
+      "solution": "Replaced burned electrical connections and upgraded to higher-rated terminal blocks. Retorqued all connections to proper specification and tested under full load.",
+      "parts": [
+        "High-Current Terminal Block 60A Ceramic",
+        "Electrical Junction Box NEMA 4X Stainless",
+        "Heat-Resistant Wire Nuts 600V Rated"
+      ]
+    },
+    {
+      "problem": "Splash guard mounting bolts shearing under thermal expansion stress with guard becoming loose and rattling. Multiple bolt failures observed at different locations.",
+      "solution": "Replaced failed mounting hardware with thermal expansion-rated bolts and added spring washers. Reinforced mounting points with backing plates.",
+      "parts": [
+        "Thermal Expansion Bolts 1/4-20 x 2-inch",
+        "Spring Washer Set Stainless Steel",
+        "Reinforcement Backing Plates 2x2-inch"
+      ]
+    },
+    {
+      "problem": "Gas pressure regulator delivering inconsistent pressure with gauge readings varying between 8-15 inches water column. Burner flames fluctuating in size correspondingly.",
+      "solution": "Rebuilt gas pressure regulator with new diaphragm and spring assembly. Calibrated output pressure to 11 inches water column and tested under varying load conditions.",
+      "parts": [
+        "Regulator Diaphragm Kit Natural Gas",
+        "Pressure Spring Assembly Adjustable",
+        "Gas Pressure Gauge 0-20 inch WC"
+      ]
+    },
+    {
+      "problem": "Thermostat capillary tube kinked and damaged causing erratic temperature control with sudden temperature spikes. Visual inspection shows tube crushed near connection point.",
+      "solution": "Replaced entire thermostat assembly including capillary sensing bulb and calibrated temperature response. Rerouted capillary tube to prevent future damage.",
+      "parts": [
+        "Hydraulic Thermostat 200-400\u00b0F Range",
+        "Capillary Tube Assembly 48-inch",
+        "Sensing Bulb Stainless Steel 1/4-inch"
+      ]
+    },
+    {
+      "problem": "Grease collection system backing up with drain line completely blocked by solidified grease and food particles. System overflowing onto kitchen floor during peak hours.",
+      "solution": "Hydro-jetted drain lines to remove blockage and installed grease separator system. Upgraded drain capacity with larger diameter piping and improved slope.",
+      "parts": [
+        "Automatic Grease Separator Unit",
+        "PVC Drain Pipe 2-inch Schedule 40",
+        "Floor Drain Grate Heavy-Duty Stainless"
+      ]
+    },
+    {
+      "problem": "Control knob shaft stripped and spinning freely without engaging valve stem. Temperature adjustment impossible with knob rotating continuously without resistance.",
+      "solution": "Replaced damaged valve stem and control knob assembly. Repaired stripped threads in valve body and ensured proper engagement between components.",
+      "parts": [
+        "Gas Valve Stem Assembly 1/4-turn",
+        "Control Knob with Set Screw Stainless",
+        "Thread Repair Insert Kit M8x1.25"
+      ]
+    },
+    {
+      "problem": "Gas griddle pressure regulator malfunctioning with BTU output dropping 30% during peak cooking times. Flames turn orange and griddle fails to maintain temperature under heavy load.",
+      "solution": "Replaced faulty gas pressure regulator and recalibrated gas line pressure to manufacturer specifications. Cleaned and adjusted primary air shutters on all burners.",
+      "parts": [
+        "Gas Pressure Regulator 3/4-inch NPT 11-inch WC",
+        "Primary Air Shutter Assembly Set (6 pieces)",
+        "Gas Line Pressure Gauge 0-14 WC"
+      ]
+    },
+    {
+      "problem": "Electric griddle contactor chattering and arcing with visible burn marks on electrical contacts. Unit experiences intermittent power loss and tripping of circuit breakers.",
+      "solution": "Installed new contactor assembly and replaced damaged wire terminals with heat-resistant connectors. Tightened all electrical connections and verified proper voltage supply.",
+      "parts": [
+        "Definite Purpose Contactor 40A 240V 3-Pole",
+        "High-Temp Wire Terminals 10AWG (12 pack)",
+        "Electrical Contact Cleaner Spray"
+      ]
+    },
+    {
+      "problem": "Griddle drain system backing up with grease solidifying in drain lines and causing slow water evacuation. Kitchen staff reports standing water in grease trough after cleaning.",
+      "solution": "Cleared blocked drain lines using commercial degreaser and installed new drain trap with larger capacity. Repositioned drain pipe slope for improved flow.",
+      "parts": [
+        "Commercial Grease Trap 20-Gallon Capacity",
+        "Drain Line Snake 1/2-inch x 25-foot",
+        "High-Temperature Drain Pipe 2-inch Schedule 40"
+      ]
+    },
+    {
+      "problem": "Gas griddle flame sensors dirty and corroded causing erratic safety shutdowns during normal operation. System fails flame detection test and requires constant manual restarting.",
+      "solution": "Cleaned flame sensor probes with fine abrasive cloth and replaced corroded sensor leads. Adjusted sensor positioning for optimal flame detection coverage.",
+      "parts": [
+        "Flame Sensor Probe Assembly 8-inch Length",
+        "High-Temperature Sensor Wire 18AWG",
+        "Flame Sensor Mounting Bracket Stainless Steel"
+      ]
+    },
+    {
+      "problem": "Electric griddle zone control board displaying random temperature readings with cooking zones heating inconsistently. Digital readout flickering between different temperature values.",
+      "solution": "Replaced defective control board and updated firmware to latest version. Recalibrated all temperature sensors and verified proper zone isolation.",
+      "parts": [
+        "Multi-Zone Control Board 240V 6-Zone",
+        "Temperature Sensor RTD Probe 1/4-inch NPT",
+        "Control Board Mounting Hardware Kit"
+      ]
+    },
+    {
+      "problem": "Gas griddle burner tubes warped from overheating with visible deformation causing uneven gas distribution. Hot spots and cold zones apparent across cooking surface.",
+      "solution": "Installed new burner tube assembly and realigned gas manifold connections. Adjusted gas orifice sizes to ensure uniform BTU distribution across all burners.",
+      "parts": [
+        "Stainless Steel Burner Tube 36-inch Length",
+        "Gas Orifice Drill Set #53-#60",
+        "Burner Tube Support Brackets (4 pieces)"
+      ]
+    },
+    {
+      "problem": "Chrome griddle surface developing hairline cracks with grease penetrating into base metal causing discoloration. Cooking performance degraded with increased food sticking.",
+      "solution": "Resurfaced griddle plate using diamond grinding wheel and applied new chrome plating treatment. Seasoned surface with high-temperature cooking oil per manufacturer protocol.",
+      "parts": [
+        "Chrome Plating Restoration Kit Industrial Grade",
+        "Diamond Grinding Wheel 7-inch 120-Grit",
+        "High-Temperature Griddle Seasoning Oil 1-Quart"
+      ]
+    },
+    {
+      "problem": "Electric griddle heating element terminals overheating with visible discoloration and loose connections. Power draw fluctuating and causing voltage drops in kitchen panel.",
+      "solution": "Replaced all heating element terminals with high-amperage connectors and upgraded wiring to proper gauge. Applied dielectric grease to prevent future corrosion.",
+      "parts": [
+        "High-Amp Terminal Block 50A 600V",
+        "THHN Wire 8AWG Stranded 25-foot",
+        "Dielectric Terminal Compound 4-ounce Tube"
+      ]
+    },
+    {
+      "problem": "Gas griddle automatic shut-off valve sticking in closed position preventing startup after cleaning cycles. Manual override requires excessive force to operate.",
+      "solution": "Disassembled and cleaned shut-off valve mechanism removing food debris and grease buildup. Replaced worn valve seats and lubricated moving components.",
+      "parts": [
+        "Gas Shut-Off Valve 3/4-inch NPT Automatic",
+        "Valve Seat Repair Kit with O-Rings",
+        "High-Temperature Valve Lubricant Food-Safe"
+      ]
+    },
+    {
+      "problem": "Griddle splash guard mounting bolts loosening from thermal expansion cycles causing rattling and grease leakage. Guard shifting position during operation.",
+      "solution": "Installed spring-loaded mounting hardware designed for thermal expansion and applied thread-locking compound. Realigned splash guard to proper clearances.",
+      "parts": [
+        "Spring-Loaded Mounting Bolts 1/4-20 x 2-inch (8 pack)",
+        "High-Temperature Thread Locker Red",
+        "Thermal Expansion Washers Stainless Steel"
+      ]
+    },
+    {
+      "problem": "Electric griddle ground fault protection circuit tripping intermittently with no visible moisture present. Kitchen losing cooking capacity during busy periods.",
+      "solution": "Identified degraded heating element insulation and replaced affected elements. Installed new GFCI breaker with higher sensitivity rating for commercial applications.",
+      "parts": [
+        "Griddle Heating Element 240V 3000W",
+        "Commercial GFCI Breaker 30A 240V",
+        "Element Insulation Tester Megohm Meter"
+      ]
+    },
+    {
+      "problem": "Gas griddle venturi tubes blocked with grease and debris causing poor air-gas mixture and sooting. Burner flames burning yellow with carbon deposits on cooking surface.",
+      "solution": "Removed and thoroughly cleaned all venturi tubes using compressed air and degreasing solvent. Adjusted primary air intake for optimal blue flame combustion.",
+      "parts": [
+        "Venturi Tube Assembly Complete Set",
+        "Compressed Air Blow Gun with Extensions",
+        "Commercial Degreasing Solvent 1-Gallon"
+      ]
+    },
+    {
+      "problem": "Griddle surface thermometer reading incorrectly with 50\u00b0F variance from actual surface temperature. Cooking times inconsistent and food quality suffering.",
+      "solution": "Calibrated surface thermometer using precision reference standards and replaced damaged thermal sensing bulb. Adjusted mounting depth for accurate readings.",
+      "parts": [
+        "Bi-Metal Surface Thermometer 2-inch Dial",
+        "Thermometer Calibration Kit with Standards",
+        "Thermal Sensing Bulb 6-inch Probe"
+      ]
+    },
+    {
+      "problem": "Electric griddle power relay contacts welded shut causing zones to remain energized continuously. Temperature control non-functional and overheating risk present.",
+      "solution": "Replaced power relay assembly with higher-rated contacts and installed surge protection device. Added thermal overload protection for each heating zone.",
+      "parts": [
+        "Power Relay 240V 40A DPDT",
+        "Surge Protection Device 240V Commercial",
+        "Thermal Overload Switch 180\u00b0F Auto-Reset"
+      ]
+    },
+    {
+      "problem": "Gas griddle flexible connector showing stress cracks near fitting connections with slight gas odor detected during leak test. Safety inspection required immediate attention.",
+      "solution": "Replaced entire flexible gas connector with new approved commercial-grade line and upgraded to larger diameter for improved flow. Pressure tested all connections.",
+      "parts": [
+        "Flexible Gas Connector 3/4-inch x 48-inch CSA Approved",
+        "Gas Line Thread Sealant High-Pressure",
+        "Digital Gas Leak Detector Instrument"
+      ]
+    },
+    {
+      "problem": "Electric griddle shorting to ground with circuit breaker tripping repeatedly during startup. Kitchen staff reports electrical shock sensations when touching griddle frame and burning smell from control panel area.",
+      "solution": "Replaced damaged wiring harness with water intrusion damage and installed new GFCI protection circuit. Rewired control panel connections with proper grounding and sealed all electrical junction boxes.",
+      "parts": [
+        "Control panel wiring harness 240V 16-gauge THWN",
+        "GFCI breaker 50-amp 240V double-pole",
+        "Electrical junction box NEMA 4X stainless steel"
+      ]
+    },
+    {
+      "problem": "Gas griddle producing sooty yellow flames with excessive carbon monoxide readings during health inspection. Burner flames unstable and wavering with poor combustion efficiency noted.",
+      "solution": "Cleaned and adjusted primary air shutters on all burners for proper air-to-gas mixture ratio. Replaced worn gas pressure regulator and calibrated manifold pressure to manufacturer specifications.",
+      "parts": [
+        "Gas pressure regulator 1/2-inch NPT 11-inch WC",
+        "Primary air shutter assembly set of 6",
+        "Manifold pressure gauge 0-15 WC digital"
+      ]
+    },
+    {
+      "problem": "Stainless steel griddle plate warped with 3/8-inch bow causing oil to pool in center and uneven cooking results. Plate shows stress cracks near mounting bolts from thermal expansion.",
+      "solution": "Removed and replaced entire griddle plate with heavy-duty reinforced version. Installed flexible mounting system with thermal expansion joints to prevent future warping.",
+      "parts": [
+        "Griddle plate 36-inch x 24-inch 1/2-inch thick reinforced steel",
+        "Thermal expansion joint kit stainless steel",
+        "Mounting bolt set M12 x 1.75 grade 8 heat-treated"
+      ]
+    },
+    {
+      "problem": "Gas control knob stems seized and cannot be turned with internal valve mechanisms corroded from steam exposure. Multiple control valves stuck in partially open positions affecting temperature control.",
+      "solution": "Disassembled and rebuilt all gas control valves with new stems and seals rated for high-temperature operation. Applied food-grade anti-seize compound to all threaded connections.",
+      "parts": [
+        "Gas valve stem assembly 1/2-inch with packing gland",
+        "High-temperature valve seal kit Viton O-rings",
+        "Food-grade anti-seize compound 4-oz tube"
+      ]
+    },
+    {
+      "problem": "Temperature probe sensor reading 200\u00b0F high causing griddle to underheat and automatic shutdowns during peak cooking periods. Digital controller shows sensor fault intermittently with erratic temperature displays.",
+      "solution": "Replaced failed RTD temperature sensor with calibrated unit and updated controller firmware to match new sensor specifications. Recalibrated temperature zones using certified reference thermometer.",
+      "parts": [
+        "RTD temperature sensor Pt100 1/8-inch diameter 6-inch probe",
+        "Digital temperature controller firmware update chip",
+        "Sensor mounting well 1/4-inch NPT stainless steel"
+      ]
+    }
+  ]
+}

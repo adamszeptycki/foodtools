@@ -3,7 +3,7 @@
 from faker import Faker
 import random
 from datetime import datetime, timedelta
-from .constants import MACHINE_CATEGORIES, TECHNICIANS, COMPANIES
+from .constants import MACHINE_CATEGORIES, SERVICE_ISSUES, TECHNICIANS, COMPANIES
 
 
 class ServiceDocumentDataGenerator:
@@ -36,16 +36,18 @@ class ServiceDocumentDataGenerator:
 		machine_data = MACHINE_CATEGORIES[category]
 
 		model = random.choice(machine_data["models"])
-		problem = random.choice(machine_data["common_problems"])
-		solution = random.choice(machine_data["solutions"])
 
-		# 70% chance of parts being used
+		# Pick a linked problem-solution-parts entry for consistency
+		service_issue = random.choice(SERVICE_ISSUES[category])
+		problem = service_issue["problem"]
+		solution = service_issue["solution"]
+
+		# 70% chance of parts being used - pick from this issue's valid parts
 		parts_used = None
 		if random.random() < 0.7:
-			num_parts = random.randint(1, 3)
-			parts_used = ", ".join(
-				random.sample(machine_data["parts"], min(num_parts, len(machine_data["parts"])))
-			)
+			available_parts = service_issue["parts"]
+			num_parts = random.randint(1, min(3, len(available_parts)))
+			parts_used = ", ".join(random.sample(available_parts, num_parts))
 
 		# Generate service metadata
 		service_date = self.fake.date_between(start_date="-2y", end_date="today")

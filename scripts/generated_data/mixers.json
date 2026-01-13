@@ -1,0 +1,452 @@
+[
+  {
+    "problem": "60-quart planetary mixer motor runs but bowl fails to rotate, with grinding noise coming from the planetary gear assembly during operation.",
+    "solution": "Disassembled planetary gear assembly and found stripped main drive gear teeth. Replaced the damaged planetary drive gear and rebuilt the entire assembly with fresh lubrication.",
+    "parts": [
+      "Planetary Drive Gear Assembly P/N PG-60-2",
+      "Gear Housing Gasket Set GS-PL60",
+      "Food Grade Gear Oil SAE 90 (1 quart)"
+    ]
+  },
+  {
+    "problem": "Spiral mixer speed controller display shows error code E04 and motor fails to start when mixing switch is engaged.",
+    "solution": "Diagnosed faulty VFD output module causing the error code. Replaced the variable frequency drive unit and reprogrammed speed parameters to factory specifications.",
+    "parts": [
+      "VFD Controller 5HP 480V 3-Phase Model VF-5480",
+      "VFD Programming Cable PC-VF5",
+      "Control Fuse 5A 250V Fast-Acting"
+    ]
+  },
+  {
+    "problem": "20-quart planetary mixer bowl lift mechanism operates sluggishly and fails to reach full height position, making loud clicking sounds during operation.",
+    "solution": "Found worn bowl lift cam and damaged limit switch assembly. Replaced the lift cam mechanism and adjusted limit switch positioning for proper bowl height detection.",
+    "parts": [
+      "Bowl Lift Cam Assembly BL-20-CAM",
+      "Bowl Height Limit Switch LS-BH20 SPDT",
+      "Lift Chain 3/8 inch 24-link stainless steel"
+    ]
+  },
+  {
+    "problem": "80-quart spiral mixer main motor bearing produces excessive heat and metal shavings are visible around the motor housing during extended mixing cycles.",
+    "solution": "Removed motor from mixer frame and replaced failed main shaft bearings. Cleaned bearing races thoroughly and reassembled with proper bearing preload specifications.",
+    "parts": [
+      "Motor Shaft Bearing 6208-2RS Deep Groove Ball",
+      "Motor Housing Bearing 6307-ZZ Shielded",
+      "High Temperature Bearing Grease 400\u00b0F rated (4 oz tube)"
+    ]
+  },
+  {
+    "problem": "Planetary mixer safety interlock prevents operation when bowl guard is properly closed and locked in position.",
+    "solution": "Tested safety interlock switches and found misaligned bowl guard switch causing false open signal. Adjusted switch mounting bracket and replaced worn actuator pin.",
+    "parts": [
+      "Safety Interlock Switch SPST-NC 15A 250V",
+      "Switch Actuator Pin 1/4 inch stainless steel",
+      "Interlock Switch Mounting Bracket SG-20"
+    ]
+  },
+  {
+    "problem": "Mixer attachment hub wobbles excessively during operation and fails to hold beater attachment securely, causing intermittent slipping.",
+    "solution": "Disassembled attachment hub and found worn hub bushing and damaged retention spring. Replaced hub bushing and spring mechanism, then realigned hub concentricity.",
+    "parts": [
+      "Attachment Hub Bushing Bronze 1.5 inch ID",
+      "Hub Retention Spring Assembly RS-ATT20",
+      "Hub Alignment Shim Set 0.005-0.020 inch"
+    ]
+  },
+  {
+    "problem": "40-quart mixer motor runs continuously regardless of timer setting and speed control position, indicating control circuit malfunction.",
+    "solution": "Located stuck motor contactor causing continuous operation. Replaced the primary motor contactor and cleaned oxidized contact surfaces on control relay.",
+    "parts": [
+      "Motor Contactor 30A 3-pole 240V coil Model MC-30-240",
+      "Control Relay 8-pin DPDT 24VDC",
+      "Contact Cleaner Spray 12 oz aerosol"
+    ]
+  },
+  {
+    "problem": "Spiral mixer gearbox temperature runs excessively hot at 180\u00b0F during normal operation and oil level appears adequate.",
+    "solution": "Found contaminated gear oil with metal particles indicating internal wear. Drained gearbox completely, replaced oil seals, and refilled with fresh food-grade gear oil.",
+    "parts": [
+      "Gearbox Output Seal 2.5 inch Viton",
+      "Input Shaft Seal 1.75 inch NBR",
+      "Food Grade Gear Oil ISO 220 (2 gallons)"
+    ]
+  },
+  {
+    "problem": "Planetary mixer operates normally at low speeds but motor trips circuit breaker when switched to high speed settings above speed 6.",
+    "solution": "Measured motor current draw and found excessive amperage due to failed start capacitor. Replaced motor start capacitor and verified proper motor current on all speed settings.",
+    "parts": [
+      "Motor Start Capacitor 250\u00b5F 330VAC",
+      "Run Capacitor 40\u00b5F 370VAC",
+      "Capacitor Mounting Bracket CAP-MNT-20"
+    ]
+  },
+  {
+    "problem": "60-quart mixer planetary shaft seized completely and cannot be rotated manually, with visible scoring marks on the shaft surface.",
+    "solution": "Removed planetary assembly and found seized planetary shaft bearings due to lubrication failure. Replaced both upper and lower planetary shaft bearings and relubricated assembly.",
+    "parts": [
+      "Upper Planetary Bearing 6004-2RS Sealed",
+      "Lower Planetary Bearing 6006-ZZ Shielded",
+      "Planetary Shaft Seal Kit PSK-60"
+    ]
+  },
+  {
+    "problem": "Mixer bowl lock mechanism engages but bowl rotates freely instead of remaining stationary during planetary mixing operation.",
+    "solution": "Inspected bowl lock assembly and found worn lock pin and damaged cam surface. Replaced bowl lock pin assembly and resurfaced the bowl lock cam.",
+    "parts": [
+      "Bowl Lock Pin Assembly BLP-40-SS",
+      "Lock Cam Surface Insert Hardened Steel",
+      "Bowl Lock Spring Heavy Duty BLS-40"
+    ]
+  },
+  {
+    "problem": "Speed controller responds to input commands but mixer operates only at maximum speed regardless of speed selector position.",
+    "solution": "Diagnosed failed speed control potentiometer providing constant maximum signal to motor controller. Replaced speed control potentiometer and calibrated speed response curve.",
+    "parts": [
+      "Speed Control Potentiometer 10k\u03a9 Linear Taper",
+      "Control Knob Assembly with Set Screw",
+      "Potentiometer Dust Cover PC-10K"
+    ]
+  },
+  {
+    "problem": "Spiral mixer automatic lubrication system fails to distribute oil to gearbox components, with lubrication pump motor running but no oil flow visible.",
+    "solution": "Found clogged oil filter and failed oil pump causing lubrication system malfunction. Replaced oil pump assembly and installed new oil filtration system.",
+    "parts": [
+      "Automatic Oil Pump 24VDC 0.5 GPM",
+      "Oil Filter Element 10 micron washable",
+      "Oil Distribution Line 1/4 inch nylon tubing (10 feet)"
+    ]
+  },
+  {
+    "problem": "Planetary mixer produces loud grinding noise during bowl rotation with visible metal debris collecting under the mixer base.",
+    "solution": "Located failed bowl drive gear at bottom of mixer causing grinding noise and debris. Replaced bowl drive gear assembly and cleaned all contaminated oil from gear housing.",
+    "parts": [
+      "Bowl Drive Gear 48-tooth hardened steel",
+      "Bowl Drive Bearing 6205-2RS",
+      "Gear Housing Drain Plug with O-ring"
+    ]
+  },
+  {
+    "problem": "Mixer motor starts normally but loses power progressively during operation until it stops completely after 10-15 minutes of runtime.",
+    "solution": "Measured motor temperature and found overheating due to failed cooling fan and clogged motor ventilation. Replaced cooling fan motor and cleaned all ventilation passages.",
+    "parts": [
+      "Motor Cooling Fan 115VAC 4-inch diameter",
+      "Fan Motor Mounting Bracket FM-20",
+      "Motor Air Filter Washable Foam Type"
+    ]
+  },
+  {
+    "problem": "80-quart planetary mixer motor capacitor bulged and leaked electrolyte, causing motor to struggle starting and run with reduced torque under load.",
+    "solution": "Replaced failed run capacitor and cleaned electrolyte residue from motor housing, tested motor current draw and operation.",
+    "parts": [
+      "Motor Run Capacitor 45\u00b5F 370VAC",
+      "Motor Start Capacitor 189-227\u00b5F 115VAC",
+      "Capacitor Mounting Bracket"
+    ]
+  },
+  {
+    "problem": "Spiral mixer VFD drive displays overheating alarm and shuts down after 5 minutes of operation, with cooling fan running but inadequate airflow.",
+    "solution": "Cleaned blocked heat sink fins and replaced failed cooling fan, updated VFD thermal protection parameters.",
+    "parts": [
+      "Axial Cooling Fan 120VAC 172mm x 51mm",
+      "VFD Heat Sink Compound",
+      "Air Filter Element 6x12 inches"
+    ]
+  },
+  {
+    "problem": "20-quart mixer agitator shaft bearing produces metallic grinding noise and exhibits 0.125-inch radial play during rotation.",
+    "solution": "Pressed out worn bearing assembly and installed new sealed ball bearing with proper preload torque specification.",
+    "parts": [
+      "Deep Groove Ball Bearing 6309-2RS",
+      "Bearing Retaining Ring 45mm",
+      "Food Grade Bearing Grease NLGI-2"
+    ]
+  },
+  {
+    "problem": "Planetary mixer electrical contactor chatters continuously when energized and fails to hold contacts closed, causing intermittent motor operation.",
+    "solution": "Replaced worn contactor assembly and adjusted control voltage to proper 24VAC level, cleaned all electrical connections.",
+    "parts": [
+      "Motor Contactor 3-Pole 40A 120VAC Coil",
+      "Auxiliary Contact Block NO/NC",
+      "Terminal Block 10-Position"
+    ]
+  },
+  {
+    "problem": "60-quart mixer bowl lift hydraulic cylinder leaks fluid internally causing bowl to drift downward under load during operation.",
+    "solution": "Rebuilt hydraulic cylinder with new seals and O-rings, replaced contaminated hydraulic fluid with food-grade oil.",
+    "parts": [
+      "Hydraulic Cylinder Seal Kit",
+      "Food Grade Hydraulic Oil ISO 32",
+      "Hydraulic Filter Element 10-Micron"
+    ]
+  },
+  {
+    "problem": "Spiral mixer transmission output shaft keyway sheared completely, preventing power transfer from motor to mixing paddle assembly.",
+    "solution": "Machined new keyway in output shaft and replaced sheared Woodruff key, aligned coupling and torqued to specification.",
+    "parts": [
+      "Woodruff Key 1/4 x 1-1/4 inch",
+      "Output Shaft Coupling",
+      "Thread Locking Compound"
+    ]
+  },
+  {
+    "problem": "Planetary mixer timer mechanism sticks at 15-minute position and fails to advance, leaving mixer running beyond set time limits.",
+    "solution": "Disassembled timer assembly and cleaned internal contacts, replaced worn timer motor and calibrated timing sequence.",
+    "parts": [
+      "Timer Motor 120VAC 1RPM",
+      "Timer Contact Assembly",
+      "Timer Dial Face"
+    ]
+  },
+  {
+    "problem": "40-quart mixer bowl clamp assembly loosens during operation allowing bowl to shift position and contact mixing attachment.",
+    "solution": "Replaced worn bowl clamp springs and adjusted clamp tension mechanism, resurfaced contact surfaces.",
+    "parts": [
+      "Bowl Clamp Spring Set",
+      "Clamp Adjustment Screw M12x1.5",
+      "Bowl Positioning Pin"
+    ]
+  },
+  {
+    "problem": "Mixer main motor overheating protection relay trips repeatedly during normal operation despite motor running at proper amperage.",
+    "solution": "Replaced defective thermal overload relay and recalibrated trip setting to motor nameplate current rating.",
+    "parts": [
+      "Thermal Overload Relay 15-22A Range",
+      "Relay Contact Block",
+      "Motor Temperature Sensor"
+    ]
+  },
+  {
+    "problem": "Spiral mixer dough hook attachment loosens during heavy mixing cycles due to worn attachment hub threads and retention mechanism.",
+    "solution": "Re-threaded attachment hub with thread repair insert and replaced worn retaining collar with new locking design.",
+    "parts": [
+      "Thread Repair Insert M24x2.0",
+      "Attachment Retaining Collar",
+      "Hub Locking Pin"
+    ]
+  },
+  {
+    "problem": "Planetary mixer speed selector switch contacts are burned and pitted, causing erratic speed changes and motor hesitation.",
+    "solution": "Replaced entire speed selector switch assembly and cleaned carbon deposits from switch housing and terminals.",
+    "parts": [
+      "Multi-Position Rotary Switch 12-Position",
+      "Switch Contact Cleaner Spray",
+      "Switch Terminal Block"
+    ]
+  },
+  {
+    "problem": "60-quart mixer transmission input bearing races show pitting and scoring, creating vibration that increases with operating speed.",
+    "solution": "Disassembled transmission and replaced both input shaft bearings, realigned input coupling to eliminate side loading.",
+    "parts": [
+      "Tapered Roller Bearing 32008",
+      "Bearing Lock Nut M40x1.5",
+      "Input Shaft Seal 40x62x8mm"
+    ]
+  },
+  {
+    "problem": "Mixer control transformer primary winding shorted to ground causing 120VAC control circuit to lose power intermittently.",
+    "solution": "Replaced damaged control transformer and upgraded to higher VA rating, installed new fuse holder with indicator.",
+    "parts": [
+      "Control Transformer 480/120VAC 250VA",
+      "Fuse Holder with LED Indicator",
+      "Control Circuit Fuse 2A Fast-Acting"
+    ]
+  },
+  {
+    "problem": "Spiral mixer bowl rotation bearing seized due to water contamination and corrosion, preventing bowl from turning during mixing.",
+    "solution": "Removed corroded bearing assembly and installed stainless steel replacement bearing with improved sealing system.",
+    "parts": [
+      "Stainless Steel Ball Bearing 6218-SS",
+      "Nitrile Bowl Seal 90x110x12mm",
+      "Bearing Housing Gasket"
+    ]
+  },
+  {
+    "problem": "Planetary mixer agitator height adjustment mechanism binding prevents proper clearance setting between beater and bowl bottom.",
+    "solution": "Disassembled height adjustment assembly and replaced worn lead screw and bronze nut, lubricated all moving parts.",
+    "parts": [
+      "Adjustment Lead Screw M16x2.0",
+      "Bronze Lead Screw Nut",
+      "Food Grade Assembly Grease"
+    ]
+  },
+  {
+    "problem": "40-quart planetary mixer emergency stop button remains stuck in pressed position and cannot be reset, preventing any mixer operation despite all other controls functioning normally.",
+    "solution": "Replaced faulty emergency stop switch assembly and cleaned accumulated flour debris from the switch housing mechanism that was preventing proper reset operation.",
+    "parts": [
+      "Emergency Stop Switch Assembly NCR 22mm Red Mushroom Head",
+      "Switch Contact Block NO/NC 10A 600V",
+      "Switch Mounting Collar Chrome Plated"
+    ]
+  },
+  {
+    "problem": "Spiral mixer transmission input shaft coupling exhibits severe wear with 0.25-inch end play, causing excessive vibration and misalignment between motor and gearbox.",
+    "solution": "Installed new flexible jaw coupling and realigned motor-to-transmission assembly using precision dial indicators to achieve 0.003-inch maximum total indicator runout.",
+    "parts": [
+      "Flexible Jaw Coupling L095 1.5-inch Bore",
+      "Coupling Spider Insert Polyurethane 95A Durometer",
+      "Motor Mounting Bolts Grade 8 M12x1.75x60mm"
+    ]
+  },
+  {
+    "problem": "20-quart mixer bowl tilt mechanism hydraulic pump motor runs continuously but fails to build pressure, with oil reservoir level dropping rapidly during operation.",
+    "solution": "Replaced worn hydraulic pump assembly and rebuilt hydraulic cylinder with new seals, then refilled system with ISO 32 hydraulic fluid and bled all air.",
+    "parts": [
+      "Hydraulic Gear Pump 0.5 GPM 1800 RPM",
+      "Hydraulic Cylinder Seal Kit 2-inch Bore",
+      "Hydraulic Fluid ISO 32 Anti-Wear 5 Gallon"
+    ]
+  },
+  {
+    "problem": "Planetary mixer dough hook attachment falls off during operation due to worn attachment hub threads that no longer maintain secure connection.",
+    "solution": "Machined hub threads to oversize specification and installed threaded insert sleeve, then applied thread-locking compound to ensure secure attachment retention.",
+    "parts": [
+      "Threaded Insert Sleeve Stainless Steel 1.25-inch",
+      "Thread-Locking Compound Loctite 243 Medium Strength",
+      "Hub Retaining Washer Hardened Steel"
+    ]
+  },
+  {
+    "problem": "80-quart spiral mixer VFD parameter settings corrupted causing motor to run in reverse direction and operate at incorrect frequency despite proper input commands.",
+    "solution": "Performed VFD factory reset and reprogrammed all operational parameters including motor nameplate data, acceleration/deceleration times, and direction control settings.",
+    "parts": [
+      "VFD Programming Cable USB to RS485",
+      "VFD Parameter Manual and Software CD",
+      "VFD Display Module Replacement LCD"
+    ]
+  },
+  {
+    "problem": "Planetary mixer bowl guard proximity sensor fails to detect closed position causing safety interlock to prevent mixer startup even with guard properly installed.",
+    "solution": "Replaced defective inductive proximity sensor and adjusted sensor mounting bracket to achieve 2mm sensing gap with proper LED indication during guard closure.",
+    "parts": [
+      "Inductive Proximity Sensor M18 PNP 10-30VDC",
+      "Sensor Mounting Bracket Adjustable Stainless Steel",
+      "Sensor Cable 3-Wire Shielded 10 Meter"
+    ]
+  },
+  {
+    "problem": "60-quart mixer planetary gear assembly oil seal leaks continuously creating oil puddle under mixer and contaminating food preparation area with lubricant.",
+    "solution": "Disassembled planetary housing and replaced worn oil seal with proper installation tools, then refilled gearbox with synthetic gear oil to specification level.",
+    "parts": [
+      "Oil Seal Double Lip Viton 2.5-inch Shaft",
+      "Synthetic Gear Oil ISO VG 220 1 Quart",
+      "Seal Installation Tool Set Metric"
+    ]
+  },
+  {
+    "problem": "Spiral mixer main motor thermal overload relay trips repeatedly after 3-5 minutes of operation under normal load conditions indicating overheating protection activation.",
+    "solution": "Cleaned motor cooling fan and air passages, then replaced thermal overload relay with correct amperage rating and verified motor current draw within specifications.",
+    "parts": [
+      "Thermal Overload Relay 15-22 Amp Range",
+      "Motor Cooling Fan Blade 6-inch Diameter",
+      "Fan Motor Bearings Sealed Ball Bearing Set"
+    ]
+  },
+  {
+    "problem": "20-quart planetary mixer speed selector switch intermittently fails to make contact at speed positions 4 and 6, causing mixer to skip these speeds during operation.",
+    "solution": "Disassembled rotary switch assembly and cleaned oxidized contacts with electrical contact cleaner, then replaced worn contact springs and applied dielectric grease.",
+    "parts": [
+      "Rotary Switch Contact Kit 8-Position",
+      "Electrical Contact Cleaner Spray 12oz",
+      "Dielectric Grease High Temperature 4oz Tube"
+    ]
+  },
+  {
+    "problem": "Mixer motor control circuit exhibits intermittent power interruption with lights dimming and motor stuttering during startup indicating loose electrical connections.",
+    "solution": "Tightened all electrical connections in control panel and motor junction box, then applied anti-oxidant compound to prevent corrosion and ensure reliable contact.",
+    "parts": [
+      "Anti-Oxidant Electrical Compound 4oz Tube",
+      "Wire Nuts Assorted Pack 10-14 AWG",
+      "Terminal Block Screws Stainless Steel M4x12mm"
+    ]
+  },
+  {
+    "problem": "Planetary mixer agitator shaft develops 0.050-inch axial play allowing vertical movement that affects mixing consistency and causes bowl contact during operation.",
+    "solution": "Replaced worn thrust bearing assembly and adjusted preload to eliminate axial play while maintaining smooth rotation without binding or excessive drag.",
+    "parts": [
+      "Thrust Bearing Assembly 1.5-inch Bore",
+      "Bearing Lock Nut KM Series M30x1.5",
+      "Bearing Preload Spring Disc Washer Set"
+    ]
+  },
+  {
+    "problem": "80-quart mixer gearbox drain plug stripped threads preventing proper oil changes and causing minor oil seepage during operation.",
+    "solution": "Drilled out damaged drain plug and installed threaded insert with sealant, then performed complete oil change with synthetic gear lubricant and new drain plug.",
+    "parts": [
+      "Threaded Insert M14x1.5 Stainless Steel",
+      "Thread Sealant Pipe Dope High Temperature",
+      "Magnetic Drain Plug M14x1.5 with Gasket"
+    ]
+  },
+  {
+    "problem": "Spiral mixer limit switch for bowl position fails to activate when bowl reaches upper limit causing bowl lift to over-travel and jam against mechanical stops.",
+    "solution": "Replaced defective limit switch and adjusted actuator arm positioning to ensure reliable switching at proper bowl height with adequate overtravel protection.",
+    "parts": [
+      "Heavy Duty Limit Switch DPDT 15A 250V",
+      "Adjustable Actuator Arm Roller Bearing Type",
+      "Limit Switch Mounting Bracket Zinc Plated"
+    ]
+  },
+  {
+    "problem": "Planetary mixer timer mechanism fails to advance properly causing mixing cycle to run continuously without automatic shut-off after preset time interval.",
+    "solution": "Replaced mechanical timer motor and gear assembly, then calibrated timing mechanism to ensure accurate cycle control within \u00b15% of set time periods.",
+    "parts": [
+      "Timer Motor Assembly 60Hz Synchronous",
+      "Timer Gear Reduction Unit 60:1 Ratio",
+      "Timer Dial Calibration Decal Set"
+    ]
+  },
+  {
+    "problem": "60-quart mixer planetary drive pinion gear exhibits chipped teeth and excessive backlash causing rough operation and metallic clicking sounds during mixing cycles.",
+    "solution": "Replaced damaged pinion gear and mating ring gear assembly, then adjusted gear mesh pattern and backlash to manufacturer specifications using dial indicator.",
+    "parts": [
+      "Planetary Drive Pinion Gear 24-Tooth Hardened Steel",
+      "Planetary Ring Gear Assembly Heat Treated",
+      "Gear Mesh Compound Blue Prussian 2oz Tube"
+    ]
+  },
+  {
+    "problem": "30-quart planetary mixer transmission oil seal failed, causing lubricant to leak onto the floor and contaminate food preparation area. Gearbox oil level dropped below minimum line and internal components show signs of inadequate lubrication.",
+    "solution": "Replaced transmission input shaft oil seal and replenished gearbox with proper grade lubricant. Cleaned contaminated areas and verified seal integrity through extended operational test.",
+    "parts": [
+      "Transmission input shaft oil seal 45mm x 65mm x 10mm Viton",
+      "Gearbox lubricant ISO VG 220 synthetic gear oil 2-liter bottle",
+      "Gasket sealant high-temperature food-grade silicone"
+    ]
+  },
+  {
+    "problem": "Spiral mixer dough hook attachment slips during heavy bread dough mixing, with visible wear on the drive hub splines. Attachment cannot maintain proper engagement under normal operating loads.",
+    "solution": "Machined and rebuilt attachment hub with oversize hardened steel splines, then fitted matching oversize splined dough hook. Torque specifications verified to manufacturer standards.",
+    "parts": [
+      "Attachment hub assembly hardened steel 1.5-inch bore with keyway",
+      "Spiral dough hook 80-quart capacity with reinforced spline connection",
+      "Drive hub retaining bolt Grade 8 M16 x 2.0 x 50mm"
+    ]
+  },
+  {
+    "problem": "40-quart planetary mixer bowl lift motor thermal protector trips repeatedly during normal operation, preventing bowl positioning. Motor housing temperature reaches 160\u00b0F within 5 minutes of operation.",
+    "solution": "Replaced bowl lift motor with identical specification unit and cleaned debris from motor cooling vents. Verified proper amperage draw and thermal protector reset functionality.",
+    "parts": [
+      "Bowl lift motor 1/3 HP 115V 1725 RPM single-phase with thermal protection",
+      "Motor mounting bracket galvanized steel with vibration dampeners",
+      "Thermal protector switch automatic reset 130\u00b0F trip point"
+    ]
+  },
+  {
+    "problem": "20-quart mixer planetary beater shaft bushing shows excessive wear causing 0.200-inch radial movement and uneven mixing patterns. Bronze bushing material is visibly scored and worn beyond service limits.",
+    "solution": "Pressed out worn bronze bushing and installed new oversized bushing, then machined shaft journal to restore proper clearances. Applied food-grade bearing grease per service manual specifications.",
+    "parts": [
+      "Planetary shaft bronze bushing 1.250-inch ID x 1.500-inch OD x 1.000-inch length",
+      "Shaft journal repair sleeve hardened steel 1.250-inch diameter",
+      "Food-grade bearing grease NLGI Grade 2 lithium complex 14-ounce cartridge"
+    ]
+  },
+  {
+    "problem": "Spiral mixer VFD parameter settings corrupted causing erratic speed control and motor stalling at low frequencies. Drive displays fault code F008 indicating parameter configuration error.",
+    "solution": "Performed factory reset of VFD parameters and reprogrammed all motor control settings according to equipment specifications. Conducted full speed range calibration and load testing.",
+    "parts": [
+      "Variable frequency drive 5 HP 480V three-phase with integrated keypad",
+      "VFD input line reactor 5% impedance 480V 10-amp rating",
+      "Parameter backup module EEPROM with factory default settings"
+    ]
+  }
+]
