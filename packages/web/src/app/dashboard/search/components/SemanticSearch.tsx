@@ -52,7 +52,7 @@ export function SemanticSearch() {
 		<div className="space-y-8">
 			<div className="rounded-lg border border-slate-700 bg-slate-800 p-6">
 				<h2 className="text-2xl font-semibold text-white mb-4">
-					Search Similar Fixes
+					Search Service Reports
 				</h2>
 
 				<form onSubmit={handleSearch} className="space-y-4">

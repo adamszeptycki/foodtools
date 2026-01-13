@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
+const DEFAULT_LOGO = "https://media.licdn.com/dms/image/v2/C560BAQHIvtmXaxi_Yw/company-logo_100_100/company-logo_100_100/0/1678043468851/foodtools_logo?e=1769644800&v=beta&t=zFusmoLvi3TtTq8y0FCvmB9PhdGAO4ohuT5ON6OdlSI";
+
 export function OrganizationSwitcher() {
 	const router = useRouter();
 	const [isOpen, setIsOpen] = useState(false);
@@ -42,6 +44,7 @@ export function OrganizationSwitcher() {
 	};
 
 	const currentOrgName = user?.organization?.name || "Select Organization";
+	const currentOrgLogo = user?.organization?.logo || DEFAULT_LOGO;
 	const organizations = orgData?.orgsList || [];
 	const hasMultipleOrgs = organizations.length > 1;
 
@@ -52,9 +55,11 @@ export function OrganizationSwitcher() {
 				className="flex w-full items-center justify-between rounded-lg bg-slate-800 px-4 py-3 text-left text-white transition-colors hover:bg-slate-700"
 			>
 				<div className="flex items-center gap-3">
-					<div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-sm font-semibold">
-						{currentOrgName.charAt(0).toUpperCase()}
-					</div>
+					<img
+						src={currentOrgLogo}
+						alt={currentOrgName}
+						className="h-8 w-8 rounded-lg object-cover"
+					/>
 					<div>
 						<p className="text-sm font-medium">{currentOrgName}</p>
 						{hasMultipleOrgs && (
@@ -114,9 +119,11 @@ export function OrganizationSwitcher() {
 									className="flex w-full items-center justify-between px-4 py-2 text-sm text-slate-300 hover:bg-slate-700 disabled:opacity-50"
 								>
 									<div className="flex items-center gap-2">
-										<div className="flex h-6 w-6 items-center justify-center rounded bg-slate-600 text-xs font-medium">
-											{org.name?.charAt(0).toUpperCase() || "O"}
-										</div>
+										<img
+											src={org.logo || DEFAULT_LOGO}
+											alt={org.name || "Organization"}
+											className="h-6 w-6 rounded object-cover"
+										/>
 										<span>{org.name}</span>
 									</div>
 									{org.id === user?.organization?.id && (

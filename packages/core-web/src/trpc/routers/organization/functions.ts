@@ -1,9 +1,22 @@
+import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { auth } from "@foodtools/core-web/src/auth/auth";
 import type { Context } from "@foodtools/core-web/src/trpc/context";
 import type { Organization } from "@foodtools/core/src/sql/schema/auth";
 import { updateOrganization as updateOrganizationMutation } from "@foodtools/core/src/sql/queries/organization/mutations";
 import { TRPCError } from "@trpc/server";
+import { Resource } from "sst";
 import type { CreateTenantArgs } from "./schema";
+
+const s3 = new S3Client({});
+
+function getBucketName() {
+	try {
+		return Resource.ServiceDocumentsBucket.name;
+	} catch {
+		return process.env.DOCUMENTS_BUCKET_NAME || "service-documents-bucket";
+	}
+}
 
 type Role = "member" | "admin" | "owner" | "viewer";
 type ProtectedContext = Context & {
@@ -217,6 +230,56 @@ export async function updateOrganization(input: Partial<CreateTenantArgs> & { id
 		name: input.name,
 		domain: input.domain,
 		type: input.type,
+		logo: input.logo,
 		isPlaceholder: false,
 	}) as unknown as Organization | null;
+}
+
+export async function getCurrentOrganization(ctx: ProtectedContext) {
+	const activeOrg = await auth.api.getFullOrganization({
+		headers: ctx.headers,
+	});
+	if (!activeOrg) {
+		throw new TRPCError({
+			code: "NOT_FOUND",
+			message: "No active organization",
+		});
+	}
+	return activeOrg;
+}
+
+export async function initiateLogoUpload(
+	ctx: ProtectedContext,
+	input: { fileName: string; fileSize: number; mimeType: string },
+) {
+	const activeOrg = await auth.api.getFullOrganization({
+		headers: ctx.headers,
+	});
+	if (!activeOrg) {
+		throw new TRPCError({
+			code: "NOT_FOUND",
+			message: "No active organization",
+		});
+	}
+
+	const bucketName = getBucketName();
+	const timestamp = Date.now();
+	const randomStr = Math.random().toString(36).substring(7);
+	const extension = input.fileName.split(".").pop() || "png";
+	const s3Key = `logos/${activeOrg.id}/${timestamp}-${randomStr}.${extension}`;
+
+	const command = new PutObjectCommand({
+		Bucket: bucketName,
+		Key: s3Key,
+		ContentType: input.mimeType,
+		ContentLength: input.fileSize,
+	});
+
+	const uploadUrl = await getSignedUrl(s3, command, { expiresIn: 3600 });
+
+	return {
+		uploadUrl,
+		s3Key,
+		logoUrl: `https://${bucketName}.s3.amazonaws.com/${s3Key}`,
+	};
 }

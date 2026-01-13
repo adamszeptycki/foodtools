@@ -2,7 +2,7 @@ import { roles } from "@foodtools/core/src/sql/schema";
 import { protectedProcedure, protectedProcedureWithOptionalOrganization, publicProcedure, router } from "@foodtools/core-web/src/trpc/trpc";
 import { z } from "zod";
 import * as organizationFunctions from "./functions";
-import { CreateTenantSchema } from "./schema";
+import { CreateTenantSchema, initiateLogoUploadSchema } from "./schema";
 
 export const organizationRouter = router({
 	setCurrentOrganization: protectedProcedure.input(z.object({
@@ -92,5 +92,15 @@ export const organizationRouter = router({
 				throw new Error("Organization not found");
 			}
 			return organizationFunctions.updateOrganization({...input, id});
+		}),
+
+	getCurrent: protectedProcedure.query(async ({ ctx }) => {
+		return organizationFunctions.getCurrentOrganization(ctx);
+	}),
+
+	initiateLogoUpload: protectedProcedure
+		.input(initiateLogoUploadSchema)
+		.mutation(async ({ ctx, input }) => {
+			return organizationFunctions.initiateLogoUpload(ctx, input);
 		}),
 });

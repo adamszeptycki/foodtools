@@ -42,7 +42,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 										: "text-slate-300 hover:bg-slate-800"
 								}`}
 							>
-								Documents
+								Service Reports
 							</Link>
 							<Link
 								href="/dashboard/search"
@@ -52,7 +52,17 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 										: "text-slate-300 hover:bg-slate-800"
 								}`}
 							>
-								Search Fixes
+								Search Service Reports
+							</Link>
+							<Link
+								href="/dashboard/settings"
+								className={`block px-4 py-2 rounded-md transition-colors ${
+									isActive("/dashboard/settings")
+										? "bg-blue-600 text-white"
+										: "text-slate-300 hover:bg-slate-800"
+								}`}
+							>
+								Settings
 							</Link>
 						</nav>
 					</div>
