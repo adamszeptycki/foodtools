@@ -203,6 +203,12 @@ export async function createOrganization(
 			message: "Organization ID not found",
 		});
 	}
+
+	await auth.api.setActiveOrganization({
+		body: { organizationId: orgId },
+		headers: ctx.headers,
+	});
+
 	return org as unknown as Organization;
 }
 
