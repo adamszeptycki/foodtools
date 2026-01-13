@@ -10,6 +10,6 @@
 		},
     "types": ["vitest/globals"]
   },
-  "include": ["src/sql/**/*", "src/config/**/*", "src/index.ts"],
+  "include": ["src/sql/**/*", "src/config/**/*", "src/index.ts", "drizzle.config.ts"],
   "exclude": ["src/aws", "src/domain", "src/graphdb", "src/sql/seed", "src/test", "setupVitest.ts"]
 }

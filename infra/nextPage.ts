@@ -1,7 +1,7 @@
-import { betterAuthSecret, dbUrl, resendApiKey, openAiApiKey } from "./config";
+import { betterAuthSecret, dbUrl, openAiApiKey, resendApiKey } from "./config";
+import { documentProcessingQueue } from "./queue";
 import { getDomain, router } from "./router";
 import { documentsBucket } from "./storage";
-import { documentProcessingQueue } from "./queue";
 
 export const nextJsPage = new sst.aws.Nextjs("FoodToolsWeb", {
 	link: [betterAuthSecret, dbUrl, resendApiKey, openAiApiKey, documentsBucket, documentProcessingQueue],

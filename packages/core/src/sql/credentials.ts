@@ -6,11 +6,11 @@ type DatabaseCredentials = {
 
 const getDatabaseCredentials = (): DatabaseCredentials => {
 	if (process.env.DATABASE_URL) {
+		console.log("process.env.DATABASE_URL", process.env.DATABASE_URL);
 		return {
 			databaseUrl: process.env.DATABASE_URL,
 		};
 	}
-
 	const dbUrl = getSecret("DB_URL");
 	if (!dbUrl) throw new Error("DB credentials not found");
 	return {
