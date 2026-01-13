@@ -17,8 +17,8 @@ export function DocumentUpload() {
 	const [fileQueue, setFileQueue] = useState<QueuedFile[]>([]);
 	const [uploading, setUploading] = useState(false);
 
-	const initiateUploadMutation =
-		trpc.serviceDocuments.initiateUpload.useMutation();
+	const initiateUploadBatchMutation =
+		trpc.serviceDocuments.initiateUploadBatch.useMutation();
 	const utils = trpc.useUtils();
 
 	const onDrop = useCallback((acceptedFiles: File[], rejectedFiles: any[]) => {
@@ -81,42 +81,66 @@ export function DocumentUpload() {
 
 		setUploading(true);
 
-		// Upload all files in parallel
-		const uploadPromises = pendingFiles.map(async (queuedFile) => {
-			try {
-				updateFileStatus(queuedFile.id, "uploading");
-
-				// Get presigned URL
-				const { uploadUrl } = await initiateUploadMutation.mutateAsync({
+		try {
+			// Get presigned URLs for all files in a single request
+			const uploadInfos = await initiateUploadBatchMutation.mutateAsync({
+				files: pendingFiles.map((queuedFile) => ({
 					fileName: queuedFile.file.name,
 					fileSize: queuedFile.file.size,
 					mimeType: queuedFile.file.type,
-				});
+				})),
+			});
 
-				// Upload to S3
-				const uploadResponse = await fetch(uploadUrl, {
-					method: "PUT",
-					body: queuedFile.file,
-					headers: {
-						"Content-Type": queuedFile.file.type,
-					},
-				});
+			// Create a map of fileName to upload info for easy lookup
+			const uploadInfoMap = new Map(
+				uploadInfos.map((info) => [info.fileName, info])
+			);
 
-				if (!uploadResponse.ok) {
-					throw new Error("Failed to upload file to S3");
+			// Upload all files to S3 in parallel
+			const uploadPromises = pendingFiles.map(async (queuedFile) => {
+				const uploadInfo = uploadInfoMap.get(queuedFile.file.name);
+				if (!uploadInfo) {
+					updateFileStatus(queuedFile.id, "failed", "Failed to get upload URL");
+					return;
 				}
 
-				updateFileStatus(queuedFile.id, "completed");
-			} catch (err) {
+				try {
+					updateFileStatus(queuedFile.id, "uploading");
+
+					// Upload to S3
+					const uploadResponse = await fetch(uploadInfo.uploadUrl, {
+						method: "PUT",
+						body: queuedFile.file,
+						headers: {
+							"Content-Type": queuedFile.file.type,
+						},
+					});
+
+					if (!uploadResponse.ok) {
+						throw new Error("Failed to upload file to S3");
+					}
+
+					updateFileStatus(queuedFile.id, "completed");
+				} catch (err) {
+					updateFileStatus(
+						queuedFile.id,
+						"failed",
+						err instanceof Error ? err.message : "Upload failed"
+					);
+				}
+			});
+
+			await Promise.all(uploadPromises);
+		} catch (err) {
+			// If batch request fails, mark all pending files as failed
+			pendingFiles.forEach((queuedFile) => {
 				updateFileStatus(
 					queuedFile.id,
 					"failed",
-					err instanceof Error ? err.message : "Upload failed"
+					err instanceof Error ? err.message : "Failed to initiate upload"
 				);
-			}
-		});
-
-		await Promise.all(uploadPromises);
+			});
+		}
 
 		// Remove completed files from queue after a short delay
 		setTimeout(() => {

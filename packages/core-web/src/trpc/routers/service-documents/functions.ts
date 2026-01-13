@@ -96,6 +96,57 @@ export async function initiateUpload(
 }
 
 /**
+ * Initiate batch document upload - generates multiple S3 presigned URLs and creates DB records
+ */
+export async function initiateUploadBatch(
+	ctx: ProtectedContext,
+	input: { files: Array<{ fileName: string; fileSize: number; mimeType: string }> },
+) {
+	const userId = ctx.session.user.id;
+	const bucketName = getBucketName();
+
+	// Process all files in parallel
+	const results = await Promise.all(
+		input.files.map(async (file) => {
+			// Generate unique S3 key
+			const timestamp = Date.now();
+			const randomStr = Math.random().toString(36).substring(7);
+			const s3Key = `documents/${userId}/${timestamp}-${randomStr}-${file.fileName}`;
+
+			// Generate presigned URL for direct browser upload
+			const command = new PutObjectCommand({
+				Bucket: bucketName,
+				Key: s3Key,
+				ContentType: file.mimeType,
+				ContentLength: file.fileSize,
+			});
+
+			const uploadUrl = await getSignedUrl(s3, command, { expiresIn: 3600 }); // 1 hour
+
+			// Create document record in database
+			const document = await createServiceDocument({
+				userId,
+				fileName: file.fileName,
+				fileSize: file.fileSize,
+				s3Key,
+				s3Bucket: bucketName,
+				mimeType: file.mimeType,
+				processingStatus: "pending",
+			});
+
+			return {
+				fileName: file.fileName,
+				documentId: document.id,
+				uploadUrl,
+				s3Key,
+			};
+		}),
+	);
+
+	return results;
+}
+
+/**
  * Confirm upload and trigger background processing
  */
 export async function confirmUpload(

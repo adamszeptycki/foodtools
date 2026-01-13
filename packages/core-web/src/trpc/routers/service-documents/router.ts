@@ -1,6 +1,7 @@
 import { protectedProcedure, router } from "@foodtools/core-web/src/trpc/trpc";
 import {
 	initiateUpload,
+	initiateUploadBatch,
 	confirmUpload,
 	listDocuments,
 	getDocument,
@@ -12,6 +13,7 @@ import {
 } from "./functions";
 import {
 	initiateUploadSchema,
+	initiateUploadBatchSchema,
 	confirmUploadSchema,
 	listDocumentsSchema,
 	getDocumentSchema,
@@ -31,6 +33,16 @@ export const serviceDocumentsRouter = router({
 		.input(initiateUploadSchema)
 		.mutation(async ({ ctx, input }) => {
 			return initiateUpload(ctx, input);
+		}),
+
+	/**
+	 * Initiate batch document upload
+	 * Returns presigned S3 URLs for multiple files in a single request
+	 */
+	initiateUploadBatch: protectedProcedure
+		.input(initiateUploadBatchSchema)
+		.mutation(async ({ ctx, input }) => {
+			return initiateUploadBatch(ctx, input);
 		}),
 
 	/**
