@@ -129,3 +129,43 @@ export async function searchFixesBySimilarity(
 
 	return results;
 }
+
+/**
+ * Search for fixes by substring match using ILIKE
+ * Searches across clientName, machineModel, machineType, serialNumber, problemDescription
+ */
+export async function searchFixesBySubstring(
+	userId: string,
+	query: string,
+	limit: number = 10,
+) {
+	const db = getDb();
+	const pattern = `%${query}%`;
+
+	const results = await db
+		.select({
+			id: machineFixes.id,
+			documentId: machineFixes.documentId,
+			machineModel: machineFixes.machineModel,
+			machineType: machineFixes.machineType,
+			problemDescription: machineFixes.problemDescription,
+			solutionApplied: machineFixes.solutionApplied,
+			partsUsed: machineFixes.partsUsed,
+			clientName: machineFixes.clientName,
+			serviceDate: machineFixes.serviceDate,
+			createdAt: machineFixes.createdAt,
+		})
+		.from(machineFixes)
+		.where(
+			sql`${machineFixes.userId} = ${userId} AND (
+				${machineFixes.clientName} ILIKE ${pattern} OR
+				${machineFixes.machineModel} ILIKE ${pattern} OR
+				${machineFixes.machineType} ILIKE ${pattern} OR
+				${machineFixes.serialNumber} ILIKE ${pattern} OR
+				${machineFixes.problemDescription} ILIKE ${pattern}
+			)`,
+		)
+		.limit(limit);
+
+	return results;
+}

@@ -39,6 +39,7 @@ import {
 	getDocumentWithFixes,
 	listAllFixes,
 	searchFixesBySimilarity,
+	searchFixesBySubstring,
 } from "@foodtools/core/src/sql/queries/service-documents/queries";
 import { generateEmbeddings } from "@foodtools/core/src/domain/ai/generate-embeddings";
 
@@ -198,6 +199,7 @@ export async function listFixes(
 
 /**
  * Semantic search for similar fixes using vector embeddings
+ * Also performs substring matching on key fields, prioritizing exact matches
  */
 export async function semanticSearch(
 	ctx: ProtectedContext,
@@ -205,11 +207,21 @@ export async function semanticSearch(
 ) {
 	const userId = ctx.session.user.id;
 
-	// Generate embedding for the search query
-	const queryEmbedding = await generateEmbeddings(input.query);
+	// 1. Substring search (exact ILIKE matches) - these get priority
+	const substringResults = await searchFixesBySubstring(
+		userId,
+		input.query,
+		input.limit,
+	);
+	const substringWithSimilarity = substringResults.map((r) => ({
+		...r,
+		similarity: 1.0,
+	}));
+	const substringIds = new Set(substringResults.map((r) => r.id));
 
-	// Search for similar fixes using pgvector
-	const results = await searchFixesBySimilarity(
+	// 2. Semantic search (vector similarity)
+	const queryEmbedding = await generateEmbeddings(input.query);
+	const semanticResults = await searchFixesBySimilarity(
 		userId,
 		queryEmbedding,
 		input.limit,
@@ -217,7 +229,13 @@ export async function semanticSearch(
 		// input.minSimilarity ,
 	);
 
-	return results;
+	// 3. Combine: substring matches first (deduplicated), then semantic results
+	const filteredSemantic = semanticResults.filter(
+		(r) => !substringIds.has(r.id),
+	);
+	const combined = [...substringWithSimilarity, ...filteredSemantic];
+
+	return combined.slice(0, input.limit);
 }
 
 /**
