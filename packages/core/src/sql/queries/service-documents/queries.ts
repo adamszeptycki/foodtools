@@ -30,15 +30,33 @@ export async function getDocumentByS3Key(s3Key: string) {
 }
 
 /**
- * List all documents for a specific user
+ * List documents for a specific user with pagination
  */
-export async function listDocumentsByUser(userId: string) {
+export async function listDocumentsByUser(
+	userId: string,
+	options: { limit?: number; offset?: number } = {},
+) {
 	const db = getDb();
-	return db
-		.select()
-		.from(serviceDocuments)
-		.where(eq(serviceDocuments.userId, userId))
-		.orderBy(desc(serviceDocuments.createdAt));
+	const { limit = 10, offset = 0 } = options;
+
+	const [documents, countResult] = await Promise.all([
+		db
+			.select()
+			.from(serviceDocuments)
+			.where(eq(serviceDocuments.userId, userId))
+			.orderBy(desc(serviceDocuments.createdAt))
+			.limit(limit)
+			.offset(offset),
+		db
+			.select({ count: sql<number>`count(*)::int` })
+			.from(serviceDocuments)
+			.where(eq(serviceDocuments.userId, userId)),
+	]);
+
+	return {
+		documents,
+		total: countResult[0]?.count ?? 0,
+	};
 }
 
 /**

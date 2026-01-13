@@ -126,14 +126,17 @@ export async function confirmUpload(
 }
 
 /**
- * List all documents for the current user
+ * List all documents for the current user with pagination
  */
 export async function listDocuments(
 	ctx: ProtectedContext,
 	input: { limit?: number; offset?: number },
 ) {
 	const userId = ctx.session.user.id;
-	return listDocumentsByUser(userId);
+	return listDocumentsByUser(userId, {
+		limit: input.limit ?? 10,
+		offset: input.offset ?? 0,
+	});
 }
 
 /**
