@@ -1,126 +1,337 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import { useDropzone } from "react-dropzone";
 import { trpc } from "@foodtools/core-web/src/trpc/client";
 
-export function DocumentUpload() {
-	const [file, setFile] = useState<File | null>(null);
-	const [uploading, setUploading] = useState(false);
-	const [error, setError] = useState<string | null>(null);
+interface QueuedFile {
+	file: File;
+	id: string;
+	status: "pending" | "uploading" | "completed" | "failed";
+	error?: string;
+}
 
-	const initiateUploadMutation = trpc.serviceDocuments.initiateUpload.useMutation();
+const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
+
+export function DocumentUpload() {
+	const [fileQueue, setFileQueue] = useState<QueuedFile[]>([]);
+	const [uploading, setUploading] = useState(false);
+
+	const initiateUploadMutation =
+		trpc.serviceDocuments.initiateUpload.useMutation();
 	const utils = trpc.useUtils();
 
-	const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const selectedFile = e.target.files?.[0];
-		if (selectedFile) {
-			if (selectedFile.type !== "application/pdf") {
-				setError("Only PDF files are allowed");
-				return;
+	const onDrop = useCallback((acceptedFiles: File[], rejectedFiles: any[]) => {
+		// Handle rejected files
+		const rejectionErrors = rejectedFiles.map((rejection) => {
+			const error = rejection.errors[0];
+			if (error.code === "file-too-large") {
+				return `${rejection.file.name}: File too large (max 10MB)`;
 			}
-			if (selectedFile.size > 10 * 1024 * 1024) {
-				setError("File size must be less than 10MB");
-				return;
+			if (error.code === "file-invalid-type") {
+				return `${rejection.file.name}: Only PDF files allowed`;
 			}
-			setFile(selectedFile);
-			setError(null);
+			return `${rejection.file.name}: ${error.message}`;
+		});
+
+		if (rejectionErrors.length > 0) {
+			console.warn("Rejected files:", rejectionErrors);
 		}
+
+		// Add accepted files to queue
+		const newFiles: QueuedFile[] = acceptedFiles.map((file) => ({
+			file,
+			id: `${file.name}-${Date.now()}-${Math.random().toString(36).slice(2)}`,
+			status: "pending" as const,
+		}));
+
+		setFileQueue((prev) => [...prev, ...newFiles]);
+	}, []);
+
+	const { getRootProps, getInputProps, isDragActive } = useDropzone({
+		onDrop,
+		accept: {
+			"application/pdf": [".pdf"],
+		},
+		maxSize: MAX_FILE_SIZE,
+		multiple: true,
+	});
+
+	const removeFile = (id: string) => {
+		setFileQueue((prev) => prev.filter((f) => f.id !== id));
 	};
 
-	const handleUpload = async () => {
-		if (!file) return;
+	const clearQueue = () => {
+		setFileQueue((prev) => prev.filter((f) => f.status === "uploading"));
+	};
+
+	const updateFileStatus = (
+		id: string,
+		status: QueuedFile["status"],
+		error?: string
+	) => {
+		setFileQueue((prev) =>
+			prev.map((f) => (f.id === id ? { ...f, status, error } : f))
+		);
+	};
+
+	const handleUploadAll = async () => {
+		const pendingFiles = fileQueue.filter((f) => f.status === "pending");
+		if (pendingFiles.length === 0) return;
 
 		setUploading(true);
-		setError(null);
 
-		try {
-			// Step 1: Initiate upload - get presigned URL
-			const { documentId, uploadUrl } =
-				await initiateUploadMutation.mutateAsync({
-					fileName: file.name,
-					fileSize: file.size,
-					mimeType: file.type,
+		// Upload all files in parallel
+		const uploadPromises = pendingFiles.map(async (queuedFile) => {
+			try {
+				updateFileStatus(queuedFile.id, "uploading");
+
+				// Get presigned URL
+				const { uploadUrl } = await initiateUploadMutation.mutateAsync({
+					fileName: queuedFile.file.name,
+					fileSize: queuedFile.file.size,
+					mimeType: queuedFile.file.type,
 				});
 
-			// Step 2: Upload file to S3 using presigned URL
-			// Processing is triggered automatically via S3 event notification
-			const uploadResponse = await fetch(uploadUrl, {
-				method: "PUT",
-				body: file,
-				headers: {
-					"Content-Type": file.type,
-				},
-			});
+				// Upload to S3
+				const uploadResponse = await fetch(uploadUrl, {
+					method: "PUT",
+					body: queuedFile.file,
+					headers: {
+						"Content-Type": queuedFile.file.type,
+					},
+				});
 
-			if (!uploadResponse.ok) {
-				throw new Error("Failed to upload file to S3");
+				if (!uploadResponse.ok) {
+					throw new Error("Failed to upload file to S3");
+				}
+
+				updateFileStatus(queuedFile.id, "completed");
+			} catch (err) {
+				updateFileStatus(
+					queuedFile.id,
+					"failed",
+					err instanceof Error ? err.message : "Upload failed"
+				);
 			}
+		});
 
-			// Reset form
-			setFile(null);
+		await Promise.all(uploadPromises);
 
-			// Invalidate queries to refresh document list
-			utils.serviceDocuments.list.invalidate();
-		} catch (err) {
-			setError(err instanceof Error ? err.message : "Upload failed");
-		} finally {
-			setUploading(false);
-		}
+		// Remove completed files from queue after a short delay
+		setTimeout(() => {
+			setFileQueue((prev) => prev.filter((f) => f.status !== "completed"));
+		}, 1500);
+
+		// Refresh document list
+		utils.serviceDocuments.list.invalidate();
+		setUploading(false);
 	};
+
+	const pendingCount = fileQueue.filter((f) => f.status === "pending").length;
+	const hasFiles = fileQueue.length > 0;
 
 	return (
 		<div className="rounded-lg border border-slate-700 bg-slate-800 p-6">
 			<h2 className="text-xl font-semibold text-white mb-4">
-				Upload Service Document
+				Upload Service Documents
 			</h2>
 
-			<div className="space-y-4">
-				<div>
-					<label
-						htmlFor="file-upload"
-						className="block text-sm font-medium text-slate-300 mb-2"
+			{/* Dropzone */}
+			<div
+				{...getRootProps()}
+				className={`
+					border-2 border-dashed rounded-lg p-8 text-center cursor-pointer
+					transition-colors duration-200
+					${
+						isDragActive
+							? "border-blue-500 bg-blue-500/10"
+							: "border-slate-600 hover:border-slate-500 hover:bg-slate-700/50"
+					}
+				`}
+			>
+				<input {...getInputProps()} />
+				<div className="text-slate-400">
+					<svg
+						className="mx-auto h-12 w-12 mb-3"
+						stroke="currentColor"
+						fill="none"
+						viewBox="0 0 48 48"
+						aria-hidden="true"
 					>
-						Select PDF file (max 10MB)
-					</label>
-					<input
-						id="file-upload"
-						type="file"
-						accept="application/pdf"
-						onChange={handleFileChange}
-						disabled={uploading}
-						className="block w-full text-sm text-slate-300
-              file:mr-4 file:py-2 file:px-4
-              file:rounded-md file:border-0
-              file:text-sm file:font-semibold
-              file:bg-blue-600 file:text-white
-              hover:file:bg-blue-700
-              file:cursor-pointer
-              disabled:opacity-50"
-					/>
+						<path
+							d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+							strokeWidth={2}
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						/>
+					</svg>
+					{isDragActive ? (
+						<p className="text-blue-400 font-medium">Drop the files here...</p>
+					) : (
+						<>
+							<p className="font-medium">
+								Drag & drop PDF files here, or click to browse
+							</p>
+							<p className="text-sm mt-1">Max 10MB per file</p>
+						</>
+					)}
 				</div>
-
-				{file && (
-					<div className="text-sm text-slate-400">
-						Selected: {file.name} ({(file.size / 1024 / 1024).toFixed(2)} MB)
-					</div>
-				)}
-
-				{error && (
-					<div className="text-sm text-red-400 bg-red-900/20 border border-red-800 rounded p-3">
-						{error}
-					</div>
-				)}
-
-				<button
-					onClick={handleUpload}
-					disabled={!file || uploading}
-					className="px-4 py-2 bg-blue-600 text-white rounded-md
-            hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed
-            transition-colors"
-				>
-					{uploading ? "Uploading..." : "Upload Document"}
-				</button>
 			</div>
+
+			{/* File Queue */}
+			{hasFiles && (
+				<div className="mt-4">
+					<div className="flex items-center justify-between mb-2">
+						<span className="text-sm font-medium text-slate-300">
+							Queued Files ({fileQueue.length})
+						</span>
+						<button
+							onClick={clearQueue}
+							disabled={uploading}
+							className="text-sm text-slate-400 hover:text-slate-300 disabled:opacity-50"
+						>
+							Clear All
+						</button>
+					</div>
+
+					<div className="space-y-2 max-h-60 overflow-y-auto">
+						{fileQueue.map((queuedFile) => (
+							<div
+								key={queuedFile.id}
+								className={`
+									flex items-center justify-between p-3 rounded-md
+									${queuedFile.status === "failed" ? "bg-red-900/20 border border-red-800" : "bg-slate-700/50"}
+								`}
+							>
+								<div className="flex items-center gap-3 min-w-0">
+									{/* Status Icon */}
+									<span className="flex-shrink-0">
+										{queuedFile.status === "pending" && (
+											<svg
+												className="w-5 h-5 text-slate-400"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+											>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth={2}
+													d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+												/>
+											</svg>
+										)}
+										{queuedFile.status === "uploading" && (
+											<svg
+												className="w-5 h-5 text-blue-400 animate-spin"
+												fill="none"
+												viewBox="0 0 24 24"
+											>
+												<circle
+													className="opacity-25"
+													cx="12"
+													cy="12"
+													r="10"
+													stroke="currentColor"
+													strokeWidth="4"
+												/>
+												<path
+													className="opacity-75"
+													fill="currentColor"
+													d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+												/>
+											</svg>
+										)}
+										{queuedFile.status === "completed" && (
+											<svg
+												className="w-5 h-5 text-green-400"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+											>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth={2}
+													d="M5 13l4 4L19 7"
+												/>
+											</svg>
+										)}
+										{queuedFile.status === "failed" && (
+											<svg
+												className="w-5 h-5 text-red-400"
+												fill="none"
+												viewBox="0 0 24 24"
+												stroke="currentColor"
+											>
+												<path
+													strokeLinecap="round"
+													strokeLinejoin="round"
+													strokeWidth={2}
+													d="M6 18L18 6M6 6l12 12"
+												/>
+											</svg>
+										)}
+									</span>
+
+									{/* File Info */}
+									<div className="min-w-0">
+										<p className="text-sm text-slate-200 truncate">
+											{queuedFile.file.name}
+										</p>
+										<p className="text-xs text-slate-400">
+											{(queuedFile.file.size / 1024 / 1024).toFixed(2)} MB
+											{queuedFile.error && (
+												<span className="text-red-400 ml-2">
+													- {queuedFile.error}
+												</span>
+											)}
+										</p>
+									</div>
+								</div>
+
+								{/* Remove Button */}
+								{queuedFile.status !== "uploading" && (
+									<button
+										onClick={() => removeFile(queuedFile.id)}
+										className="flex-shrink-0 p-1 text-slate-400 hover:text-slate-300"
+									>
+										<svg
+											className="w-4 h-4"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+										>
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth={2}
+												d="M6 18L18 6M6 6l12 12"
+											/>
+										</svg>
+									</button>
+								)}
+							</div>
+						))}
+					</div>
+				</div>
+			)}
+
+			{/* Upload Button */}
+			{hasFiles && (
+				<button
+					onClick={handleUploadAll}
+					disabled={pendingCount === 0 || uploading}
+					className="mt-4 w-full px-4 py-2 bg-blue-600 text-white rounded-md
+						hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed
+						transition-colors"
+				>
+					{uploading
+						? "Uploading..."
+						: `Upload ${pendingCount} File${pendingCount !== 1 ? "s" : ""}`}
+				</button>
+			)}
 		</div>
 	);
 }

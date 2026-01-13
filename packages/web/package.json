@@ -21,6 +21,7 @@
     "next": "15.3.4",
     "react": "^19",
     "react-dom": "^19",
+    "react-dropzone": "^14.3.8",
     "superjson": "^2.2.1",
     "zod": "^4.1.12"
   },
