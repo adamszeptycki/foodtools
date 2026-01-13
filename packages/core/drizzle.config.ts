@@ -1,6 +1,6 @@
+import { getDatabaseCredentials } from "@foodtools/core/src/sql/credentials";
 import type { Config } from "drizzle-kit";
 import { defineConfig } from "drizzle-kit";
-import { getDatabaseCredentials } from "@foodtools/core/sql/credentials";
 
 const dbCredentials = getDatabaseCredentials();
 
