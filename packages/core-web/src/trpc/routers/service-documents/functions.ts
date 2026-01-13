@@ -1,9 +1,9 @@
-import { S3Client, PutObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3";
-import { SQSClient, SendMessageCommand } from "@aws-sdk/client-sqs";
+import { GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { SendMessageCommand, SQSClient } from "@aws-sdk/client-sqs";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
-import { Resource } from "sst";
 import type { Context } from "@foodtools/core-web/src/trpc/context";
 import { TRPCError } from "@trpc/server";
+import { Resource } from "sst";
 
 // Helpers to safely access SST Resources with fallbacks for build time
 function getBucketName() {
@@ -29,19 +29,20 @@ function getQueueUrl() {
 		return fallback;
 	}
 }
+
+import { generateEmbeddings } from "@foodtools/core/src/domain/ai/generate-embeddings";
 import {
 	createServiceDocument,
 	deleteDocument as deleteDocumentMutation,
 } from "@foodtools/core/src/sql/queries/service-documents/mutations";
 import {
 	getDocumentById,
-	listDocumentsByUser,
 	getDocumentWithFixes,
 	listAllFixes,
+	listDocumentsByUser,
 	searchFixesBySimilarity,
 	searchFixesBySubstring,
 } from "@foodtools/core/src/sql/queries/service-documents/queries";
-import { generateEmbeddings } from "@foodtools/core/src/domain/ai/generate-embeddings";
 
 type ProtectedContext = Context & {
 	session: { user: NonNullable<Context["session"]>["user"] };
