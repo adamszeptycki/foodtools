@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import { trpc } from "@foodtools/core-web/src/trpc/client";
+import { useState } from "react";
 
 export function SemanticSearch() {
 	const [query, setQuery] = useState("");
@@ -32,8 +32,8 @@ export function SemanticSearch() {
 
 				<form onSubmit={handleSearch} className="space-y-4">
 					<div>
-						<label className="block text-sm font-medium text-slate-300 mb-2">
-							Describe the problem you're facing
+						<label htmlFor="query" className="block text-sm font-medium text-slate-300 mb-2">
+							Describe the problem you&apos;re facing
 						</label>
 						<textarea
 							value={query}

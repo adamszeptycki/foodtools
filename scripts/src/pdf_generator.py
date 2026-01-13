@@ -1,15 +1,13 @@
-"""Generate professional-looking service document PDFs using ReportLab."""
+"""Generate professional-looking service document PDFs using Markdown and WeasyPrint."""
 
-from reportlab.lib.pagesizes import letter
-from reportlab.lib.units import inch
-from reportlab.lib import colors
-from reportlab.pdfgen import canvas
+import markdown
+from weasyprint import HTML, CSS
 from datetime import datetime
 import os
 
 
 class ServiceDocumentPDFGenerator:
-	"""Generate professional-looking service document PDFs."""
+	"""Generate professional-looking service document PDFs from Markdown."""
 
 	def __init__(self, output_dir="output"):
 		"""
@@ -19,8 +17,8 @@ class ServiceDocumentPDFGenerator:
 			output_dir (str): Directory to save generated PDFs
 		"""
 		self.output_dir = output_dir
-		self.page_width, self.page_height = letter
-		self.margin = 0.75 * inch
+		self.css = self._get_stylesheet()
+		self.md = markdown.Markdown(extensions=["tables"])
 
 	def generate_pdf(self, data, filename=None):
 		"""
@@ -38,224 +36,188 @@ class ServiceDocumentPDFGenerator:
 			filename = f"service_doc_{timestamp}.pdf"
 
 		filepath = os.path.join(self.output_dir, filename)
-		c = canvas.Canvas(filepath, pagesize=letter)
 
-		# Draw document sections
-		self._draw_header(c, data)
-		self._draw_client_info(c, data)
-		self._draw_machine_info(c, data)
-		self._draw_service_details(c, data)
-		self._draw_parts_section(c, data)
-		self._draw_technician_section(c, data)
-		self._draw_footer(c, data)
+		# Generate markdown content
+		md_content = self._generate_markdown(data)
 
-		c.save()
+		# Convert markdown to HTML
+		html_body = self.md.convert(md_content)
+		self.md.reset()  # Reset for next conversion
+
+		# Wrap in full HTML document
+		html_content = f"""
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Service Report - {data['work_order']}</title>
+		</head>
+		<body>
+			{html_body}
+		</body>
+		</html>
+		"""
+
+		# Render to PDF
+		HTML(string=html_content).write_pdf(filepath, stylesheets=[CSS(string=self.css)])
+
 		return filepath
 
-	def _draw_header(self, c, data):
-		"""Draw company header and work order information."""
-		# Company name
-		c.setFont("Helvetica-Bold", 20)
-		c.drawString(self.margin, self.page_height - self.margin, data["company"])
+	def _generate_markdown(self, data):
+		"""Generate markdown content from service data."""
+		# Format the date
+		service_date = data["service_date"]
+		if hasattr(service_date, "strftime"):
+			date_str = service_date.strftime("%m/%d/%Y")
+		else:
+			date_str = str(service_date)
 
-		# Service report title
-		c.setFont("Helvetica-Bold", 14)
-		c.drawCentredString(
-			self.page_width / 2, self.page_height - self.margin - 0.5 * inch, "SERVICE REPORT"
-		)
+		# Format address (replace newlines with comma-space for inline display)
+		address = data["client_address"].replace("\n", ", ")
 
-		# Work order and date
-		c.setFont("Helvetica", 10)
-		c.drawRightString(
-			self.page_width - self.margin,
-			self.page_height - self.margin,
-			f"Work Order: {data['work_order']}",
-		)
-		c.drawRightString(
-			self.page_width - self.margin,
-			self.page_height - self.margin - 0.15 * inch,
-			f"Date: {data['service_date'].strftime('%m/%d/%Y')}",
-		)
-
-		# Horizontal line
-		y = self.page_height - self.margin - 0.8 * inch
-		c.line(self.margin, y, self.page_width - self.margin, y)
-
-	def _draw_client_info(self, c, data):
-		"""Draw client information section."""
-		y_start = self.page_height - self.margin - 1.2 * inch
-
-		c.setFont("Helvetica-Bold", 11)
-		c.drawString(self.margin, y_start, "CLIENT INFORMATION")
-
-		c.setFont("Helvetica", 10)
-		y = y_start - 0.25 * inch
-		c.drawString(self.margin, y, f"Client Name: {data['client_name']}")
-		y -= 0.2 * inch
-
-		# Handle multi-line address
-		address_lines = data["client_address"].split("\n")
-		c.drawString(self.margin, y, f"Address: {address_lines[0]}")
-		for line in address_lines[1:]:
-			y -= 0.15 * inch
-			c.drawString(self.margin + 0.7 * inch, y, line)
-
-		y -= 0.2 * inch
-		c.drawString(self.margin, y, f"Phone: {data['client_phone']}")
-
-	def _draw_machine_info(self, c, data):
-		"""Draw machine information section."""
-		y_start = self.page_height - self.margin - 3.5 * inch
-
-		c.setFont("Helvetica-Bold", 11)
-		c.drawString(self.margin, y_start, "EQUIPMENT INFORMATION")
-
-		# Create table for machine info
-		c.setFont("Helvetica", 10)
-		y = y_start - 0.3 * inch
-
-		info_data = [
-			["Machine Type:", data["machine_type"]],
-			["Model:", data["machine_model"]],
-			["Serial Number:", data["serial_number"]],
-		]
-
-		for label, value in info_data:
-			c.setFont("Helvetica-Bold", 10)
-			c.drawString(self.margin, y, label)
-			c.setFont("Helvetica", 10)
-			c.drawString(self.margin + 1.5 * inch, y, value)
-			y -= 0.2 * inch
-
-	def _draw_service_details(self, c, data):
-		"""Draw service details section."""
-		y_start = self.page_height - self.margin - 5.2 * inch
-
-		c.setFont("Helvetica-Bold", 11)
-		c.drawString(self.margin, y_start, "SERVICE DETAILS")
-
-		c.setFont("Helvetica", 10)
-		y = y_start - 0.25 * inch
-
-		# Problem description
-		c.setFont("Helvetica-Bold", 10)
-		c.drawString(self.margin, y, "Problem Description:")
-		y -= 0.2 * inch
-		c.setFont("Helvetica", 10)
-
-		# Wrap text if needed
-		problem_text = data["problem_description"]
-		max_width = self.page_width - 2 * self.margin
-		wrapped_problem = self._wrap_text(c, problem_text, max_width)
-		for line in wrapped_problem:
-			c.drawString(self.margin + 0.2 * inch, y, line)
-			y -= 0.15 * inch
-
-		y -= 0.15 * inch
-
-		# Solution applied
-		c.setFont("Helvetica-Bold", 10)
-		c.drawString(self.margin, y, "Solution Applied:")
-		y -= 0.2 * inch
-		c.setFont("Helvetica", 10)
-
-		wrapped_solution = self._wrap_text(c, data["solution_applied"], max_width)
-		for line in wrapped_solution:
-			c.drawString(self.margin + 0.2 * inch, y, line)
-			y -= 0.15 * inch
-
-	def _draw_parts_section(self, c, data):
-		"""Draw parts used section."""
-		y_start = self.page_height - self.margin - 6.3 * inch
-
-		c.setFont("Helvetica-Bold", 11)
-		c.drawString(self.margin, y_start, "PARTS USED")
-
-		c.setFont("Helvetica", 10)
-		y = y_start - 0.25 * inch
-
+		# Format parts list
 		if data["parts_used"]:
 			parts = data["parts_used"].split(", ")
-			for i, part in enumerate(parts, 1):
-				c.drawString(self.margin + 0.2 * inch, y, f"{i}. {part}")
-				y -= 0.2 * inch
+			parts_list = "\n".join(f"- {part}" for part in parts)
 		else:
-			c.drawString(self.margin + 0.2 * inch, y, "No parts replaced")
+			parts_list = "- No parts replaced"
 
-	def _draw_technician_section(self, c, data):
-		"""Draw technician information and signature."""
-		y_start = 2.5 * inch
+		# Build markdown document
+		md_content = f"""# {data['company']}
 
-		c.setFont("Helvetica-Bold", 11)
-		c.drawString(self.margin, y_start, "TECHNICIAN INFORMATION")
+## SERVICE REPORT
 
-		c.setFont("Helvetica", 10)
-		y = y_start - 0.3 * inch
+**Work Order:** {data['work_order']} | **Date:** {date_str}
 
-		tech = data["technician"]
-		c.drawString(self.margin, y, f"Technician Name: {tech['name']}")
-		y -= 0.2 * inch
-		c.drawString(self.margin, y, f"Technician ID: {tech['id']}")
-		y -= 0.2 * inch
-		c.drawString(self.margin, y, f"Certification: {tech['cert']}")
-		y -= 0.3 * inch
+---
 
-		# Service time information
-		c.drawString(self.margin, y, f"Arrival Time: {data['arrival_time']}")
-		c.drawString(self.margin + 2.5 * inch, y, f"Labor Hours: {data['labor_hours']}")
+## Client Information
 
-		# Signature line
-		y -= 0.5 * inch
-		c.drawString(self.margin, y, "Technician Signature:")
+| | |
+|---|---|
+| **Client** | {data['client_name']} |
+| **Address** | {address} |
+| **Phone** | {data['client_phone']} |
 
-		# Draw signature line
-		y -= 0.3 * inch
-		c.line(self.margin + 1.5 * inch, y, self.margin + 4 * inch, y)
+## Equipment Information
 
-		# Date line
-		c.drawString(self.margin + 4.5 * inch, y + 0.3 * inch, "Date:")
-		c.line(self.margin + 5 * inch, y, self.margin + 6.5 * inch, y)
+| Field | Value |
+|-------|-------|
+| Machine Type | {data['machine_type']} |
+| Model | {data['machine_model']} |
+| Serial Number | {data['serial_number']} |
 
-	def _draw_footer(self, c, data):
-		"""Draw document footer."""
-		c.setFont("Helvetica-Oblique", 8)
-		c.drawCentredString(
-			self.page_width / 2,
-			0.5 * inch,
-			f"{data['company']} | 24/7 Service | (555) 123-4567",
-		)
-		c.drawCentredString(
-			self.page_width / 2,
-			0.35 * inch,
-			"www.foodservicetech.com | service@foodservicetech.com",
-		)
+## Service Details
 
-	def _wrap_text(self, c, text, max_width):
+### Problem Description
+
+{data['problem_description']}
+
+### Solution Applied
+
+{data['solution_applied']}
+
+## Parts Used
+
+{parts_list}
+
+## Technician Information
+
+| | |
+|---|---|
+| **Technician Name** | {data['technician']['name']} |
+| **Technician ID** | {data['technician']['id']} |
+| **Certification** | {data['technician']['cert']} |
+| **Arrival Time** | {data['arrival_time']} |
+| **Labor Hours** | {data['labor_hours']} |
+
+---
+
+**Technician Signature:** _______________________________ **Date:** _______________
+
+---
+
+*{data['company']} | 24/7 Service | (555) 123-4567*
+
+*www.foodservicetech.com | service@foodservicetech.com*
+"""
+		return md_content
+
+	def _get_stylesheet(self):
+		"""Return CSS stylesheet for PDF rendering."""
+		return """
+		@page {
+			size: letter;
+			margin: 0.75in;
+		}
+
+		body {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 10pt;
+			line-height: 1.4;
+			color: #333;
+		}
+
+		h1 {
+			font-size: 18pt;
+			margin-bottom: 0.25em;
+			color: #222;
+		}
+
+		h2 {
+			font-size: 14pt;
+			margin-top: 1.25em;
+			margin-bottom: 0.5em;
+			padding-bottom: 0.25em;
+			border-bottom: 1px solid #ccc;
+		}
+
+		h3 {
+			font-size: 11pt;
+			margin-top: 1em;
+			margin-bottom: 0.25em;
+		}
+
+		p {
+			margin: 0.5em 0;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 0.5em 0;
+		}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 0.4em 0.6em;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		th {
+			background-color: #f5f5f5;
+			font-weight: bold;
+		}
+
+		hr {
+			border: none;
+			border-top: 1px solid #ccc;
+			margin: 1em 0;
+		}
+
+		ul {
+			margin: 0.5em 0;
+			padding-left: 1.5em;
+		}
+
+		li {
+			margin: 0.25em 0;
+		}
+
+		em {
+			font-style: italic;
+			color: #666;
+			font-size: 9pt;
+		}
 		"""
-		Wrap text to fit within max_width.
-
-		Args:
-			c: Canvas object
-			text (str): Text to wrap
-			max_width (float): Maximum width in points
-
-		Returns:
-			list: List of text lines that fit within max_width
-		"""
-		words = text.split()
-		lines = []
-		current_line = []
-
-		for word in words:
-			test_line = " ".join(current_line + [word])
-			if c.stringWidth(test_line, "Helvetica", 10) <= max_width - 0.4 * inch:
-				current_line.append(word)
-			else:
-				if current_line:
-					lines.append(" ".join(current_line))
-				current_line = [word]
-
-		if current_line:
-			lines.append(" ".join(current_line))
-
-		return lines

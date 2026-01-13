@@ -95,13 +95,7 @@ export async function processDocument(documentId: string): Promise<void> {
 		for (const fix of fixes) {
 			// Create searchable text from fix data for embedding
 			const searchableText = `
-Machine: ${fix.machineModel || "Unknown"} (${fix.machineType || "Unknown type"})
-Serial: ${fix.serialNumber || "Unknown"}
-Problem: ${fix.problemDescription}
-Solution: ${fix.solutionApplied}
-Parts: ${fix.partsUsed || "None specified"}
-Client: ${fix.clientName || "Unknown"}
-Technician: ${fix.technicianName || "Unknown"}
+${fix.problemDescription}
       `.trim();
 
 			console.log(`Generating embeddings for fix: ${fix.problemDescription.substring(0, 50)}...`);

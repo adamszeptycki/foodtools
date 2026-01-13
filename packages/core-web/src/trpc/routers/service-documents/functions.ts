@@ -213,7 +213,8 @@ export async function semanticSearch(
 		userId,
 		queryEmbedding,
 		input.limit,
-		input.minSimilarity,
+		0.5,
+		// input.minSimilarity ,
 	);
 
 	return results;
