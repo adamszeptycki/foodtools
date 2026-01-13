@@ -1,4 +1,4 @@
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3";
 import { SQSClient, SendMessageCommand } from "@aws-sdk/client-sqs";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { Resource } from "sst";
@@ -272,4 +272,33 @@ export async function reprocessDocument(
 	);
 
 	return { success: true };
+}
+
+/**
+ * Get a presigned URL for viewing/downloading a document PDF
+ */
+export async function getDocumentUrl(
+	ctx: ProtectedContext,
+	input: { documentId: string },
+) {
+	const userId = ctx.session.user.id;
+	const doc = await getDocumentById(input.documentId);
+
+	if (!doc || doc.userId !== userId) {
+		throw new TRPCError({
+			code: "NOT_FOUND",
+			message: "Document not found",
+		});
+	}
+
+	const command = new GetObjectCommand({
+		Bucket: doc.s3Bucket,
+		Key: doc.s3Key,
+		ResponseContentDisposition: `inline; filename="${doc.fileName}"`,
+		ResponseContentType: "application/pdf",
+	});
+
+	const url = await getSignedUrl(s3, command, { expiresIn: 3600 }); // 1 hour
+
+	return { url };
 }
