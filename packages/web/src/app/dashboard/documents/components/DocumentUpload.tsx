@@ -19,6 +19,8 @@ export function DocumentUpload() {
 
 	const initiateUploadBatchMutation =
 		trpc.serviceDocuments.initiateUploadBatch.useMutation();
+	const confirmUploadMutation =
+		trpc.serviceDocuments.confirmUpload.useMutation();
 	const utils = trpc.useUtils();
 
 	const onDrop = useCallback((acceptedFiles: File[], rejectedFiles: any[]) => {
@@ -119,6 +121,11 @@ export function DocumentUpload() {
 					if (!uploadResponse.ok) {
 						throw new Error("Failed to upload file to S3");
 					}
+
+					// Confirm upload to trigger processing
+					await confirmUploadMutation.mutateAsync({
+						documentId: uploadInfo.documentId,
+					});
 
 					updateFileStatus(queuedFile.id, "completed");
 				} catch (err) {
