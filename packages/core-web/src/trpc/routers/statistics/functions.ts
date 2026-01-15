@@ -7,11 +7,11 @@ import {
 } from "@foodtools/core/src/sql/queries/service-documents/statistics";
 
 type ProtectedContextWithOrganization = Context & {
-	session: { user: NonNullable<Context["session"]>["user"] };
+	session: NonNullable<Context["session"]>;
 	organization: {
 		members: Array<{
 			userId: string;
-			user?: { id: string; name?: string; email?: string };
+			user?: { id?: string; name?: string; email?: string; image?: string };
 		}>;
 	};
 };
