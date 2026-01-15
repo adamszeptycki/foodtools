@@ -42,10 +42,6 @@ export const initiateUploadBatchSchema = z.object({
 	})).min(1),
 });
 
-export const confirmUploadSchema = z.object({
-	documentId: z.string().uuid(),
-});
-
 export const reprocessDocumentSchema = z.object({
 	documentId: z.string().uuid(),
 });

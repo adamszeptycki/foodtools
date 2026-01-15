@@ -9,6 +9,15 @@ export const documentProcessingQueue = new sst.aws.Queue("DocumentProcessingQueu
 	dlq: documentProcessingQueueDlq.arn,
 });
 
+documentsBucket.notify({
+	notifications: [
+		{
+			name: "S3BucketQueueSubscriber",
+			queue: documentProcessingQueue.arn,
+		}
+	]
+});
+
 documentProcessingQueue.subscribe({
 	handler: "packages/core/src/workers/document-processor.handler",
 	timeout: "5 minutes",

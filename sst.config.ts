@@ -1,9 +1,10 @@
 /// <reference path="./.sst/platform/config.d.ts" />
 
-import { Stage } from "./infra/stages";
+// import { Stage } from "./infra/stages";
 
 export default $config({
-  app(input) {
+  async app(input) {
+    const  { Stage }  = await import( "./infra/stages");
     return {
       name: "foodtools",
       removal: input?.stage === Stage.PROD ? "retain" : "remove",

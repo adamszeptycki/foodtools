@@ -30,6 +30,23 @@ export async function getDocumentByS3Key(s3Key: string) {
 }
 
 /**
+ * Get a service document by S3 key and bucket name
+ */
+export async function getDocumentByS3KeyAndBucket(s3Key: string, s3Bucket: string) {
+	const db = getDb();
+	const [doc] = await db
+		.select()
+		.from(serviceDocuments)
+		.where(
+			and(
+				eq(serviceDocuments.s3Key, s3Key),
+				eq(serviceDocuments.s3Bucket, s3Bucket)
+			)
+		);
+	return doc;
+}
+
+/**
  * List documents for a specific user with pagination
  */
 export async function listDocumentsByUser(

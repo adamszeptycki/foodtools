@@ -1,14 +1,15 @@
-import type { SQSHandler } from "aws-lambda";
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
+import { GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { getDb } from "@foodtools/core/src/sql";
+import { getDocumentByS3KeyAndBucket } from "@foodtools/core/src/sql/queries/service-documents/queries";
 import {
-	serviceDocuments,
 	machineFixes,
+	serviceDocuments,
 } from "@foodtools/core/src/sql/schema";
+import type { S3Event, SQSHandler } from "aws-lambda";
 import { eq } from "drizzle-orm";
-import { extractTextFromPDF } from "../domain/pdf/extract-text";
 import { extractStructuredData } from "../domain/ai/extract-structured-data";
 import { generateEmbeddings } from "../domain/ai/generate-embeddings";
+import { extractTextFromPDF } from "../domain/pdf/extract-text";
 
 const s3 = new S3Client({});
 
@@ -168,10 +169,12 @@ export const handler: SQSHandler = async (event) => {
 	console.log("SQS Handler invoked with", event.Records.length, "records");
 
 	for (const record of event.Records) {
-		console.log("Processing SQS record:", record.body);
-		const { documentId } = JSON.parse(record.body);
-		console.log("Extracted documentId:", documentId);
-		await processDocument(documentId);
+        const s3record: S3Event & { Event?: string } = JSON.parse(record.body);
+		const s3Key = s3record.s3.object.key;
+    	const s3BucketName = s3record.s3.bucket.name;
+
+		const document = await getDocumentByS3KeyAndBucket(s3Key, s3BucketName);
+		await processDocument(document.id);
 	}
 
 	console.log("SQS Handler completed");

@@ -147,38 +147,6 @@ export async function initiateUploadBatch(
 }
 
 /**
- * Confirm upload and trigger background processing
- */
-export async function confirmUpload(
-	ctx: ProtectedContext,
-	input: { documentId: string },
-) {
-	const userId = ctx.session.user.id;
-	const doc = await getDocumentById(input.documentId);
-
-	if (!doc || doc.userId !== userId) {
-		throw new TRPCError({
-			code: "NOT_FOUND",
-			message: "Document not found",
-		});
-	}
-
-	// Send message to SQS queue to start processing
-	const queueUrl = getQueueUrl();
-
-	await sqs.send(
-		new SendMessageCommand({
-			QueueUrl: queueUrl,
-			MessageBody: JSON.stringify({
-				documentId: doc.id,
-			}),
-		}),
-	);
-
-	return { success: true };
-}
-
-/**
  * List all documents for the current user with pagination
  */
 export async function listDocuments(

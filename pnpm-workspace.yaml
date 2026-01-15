@@ -6,8 +6,8 @@ onlyBuiltDependencies:
   - '@swc/core'
   - '@tailwindcss/oxide'
   - aws-sdk
-  - core-js-pure
   - better-sqlite3
+  - canvas
   - core-js-pure
   - electron
   - esbuild

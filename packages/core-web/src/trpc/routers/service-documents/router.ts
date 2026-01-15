@@ -2,7 +2,6 @@ import { protectedProcedure, router } from "@foodtools/core-web/src/trpc/trpc";
 import {
 	initiateUpload,
 	initiateUploadBatch,
-	confirmUpload,
 	listDocuments,
 	getDocument,
 	deleteDocument,
@@ -14,7 +13,6 @@ import {
 import {
 	initiateUploadSchema,
 	initiateUploadBatchSchema,
-	confirmUploadSchema,
 	listDocumentsSchema,
 	getDocumentSchema,
 	deleteDocumentSchema,
@@ -43,15 +41,6 @@ export const serviceDocumentsRouter = router({
 		.input(initiateUploadBatchSchema)
 		.mutation(async ({ ctx, input }) => {
 			return initiateUploadBatch(ctx, input);
-		}),
-
-	/**
-	 * Confirm upload completion and trigger background processing
-	 */
-	confirmUpload: protectedProcedure
-		.input(confirmUploadSchema)
-		.mutation(async ({ ctx, input }) => {
-			return confirmUpload(ctx, input);
 		}),
 
 	/**
