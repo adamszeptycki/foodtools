@@ -1,5 +1,5 @@
-import { getDb } from "/core/src/sql";
-import { organizations } from "/core/src/sql/schema/auth";
+import { getDb } from "@foodtools/core/src/sql";
+import { organizations } from "@foodtools/core/src/sql/schema/auth";
 import { Factory } from "fishery";
 import { v4 as uuidv4 } from 'uuid';
 

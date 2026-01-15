@@ -3,17 +3,13 @@ import {
 	SendMessageCommand,
 	SQSClient,
 } from "@aws-sdk/client-sqs";
-import type { QueueUrls } from "/core/src/config/resourceUrls";
-import { getResourceUrl } from "/core/src/config/resourceUrls";
-import type { DocumentExtractionPushMessageToQueueArgs, EmbeddingsQueuePushMessageToQueueArgs, EvalQueuePushMessageToQueueArgs, GeneralSmallTaskQueuePushMessageToQueueArgs, KnowledgeGraphQueuePushMessageToQueueArgs, OcrQueuePushMessageToQueueArgs } from "./queueMessageTypes";
+import type { QueueUrls } from "@foodtools/core/src/config/resourceUrls";
+import { getResourceUrl } from "@foodtools/core/src/config/resourceUrls";
+import type { DocumentExtractionPushMessageToQueueArgs, EmbeddingsQueuePushMessageToQueueArgs, EvalQueuePushMessageToQueueArgs, GeneralSmallTaskQueuePushMessageToQueueArgs, OcrQueuePushMessageToQueueArgs } from "./queueMessageTypes";
 
-type PushMessageToSQSArgs = OcrQueuePushMessageToQueueArgs | EmbeddingsQueuePushMessageToQueueArgs | GeneralSmallTaskQueuePushMessageToQueueArgs | KnowledgeGraphQueuePushMessageToQueueArgs | DocumentExtractionPushMessageToQueueArgs | EvalQueuePushMessageToQueueArgs;
+type PushMessageToSQSArgs = OcrQueuePushMessageToQueueArgs | EmbeddingsQueuePushMessageToQueueArgs | GeneralSmallTaskQueuePushMessageToQueueArgs | DocumentExtractionPushMessageToQueueArgs | EvalQueuePushMessageToQueueArgs;
 
 const pushMessageToSQS = async ({ queue, message }: PushMessageToSQSArgs) => {
-	// log SAVE_LLM_REQUEST pushes
-	if (queue === "SmallTaskQueue" && message.task_type === "SAVE_LLM_REQUEST") {
-		console.log("✅🚀 Saving LLM request to SQS", JSON.stringify(message, null, 2));
-	}
 
 	const sqsClient = new SQSClient({});
 	const queueUrl = getResourceUrl(queue);

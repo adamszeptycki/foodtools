@@ -1,10 +1,17 @@
-export type QueueUrls = never;
-export type AppUrls = never;
+
 
 export const getBucketName = (_bucket: never): string => {
 	throw new Error("No buckets defined in the foodtools template.");
 };
 
-export const getResourceUrl = (_resource: AppUrls | QueueUrls): string => {
+export type QueueUrls = 
+	| "OcrQueue"
+	| "EmbeddingsQueue"
+	| "S3BucketQueue"
+	| "SmallTaskQueue"
+	| "DocumentExtraction"
+	| "EvalQueue"
+
+export const getResourceUrl = (_resource: QueueUrls): string => {
 	throw new Error("No external resources defined in the foodtools template.");
 };

@@ -1,5 +1,5 @@
-import { getDb } from "/core/src/sql";
-import { members, users } from "/core/src/sql/schema/auth";
+import { getDb } from "@foodtools/core/src/sql";
+import { members, users } from "@foodtools/core/src/sql/schema/auth";
 import { Factory } from "fishery";
 
 
@@ -37,7 +37,7 @@ async function createTestUser(overrides?: Partial<UserFactoryFields>, organizati
  * @returns Object containing the created user and organization
  */
 async function createTestUserWithOrganization(overrides?: Partial<UserFactoryFields>) {
-    const { createTestOrganization } = await import("/core/src/test/factory/organization");
+    const { createTestOrganization } = await import("@foodtools/core/src/test/factory/organization");
     const organization = await createTestOrganization();
     const user = await createTestUser({ ...overrides }, organization.id);
     return { user, organization };

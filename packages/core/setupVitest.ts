@@ -1,7 +1,7 @@
-import createFetchMock from "vitest-fetch-mock";
-import { sql } from "drizzle-orm";
-import { vi, afterEach } from "vitest";
 import { pg_trgm } from '@electric-sql/pglite/contrib/pg_trgm';
+import { sql } from "drizzle-orm";
+import { afterEach, vi } from "vitest";
+import createFetchMock from "vitest-fetch-mock";
 
 const fetchMock = createFetchMock(vi);
 
@@ -9,7 +9,7 @@ fetchMock.enableMocks();
 // this entire mock setus up unit tests to use PGLite - so we don't have to worry about migrations and cleaning database for tests
 vi.mock("/core/src/sql", async (importOriginal) => {
     const { ...rest } =
-      await importOriginal<typeof import("/core/src/sql")>()
+      await importOriginal<typeof import("@foodtools/core/src/sql")>()
     const { schema } = rest
     const { PGlite } = await vi.importActual<
       typeof import("@electric-sql/pglite")
@@ -44,7 +44,7 @@ vi.mock("/core/src/sql", async (importOriginal) => {
 })
 
 async function cleanupDatabase() {
-    const { getDb } = await import("/core/src/sql");
+    const { getDb } = await import("@foodtools/core/src/sql");
     const query = sql<string>`SELECT table_name
         FROM information_schema.tables
         WHERE table_schema = 'public'

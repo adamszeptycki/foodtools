@@ -1,5 +1,5 @@
-import { getOrganizationById } from "/core/src/sql/queries/organization/queries"
-import { getUserWithOrganizations } from "/core/src/sql/queries/user/queries"
+import { getOrganizationById } from "@foodtools/core/src/sql/queries/organization/queries"
+import { getUserWithOrganizations } from "@foodtools/core/src/sql/queries/user/queries"
 
 const getOrganization = async (userId: string) => {
     const user = await getUserWithOrganizations(userId)
