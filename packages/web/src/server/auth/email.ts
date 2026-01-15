@@ -7,7 +7,11 @@ export const sendVerificationEmail = async ({
 	email: string;
 	verificationUrl: string;
 }) => {
-	console.info("sendVerificationEmail stub", { email, verificationUrl, from: getEmailFrom({ useCase: "default" }) });
+	console.info("sendVerificationEmail stub", {
+		email,
+		verificationUrl,
+		from: getEmailFrom({ useCase: "default" }),
+	});
 };
 
 export const sendResetPasswordEmail = async ({
@@ -17,7 +21,11 @@ export const sendResetPasswordEmail = async ({
 	email: string;
 	verificationUrl: string;
 }) => {
-	console.info("sendResetPasswordEmail stub", { email, verificationUrl, from: getEmailFrom({ useCase: "default" }) });
+	console.info("sendResetPasswordEmail stub", {
+		email,
+		verificationUrl,
+		from: getEmailFrom({ useCase: "default" }),
+	});
 };
 
 export const sendChangeEmailVerification = async ({
@@ -27,7 +35,11 @@ export const sendChangeEmailVerification = async ({
 	email: string;
 	verificationUrl: string;
 }) => {
-	console.info("sendChangeEmailVerification stub", { email, verificationUrl, from: getEmailFrom({ useCase: "default" }) });
+	console.info("sendChangeEmailVerification stub", {
+		email,
+		verificationUrl,
+		from: getEmailFrom({ useCase: "default" }),
+	});
 };
 
 export const sendOrganizationInvitation = async ({

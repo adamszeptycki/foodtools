@@ -1,36 +1,36 @@
-import { resolve } from 'path';
-import { mergeConfig, defineConfig } from 'vite';
-import { crx, ManifestV3Export } from '@crxjs/vite-plugin';
-import baseConfig, { baseManifest, baseBuildOptions } from './vite.config.base'
+import { resolve } from "node:path";
+import { crx, type ManifestV3Export } from "@crxjs/vite-plugin";
+import { defineConfig, mergeConfig } from "vite";
+import baseConfig, { baseBuildOptions, baseManifest } from "./vite.config.base";
 
-const outDir = resolve(__dirname, 'dist_firefox');
+const outDir = resolve(__dirname, "dist_firefox");
 
 export default mergeConfig(
-  baseConfig,
-  defineConfig({
-    plugins: [
-      crx({
-        manifest: {
-          ...baseManifest,
-          background: {
-            scripts: [ 'src/pages/background/index.ts' ]
-          },
-        } as ManifestV3Export,
-        browser: 'firefox',
-        contentScripts: {
-          injectCss: true,
-        }
-      })
-    ],
-    build: {
-      ...baseBuildOptions,
-      outDir,
-      rollupOptions: {
-        input: {
-          offscreen: resolve(__dirname, 'src/pages/offscreen/index.html'),
-        }
-      }
-    },
-    publicDir: resolve(__dirname, 'public'),
-  })
-)
+	baseConfig,
+	defineConfig({
+		plugins: [
+			crx({
+				manifest: {
+					...baseManifest,
+					background: {
+						scripts: ["src/pages/background/index.ts"],
+					},
+				} as ManifestV3Export,
+				browser: "firefox",
+				contentScripts: {
+					injectCss: true,
+				},
+			}),
+		],
+		build: {
+			...baseBuildOptions,
+			outDir,
+			rollupOptions: {
+				input: {
+					offscreen: resolve(__dirname, "src/pages/offscreen/index.html"),
+				},
+			},
+		},
+		publicDir: resolve(__dirname, "public"),
+	}),
+);

@@ -1,7 +1,7 @@
 export default {
-    default: {
-      override: {
-        wrapper: "aws-lambda-streaming"
-      }
-    }
-  };
+	default: {
+		override: {
+			wrapper: "aws-lambda-streaming",
+		},
+	},
+};

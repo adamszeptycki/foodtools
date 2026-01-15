@@ -1,437 +1,435 @@
 [
-  {
-    "problem": "Our convection oven is making this awful grinding noise whenever we turn it on, and it's getting louder every day. The fan seems to be struggling and the air circulation isn't working right - my cookies are coming out unevenly baked. My staff is getting frustrated because they can't predict cooking times anymore.",
-    "solution": "Replaced the worn convection fan motor and damaged fan blade assembly that was causing excessive noise and poor air circulation.",
-    "parts": [
-      "SKU-MT-004721 - Convection Fan Motor 1/3 HP 115V 1725 RPM",
-      "SKU-FB-002845 - Fan Blade Assembly 12-inch diameter stainless steel"
-    ]
-  },
-  {
-    "problem": "The door on our deck oven won't stay closed anymore - it keeps popping open during baking and all the heat escapes. We're losing money on ruined bread and pizza because the temperature drops too much. I have to have someone hold the door shut while we bake, which is ridiculous.",
-    "solution": "Replaced the damaged door latch mechanism and adjusted the door alignment to ensure proper sealing and secure closure.",
-    "parts": [
-      "SKU-DL-009334 - Heavy Duty Door Latch Assembly with spring-loaded mechanism"
-    ]
-  },
-  {
-    "problem": "This combi oven isn't steaming properly anymore - when I hit the steam button, barely any steam comes out. My bread isn't getting the crust I need and my vegetables are coming out dry instead of perfectly steamed. It worked fine last month but now it's basically useless for half of what I need it for.",
-    "solution": "Cleaned the clogged steam injection nozzles and replaced the faulty steam solenoid valve that was restricting water flow to the steam generator.",
-    "parts": [
-      "SKU-SV-007612 - Steam Solenoid Valve 24V AC with 1/2-inch NPT connections",
-      "SKU-SN-003298 - Steam Injection Nozzle Set stainless steel (set of 4)"
-    ]
-  },
-  {
-    "problem": "Our gas oven won't light at all today - I can smell gas when I try to start it but there's no flame. My whole kitchen is backed up because this is our main oven for roasting. I'm worried about the gas smell and had to shut it off completely.",
-    "solution": "Replaced the defective electronic ignition module and cleaned the gas burner orifices that were blocked with debris.",
-    "parts": [
-      "SKU-IG-008847 - Electronic Ignition Module 120V with spark generator"
-    ]
-  },
-  {
-    "problem": "The temperature control on this convection oven is completely messed up - I set it to 375 but my thermometer shows it's running at 450 degrees. Everything is burning and I've already ruined two batches of dinner rolls. The digital display seems fine but the actual temperature is way off.",
-    "solution": "Replaced the failed thermocouple sensor and recalibrated the temperature controller to restore accurate temperature readings and control.",
-    "parts": [
-      "SKU-TC-005529 - Type K Thermocouple 24-inch probe length with ceramic protection tube",
-      "SKU-CC-004183 - Digital Temperature Controller with PID control and display"
-    ]
-  },
-  {
-    "problem": "The timer on our rapid-bake oven stopped working yesterday and now everything is overcooking because we have to guess when things are done. My staff keeps burning pizzas because they're busy with other orders and can't watch the oven constantly. This is costing us money and making customers unhappy.",
-    "solution": "Replaced the malfunctioning digital timer module and updated the control board firmware to restore automated timing functions.",
-    "parts": [
-      "SKU-TM-006471 - Digital Timer Module programmable 99-minute countdown with audible alarm"
-    ]
-  },
-  {
-    "problem": "The stone deck in our pizza oven has a huge crack right down the middle and pieces are starting to chip off onto our food. It's not heating evenly anymore and I'm worried about food safety with stone fragments. We can't serve pizza with rocks in it, so I had to shut down our pizza station.",
-    "solution": "Replaced the cracked stone deck with a new refractory stone surface and sealed all joints to prevent future cracking and contamination.",
-    "parts": [
-      "SKU-SD-009186 - Refractory Stone Deck 30x24 inches cordierite material",
-      "SKU-SS-002750 - High-temperature Stone Sealant 32 oz container"
-    ]
-  },
-  {
-    "problem": "The control panel on our combi oven is going crazy - buttons don't respond half the time and the display keeps flickering. Sometimes it starts cooking on its own settings instead of what I programmed. My cooks are afraid to use it because it's so unpredictable.",
-    "solution": "Replaced the damaged control board and touchscreen interface module, then reprogrammed all cooking presets to factory specifications.",
-    "parts": [
-      "SKU-CB-007923 - Main Control Board PCB with microprocessor and relay outputs",
-      "SKU-TS-004651 - Touchscreen Interface Module 7-inch color display with membrane overlay"
-    ]
-  },
-  {
-    "problem": "Our convection oven suddenly stopped heating completely this morning - the fan runs and the lights come on, but there's no heat at all. I've got a full lunch rush coming and this is my main baking oven for everything from cookies to roasted vegetables. My pastry chef is panicking because she can't finish today's desserts without it.",
-    "solution": "Replaced failed heating element that had burned out completely, also installed new element contactor that was causing intermittent power issues.",
-    "parts": [
-      "SKU-HE-002847 - Electric Heating Element 4800W 240V with mounting brackets",
-      "SKU-CT-001592 - Element Contactor 40A 240V coil"
-    ]
-  },
-  {
-    "problem": "The ignition system on our gas deck oven is acting up - sometimes it lights right away, other times I have to try five or six times before it catches. When it doesn't light, I can hear the gas flowing but no spark. It's making me nervous about safety and my bakers are wasting time trying to get it started every morning.",
-    "solution": "Cleaned and adjusted the spark igniter electrode positioning and replaced the faulty ignition module that was providing inconsistent spark timing.",
-    "parts": [
-      "SKU-IG-003471 - Electronic Ignition Module 24V with spark transformer"
-    ]
-  },
-  {
-    "problem": "The high-limit safety switch keeps shutting down our combi oven right in the middle of cooking cycles, usually when we're running it at full capacity during dinner service. The oven just goes dead and I have to wait for it to cool down and reset before I can use it again. It's happened three times this week and my kitchen crew is getting frustrated with the delays.",
-    "solution": "Replaced malfunctioning high-limit temperature switch that was tripping at incorrect temperature and cleaned blocked ventilation causing overheating conditions.",
-    "parts": [
-      "SKU-HL-004829 - High-Limit Safety Switch 500\u00b0F manual reset with 1/2-inch probe",
-      "SKU-VT-002156 - Exhaust Ventilation Fan Motor 1/4 HP 120V",
-      "SKU-FS-001743 - Temperature Sensor RTD Pt100 with 6-inch probe"
-    ]
-  },
-  {
-    "problem": "My rapid-bake oven is heating unevenly - the back corner gets super hot while the front stays cool, so my pizzas come out with burnt crusts in back and doughy fronts. I've tried rotating pans but it's not working well enough for our quality standards. Customers are starting to complain about inconsistent food.",
-    "solution": "Repaired damaged convection motor that was causing poor air circulation and replaced warped air deflector plate that was directing heat improperly.",
-    "parts": [
-      "SKU-MT-005683 - Convection Fan Motor 1/2 HP 208V with mounting assembly",
-      "SKU-DF-002841 - Air Deflector Plate stainless steel with gasket kit"
-    ]
-  },
-  {
-    "problem": "The door seal on our convection oven is completely shot - I can feel heat pouring out around the edges when it's running. My energy bills are going through the roof and the oven takes forever to reach temperature now. Plus the kitchen gets uncomfortably hot when we're using it during busy periods.",
-    "solution": "Installed new door gasket seal and adjusted door alignment to ensure proper sealing contact around entire perimeter.",
-    "parts": [
-      "SKU-GS-003927 - Door Gasket Seal 48-inch high-temperature silicone with adhesive backing"
-    ]
-  },
-  {
-    "problem": "The steam injection nozzles in our combi oven are clogged up with mineral buildup and only a few spots are getting any steam at all. My bread isn't developing proper crust and steamed vegetables are coming out dry and overcooked in some areas. The water in our area is really hard so this keeps happening every few months.",
-    "solution": "Descaled and cleaned all steam nozzles, replaced three completely blocked nozzles, and installed new water filtration system to prevent future mineral buildup.",
-    "parts": [
-      "SKU-SN-004572 - Steam Injection Nozzle set of 6 with mounting hardware",
-      "SKU-WF-001829 - Water Filter Cartridge for hard water applications",
-      "SKU-DK-002365 - Descaling Kit with pump and cleaning solution"
-    ]
-  },
-  {
-    "problem": "Our deck oven's bottom heating elements aren't working properly - the tops of our pizzas and bread are cooking fine but the bottoms stay pale and soft. I end up having to cook everything much longer which dries out the tops. My pizza maker says the stone isn't getting hot enough underneath.",
-    "solution": "Replaced two failed bottom heating elements and repaired damaged wiring connections that were causing insufficient power delivery to lower heating zone.",
-    "parts": [
-      "SKU-HE-006194 - Bottom Deck Heating Element 3200W 240V U-shaped",
-      "SKU-WH-003851 - High-temperature Wire Harness with ceramic connectors"
-    ]
-  },
-  {
-    "problem": "The thermocouple in our gas oven must be going bad because the safety system keeps shutting off the gas flow even when there's a good flame. I'll get it lit and cooking, then twenty minutes later the flame goes out and I have to relight everything. It's driving my cooks crazy because they never know if their roasts will finish cooking.",
-    "solution": "Replaced faulty thermocouple sensor that was giving incorrect temperature readings to the gas valve safety system.",
-    "parts": [
-      "SKU-TC-005238 - Thermocouple Type K 24-inch with pilot assembly connection",
-      "SKU-GV-002947 - Gas Safety Valve with thermocouple input 3/4-inch NPT"
-    ]
-  },
-  {
-    "problem": "The convection fan motor in our main oven started making this horrible screeching sound yesterday and now it's completely seized up - won't turn at all. Without the fan running, everything bakes unevenly and takes twice as long. My prep cook had to move all the sheet pans to our smaller oven and we're way behind on our dinner prep.",
-    "solution": "Replaced the failed convection fan motor and cleaned out accumulated grease and debris from the motor housing.",
-    "parts": [
-      "SKU-MT-004721 - Convection Fan Motor 1/2 HP 115V with mounting bracket",
-      "SKU-BL-002156 - Motor Bearing Kit with seals and gaskets"
-    ]
-  },
-  {
-    "problem": "Our gas combi oven's pilot light keeps going out randomly, sometimes multiple times during service. When it happens, the whole oven shuts down and I lose whatever was cooking inside. My kitchen manager is frustrated because we can't rely on it for our dinner specials anymore and customers are waiting too long for their food.",
-    "solution": "Cleaned and adjusted the pilot light assembly and replaced the faulty thermocouple that was causing intermittent shutdowns.",
-    "parts": [
-      "SKU-TC-003892 - Pilot Thermocouple 24-inch with safety valve connection"
-    ]
-  },
-  {
-    "problem": "The programmable controller on our deck oven has gone completely blank - no display at all, just a black screen. I can't set any temperatures or times, so we're stuck trying to use it manually with guesswork. My bakers are having a really hard time getting consistent results without being able to program their usual settings.",
-    "solution": "Diagnosed failed control board due to power surge damage and installed new programmable temperature controller with updated firmware.",
-    "parts": [
-      "SKU-CB-007834 - Digital Temperature Controller with LCD display and timer functions",
-      "SKU-WH-001245 - Control Board Wiring Harness 6-pin connector",
-      "SKU-FU-000892 - Control Circuit Fuse Kit 5A fast-blow"
-    ]
-  },
-  {
-    "problem": "The door hinges on our convection oven are completely worn out and the door sags so badly that it won't close properly anymore. Heat keeps escaping and my utility bills are getting ridiculous. Plus my staff has to physically lift the door to get it to latch, which is getting dangerous when they're carrying hot pans.",
-    "solution": "Replaced worn door hinges and realigned the door frame to ensure proper sealing and safe operation.",
-    "parts": [
-      "SKU-HG-005671 - Heavy Duty Door Hinge Set stainless steel with bushings",
-      "SKU-LT-002934 - Door Latch Assembly with striker plate and spring mechanism"
-    ]
-  },
-  {
-    "problem": "Our rapid-bake oven's heating elements are burning out constantly - this is the third one this month that's just stopped working in the middle of a shift. When they fail, half the oven goes cold and my pizzas come out with raw dough on one side. I'm losing money on wasted food and my pizza guy is ready to quit from the stress.",
-    "solution": "Identified voltage fluctuation issue causing premature element failure and installed voltage stabilizer along with new heating elements.",
-    "parts": [
-      "SKU-HE-008923 - Electric Heating Element 240V 5000W with ceramic insulators",
-      "SKU-VS-001567 - Voltage Stabilizer 30A single-phase with surge protection"
-    ]
-  },
-  {
-    "problem": "The flame sensor in our gas deck oven must be dirty or broken because it keeps thinking there's no flame even when I can see it burning perfectly fine. The safety system shuts everything down every few minutes and my bread keeps getting interrupted mid-bake. My head baker is pulling her hair out trying to finish orders with all these shutdowns.",
-    "solution": "Cleaned corrosion from flame sensor and replaced faulty sensor rod that was providing inconsistent flame detection signals.",
-    "parts": [
-      "SKU-FS-004512 - Flame Sensor Rod with ceramic insulator and mounting hardware"
-    ]
-  },
-  {
-    "problem": "The water line to our combi oven's steam system is completely clogged with mineral deposits and barely any water is getting through anymore. The steam function is basically useless and my vegetables are coming out dry and overcooked. We're in a hard water area and this keeps happening, but it's gotten really bad this time.",
-    "solution": "Replaced clogged water supply lines and installed water filtration system to prevent future mineral buildup in steam injection system.",
-    "parts": [
-      "SKU-WL-007821 - Stainless Water Supply Line 1/2-inch with fittings",
-      "SKU-WF-003456 - Water Filter System with mineral reduction cartridge",
-      "SKU-SI-002187 - Steam Injection Nozzle Assembly with check valve"
-    ]
-  },
-  {
-    "problem": "Our convection oven's temperature probe is giving crazy readings - the display shows 350 degrees but when I check with my own thermometer it's actually running at 275. Everything is taking way longer to cook and my customers are complaining about wait times. I've had to adjust all our cooking times but it's still not consistent.",
-    "solution": "Calibrated and replaced faulty RTD temperature sensor that was providing inaccurate temperature readings to the control system.",
-    "parts": [
-      "SKU-RT-005823 - RTD Temperature Sensor 100-ohm platinum with stainless probe",
-      "SKU-CA-001934 - Sensor Calibration Kit with test leads"
-    ]
-  },
-  {
-    "problem": "The electric heating elements in our convection oven are only working on one side - the left side gets blazing hot while the right side barely warms up. My cookies and sheet pan dinners are coming out completely lopsided, with one side burnt and the other side raw. I've been rotating pans halfway through but it's a pain and my kitchen staff is complaining about the extra work.",
-    "solution": "Replaced the failed heating element assembly on the right side and tested both elements for proper amperage draw.",
-    "parts": [
-      "SKU-HE-293847 - Electric heating element 3500W 240V with mounting brackets",
-      "SKU-WH-105629 - Wiring harness connector for heating element circuit"
-    ]
-  },
-  {
-    "problem": "Our gas deck oven's flame sensor must be dirty or broken because it keeps thinking the flame went out when it's actually burning fine. The safety system shuts off the gas every few minutes and I have to keep relighting it. My pizza guys are going nuts because they can't finish orders without constant interruptions.",
-    "solution": "Cleaned the flame sensor rod and replaced the corroded sensor assembly that was giving false readings to the control system.",
-    "parts": [
-      "SKU-FS-847362 - Flame sensor rod assembly with 24-inch lead wire"
-    ]
-  },
-  {
-    "problem": "The electronic ignition system in our rapid-bake oven is completely dead - no spark at all when I try to light it. I can hear the gas valve opening but there's no ignition happening. We've been using a lighter to start it manually but that can't be safe, and my insurance guy would have a heart attack if he saw us doing that.",
-    "solution": "Replaced the failed ignition control module and installed a new spark electrode with proper gap adjustment.",
-    "parts": [
-      "SKU-IG-654128 - Electronic ignition control module 24V AC",
-      "SKU-SE-398275 - Spark electrode assembly with ceramic insulator"
-    ]
-  },
-  {
-    "problem": "My combi oven's water level sensor is acting crazy - it keeps saying there's no water even when the tank is full, so the steam functions won't work at all. I've tried draining and refilling it multiple times but the error message won't go away. My steamed fish specials are off the menu until this gets fixed.",
-    "solution": "Replaced the malfunctioning water level sensor and recalibrated the steam system water management controls.",
-    "parts": [
-      "SKU-WS-752940 - Water level sensor probe with mounting gasket"
-    ]
-  },
-  {
-    "problem": "The interior light bulbs in our deck oven keep burning out every few days, and now the last one just died so we can't see anything inside when we're baking. My bread bakers are having to use flashlights to check their loaves, which is ridiculous and probably dangerous. The bulbs seem to be getting way too hot in there.",
-    "solution": "Installed high-temperature rated oven light fixtures with proper heat shields to prevent premature bulb failure.",
-    "parts": [
-      "SKU-LF-483619 - High-temp oven light fixture with heat shield",
-      "SKU-LB-290156 - Halogen oven bulb 50W heat-resistant"
-    ]
-  },
-  {
-    "problem": "Our convection oven's door latch mechanism broke and now the door won't stay securely closed during cooking. It pops open slightly which lets heat escape and makes the cooking times completely unpredictable. My cooks are having to hold it shut with a towel, which seems dangerous and definitely isn't professional.",
-    "solution": "Replaced the worn door latch assembly and adjusted the strike plate alignment for proper door sealing.",
-    "parts": [
-      "SKU-DL-618735 - Door latch assembly with spring-loaded mechanism",
-      "SKU-SP-427193 - Strike plate with adjustment screws"
-    ]
-  },
-  {
-    "problem": "The gas valve on our combi oven is stuck partially open and won't shut off completely when we turn off the oven. I can still hear gas flowing and smell it faintly even when the controls are off. This is making everyone nervous about safety and I had to shut off the main gas line until we get it fixed.",
-    "solution": "Replaced the faulty gas control valve assembly and tested all gas connections for proper sealing and operation.",
-    "parts": [
-      "SKU-GV-956281 - Gas control valve assembly 3/4-inch NPT with safety shutoff"
-    ]
-  },
-  {
-    "problem": "The baking stone in our pizza deck oven has developed several deep cracks and now pieces are breaking off and falling onto the pizzas below. The heat distribution is terrible with chunks missing and I'm worried about customers getting stone fragments in their food. We've had to stop using the bottom deck completely.",
-    "solution": "Removed the damaged stone deck and installed a new food-grade refractory stone surface with proper thermal expansion joints.",
-    "parts": [
-      "SKU-DS-374852 - Refractory baking stone 24x36 inch food-grade ceramic",
-      "SKU-SJ-168493 - Thermal expansion joint sealant high-temperature"
-    ]
-  },
-  {
-    "problem": "The exhaust fan above our combi oven stopped working completely and now steam is pouring out into the dining room every time we use the steam function. My servers are complaining that customers can't see their food through all the fog and it's making the whole restaurant humid and uncomfortable. We had to stop using steam mode completely which means our vegetables and fish aren't coming out right.",
-    "solution": "Replaced the burned out exhaust fan motor and cleaned the accumulated grease from the fan blades and housing to restore proper ventilation.",
-    "parts": [
-      "SKU-MF-445821 - Exhaust Fan Motor 1/3 HP 115V with mounting bracket"
-    ]
-  },
-  {
-    "problem": "Our rapid-bake oven's internal lights all went dark yesterday and now my cooks can't see what they're cooking without opening the door constantly. Every time they open it to check on pizzas, we lose heat and everything takes longer to cook. It's especially bad during dinner rush when they need to monitor multiple orders at once.",
-    "solution": "Replaced all interior halogen bulbs and repaired loose wiring connections in the light fixture assemblies to restore proper illumination.",
-    "parts": [
-      "SKU-LB-233947 - Halogen Oven Light Bulb 50W high-temp rated",
-      "SKU-WH-892341 - High Temperature Wire Harness 12-inch with ceramic connectors"
-    ]
-  },
-  {
-    "problem": "The gas burners in our deck oven won't adjust properly anymore - they're either full blast or barely lit, no in-between settings. My pizza chef can't control the heat like he needs to and we're either burning crusts or they're taking forever to cook. The flame adjustment knobs turn but don't seem to actually change anything.",
-    "solution": "Rebuilt the gas valve assemblies and replaced worn modulation components to restore proper flame control across the full range of settings.",
-    "parts": [
-      "SKU-GV-667123 - Gas Control Valve Assembly with modulating actuator",
-      "SKU-OR-445892 - O-Ring Kit for gas valve seals",
-      "SKU-SP-129847 - Spring Set for valve modulation mechanism"
-    ]
-  },
-  {
-    "problem": "Our convection oven's digital display is showing error codes I don't understand and it won't let me start any cooking cycles. The screen keeps flashing 'E04' and 'E12' and when I try to override it, nothing happens. My breakfast prep is completely stalled because I can't bake anything and my pastry chef is freaking out about her morning bread orders.",
-    "solution": "Diagnosed and replaced the faulty main control board which had corrupted firmware causing multiple sensor error codes to display incorrectly.",
-    "parts": [
-      "SKU-CB-778934 - Main Control Board with preprogrammed firmware",
-      "SKU-HR-334567 - Wire Harness for control board connections"
-    ]
-  },
-  {
-    "problem": "The door latch mechanism on our combi oven broke and now the door won't lock shut during steam cycles. The safety system won't let it run with steam unless the door is properly sealed, so we're stuck only being able to use it as a regular convection oven. This is killing our steamed vegetable and bread production.",
-    "solution": "Replaced the broken door latch assembly and adjusted the strike plate alignment to ensure proper sealing and safety system engagement.",
-    "parts": [
-      "SKU-DL-556789 - Door Latch Assembly with safety microswitch",
-      "SKU-SP-223445 - Strike Plate with adjustment hardware"
-    ]
-  },
-  {
-    "problem": "Our deck oven's stone surface is cracking and crumbling in several spots, and now we're getting stone dust on our bread and pizza. The heat distribution is all wrong too - some areas are way hotter than others. My head baker noticed the problem first when flour started sticking to the rough patches instead of dusting off normally.",
-    "solution": "Removed the damaged stone deck and installed a new food-grade ceramic stone surface with proper support rails and thermal expansion joints.",
-    "parts": [
-      "SKU-DS-889123 - Ceramic Deck Stone 24x36 inch food-grade surface",
-      "SKU-SR-445672 - Stone Support Rail Kit with thermal brackets"
-    ]
-  },
-  {
-    "problem": "The water level sensor in our combi oven must be broken because it keeps saying the water tank is empty even when I just filled it completely. Without steam injection working, my bread isn't getting the proper crust and my steamed dishes are coming out dry. I've tried refilling it multiple times but the error message won't go away.",
-    "solution": "Cleaned mineral deposits from the water level sensor probe and replaced the sensor assembly which had corroded contacts from hard water exposure.",
-    "parts": [
-      "SKU-WS-334891 - Water Level Sensor with stainless probe and mounting hardware"
-    ]
-  },
-  {
-    "problem": "The flame sensor on our gas convection oven keeps shutting down the burners randomly, even when there's a perfectly good flame burning. It'll run fine for twenty minutes then suddenly cut out, and I have to wait for it to cool down before I can relight it. My roast chicken orders are taking forever because I can't count on consistent heat.",
-    "solution": "Replaced the corroded flame sensor rod and cleaned carbon buildup from the sensor mounting assembly to restore reliable flame detection.",
-    "parts": [
-      "SKU-FS-667234 - Flame Sensor Rod 4-inch with ceramic insulator and mounting bracket"
-    ]
-  },
-  {
-    "problem": "The flame sensor in our gas oven keeps cutting out the gas supply even though I can see a perfect blue flame burning. It'll run fine for maybe ten minutes, then suddenly shut down and I have to restart the whole ignition sequence. My line cooks are getting behind on orders because they never know when the oven will quit working in the middle of cooking steaks.",
-    "solution": "Replaced the faulty flame sensor that was giving intermittent signals to the safety control module due to carbon buildup on the sensor tip.",
-    "parts": [
-      "SKU-FS-002847 - Flame Sensor Rod 8-inch length with ceramic insulator"
-    ]
-  },
-  {
-    "problem": "Our combi oven's water pump for the steam system makes this awful whining noise and barely any water is getting through to create steam. I can hear it struggling to work but my vegetables are coming out dry as a bone. The whole reason we bought this expensive oven was for the steam feature and now it's basically broken.",
-    "solution": "Replaced the worn water circulation pump and cleaned out mineral deposits from the water lines that were restricting flow.",
-    "parts": [
-      "SKU-WP-001923 - Water Circulation Pump 120V 0.5HP with mounting bracket",
-      "SKU-WL-000457 - Water Line Filter Assembly with bypass valve"
-    ]
-  },
-  {
-    "problem": "The RTD temperature probe in our convection oven must be giving bad readings because the display says 350 degrees but my instant-read thermometer shows it's actually 280. My cookies are taking forever to bake and my dinner rolls are coming out pale and doughy. I've wasted three batches of pastries today trying to figure out what's wrong.",
-    "solution": "Replaced the defective RTD temperature sensor that had drifted out of calibration and recalibrated the temperature controller.",
-    "parts": [
-      "SKU-RT-003412 - RTD Temperature Sensor Pt100 12-inch probe with connection head"
-    ]
-  },
-  {
-    "problem": "The electric heating elements in our deck oven aren't heating up at all on the bottom - I can see the top ones glowing red but the bottom stays cold. My pizza crusts are staying soggy and pale no matter how long I leave them in. It's like trying to cook with only half an oven and customers are complaining about undercooked food.",
-    "solution": "Replaced the burned-out bottom heating elements and the faulty contactor that was preventing power from reaching them.",
-    "parts": [
-      "SKU-HE-004729 - Electric Heating Element 5000W 240V bottom mount",
-      "SKU-CT-001856 - Electrical Contactor 30A 240V with auxiliary contacts"
-    ]
-  },
-  {
-    "problem": "The door latch mechanism on our rapid-bake oven is completely broken and won't engage properly anymore. The door looks closed but it's not actually sealed, so heat keeps leaking out and cooking times are all messed up. My pizza guy has to lean against the door to keep it shut, which is ridiculous and probably dangerous.",
-    "solution": "Replaced the worn door latch assembly and adjusted the door alignment to ensure proper sealing when closed.",
-    "parts": [
-      "SKU-DL-002638 - Door Latch Assembly with spring-loaded mechanism",
-      "SKU-DS-001174 - Door Strike Plate with adjustment screws",
-      "SKU-DG-000892 - Door Gasket High-temperature silicone 6-foot length"
-    ]
-  },
-  {
-    "problem": "Our combi oven's control board keeps resetting itself randomly during cooking cycles, losing all the programmed settings and shutting down whatever we're cooking. It happened twice during yesterday's dinner rush and ruined a whole tray of salmon. My sous chef is afraid to use any of the preset programs because we can't trust it to finish the job.",
-    "solution": "Replaced the main control board that had failing capacitors and updated the firmware to the latest version.",
-    "parts": [
-      "SKU-CB-005841 - Main Control Board Assembly with LCD display interface"
-    ]
-  },
-  {
-    "problem": "The electronic ignition system in our gas convection oven takes forever to light and sometimes doesn't work at all - I hear the clicking for thirty seconds before it finally catches, if it catches at all. My morning prep is getting delayed because I can't count on getting the oven started when I need it. Sometimes I have to try three or four times before it lights.",
-    "solution": "Replaced the weak ignition module and cleaned the spark electrodes that were fouled with grease and carbon deposits.",
-    "parts": [
-      "SKU-IG-003275 - Electronic Ignition Module 120V with spark generator",
-      "SKU-SE-001429 - Spark Electrode Assembly with ceramic insulator and ground strap"
-    ]
-  },
-  {
-    "problem": "The baking stone in our deck oven has developed several deep cracks and now heats really unevenly - some spots are blazing hot while others barely get warm. My artisan breads are coming out with burnt bottoms in some places and pale spots in others. The stone pieces are also starting to flake off, which is getting into the food.",
-    "solution": "Replaced the cracked stone deck with a new refractory stone and reset the support brackets to ensure even heat distribution.",
-    "parts": [
-      "SKU-ST-004692 - Refractory Baking Stone 30x20 inches with thermal mass properties",
-      "SKU-SB-002158 - Stone Support Bracket Set stainless steel adjustable height"
-    ]
-  },
-  {
-    "problem": "The flame sensor in our gas deck oven must be dirty or something because it keeps thinking there's no flame when there clearly is one. The oven will light up fine, burn for maybe ten minutes, then suddenly shut off all the gas even though I can see the flame is still going strong. My bread baker is going nuts because loaves keep getting half-baked when this happens during the middle of a baking cycle.",
-    "solution": "Cleaned the flame sensor thoroughly to remove carbon buildup and soot deposits that were preventing proper flame detection, then calibrated the sensor sensitivity.",
-    "parts": [
-      "SKU-FS-002941 - Flame Sensor Assembly with ceramic insulator and mounting bracket"
-    ]
-  },
-  {
-    "problem": "Our combi oven's water pump for the steam system died completely - when I try to use any steam functions, I can hear it trying to work but no water is moving at all. The pump makes this grinding noise for a few seconds then gives up. Without steam, I can't do proper bread baking or vegetable steaming, which cuts out about half of my menu options.",
-    "solution": "Replaced the failed steam system water pump and checked all water lines for proper flow and pressure.",
-    "parts": [
-      "SKU-WP-008527 - Steam System Water Pump 120V with inlet/outlet fittings",
-      "SKU-GL-004813 - Water Line Gasket Set for steam connections"
-    ]
-  },
-  {
-    "problem": "The electronic ignition module in our rapid-bake oven completely gave out yesterday - there's no spark at all when I try to light it. I can turn the gas on and everything looks normal on the control panel, but there's just no ignition happening. We're dead in the water for our lunch pizza rush without this thing working.",
-    "solution": "Replaced the faulty electronic ignition module and verified proper voltage supply to the ignition system.",
-    "parts": [
-      "SKU-IG-007253 - Electronic Ignition Module with mounting hardware and wiring harness"
-    ]
-  },
-  {
-    "problem": "The RTD temperature sensor in our convection oven is giving completely wrong readings - the display shows 300 degrees but my handheld thermometer reads 425 degrees inside. My cookies are burning because I'm setting lower temperatures thinking the oven is running cool. This has been getting worse over the past two weeks and now I can't trust any of the temperature settings.",
-    "solution": "Replaced the failed RTD temperature sensor and recalibrated the temperature control system to ensure accurate readings.",
-    "parts": [
-      "SKU-RT-005674 - RTD Temperature Sensor Pt100 with 6-inch probe and 1/2-inch NPT fitting",
-      "SKU-WH-009182 - High-temperature sensor wire harness 10-foot length"
-    ]
-  },
-  {
-    "problem": "The ductwork connection to our convection oven came loose somehow and now hot air is blowing out the back instead of circulating inside the oven. My kitchen is getting way too hot and the food isn't cooking evenly because the air flow is all messed up. I can actually see the loose duct flapping around when the fan runs.",
-    "solution": "Reconnected and secured the loose convection ductwork with new clamps and verified proper airflow direction throughout the system.",
-    "parts": [
-      "SKU-DC-003156 - Ductwork Clamp Set with gaskets for 8-inch diameter ducts",
-      "SKU-DG-007429 - High-temperature duct gasket material 36-inch roll"
-    ]
-  },
-  {
-    "problem": "Our deck oven's baking stone cracked in half during the dinner rush last night and now there's a huge gap running right through the middle of the deck. The heat isn't distributing evenly anymore and my pizza crusts are coming out with weird patterns where the crack is. I'm worried about the stone pieces breaking off into the food too.",
-    "solution": "Removed the damaged baking stone and installed a new cordierite stone deck with proper thermal expansion gaps.",
-    "parts": [
-      "SKU-BS-001895 - Cordierite Baking Stone 30x40 inch with thermal shock resistance"
-    ]
-  },
-  {
-    "problem": "The latch mechanism on our combi oven door broke and now the door won't stay securely closed during cooking cycles. It pops open randomly, especially when there's steam pressure building up inside. All my steam escapes and the cooking times are completely unpredictable because I never know when the door will swing open.",
-    "solution": "Replaced the worn door latch assembly and adjusted the door alignment to ensure proper sealing pressure.",
-    "parts": [
-      "SKU-DL-008741 - Heavy-duty Door Latch Assembly with spring-loaded mechanism",
-      "SKU-SP-002358 - Door Latch Spring Set with mounting hardware"
-    ]
-  },
-  {
-    "problem": "The heating elements in our electric convection oven are only working on one side - the left elements glow red hot but the right side stays completely cold. Everything I bake comes out lopsided with one side perfectly done and the other side barely cooked. My pastry chef is having to rotate everything halfway through baking but it's still not working well.",
-    "solution": "Replaced the failed heating element bank on the right side of the oven and checked electrical connections for proper voltage distribution.",
-    "parts": [
-      "SKU-HE-006492 - Electric Heating Element 240V 5000W with mounting brackets",
-      "SKU-CB-004671 - Circuit Breaker 30-amp for heating element protection"
-    ]
-  }
+	{
+		"problem": "Our convection oven is making this awful grinding noise whenever we turn it on, and it's getting louder every day. The fan seems to be struggling and the air circulation isn't working right - my cookies are coming out unevenly baked. My staff is getting frustrated because they can't predict cooking times anymore.",
+		"solution": "Replaced the worn convection fan motor and damaged fan blade assembly that was causing excessive noise and poor air circulation.",
+		"parts": [
+			"SKU-MT-004721 - Convection Fan Motor 1/3 HP 115V 1725 RPM",
+			"SKU-FB-002845 - Fan Blade Assembly 12-inch diameter stainless steel"
+		]
+	},
+	{
+		"problem": "The door on our deck oven won't stay closed anymore - it keeps popping open during baking and all the heat escapes. We're losing money on ruined bread and pizza because the temperature drops too much. I have to have someone hold the door shut while we bake, which is ridiculous.",
+		"solution": "Replaced the damaged door latch mechanism and adjusted the door alignment to ensure proper sealing and secure closure.",
+		"parts": [
+			"SKU-DL-009334 - Heavy Duty Door Latch Assembly with spring-loaded mechanism"
+		]
+	},
+	{
+		"problem": "This combi oven isn't steaming properly anymore - when I hit the steam button, barely any steam comes out. My bread isn't getting the crust I need and my vegetables are coming out dry instead of perfectly steamed. It worked fine last month but now it's basically useless for half of what I need it for.",
+		"solution": "Cleaned the clogged steam injection nozzles and replaced the faulty steam solenoid valve that was restricting water flow to the steam generator.",
+		"parts": [
+			"SKU-SV-007612 - Steam Solenoid Valve 24V AC with 1/2-inch NPT connections",
+			"SKU-SN-003298 - Steam Injection Nozzle Set stainless steel (set of 4)"
+		]
+	},
+	{
+		"problem": "Our gas oven won't light at all today - I can smell gas when I try to start it but there's no flame. My whole kitchen is backed up because this is our main oven for roasting. I'm worried about the gas smell and had to shut it off completely.",
+		"solution": "Replaced the defective electronic ignition module and cleaned the gas burner orifices that were blocked with debris.",
+		"parts": [
+			"SKU-IG-008847 - Electronic Ignition Module 120V with spark generator"
+		]
+	},
+	{
+		"problem": "The temperature control on this convection oven is completely messed up - I set it to 375 but my thermometer shows it's running at 450 degrees. Everything is burning and I've already ruined two batches of dinner rolls. The digital display seems fine but the actual temperature is way off.",
+		"solution": "Replaced the failed thermocouple sensor and recalibrated the temperature controller to restore accurate temperature readings and control.",
+		"parts": [
+			"SKU-TC-005529 - Type K Thermocouple 24-inch probe length with ceramic protection tube",
+			"SKU-CC-004183 - Digital Temperature Controller with PID control and display"
+		]
+	},
+	{
+		"problem": "The timer on our rapid-bake oven stopped working yesterday and now everything is overcooking because we have to guess when things are done. My staff keeps burning pizzas because they're busy with other orders and can't watch the oven constantly. This is costing us money and making customers unhappy.",
+		"solution": "Replaced the malfunctioning digital timer module and updated the control board firmware to restore automated timing functions.",
+		"parts": [
+			"SKU-TM-006471 - Digital Timer Module programmable 99-minute countdown with audible alarm"
+		]
+	},
+	{
+		"problem": "The stone deck in our pizza oven has a huge crack right down the middle and pieces are starting to chip off onto our food. It's not heating evenly anymore and I'm worried about food safety with stone fragments. We can't serve pizza with rocks in it, so I had to shut down our pizza station.",
+		"solution": "Replaced the cracked stone deck with a new refractory stone surface and sealed all joints to prevent future cracking and contamination.",
+		"parts": [
+			"SKU-SD-009186 - Refractory Stone Deck 30x24 inches cordierite material",
+			"SKU-SS-002750 - High-temperature Stone Sealant 32 oz container"
+		]
+	},
+	{
+		"problem": "The control panel on our combi oven is going crazy - buttons don't respond half the time and the display keeps flickering. Sometimes it starts cooking on its own settings instead of what I programmed. My cooks are afraid to use it because it's so unpredictable.",
+		"solution": "Replaced the damaged control board and touchscreen interface module, then reprogrammed all cooking presets to factory specifications.",
+		"parts": [
+			"SKU-CB-007923 - Main Control Board PCB with microprocessor and relay outputs",
+			"SKU-TS-004651 - Touchscreen Interface Module 7-inch color display with membrane overlay"
+		]
+	},
+	{
+		"problem": "Our convection oven suddenly stopped heating completely this morning - the fan runs and the lights come on, but there's no heat at all. I've got a full lunch rush coming and this is my main baking oven for everything from cookies to roasted vegetables. My pastry chef is panicking because she can't finish today's desserts without it.",
+		"solution": "Replaced failed heating element that had burned out completely, also installed new element contactor that was causing intermittent power issues.",
+		"parts": [
+			"SKU-HE-002847 - Electric Heating Element 4800W 240V with mounting brackets",
+			"SKU-CT-001592 - Element Contactor 40A 240V coil"
+		]
+	},
+	{
+		"problem": "The ignition system on our gas deck oven is acting up - sometimes it lights right away, other times I have to try five or six times before it catches. When it doesn't light, I can hear the gas flowing but no spark. It's making me nervous about safety and my bakers are wasting time trying to get it started every morning.",
+		"solution": "Cleaned and adjusted the spark igniter electrode positioning and replaced the faulty ignition module that was providing inconsistent spark timing.",
+		"parts": [
+			"SKU-IG-003471 - Electronic Ignition Module 24V with spark transformer"
+		]
+	},
+	{
+		"problem": "The high-limit safety switch keeps shutting down our combi oven right in the middle of cooking cycles, usually when we're running it at full capacity during dinner service. The oven just goes dead and I have to wait for it to cool down and reset before I can use it again. It's happened three times this week and my kitchen crew is getting frustrated with the delays.",
+		"solution": "Replaced malfunctioning high-limit temperature switch that was tripping at incorrect temperature and cleaned blocked ventilation causing overheating conditions.",
+		"parts": [
+			"SKU-HL-004829 - High-Limit Safety Switch 500\u00b0F manual reset with 1/2-inch probe",
+			"SKU-VT-002156 - Exhaust Ventilation Fan Motor 1/4 HP 120V",
+			"SKU-FS-001743 - Temperature Sensor RTD Pt100 with 6-inch probe"
+		]
+	},
+	{
+		"problem": "My rapid-bake oven is heating unevenly - the back corner gets super hot while the front stays cool, so my pizzas come out with burnt crusts in back and doughy fronts. I've tried rotating pans but it's not working well enough for our quality standards. Customers are starting to complain about inconsistent food.",
+		"solution": "Repaired damaged convection motor that was causing poor air circulation and replaced warped air deflector plate that was directing heat improperly.",
+		"parts": [
+			"SKU-MT-005683 - Convection Fan Motor 1/2 HP 208V with mounting assembly",
+			"SKU-DF-002841 - Air Deflector Plate stainless steel with gasket kit"
+		]
+	},
+	{
+		"problem": "The door seal on our convection oven is completely shot - I can feel heat pouring out around the edges when it's running. My energy bills are going through the roof and the oven takes forever to reach temperature now. Plus the kitchen gets uncomfortably hot when we're using it during busy periods.",
+		"solution": "Installed new door gasket seal and adjusted door alignment to ensure proper sealing contact around entire perimeter.",
+		"parts": [
+			"SKU-GS-003927 - Door Gasket Seal 48-inch high-temperature silicone with adhesive backing"
+		]
+	},
+	{
+		"problem": "The steam injection nozzles in our combi oven are clogged up with mineral buildup and only a few spots are getting any steam at all. My bread isn't developing proper crust and steamed vegetables are coming out dry and overcooked in some areas. The water in our area is really hard so this keeps happening every few months.",
+		"solution": "Descaled and cleaned all steam nozzles, replaced three completely blocked nozzles, and installed new water filtration system to prevent future mineral buildup.",
+		"parts": [
+			"SKU-SN-004572 - Steam Injection Nozzle set of 6 with mounting hardware",
+			"SKU-WF-001829 - Water Filter Cartridge for hard water applications",
+			"SKU-DK-002365 - Descaling Kit with pump and cleaning solution"
+		]
+	},
+	{
+		"problem": "Our deck oven's bottom heating elements aren't working properly - the tops of our pizzas and bread are cooking fine but the bottoms stay pale and soft. I end up having to cook everything much longer which dries out the tops. My pizza maker says the stone isn't getting hot enough underneath.",
+		"solution": "Replaced two failed bottom heating elements and repaired damaged wiring connections that were causing insufficient power delivery to lower heating zone.",
+		"parts": [
+			"SKU-HE-006194 - Bottom Deck Heating Element 3200W 240V U-shaped",
+			"SKU-WH-003851 - High-temperature Wire Harness with ceramic connectors"
+		]
+	},
+	{
+		"problem": "The thermocouple in our gas oven must be going bad because the safety system keeps shutting off the gas flow even when there's a good flame. I'll get it lit and cooking, then twenty minutes later the flame goes out and I have to relight everything. It's driving my cooks crazy because they never know if their roasts will finish cooking.",
+		"solution": "Replaced faulty thermocouple sensor that was giving incorrect temperature readings to the gas valve safety system.",
+		"parts": [
+			"SKU-TC-005238 - Thermocouple Type K 24-inch with pilot assembly connection",
+			"SKU-GV-002947 - Gas Safety Valve with thermocouple input 3/4-inch NPT"
+		]
+	},
+	{
+		"problem": "The convection fan motor in our main oven started making this horrible screeching sound yesterday and now it's completely seized up - won't turn at all. Without the fan running, everything bakes unevenly and takes twice as long. My prep cook had to move all the sheet pans to our smaller oven and we're way behind on our dinner prep.",
+		"solution": "Replaced the failed convection fan motor and cleaned out accumulated grease and debris from the motor housing.",
+		"parts": [
+			"SKU-MT-004721 - Convection Fan Motor 1/2 HP 115V with mounting bracket",
+			"SKU-BL-002156 - Motor Bearing Kit with seals and gaskets"
+		]
+	},
+	{
+		"problem": "Our gas combi oven's pilot light keeps going out randomly, sometimes multiple times during service. When it happens, the whole oven shuts down and I lose whatever was cooking inside. My kitchen manager is frustrated because we can't rely on it for our dinner specials anymore and customers are waiting too long for their food.",
+		"solution": "Cleaned and adjusted the pilot light assembly and replaced the faulty thermocouple that was causing intermittent shutdowns.",
+		"parts": [
+			"SKU-TC-003892 - Pilot Thermocouple 24-inch with safety valve connection"
+		]
+	},
+	{
+		"problem": "The programmable controller on our deck oven has gone completely blank - no display at all, just a black screen. I can't set any temperatures or times, so we're stuck trying to use it manually with guesswork. My bakers are having a really hard time getting consistent results without being able to program their usual settings.",
+		"solution": "Diagnosed failed control board due to power surge damage and installed new programmable temperature controller with updated firmware.",
+		"parts": [
+			"SKU-CB-007834 - Digital Temperature Controller with LCD display and timer functions",
+			"SKU-WH-001245 - Control Board Wiring Harness 6-pin connector",
+			"SKU-FU-000892 - Control Circuit Fuse Kit 5A fast-blow"
+		]
+	},
+	{
+		"problem": "The door hinges on our convection oven are completely worn out and the door sags so badly that it won't close properly anymore. Heat keeps escaping and my utility bills are getting ridiculous. Plus my staff has to physically lift the door to get it to latch, which is getting dangerous when they're carrying hot pans.",
+		"solution": "Replaced worn door hinges and realigned the door frame to ensure proper sealing and safe operation.",
+		"parts": [
+			"SKU-HG-005671 - Heavy Duty Door Hinge Set stainless steel with bushings",
+			"SKU-LT-002934 - Door Latch Assembly with striker plate and spring mechanism"
+		]
+	},
+	{
+		"problem": "Our rapid-bake oven's heating elements are burning out constantly - this is the third one this month that's just stopped working in the middle of a shift. When they fail, half the oven goes cold and my pizzas come out with raw dough on one side. I'm losing money on wasted food and my pizza guy is ready to quit from the stress.",
+		"solution": "Identified voltage fluctuation issue causing premature element failure and installed voltage stabilizer along with new heating elements.",
+		"parts": [
+			"SKU-HE-008923 - Electric Heating Element 240V 5000W with ceramic insulators",
+			"SKU-VS-001567 - Voltage Stabilizer 30A single-phase with surge protection"
+		]
+	},
+	{
+		"problem": "The flame sensor in our gas deck oven must be dirty or broken because it keeps thinking there's no flame even when I can see it burning perfectly fine. The safety system shuts everything down every few minutes and my bread keeps getting interrupted mid-bake. My head baker is pulling her hair out trying to finish orders with all these shutdowns.",
+		"solution": "Cleaned corrosion from flame sensor and replaced faulty sensor rod that was providing inconsistent flame detection signals.",
+		"parts": [
+			"SKU-FS-004512 - Flame Sensor Rod with ceramic insulator and mounting hardware"
+		]
+	},
+	{
+		"problem": "The water line to our combi oven's steam system is completely clogged with mineral deposits and barely any water is getting through anymore. The steam function is basically useless and my vegetables are coming out dry and overcooked. We're in a hard water area and this keeps happening, but it's gotten really bad this time.",
+		"solution": "Replaced clogged water supply lines and installed water filtration system to prevent future mineral buildup in steam injection system.",
+		"parts": [
+			"SKU-WL-007821 - Stainless Water Supply Line 1/2-inch with fittings",
+			"SKU-WF-003456 - Water Filter System with mineral reduction cartridge",
+			"SKU-SI-002187 - Steam Injection Nozzle Assembly with check valve"
+		]
+	},
+	{
+		"problem": "Our convection oven's temperature probe is giving crazy readings - the display shows 350 degrees but when I check with my own thermometer it's actually running at 275. Everything is taking way longer to cook and my customers are complaining about wait times. I've had to adjust all our cooking times but it's still not consistent.",
+		"solution": "Calibrated and replaced faulty RTD temperature sensor that was providing inaccurate temperature readings to the control system.",
+		"parts": [
+			"SKU-RT-005823 - RTD Temperature Sensor 100-ohm platinum with stainless probe",
+			"SKU-CA-001934 - Sensor Calibration Kit with test leads"
+		]
+	},
+	{
+		"problem": "The electric heating elements in our convection oven are only working on one side - the left side gets blazing hot while the right side barely warms up. My cookies and sheet pan dinners are coming out completely lopsided, with one side burnt and the other side raw. I've been rotating pans halfway through but it's a pain and my kitchen staff is complaining about the extra work.",
+		"solution": "Replaced the failed heating element assembly on the right side and tested both elements for proper amperage draw.",
+		"parts": [
+			"SKU-HE-293847 - Electric heating element 3500W 240V with mounting brackets",
+			"SKU-WH-105629 - Wiring harness connector for heating element circuit"
+		]
+	},
+	{
+		"problem": "Our gas deck oven's flame sensor must be dirty or broken because it keeps thinking the flame went out when it's actually burning fine. The safety system shuts off the gas every few minutes and I have to keep relighting it. My pizza guys are going nuts because they can't finish orders without constant interruptions.",
+		"solution": "Cleaned the flame sensor rod and replaced the corroded sensor assembly that was giving false readings to the control system.",
+		"parts": [
+			"SKU-FS-847362 - Flame sensor rod assembly with 24-inch lead wire"
+		]
+	},
+	{
+		"problem": "The electronic ignition system in our rapid-bake oven is completely dead - no spark at all when I try to light it. I can hear the gas valve opening but there's no ignition happening. We've been using a lighter to start it manually but that can't be safe, and my insurance guy would have a heart attack if he saw us doing that.",
+		"solution": "Replaced the failed ignition control module and installed a new spark electrode with proper gap adjustment.",
+		"parts": [
+			"SKU-IG-654128 - Electronic ignition control module 24V AC",
+			"SKU-SE-398275 - Spark electrode assembly with ceramic insulator"
+		]
+	},
+	{
+		"problem": "My combi oven's water level sensor is acting crazy - it keeps saying there's no water even when the tank is full, so the steam functions won't work at all. I've tried draining and refilling it multiple times but the error message won't go away. My steamed fish specials are off the menu until this gets fixed.",
+		"solution": "Replaced the malfunctioning water level sensor and recalibrated the steam system water management controls.",
+		"parts": ["SKU-WS-752940 - Water level sensor probe with mounting gasket"]
+	},
+	{
+		"problem": "The interior light bulbs in our deck oven keep burning out every few days, and now the last one just died so we can't see anything inside when we're baking. My bread bakers are having to use flashlights to check their loaves, which is ridiculous and probably dangerous. The bulbs seem to be getting way too hot in there.",
+		"solution": "Installed high-temperature rated oven light fixtures with proper heat shields to prevent premature bulb failure.",
+		"parts": [
+			"SKU-LF-483619 - High-temp oven light fixture with heat shield",
+			"SKU-LB-290156 - Halogen oven bulb 50W heat-resistant"
+		]
+	},
+	{
+		"problem": "Our convection oven's door latch mechanism broke and now the door won't stay securely closed during cooking. It pops open slightly which lets heat escape and makes the cooking times completely unpredictable. My cooks are having to hold it shut with a towel, which seems dangerous and definitely isn't professional.",
+		"solution": "Replaced the worn door latch assembly and adjusted the strike plate alignment for proper door sealing.",
+		"parts": [
+			"SKU-DL-618735 - Door latch assembly with spring-loaded mechanism",
+			"SKU-SP-427193 - Strike plate with adjustment screws"
+		]
+	},
+	{
+		"problem": "The gas valve on our combi oven is stuck partially open and won't shut off completely when we turn off the oven. I can still hear gas flowing and smell it faintly even when the controls are off. This is making everyone nervous about safety and I had to shut off the main gas line until we get it fixed.",
+		"solution": "Replaced the faulty gas control valve assembly and tested all gas connections for proper sealing and operation.",
+		"parts": [
+			"SKU-GV-956281 - Gas control valve assembly 3/4-inch NPT with safety shutoff"
+		]
+	},
+	{
+		"problem": "The baking stone in our pizza deck oven has developed several deep cracks and now pieces are breaking off and falling onto the pizzas below. The heat distribution is terrible with chunks missing and I'm worried about customers getting stone fragments in their food. We've had to stop using the bottom deck completely.",
+		"solution": "Removed the damaged stone deck and installed a new food-grade refractory stone surface with proper thermal expansion joints.",
+		"parts": [
+			"SKU-DS-374852 - Refractory baking stone 24x36 inch food-grade ceramic",
+			"SKU-SJ-168493 - Thermal expansion joint sealant high-temperature"
+		]
+	},
+	{
+		"problem": "The exhaust fan above our combi oven stopped working completely and now steam is pouring out into the dining room every time we use the steam function. My servers are complaining that customers can't see their food through all the fog and it's making the whole restaurant humid and uncomfortable. We had to stop using steam mode completely which means our vegetables and fish aren't coming out right.",
+		"solution": "Replaced the burned out exhaust fan motor and cleaned the accumulated grease from the fan blades and housing to restore proper ventilation.",
+		"parts": [
+			"SKU-MF-445821 - Exhaust Fan Motor 1/3 HP 115V with mounting bracket"
+		]
+	},
+	{
+		"problem": "Our rapid-bake oven's internal lights all went dark yesterday and now my cooks can't see what they're cooking without opening the door constantly. Every time they open it to check on pizzas, we lose heat and everything takes longer to cook. It's especially bad during dinner rush when they need to monitor multiple orders at once.",
+		"solution": "Replaced all interior halogen bulbs and repaired loose wiring connections in the light fixture assemblies to restore proper illumination.",
+		"parts": [
+			"SKU-LB-233947 - Halogen Oven Light Bulb 50W high-temp rated",
+			"SKU-WH-892341 - High Temperature Wire Harness 12-inch with ceramic connectors"
+		]
+	},
+	{
+		"problem": "The gas burners in our deck oven won't adjust properly anymore - they're either full blast or barely lit, no in-between settings. My pizza chef can't control the heat like he needs to and we're either burning crusts or they're taking forever to cook. The flame adjustment knobs turn but don't seem to actually change anything.",
+		"solution": "Rebuilt the gas valve assemblies and replaced worn modulation components to restore proper flame control across the full range of settings.",
+		"parts": [
+			"SKU-GV-667123 - Gas Control Valve Assembly with modulating actuator",
+			"SKU-OR-445892 - O-Ring Kit for gas valve seals",
+			"SKU-SP-129847 - Spring Set for valve modulation mechanism"
+		]
+	},
+	{
+		"problem": "Our convection oven's digital display is showing error codes I don't understand and it won't let me start any cooking cycles. The screen keeps flashing 'E04' and 'E12' and when I try to override it, nothing happens. My breakfast prep is completely stalled because I can't bake anything and my pastry chef is freaking out about her morning bread orders.",
+		"solution": "Diagnosed and replaced the faulty main control board which had corrupted firmware causing multiple sensor error codes to display incorrectly.",
+		"parts": [
+			"SKU-CB-778934 - Main Control Board with preprogrammed firmware",
+			"SKU-HR-334567 - Wire Harness for control board connections"
+		]
+	},
+	{
+		"problem": "The door latch mechanism on our combi oven broke and now the door won't lock shut during steam cycles. The safety system won't let it run with steam unless the door is properly sealed, so we're stuck only being able to use it as a regular convection oven. This is killing our steamed vegetable and bread production.",
+		"solution": "Replaced the broken door latch assembly and adjusted the strike plate alignment to ensure proper sealing and safety system engagement.",
+		"parts": [
+			"SKU-DL-556789 - Door Latch Assembly with safety microswitch",
+			"SKU-SP-223445 - Strike Plate with adjustment hardware"
+		]
+	},
+	{
+		"problem": "Our deck oven's stone surface is cracking and crumbling in several spots, and now we're getting stone dust on our bread and pizza. The heat distribution is all wrong too - some areas are way hotter than others. My head baker noticed the problem first when flour started sticking to the rough patches instead of dusting off normally.",
+		"solution": "Removed the damaged stone deck and installed a new food-grade ceramic stone surface with proper support rails and thermal expansion joints.",
+		"parts": [
+			"SKU-DS-889123 - Ceramic Deck Stone 24x36 inch food-grade surface",
+			"SKU-SR-445672 - Stone Support Rail Kit with thermal brackets"
+		]
+	},
+	{
+		"problem": "The water level sensor in our combi oven must be broken because it keeps saying the water tank is empty even when I just filled it completely. Without steam injection working, my bread isn't getting the proper crust and my steamed dishes are coming out dry. I've tried refilling it multiple times but the error message won't go away.",
+		"solution": "Cleaned mineral deposits from the water level sensor probe and replaced the sensor assembly which had corroded contacts from hard water exposure.",
+		"parts": [
+			"SKU-WS-334891 - Water Level Sensor with stainless probe and mounting hardware"
+		]
+	},
+	{
+		"problem": "The flame sensor on our gas convection oven keeps shutting down the burners randomly, even when there's a perfectly good flame burning. It'll run fine for twenty minutes then suddenly cut out, and I have to wait for it to cool down before I can relight it. My roast chicken orders are taking forever because I can't count on consistent heat.",
+		"solution": "Replaced the corroded flame sensor rod and cleaned carbon buildup from the sensor mounting assembly to restore reliable flame detection.",
+		"parts": [
+			"SKU-FS-667234 - Flame Sensor Rod 4-inch with ceramic insulator and mounting bracket"
+		]
+	},
+	{
+		"problem": "The flame sensor in our gas oven keeps cutting out the gas supply even though I can see a perfect blue flame burning. It'll run fine for maybe ten minutes, then suddenly shut down and I have to restart the whole ignition sequence. My line cooks are getting behind on orders because they never know when the oven will quit working in the middle of cooking steaks.",
+		"solution": "Replaced the faulty flame sensor that was giving intermittent signals to the safety control module due to carbon buildup on the sensor tip.",
+		"parts": [
+			"SKU-FS-002847 - Flame Sensor Rod 8-inch length with ceramic insulator"
+		]
+	},
+	{
+		"problem": "Our combi oven's water pump for the steam system makes this awful whining noise and barely any water is getting through to create steam. I can hear it struggling to work but my vegetables are coming out dry as a bone. The whole reason we bought this expensive oven was for the steam feature and now it's basically broken.",
+		"solution": "Replaced the worn water circulation pump and cleaned out mineral deposits from the water lines that were restricting flow.",
+		"parts": [
+			"SKU-WP-001923 - Water Circulation Pump 120V 0.5HP with mounting bracket",
+			"SKU-WL-000457 - Water Line Filter Assembly with bypass valve"
+		]
+	},
+	{
+		"problem": "The RTD temperature probe in our convection oven must be giving bad readings because the display says 350 degrees but my instant-read thermometer shows it's actually 280. My cookies are taking forever to bake and my dinner rolls are coming out pale and doughy. I've wasted three batches of pastries today trying to figure out what's wrong.",
+		"solution": "Replaced the defective RTD temperature sensor that had drifted out of calibration and recalibrated the temperature controller.",
+		"parts": [
+			"SKU-RT-003412 - RTD Temperature Sensor Pt100 12-inch probe with connection head"
+		]
+	},
+	{
+		"problem": "The electric heating elements in our deck oven aren't heating up at all on the bottom - I can see the top ones glowing red but the bottom stays cold. My pizza crusts are staying soggy and pale no matter how long I leave them in. It's like trying to cook with only half an oven and customers are complaining about undercooked food.",
+		"solution": "Replaced the burned-out bottom heating elements and the faulty contactor that was preventing power from reaching them.",
+		"parts": [
+			"SKU-HE-004729 - Electric Heating Element 5000W 240V bottom mount",
+			"SKU-CT-001856 - Electrical Contactor 30A 240V with auxiliary contacts"
+		]
+	},
+	{
+		"problem": "The door latch mechanism on our rapid-bake oven is completely broken and won't engage properly anymore. The door looks closed but it's not actually sealed, so heat keeps leaking out and cooking times are all messed up. My pizza guy has to lean against the door to keep it shut, which is ridiculous and probably dangerous.",
+		"solution": "Replaced the worn door latch assembly and adjusted the door alignment to ensure proper sealing when closed.",
+		"parts": [
+			"SKU-DL-002638 - Door Latch Assembly with spring-loaded mechanism",
+			"SKU-DS-001174 - Door Strike Plate with adjustment screws",
+			"SKU-DG-000892 - Door Gasket High-temperature silicone 6-foot length"
+		]
+	},
+	{
+		"problem": "Our combi oven's control board keeps resetting itself randomly during cooking cycles, losing all the programmed settings and shutting down whatever we're cooking. It happened twice during yesterday's dinner rush and ruined a whole tray of salmon. My sous chef is afraid to use any of the preset programs because we can't trust it to finish the job.",
+		"solution": "Replaced the main control board that had failing capacitors and updated the firmware to the latest version.",
+		"parts": [
+			"SKU-CB-005841 - Main Control Board Assembly with LCD display interface"
+		]
+	},
+	{
+		"problem": "The electronic ignition system in our gas convection oven takes forever to light and sometimes doesn't work at all - I hear the clicking for thirty seconds before it finally catches, if it catches at all. My morning prep is getting delayed because I can't count on getting the oven started when I need it. Sometimes I have to try three or four times before it lights.",
+		"solution": "Replaced the weak ignition module and cleaned the spark electrodes that were fouled with grease and carbon deposits.",
+		"parts": [
+			"SKU-IG-003275 - Electronic Ignition Module 120V with spark generator",
+			"SKU-SE-001429 - Spark Electrode Assembly with ceramic insulator and ground strap"
+		]
+	},
+	{
+		"problem": "The baking stone in our deck oven has developed several deep cracks and now heats really unevenly - some spots are blazing hot while others barely get warm. My artisan breads are coming out with burnt bottoms in some places and pale spots in others. The stone pieces are also starting to flake off, which is getting into the food.",
+		"solution": "Replaced the cracked stone deck with a new refractory stone and reset the support brackets to ensure even heat distribution.",
+		"parts": [
+			"SKU-ST-004692 - Refractory Baking Stone 30x20 inches with thermal mass properties",
+			"SKU-SB-002158 - Stone Support Bracket Set stainless steel adjustable height"
+		]
+	},
+	{
+		"problem": "The flame sensor in our gas deck oven must be dirty or something because it keeps thinking there's no flame when there clearly is one. The oven will light up fine, burn for maybe ten minutes, then suddenly shut off all the gas even though I can see the flame is still going strong. My bread baker is going nuts because loaves keep getting half-baked when this happens during the middle of a baking cycle.",
+		"solution": "Cleaned the flame sensor thoroughly to remove carbon buildup and soot deposits that were preventing proper flame detection, then calibrated the sensor sensitivity.",
+		"parts": [
+			"SKU-FS-002941 - Flame Sensor Assembly with ceramic insulator and mounting bracket"
+		]
+	},
+	{
+		"problem": "Our combi oven's water pump for the steam system died completely - when I try to use any steam functions, I can hear it trying to work but no water is moving at all. The pump makes this grinding noise for a few seconds then gives up. Without steam, I can't do proper bread baking or vegetable steaming, which cuts out about half of my menu options.",
+		"solution": "Replaced the failed steam system water pump and checked all water lines for proper flow and pressure.",
+		"parts": [
+			"SKU-WP-008527 - Steam System Water Pump 120V with inlet/outlet fittings",
+			"SKU-GL-004813 - Water Line Gasket Set for steam connections"
+		]
+	},
+	{
+		"problem": "The electronic ignition module in our rapid-bake oven completely gave out yesterday - there's no spark at all when I try to light it. I can turn the gas on and everything looks normal on the control panel, but there's just no ignition happening. We're dead in the water for our lunch pizza rush without this thing working.",
+		"solution": "Replaced the faulty electronic ignition module and verified proper voltage supply to the ignition system.",
+		"parts": [
+			"SKU-IG-007253 - Electronic Ignition Module with mounting hardware and wiring harness"
+		]
+	},
+	{
+		"problem": "The RTD temperature sensor in our convection oven is giving completely wrong readings - the display shows 300 degrees but my handheld thermometer reads 425 degrees inside. My cookies are burning because I'm setting lower temperatures thinking the oven is running cool. This has been getting worse over the past two weeks and now I can't trust any of the temperature settings.",
+		"solution": "Replaced the failed RTD temperature sensor and recalibrated the temperature control system to ensure accurate readings.",
+		"parts": [
+			"SKU-RT-005674 - RTD Temperature Sensor Pt100 with 6-inch probe and 1/2-inch NPT fitting",
+			"SKU-WH-009182 - High-temperature sensor wire harness 10-foot length"
+		]
+	},
+	{
+		"problem": "The ductwork connection to our convection oven came loose somehow and now hot air is blowing out the back instead of circulating inside the oven. My kitchen is getting way too hot and the food isn't cooking evenly because the air flow is all messed up. I can actually see the loose duct flapping around when the fan runs.",
+		"solution": "Reconnected and secured the loose convection ductwork with new clamps and verified proper airflow direction throughout the system.",
+		"parts": [
+			"SKU-DC-003156 - Ductwork Clamp Set with gaskets for 8-inch diameter ducts",
+			"SKU-DG-007429 - High-temperature duct gasket material 36-inch roll"
+		]
+	},
+	{
+		"problem": "Our deck oven's baking stone cracked in half during the dinner rush last night and now there's a huge gap running right through the middle of the deck. The heat isn't distributing evenly anymore and my pizza crusts are coming out with weird patterns where the crack is. I'm worried about the stone pieces breaking off into the food too.",
+		"solution": "Removed the damaged baking stone and installed a new cordierite stone deck with proper thermal expansion gaps.",
+		"parts": [
+			"SKU-BS-001895 - Cordierite Baking Stone 30x40 inch with thermal shock resistance"
+		]
+	},
+	{
+		"problem": "The latch mechanism on our combi oven door broke and now the door won't stay securely closed during cooking cycles. It pops open randomly, especially when there's steam pressure building up inside. All my steam escapes and the cooking times are completely unpredictable because I never know when the door will swing open.",
+		"solution": "Replaced the worn door latch assembly and adjusted the door alignment to ensure proper sealing pressure.",
+		"parts": [
+			"SKU-DL-008741 - Heavy-duty Door Latch Assembly with spring-loaded mechanism",
+			"SKU-SP-002358 - Door Latch Spring Set with mounting hardware"
+		]
+	},
+	{
+		"problem": "The heating elements in our electric convection oven are only working on one side - the left elements glow red hot but the right side stays completely cold. Everything I bake comes out lopsided with one side perfectly done and the other side barely cooked. My pastry chef is having to rotate everything halfway through baking but it's still not working well.",
+		"solution": "Replaced the failed heating element bank on the right side of the oven and checked electrical connections for proper voltage distribution.",
+		"parts": [
+			"SKU-HE-006492 - Electric Heating Element 240V 5000W with mounting brackets",
+			"SKU-CB-004671 - Circuit Breaker 30-amp for heating element protection"
+		]
+	}
 ]

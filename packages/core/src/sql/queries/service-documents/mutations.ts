@@ -1,7 +1,7 @@
 import { getDb } from "@foodtools/core/src/sql";
 import {
-	serviceDocuments,
 	type InsertServiceDocument,
+	serviceDocuments,
 } from "@foodtools/core/src/sql/schema";
 import { eq } from "drizzle-orm";
 
@@ -10,10 +10,7 @@ import { eq } from "drizzle-orm";
  */
 export async function createServiceDocument(data: InsertServiceDocument) {
 	const db = getDb();
-	const [doc] = await db
-		.insert(serviceDocuments)
-		.values(data)
-		.returning();
+	const [doc] = await db.insert(serviceDocuments).values(data).returning();
 	return doc;
 }
 

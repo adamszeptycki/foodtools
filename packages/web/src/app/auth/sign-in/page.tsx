@@ -65,7 +65,10 @@ export default function SignInPage() {
 					{error ? <p className="text-sm text-red-500">{error}</p> : null}
 				</form>
 				<p className="mt-4 text-center text-sm text-muted-foreground">
-					Need an account? <a href="/auth/sign-up" className="text-blue-500 hover:underline">Sign up</a>
+					Need an account?{" "}
+					<a href="/auth/sign-up" className="text-blue-500 hover:underline">
+						Sign up
+					</a>
 				</p>
 			</div>
 		</div>

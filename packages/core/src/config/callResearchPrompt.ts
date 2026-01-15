@@ -116,4 +116,3 @@ Now process this work history:
 
 {{WORK_HISTORY}}
 `;
-

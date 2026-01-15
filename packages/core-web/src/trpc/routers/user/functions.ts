@@ -55,7 +55,11 @@ export async function getCurrentUser({ ctx }: { ctx: AuthenticatedContext }) {
 /**
  * Mark the user as authenticated from the Electron application
  */
-export async function markUserAuthenticatedFromElectron({ ctx }: { ctx: Omit<AuthenticatedContext, "organization"> }) {
+export async function markUserAuthenticatedFromElectron({
+	ctx,
+}: {
+	ctx: Omit<AuthenticatedContext, "organization">;
+}) {
 	try {
 		if (!ctx.session?.user) {
 			throw new TRPCError({

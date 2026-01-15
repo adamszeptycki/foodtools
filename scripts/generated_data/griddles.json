@@ -1,420 +1,420 @@
 [
-  {
-    "problem": "Our griddle isn't heating up evenly anymore - the left side barely gets warm while the right side gets scorching hot. My cooks keep having to shuffle food around constantly just to get everything cooked properly. We're wasting so much time and burning through way more gas than usual.",
-    "solution": "Replaced faulty gas control valve and cleaned blocked burner orifices to restore even heat distribution across the griddle surface.",
-    "parts": [
-      "SKU-GV-248751 - Gas Control Valve 3/4-inch NPT with pressure regulator",
-      "SKU-BO-139264 - Burner Orifice Set #54 drill size for natural gas"
-    ]
-  },
-  {
-    "problem": "The griddle won't stay lit - it keeps going out every few minutes and we have to keep relighting it. My staff is getting frustrated because they'll start cooking something and then lose the flame halfway through. It's been happening more and more frequently this week.",
-    "solution": "Replaced worn thermocouple that was failing to maintain proper flame sensing signal to the gas valve.",
-    "parts": [
-      "SKU-TC-001834 - Thermocouple Type K 18-inch with 1/4-inch NPT fitting"
-    ]
-  },
-  {
-    "problem": "The temperature control knob isn't working right - I turn it to medium but the griddle either stays cold or gets way too hot. There's no in-between anymore and my cooks can't control the heat properly. We've had to throw out burnt food twice today because of this.",
-    "solution": "Replaced faulty thermostat assembly and recalibrated temperature control system to restore accurate heat regulation.",
-    "parts": [
-      "SKU-TH-457821 - Griddle Thermostat 200-450\u00b0F range with capillary bulb",
-      "SKU-CK-092156 - Control Knob Assembly with temperature markings"
-    ]
-  },
-  {
-    "problem": "Grease is overflowing everywhere from the griddle and making a huge mess on the floor. The grease tray seems full but even after we empty it, grease still spills out the sides. It's creating a safety hazard and my cleaning crew is spending forever mopping up the mess.",
-    "solution": "Replaced cracked grease trough and installed new grease management channel system to properly direct waste away from cooking surface.",
-    "parts": [
-      "SKU-GT-367489 - Stainless Steel Grease Trough 36-inch with drain fitting",
-      "SKU-GC-184752 - Grease Channel Kit with mounting brackets",
-      "SKU-GD-295013 - Grease Drawer Assembly with removable liner"
-    ]
-  },
-  {
-    "problem": "The griddle surface is all warped and uneven now - oil pools in certain spots and food slides to one side when we're trying to cook. My pancakes come out lopsided and eggs run all over the place. It's making breakfast service a nightmare.",
-    "solution": "Replaced warped griddle plate and adjusted mounting hardware to ensure level cooking surface throughout.",
-    "parts": [
-      "SKU-GP-521847 - Chrome Griddle Plate 36x24 inch 1/2-inch thick",
-      "SKU-ML-063291 - Griddle Mounting Hardware Kit with leveling bolts"
-    ]
-  },
-  {
-    "problem": "The pilot light won't stay on anymore - it lights up when I hold the button but goes out as soon as I let go. We can't use the griddle at all right now because there's no way to keep the flame going. This is costing us money every minute it's down.",
-    "solution": "Replaced faulty pilot assembly and cleaned pilot orifice to restore reliable pilot flame operation.",
-    "parts": [
-      "SKU-PA-418963 - Pilot Light Assembly with thermocouple and orifice"
-    ]
-  },
-  {
-    "problem": "There's a strong gas smell coming from behind the griddle and it's getting worse. My staff is worried about safety and honestly so am I - we can smell it even when the griddle is off. I had to move my prep station because the smell is so strong back there.",
-    "solution": "Replaced leaking gas manifold and tightened all gas line connections to eliminate dangerous gas leak.",
-    "parts": [
-      "SKU-GM-735124 - Gas Manifold Assembly 4-burner with safety shutoff",
-      "SKU-GF-281457 - Gas Line Fitting Kit with thread sealant"
-    ]
-  },
-  {
-    "problem": "The electronic ignition system isn't working - I press the ignition button and sometimes it sparks, sometimes it doesn't. My cooks have been using matches to light it which I know isn't safe. We need this fixed before someone gets hurt.",
-    "solution": "Replaced faulty ignition module and spark electrode to restore reliable electronic ignition system.",
-    "parts": [
-      "SKU-IG-594162 - Electronic Ignition Module 120V with spark generator",
-      "SKU-SE-167439 - Spark Electrode Assembly with ceramic insulator"
-    ]
-  },
-  {
-    "problem": "The backsplash behind the griddle is loose and grease is getting behind it, creating a gross buildup that we can't clean. It's starting to smell bad and I'm worried about health department violations. The whole thing seems to be pulling away from the wall.",
-    "solution": "Reinstalled backsplash with new mounting hardware and sealed gaps to prevent grease infiltration behind cooking equipment.",
-    "parts": [
-      "SKU-BS-823671 - Stainless Steel Backsplash 36-inch with mounting brackets",
-      "SKU-SS-429138 - Food-Grade Silicone Sealant Kit for kitchen applications"
-    ]
-  },
-  {
-    "problem": "The griddle plate has these weird black spots and scratches all over it that won't come off no matter how hard we scrub. Food sticks to those spots constantly and we're getting burnt bits mixed into everything we cook. My breakfast cook says it's impossible to make decent hash browns anymore because they just stick and tear apart.",
-    "solution": "Replaced the damaged chrome griddle plate with a new unit and reseasoned the surface according to manufacturer specifications.",
-    "parts": [
-      "SKU-GP-087453 - Chrome Griddle Plate 36-inch x 24-inch with beveled edges"
-    ]
-  },
-  {
-    "problem": "The griddle just randomly shuts off in the middle of service - no warning, just dead. Sometimes it happens twice in an hour, sometimes we're fine for a whole day. When it shuts off, we lose whatever we're cooking and have to start over. My staff never knows if they can count on it working.",
-    "solution": "Replaced the faulty safety thermocouple that was intermittently triggering the automatic shutoff valve due to poor connection.",
-    "parts": [
-      "SKU-TC-124687 - Safety Thermocouple 24-inch with quick-disconnect fitting",
-      "SKU-CV-089123 - Gas Control Valve with automatic shutoff mechanism"
-    ]
-  },
-  {
-    "problem": "The whole griddle is tilted - oil and grease run to one corner and pool there instead of draining properly. Everything we cook slides to that side and we can't get even cooking anymore. It looks like one of the legs is shorter or something shifted underneath.",
-    "solution": "Adjusted and replaced the adjustable leveling feet and realigned the griddle frame to achieve proper surface level.",
-    "parts": [
-      "SKU-LF-156742 - Adjustable Leveling Foot Set heavy-duty stainless steel",
-      "SKU-MH-203891 - Mounting Hardware Kit with brackets and bolts",
-      "SKU-SH-087234 - Support Shim Set various thicknesses"
-    ]
-  },
-  {
-    "problem": "The gas burners under the griddle make this loud popping noise and the flames look all yellow and uneven instead of blue. The griddle takes forever to heat up now and doesn't get nearly as hot as it used to. My cooks are complaining about how long it takes to cook anything.",
-    "solution": "Cleaned and replaced the clogged burner orifices and adjusted the air-to-gas mixture to restore proper blue flame combustion.",
-    "parts": [
-      "SKU-BO-194567 - Burner Orifice Set natural gas 0.025-inch diameter",
-      "SKU-BM-087651 - Burner Manifold Assembly with pressure regulator"
-    ]
-  },
-  {
-    "problem": "The control knobs are completely loose - they spin around without doing anything and I can't tell what temperature setting we're on. Sometimes turning them actually makes the heat go down when it should go up. We're basically guessing at temperatures all day long.",
-    "solution": "Replaced the worn control valve stems and recalibrated the thermostat linkages to restore proper temperature control operation.",
-    "parts": [
-      "SKU-VS-234178 - Control Valve Stem Kit with spring assembly",
-      "SKU-CK-156892 - Control Knob Set with temperature markings"
-    ]
-  },
-  {
-    "problem": "There's this horrible burnt smell coming from inside the griddle cabinet and we can see smoke coming out the vents. It smells like electrical burning and I'm scared something's going to catch fire. We had to shut it down because the smell was getting into the food.",
-    "solution": "Replaced the overheated electrical heating element that had developed internal shorts and cleaned out accumulated grease deposits from the cabinet.",
-    "parts": [
-      "SKU-HE-298734 - Electric Heating Element 240V 5000W with ceramic insulation"
-    ]
-  },
-  {
-    "problem": "The grease channels along the edges are all cracked and split, so grease drips down onto the floor instead of going to the trap. We're constantly slipping on grease spots and it's making the whole kitchen dangerous. The health inspector is going to have a field day if they see this mess.",
-    "solution": "Replaced the damaged grease collection channels and installed new gaskets to ensure proper drainage to the grease management system.",
-    "parts": [
-      "SKU-GC-087234 - Grease Channel Assembly stainless steel with drain spouts",
-      "SKU-GT-156789 - Grease Trap Replacement with removable basket",
-      "SKU-GS-234567 - Gasket Set for grease management system"
-    ]
-  },
-  {
-    "problem": "The temperature gauge is stuck on 200 degrees even when the griddle is obviously way hotter than that. My cooks keep burning food because they think it's cooler than it really is. We've been having to guess temperatures all week and wasting a lot of product.",
-    "solution": "Replaced the faulty temperature sensor and recalibrated the digital temperature display to provide accurate readings.",
-    "parts": [
-      "SKU-TS-145623 - Temperature Sensor RTD probe with 6-foot cable",
-      "SKU-TD-298741 - Digital Temperature Display with LED readout"
-    ]
-  },
-  {
-    "problem": "The griddle surface is getting these weird pits and rough spots that catch food and won't let go. Everything sticks now - bacon tears apart when we try to flip it and pancakes leave chunks behind. My morning crew is getting so frustrated because they can't get a clean flip on anything anymore.",
-    "solution": "Resurfaced the chrome griddle plate using professional grinding equipment and applied new seasoning coating to restore smooth cooking surface.",
-    "parts": [
-      "SKU-GP-002847 - Chrome Griddle Plate 36-inch x 24-inch with beveled edges",
-      "SKU-CS-001293 - Food-grade Seasoning Compound 32oz container"
-    ]
-  },
-  {
-    "problem": "The griddle makes this awful screeching noise whenever we adjust the temperature - sounds like metal grinding on metal. It's so loud that customers can hear it from the dining room and my staff jumps every time. The noise started about two weeks ago and keeps getting worse.",
-    "solution": "Replaced worn control valve stems and lubricated all moving parts in the gas control assembly.",
-    "parts": [
-      "SKU-CV-004621 - Gas Control Valve Stem Assembly with O-rings",
-      "SKU-LB-000892 - High-temperature Valve Lubricant 4oz tube",
-      "SKU-OR-001547 - Control Valve O-ring Kit 15-piece set"
-    ]
-  },
-  {
-    "problem": "Our griddle won't shut off completely anymore - even when I turn all the knobs to off, one section stays warm and keeps cooking. We found burnt food stuck to that spot this morning because someone forgot it was still on. This is a fire hazard and I'm worried about leaving it unattended.",
-    "solution": "Replaced faulty gas safety valve that was not properly sealing when closed, allowing gas flow to continue.",
-    "parts": [
-      "SKU-SV-003158 - Gas Safety Shutoff Valve 3/4-inch NPT with manual reset"
-    ]
-  },
-  {
-    "problem": "The griddle takes forever to heat up now - used to be ready in 10 minutes, now it's taking almost 45 minutes to get hot enough to cook on. My breakfast rush starts at 6 AM and I have to start preheating at 5 just to be ready. This is killing our morning prep time and making everything rushed.",
-    "solution": "Cleaned clogged burner orifices and adjusted gas pressure regulator to restore proper heat output and faster heating times.",
-    "parts": [
-      "SKU-BO-007412 - Burner Orifice Set #54 drill size for natural gas",
-      "SKU-PR-002903 - Gas Pressure Regulator 11-inch WC with gauge"
-    ]
-  },
-  {
-    "problem": "The griddle keeps clicking constantly - this rapid clicking sound that never stops as long as it's on. It's driving everyone crazy and we're worried something electrical is going wrong. The sound gets faster when we turn up the heat and my servers are complaining about the noise.",
-    "solution": "Replaced malfunctioning electronic ignition control module that was continuously attempting to spark.",
-    "parts": [
-      "SKU-IC-005739 - Electronic Ignition Control Module 120V with flame sensing"
-    ]
-  },
-  {
-    "problem": "Grease isn't draining at all anymore - it just sits on the griddle surface in puddles no matter how much we tilt the squeegee. We're having to manually scrape grease off constantly during cooking and it's making everything greasy and gross. Food is basically swimming in old grease by the end of the day.",
-    "solution": "Unclogged blocked grease drain line and replaced damaged grease collection funnel with proper slope angle.",
-    "parts": [
-      "SKU-GF-003824 - Stainless Steel Grease Collection Funnel 8-inch diameter",
-      "SKU-DL-001671 - Grease Drain Line Kit with flexible connector 24-inch"
-    ]
-  },
-  {
-    "problem": "One corner of the griddle gets so hot it's practically glowing while the rest barely warms up. We can cook eggs in that one spot but everything else is useless. My cooks are crowding all the food into that tiny hot area and it's creating chaos during busy periods.",
-    "solution": "Replaced damaged burner manifold that had a cracked distribution chamber causing uneven gas flow to individual burners.",
-    "parts": [
-      "SKU-BM-006285 - Burner Manifold Assembly 48-inch with 6 outlets",
-      "SKU-GS-001904 - Manifold Gasket Set high-temperature silicone"
-    ]
-  },
-  {
-    "problem": "The griddle plate is lifting up on one side and there's a gap forming between sections. Food and grease are falling through the gap into the cabinet below and we can hear it sizzling on the burners. I'm afraid something's going to catch fire down there and the smell is getting terrible.",
-    "solution": "Realigned and secured griddle plate mounting brackets and replaced warped support frame underneath.",
-    "parts": [
-      "SKU-MB-004517 - Griddle Plate Mounting Bracket Set heavy-duty steel",
-      "SKU-SF-002896 - Support Frame Assembly with adjustable leveling feet",
-      "SKU-FB-001203 - Mounting Hardware Kit stainless steel bolts and washers"
-    ]
-  },
-  {
-    "problem": "The chrome surface on our griddle is all bubbled up and peeling off in big chunks. Every time we scrape or clean it, more pieces flake off and get mixed into the food. My cooks are picking chrome bits out of the eggs and hash browns - this is disgusting and we can't serve food like this.",
-    "solution": "Replaced the deteriorated chrome-plated griddle surface with a new heavy-duty chrome top plate and properly seasoned it before returning to service.",
-    "parts": [
-      "SKU-GP-428571 - Chrome-plated griddle plate 36-inch x 24-inch with beveled edges"
-    ]
-  },
-  {
-    "problem": "Water keeps pooling on top of our griddle every morning and we can't figure out where it's coming from. The whole cooking surface gets rusty spots overnight and we have to spend twenty minutes scrubbing it down before we can start breakfast. It's like moisture is getting trapped somewhere inside and condensing on the plate.",
-    "solution": "Sealed gaps in the griddle housing and replaced damaged insulation that was allowing moisture infiltration, then cleaned and re-seasoned the cooking surface.",
-    "parts": [
-      "SKU-IS-334729 - High-temperature ceramic fiber insulation 2-inch thickness",
-      "SKU-SL-198456 - Food-grade silicone sealant tube 10.3-oz"
-    ]
-  },
-  {
-    "problem": "The griddle takes forever to heat up now - we turn it on full blast and it takes almost an hour to get hot enough to cook on. My breakfast crew has to come in earlier just to wait for this thing to warm up. It used to be ready in fifteen minutes, now we're wasting time and gas every morning.",
-    "solution": "Cleaned clogged burner orifices and replaced worn gas regulator valve that was restricting proper gas flow to the heating elements.",
-    "parts": [
-      "SKU-OR-267891 - Natural gas burner orifice set 0.052-inch diameter",
-      "SKU-RG-445203 - Gas pressure regulator valve 1/2-inch NPT with 11-inch WC setting"
-    ]
-  },
-  {
-    "problem": "Every time we turn the griddle on, it makes these loud clicking sounds like something's sparking inside. The clicking goes on for several minutes and sometimes we see little flashes of light through the vents. My staff is afraid to stand too close when we're starting it up because it sounds dangerous.",
-    "solution": "Replaced faulty electronic ignition control module and damaged spark electrode that were causing erratic sparking and electrical arcing.",
-    "parts": [
-      "SKU-IG-672134 - Electronic ignition control module 120V with safety lockout",
-      "SKU-SP-889245 - Ceramic spark electrode with stainless steel bracket"
-    ]
-  },
-  {
-    "problem": "The griddle keeps cycling on and off every few minutes instead of maintaining steady heat. One minute it's cooking great, then it goes cold, then fires back up again. My pancakes are half-cooked on one side because the heat keeps dropping out in the middle of cooking.",
-    "solution": "Replaced defective thermostat control that was short-cycling and recalibrated the temperature sensing bulb position for proper heat regulation.",
-    "parts": [
-      "SKU-TH-556789 - Heavy-duty griddle thermostat 200-450\u00b0F range with 36-inch capillary tube"
-    ]
-  },
-  {
-    "problem": "There's this greasy buildup under the griddle that we can't reach to clean, and now it's starting to smoke and smell awful during busy periods. The smell gets into the food and customers are complaining. We've tried reaching under there but can't get to whatever's burning.",
-    "solution": "Removed griddle from mounting brackets, thoroughly cleaned accumulated grease from underneath, and replaced damaged drip pan with proper drainage.",
-    "parts": [
-      "SKU-DP-123674 - Stainless steel drip pan 34-inch x 22-inch with rear drain spout",
-      "SKU-MF-445098 - Adjustable mounting foot set of 4 with leveling capability"
-    ]
-  },
-  {
-    "problem": "The safety valve keeps shutting off the gas supply randomly during service - the griddle will be working fine then suddenly go cold with no warning. We have to reset something underneath to get it working again. It's happened three times today alone and we're losing food every time.",
-    "solution": "Replaced malfunctioning safety gas valve and cleaned the sensing line that was giving false readings, causing unnecessary shutdowns.",
-    "parts": [
-      "SKU-SV-778234 - Automatic safety gas valve 3/4-inch with thermal sensing"
-    ]
-  },
-  {
-    "problem": "The corners of our griddle plate are starting to curl up and food slides off the edges onto the floor. When we crack eggs near the sides, they run right off before we can catch them. It's like the whole surface is warping from the heat and nothing stays put anymore.",
-    "solution": "Replaced warped griddle plate and upgraded the support structure underneath to prevent future warping from thermal expansion.",
-    "parts": [
-      "SKU-GP-991456 - Heavy-gauge steel griddle plate 1/2-inch thick with reinforced edges",
-      "SKU-SS-234567 - Structural support framework with thermal expansion joints"
-    ]
-  },
-  {
-    "problem": "Our griddle has these deep scratches and gouges that trap grease and food particles no matter how much we scrub. Everything tastes like old grease because we can't get those grooves clean. The health inspector is coming next week and I'm worried about what they'll say when they see this mess.",
-    "solution": "Professionally resurfaced the griddle plate to remove deep scratches and applied protective coating to prevent future damage.",
-    "parts": [
-      "SKU-SC-667891 - Food-grade surface coating kit with primer and topcoat"
-    ]
-  },
-  {
-    "problem": "The gas line connection behind the griddle is making a hissing sound and I can smell gas near the wall. It's not a strong smell but it's definitely there, and the sound gets louder when we turn up the heat. I'm worried about having an open flame so close to a gas leak.",
-    "solution": "Replaced deteriorated gas line flexible connector and tightened all fittings, then performed leak test to ensure complete seal integrity.",
-    "parts": [
-      "SKU-GL-445612 - Flexible gas connector 3/4-inch x 48-inch with safety coating",
-      "SKU-FT-223478 - Brass flare fitting set with thread sealant compound"
-    ]
-  },
-  {
-    "problem": "The griddle chrome surface has turned all discolored and blotchy - it looks terrible and customers can see it from the counter. The discoloration seems to be getting worse each week and now food tastes metallic when it touches certain spots. My staff is embarrassed to cook on it because it looks so unprofessional.",
-    "solution": "Replaced the damaged chrome-plated griddle surface with a new factory-spec chrome plate and applied proper seasoning treatment to restore non-stick properties and appearance.",
-    "parts": [
-      "SKU-CP-247831 - Chrome-plated griddle surface 36-inch x 24-inch commercial grade"
-    ]
-  },
-  {
-    "problem": "The safety shutoff system keeps triggering randomly and cutting gas to the whole griddle. We'll be in the middle of breakfast rush and suddenly everything goes cold with no warning. It happens maybe three or four times a day and we lose so much food when it shuts down mid-cook.",
-    "solution": "Replaced the faulty thermocouple safety sensor that was sending intermittent signals and recalibrated the gas valve safety system.",
-    "parts": [
-      "SKU-TC-189456 - High-temperature thermocouple sensor with 24-inch lead wire",
-      "SKU-GV-334721 - Gas safety valve assembly with automatic shutoff mechanism"
-    ]
-  },
-  {
-    "problem": "The electric heating elements under our griddle seem to be dying one by one. First the back left went out, now the front right is barely warm, and I think another one is going too. Half the cooking surface is useless and we can only use the center section for anything that needs real heat.",
-    "solution": "Replaced all failed electric heating elements and tested the electrical connections for proper voltage and amperage delivery.",
-    "parts": [
-      "SKU-HE-892347 - Electric griddle heating element 2000W 240V tubular design",
-      "SKU-HE-892348 - Electric griddle heating element 1500W 240V compact design",
-      "SKU-WR-156892 - High-temperature wiring harness with ceramic connectors"
-    ]
-  },
-  {
-    "problem": "There's this grinding noise coming from under the griddle whenever the gas valves open or close, and sometimes they get stuck halfway. My cooks have to bang on the control panel to get them unstuck, which can't be good for the equipment. The whole thing feels like it's going to break completely any day now.",
-    "solution": "Rebuilt the gas manifold assembly and replaced worn gas orifices that were causing pressure irregularities and mechanical binding.",
-    "parts": [
-      "SKU-GM-445672 - Gas manifold assembly with pressure regulator and mounting hardware",
-      "SKU-GO-778234 - Gas burner orifice set #54 drill size natural gas rated"
-    ]
-  },
-  {
-    "problem": "The griddle won't heat up fast enough anymore - it used to be ready in ten minutes but now takes almost an hour to get hot enough to cook on. My morning shift has to come in extra early just to get it warmed up before we open. Even when it finally gets hot, it feels like it's struggling to maintain temperature.",
-    "solution": "Cleaned and adjusted all gas burner assemblies, replaced clogged burner ports, and recalibrated the gas pressure regulator for optimal fuel delivery.",
-    "parts": [
-      "SKU-BA-334521 - Gas burner assembly with adjustable air shutter and mounting bracket",
-      "SKU-PR-667843 - Gas pressure regulator valve 1/2-inch NPT natural gas rated"
-    ]
-  },
-  {
-    "problem": "Water keeps pooling on top of the griddle every morning and we can't figure out where it's coming from. It's not from cleaning - this happens even when we don't wash it the night before. The water sits in certain spots and makes the griddle smoke terribly when we first turn it on each day.",
-    "solution": "Replaced damaged griddle mounting brackets and releveled the unit to eliminate low spots where condensation was collecting overnight.",
-    "parts": [
-      "SKU-MB-223847 - Adjustable griddle mounting bracket set with leveling feet and hardware"
-    ]
-  },
-  {
-    "problem": "The flame pattern under our gas griddle looks all wrong - instead of nice even blue flames, we get these tall yellow flickering flames that don't heat evenly. You can actually see the uneven heat pattern on the cooking surface where some spots are way hotter than others. Food cooks completely unevenly now.",
-    "solution": "Replaced the gas valve regulator and cleaned all burner venturi tubes to restore proper air-to-gas mixture and flame characteristics.",
-    "parts": [
-      "SKU-GR-445789 - Gas valve regulator with pressure gauge and 3/4-inch connections",
-      "SKU-VT-887234 - Venturi tube assembly with air intake adjustment and cleaning ports"
-    ]
-  },
-  {
-    "problem": "The griddle control panel is completely dead - none of the indicator lights work and I can't tell if anything is on or what temperature it's set to. We're flying blind and have to touch-test the surface to guess if it's hot enough. This morning someone got burned because they couldn't tell a section was still heating up.",
-    "solution": "Replaced the main control board and all indicator LED lights, then recalibrated the temperature display system.",
-    "parts": [
-      "SKU-CB-556892 - Digital control board with temperature display and safety monitoring",
-      "SKU-LD-334456 - LED indicator light assembly with multi-color status display",
-      "SKU-TS-778901 - Temperature sensor probe with digital readout capability"
-    ]
-  },
-  {
-    "problem": "The griddle has these dead spots where nothing cooks at all - I can crack an egg on those areas and it just sits there cold while the rest of the surface is working fine. My cooks have to avoid certain sections entirely which cuts down our cooking space by almost half. We're falling behind on orders because we can't use the whole surface anymore.",
-    "solution": "Replaced faulty heating elements in the affected zones and reconnected loose electrical connections to restore even heat distribution across the entire cooking surface.",
-    "parts": [
-      "SKU-HE-243891 - Electric heating element 240V 3500W with terminal connections",
-      "SKU-WR-156742 - High-temperature wire harness assembly for griddle zones"
-    ]
-  },
-  {
-    "problem": "The griddle keeps clicking and trying to ignite even when it's already lit and running. It's this constant clicking noise that drives everyone crazy and customers keep asking what that sound is. Sometimes the clicking gets so loud we can't hear each other talk in the kitchen.",
-    "solution": "Replaced malfunctioning ignition control module that was continuously sending spark signals and calibrated the flame sensing circuit.",
-    "parts": [
-      "SKU-IG-789234 - Electronic ignition control module with flame sensing"
-    ]
-  },
-  {
-    "problem": "There's this gross greasy residue building up all around the edges where the griddle meets the counter, and it won't come off with normal cleaning. It's turning black and crusty and starting to smell rancid. The health department is coming next week and I'm panicking about this mess.",
-    "solution": "Replaced deteriorated edge seals and gaskets that were allowing grease penetration, then performed deep degreasing of affected areas.",
-    "parts": [
-      "SKU-SL-445627 - Griddle edge seal kit with corner gaskets",
-      "SKU-CL-298455 - Food-safe degreasing compound for commercial equipment",
-      "SKU-GS-334782 - High-temperature silicone gasket material"
-    ]
-  },
-  {
-    "problem": "The safety shut-off keeps kicking in randomly and killing the gas to the whole griddle - sometimes right in the middle of the breakfast rush. My staff has to wait for it to reset and relight everything, which takes forever. We've lost so many orders because of these random shutdowns.",
-    "solution": "Replaced faulty thermocouple safety sensor that was giving false readings and adjusted the gas valve safety system calibration.",
-    "parts": [
-      "SKU-TC-667891 - Universal thermocouple sensor 24-inch with safety connector"
-    ]
-  },
-  {
-    "problem": "The griddle chrome surface has these weird stains and discoloration patches that make the food look dirty even when it's perfectly clean. Customers keep sending back perfectly good food because they think it looks contaminated. My servers are getting tired of explaining that the food is fine.",
-    "solution": "Performed professional chrome surface restoration using specialized compounds and applied protective coating to prevent future staining.",
-    "parts": [
-      "SKU-CR-123456 - Chrome surface restoration compound kit",
-      "SKU-PT-789012 - Food-safe chrome protective coating"
-    ]
-  },
-  {
-    "problem": "One of the gas control knobs fell completely off and now we can't control that burner section at all. The knob just spins freely when we try to put it back on and there's no way to adjust the flame. We're basically down to three-quarters of our cooking space until this gets fixed.",
-    "solution": "Replaced damaged control valve stem and installed new control knob assembly with proper shaft engagement mechanism.",
-    "parts": [
-      "SKU-VL-445783 - Gas control valve assembly with calibrated orifice",
-      "SKU-KN-267834 - Control knob with temperature markings and shaft coupler"
-    ]
-  },
-  {
-    "problem": "The whole griddle shakes and vibrates when we're cooking on it, especially when flipping heavy items like burgers. It makes this rattling noise and everything on the surface bounces around. My cooks are afraid something's going to fall apart and they can't work confidently anymore.",
-    "solution": "Tightened and reinforced loose mounting brackets and replaced worn vibration dampeners in the support structure.",
-    "parts": [
-      "SKU-MB-556789 - Heavy-duty mounting bracket set with reinforcement plates",
-      "SKU-VD-223445 - Vibration dampener pads for commercial equipment"
-    ]
-  },
-  {
-    "problem": "The griddle takes forever to cool down after service - even hours later it's still too hot to clean properly. My night cleaning crew keeps getting burned trying to scrub it and we're having to wait until morning to do a proper cleaning. This is messing up our whole cleaning schedule.",
-    "solution": "Replaced malfunctioning temperature control solenoid that was keeping gas flowing at low levels and cleaned blocked cooling vents.",
-    "parts": [
-      "SKU-SV-778923 - Temperature control solenoid valve with quick-shutoff"
-    ]
-  },
-  {
-    "problem": "There are these rusty spots appearing all over the griddle plate that keep getting worse no matter how much we clean and oil the surface. Food tastes metallic when it touches those spots and I'm worried about health issues. The rust seems to be coming from underneath somehow.",
-    "solution": "Replaced corroded griddle plate with stainless steel upgrade and treated underlying support structure for rust prevention.",
-    "parts": [
-      "SKU-GP-334567 - Stainless steel griddle plate 36-inch with non-stick coating",
-      "SKU-RS-445623 - Anti-corrosion treatment kit for griddle framework"
-    ]
-  },
-  {
-    "problem": "The grease trap underneath is making this awful gurgling sound and occasionally burps up greasy water that splashes everywhere. The smell is horrible and it's happening more often during busy periods. My dishwashers refuse to work near it anymore because of the stench.",
-    "solution": "Replaced clogged grease trap assembly and cleaned blocked drain lines, then installed improved venting system to prevent backup pressure.",
-    "parts": [
-      "SKU-GT-667834 - Commercial grease trap assembly with overflow protection",
-      "SKU-DR-445789 - Grease drain line cleaning kit",
-      "SKU-VT-223567 - Grease management vent system"
-    ]
-  }
+	{
+		"problem": "Our griddle isn't heating up evenly anymore - the left side barely gets warm while the right side gets scorching hot. My cooks keep having to shuffle food around constantly just to get everything cooked properly. We're wasting so much time and burning through way more gas than usual.",
+		"solution": "Replaced faulty gas control valve and cleaned blocked burner orifices to restore even heat distribution across the griddle surface.",
+		"parts": [
+			"SKU-GV-248751 - Gas Control Valve 3/4-inch NPT with pressure regulator",
+			"SKU-BO-139264 - Burner Orifice Set #54 drill size for natural gas"
+		]
+	},
+	{
+		"problem": "The griddle won't stay lit - it keeps going out every few minutes and we have to keep relighting it. My staff is getting frustrated because they'll start cooking something and then lose the flame halfway through. It's been happening more and more frequently this week.",
+		"solution": "Replaced worn thermocouple that was failing to maintain proper flame sensing signal to the gas valve.",
+		"parts": [
+			"SKU-TC-001834 - Thermocouple Type K 18-inch with 1/4-inch NPT fitting"
+		]
+	},
+	{
+		"problem": "The temperature control knob isn't working right - I turn it to medium but the griddle either stays cold or gets way too hot. There's no in-between anymore and my cooks can't control the heat properly. We've had to throw out burnt food twice today because of this.",
+		"solution": "Replaced faulty thermostat assembly and recalibrated temperature control system to restore accurate heat regulation.",
+		"parts": [
+			"SKU-TH-457821 - Griddle Thermostat 200-450\u00b0F range with capillary bulb",
+			"SKU-CK-092156 - Control Knob Assembly with temperature markings"
+		]
+	},
+	{
+		"problem": "Grease is overflowing everywhere from the griddle and making a huge mess on the floor. The grease tray seems full but even after we empty it, grease still spills out the sides. It's creating a safety hazard and my cleaning crew is spending forever mopping up the mess.",
+		"solution": "Replaced cracked grease trough and installed new grease management channel system to properly direct waste away from cooking surface.",
+		"parts": [
+			"SKU-GT-367489 - Stainless Steel Grease Trough 36-inch with drain fitting",
+			"SKU-GC-184752 - Grease Channel Kit with mounting brackets",
+			"SKU-GD-295013 - Grease Drawer Assembly with removable liner"
+		]
+	},
+	{
+		"problem": "The griddle surface is all warped and uneven now - oil pools in certain spots and food slides to one side when we're trying to cook. My pancakes come out lopsided and eggs run all over the place. It's making breakfast service a nightmare.",
+		"solution": "Replaced warped griddle plate and adjusted mounting hardware to ensure level cooking surface throughout.",
+		"parts": [
+			"SKU-GP-521847 - Chrome Griddle Plate 36x24 inch 1/2-inch thick",
+			"SKU-ML-063291 - Griddle Mounting Hardware Kit with leveling bolts"
+		]
+	},
+	{
+		"problem": "The pilot light won't stay on anymore - it lights up when I hold the button but goes out as soon as I let go. We can't use the griddle at all right now because there's no way to keep the flame going. This is costing us money every minute it's down.",
+		"solution": "Replaced faulty pilot assembly and cleaned pilot orifice to restore reliable pilot flame operation.",
+		"parts": [
+			"SKU-PA-418963 - Pilot Light Assembly with thermocouple and orifice"
+		]
+	},
+	{
+		"problem": "There's a strong gas smell coming from behind the griddle and it's getting worse. My staff is worried about safety and honestly so am I - we can smell it even when the griddle is off. I had to move my prep station because the smell is so strong back there.",
+		"solution": "Replaced leaking gas manifold and tightened all gas line connections to eliminate dangerous gas leak.",
+		"parts": [
+			"SKU-GM-735124 - Gas Manifold Assembly 4-burner with safety shutoff",
+			"SKU-GF-281457 - Gas Line Fitting Kit with thread sealant"
+		]
+	},
+	{
+		"problem": "The electronic ignition system isn't working - I press the ignition button and sometimes it sparks, sometimes it doesn't. My cooks have been using matches to light it which I know isn't safe. We need this fixed before someone gets hurt.",
+		"solution": "Replaced faulty ignition module and spark electrode to restore reliable electronic ignition system.",
+		"parts": [
+			"SKU-IG-594162 - Electronic Ignition Module 120V with spark generator",
+			"SKU-SE-167439 - Spark Electrode Assembly with ceramic insulator"
+		]
+	},
+	{
+		"problem": "The backsplash behind the griddle is loose and grease is getting behind it, creating a gross buildup that we can't clean. It's starting to smell bad and I'm worried about health department violations. The whole thing seems to be pulling away from the wall.",
+		"solution": "Reinstalled backsplash with new mounting hardware and sealed gaps to prevent grease infiltration behind cooking equipment.",
+		"parts": [
+			"SKU-BS-823671 - Stainless Steel Backsplash 36-inch with mounting brackets",
+			"SKU-SS-429138 - Food-Grade Silicone Sealant Kit for kitchen applications"
+		]
+	},
+	{
+		"problem": "The griddle plate has these weird black spots and scratches all over it that won't come off no matter how hard we scrub. Food sticks to those spots constantly and we're getting burnt bits mixed into everything we cook. My breakfast cook says it's impossible to make decent hash browns anymore because they just stick and tear apart.",
+		"solution": "Replaced the damaged chrome griddle plate with a new unit and reseasoned the surface according to manufacturer specifications.",
+		"parts": [
+			"SKU-GP-087453 - Chrome Griddle Plate 36-inch x 24-inch with beveled edges"
+		]
+	},
+	{
+		"problem": "The griddle just randomly shuts off in the middle of service - no warning, just dead. Sometimes it happens twice in an hour, sometimes we're fine for a whole day. When it shuts off, we lose whatever we're cooking and have to start over. My staff never knows if they can count on it working.",
+		"solution": "Replaced the faulty safety thermocouple that was intermittently triggering the automatic shutoff valve due to poor connection.",
+		"parts": [
+			"SKU-TC-124687 - Safety Thermocouple 24-inch with quick-disconnect fitting",
+			"SKU-CV-089123 - Gas Control Valve with automatic shutoff mechanism"
+		]
+	},
+	{
+		"problem": "The whole griddle is tilted - oil and grease run to one corner and pool there instead of draining properly. Everything we cook slides to that side and we can't get even cooking anymore. It looks like one of the legs is shorter or something shifted underneath.",
+		"solution": "Adjusted and replaced the adjustable leveling feet and realigned the griddle frame to achieve proper surface level.",
+		"parts": [
+			"SKU-LF-156742 - Adjustable Leveling Foot Set heavy-duty stainless steel",
+			"SKU-MH-203891 - Mounting Hardware Kit with brackets and bolts",
+			"SKU-SH-087234 - Support Shim Set various thicknesses"
+		]
+	},
+	{
+		"problem": "The gas burners under the griddle make this loud popping noise and the flames look all yellow and uneven instead of blue. The griddle takes forever to heat up now and doesn't get nearly as hot as it used to. My cooks are complaining about how long it takes to cook anything.",
+		"solution": "Cleaned and replaced the clogged burner orifices and adjusted the air-to-gas mixture to restore proper blue flame combustion.",
+		"parts": [
+			"SKU-BO-194567 - Burner Orifice Set natural gas 0.025-inch diameter",
+			"SKU-BM-087651 - Burner Manifold Assembly with pressure regulator"
+		]
+	},
+	{
+		"problem": "The control knobs are completely loose - they spin around without doing anything and I can't tell what temperature setting we're on. Sometimes turning them actually makes the heat go down when it should go up. We're basically guessing at temperatures all day long.",
+		"solution": "Replaced the worn control valve stems and recalibrated the thermostat linkages to restore proper temperature control operation.",
+		"parts": [
+			"SKU-VS-234178 - Control Valve Stem Kit with spring assembly",
+			"SKU-CK-156892 - Control Knob Set with temperature markings"
+		]
+	},
+	{
+		"problem": "There's this horrible burnt smell coming from inside the griddle cabinet and we can see smoke coming out the vents. It smells like electrical burning and I'm scared something's going to catch fire. We had to shut it down because the smell was getting into the food.",
+		"solution": "Replaced the overheated electrical heating element that had developed internal shorts and cleaned out accumulated grease deposits from the cabinet.",
+		"parts": [
+			"SKU-HE-298734 - Electric Heating Element 240V 5000W with ceramic insulation"
+		]
+	},
+	{
+		"problem": "The grease channels along the edges are all cracked and split, so grease drips down onto the floor instead of going to the trap. We're constantly slipping on grease spots and it's making the whole kitchen dangerous. The health inspector is going to have a field day if they see this mess.",
+		"solution": "Replaced the damaged grease collection channels and installed new gaskets to ensure proper drainage to the grease management system.",
+		"parts": [
+			"SKU-GC-087234 - Grease Channel Assembly stainless steel with drain spouts",
+			"SKU-GT-156789 - Grease Trap Replacement with removable basket",
+			"SKU-GS-234567 - Gasket Set for grease management system"
+		]
+	},
+	{
+		"problem": "The temperature gauge is stuck on 200 degrees even when the griddle is obviously way hotter than that. My cooks keep burning food because they think it's cooler than it really is. We've been having to guess temperatures all week and wasting a lot of product.",
+		"solution": "Replaced the faulty temperature sensor and recalibrated the digital temperature display to provide accurate readings.",
+		"parts": [
+			"SKU-TS-145623 - Temperature Sensor RTD probe with 6-foot cable",
+			"SKU-TD-298741 - Digital Temperature Display with LED readout"
+		]
+	},
+	{
+		"problem": "The griddle surface is getting these weird pits and rough spots that catch food and won't let go. Everything sticks now - bacon tears apart when we try to flip it and pancakes leave chunks behind. My morning crew is getting so frustrated because they can't get a clean flip on anything anymore.",
+		"solution": "Resurfaced the chrome griddle plate using professional grinding equipment and applied new seasoning coating to restore smooth cooking surface.",
+		"parts": [
+			"SKU-GP-002847 - Chrome Griddle Plate 36-inch x 24-inch with beveled edges",
+			"SKU-CS-001293 - Food-grade Seasoning Compound 32oz container"
+		]
+	},
+	{
+		"problem": "The griddle makes this awful screeching noise whenever we adjust the temperature - sounds like metal grinding on metal. It's so loud that customers can hear it from the dining room and my staff jumps every time. The noise started about two weeks ago and keeps getting worse.",
+		"solution": "Replaced worn control valve stems and lubricated all moving parts in the gas control assembly.",
+		"parts": [
+			"SKU-CV-004621 - Gas Control Valve Stem Assembly with O-rings",
+			"SKU-LB-000892 - High-temperature Valve Lubricant 4oz tube",
+			"SKU-OR-001547 - Control Valve O-ring Kit 15-piece set"
+		]
+	},
+	{
+		"problem": "Our griddle won't shut off completely anymore - even when I turn all the knobs to off, one section stays warm and keeps cooking. We found burnt food stuck to that spot this morning because someone forgot it was still on. This is a fire hazard and I'm worried about leaving it unattended.",
+		"solution": "Replaced faulty gas safety valve that was not properly sealing when closed, allowing gas flow to continue.",
+		"parts": [
+			"SKU-SV-003158 - Gas Safety Shutoff Valve 3/4-inch NPT with manual reset"
+		]
+	},
+	{
+		"problem": "The griddle takes forever to heat up now - used to be ready in 10 minutes, now it's taking almost 45 minutes to get hot enough to cook on. My breakfast rush starts at 6 AM and I have to start preheating at 5 just to be ready. This is killing our morning prep time and making everything rushed.",
+		"solution": "Cleaned clogged burner orifices and adjusted gas pressure regulator to restore proper heat output and faster heating times.",
+		"parts": [
+			"SKU-BO-007412 - Burner Orifice Set #54 drill size for natural gas",
+			"SKU-PR-002903 - Gas Pressure Regulator 11-inch WC with gauge"
+		]
+	},
+	{
+		"problem": "The griddle keeps clicking constantly - this rapid clicking sound that never stops as long as it's on. It's driving everyone crazy and we're worried something electrical is going wrong. The sound gets faster when we turn up the heat and my servers are complaining about the noise.",
+		"solution": "Replaced malfunctioning electronic ignition control module that was continuously attempting to spark.",
+		"parts": [
+			"SKU-IC-005739 - Electronic Ignition Control Module 120V with flame sensing"
+		]
+	},
+	{
+		"problem": "Grease isn't draining at all anymore - it just sits on the griddle surface in puddles no matter how much we tilt the squeegee. We're having to manually scrape grease off constantly during cooking and it's making everything greasy and gross. Food is basically swimming in old grease by the end of the day.",
+		"solution": "Unclogged blocked grease drain line and replaced damaged grease collection funnel with proper slope angle.",
+		"parts": [
+			"SKU-GF-003824 - Stainless Steel Grease Collection Funnel 8-inch diameter",
+			"SKU-DL-001671 - Grease Drain Line Kit with flexible connector 24-inch"
+		]
+	},
+	{
+		"problem": "One corner of the griddle gets so hot it's practically glowing while the rest barely warms up. We can cook eggs in that one spot but everything else is useless. My cooks are crowding all the food into that tiny hot area and it's creating chaos during busy periods.",
+		"solution": "Replaced damaged burner manifold that had a cracked distribution chamber causing uneven gas flow to individual burners.",
+		"parts": [
+			"SKU-BM-006285 - Burner Manifold Assembly 48-inch with 6 outlets",
+			"SKU-GS-001904 - Manifold Gasket Set high-temperature silicone"
+		]
+	},
+	{
+		"problem": "The griddle plate is lifting up on one side and there's a gap forming between sections. Food and grease are falling through the gap into the cabinet below and we can hear it sizzling on the burners. I'm afraid something's going to catch fire down there and the smell is getting terrible.",
+		"solution": "Realigned and secured griddle plate mounting brackets and replaced warped support frame underneath.",
+		"parts": [
+			"SKU-MB-004517 - Griddle Plate Mounting Bracket Set heavy-duty steel",
+			"SKU-SF-002896 - Support Frame Assembly with adjustable leveling feet",
+			"SKU-FB-001203 - Mounting Hardware Kit stainless steel bolts and washers"
+		]
+	},
+	{
+		"problem": "The chrome surface on our griddle is all bubbled up and peeling off in big chunks. Every time we scrape or clean it, more pieces flake off and get mixed into the food. My cooks are picking chrome bits out of the eggs and hash browns - this is disgusting and we can't serve food like this.",
+		"solution": "Replaced the deteriorated chrome-plated griddle surface with a new heavy-duty chrome top plate and properly seasoned it before returning to service.",
+		"parts": [
+			"SKU-GP-428571 - Chrome-plated griddle plate 36-inch x 24-inch with beveled edges"
+		]
+	},
+	{
+		"problem": "Water keeps pooling on top of our griddle every morning and we can't figure out where it's coming from. The whole cooking surface gets rusty spots overnight and we have to spend twenty minutes scrubbing it down before we can start breakfast. It's like moisture is getting trapped somewhere inside and condensing on the plate.",
+		"solution": "Sealed gaps in the griddle housing and replaced damaged insulation that was allowing moisture infiltration, then cleaned and re-seasoned the cooking surface.",
+		"parts": [
+			"SKU-IS-334729 - High-temperature ceramic fiber insulation 2-inch thickness",
+			"SKU-SL-198456 - Food-grade silicone sealant tube 10.3-oz"
+		]
+	},
+	{
+		"problem": "The griddle takes forever to heat up now - we turn it on full blast and it takes almost an hour to get hot enough to cook on. My breakfast crew has to come in earlier just to wait for this thing to warm up. It used to be ready in fifteen minutes, now we're wasting time and gas every morning.",
+		"solution": "Cleaned clogged burner orifices and replaced worn gas regulator valve that was restricting proper gas flow to the heating elements.",
+		"parts": [
+			"SKU-OR-267891 - Natural gas burner orifice set 0.052-inch diameter",
+			"SKU-RG-445203 - Gas pressure regulator valve 1/2-inch NPT with 11-inch WC setting"
+		]
+	},
+	{
+		"problem": "Every time we turn the griddle on, it makes these loud clicking sounds like something's sparking inside. The clicking goes on for several minutes and sometimes we see little flashes of light through the vents. My staff is afraid to stand too close when we're starting it up because it sounds dangerous.",
+		"solution": "Replaced faulty electronic ignition control module and damaged spark electrode that were causing erratic sparking and electrical arcing.",
+		"parts": [
+			"SKU-IG-672134 - Electronic ignition control module 120V with safety lockout",
+			"SKU-SP-889245 - Ceramic spark electrode with stainless steel bracket"
+		]
+	},
+	{
+		"problem": "The griddle keeps cycling on and off every few minutes instead of maintaining steady heat. One minute it's cooking great, then it goes cold, then fires back up again. My pancakes are half-cooked on one side because the heat keeps dropping out in the middle of cooking.",
+		"solution": "Replaced defective thermostat control that was short-cycling and recalibrated the temperature sensing bulb position for proper heat regulation.",
+		"parts": [
+			"SKU-TH-556789 - Heavy-duty griddle thermostat 200-450\u00b0F range with 36-inch capillary tube"
+		]
+	},
+	{
+		"problem": "There's this greasy buildup under the griddle that we can't reach to clean, and now it's starting to smoke and smell awful during busy periods. The smell gets into the food and customers are complaining. We've tried reaching under there but can't get to whatever's burning.",
+		"solution": "Removed griddle from mounting brackets, thoroughly cleaned accumulated grease from underneath, and replaced damaged drip pan with proper drainage.",
+		"parts": [
+			"SKU-DP-123674 - Stainless steel drip pan 34-inch x 22-inch with rear drain spout",
+			"SKU-MF-445098 - Adjustable mounting foot set of 4 with leveling capability"
+		]
+	},
+	{
+		"problem": "The safety valve keeps shutting off the gas supply randomly during service - the griddle will be working fine then suddenly go cold with no warning. We have to reset something underneath to get it working again. It's happened three times today alone and we're losing food every time.",
+		"solution": "Replaced malfunctioning safety gas valve and cleaned the sensing line that was giving false readings, causing unnecessary shutdowns.",
+		"parts": [
+			"SKU-SV-778234 - Automatic safety gas valve 3/4-inch with thermal sensing"
+		]
+	},
+	{
+		"problem": "The corners of our griddle plate are starting to curl up and food slides off the edges onto the floor. When we crack eggs near the sides, they run right off before we can catch them. It's like the whole surface is warping from the heat and nothing stays put anymore.",
+		"solution": "Replaced warped griddle plate and upgraded the support structure underneath to prevent future warping from thermal expansion.",
+		"parts": [
+			"SKU-GP-991456 - Heavy-gauge steel griddle plate 1/2-inch thick with reinforced edges",
+			"SKU-SS-234567 - Structural support framework with thermal expansion joints"
+		]
+	},
+	{
+		"problem": "Our griddle has these deep scratches and gouges that trap grease and food particles no matter how much we scrub. Everything tastes like old grease because we can't get those grooves clean. The health inspector is coming next week and I'm worried about what they'll say when they see this mess.",
+		"solution": "Professionally resurfaced the griddle plate to remove deep scratches and applied protective coating to prevent future damage.",
+		"parts": [
+			"SKU-SC-667891 - Food-grade surface coating kit with primer and topcoat"
+		]
+	},
+	{
+		"problem": "The gas line connection behind the griddle is making a hissing sound and I can smell gas near the wall. It's not a strong smell but it's definitely there, and the sound gets louder when we turn up the heat. I'm worried about having an open flame so close to a gas leak.",
+		"solution": "Replaced deteriorated gas line flexible connector and tightened all fittings, then performed leak test to ensure complete seal integrity.",
+		"parts": [
+			"SKU-GL-445612 - Flexible gas connector 3/4-inch x 48-inch with safety coating",
+			"SKU-FT-223478 - Brass flare fitting set with thread sealant compound"
+		]
+	},
+	{
+		"problem": "The griddle chrome surface has turned all discolored and blotchy - it looks terrible and customers can see it from the counter. The discoloration seems to be getting worse each week and now food tastes metallic when it touches certain spots. My staff is embarrassed to cook on it because it looks so unprofessional.",
+		"solution": "Replaced the damaged chrome-plated griddle surface with a new factory-spec chrome plate and applied proper seasoning treatment to restore non-stick properties and appearance.",
+		"parts": [
+			"SKU-CP-247831 - Chrome-plated griddle surface 36-inch x 24-inch commercial grade"
+		]
+	},
+	{
+		"problem": "The safety shutoff system keeps triggering randomly and cutting gas to the whole griddle. We'll be in the middle of breakfast rush and suddenly everything goes cold with no warning. It happens maybe three or four times a day and we lose so much food when it shuts down mid-cook.",
+		"solution": "Replaced the faulty thermocouple safety sensor that was sending intermittent signals and recalibrated the gas valve safety system.",
+		"parts": [
+			"SKU-TC-189456 - High-temperature thermocouple sensor with 24-inch lead wire",
+			"SKU-GV-334721 - Gas safety valve assembly with automatic shutoff mechanism"
+		]
+	},
+	{
+		"problem": "The electric heating elements under our griddle seem to be dying one by one. First the back left went out, now the front right is barely warm, and I think another one is going too. Half the cooking surface is useless and we can only use the center section for anything that needs real heat.",
+		"solution": "Replaced all failed electric heating elements and tested the electrical connections for proper voltage and amperage delivery.",
+		"parts": [
+			"SKU-HE-892347 - Electric griddle heating element 2000W 240V tubular design",
+			"SKU-HE-892348 - Electric griddle heating element 1500W 240V compact design",
+			"SKU-WR-156892 - High-temperature wiring harness with ceramic connectors"
+		]
+	},
+	{
+		"problem": "There's this grinding noise coming from under the griddle whenever the gas valves open or close, and sometimes they get stuck halfway. My cooks have to bang on the control panel to get them unstuck, which can't be good for the equipment. The whole thing feels like it's going to break completely any day now.",
+		"solution": "Rebuilt the gas manifold assembly and replaced worn gas orifices that were causing pressure irregularities and mechanical binding.",
+		"parts": [
+			"SKU-GM-445672 - Gas manifold assembly with pressure regulator and mounting hardware",
+			"SKU-GO-778234 - Gas burner orifice set #54 drill size natural gas rated"
+		]
+	},
+	{
+		"problem": "The griddle won't heat up fast enough anymore - it used to be ready in ten minutes but now takes almost an hour to get hot enough to cook on. My morning shift has to come in extra early just to get it warmed up before we open. Even when it finally gets hot, it feels like it's struggling to maintain temperature.",
+		"solution": "Cleaned and adjusted all gas burner assemblies, replaced clogged burner ports, and recalibrated the gas pressure regulator for optimal fuel delivery.",
+		"parts": [
+			"SKU-BA-334521 - Gas burner assembly with adjustable air shutter and mounting bracket",
+			"SKU-PR-667843 - Gas pressure regulator valve 1/2-inch NPT natural gas rated"
+		]
+	},
+	{
+		"problem": "Water keeps pooling on top of the griddle every morning and we can't figure out where it's coming from. It's not from cleaning - this happens even when we don't wash it the night before. The water sits in certain spots and makes the griddle smoke terribly when we first turn it on each day.",
+		"solution": "Replaced damaged griddle mounting brackets and releveled the unit to eliminate low spots where condensation was collecting overnight.",
+		"parts": [
+			"SKU-MB-223847 - Adjustable griddle mounting bracket set with leveling feet and hardware"
+		]
+	},
+	{
+		"problem": "The flame pattern under our gas griddle looks all wrong - instead of nice even blue flames, we get these tall yellow flickering flames that don't heat evenly. You can actually see the uneven heat pattern on the cooking surface where some spots are way hotter than others. Food cooks completely unevenly now.",
+		"solution": "Replaced the gas valve regulator and cleaned all burner venturi tubes to restore proper air-to-gas mixture and flame characteristics.",
+		"parts": [
+			"SKU-GR-445789 - Gas valve regulator with pressure gauge and 3/4-inch connections",
+			"SKU-VT-887234 - Venturi tube assembly with air intake adjustment and cleaning ports"
+		]
+	},
+	{
+		"problem": "The griddle control panel is completely dead - none of the indicator lights work and I can't tell if anything is on or what temperature it's set to. We're flying blind and have to touch-test the surface to guess if it's hot enough. This morning someone got burned because they couldn't tell a section was still heating up.",
+		"solution": "Replaced the main control board and all indicator LED lights, then recalibrated the temperature display system.",
+		"parts": [
+			"SKU-CB-556892 - Digital control board with temperature display and safety monitoring",
+			"SKU-LD-334456 - LED indicator light assembly with multi-color status display",
+			"SKU-TS-778901 - Temperature sensor probe with digital readout capability"
+		]
+	},
+	{
+		"problem": "The griddle has these dead spots where nothing cooks at all - I can crack an egg on those areas and it just sits there cold while the rest of the surface is working fine. My cooks have to avoid certain sections entirely which cuts down our cooking space by almost half. We're falling behind on orders because we can't use the whole surface anymore.",
+		"solution": "Replaced faulty heating elements in the affected zones and reconnected loose electrical connections to restore even heat distribution across the entire cooking surface.",
+		"parts": [
+			"SKU-HE-243891 - Electric heating element 240V 3500W with terminal connections",
+			"SKU-WR-156742 - High-temperature wire harness assembly for griddle zones"
+		]
+	},
+	{
+		"problem": "The griddle keeps clicking and trying to ignite even when it's already lit and running. It's this constant clicking noise that drives everyone crazy and customers keep asking what that sound is. Sometimes the clicking gets so loud we can't hear each other talk in the kitchen.",
+		"solution": "Replaced malfunctioning ignition control module that was continuously sending spark signals and calibrated the flame sensing circuit.",
+		"parts": [
+			"SKU-IG-789234 - Electronic ignition control module with flame sensing"
+		]
+	},
+	{
+		"problem": "There's this gross greasy residue building up all around the edges where the griddle meets the counter, and it won't come off with normal cleaning. It's turning black and crusty and starting to smell rancid. The health department is coming next week and I'm panicking about this mess.",
+		"solution": "Replaced deteriorated edge seals and gaskets that were allowing grease penetration, then performed deep degreasing of affected areas.",
+		"parts": [
+			"SKU-SL-445627 - Griddle edge seal kit with corner gaskets",
+			"SKU-CL-298455 - Food-safe degreasing compound for commercial equipment",
+			"SKU-GS-334782 - High-temperature silicone gasket material"
+		]
+	},
+	{
+		"problem": "The safety shut-off keeps kicking in randomly and killing the gas to the whole griddle - sometimes right in the middle of the breakfast rush. My staff has to wait for it to reset and relight everything, which takes forever. We've lost so many orders because of these random shutdowns.",
+		"solution": "Replaced faulty thermocouple safety sensor that was giving false readings and adjusted the gas valve safety system calibration.",
+		"parts": [
+			"SKU-TC-667891 - Universal thermocouple sensor 24-inch with safety connector"
+		]
+	},
+	{
+		"problem": "The griddle chrome surface has these weird stains and discoloration patches that make the food look dirty even when it's perfectly clean. Customers keep sending back perfectly good food because they think it looks contaminated. My servers are getting tired of explaining that the food is fine.",
+		"solution": "Performed professional chrome surface restoration using specialized compounds and applied protective coating to prevent future staining.",
+		"parts": [
+			"SKU-CR-123456 - Chrome surface restoration compound kit",
+			"SKU-PT-789012 - Food-safe chrome protective coating"
+		]
+	},
+	{
+		"problem": "One of the gas control knobs fell completely off and now we can't control that burner section at all. The knob just spins freely when we try to put it back on and there's no way to adjust the flame. We're basically down to three-quarters of our cooking space until this gets fixed.",
+		"solution": "Replaced damaged control valve stem and installed new control knob assembly with proper shaft engagement mechanism.",
+		"parts": [
+			"SKU-VL-445783 - Gas control valve assembly with calibrated orifice",
+			"SKU-KN-267834 - Control knob with temperature markings and shaft coupler"
+		]
+	},
+	{
+		"problem": "The whole griddle shakes and vibrates when we're cooking on it, especially when flipping heavy items like burgers. It makes this rattling noise and everything on the surface bounces around. My cooks are afraid something's going to fall apart and they can't work confidently anymore.",
+		"solution": "Tightened and reinforced loose mounting brackets and replaced worn vibration dampeners in the support structure.",
+		"parts": [
+			"SKU-MB-556789 - Heavy-duty mounting bracket set with reinforcement plates",
+			"SKU-VD-223445 - Vibration dampener pads for commercial equipment"
+		]
+	},
+	{
+		"problem": "The griddle takes forever to cool down after service - even hours later it's still too hot to clean properly. My night cleaning crew keeps getting burned trying to scrub it and we're having to wait until morning to do a proper cleaning. This is messing up our whole cleaning schedule.",
+		"solution": "Replaced malfunctioning temperature control solenoid that was keeping gas flowing at low levels and cleaned blocked cooling vents.",
+		"parts": [
+			"SKU-SV-778923 - Temperature control solenoid valve with quick-shutoff"
+		]
+	},
+	{
+		"problem": "There are these rusty spots appearing all over the griddle plate that keep getting worse no matter how much we clean and oil the surface. Food tastes metallic when it touches those spots and I'm worried about health issues. The rust seems to be coming from underneath somehow.",
+		"solution": "Replaced corroded griddle plate with stainless steel upgrade and treated underlying support structure for rust prevention.",
+		"parts": [
+			"SKU-GP-334567 - Stainless steel griddle plate 36-inch with non-stick coating",
+			"SKU-RS-445623 - Anti-corrosion treatment kit for griddle framework"
+		]
+	},
+	{
+		"problem": "The grease trap underneath is making this awful gurgling sound and occasionally burps up greasy water that splashes everywhere. The smell is horrible and it's happening more often during busy periods. My dishwashers refuse to work near it anymore because of the stench.",
+		"solution": "Replaced clogged grease trap assembly and cleaned blocked drain lines, then installed improved venting system to prevent backup pressure.",
+		"parts": [
+			"SKU-GT-667834 - Commercial grease trap assembly with overflow protection",
+			"SKU-DR-445789 - Grease drain line cleaning kit",
+			"SKU-VT-223567 - Grease management vent system"
+		]
+	}
 ]

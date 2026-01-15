@@ -1,14 +1,15 @@
 "use client";
 
 import { trpc } from "@foodtools/core-web/src/trpc/client";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
-const DEFAULT_LOGO = "https://media.licdn.com/dms/image/v2/C560BAQHIvtmXaxi_Yw/company-logo_100_100/company-logo_100_100/0/1678043468851/foodtools_logo?e=1769644800&v=beta&t=zFusmoLvi3TtTq8y0FCvmB9PhdGAO4ohuT5ON6OdlSI";
+const DEFAULT_LOGO =
+	"https://media.licdn.com/dms/image/v2/C560BAQHIvtmXaxi_Yw/company-logo_100_100/company-logo_100_100/0/1678043468851/foodtools_logo?e=1769644800&v=beta&t=zFusmoLvi3TtTq8y0FCvmB9PhdGAO4ohuT5ON6OdlSI";
 
 export function OrganizationSwitcher() {
-	const router = useRouter();
+	const _router = useRouter();
 	const [isOpen, setIsOpen] = useState(false);
 	const dropdownRef = useRef<HTMLDivElement>(null);
 	const utils = trpc.useUtils();
@@ -27,7 +28,10 @@ export function OrganizationSwitcher() {
 	// Close dropdown when clicking outside
 	useEffect(() => {
 		function handleClickOutside(event: MouseEvent) {
-			if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+			if (
+				dropdownRef.current &&
+				!dropdownRef.current.contains(event.target as Node)
+			) {
 				setIsOpen(false);
 			}
 		}
@@ -63,7 +67,9 @@ export function OrganizationSwitcher() {
 					<div>
 						<p className="text-sm font-medium">{currentOrgName}</p>
 						{hasMultipleOrgs && (
-							<p className="text-xs text-slate-400">{organizations.length} organizations</p>
+							<p className="text-xs text-slate-400">
+								{organizations.length} organizations
+							</p>
 						)}
 					</div>
 				</div>
@@ -73,7 +79,12 @@ export function OrganizationSwitcher() {
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 				>
-					<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+					<path
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						strokeWidth={2}
+						d="M19 9l-7 7-7-7"
+					/>
 				</svg>
 			</button>
 
@@ -85,7 +96,12 @@ export function OrganizationSwitcher() {
 						className="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700"
 						onClick={() => setIsOpen(false)}
 					>
-						<svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<svg
+							className="h-4 w-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"
@@ -103,7 +119,9 @@ export function OrganizationSwitcher() {
 					</Link>
 
 					{/* Divider */}
-					{hasMultipleOrgs && <div className="my-2 border-t border-slate-700" />}
+					{hasMultipleOrgs && (
+						<div className="my-2 border-t border-slate-700" />
+					)}
 
 					{/* Organization List */}
 					{hasMultipleOrgs && (
@@ -155,7 +173,12 @@ export function OrganizationSwitcher() {
 						className="flex items-center gap-2 px-4 py-2 text-sm text-slate-300 hover:bg-slate-700"
 						onClick={() => setIsOpen(false)}
 					>
-						<svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<svg
+							className="h-4 w-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"

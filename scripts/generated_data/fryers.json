@@ -1,462 +1,462 @@
 [
-  {
-    "problem": "Our main fryer just won't heat up anymore - I turn it on and wait forever but the oil stays cold. We had to shut down the whole fried chicken station during lunch rush yesterday. My kitchen staff is getting frustrated because we can't make any of our signature items and customers are complaining about wait times.",
-    "solution": "Replaced the faulty gas control valve and ignition module that were preventing proper gas flow to the burner assembly.",
-    "parts": [
-      "SKU-GV-245891 - Gas Control Valve 3/4-inch NPT with pilot safety",
-      "SKU-IG-078234 - Electronic Ignition Module 120V with flame sensor"
-    ]
-  },
-  {
-    "problem": "The fryer keeps shutting itself off randomly throughout the day, sometimes right in the middle of cooking a batch of fries. The oil will be hot one minute, then boom - everything just stops working. It's driving my cooks crazy because they never know when it's going to happen.",
-    "solution": "Replaced the malfunctioning high-limit safety switch that was triggering false shutdowns due to internal sensor drift.",
-    "parts": [
-      "SKU-HL-156742 - High-Limit Safety Switch 400\u00b0F manual reset with mounting bracket"
-    ]
-  },
-  {
-    "problem": "I can't get the oil temperature right anymore - I set it for 350 degrees but sometimes it barely gets warm, other times it gets so hot it starts smoking and ruins the food. Yesterday we had to throw out three batches of chicken because the oil was way too hot. This thing is costing me money every day.",
-    "solution": "Replaced the defective thermostat and recalibrated the temperature control system to maintain accurate oil temperature within specified range.",
-    "parts": [
-      "SKU-TS-389156 - Digital Thermostat Controller 200-400\u00b0F range",
-      "SKU-TP-067823 - Temperature Probe RTD sensor 12-inch stainless steel"
-    ]
-  },
-  {
-    "problem": "The oil filtration system stopped working completely - the pump won't turn on no matter what we do. Now we have to manually change the oil way more often because we can't filter out the particles. It's taking forever and costing us a fortune in oil costs.",
-    "solution": "Replaced the burned-out filtration pump motor and installed new pump relay in the control panel.",
-    "parts": [
-      "SKU-PM-234567 - Oil Filtration Pump Motor 1/3 HP 115V single phase",
-      "SKU-RL-445789 - Pump Control Relay 30A 120V coil with mounting socket"
-    ]
-  },
-  {
-    "problem": "The basket won't go up and down anymore - it's stuck halfway and we can't lift it out of the oil. My guys are having to use tongs to fish everything out which is dangerous and slow. We're worried someone's going to get burned trying to work around this thing.",
-    "solution": "Repaired the pneumatic basket lift cylinder and replaced the damaged air valve that controls basket movement.",
-    "parts": [
-      "SKU-CY-678912 - Pneumatic Lift Cylinder 4-inch bore double acting",
-      "SKU-AV-123456 - Air Control Valve 1/4-inch NPT 3-way solenoid operated"
-    ]
-  },
-  {
-    "problem": "There's oil leaking all over the floor from underneath the fryer. We're constantly mopping it up but it just keeps coming back. It's making the kitchen floor slippery and dangerous, plus we're losing expensive oil. Health inspector is coming next week and I'm freaking out.",
-    "solution": "Replaced the corroded drain valve and associated gaskets that were causing the oil leak at the tank bottom.",
-    "parts": [
-      "SKU-DV-789123 - Drain Valve Assembly 2-inch ball valve with lever handle",
-      "SKU-GS-456789 - Drain Valve Gasket Kit high-temperature silicone",
-      "SKU-PT-234891 - Drain Pipe Elbow 2-inch stainless steel 90-degree"
-    ]
-  },
-  {
-    "problem": "The control panel is going haywire - half the buttons don't work and the timer keeps resetting itself randomly. We can't set cooking times properly so everything is either overcooked or undercooked. The digital display is flickering and sometimes just goes blank completely.",
-    "solution": "Replaced the faulty control board and updated the display module with new programming.",
-    "parts": [
-      "SKU-CB-567234 - Main Control Board PCB assembly with temperature controls",
-      "SKU-DS-890456 - Digital Display Module LED 4-digit with timer functions"
-    ]
-  },
-  {
-    "problem": "The heating element isn't working right - the oil takes forever to heat up in the morning and never gets hot enough during busy periods. We used to be able to recover temperature quickly between batches but now everything takes twice as long. Customers are complaining about slow service.",
-    "solution": "Replaced the damaged electric heating element that had developed internal breaks reducing its heating capacity.",
-    "parts": [
-      "SKU-HE-345678 - Electric Heating Element 208V 15kW immersion type tubular"
-    ]
-  },
-  {
-    "problem": "The gas fryer keeps making this weird clicking sound but won't light up at all. I can smell a little gas when I try to turn it on, which is making everyone nervous. We've been without our main fryer for two days now and had to move everything to the backup unit, but that's way too small for our volume.",
-    "solution": "Replaced faulty gas valve solenoid that was failing to open properly and cleaned gas orifices that were partially blocked.",
-    "parts": [
-      "SKU-GV-002847 - Gas valve solenoid 24V AC with 1/2-inch NPT connection",
-      "SKU-GO-001293 - Gas orifice set for natural gas BTU rating 90,000"
-    ]
-  },
-  {
-    "problem": "The temperature probe must be broken because the fryer thinks the oil is at 400 degrees when I can tell it's barely warm enough to cook anything. My fries are coming out soggy and pale, and chicken takes forever. The digital readout shows the right temperature but something's definitely not right with the actual heat.",
-    "solution": "Installed new temperature probe sensor and recalibrated the digital temperature controller for accurate readings.",
-    "parts": [
-      "SKU-TP-003621 - Temperature probe RTD sensor 12-inch with stainless steel sheath"
-    ]
-  },
-  {
-    "problem": "Every time we try to drain the oil for cleaning, it just trickles out super slowly instead of flowing normally. What used to take 10 minutes now takes over an hour, and we can never get all the old oil out. It's backing up our whole cleaning schedule and the oil that stays in there goes bad faster.",
-    "solution": "Replaced clogged drain valve assembly and cleared blockage in the drain line plumbing system.",
-    "parts": [
-      "SKU-DV-004782 - Drain valve assembly 2-inch ball valve with lever handle",
-      "SKU-PF-001956 - Drain line fitting 2-inch NPT elbow connector",
-      "SKU-GS-002341 - Drain valve gasket set high-temperature silicone"
-    ]
-  },
-  {
-    "problem": "The safety switch keeps kicking in and shutting everything down even when the oil temperature looks normal. It happened three times during dinner service last night and we lost so many orders. The fryer will run for maybe 20 minutes then just cuts out completely until we reset it.",
-    "solution": "Replaced malfunctioning high-limit safety switch that was triggering at incorrect temperature threshold.",
-    "parts": [
-      "SKU-HL-005194 - High-limit safety switch 450\u00b0F automatic reset with mounting bracket"
-    ]
-  },
-  {
-    "problem": "The oil filter pump is making this horrible grinding noise and barely moving any oil through the system. When it does work, it's so slow that we can't keep up with filtering during busy periods. The oil gets dirty way faster now and everything tastes off because of all the burnt particles floating around.",
-    "solution": "Rebuilt the oil filtration pump with new impeller and motor bearings, and replaced worn pump housing gaskets.",
-    "parts": [
-      "SKU-FP-003847 - Oil filter pump impeller assembly with stainless steel blades",
-      "SKU-MT-002619 - Pump motor bearing set sealed ball bearings 1/2-inch shaft"
-    ]
-  },
-  {
-    "problem": "The fryer vat has these dark stains and pitting that won't come clean no matter how hard we scrub. The oil looks dirty right after we change it, and I'm worried it's affecting the taste of our food. Some spots look like they might even be starting to rust or corrode.",
-    "solution": "Replaced deteriorated fryer vat with new stainless steel tank and installed fresh heating element mounting hardware.",
-    "parts": [
-      "SKU-FV-006283 - Fryer vat stainless steel 40-pound capacity with drain fitting",
-      "SKU-MH-001742 - Heating element mounting hardware kit with gaskets",
-      "SKU-IF-003456 - Insulation foam kit high-temperature rated for fryer tank"
-    ]
-  },
-  {
-    "problem": "The timer function stopped working completely - we set it for 4 minutes but it never beeps or shuts off automatically. Now my cooks have to watch everything like hawks and use their phones to time batches. We've already overcooked several orders because people forgot to check.",
-    "solution": "Replaced defective control board timer module and updated the display panel programming.",
-    "parts": [
-      "SKU-CB-004921 - Control board timer module with digital display interface"
-    ]
-  },
-  {
-    "problem": "The electric heating elements aren't heating evenly anymore - one side of the fryer gets really hot while the other side stays cooler. Food cooks unevenly and we're constantly having to move baskets around to different spots. It's slowing down our whole operation during rush periods.",
-    "solution": "Replaced one burned-out heating element and rebalanced the electrical connections to ensure even heat distribution.",
-    "parts": [
-      "SKU-HE-005673 - Electric heating element 5000W 240V tubular with terminal connections",
-      "SKU-TC-002847 - Terminal connector set high-temperature rated for heating elements"
-    ]
-  },
-  {
-    "problem": "The fryer won't turn on at all - no lights, no heat, nothing happens when I flip the switch. We checked the breaker and it's fine, but this thing is completely dead. It was working fine yesterday afternoon but came in this morning and it's like someone unplugged the whole unit from the inside.",
-    "solution": "Replaced faulty main power contactor that had burned contacts preventing electrical connection to the fryer's systems.",
-    "parts": [
-      "SKU-CT-098234 - Main Power Contactor 40A 220V with auxiliary contacts"
-    ]
-  },
-  {
-    "problem": "The gas valve is stuck open and we can't shut off the gas flow to the burners. Even when I turn the control knob to off position, I can still hear gas flowing and smell it around the unit. This is really dangerous and we had to shut down the whole fryer station until someone can fix it.",
-    "solution": "Replaced defective gas solenoid valve that was stuck in the open position and calibrated the gas pressure regulator.",
-    "parts": [
-      "SKU-GV-145672 - Gas Solenoid Valve 3/4-inch NPT with 120V coil",
-      "SKU-GR-289453 - Gas Pressure Regulator 1-15 PSI with gauge"
-    ]
-  },
-  {
-    "problem": "The oil keeps overflowing from the vat even though we're not overfilling it. It seems like the oil level keeps rising on its own during cooking, and we've had hot oil spill onto the floor twice this week. My staff is scared to use the fryer because they don't know when it might overflow again.",
-    "solution": "Replaced cracked oil return line and malfunctioning oil level sensor that was causing filtration system backflow into the main vat.",
-    "parts": [
-      "SKU-OL-567891 - Oil Return Line Assembly 1-inch diameter 36-inch length",
-      "SKU-SN-334578 - Oil Level Sensor with float switch and 10-foot cable"
-    ]
-  },
-  {
-    "problem": "The fryer makes this loud banging noise every few minutes like something is hitting the inside of the unit. It's so loud that customers in the dining room are asking about it, and my kitchen crew jumps every time it happens. The noise started about a week ago and keeps getting worse.",
-    "solution": "Replaced worn filtration pump motor mounts and balanced the impeller assembly that was causing vibration and mechanical noise.",
-    "parts": [
-      "SKU-PM-778912 - Filtration Pump Motor Mount Kit with rubber isolators",
-      "SKU-IM-445667 - Pump Impeller Assembly 5-inch diameter stainless steel"
-    ]
-  },
-  {
-    "problem": "The digital display shows error codes that keep changing, and none of us know what they mean. Sometimes it shows E03, other times E07, and occasionally just flashes random numbers. The fryer still works but we can't tell what temperature it's actually running at or set any timers properly.",
-    "solution": "Replaced faulty control board with corrupted firmware and updated all system programming to manufacturer specifications.",
-    "parts": [
-      "SKU-CB-223456 - Main Control Board with LCD display and memory backup"
-    ]
-  },
-  {
-    "problem": "The basket lift mechanism moves up and down but it's really jerky and sometimes gets stuck halfway. When it does move, it makes this grinding sound like metal scraping against metal. Yesterday it got stuck with a full basket of fish and we had to manually crank it up, which was really difficult and dangerous with hot oil splashing around.",
-    "solution": "Rebuilt basket lift assembly with new drive chain, sprockets, and lubricated all pivot points and guide rails.",
-    "parts": [
-      "SKU-BC-667889 - Drive Chain Assembly 48-link stainless steel",
-      "SKU-SP-112233 - Lift Mechanism Sprocket Set with bearings",
-      "SKU-LU-998877 - High-temperature food-grade lubricant 16oz tube"
-    ]
-  },
-  {
-    "problem": "There's this weird smell coming from the fryer that's not the usual cooking smells - it's like something electrical is burning. The smell gets stronger when we turn the heat up high, and I'm worried something dangerous is happening inside the unit. A couple of my cooks have complained about headaches after working near it all day.",
-    "solution": "Replaced overheating transformer and damaged wiring harness that was causing electrical insulation to burn and emit toxic fumes.",
-    "parts": [
-      "SKU-TR-445566 - Step-down Transformer 480V to 24V 100VA",
-      "SKU-WH-778844 - Main Wiring Harness 12-circuit with heat-resistant coating"
-    ]
-  },
-  {
-    "problem": "The fryer takes forever to heat up in the morning - what used to take 15 minutes now takes almost an hour. Even when it finally gets warm, it can't keep up with demand during lunch rush and the temperature drops way down every time we add food. We're falling behind on orders and customers are getting impatient.",
-    "solution": "Replaced deteriorated thermal insulation around the vat and installed new high-efficiency heating elements with improved heat transfer design.",
-    "parts": [
-      "SKU-IN-556677 - Thermal Insulation Kit ceramic fiber 2-inch thickness",
-      "SKU-HE-889900 - High-efficiency Heating Element 15KW 240V with titanium coating"
-    ]
-  },
-  {
-    "problem": "The fryer is taking way too long to heat up in the mornings - it used to be ready in 15 minutes but now it takes over an hour to get to temperature. By the time we're ready to cook, we're already behind schedule and the breakfast rush is starting. My crew is getting stressed because we can't prep properly and customers are waiting forever for their hash browns.",
-    "solution": "Replaced the faulty gas burner assembly and cleaned out blocked gas orifices that were restricting proper flame distribution.",
-    "parts": [
-      "SKU-GB-284751 - Gas Burner Assembly with pilot light and flame spreader",
-      "SKU-OR-156293 - Gas Orifice Set 0.035-inch diameter for natural gas"
-    ]
-  },
-  {
-    "problem": "The thermostat seems completely off - I set it to 325 for donuts but the oil gets so hot it's smoking, then other times it won't even bubble when I drop food in. The temperature display shows one thing but the oil feels completely different. We've ruined so many batches trying to figure out what temperature we're actually cooking at.",
-    "solution": "Calibrated and replaced the main thermostat control unit and installed a new temperature bulb sensor.",
-    "parts": [
-      "SKU-TS-397428 - Thermostat Control 200-400\u00b0F range with capillary tube"
-    ]
-  },
-  {
-    "problem": "There's this awful burning smell coming from the fryer even when we're not cooking anything, and I can see smoke coming from somewhere inside the unit. It's making the whole kitchen smell bad and I'm worried it might be a fire hazard. We've had to open all the windows and turn on every fan we have.",
-    "solution": "Removed and replaced the burned-out heating element that had developed hot spots and was overheating the surrounding insulation.",
-    "parts": [
-      "SKU-HE-529634 - Electric Heating Element 5500W 240V with mounting brackets",
-      "SKU-IN-441782 - High-temperature insulation padding for element housing"
-    ]
-  },
-  {
-    "problem": "The fryer keeps cycling on and off every few minutes instead of staying at a steady temperature. Just when we get a batch going, it shuts off and we have to wait for it to heat back up again. It's impossible to maintain any kind of rhythm in the kitchen and everything is taking twice as long to cook.",
-    "solution": "Adjusted the temperature differential settings and replaced the worn contactors in the control relay system.",
-    "parts": [
-      "SKU-CR-683947 - Control Relay 40-amp with normally open contacts",
-      "SKU-CT-295168 - Contactor Assembly dual-pole for heating circuit",
-      "SKU-TD-137852 - Temperature Differential Control Switch"
-    ]
-  },
-  {
-    "problem": "When we try to use the built-in timer, it counts down but never actually turns off the heat when it hits zero. We've had several batches of chicken burn because we thought the timer would shut it off automatically. Now nobody trusts it and we're all using our phones, but that's not practical during busy periods.",
-    "solution": "Replaced the defective timer relay switch that was not properly disconnecting power to the heating elements upon timer completion.",
-    "parts": [
-      "SKU-TR-758291 - Digital Timer Relay 99-minute countdown with output contacts"
-    ]
-  },
-  {
-    "problem": "The oil level keeps dropping throughout the day even though we're not draining it, and I can't figure out where it's going. By closing time we're down almost a gallon from where we started. There's no visible leak on the floor but the oil is definitely disappearing somewhere and replacement oil is expensive.",
-    "solution": "Located and sealed internal leak in the heat exchanger coil and replaced damaged vat seam gaskets that were allowing oil to seep into the insulation cavity.",
-    "parts": [
-      "SKU-GS-412573 - Vat Seam Gasket Kit high-temperature silicone",
-      "SKU-SE-869341 - Heat Exchanger Sealing Compound ceramic-based"
-    ]
-  },
-  {
-    "problem": "The control knobs are so loose they just spin freely without actually changing any settings. I can turn the temperature dial all the way around but nothing happens - it stays at whatever temperature it was before. Same thing with the timer knob. My cooks can't adjust anything and we're stuck with whatever settings were last working.",
-    "solution": "Tightened control linkages and replaced stripped gear assemblies that connect the external knobs to the internal adjustment mechanisms.",
-    "parts": [
-      "SKU-GR-347692 - Control Gear Assembly plastic with metal insert",
-      "SKU-LK-584127 - Control Linkage Rod Set with coupling springs"
-    ]
-  },
-  {
-    "problem": "Every time we filter the oil, it comes back dirtier than when we started. The filter system runs but instead of cleaning the oil, it seems to be stirring up all the crud from the bottom and making everything worse. We're going through oil way faster because we can't get it properly cleaned.",
-    "solution": "Replaced clogged filter media and rebuilt the pump impeller assembly that was creating turbulence instead of proper filtration flow.",
-    "parts": [
-      "SKU-FM-926413 - Replacement Filter Media pad 20x16 inch pleated",
-      "SKU-IM-671058 - Pump Impeller Assembly with shaft and seals",
-      "SKU-PM-238794 - Pump Motor 1/3 HP single-phase"
-    ]
-  },
-  {
-    "problem": "The fryer pilot light won't stay lit no matter how many times we try to relight it. It lights up for a few seconds then just goes out, and we can't get the main burners to fire up at all. We've been running on just our electric fryer all week but it can't handle our volume during lunch rush.",
-    "solution": "Replaced the faulty thermocouple that was failing to detect the pilot flame and cleaned the pilot orifice of debris buildup.",
-    "parts": [
-      "SKU-TC-248391 - Thermocouple Type K 24-inch with 3/8-inch thread",
-      "SKU-PO-156772 - Pilot Light Orifice 0.018-inch natural gas"
-    ]
-  },
-  {
-    "problem": "The fryer basket lift is stuck in the down position and won't raise up automatically like it's supposed to. We have to manually crank it up every single time which is burning out my staff's arms. The automatic timer still works but the lift mechanism just sits there doing nothing when time's up.",
-    "solution": "Replaced the worn basket lift motor and lubricated the gear assembly that had seized due to grease buildup.",
-    "parts": [
-      "SKU-MT-334567 - Basket Lift Motor 1/4 HP 120V with mounting bracket"
-    ]
-  },
-  {
-    "problem": "Our gas fryer burner flames are all yellow and orange instead of blue, and they're not heating the oil efficiently anymore. It takes twice as long to get up to temperature and the flames look really weak and flickering. Plus there's this weird sooty buildup around the burner area that wasn't there before.",
-    "solution": "Cleaned and adjusted the gas burner orifices and replaced the primary air shutters that were blocked with grease and debris.",
-    "parts": [
-      "SKU-GO-445821 - Gas Burner Orifice Set natural gas 0.086-inch",
-      "SKU-AS-229384 - Primary Air Shutter Assembly with adjustment screws",
-      "SKU-BH-778295 - Burner Head Assembly stainless steel with venturi"
-    ]
-  },
-  {
-    "problem": "The high-limit switch keeps tripping and shutting down our fryer even when the oil temperature seems fine on the display. It'll work for maybe an hour then suddenly everything shuts off and we have to wait for it to reset. This happened four times during yesterday's dinner rush and we're losing so much business.",
-    "solution": "Replaced the malfunctioning high-limit safety switch that was triggering at incorrect temperatures due to internal sensor drift.",
-    "parts": [
-      "SKU-HS-667134 - High Limit Safety Switch 400\u00b0F manual reset with bracket"
-    ]
-  },
-  {
-    "problem": "The drain valve handle broke off completely so we can't drain the oil for cleaning at all. The valve is stuck in the closed position and we've tried pliers but can't get enough grip to turn it. We haven't been able to change the oil in three days and it's getting really dark and gross.",
-    "solution": "Replaced the entire drain valve assembly including the handle mechanism and installed new gaskets to prevent future leaks.",
-    "parts": [
-      "SKU-DV-123896 - Drain Valve Assembly 1.5-inch ball valve with stainless steel handle",
-      "SKU-GK-445729 - Drain Valve Gasket Kit high-temperature resistant"
-    ]
-  },
-  {
-    "problem": "The fryer control panel screen is completely blank and none of the buttons respond when you press them. We can't set temperatures, timers, or even see what's happening with the unit. The fryer seems to be running on some default setting but we have no control over anything.",
-    "solution": "Replaced the faulty control board that had suffered moisture damage and installed a new LED display panel.",
-    "parts": [
-      "SKU-CB-889234 - Digital Control Board with temperature programming",
-      "SKU-DP-556781 - LED Display Panel 4-digit with status indicators",
-      "SKU-MB-332457 - Membrane Button Pad overlay with tactile feedback"
-    ]
-  },
-  {
-    "problem": "There's this constant hissing sound coming from somewhere around the gas connections and I can smell gas near the fryer. It's not super strong but it's definitely there and getting worse. My staff is nervous about working near it and I'm worried about safety issues.",
-    "solution": "Located and repaired a gas leak at the main supply line connection and replaced the deteriorated gas solenoid valve seals.",
-    "parts": [
-      "SKU-GS-774821 - Gas Solenoid Valve 3/4-inch 24V with manual reset",
-      "SKU-GL-445923 - Gas Line Coupling 3/4-inch NPT with thread sealant"
-    ]
-  },
-  {
-    "problem": "The oil filtration pump turns on but it's making this awful screeching noise and barely moving any oil through the filter. The whole filtering process that used to take 15 minutes now takes over an hour when it works at all. Sometimes it just stops mid-cycle and we have to restart it multiple times.",
-    "solution": "Replaced the worn filtration pump motor and impeller assembly, and installed a new pump coupling that had completely failed.",
-    "parts": [
-      "SKU-FP-665432 - Oil Filter Pump Motor 1/3 HP with thermal protection",
-      "SKU-PI-223847 - Pump Impeller Assembly stainless steel",
-      "SKU-PC-778129 - Pump Coupling flexible jaw-type with spider insert"
-    ]
-  },
-  {
-    "problem": "The fryer pilot light keeps going out randomly throughout the day, and then we have to wait forever for someone who knows how to relight it safely. Sometimes it stays lit for hours, other times it goes out after just 30 minutes. We're losing so much time during rushes because the fryer goes cold and takes forever to heat back up when this happens.",
-    "solution": "Replaced the faulty thermocouple that was providing inconsistent flame sensing signals to the gas control valve, causing intermittent pilot light shutoffs.",
-    "parts": [
-      "SKU-TC-892341 - Thermocouple 24-inch length with universal gas valve connection",
-      "SKU-GV-445672 - Pilot light assembly with brass orifice and ignition electrode"
-    ]
-  },
-  {
-    "problem": "The fryer oil smells terrible and has this gross foam on top that won't go away no matter how much we skim it off. The food tastes weird and customers have been complaining. We've changed the oil twice this week but the same thing keeps happening within a few hours of fresh oil.",
-    "solution": "Replaced the damaged oil return line and filtration screen that were allowing contaminants and moisture to continuously cycle back into the fresh oil.",
-    "parts": [
-      "SKU-FL-178923 - Oil filtration screen mesh 100-count stainless steel",
-      "SKU-PL-334567 - Oil return line assembly with rubber gaskets and fittings"
-    ]
-  },
-  {
-    "problem": "I can barely hear the fryer pump running anymore and when I do, it sounds really weak and strained. The oil filtration is taking three times longer than it used to, and sometimes the pump just stops working completely in the middle of a cycle. We're having to run shorter filter cycles more often just to keep the oil somewhat clean.",
-    "solution": "Replaced the worn impeller and motor bearings in the oil filtration pump, and cleared accumulated debris from the pump housing.",
-    "parts": [
-      "SKU-MT-667889 - Oil pump motor 1/3 HP with mounting bracket",
-      "SKU-IM-223445 - Stainless steel impeller assembly with drive shaft"
-    ]
-  },
-  {
-    "problem": "The fryer keeps tripping the circuit breaker in our electrical panel, usually right when we're trying to heat up for the lunch rush. It'll work fine on low heat but as soon as we crank it up to cooking temperature, boom - everything shuts off and we have to reset the breaker. This has happened four times this week already.",
-    "solution": "Replaced the deteriorated heating element that was drawing excessive current due to internal breakdown and installed new contactors in the control circuit.",
-    "parts": [
-      "SKU-HE-556781 - Electric heating element 240V 15KW with terminal connections",
-      "SKU-CT-789012 - Electrical contactor 40-amp dual pole with auxiliary contacts",
-      "SKU-WH-123678 - High-temperature wiring harness for heating element connections"
-    ]
-  },
-  {
-    "problem": "The fryer basket gets stuck about halfway down and we have to really force it to go all the way into the oil. When we try to lift it back up, it's even worse - sometimes it takes two people pulling just to get it out. My crew is getting tired arms and I'm worried someone's going to hurt their back wrestling with this thing.",
-    "solution": "Cleaned and lubricated the basket lift mechanism rails and replaced the worn lift chain and sprocket assembly that had stretched over time.",
-    "parts": [
-      "SKU-CH-445667 - Stainless steel lift chain 36-inch with master link",
-      "SKU-SP-778823 - Drive sprocket assembly with bearing and mounting hardware"
-    ]
-  },
-  {
-    "problem": "The digital temperature display keeps jumping around like crazy - one second it says 325, then 380, then back to 310. I have no idea what the actual oil temperature is, so my cooks are just guessing and everything is coming out wrong. We've burned so much food this week because we can't trust what the display is telling us.",
-    "solution": "Replaced the faulty temperature sensor probe and recalibrated the digital control module to provide accurate temperature readings.",
-    "parts": [
-      "SKU-TS-334512 - RTD temperature sensor probe 12-inch with 1/2-inch NPT fitting"
-    ]
-  },
-  {
-    "problem": "There's this constant hissing sound coming from somewhere around the gas connections, and I swear I can smell gas near the fryer when I walk by. It's making everyone in the kitchen nervous, and we're afraid to keep using it but we can't shut down our whole fry operation. The smell seems to get stronger when the fryer is running at full heat.",
-    "solution": "Located and repaired multiple small gas leaks at threaded connections and replaced the deteriorated gas supply line with new flexible connector meeting current safety codes.",
-    "parts": [
-      "SKU-GL-667543 - Flexible gas supply line 1-inch diameter 48-inch length with safety shutoff",
-      "SKU-GF-889776 - Gas line fitting kit with thread sealant and leak detection solution"
-    ]
-  },
-  {
-    "problem": "The oil drain valve is completely stuck closed and won't budge no matter how hard we try to turn it. We haven't been able to change the oil in three days because we can't get the old stuff out. The oil is getting darker and nastier by the hour, and I know it's affecting the taste of everything we're cooking.",
-    "solution": "Removed the seized drain valve assembly and replaced it with a new ball valve, also cleared the drain line of accumulated grease buildup.",
-    "parts": [
-      "SKU-DV-223344 - Heavy-duty drain valve 1.5-inch with lever handle and gasket kit",
-      "SKU-PL-556789 - Drain line assembly with elbow fittings and support brackets"
-    ]
-  },
-  {
-    "problem": "The fryer is cycling on and off constantly - it heats up for a few minutes, then shuts down, then starts up again over and over. We can't maintain steady cooking temperature and our french fries are coming out inconsistent. Some batches are perfect while others are either soggy or burnt because the temperature keeps jumping around.",
-    "solution": "Replaced the faulty thermostat control that was cycling incorrectly due to worn contacts and recalibrated the temperature settings.",
-    "parts": [
-      "SKU-TH-248591 - Thermostat Control 200-400\u00b0F with SPDT contacts"
-    ]
-  },
-  {
-    "problem": "The digital temperature display shows error codes and random numbers instead of the actual oil temperature. My cooks have no idea how hot the oil really is, so they're just guessing on cooking times. We've had several complaints about undercooked food because nobody knows when the oil is ready.",
-    "solution": "Replaced the temperature sensor probe and repaired damaged wiring connections to the control board.",
-    "parts": [
-      "SKU-TS-156743 - RTD Temperature Sensor Probe 1/8-inch diameter 12-inch length",
-      "SKU-WH-092847 - High-temperature wire harness assembly 6-pin connector"
-    ]
-  },
-  {
-    "problem": "Hot oil keeps bubbling up and overflowing whenever we put food in the fryer, making a huge mess and wasting expensive oil. It never used to do this - we could cook full baskets without any problems. Now even small amounts of food cause it to bubble over and we're constantly cleaning oil off everything.",
-    "solution": "Cleaned clogged oil return lines and replaced the oil level sensor that was giving false readings.",
-    "parts": [
-      "SKU-OL-371629 - Oil Level Sensor Float Switch with 18-inch cable",
-      "SKU-GK-458912 - High-temp gasket kit for oil return assembly"
-    ]
-  },
-  {
-    "problem": "The fryer takes almost an hour to heat up from cold, when it used to be ready in 15 minutes. By the time we open for lunch, we're already behind schedule. The heating elements look rusty and corroded, and I think that's why it's so slow now.",
-    "solution": "Replaced corroded heating elements and cleaned mineral deposits from the heating element housing.",
-    "parts": [
-      "SKU-HE-629184 - Immersion Heating Element 240V 18kW with mounting flange",
-      "SKU-HE-629185 - Immersion Heating Element 240V 18kW with mounting flange",
-      "SKU-CL-074528 - Heating element cleaning compound and descaler"
-    ]
-  },
-  {
-    "problem": "Every few hours the fryer just stops working completely - no heat, no lights, nothing - but if we wait about 30 minutes it starts working again. It's like it needs a break or something. This happened four times during our busy Saturday night and we almost ran out of fried appetizers.",
-    "solution": "Replaced the overheating high-limit safety switch that was tripping due to excessive heat buildup from a blocked ventilation system.",
-    "parts": [
-      "SKU-HL-892634 - High-Limit Safety Switch 450\u00b0F manual reset"
-    ]
-  },
-  {
-    "problem": "The oil looks dirty and gross even right after we change it - it gets dark and cloudy within an hour of cooking. Our fried food tastes burnt even when it's not overcooked. I think the filtration system isn't cleaning the oil properly anymore, but the pump seems to be running.",
-    "solution": "Replaced worn filter media and cleaned the filtration housing that had accumulated carbonized oil residue blocking proper flow.",
-    "parts": [
-      "SKU-FL-516728 - Oil Filter Media Pack 20-micron pleated paper filters",
-      "SKU-FL-516729 - Filter Housing Seal Kit with O-rings"
-    ]
-  },
-  {
-    "problem": "The gas burner flames keep going out randomly during cooking, sometimes with a loud popping sound. When they relight automatically, there's a scary whoosh of flame that makes everyone jump. My staff is getting nervous about using this fryer because the flames are so unpredictable.",
-    "solution": "Replaced malfunctioning gas solenoid valve and adjusted the gas pressure regulator to proper specifications.",
-    "parts": [
-      "SKU-GS-743821 - Gas Solenoid Valve 3/4-inch NPT 120VAC with manual shutoff",
-      "SKU-GR-184567 - Gas Pressure Regulator 0-15 PSI adjustable"
-    ]
-  },
-  {
-    "problem": "The drain valve at the bottom won't close all the way anymore - there's always a slow drip of hot oil coming out even when it's supposed to be shut tight. We've got a pan underneath to catch it, but it's messy and we're losing oil constantly. Plus it makes the floor slippery and dangerous.",
-    "solution": "Replaced worn drain valve assembly and installed new sealing gaskets to prevent oil leakage.",
-    "parts": [
-      "SKU-DV-395174 - Ball Drain Valve 1-inch NPT full-port with lever handle",
-      "SKU-GK-281936 - Drain Valve Gasket Set high-temperature Viton seals"
-    ]
-  },
-  {
-    "problem": "The automatic basket lift is stuck in the down position and won't come up no matter what buttons we press. We have to manually pull the baskets out with tongs, which is dangerous with all that hot oil splashing around. One of my cooks already got a minor burn trying to fish out an order of onion rings.",
-    "solution": "Repaired the pneumatic cylinder system and replaced the air solenoid valve controlling the basket lift mechanism.",
-    "parts": [
-      "SKU-PC-672148 - Pneumatic Cylinder 4-inch bore 8-inch stroke double-acting",
-      "SKU-AS-529663 - Air Solenoid Valve 1/4-inch NPT 120VAC 3-way"
-    ]
-  },
-  {
-    "problem": "The control panel buttons are either sticking or not responding at all - I have to press them multiple times to get anything to work. The start button is the worst - sometimes I push it ten times before the fryer actually turns on. My managers are getting frustrated because it takes forever to make simple adjustments.",
-    "solution": "Replaced the membrane switch panel and cleaned corrosion from the control board connections caused by oil vapor exposure.",
-    "parts": [
-      "SKU-MS-841257 - Control Panel Membrane Switch Assembly 12-button with LED indicators"
-    ]
-  }
+	{
+		"problem": "Our main fryer just won't heat up anymore - I turn it on and wait forever but the oil stays cold. We had to shut down the whole fried chicken station during lunch rush yesterday. My kitchen staff is getting frustrated because we can't make any of our signature items and customers are complaining about wait times.",
+		"solution": "Replaced the faulty gas control valve and ignition module that were preventing proper gas flow to the burner assembly.",
+		"parts": [
+			"SKU-GV-245891 - Gas Control Valve 3/4-inch NPT with pilot safety",
+			"SKU-IG-078234 - Electronic Ignition Module 120V with flame sensor"
+		]
+	},
+	{
+		"problem": "The fryer keeps shutting itself off randomly throughout the day, sometimes right in the middle of cooking a batch of fries. The oil will be hot one minute, then boom - everything just stops working. It's driving my cooks crazy because they never know when it's going to happen.",
+		"solution": "Replaced the malfunctioning high-limit safety switch that was triggering false shutdowns due to internal sensor drift.",
+		"parts": [
+			"SKU-HL-156742 - High-Limit Safety Switch 400\u00b0F manual reset with mounting bracket"
+		]
+	},
+	{
+		"problem": "I can't get the oil temperature right anymore - I set it for 350 degrees but sometimes it barely gets warm, other times it gets so hot it starts smoking and ruins the food. Yesterday we had to throw out three batches of chicken because the oil was way too hot. This thing is costing me money every day.",
+		"solution": "Replaced the defective thermostat and recalibrated the temperature control system to maintain accurate oil temperature within specified range.",
+		"parts": [
+			"SKU-TS-389156 - Digital Thermostat Controller 200-400\u00b0F range",
+			"SKU-TP-067823 - Temperature Probe RTD sensor 12-inch stainless steel"
+		]
+	},
+	{
+		"problem": "The oil filtration system stopped working completely - the pump won't turn on no matter what we do. Now we have to manually change the oil way more often because we can't filter out the particles. It's taking forever and costing us a fortune in oil costs.",
+		"solution": "Replaced the burned-out filtration pump motor and installed new pump relay in the control panel.",
+		"parts": [
+			"SKU-PM-234567 - Oil Filtration Pump Motor 1/3 HP 115V single phase",
+			"SKU-RL-445789 - Pump Control Relay 30A 120V coil with mounting socket"
+		]
+	},
+	{
+		"problem": "The basket won't go up and down anymore - it's stuck halfway and we can't lift it out of the oil. My guys are having to use tongs to fish everything out which is dangerous and slow. We're worried someone's going to get burned trying to work around this thing.",
+		"solution": "Repaired the pneumatic basket lift cylinder and replaced the damaged air valve that controls basket movement.",
+		"parts": [
+			"SKU-CY-678912 - Pneumatic Lift Cylinder 4-inch bore double acting",
+			"SKU-AV-123456 - Air Control Valve 1/4-inch NPT 3-way solenoid operated"
+		]
+	},
+	{
+		"problem": "There's oil leaking all over the floor from underneath the fryer. We're constantly mopping it up but it just keeps coming back. It's making the kitchen floor slippery and dangerous, plus we're losing expensive oil. Health inspector is coming next week and I'm freaking out.",
+		"solution": "Replaced the corroded drain valve and associated gaskets that were causing the oil leak at the tank bottom.",
+		"parts": [
+			"SKU-DV-789123 - Drain Valve Assembly 2-inch ball valve with lever handle",
+			"SKU-GS-456789 - Drain Valve Gasket Kit high-temperature silicone",
+			"SKU-PT-234891 - Drain Pipe Elbow 2-inch stainless steel 90-degree"
+		]
+	},
+	{
+		"problem": "The control panel is going haywire - half the buttons don't work and the timer keeps resetting itself randomly. We can't set cooking times properly so everything is either overcooked or undercooked. The digital display is flickering and sometimes just goes blank completely.",
+		"solution": "Replaced the faulty control board and updated the display module with new programming.",
+		"parts": [
+			"SKU-CB-567234 - Main Control Board PCB assembly with temperature controls",
+			"SKU-DS-890456 - Digital Display Module LED 4-digit with timer functions"
+		]
+	},
+	{
+		"problem": "The heating element isn't working right - the oil takes forever to heat up in the morning and never gets hot enough during busy periods. We used to be able to recover temperature quickly between batches but now everything takes twice as long. Customers are complaining about slow service.",
+		"solution": "Replaced the damaged electric heating element that had developed internal breaks reducing its heating capacity.",
+		"parts": [
+			"SKU-HE-345678 - Electric Heating Element 208V 15kW immersion type tubular"
+		]
+	},
+	{
+		"problem": "The gas fryer keeps making this weird clicking sound but won't light up at all. I can smell a little gas when I try to turn it on, which is making everyone nervous. We've been without our main fryer for two days now and had to move everything to the backup unit, but that's way too small for our volume.",
+		"solution": "Replaced faulty gas valve solenoid that was failing to open properly and cleaned gas orifices that were partially blocked.",
+		"parts": [
+			"SKU-GV-002847 - Gas valve solenoid 24V AC with 1/2-inch NPT connection",
+			"SKU-GO-001293 - Gas orifice set for natural gas BTU rating 90,000"
+		]
+	},
+	{
+		"problem": "The temperature probe must be broken because the fryer thinks the oil is at 400 degrees when I can tell it's barely warm enough to cook anything. My fries are coming out soggy and pale, and chicken takes forever. The digital readout shows the right temperature but something's definitely not right with the actual heat.",
+		"solution": "Installed new temperature probe sensor and recalibrated the digital temperature controller for accurate readings.",
+		"parts": [
+			"SKU-TP-003621 - Temperature probe RTD sensor 12-inch with stainless steel sheath"
+		]
+	},
+	{
+		"problem": "Every time we try to drain the oil for cleaning, it just trickles out super slowly instead of flowing normally. What used to take 10 minutes now takes over an hour, and we can never get all the old oil out. It's backing up our whole cleaning schedule and the oil that stays in there goes bad faster.",
+		"solution": "Replaced clogged drain valve assembly and cleared blockage in the drain line plumbing system.",
+		"parts": [
+			"SKU-DV-004782 - Drain valve assembly 2-inch ball valve with lever handle",
+			"SKU-PF-001956 - Drain line fitting 2-inch NPT elbow connector",
+			"SKU-GS-002341 - Drain valve gasket set high-temperature silicone"
+		]
+	},
+	{
+		"problem": "The safety switch keeps kicking in and shutting everything down even when the oil temperature looks normal. It happened three times during dinner service last night and we lost so many orders. The fryer will run for maybe 20 minutes then just cuts out completely until we reset it.",
+		"solution": "Replaced malfunctioning high-limit safety switch that was triggering at incorrect temperature threshold.",
+		"parts": [
+			"SKU-HL-005194 - High-limit safety switch 450\u00b0F automatic reset with mounting bracket"
+		]
+	},
+	{
+		"problem": "The oil filter pump is making this horrible grinding noise and barely moving any oil through the system. When it does work, it's so slow that we can't keep up with filtering during busy periods. The oil gets dirty way faster now and everything tastes off because of all the burnt particles floating around.",
+		"solution": "Rebuilt the oil filtration pump with new impeller and motor bearings, and replaced worn pump housing gaskets.",
+		"parts": [
+			"SKU-FP-003847 - Oil filter pump impeller assembly with stainless steel blades",
+			"SKU-MT-002619 - Pump motor bearing set sealed ball bearings 1/2-inch shaft"
+		]
+	},
+	{
+		"problem": "The fryer vat has these dark stains and pitting that won't come clean no matter how hard we scrub. The oil looks dirty right after we change it, and I'm worried it's affecting the taste of our food. Some spots look like they might even be starting to rust or corrode.",
+		"solution": "Replaced deteriorated fryer vat with new stainless steel tank and installed fresh heating element mounting hardware.",
+		"parts": [
+			"SKU-FV-006283 - Fryer vat stainless steel 40-pound capacity with drain fitting",
+			"SKU-MH-001742 - Heating element mounting hardware kit with gaskets",
+			"SKU-IF-003456 - Insulation foam kit high-temperature rated for fryer tank"
+		]
+	},
+	{
+		"problem": "The timer function stopped working completely - we set it for 4 minutes but it never beeps or shuts off automatically. Now my cooks have to watch everything like hawks and use their phones to time batches. We've already overcooked several orders because people forgot to check.",
+		"solution": "Replaced defective control board timer module and updated the display panel programming.",
+		"parts": [
+			"SKU-CB-004921 - Control board timer module with digital display interface"
+		]
+	},
+	{
+		"problem": "The electric heating elements aren't heating evenly anymore - one side of the fryer gets really hot while the other side stays cooler. Food cooks unevenly and we're constantly having to move baskets around to different spots. It's slowing down our whole operation during rush periods.",
+		"solution": "Replaced one burned-out heating element and rebalanced the electrical connections to ensure even heat distribution.",
+		"parts": [
+			"SKU-HE-005673 - Electric heating element 5000W 240V tubular with terminal connections",
+			"SKU-TC-002847 - Terminal connector set high-temperature rated for heating elements"
+		]
+	},
+	{
+		"problem": "The fryer won't turn on at all - no lights, no heat, nothing happens when I flip the switch. We checked the breaker and it's fine, but this thing is completely dead. It was working fine yesterday afternoon but came in this morning and it's like someone unplugged the whole unit from the inside.",
+		"solution": "Replaced faulty main power contactor that had burned contacts preventing electrical connection to the fryer's systems.",
+		"parts": [
+			"SKU-CT-098234 - Main Power Contactor 40A 220V with auxiliary contacts"
+		]
+	},
+	{
+		"problem": "The gas valve is stuck open and we can't shut off the gas flow to the burners. Even when I turn the control knob to off position, I can still hear gas flowing and smell it around the unit. This is really dangerous and we had to shut down the whole fryer station until someone can fix it.",
+		"solution": "Replaced defective gas solenoid valve that was stuck in the open position and calibrated the gas pressure regulator.",
+		"parts": [
+			"SKU-GV-145672 - Gas Solenoid Valve 3/4-inch NPT with 120V coil",
+			"SKU-GR-289453 - Gas Pressure Regulator 1-15 PSI with gauge"
+		]
+	},
+	{
+		"problem": "The oil keeps overflowing from the vat even though we're not overfilling it. It seems like the oil level keeps rising on its own during cooking, and we've had hot oil spill onto the floor twice this week. My staff is scared to use the fryer because they don't know when it might overflow again.",
+		"solution": "Replaced cracked oil return line and malfunctioning oil level sensor that was causing filtration system backflow into the main vat.",
+		"parts": [
+			"SKU-OL-567891 - Oil Return Line Assembly 1-inch diameter 36-inch length",
+			"SKU-SN-334578 - Oil Level Sensor with float switch and 10-foot cable"
+		]
+	},
+	{
+		"problem": "The fryer makes this loud banging noise every few minutes like something is hitting the inside of the unit. It's so loud that customers in the dining room are asking about it, and my kitchen crew jumps every time it happens. The noise started about a week ago and keeps getting worse.",
+		"solution": "Replaced worn filtration pump motor mounts and balanced the impeller assembly that was causing vibration and mechanical noise.",
+		"parts": [
+			"SKU-PM-778912 - Filtration Pump Motor Mount Kit with rubber isolators",
+			"SKU-IM-445667 - Pump Impeller Assembly 5-inch diameter stainless steel"
+		]
+	},
+	{
+		"problem": "The digital display shows error codes that keep changing, and none of us know what they mean. Sometimes it shows E03, other times E07, and occasionally just flashes random numbers. The fryer still works but we can't tell what temperature it's actually running at or set any timers properly.",
+		"solution": "Replaced faulty control board with corrupted firmware and updated all system programming to manufacturer specifications.",
+		"parts": [
+			"SKU-CB-223456 - Main Control Board with LCD display and memory backup"
+		]
+	},
+	{
+		"problem": "The basket lift mechanism moves up and down but it's really jerky and sometimes gets stuck halfway. When it does move, it makes this grinding sound like metal scraping against metal. Yesterday it got stuck with a full basket of fish and we had to manually crank it up, which was really difficult and dangerous with hot oil splashing around.",
+		"solution": "Rebuilt basket lift assembly with new drive chain, sprockets, and lubricated all pivot points and guide rails.",
+		"parts": [
+			"SKU-BC-667889 - Drive Chain Assembly 48-link stainless steel",
+			"SKU-SP-112233 - Lift Mechanism Sprocket Set with bearings",
+			"SKU-LU-998877 - High-temperature food-grade lubricant 16oz tube"
+		]
+	},
+	{
+		"problem": "There's this weird smell coming from the fryer that's not the usual cooking smells - it's like something electrical is burning. The smell gets stronger when we turn the heat up high, and I'm worried something dangerous is happening inside the unit. A couple of my cooks have complained about headaches after working near it all day.",
+		"solution": "Replaced overheating transformer and damaged wiring harness that was causing electrical insulation to burn and emit toxic fumes.",
+		"parts": [
+			"SKU-TR-445566 - Step-down Transformer 480V to 24V 100VA",
+			"SKU-WH-778844 - Main Wiring Harness 12-circuit with heat-resistant coating"
+		]
+	},
+	{
+		"problem": "The fryer takes forever to heat up in the morning - what used to take 15 minutes now takes almost an hour. Even when it finally gets warm, it can't keep up with demand during lunch rush and the temperature drops way down every time we add food. We're falling behind on orders and customers are getting impatient.",
+		"solution": "Replaced deteriorated thermal insulation around the vat and installed new high-efficiency heating elements with improved heat transfer design.",
+		"parts": [
+			"SKU-IN-556677 - Thermal Insulation Kit ceramic fiber 2-inch thickness",
+			"SKU-HE-889900 - High-efficiency Heating Element 15KW 240V with titanium coating"
+		]
+	},
+	{
+		"problem": "The fryer is taking way too long to heat up in the mornings - it used to be ready in 15 minutes but now it takes over an hour to get to temperature. By the time we're ready to cook, we're already behind schedule and the breakfast rush is starting. My crew is getting stressed because we can't prep properly and customers are waiting forever for their hash browns.",
+		"solution": "Replaced the faulty gas burner assembly and cleaned out blocked gas orifices that were restricting proper flame distribution.",
+		"parts": [
+			"SKU-GB-284751 - Gas Burner Assembly with pilot light and flame spreader",
+			"SKU-OR-156293 - Gas Orifice Set 0.035-inch diameter for natural gas"
+		]
+	},
+	{
+		"problem": "The thermostat seems completely off - I set it to 325 for donuts but the oil gets so hot it's smoking, then other times it won't even bubble when I drop food in. The temperature display shows one thing but the oil feels completely different. We've ruined so many batches trying to figure out what temperature we're actually cooking at.",
+		"solution": "Calibrated and replaced the main thermostat control unit and installed a new temperature bulb sensor.",
+		"parts": [
+			"SKU-TS-397428 - Thermostat Control 200-400\u00b0F range with capillary tube"
+		]
+	},
+	{
+		"problem": "There's this awful burning smell coming from the fryer even when we're not cooking anything, and I can see smoke coming from somewhere inside the unit. It's making the whole kitchen smell bad and I'm worried it might be a fire hazard. We've had to open all the windows and turn on every fan we have.",
+		"solution": "Removed and replaced the burned-out heating element that had developed hot spots and was overheating the surrounding insulation.",
+		"parts": [
+			"SKU-HE-529634 - Electric Heating Element 5500W 240V with mounting brackets",
+			"SKU-IN-441782 - High-temperature insulation padding for element housing"
+		]
+	},
+	{
+		"problem": "The fryer keeps cycling on and off every few minutes instead of staying at a steady temperature. Just when we get a batch going, it shuts off and we have to wait for it to heat back up again. It's impossible to maintain any kind of rhythm in the kitchen and everything is taking twice as long to cook.",
+		"solution": "Adjusted the temperature differential settings and replaced the worn contactors in the control relay system.",
+		"parts": [
+			"SKU-CR-683947 - Control Relay 40-amp with normally open contacts",
+			"SKU-CT-295168 - Contactor Assembly dual-pole for heating circuit",
+			"SKU-TD-137852 - Temperature Differential Control Switch"
+		]
+	},
+	{
+		"problem": "When we try to use the built-in timer, it counts down but never actually turns off the heat when it hits zero. We've had several batches of chicken burn because we thought the timer would shut it off automatically. Now nobody trusts it and we're all using our phones, but that's not practical during busy periods.",
+		"solution": "Replaced the defective timer relay switch that was not properly disconnecting power to the heating elements upon timer completion.",
+		"parts": [
+			"SKU-TR-758291 - Digital Timer Relay 99-minute countdown with output contacts"
+		]
+	},
+	{
+		"problem": "The oil level keeps dropping throughout the day even though we're not draining it, and I can't figure out where it's going. By closing time we're down almost a gallon from where we started. There's no visible leak on the floor but the oil is definitely disappearing somewhere and replacement oil is expensive.",
+		"solution": "Located and sealed internal leak in the heat exchanger coil and replaced damaged vat seam gaskets that were allowing oil to seep into the insulation cavity.",
+		"parts": [
+			"SKU-GS-412573 - Vat Seam Gasket Kit high-temperature silicone",
+			"SKU-SE-869341 - Heat Exchanger Sealing Compound ceramic-based"
+		]
+	},
+	{
+		"problem": "The control knobs are so loose they just spin freely without actually changing any settings. I can turn the temperature dial all the way around but nothing happens - it stays at whatever temperature it was before. Same thing with the timer knob. My cooks can't adjust anything and we're stuck with whatever settings were last working.",
+		"solution": "Tightened control linkages and replaced stripped gear assemblies that connect the external knobs to the internal adjustment mechanisms.",
+		"parts": [
+			"SKU-GR-347692 - Control Gear Assembly plastic with metal insert",
+			"SKU-LK-584127 - Control Linkage Rod Set with coupling springs"
+		]
+	},
+	{
+		"problem": "Every time we filter the oil, it comes back dirtier than when we started. The filter system runs but instead of cleaning the oil, it seems to be stirring up all the crud from the bottom and making everything worse. We're going through oil way faster because we can't get it properly cleaned.",
+		"solution": "Replaced clogged filter media and rebuilt the pump impeller assembly that was creating turbulence instead of proper filtration flow.",
+		"parts": [
+			"SKU-FM-926413 - Replacement Filter Media pad 20x16 inch pleated",
+			"SKU-IM-671058 - Pump Impeller Assembly with shaft and seals",
+			"SKU-PM-238794 - Pump Motor 1/3 HP single-phase"
+		]
+	},
+	{
+		"problem": "The fryer pilot light won't stay lit no matter how many times we try to relight it. It lights up for a few seconds then just goes out, and we can't get the main burners to fire up at all. We've been running on just our electric fryer all week but it can't handle our volume during lunch rush.",
+		"solution": "Replaced the faulty thermocouple that was failing to detect the pilot flame and cleaned the pilot orifice of debris buildup.",
+		"parts": [
+			"SKU-TC-248391 - Thermocouple Type K 24-inch with 3/8-inch thread",
+			"SKU-PO-156772 - Pilot Light Orifice 0.018-inch natural gas"
+		]
+	},
+	{
+		"problem": "The fryer basket lift is stuck in the down position and won't raise up automatically like it's supposed to. We have to manually crank it up every single time which is burning out my staff's arms. The automatic timer still works but the lift mechanism just sits there doing nothing when time's up.",
+		"solution": "Replaced the worn basket lift motor and lubricated the gear assembly that had seized due to grease buildup.",
+		"parts": [
+			"SKU-MT-334567 - Basket Lift Motor 1/4 HP 120V with mounting bracket"
+		]
+	},
+	{
+		"problem": "Our gas fryer burner flames are all yellow and orange instead of blue, and they're not heating the oil efficiently anymore. It takes twice as long to get up to temperature and the flames look really weak and flickering. Plus there's this weird sooty buildup around the burner area that wasn't there before.",
+		"solution": "Cleaned and adjusted the gas burner orifices and replaced the primary air shutters that were blocked with grease and debris.",
+		"parts": [
+			"SKU-GO-445821 - Gas Burner Orifice Set natural gas 0.086-inch",
+			"SKU-AS-229384 - Primary Air Shutter Assembly with adjustment screws",
+			"SKU-BH-778295 - Burner Head Assembly stainless steel with venturi"
+		]
+	},
+	{
+		"problem": "The high-limit switch keeps tripping and shutting down our fryer even when the oil temperature seems fine on the display. It'll work for maybe an hour then suddenly everything shuts off and we have to wait for it to reset. This happened four times during yesterday's dinner rush and we're losing so much business.",
+		"solution": "Replaced the malfunctioning high-limit safety switch that was triggering at incorrect temperatures due to internal sensor drift.",
+		"parts": [
+			"SKU-HS-667134 - High Limit Safety Switch 400\u00b0F manual reset with bracket"
+		]
+	},
+	{
+		"problem": "The drain valve handle broke off completely so we can't drain the oil for cleaning at all. The valve is stuck in the closed position and we've tried pliers but can't get enough grip to turn it. We haven't been able to change the oil in three days and it's getting really dark and gross.",
+		"solution": "Replaced the entire drain valve assembly including the handle mechanism and installed new gaskets to prevent future leaks.",
+		"parts": [
+			"SKU-DV-123896 - Drain Valve Assembly 1.5-inch ball valve with stainless steel handle",
+			"SKU-GK-445729 - Drain Valve Gasket Kit high-temperature resistant"
+		]
+	},
+	{
+		"problem": "The fryer control panel screen is completely blank and none of the buttons respond when you press them. We can't set temperatures, timers, or even see what's happening with the unit. The fryer seems to be running on some default setting but we have no control over anything.",
+		"solution": "Replaced the faulty control board that had suffered moisture damage and installed a new LED display panel.",
+		"parts": [
+			"SKU-CB-889234 - Digital Control Board with temperature programming",
+			"SKU-DP-556781 - LED Display Panel 4-digit with status indicators",
+			"SKU-MB-332457 - Membrane Button Pad overlay with tactile feedback"
+		]
+	},
+	{
+		"problem": "There's this constant hissing sound coming from somewhere around the gas connections and I can smell gas near the fryer. It's not super strong but it's definitely there and getting worse. My staff is nervous about working near it and I'm worried about safety issues.",
+		"solution": "Located and repaired a gas leak at the main supply line connection and replaced the deteriorated gas solenoid valve seals.",
+		"parts": [
+			"SKU-GS-774821 - Gas Solenoid Valve 3/4-inch 24V with manual reset",
+			"SKU-GL-445923 - Gas Line Coupling 3/4-inch NPT with thread sealant"
+		]
+	},
+	{
+		"problem": "The oil filtration pump turns on but it's making this awful screeching noise and barely moving any oil through the filter. The whole filtering process that used to take 15 minutes now takes over an hour when it works at all. Sometimes it just stops mid-cycle and we have to restart it multiple times.",
+		"solution": "Replaced the worn filtration pump motor and impeller assembly, and installed a new pump coupling that had completely failed.",
+		"parts": [
+			"SKU-FP-665432 - Oil Filter Pump Motor 1/3 HP with thermal protection",
+			"SKU-PI-223847 - Pump Impeller Assembly stainless steel",
+			"SKU-PC-778129 - Pump Coupling flexible jaw-type with spider insert"
+		]
+	},
+	{
+		"problem": "The fryer pilot light keeps going out randomly throughout the day, and then we have to wait forever for someone who knows how to relight it safely. Sometimes it stays lit for hours, other times it goes out after just 30 minutes. We're losing so much time during rushes because the fryer goes cold and takes forever to heat back up when this happens.",
+		"solution": "Replaced the faulty thermocouple that was providing inconsistent flame sensing signals to the gas control valve, causing intermittent pilot light shutoffs.",
+		"parts": [
+			"SKU-TC-892341 - Thermocouple 24-inch length with universal gas valve connection",
+			"SKU-GV-445672 - Pilot light assembly with brass orifice and ignition electrode"
+		]
+	},
+	{
+		"problem": "The fryer oil smells terrible and has this gross foam on top that won't go away no matter how much we skim it off. The food tastes weird and customers have been complaining. We've changed the oil twice this week but the same thing keeps happening within a few hours of fresh oil.",
+		"solution": "Replaced the damaged oil return line and filtration screen that were allowing contaminants and moisture to continuously cycle back into the fresh oil.",
+		"parts": [
+			"SKU-FL-178923 - Oil filtration screen mesh 100-count stainless steel",
+			"SKU-PL-334567 - Oil return line assembly with rubber gaskets and fittings"
+		]
+	},
+	{
+		"problem": "I can barely hear the fryer pump running anymore and when I do, it sounds really weak and strained. The oil filtration is taking three times longer than it used to, and sometimes the pump just stops working completely in the middle of a cycle. We're having to run shorter filter cycles more often just to keep the oil somewhat clean.",
+		"solution": "Replaced the worn impeller and motor bearings in the oil filtration pump, and cleared accumulated debris from the pump housing.",
+		"parts": [
+			"SKU-MT-667889 - Oil pump motor 1/3 HP with mounting bracket",
+			"SKU-IM-223445 - Stainless steel impeller assembly with drive shaft"
+		]
+	},
+	{
+		"problem": "The fryer keeps tripping the circuit breaker in our electrical panel, usually right when we're trying to heat up for the lunch rush. It'll work fine on low heat but as soon as we crank it up to cooking temperature, boom - everything shuts off and we have to reset the breaker. This has happened four times this week already.",
+		"solution": "Replaced the deteriorated heating element that was drawing excessive current due to internal breakdown and installed new contactors in the control circuit.",
+		"parts": [
+			"SKU-HE-556781 - Electric heating element 240V 15KW with terminal connections",
+			"SKU-CT-789012 - Electrical contactor 40-amp dual pole with auxiliary contacts",
+			"SKU-WH-123678 - High-temperature wiring harness for heating element connections"
+		]
+	},
+	{
+		"problem": "The fryer basket gets stuck about halfway down and we have to really force it to go all the way into the oil. When we try to lift it back up, it's even worse - sometimes it takes two people pulling just to get it out. My crew is getting tired arms and I'm worried someone's going to hurt their back wrestling with this thing.",
+		"solution": "Cleaned and lubricated the basket lift mechanism rails and replaced the worn lift chain and sprocket assembly that had stretched over time.",
+		"parts": [
+			"SKU-CH-445667 - Stainless steel lift chain 36-inch with master link",
+			"SKU-SP-778823 - Drive sprocket assembly with bearing and mounting hardware"
+		]
+	},
+	{
+		"problem": "The digital temperature display keeps jumping around like crazy - one second it says 325, then 380, then back to 310. I have no idea what the actual oil temperature is, so my cooks are just guessing and everything is coming out wrong. We've burned so much food this week because we can't trust what the display is telling us.",
+		"solution": "Replaced the faulty temperature sensor probe and recalibrated the digital control module to provide accurate temperature readings.",
+		"parts": [
+			"SKU-TS-334512 - RTD temperature sensor probe 12-inch with 1/2-inch NPT fitting"
+		]
+	},
+	{
+		"problem": "There's this constant hissing sound coming from somewhere around the gas connections, and I swear I can smell gas near the fryer when I walk by. It's making everyone in the kitchen nervous, and we're afraid to keep using it but we can't shut down our whole fry operation. The smell seems to get stronger when the fryer is running at full heat.",
+		"solution": "Located and repaired multiple small gas leaks at threaded connections and replaced the deteriorated gas supply line with new flexible connector meeting current safety codes.",
+		"parts": [
+			"SKU-GL-667543 - Flexible gas supply line 1-inch diameter 48-inch length with safety shutoff",
+			"SKU-GF-889776 - Gas line fitting kit with thread sealant and leak detection solution"
+		]
+	},
+	{
+		"problem": "The oil drain valve is completely stuck closed and won't budge no matter how hard we try to turn it. We haven't been able to change the oil in three days because we can't get the old stuff out. The oil is getting darker and nastier by the hour, and I know it's affecting the taste of everything we're cooking.",
+		"solution": "Removed the seized drain valve assembly and replaced it with a new ball valve, also cleared the drain line of accumulated grease buildup.",
+		"parts": [
+			"SKU-DV-223344 - Heavy-duty drain valve 1.5-inch with lever handle and gasket kit",
+			"SKU-PL-556789 - Drain line assembly with elbow fittings and support brackets"
+		]
+	},
+	{
+		"problem": "The fryer is cycling on and off constantly - it heats up for a few minutes, then shuts down, then starts up again over and over. We can't maintain steady cooking temperature and our french fries are coming out inconsistent. Some batches are perfect while others are either soggy or burnt because the temperature keeps jumping around.",
+		"solution": "Replaced the faulty thermostat control that was cycling incorrectly due to worn contacts and recalibrated the temperature settings.",
+		"parts": [
+			"SKU-TH-248591 - Thermostat Control 200-400\u00b0F with SPDT contacts"
+		]
+	},
+	{
+		"problem": "The digital temperature display shows error codes and random numbers instead of the actual oil temperature. My cooks have no idea how hot the oil really is, so they're just guessing on cooking times. We've had several complaints about undercooked food because nobody knows when the oil is ready.",
+		"solution": "Replaced the temperature sensor probe and repaired damaged wiring connections to the control board.",
+		"parts": [
+			"SKU-TS-156743 - RTD Temperature Sensor Probe 1/8-inch diameter 12-inch length",
+			"SKU-WH-092847 - High-temperature wire harness assembly 6-pin connector"
+		]
+	},
+	{
+		"problem": "Hot oil keeps bubbling up and overflowing whenever we put food in the fryer, making a huge mess and wasting expensive oil. It never used to do this - we could cook full baskets without any problems. Now even small amounts of food cause it to bubble over and we're constantly cleaning oil off everything.",
+		"solution": "Cleaned clogged oil return lines and replaced the oil level sensor that was giving false readings.",
+		"parts": [
+			"SKU-OL-371629 - Oil Level Sensor Float Switch with 18-inch cable",
+			"SKU-GK-458912 - High-temp gasket kit for oil return assembly"
+		]
+	},
+	{
+		"problem": "The fryer takes almost an hour to heat up from cold, when it used to be ready in 15 minutes. By the time we open for lunch, we're already behind schedule. The heating elements look rusty and corroded, and I think that's why it's so slow now.",
+		"solution": "Replaced corroded heating elements and cleaned mineral deposits from the heating element housing.",
+		"parts": [
+			"SKU-HE-629184 - Immersion Heating Element 240V 18kW with mounting flange",
+			"SKU-HE-629185 - Immersion Heating Element 240V 18kW with mounting flange",
+			"SKU-CL-074528 - Heating element cleaning compound and descaler"
+		]
+	},
+	{
+		"problem": "Every few hours the fryer just stops working completely - no heat, no lights, nothing - but if we wait about 30 minutes it starts working again. It's like it needs a break or something. This happened four times during our busy Saturday night and we almost ran out of fried appetizers.",
+		"solution": "Replaced the overheating high-limit safety switch that was tripping due to excessive heat buildup from a blocked ventilation system.",
+		"parts": [
+			"SKU-HL-892634 - High-Limit Safety Switch 450\u00b0F manual reset"
+		]
+	},
+	{
+		"problem": "The oil looks dirty and gross even right after we change it - it gets dark and cloudy within an hour of cooking. Our fried food tastes burnt even when it's not overcooked. I think the filtration system isn't cleaning the oil properly anymore, but the pump seems to be running.",
+		"solution": "Replaced worn filter media and cleaned the filtration housing that had accumulated carbonized oil residue blocking proper flow.",
+		"parts": [
+			"SKU-FL-516728 - Oil Filter Media Pack 20-micron pleated paper filters",
+			"SKU-FL-516729 - Filter Housing Seal Kit with O-rings"
+		]
+	},
+	{
+		"problem": "The gas burner flames keep going out randomly during cooking, sometimes with a loud popping sound. When they relight automatically, there's a scary whoosh of flame that makes everyone jump. My staff is getting nervous about using this fryer because the flames are so unpredictable.",
+		"solution": "Replaced malfunctioning gas solenoid valve and adjusted the gas pressure regulator to proper specifications.",
+		"parts": [
+			"SKU-GS-743821 - Gas Solenoid Valve 3/4-inch NPT 120VAC with manual shutoff",
+			"SKU-GR-184567 - Gas Pressure Regulator 0-15 PSI adjustable"
+		]
+	},
+	{
+		"problem": "The drain valve at the bottom won't close all the way anymore - there's always a slow drip of hot oil coming out even when it's supposed to be shut tight. We've got a pan underneath to catch it, but it's messy and we're losing oil constantly. Plus it makes the floor slippery and dangerous.",
+		"solution": "Replaced worn drain valve assembly and installed new sealing gaskets to prevent oil leakage.",
+		"parts": [
+			"SKU-DV-395174 - Ball Drain Valve 1-inch NPT full-port with lever handle",
+			"SKU-GK-281936 - Drain Valve Gasket Set high-temperature Viton seals"
+		]
+	},
+	{
+		"problem": "The automatic basket lift is stuck in the down position and won't come up no matter what buttons we press. We have to manually pull the baskets out with tongs, which is dangerous with all that hot oil splashing around. One of my cooks already got a minor burn trying to fish out an order of onion rings.",
+		"solution": "Repaired the pneumatic cylinder system and replaced the air solenoid valve controlling the basket lift mechanism.",
+		"parts": [
+			"SKU-PC-672148 - Pneumatic Cylinder 4-inch bore 8-inch stroke double-acting",
+			"SKU-AS-529663 - Air Solenoid Valve 1/4-inch NPT 120VAC 3-way"
+		]
+	},
+	{
+		"problem": "The control panel buttons are either sticking or not responding at all - I have to press them multiple times to get anything to work. The start button is the worst - sometimes I push it ten times before the fryer actually turns on. My managers are getting frustrated because it takes forever to make simple adjustments.",
+		"solution": "Replaced the membrane switch panel and cleaned corrosion from the control board connections caused by oil vapor exposure.",
+		"parts": [
+			"SKU-MS-841257 - Control Panel Membrane Switch Assembly 12-button with LED indicators"
+		]
+	}
 ]

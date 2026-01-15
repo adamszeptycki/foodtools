@@ -4,7 +4,8 @@ import { trpc } from "@foodtools/core-web/src/trpc/client";
 import { LogoUpload } from "./components/LogoUpload";
 
 export default function SettingsPage() {
-	const { data: organization, isLoading } = trpc.organization.getCurrent.useQuery();
+	const { data: organization, isLoading } =
+		trpc.organization.getCurrent.useQuery();
 
 	if (isLoading) {
 		return (
@@ -29,9 +30,7 @@ export default function SettingsPage() {
 			<h1 className="text-2xl font-semibold text-white">Settings</h1>
 
 			<div className="rounded-lg border border-slate-700 bg-slate-800 p-6">
-				<h2 className="text-xl font-semibold text-white mb-4">
-					Organization
-				</h2>
+				<h2 className="text-xl font-semibold text-white mb-4">Organization</h2>
 				<div className="space-y-4">
 					<div>
 						<span className="text-slate-400 text-sm">Name:</span>

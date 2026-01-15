@@ -1,22 +1,26 @@
 import { getDb } from "@foodtools/core/src/sql";
 import type { Organization } from "@foodtools/core/src/sql/schema/auth";
-import { members, organizations, users } from "@foodtools/core/src/sql/schema/auth";
+import {
+	members,
+	organizations,
+	users,
+} from "@foodtools/core/src/sql/schema/auth";
 import { and, eq, ilike, or } from "drizzle-orm";
 
 type GetOrganizationBySlugArgs = {
 	slug: string;
 	userId: string;
-}
-export const getOrganizationBySlug = async ({ slug, userId }: GetOrganizationBySlugArgs) => {
+};
+export const getOrganizationBySlug = async ({
+	slug,
+	userId,
+}: GetOrganizationBySlugArgs) => {
 	const db = getDb();
 	const [organizationRow] = await db
 		.select()
 		.from(organizations)
 		.leftJoin(members, eq(organizations.id, members.organizationId))
-		.where(and(
-			eq(organizations.slug, slug),
-			eq(members.userId, userId)
-		))
+		.where(and(eq(organizations.slug, slug), eq(members.userId, userId)));
 	return organizationRow || null;
 };
 
@@ -31,9 +35,12 @@ export const getOrganizationById = async (
 	return organizationRow || null;
 };
 
-export const listMembersOfOrganization = async (organizationId: string, search?: string|null) => {
+export const listMembersOfOrganization = async (
+	organizationId: string,
+	search?: string | null,
+) => {
 	const db = getDb();
-	if(!organizationId) {
+	if (!organizationId) {
 		throw new Error("Organization ID is required");
 	}
 	if (search && search.length > 0) {
@@ -53,7 +60,7 @@ export const listMembersOfOrganization = async (organizationId: string, search?:
 					image: users.image,
 					createdAt: users.createdAt,
 					updatedAt: users.updatedAt,
-				}
+				},
 			})
 			.from(members)
 			.leftJoin(users, eq(members.userId, users.id))
@@ -62,9 +69,9 @@ export const listMembersOfOrganization = async (organizationId: string, search?:
 					eq(members.organizationId, organizationId),
 					or(
 						ilike(users.name, `%${search}%`),
-						ilike(users.email, `%${search}%`)
-					)
-				)
+						ilike(users.email, `%${search}%`),
+					),
+				),
 			)
 			.limit(5);
 	} else {
@@ -73,7 +80,7 @@ export const listMembersOfOrganization = async (organizationId: string, search?:
 			where: eq(members.organizationId, organizationId),
 			with: {
 				user: true,
-			}
+			},
 		});
 		return result;
 	}

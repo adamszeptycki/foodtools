@@ -1,5 +1,5 @@
 // Services exports for cleaner imports
 
-export { ContentExtractor } from './contentExtractor';
-export { HtmlProcessor } from './htmlProcessor';
-export { AudioCaptureService } from './audioCapture'; 
+export { AudioCaptureService } from "./audioCapture";
+export { ContentExtractor } from "./contentExtractor";
+export { HtmlProcessor } from "./htmlProcessor";

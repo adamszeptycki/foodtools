@@ -8,4 +8,3 @@ export const CallResearchTaskSchema = z.object({
 });
 
 export type CallResearchTask = z.infer<typeof CallResearchTaskSchema>;
-

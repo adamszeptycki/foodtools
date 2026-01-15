@@ -1,6 +1,5 @@
 import { AsyncLocalStorage } from "node:async_hooks";
 import * as DrizzleSchema from "@foodtools/core/src/sql/schema";
-import { sql } from "drizzle-orm";
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import { drizzle } from "drizzle-orm/node-postgres";
 import type { PostgresJsDatabase } from "drizzle-orm/postgres-js";
@@ -44,9 +43,6 @@ const getDb = (): DBType => {
 	return _client;
 };
 
-
-
 export type DBTransaction = Parameters<Parameters<DBType["transaction"]>[0]>[0];
 
-export {getDb, DrizzleSchema as schema};
-
+export { getDb, DrizzleSchema as schema };

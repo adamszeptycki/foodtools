@@ -1,11 +1,18 @@
 import { betterAuthSecret, dbUrl, openAiApiKey, resendApiKey } from "./config";
-import { Stage } from "./stages";
 import { documentProcessingQueue } from "./queue";
 import { getDomain, router } from "./router";
+import { Stage } from "./stages";
 import { documentsBucket } from "./storage";
 
 export const nextJsPage = new sst.aws.Nextjs("FoodToolsWeb", {
-	link: [betterAuthSecret, dbUrl, resendApiKey, openAiApiKey, documentsBucket, documentProcessingQueue],
+	link: [
+		betterAuthSecret,
+		dbUrl,
+		resendApiKey,
+		openAiApiKey,
+		documentsBucket,
+		documentProcessingQueue,
+	],
 	path: "packages/web",
 	route: $app.stage === Stage.PROD ? { router } : undefined,
 	warm: 1,
@@ -15,6 +22,9 @@ export const nextJsPage = new sst.aws.Nextjs("FoodToolsWeb", {
 	environment: {
 		BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
 		BETTER_AUTH_URL: getDomain({ protocol: "https", skipLocalhost: false }),
-		NEXT_PUBLIC_BASE_URL: getDomain({ protocol: "https", skipLocalhost: false }),
+		NEXT_PUBLIC_BASE_URL: getDomain({
+			protocol: "https",
+			skipLocalhost: false,
+		}),
 	},
 });

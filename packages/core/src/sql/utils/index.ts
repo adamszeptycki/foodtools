@@ -7,7 +7,6 @@ const defaultFields = {
 	updatedAt: timestamp("updated_at").notNull().default(sql`now()`),
 };
 
-
 const timestamps: { createdAt: true; updatedAt: true } = {
 	createdAt: true,
 	updatedAt: true,

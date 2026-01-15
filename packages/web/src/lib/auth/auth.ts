@@ -1,6 +1,6 @@
-import { cache } from "react";
-import { headers } from "next/headers";
 import { auth } from "@foodtools/core-web/src/auth/auth";
+import { headers } from "next/headers";
+import { cache } from "react";
 
 export const getServerSession = cache(
 	async () =>

@@ -4,46 +4,45 @@
 /* deno-fmt-ignore-file */
 
 declare module "sst" {
-  export interface Resource {
-    "BETTER_AUTH_SECRET": {
-      "type": "sst.sst.Secret"
-      "value": string
-    }
-    "DB_URL": {
-      "type": "sst.sst.Secret"
-      "value": string
-    }
-    "DocumentProcessingQueue": {
-      "type": "sst.aws.Queue"
-      "url": string
-    }
-    "DocumentProcessingQueueDLQ": {
-      "type": "sst.aws.Queue"
-      "url": string
-    }
-    "FoodToolsRouter": {
-      "type": "sst.aws.Router"
-      "url": string
-    }
-    "FoodToolsWeb": {
-      "type": "sst.aws.Nextjs"
-      "url": string
-    }
-    "OPENAI_API_KEY": {
-      "type": "sst.sst.Secret"
-      "value": string
-    }
-    "RESEND_API_KEY": {
-      "type": "sst.sst.Secret"
-      "value": string
-    }
-    "ServiceDocumentsBucket": {
-      "name": string
-      "type": "sst.aws.Bucket"
-    }
-  }
+	export interface Resource {
+		BETTER_AUTH_SECRET: {
+			type: "sst.sst.Secret";
+			value: string;
+		};
+		DB_URL: {
+			type: "sst.sst.Secret";
+			value: string;
+		};
+		DocumentProcessingQueue: {
+			type: "sst.aws.Queue";
+			url: string;
+		};
+		DocumentProcessingQueueDLQ: {
+			type: "sst.aws.Queue";
+			url: string;
+		};
+		FoodToolsRouter: {
+			type: "sst.aws.Router";
+			url: string;
+		};
+		FoodToolsWeb: {
+			type: "sst.aws.Nextjs";
+			url: string;
+		};
+		OPENAI_API_KEY: {
+			type: "sst.sst.Secret";
+			value: string;
+		};
+		RESEND_API_KEY: {
+			type: "sst.sst.Secret";
+			value: string;
+		};
+		ServiceDocumentsBucket: {
+			name: string;
+			type: "sst.aws.Bucket";
+		};
+	}
 }
 /// <reference path="sst-env.d.ts" />
 
-import "sst"
-export {}
+import "sst";

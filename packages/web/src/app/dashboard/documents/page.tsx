@@ -1,5 +1,5 @@
-import { DocumentUpload } from "./components/DocumentUpload";
 import { DocumentList } from "./components/DocumentList";
+import { DocumentUpload } from "./components/DocumentUpload";
 
 export default function DocumentsPage() {
 	return (

@@ -1,4 +1,8 @@
-import { GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import {
+	GetObjectCommand,
+	PutObjectCommand,
+	S3Client,
+} from "@aws-sdk/client-s3";
 import { SendMessageCommand, SQSClient } from "@aws-sdk/client-sqs";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import type { Context } from "@foodtools/core-web/src/trpc/context";
@@ -24,7 +28,9 @@ function getQueueUrl() {
 		const fallback = process.env.QUEUE_URL || "";
 		console.log("Using fallback queue URL:", fallback);
 		if (!fallback) {
-			throw new Error("Queue URL not available - DocumentProcessingQueue not linked");
+			throw new Error(
+				"Queue URL not available - DocumentProcessingQueue not linked",
+			);
 		}
 		return fallback;
 	}
@@ -101,7 +107,9 @@ export async function initiateUpload(
  */
 export async function initiateUploadBatch(
 	ctx: ProtectedContext,
-	input: { files: Array<{ fileName: string; fileSize: number; mimeType: string }> },
+	input: {
+		files: Array<{ fileName: string; fileSize: number; mimeType: string }>;
+	},
 ) {
 	const userId = ctx.session.user.id;
 	const bucketName = getBucketName();

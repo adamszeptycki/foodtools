@@ -1,14 +1,13 @@
 {
-  "extends": "@tsconfig/node22/tsconfig.json",
-  "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "baseUrl": "./",
-    "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+	"extends": "@tsconfig/node22/tsconfig.json",
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"baseUrl": "./",
+		"strict": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }
-

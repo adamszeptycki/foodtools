@@ -1,6 +1,10 @@
 import { getDb } from "@foodtools/core/src/sql";
 import type { Organization, User } from "@foodtools/core/src/sql/schema/auth";
-import { members, organizations, users } from "@foodtools/core/src/sql/schema/auth";
+import {
+	members,
+	organizations,
+	users,
+} from "@foodtools/core/src/sql/schema/auth";
 import { eq } from "drizzle-orm";
 
 // Type definition for getUserWithOrganizations return value

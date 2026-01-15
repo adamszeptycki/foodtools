@@ -1,9 +1,6 @@
 import { getDb } from "@foodtools/core/src/sql";
-import {
-	serviceDocuments,
-	machineFixes,
-} from "@foodtools/core/src/sql/schema";
-import { eq, desc, sql, and } from "drizzle-orm";
+import { machineFixes, serviceDocuments } from "@foodtools/core/src/sql/schema";
+import { and, desc, eq, sql } from "drizzle-orm";
 
 /**
  * Get a service document by ID
@@ -32,7 +29,10 @@ export async function getDocumentByS3Key(s3Key: string) {
 /**
  * Get a service document by S3 key and bucket name
  */
-export async function getDocumentByS3KeyAndBucket(s3Key: string, s3Bucket: string) {
+export async function getDocumentByS3KeyAndBucket(
+	s3Key: string,
+	s3Bucket: string,
+) {
 	const db = getDb();
 	const [doc] = await db
 		.select()
@@ -40,8 +40,8 @@ export async function getDocumentByS3KeyAndBucket(s3Key: string, s3Bucket: strin
 		.where(
 			and(
 				eq(serviceDocuments.s3Key, s3Key),
-				eq(serviceDocuments.s3Bucket, s3Bucket)
-			)
+				eq(serviceDocuments.s3Bucket, s3Bucket),
+			),
 		);
 	return doc;
 }
@@ -146,7 +146,10 @@ export async function listAllFixes(
 
 	// Build where conditions
 	const whereConditions = machineType
-		? and(eq(machineFixes.userId, userId), eq(machineFixes.machineType, machineType))
+		? and(
+				eq(machineFixes.userId, userId),
+				eq(machineFixes.machineType, machineType),
+			)
 		: eq(machineFixes.userId, userId);
 
 	// Build and execute query with optional limit

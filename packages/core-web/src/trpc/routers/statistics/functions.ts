@@ -1,11 +1,11 @@
-import type { Context } from "@foodtools/core-web/src/trpc/context";
 import {
 	getMachineStatistics,
 	getMachineSummary,
-	getPartsForMachine,
 	getPartStatistics,
+	getPartsForMachine,
 	getPartsSummary,
 } from "@foodtools/core/src/sql/queries/service-documents/statistics";
+import type { Context } from "@foodtools/core-web/src/trpc/context";
 
 type ProtectedContextWithOrganization = Context & {
 	session: NonNullable<Context["session"]>;
@@ -20,7 +20,9 @@ type ProtectedContextWithOrganization = Context & {
 /**
  * Get user IDs for all members in the organization
  */
-function getOrganizationMemberIds(ctx: ProtectedContextWithOrganization): string[] {
+function getOrganizationMemberIds(
+	ctx: ProtectedContextWithOrganization,
+): string[] {
 	const members = ctx.organization?.members ?? [];
 
 	if (members.length === 0) {

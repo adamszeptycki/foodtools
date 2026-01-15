@@ -1,4 +1,4 @@
-import { type NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 /**
  * Check if the origin is a localhost origin
@@ -23,8 +23,14 @@ export function addCorsHeaders(response: Response, origin: string): Response {
 	if (isLocalhostOrigin(origin)) {
 		const newResponse = new Response(response.body, response);
 		newResponse.headers.set("Access-Control-Allow-Origin", origin);
-		newResponse.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-		newResponse.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization, Cookie, trpc-accept");
+		newResponse.headers.set(
+			"Access-Control-Allow-Methods",
+			"GET, POST, OPTIONS",
+		);
+		newResponse.headers.set(
+			"Access-Control-Allow-Headers",
+			"Content-Type, Authorization, Cookie, trpc-accept",
+		);
 		newResponse.headers.set("Access-Control-Allow-Credentials", "true");
 		return newResponse;
 	}
@@ -41,9 +47,11 @@ export function createCorsOptionsResponse(origin: string): NextResponse {
 	if (isLocalhostOrigin(origin)) {
 		response.headers.set("Access-Control-Allow-Origin", origin);
 		response.headers.set("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-		response.headers.set("Access-Control-Allow-Headers", "Content-Type, Authorization, Cookie, trpc-accept");
+		response.headers.set(
+			"Access-Control-Allow-Headers",
+			"Content-Type, Authorization, Cookie, trpc-accept",
+		);
 		response.headers.set("Access-Control-Allow-Credentials", "true");
 	}
 	return response;
 }
-

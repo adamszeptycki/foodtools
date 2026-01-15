@@ -1,45 +1,46 @@
 {
-  "name": "@foodtools/core",
-  "type": "module",
-  "version": "0.0.0",
-  "scripts": {
-    "test": "vitest",
-    "typecheck": "tsc --noEmit --strict",
-    "db:migrate:prod": "sst shell --stage prod drizzle-kit migrate",
-    "db:nuke:up": "pnpm db:nuke && pnpm db:up",
-    "db:nuke:up:migrate": "pnpm db:nuke && pnpm db:up && pnpm db:migrate:local",
-    "db:nuke": "docker-compose down --volumes --remove-orphans",
-    "db:up": "docker-compose up -d && sleep 3 && docker-compose exec -T foodtools-db createdb -U postgres foodtools",
-    "db:migrate:local": "dotenvx run -f .env.dev -- drizzle-kit migrate",
-    "db:generate:migrations": "dotenvx run -f .env.dev -- drizzle-kit generate"
-  },
-  "exports": {
-    "./*": [
-      "./src/*/index.ts",
-      "./src/*.ts"
-    ]
-  },
-  "dependencies": {
-    "@aws-sdk/client-s3": "^3.700.0",
-    "@aws-sdk/client-sqs": "^3.700.0",
-    "@aws-sdk/s3-request-presigner": "^3.700.0",
-    "better-auth": "^1.2.12",
-    "deepcopy-esm": "^2.1.1",
-    "drizzle-orm": "^0.44.2",
-    "drizzle-zod": "^0.8.2",
-    "openai": "^6.16.0",
-    "pg": "^8.12.0",
-    "unpdf": "^0.12.1",
-    "zod": "^4.1.12"
-  },
-  "devDependencies": {
-    "@electric-sql/pglite": "^0.3.15",
-    "@types/aws-lambda": "^8.10.145",
-    "@types/pg": "^8.11.6",
-    "drizzle-kit": "^0.31.4",
-    "fishery": "^2.4.0",
-    "typescript": "^5.6.2",
-    "uuid": "^13.0.0",
-    "vitest": "^3.2.4"
-  }
+	"name": "@foodtools/core",
+	"type": "module",
+	"version": "0.0.0",
+	"scripts": {
+		"test": "vitest",
+		"typecheck": "tsc --noEmit --strict",
+		"db:migrate:prod": "sst shell --stage prod drizzle-kit migrate",
+		"db:nuke:up": "pnpm db:nuke && pnpm db:up",
+		"db:nuke:up:migrate": "pnpm db:nuke && pnpm db:up && pnpm db:migrate:local",
+		"db:nuke": "docker-compose down --volumes --remove-orphans",
+		"db:up": "docker-compose up -d && sleep 3 && docker-compose exec -T foodtools-db createdb -U postgres foodtools",
+		"db:migrate:local": "dotenvx run -f .env.dev -- drizzle-kit migrate",
+		"db:generate:migrations": "dotenvx run -f .env.dev -- drizzle-kit generate"
+	},
+	"exports": {
+		"./*": [
+			"./src/*/index.ts",
+			"./src/*.ts"
+		]
+	},
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.700.0",
+		"@aws-sdk/client-sqs": "^3.700.0",
+		"@aws-sdk/s3-request-presigner": "^3.700.0",
+		"better-auth": "^1.2.12",
+		"deepcopy-esm": "^2.1.1",
+		"drizzle-orm": "^0.44.2",
+		"drizzle-zod": "^0.8.2",
+		"openai": "^6.16.0",
+		"pg": "^8.12.0",
+		"unpdf": "^0.12.1",
+		"zod": "^4.1.12"
+	},
+	"devDependencies": {
+		"@electric-sql/pglite": "^0.3.15",
+		"@types/aws-lambda": "^8.10.145",
+		"@types/pg": "^8.11.6",
+		"@types/uuid": "^11.0.0",
+		"drizzle-kit": "^0.31.4",
+		"fishery": "^2.4.0",
+		"typescript": "^5.6.2",
+		"uuid": "^13.0.0",
+		"vitest": "^3.2.4"
+	}
 }

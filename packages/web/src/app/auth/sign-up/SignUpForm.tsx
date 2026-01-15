@@ -7,7 +7,10 @@ interface SignUpFormProps {
 	invitationId: string;
 }
 
-export default function SignUpForm({ defaultEmail, invitationId }: SignUpFormProps) {
+export default function SignUpForm({
+	defaultEmail,
+	invitationId,
+}: SignUpFormProps) {
 	const router = useRouter();
 	const [email, setEmail] = useState(defaultEmail);
 	const [password, setPassword] = useState("");

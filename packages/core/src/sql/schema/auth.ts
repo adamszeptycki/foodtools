@@ -1,7 +1,7 @@
 import { defaultFields, timestamps } from "@foodtools/core/src/sql/utils";
 import { boolean, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
-import { role, roles } from "./roles";
+import { role } from "./roles";
 
 export const users = pgTable("user", {
 	...defaultFields,
@@ -51,9 +51,12 @@ export const sessions = pgTable("session", {
 		.notNull()
 		.references(() => users.id, { onDelete: "cascade" }),
 	impersonatedBy: text("impersonated_by"),
-	activeOrganizationId: uuid("active_organization_id").references(() => organizations.id, {
-		onDelete: "set null",
-	}),
+	activeOrganizationId: uuid("active_organization_id").references(
+		() => organizations.id,
+		{
+			onDelete: "set null",
+		},
+	),
 });
 
 export const verifications = pgTable("verification", {

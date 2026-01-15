@@ -1,6 +1,10 @@
 import { getDb } from "@foodtools/core/src/sql";
 import type { Role } from "@foodtools/core/src/sql/schema";
-import { members, type Organization, organizations } from "@foodtools/core/src/sql/schema/auth";
+import {
+	members,
+	type Organization,
+	organizations,
+} from "@foodtools/core/src/sql/schema/auth";
 import { and, eq } from "drizzle-orm";
 
 export type InsertOrganization = typeof organizations.$inferInsert;

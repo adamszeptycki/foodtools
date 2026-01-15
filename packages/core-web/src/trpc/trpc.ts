@@ -63,86 +63,93 @@ const enforceUserIsAuthed = t.middleware(({ ctx, next }) => {
 });
 
 /** Reusable middleware that enforces users are logged in and loads their organization information. */
-const enforceUserIsAuthedWithOrganization = t.middleware(async ({ ctx, next }) => {
-	if (!ctx.session?.user) {
-		throw new TRPCError({ code: "UNAUTHORIZED" });
-	}
+const enforceUserIsAuthedWithOrganization = t.middleware(
+	async ({ ctx, next }) => {
+		if (!ctx.session?.user) {
+			throw new TRPCError({ code: "UNAUTHORIZED" });
+		}
 
-	// Get the active organization using Better Auth's session data
-	// Better Auth stores activeOrganizationId in the session when organization plugin is used
-	const activeOrganizationId = ctx.session.session.activeOrganizationId;
+		// Get the active organization using Better Auth's session data
+		// Better Auth stores activeOrganizationId in the session when organization plugin is used
+		const activeOrganizationId = ctx.session.session.activeOrganizationId;
 
-	if (!activeOrganizationId) {
-		throw new TRPCError({
-			code: "UNAUTHORIZED",
-			message: "User does not have an active organization"
+		if (!activeOrganizationId) {
+			throw new TRPCError({
+				code: "UNAUTHORIZED",
+				message: "User does not have an active organization",
+			});
+		}
+
+		// Get the organization details using Better Auth API
+		const organizationResult = await auth.api.getFullOrganization({
+			headers: ctx.headers,
+			query: {
+				organizationId: activeOrganizationId,
+			},
 		});
-	}
 
-	// Get the organization details using Better Auth API
-	const organizationResult = await auth.api.getFullOrganization({
-		headers: ctx.headers,
-		query: {
-			organizationId: activeOrganizationId,
-		},
-	});
+		if (!organizationResult) {
+			throw new TRPCError({
+				code: "NOT_FOUND",
+				message: "Organization not found",
+			});
+		}
 
-	if (!organizationResult) {
-		throw new TRPCError({
-			code: "NOT_FOUND",
-			message: "Organization not found"
+		return next({
+			ctx: {
+				...ctx,
+				// infers the `session` as non-nullable and adds organization
+				session: { ...ctx.session, user: ctx.session.user },
+				organization: organizationResult,
+			},
 		});
-	}
-
-	return next({
-		ctx: {
-			...ctx,
-			// infers the `session` as non-nullable and adds organization
-			session: { ...ctx.session, user: ctx.session.user },
-			organization: organizationResult,
-		},
-	});
-});
+	},
+);
 
 /** Reusable middleware that enforces users are logged in and optionally loads their organization information. */
-const enforceUserIsAuthedWithOptionalOrganization = t.middleware(async ({ ctx, next }) => {
-	if (!ctx.session?.user) {
-		throw new TRPCError({ code: "UNAUTHORIZED" });
-	}
-
-	// Attempt to load organization information, but don't fail if user has no organization
-	let organization: any = null;
-	try {
-		const activeOrganizationId = (ctx.session as any).activeOrganizationId;
-		if (activeOrganizationId) {
-			const organizationResult = await auth.api.getFullOrganization({
-				headers: ctx.headers,
-				query: {
-					organizationId: activeOrganizationId,
-				},
-			});
-			organization = organizationResult || null;
+const enforceUserIsAuthedWithOptionalOrganization = t.middleware(
+	async ({ ctx, next }) => {
+		if (!ctx.session?.user) {
+			throw new TRPCError({ code: "UNAUTHORIZED" });
 		}
-		if (!organization) {
-			const organizations = await auth.api.listOrganizations({
-				headers: ctx.headers,
-			});
-			organization = organizations[0] || null;
-		}
-	} catch (error) {
-		// User might not have an organization yet, which is okay for some procedures
-		console.warn(`Could not load organization for user ${ctx.session.user.id}:`, error);
-	}
 
-	return next({
-		ctx: {
-			...ctx,
-			// infers the `session` as non-nullable and adds optional organization
-			session: { ...ctx.session, user: ctx.session.user },
-			organization,
-		},
-	});
-});
+		// Attempt to load organization information, but don't fail if user has no organization
+		let organization: any = null;
+		try {
+			const activeOrganizationId = (ctx.session as any).activeOrganizationId;
+			if (activeOrganizationId) {
+				const organizationResult = await auth.api.getFullOrganization({
+					headers: ctx.headers,
+					query: {
+						organizationId: activeOrganizationId,
+					},
+				});
+				organization = organizationResult || null;
+			}
+			if (!organization) {
+				const organizations = await auth.api.listOrganizations({
+					headers: ctx.headers,
+				});
+				organization = organizations[0] || null;
+			}
+		} catch (error) {
+			// User might not have an organization yet, which is okay for some procedures
+			console.warn(
+				`Could not load organization for user ${ctx.session.user.id}:`,
+				error,
+			);
+		}
+
+		return next({
+			ctx: {
+				...ctx,
+				// infers the `session` as non-nullable and adds optional organization
+				session: { ...ctx.session, user: ctx.session.user },
+				organization,
+			},
+		});
+	},
+);
 
 /**
  * Protected (authenticated) procedure
@@ -156,20 +163,24 @@ export const protectedProcedure = t.procedure.use(enforceUserIsAuthed);
 
 /**
  * Protected procedure with organization
- * 
+ *
  * Use this for procedures that require the user to be authenticated and have an active organization.
  * It guarantees `ctx.session.user` and `ctx.organization` are not null.
  */
-export const protectedProcedureWithOrganization = t.procedure.use(enforceUserIsAuthedWithOrganization);
+export const protectedProcedureWithOrganization = t.procedure.use(
+	enforceUserIsAuthedWithOrganization,
+);
 
 /**
  * Protected procedure with optional organization
- * 
+ *
  * Use this for procedures that require the user to be authenticated but organization is optional.
  * It guarantees `ctx.session.user` is not null, but `ctx.organization` might be null.
  * Useful for onboarding flows where users might not have created an organization yet.
  */
-export const protectedProcedureWithOptionalOrganization = t.procedure.use(enforceUserIsAuthedWithOptionalOrganization);
+export const protectedProcedureWithOptionalOrganization = t.procedure.use(
+	enforceUserIsAuthedWithOptionalOrganization,
+);
 
 /** Reusable middleware that enforces users are admin or owner in their organization */
 const enforceUserIsAdmin = t.middleware(async ({ ctx, next }) => {
@@ -182,7 +193,7 @@ const enforceUserIsAdmin = t.middleware(async ({ ctx, next }) => {
 	if (!activeOrganizationId) {
 		throw new TRPCError({
 			code: "UNAUTHORIZED",
-			message: "User does not have an active organization"
+			message: "User does not have an active organization",
 		});
 	}
 
@@ -197,19 +208,22 @@ const enforceUserIsAdmin = t.middleware(async ({ ctx, next }) => {
 	if (!organizationResult) {
 		throw new TRPCError({
 			code: "NOT_FOUND",
-			message: "Organization not found"
+			message: "Organization not found",
 		});
 	}
 
 	// Check if user is admin or owner
 	const userMember = organizationResult.members.find(
-		(member) => member.userId === ctx.session?.user.id
+		(member) => member.userId === ctx.session?.user.id,
 	);
 
-	if (!userMember || (userMember.role !== "admin" && userMember.role !== "owner")) {
+	if (
+		!userMember ||
+		(userMember.role !== "admin" && userMember.role !== "owner")
+	) {
 		throw new TRPCError({
 			code: "FORBIDDEN",
-			message: "User must be an admin or owner to access this resource"
+			message: "User must be an admin or owner to access this resource",
 		});
 	}
 
@@ -224,7 +238,7 @@ const enforceUserIsAdmin = t.middleware(async ({ ctx, next }) => {
 
 /**
  * Protected procedure with admin access
- * 
+ *
  * Use this for procedures that require the user to be authenticated and have admin or owner role.
  * It guarantees `ctx.session.user` and `ctx.organization` are not null, and user is admin/owner.
  */
@@ -241,7 +255,7 @@ const enforceUserIsSuperadmin = t.middleware(async ({ ctx, next }) => {
 	if (userRole !== "admin") {
 		throw new TRPCError({
 			code: "FORBIDDEN",
-			message: "Only superadmins can access this resource"
+			message: "Only superadmins can access this resource",
 		});
 	}
 
@@ -250,7 +264,7 @@ const enforceUserIsSuperadmin = t.middleware(async ({ ctx, next }) => {
 	if (!activeOrganizationId) {
 		throw new TRPCError({
 			code: "UNAUTHORIZED",
-			message: "User does not have an active organization"
+			message: "User does not have an active organization",
 		});
 	}
 
@@ -265,7 +279,7 @@ const enforceUserIsSuperadmin = t.middleware(async ({ ctx, next }) => {
 	if (!organizationResult) {
 		throw new TRPCError({
 			code: "NOT_FOUND",
-			message: "Organization not found"
+			message: "Organization not found",
 		});
 	}
 
@@ -280,8 +294,10 @@ const enforceUserIsSuperadmin = t.middleware(async ({ ctx, next }) => {
 
 /**
  * Protected procedure with superadmin access
- * 
+ *
  * Use this for procedures that require the user to be a superadmin (global admin role).
  * It guarantees `ctx.session.user` and `ctx.organization` are not null, and user has global admin role.
  */
-export const protectedProcedureWithSuperadmin = t.procedure.use(enforceUserIsSuperadmin);
+export const protectedProcedureWithSuperadmin = t.procedure.use(
+	enforceUserIsSuperadmin,
+);

@@ -1,9 +1,9 @@
 import type { inferRouterOutputs } from "@trpc/server";
 import { createTRPCRouter } from "../trpc";
 import { organizationRouter } from "./organization/router";
-import { userRouter } from "./user/router";
 import { serviceDocumentsRouter } from "./service-documents/router";
 import { statisticsRouter } from "./statistics/router";
+import { userRouter } from "./user/router";
 /**
  * This is the primary router for your server.
  *

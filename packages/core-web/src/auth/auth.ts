@@ -1,18 +1,17 @@
 import { getDb } from "@foodtools/core/src/sql";
-	import {
-		accounts,
-		invitations,
-		members,
-		organizations,
-		sessions,
-		users,
-		verifications,
-	} from "@foodtools/core/src/sql/schema";
+import {
+	accounts,
+	invitations,
+	members,
+	organizations,
+	sessions,
+	users,
+	verifications,
+} from "@foodtools/core/src/sql/schema";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { nextCookies } from "better-auth/next-js";
-import { organization, jwt } from "better-auth/plugins";
-import { admin as adminPlugin } from "better-auth/plugins"
+import { admin as adminPlugin, organization } from "better-auth/plugins";
 import { sendOrganizationInvitation } from "./invitation/email";
 import { ac, admin, member, owner, viewer } from "./organization";
 
@@ -29,10 +28,10 @@ export const auth = betterAuth({
 		cookiePrefix: "kensaku",
 		// becuase we need api for Electron APP
 		defaultCookieAttributes: {
-			sameSite: "none", 
+			sameSite: "none",
 			secure: true,
 			partitioned: true,
-		}
+		},
 	},
 	user: {
 		fields: {
@@ -80,7 +79,7 @@ export const auth = betterAuth({
 		adminPlugin(),
 		organization({
 			async sendInvitationEmail(data: any) {
-				const baseUrl = process.env.BETTER_AUTH_URL || "https://last10.ai"
+				const baseUrl = process.env.BETTER_AUTH_URL || "https://last10.ai";
 				await sendOrganizationInvitation({
 					recipientEmail: data.email,
 					organizationName: data.organization.name,
@@ -99,7 +98,7 @@ export const auth = betterAuth({
 				owner,
 				viewer,
 			},
-		})
+		}),
 	],
 	trustedOrigins: [
 		"http://localhost:*",
@@ -110,12 +109,10 @@ export const auth = betterAuth({
 		"https://lucidiant.ai",
 		"https://last10.ai",
 		"chrome-extension://ifnfopfpdoodpecnlmfjkciohkdblmig",
-		"app://localhost",  // Electron app origin
-		"file://",          // Electron file protocol
+		"app://localhost", // Electron app origin
+		"file://", // Electron file protocol
 	],
- });
-
-
+});
 
 export type Session = typeof auth.$Infer.Session;
 export type AuthUserType = Session["user"];

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import { useDropzone } from "react-dropzone";
 import { trpc } from "@foodtools/core-web/src/trpc/client";
+import { useCallback, useState } from "react";
+import { useDropzone } from "react-dropzone";
 
 interface QueuedFile {
 	file: File;
@@ -68,10 +68,10 @@ export function DocumentUpload() {
 	const updateFileStatus = (
 		id: string,
 		status: QueuedFile["status"],
-		error?: string
+		error?: string,
 	) => {
 		setFileQueue((prev) =>
-			prev.map((f) => (f.id === id ? { ...f, status, error } : f))
+			prev.map((f) => (f.id === id ? { ...f, status, error } : f)),
 		);
 	};
 
@@ -93,7 +93,7 @@ export function DocumentUpload() {
 
 			// Create a map of fileName to upload info for easy lookup
 			const uploadInfoMap = new Map(
-				uploadInfos.map((info) => [info.fileName, info])
+				uploadInfos.map((info) => [info.fileName, info]),
 			);
 
 			// Upload all files to S3 in parallel
@@ -126,7 +126,7 @@ export function DocumentUpload() {
 					updateFileStatus(
 						queuedFile.id,
 						"failed",
-						err instanceof Error ? err.message : "Upload failed"
+						err instanceof Error ? err.message : "Upload failed",
 					);
 				}
 			});
@@ -138,7 +138,7 @@ export function DocumentUpload() {
 				updateFileStatus(
 					queuedFile.id,
 					"failed",
-					err instanceof Error ? err.message : "Failed to initiate upload"
+					err instanceof Error ? err.message : "Failed to initiate upload",
 				);
 			});
 		}

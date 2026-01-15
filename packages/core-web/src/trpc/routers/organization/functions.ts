@@ -1,9 +1,9 @@
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import { updateOrganization as updateOrganizationMutation } from "@foodtools/core/src/sql/queries/organization/mutations";
+import type { Organization } from "@foodtools/core/src/sql/schema/auth";
 import { auth } from "@foodtools/core-web/src/auth/auth";
 import type { Context } from "@foodtools/core-web/src/trpc/context";
-import type { Organization } from "@foodtools/core/src/sql/schema/auth";
-import { updateOrganization as updateOrganizationMutation } from "@foodtools/core/src/sql/queries/organization/mutations";
 import { TRPCError } from "@trpc/server";
 import { Resource } from "sst";
 import type { CreateTenantArgs } from "./schema";
@@ -20,13 +20,13 @@ function getBucketName() {
 
 type Role = "member" | "admin" | "owner" | "viewer";
 type ProtectedContext = Context & {
-	session: { user: NonNullable<Context['session']>['user'] }
+	session: { user: NonNullable<Context["session"]>["user"] };
 };
 type PublicContext = Context;
 
 export async function setCurrentOrganization(
 	ctx: ProtectedContext,
-	input: { organizationId: string }
+	input: { organizationId: string },
 ) {
 	const data = await auth.api.setActiveOrganization({
 		body: { organizationId: input.organizationId },
@@ -97,7 +97,7 @@ export async function inviteMember(
 
 export async function cancelInvitation(
 	ctx: ProtectedContext,
-	input: { invitationId: string }
+	input: { invitationId: string },
 ) {
 	return auth.api.cancelInvitation({
 		body: { invitationId: input.invitationId },
@@ -107,7 +107,7 @@ export async function cancelInvitation(
 
 export async function acceptInvitation(
 	ctx: ProtectedContext,
-	input: { invitationId: string }
+	input: { invitationId: string },
 ) {
 	const result = await auth.api.acceptInvitation({
 		body: { invitationId: input.invitationId },
@@ -117,8 +117,8 @@ export async function acceptInvitation(
 }
 
 export async function rejectInvitation(
-	ctx: ProtectedContext,
-	input: { invitationId: string }
+	_ctx: ProtectedContext,
+	input: { invitationId: string },
 ) {
 	return await auth.api.rejectInvitation({
 		body: { invitationId: input.invitationId },
@@ -127,19 +127,22 @@ export async function rejectInvitation(
 
 export async function getInvitation(
 	_ctx: PublicContext,
-	input: { invitationId: string; email: string }
+	_input: { invitationId: string; email: string },
 ) {
 	return null;
 }
 
 export async function listInvitations(
-	ctx: ProtectedContext,
-	input: { status?: "pending" | "accepted" | "rejected" | "cancelled" }
+	_ctx: ProtectedContext,
+	_input: { status?: "pending" | "accepted" | "rejected" | "cancelled" },
 ) {
 	return [];
 }
 
-export async function listMembers(ctx: ProtectedContext, input: { search?: string|null }) {
+export async function listMembers(
+	ctx: ProtectedContext,
+	input: { search?: string | null },
+) {
 	const activeOrg = await auth.api.getFullOrganization({
 		headers: ctx.headers,
 	});
@@ -152,15 +155,16 @@ export async function listMembers(ctx: ProtectedContext, input: { search?: strin
 	const membersList = (activeOrg as any).members ?? [];
 	if (!input.search) return membersList;
 	const term = input.search.toLowerCase();
-	return membersList.filter((m: any) =>
-		(m.user?.name ?? "").toLowerCase().includes(term) ||
-		(m.user?.email ?? "").toLowerCase().includes(term),
+	return membersList.filter(
+		(m: any) =>
+			(m.user?.name ?? "").toLowerCase().includes(term) ||
+			(m.user?.email ?? "").toLowerCase().includes(term),
 	);
 }
 
 export async function checkDomainAvailability(
 	_ctx: ProtectedContext,
-	input: { domain: string }
+	input: { domain: string },
 ) {
 	const domain = input.domain.trim();
 	if (domain === "" || domain.includes(".")) {
@@ -169,7 +173,10 @@ export async function checkDomainAvailability(
 	return { isAvailable: true };
 }
 
-export async function createEmptyOrGetCurrent(ctx: ProtectedContext, input: { tenantName: string }) {
+export async function createEmptyOrGetCurrent(
+	ctx: ProtectedContext,
+	input: { tenantName: string },
+) {
 	const activeOrg = await auth.api.getFullOrganization({
 		headers: ctx.headers,
 	});
@@ -199,7 +206,7 @@ export async function createEmptyOrGetCurrent(ctx: ProtectedContext, input: { te
 
 export async function createOrganization(
 	ctx: ProtectedContext,
-	input: CreateTenantArgs
+	input: CreateTenantArgs,
 ) {
 	const org = await auth.api.createOrganization({
 		body: {
@@ -225,7 +232,9 @@ export async function createOrganization(
 	return org as unknown as Organization;
 }
 
-export async function updateOrganization(input: Partial<CreateTenantArgs> & { id: string }) {
+export async function updateOrganization(
+	input: Partial<CreateTenantArgs> & { id: string },
+) {
 	return updateOrganizationMutation(input.id, {
 		name: input.name,
 		domain: input.domain,

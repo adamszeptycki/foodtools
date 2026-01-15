@@ -2,8 +2,13 @@ import {
 	protectedProcedureWithOrganization,
 	router,
 } from "@foodtools/core-web/src/trpc/trpc";
-import { getMachineStats, getPartStats, getDashboardStats, getMachineParts } from "./functions";
-import { getPartStatsSchema, getMachinePartsSchema } from "./schema";
+import {
+	getDashboardStats,
+	getMachineParts,
+	getMachineStats,
+	getPartStats,
+} from "./functions";
+import { getMachinePartsSchema, getPartStatsSchema } from "./schema";
 
 export const statisticsRouter = router({
 	/**

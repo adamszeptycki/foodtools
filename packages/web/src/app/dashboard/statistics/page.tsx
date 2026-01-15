@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { StatsSummary } from "./components/StatsSummary";
 import { MachineStatistics } from "./components/MachineStatistics";
 import { PartStatistics } from "./components/PartStatistics";
+import { StatsSummary } from "./components/StatsSummary";
 
 export default function StatisticsPage() {
 	const [activeTab, setActiveTab] = useState<"machines" | "parts">("machines");

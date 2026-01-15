@@ -1,37 +1,37 @@
 {
-  "name": "foodtools",
-  "productName": "FoodTools",
-  "version": "0.0.0",
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "dev": "pnpm dev:adam",
-    "deploy:prod": "dotenvx run -f .env.prod -- sst deploy --stage prod",
-    "dev:adam": "dotenvx run -f .env.dev -- sst dev --stage adam",
-    "typecheck": "pnpm -r run typecheck",
-    "test": "pnpm -r run test",
-    "db:migrate:prod": "pnpm --filter @foodtools/core db:migrate:prod",
-    "db:migrate:local": "pnpm --filter @foodtools/core db:migrate:local",
-    "db:nuke:up": "pnpm --filter @foodtools/core db:nuke:up",
-    "db:generate:migrations": "pnpm --filter @foodtools/core db:generate:migrations",
-    "db:nuke:up:migrate": "pnpm --filter @foodtools/core db:nuke:up:migrate",
-    "db:nuke:up:migrate:local": "pnpm --filter @foodtools/core db:nuke:up:migrate",
-    "db:nuke": "pnpm --filter @foodtools/core db:nuke",
-    "db:up": "pnpm --filter @foodtools/core db:up"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.1.1",
-    "@tailwindcss/postcss": "^4.1.11",
-    "@tsconfig/node22": "^22",
-    "typescript": "^5",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.4",
-    "vitest-fetch-mock": "^0.4.5"
-  },
-  "dependencies": {
-    "postcss": "^8.5.6",
-    "sst": "^3",
-    "tailwindcss": "^4.1.11"
-  }
+	"name": "foodtools",
+	"productName": "FoodTools",
+	"version": "0.0.0",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"dev": "pnpm dev:adam",
+		"deploy:prod": "dotenvx run -f .env.prod -- sst deploy --stage prod",
+		"dev:adam": "dotenvx run -f .env.dev -- sst dev --stage adam",
+		"typecheck": "pnpm -r run typecheck",
+		"test": "pnpm -r run test",
+		"db:migrate:prod": "pnpm --filter @foodtools/core db:migrate:prod",
+		"db:migrate:local": "pnpm --filter @foodtools/core db:migrate:local",
+		"db:nuke:up": "pnpm --filter @foodtools/core db:nuke:up",
+		"db:generate:migrations": "pnpm --filter @foodtools/core db:generate:migrations",
+		"db:nuke:up:migrate": "pnpm --filter @foodtools/core db:nuke:up:migrate",
+		"db:nuke:up:migrate:local": "pnpm --filter @foodtools/core db:nuke:up:migrate",
+		"db:nuke": "pnpm --filter @foodtools/core db:nuke",
+		"db:up": "pnpm --filter @foodtools/core db:up"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.1",
+		"@tailwindcss/postcss": "^4.1.11",
+		"@tsconfig/node22": "^22",
+		"typescript": "^5",
+		"vite-tsconfig-paths": "^5.1.4",
+		"vitest": "^3.2.4",
+		"vitest-fetch-mock": "^0.4.5"
+	},
+	"dependencies": {
+		"postcss": "^8.5.6",
+		"sst": "^3",
+		"tailwindcss": "^4.1.11"
+	}
 }

@@ -1,10 +1,13 @@
 import { Stage } from "./stages";
 
-const baseUrl = "foodtools.jetbridge.click"
+const baseUrl = "foodtools.jetbridge.click";
 export function getDomain({
 	protocol,
 	skipLocalhost,
-}: { protocol?: string; skipLocalhost?: boolean }): string {
+}: {
+	protocol?: string;
+	skipLocalhost?: boolean;
+}): string {
 	let result: string;
 	switch ($app.stage) {
 		case Stage.ADAM:
@@ -12,9 +15,9 @@ export function getDomain({
 			if (skipLocalhost) {
 				result = baseUrl;
 			} else {
-				result = "https://localhost:3000"
+				result = "https://localhost:3000";
 			}
-			break
+			break;
 		case Stage.PROD:
 			result = baseUrl;
 			break;
@@ -29,14 +32,13 @@ export function getDomain({
 
 const domain = getDomain({ skipLocalhost: true });
 
-const isProd = $app.stage === Stage.PROD
+const isProd = $app.stage === Stage.PROD;
 
 export const router = new sst.aws.Router("FoodToolsRouter", {
-	domain: isProd ? {
-		name: domain,
-			aliases: [`*.${domain}`],
-		}
+	domain: isProd
+		? {
+				name: domain,
+				aliases: [`*.${domain}`],
+			}
 		: undefined,
 });
-
-

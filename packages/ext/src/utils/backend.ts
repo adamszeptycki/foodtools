@@ -1,15 +1,15 @@
 // Backend integration utility for saving tab content
 
 export interface TabContent {
-  url: string;
-  title: string;
-  markdown: string;
+	url: string;
+	title: string;
+	markdown: string;
 }
 
 export interface SaveContentResponse {
-  success: boolean;
-  id?: string;
-  message?: string;
+	success: boolean;
+	id?: string;
+	message?: string;
 }
 
 /**
@@ -17,60 +17,63 @@ export interface SaveContentResponse {
  * TODO: Replace these with your actual backend URLs
  */
 const BACKEND_CONFIG = {
-  // Replace with your actual backend endpoint
-  saveContentEndpoint: '/api/save-content',
-  // Base URL for backend - update this for production
-  baseUrl: process.env.NODE_ENV === 'production' 
-    ? 'https://your-production-url.com' 
-    : 'https://localhost:3000',
-  // You can add more endpoints here as needed
-  // getContentEndpoint: '/api/get-content',
-  // deleteContentEndpoint: '/api/delete-content',
+	// Replace with your actual backend endpoint
+	saveContentEndpoint: "/api/save-content",
+	// Base URL for backend - update this for production
+	baseUrl:
+		process.env.NODE_ENV === "production"
+			? "https://your-production-url.com"
+			: "https://localhost:3000",
+	// You can add more endpoints here as needed
+	// getContentEndpoint: '/api/get-content',
+	// deleteContentEndpoint: '/api/delete-content',
 };
 
 /**
  * Get the backend base URL
  */
 export function getBackendUrl(): string {
-  return BACKEND_CONFIG.baseUrl;
+	return BACKEND_CONFIG.baseUrl;
 }
 
 /**
  * Call a TRPC endpoint
  */
 export async function callTrpcEndpoint<T = any>(
-  procedure: string, 
-  input: any,
-  authToken?: string
+	procedure: string,
+	input: any,
+	authToken?: string,
 ): Promise<T> {
-  const url = `${getBackendUrl()}/api/trpc/${procedure}`;
-  
-  const headers: HeadersInit = {
-    'Content-Type': 'application/json',
-  };
-  
-  if (authToken) {
-    headers['Authorization'] = `Bearer ${authToken}`;
-  }
+	const url = `${getBackendUrl()}/api/trpc/${procedure}`;
 
-  const response = await fetch(url, {
-    method: 'POST',
-    headers,
-    body: JSON.stringify({ json: input }),
-    credentials: 'include', // Include cookies for authentication
-  });
+	const headers: HeadersInit = {
+		"Content-Type": "application/json",
+	};
 
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({ message: 'Unknown error' }));
-    throw new Error(error.message || `HTTP ${response.status}`);
-  }
+	if (authToken) {
+		headers.Authorization = `Bearer ${authToken}`;
+	}
 
-  const result = await response.json();
-  if (result.error) {
-    throw new Error(result.error.message || 'Unknown error');
-  }
+	const response = await fetch(url, {
+		method: "POST",
+		headers,
+		body: JSON.stringify({ json: input }),
+		credentials: "include", // Include cookies for authentication
+	});
 
-  return result.result.data.json;
+	if (!response.ok) {
+		const error = await response
+			.json()
+			.catch(() => ({ message: "Unknown error" }));
+		throw new Error(error.message || `HTTP ${response.status}`);
+	}
+
+	const result = await response.json();
+	if (result.error) {
+		throw new Error(result.error.message || "Unknown error");
+	}
+
+	return result.result.data.json;
 }
 
 /**
@@ -78,44 +81,48 @@ export async function callTrpcEndpoint<T = any>(
  * @param content The tab content to save
  * @returns Promise with the response from the backend
  */
-export async function saveTabContent(content: TabContent): Promise<SaveContentResponse> {
-  try {
-    const payload = {
-      url: content.url,
-      title: content.title,
-      markdown: content.markdown,
-      timestamp: new Date().toISOString(),
-      source: 'chrome-extension'
-    };
+export async function saveTabContent(
+	content: TabContent,
+): Promise<SaveContentResponse> {
+	try {
+		const payload = {
+			url: content.url,
+			title: content.title,
+			markdown: content.markdown,
+			timestamp: new Date().toISOString(),
+			source: "chrome-extension",
+		};
 
-    const response = await fetch(BACKEND_CONFIG.saveContentEndpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        // TODO: Add authentication headers if needed
-        // 'Authorization': `Bearer ${getAuthToken()}`,
-      },
-      body: JSON.stringify(payload)
-    });
+		const response = await fetch(BACKEND_CONFIG.saveContentEndpoint, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				// TODO: Add authentication headers if needed
+				// 'Authorization': `Bearer ${getAuthToken()}`,
+			},
+			body: JSON.stringify(payload),
+		});
 
-    if (!response.ok) {
-      throw new Error(`Backend error: ${response.status} ${response.statusText}`);
-    }
+		if (!response.ok) {
+			throw new Error(
+				`Backend error: ${response.status} ${response.statusText}`,
+			);
+		}
 
-    const result = await response.json();
-    return {
-      success: true,
-      id: result.id,
-      message: result.message || 'Content saved successfully'
-    };
-
-  } catch (error) {
-    console.error('Failed to save content to backend:', error);
-    return {
-      success: false,
-      message: error instanceof Error ? error.message : 'Unknown error occurred'
-    };
-  }
+		const result = await response.json();
+		return {
+			success: true,
+			id: result.id,
+			message: result.message || "Content saved successfully",
+		};
+	} catch (error) {
+		console.error("Failed to save content to backend:", error);
+		return {
+			success: false,
+			message:
+				error instanceof Error ? error.message : "Unknown error occurred",
+		};
+	}
 }
 
 /**
@@ -138,4 +145,4 @@ export async function saveTabContent(content: TabContent): Promise<SaveContentRe
 
 // export async function deleteStoredContent(id: string): Promise<boolean> {
 //   // Implementation for deleting stored content
-// } 
+// }

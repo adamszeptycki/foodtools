@@ -18,19 +18,15 @@ const handler = async (req: NextRequest) => {
 		createContext: () => createContext(req),
 		onError:
 			process.env.NODE_ENV === "development"
-				? ({
-						path,
-						error,
-				  }: {
-						path?: string;
-						error: unknown;
-				  }) => {
+				? ({ path, error }: { path?: string; error: unknown }) => {
 						const message =
 							error && typeof error === "object" && "message" in error
 								? (error as { message: string }).message
 								: "Unknown error";
-						console.error(`❌ tRPC failed on ${path ?? "<no-path>"}: ${message}`);
-				  }
+						console.error(
+							`❌ tRPC failed on ${path ?? "<no-path>"}: ${message}`,
+						);
+					}
 				: undefined,
 	});
 	return result;

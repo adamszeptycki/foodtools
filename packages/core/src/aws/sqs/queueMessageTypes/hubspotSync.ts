@@ -10,5 +10,3 @@ export const HubspotSyncTaskSchema = z.object({
 });
 
 export type HubspotSyncTask = z.infer<typeof HubspotSyncTaskSchema>;
-
-

@@ -40,16 +40,26 @@ export const getFixSchema = z.object({
 
 export const initiateUploadSchema = z.object({
 	fileName: z.string().min(1).max(255),
-	fileSize: z.number().positive().max(10 * 1024 * 1024), // Max 10MB
+	fileSize: z
+		.number()
+		.positive()
+		.max(10 * 1024 * 1024), // Max 10MB
 	mimeType: z.string().regex(/^application\/pdf$/),
 });
 
 export const initiateUploadBatchSchema = z.object({
-	files: z.array(z.object({
-		fileName: z.string().min(1).max(255),
-		fileSize: z.number().positive().max(10 * 1024 * 1024), // Max 10MB
-		mimeType: z.string().regex(/^application\/pdf$/),
-	})).min(1),
+	files: z
+		.array(
+			z.object({
+				fileName: z.string().min(1).max(255),
+				fileSize: z
+					.number()
+					.positive()
+					.max(10 * 1024 * 1024), // Max 10MB
+				mimeType: z.string().regex(/^application\/pdf$/),
+			}),
+		)
+		.min(1),
 });
 
 export const reprocessDocumentSchema = z.object({

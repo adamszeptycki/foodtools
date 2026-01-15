@@ -38,34 +38,34 @@ export default function TrpcProvider({
 						process.env.NODE_ENV === "development" ||
 						(op.direction === "down" && op.result instanceof Error),
 				}),
-			splitLink({
-				condition: (op) => op.type === "subscription",
-				true: httpSubscriptionLink({
-					url: trpcUrl || getTrpcUrl(),
-					/**
-					 * @see https://trpc.io/docs/v11/data-transformers
-					 */
-					transformer: SuperJSON,
-					eventSourceOptions() {
-						return {
-							withCredentials: true,
-						};
-					},
+				splitLink({
+					condition: (op) => op.type === "subscription",
+					true: httpSubscriptionLink({
+						url: trpcUrl || getTrpcUrl(),
+						/**
+						 * @see https://trpc.io/docs/v11/data-transformers
+						 */
+						transformer: SuperJSON,
+						eventSourceOptions() {
+							return {
+								withCredentials: true,
+							};
+						},
+					}),
+					false: httpBatchStreamLink({
+						url: trpcUrl || getTrpcUrl(),
+						/**
+						 * @see https://trpc.io/docs/v11/data-transformers
+						 */
+						transformer: SuperJSON,
+						fetch(url, options) {
+							return fetch(url, {
+								...options,
+								credentials: "include",
+							});
+						},
+					}),
 				}),
-				false: httpBatchStreamLink({
-					url: trpcUrl || getTrpcUrl(),
-					/**
-					 * @see https://trpc.io/docs/v11/data-transformers
-					 */
-					transformer: SuperJSON,
-					fetch(url, options) {
-						return fetch(url, {
-							...options,
-							credentials: 'include',
-						});
-					},
-				}),
-			}),
 			],
 		}),
 	);

@@ -4,10 +4,7 @@ import { generateEmbeddings } from "@foodtools/core/src/domain/ai/generate-embed
 import { extractTextFromPDF } from "@foodtools/core/src/domain/pdf/extract-text";
 import { getDb } from "@foodtools/core/src/sql";
 import { getDocumentByS3KeyAndBucket } from "@foodtools/core/src/sql/queries/service-documents/queries";
-import {
-	machineFixes,
-	serviceDocuments,
-} from "@foodtools/core/src/sql/schema";
+import { machineFixes, serviceDocuments } from "@foodtools/core/src/sql/schema";
 import type { S3Event, SQSHandler } from "aws-lambda";
 import { eq } from "drizzle-orm";
 
@@ -99,7 +96,9 @@ export async function processDocument(documentId: string): Promise<void> {
 ${fix.problemDescription}
       `.trim();
 
-			console.log(`Generating embeddings for fix: ${fix.problemDescription.substring(0, 50)}...`);
+			console.log(
+				`Generating embeddings for fix: ${fix.problemDescription.substring(0, 50)}...`,
+			);
 
 			// Generate embedding
 			const embedding = await generateEmbeddings(searchableText);

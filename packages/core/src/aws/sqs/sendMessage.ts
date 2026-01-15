@@ -5,12 +5,22 @@ import {
 } from "@aws-sdk/client-sqs";
 import type { QueueUrls } from "@foodtools/core/src/config/resourceUrls";
 import { getResourceUrl } from "@foodtools/core/src/config/resourceUrls";
-import type { DocumentExtractionPushMessageToQueueArgs, EmbeddingsQueuePushMessageToQueueArgs, EvalQueuePushMessageToQueueArgs, GeneralSmallTaskQueuePushMessageToQueueArgs, OcrQueuePushMessageToQueueArgs } from "./queueMessageTypes";
+import type {
+	DocumentExtractionPushMessageToQueueArgs,
+	EmbeddingsQueuePushMessageToQueueArgs,
+	EvalQueuePushMessageToQueueArgs,
+	GeneralSmallTaskQueuePushMessageToQueueArgs,
+	OcrQueuePushMessageToQueueArgs,
+} from "./queueMessageTypes";
 
-type PushMessageToSQSArgs = OcrQueuePushMessageToQueueArgs | EmbeddingsQueuePushMessageToQueueArgs | GeneralSmallTaskQueuePushMessageToQueueArgs | DocumentExtractionPushMessageToQueueArgs | EvalQueuePushMessageToQueueArgs;
+type PushMessageToSQSArgs =
+	| OcrQueuePushMessageToQueueArgs
+	| EmbeddingsQueuePushMessageToQueueArgs
+	| GeneralSmallTaskQueuePushMessageToQueueArgs
+	| DocumentExtractionPushMessageToQueueArgs
+	| EvalQueuePushMessageToQueueArgs;
 
 const pushMessageToSQS = async ({ queue, message }: PushMessageToSQSArgs) => {
-
 	const sqsClient = new SQSClient({});
 	const queueUrl = getResourceUrl(queue);
 	const params = {
@@ -22,7 +32,6 @@ const pushMessageToSQS = async ({ queue, message }: PushMessageToSQSArgs) => {
 	const response = await sqsClient.send(command);
 	return response.MessageId;
 };
-
 
 type PushBatchMessageToSQSArgs = {
 	queue: QueueUrls;
@@ -51,12 +60,12 @@ const pushBatchMessageToSQS = async ({
 		};
 
 		try {
-				const command = new SendMessageBatchCommand(params);
-				const response = await sqsClient.send(command);
-				const successfulIds = (response.Successful ?? [])
-					.map((msg) => msg.MessageId)
-					.filter((id): id is string => typeof id === "string");
-				results.push(...successfulIds);
+			const command = new SendMessageBatchCommand(params);
+			const response = await sqsClient.send(command);
+			const successfulIds = (response.Successful ?? [])
+				.map((msg) => msg.MessageId)
+				.filter((id): id is string => typeof id === "string");
+			results.push(...successfulIds);
 
 			if (response.Failed?.length) {
 				console.error("Some messages failed to send:", response.Failed);

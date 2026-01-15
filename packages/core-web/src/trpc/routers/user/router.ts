@@ -17,7 +17,9 @@ export const userRouter = router({
 	/**
 	 * Mark the user as authenticated from the Electron application
 	 */
-	markAuthenticatedFromElectron: protectedProcedure.mutation(async ({ ctx }) => {
-		return markUserAuthenticatedFromElectron({ ctx });
-	}),
+	markAuthenticatedFromElectron: protectedProcedure.mutation(
+		async ({ ctx }) => {
+			return markUserAuthenticatedFromElectron({ ctx });
+		},
+	),
 });

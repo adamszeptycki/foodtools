@@ -1,9 +1,8 @@
 "use client";
 
-import type { ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { ReactNode } from "react";
 import { AuthGuard } from "@/components/AuthGuard";
 import { OrganizationSwitcher } from "@/components/OrganizationSwitcher";
 

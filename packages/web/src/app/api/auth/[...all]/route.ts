@@ -1,6 +1,6 @@
 import { auth } from "@foodtools/core-web/src/auth/auth";
 import { toNextJsHandler } from "better-auth/next-js";
-import { type NextRequest } from "next/server";
+import type { NextRequest } from "next/server";
 import { addCorsHeaders, createCorsOptionsResponse } from "@/lib/cors";
 
 const { GET: authGet, POST: authPost } = toNextJsHandler(auth);

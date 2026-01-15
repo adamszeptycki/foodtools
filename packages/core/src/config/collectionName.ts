@@ -5,9 +5,11 @@
 // };
 
 export const getTenantCollectionNameForDocumentChunks = (tenantId: string) => {
-  return `document_chunks_${tenantId}`;
+	return `document_chunks_${tenantId}`;
 };
 
-export const getTenantCollectionNameForHumanAnnotations = (tenantId: string) => {
-  return `human_annotations_${tenantId}`;
+export const getTenantCollectionNameForHumanAnnotations = (
+	tenantId: string,
+) => {
+	return `human_annotations_${tenantId}`;
 };

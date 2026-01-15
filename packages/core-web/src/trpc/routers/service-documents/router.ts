@@ -1,26 +1,26 @@
 import { protectedProcedure, router } from "@foodtools/core-web/src/trpc/trpc";
 import {
+	deleteDocument,
+	getDocument,
+	getDocumentUrl,
+	getStatusCounts,
 	initiateUpload,
 	initiateUploadBatch,
 	listDocuments,
-	getDocument,
-	deleteDocument,
 	listFixes,
-	semanticSearch,
 	reprocessDocument,
-	getDocumentUrl,
-	getStatusCounts,
+	semanticSearch,
 } from "./functions";
 import {
-	initiateUploadSchema,
-	initiateUploadBatchSchema,
-	listDocumentsSchema,
-	getDocumentSchema,
 	deleteDocumentSchema,
-	listFixesSchema,
-	semanticSearchSchema,
-	reprocessDocumentSchema,
+	getDocumentSchema,
 	getDocumentUrlSchema,
+	initiateUploadBatchSchema,
+	initiateUploadSchema,
+	listDocumentsSchema,
+	listFixesSchema,
+	reprocessDocumentSchema,
+	semanticSearchSchema,
 } from "./schema";
 
 export const serviceDocumentsRouter = router({

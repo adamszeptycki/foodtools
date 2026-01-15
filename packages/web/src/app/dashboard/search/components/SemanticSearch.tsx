@@ -57,7 +57,10 @@ export function SemanticSearch() {
 
 				<form onSubmit={handleSearch} className="space-y-4">
 					<div>
-						<label htmlFor="query" className="block text-base font-medium text-slate-300 mb-2">
+						<label
+							htmlFor="query"
+							className="block text-base font-medium text-slate-300 mb-2"
+						>
 							Describe the problem you&apos;re facing
 						</label>
 						<textarea
@@ -129,21 +132,27 @@ export function SemanticSearch() {
 											disabled={loadingDocId === result.documentId}
 											className="text-base text-slate-300 hover:text-white underline transition-colors disabled:opacity-50"
 										>
-											{loadingDocId === result.documentId ? "Loading..." : "View PDF"}
+											{loadingDocId === result.documentId
+												? "Loading..."
+												: "View PDF"}
 										</button>
 									</div>
 								</div>
 
 								<div className="space-y-4">
 									<div>
-										<span className="text-base text-slate-400 font-medium">Problem:</span>
+										<span className="text-base text-slate-400 font-medium">
+											Problem:
+										</span>
 										<p className="text-base text-slate-200 mt-1">
 											{result.problemDescription}
 										</p>
 									</div>
 
 									<div>
-										<span className="text-base text-slate-400 font-medium">Solution:</span>
+										<span className="text-base text-slate-400 font-medium">
+											Solution:
+										</span>
 										<p className="text-base text-slate-200 mt-1">
 											{result.solutionApplied}
 										</p>
@@ -151,19 +160,27 @@ export function SemanticSearch() {
 
 									{result.labourHours != null && (
 										<div>
-											<span className="text-base text-slate-400 font-medium">Labour Hours:</span>
+											<span className="text-base text-slate-400 font-medium">
+												Labour Hours:
+											</span>
 											<p className="text-base text-slate-200 mt-1">
-												{result.labourHours} {result.labourHours === 1 ? "hour" : "hours"}
+												{result.labourHours}{" "}
+												{result.labourHours === 1 ? "hour" : "hours"}
 											</p>
 										</div>
 									)}
 
 									{parts.length > 0 && (
 										<div>
-											<span className="text-base text-slate-400 font-medium">Parts Used:</span>
+											<span className="text-base text-slate-400 font-medium">
+												Parts Used:
+											</span>
 											<ul className="mt-2 space-y-1">
 												{parts.map((part, index) => (
-													<li key={index} className="text-base text-slate-200 flex items-start">
+													<li
+														key={index}
+														className="text-base text-slate-200 flex items-start"
+													>
 														<span className="text-slate-500 mr-2">•</span>
 														{part}
 													</li>

@@ -11,7 +11,11 @@ interface AuthGuardProps {
 
 export function AuthGuard({ children }: AuthGuardProps) {
 	const router = useRouter();
-	const { data: user, isLoading, error } = trpc.user.me.useQuery(undefined, {
+	const {
+		data: user,
+		isLoading,
+		error,
+	} = trpc.user.me.useQuery(undefined, {
 		retry: false,
 	});
 

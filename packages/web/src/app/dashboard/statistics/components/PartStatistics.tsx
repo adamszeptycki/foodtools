@@ -39,14 +39,15 @@ export function PartStatistics() {
 							<span className="text-white font-medium capitalize">
 								{part.partName}
 							</span>
-							
 						</div>
 						<div className="flex items-center gap-6">
-						<span className="text-sm text-slate-400">
+							<span className="text-sm text-slate-400">
 								{part.machineBreakdown.length} machine(s)
 							</span>
 							<div className="text-right">
-								<span className="text-white font-medium">{part.usageCount}</span>
+								<span className="text-white font-medium">
+									{part.usageCount}
+								</span>
 								<span className="text-slate-400 text-sm ml-1">uses</span>
 							</div>
 							<div className="text-right">

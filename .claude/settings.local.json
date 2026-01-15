@@ -1,26 +1,26 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(pnpm typecheck:*)",
-      "Bash(pnpm install:*)",
-      "Bash(tree:*)",
-      "WebSearch",
-      "Bash(pnpm add:*)",
-      "Bash(pnpm --filter @foodtools/core-web add:*)",
-      "Bash(pnpm --filter @foodtools/core db:generate:migrations:*)",
-      "Bash(pnpm --filter @foodtools/web build:*)",
-      "WebFetch(domain:foodtools.com)",
-      "Bash(pnpm --filter @foodtools/web typecheck:*)",
-      "Bash(uv --version:*)",
-      "Bash(pnpm --filter web build:*)",
-      "Bash(grep:*)",
-      "Bash(pnpm --filter web lint:*)",
-      "Bash(ls:*)",
-      "Bash(uv init:*)",
-      "Bash(uv sync:*)",
-      "Bash(uv run:*)",
-      "Bash(chmod:*)"
-    ],
-    "deny": []
-  }
+	"permissions": {
+		"allow": [
+			"Bash(pnpm typecheck:*)",
+			"Bash(pnpm install:*)",
+			"Bash(tree:*)",
+			"WebSearch",
+			"Bash(pnpm add:*)",
+			"Bash(pnpm --filter @foodtools/core-web add:*)",
+			"Bash(pnpm --filter @foodtools/core db:generate:migrations:*)",
+			"Bash(pnpm --filter @foodtools/web build:*)",
+			"WebFetch(domain:foodtools.com)",
+			"Bash(pnpm --filter @foodtools/web typecheck:*)",
+			"Bash(uv --version:*)",
+			"Bash(pnpm --filter web build:*)",
+			"Bash(grep:*)",
+			"Bash(pnpm --filter web lint:*)",
+			"Bash(ls:*)",
+			"Bash(uv init:*)",
+			"Bash(uv sync:*)",
+			"Bash(uv run:*)",
+			"Bash(chmod:*)"
+		],
+		"deny": []
+	}
 }

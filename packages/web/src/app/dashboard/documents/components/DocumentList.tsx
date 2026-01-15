@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { trpc } from "@foodtools/core-web/src/trpc/client";
 import Link from "next/link";
+import { useState } from "react";
 
 const PAGE_SIZE = 10;
 
@@ -41,10 +41,7 @@ export function DocumentList() {
 		setPage(0);
 	};
 
-	const handleReprocess = (
-		e: React.MouseEvent,
-		documentId: string,
-	) => {
+	const handleReprocess = (e: React.MouseEvent, documentId: string) => {
 		e.preventDefault();
 		e.stopPropagation();
 		reprocessMutation.mutate({ documentId });
@@ -155,7 +152,8 @@ export function DocumentList() {
 			{totalPages > 1 && (
 				<div className="flex items-center justify-between pt-2">
 					<p className="text-sm text-slate-400">
-						Showing {page * PAGE_SIZE + 1}-{Math.min((page + 1) * PAGE_SIZE, total)} of {total}
+						Showing {page * PAGE_SIZE + 1}-
+						{Math.min((page + 1) * PAGE_SIZE, total)} of {total}
 					</p>
 					<div className="flex gap-2">
 						<button

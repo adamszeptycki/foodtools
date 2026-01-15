@@ -1,6 +1,6 @@
 import type { S3Handler } from "aws-lambda";
-import { processDocument } from "./document-processor";
 import { getDocumentByS3Key } from "../sql/queries/service-documents/queries";
+import { processDocument } from "./document-processor";
 
 /**
  * S3 event handler - triggered when a file is uploaded to the documents bucket

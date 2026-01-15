@@ -99,8 +99,7 @@ Return the result as a JSON object with a "fixes" array containing the extracted
 			messages: [
 				{
 					role: "system",
-					content:
-						"You extract structured data from service documents.",
+					content: "You extract structured data from service documents.",
 				},
 				{
 					role: "user",

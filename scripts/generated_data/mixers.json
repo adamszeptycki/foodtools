@@ -1,463 +1,461 @@
 [
-  {
-    "problem": "Our big Hobart mixer just stopped working in the middle of our dinner prep. It was making this loud grinding noise for a few days, and now it won't turn on at all. The prep cook was mixing pizza dough when it just died - now we're behind on everything and my staff is stressed.",
-    "solution": "Replaced the main drive motor which had seized due to bearing failure and installed new motor control contactor that was also damaged.",
-    "parts": [
-      "SKU-MT-024789 - 5HP 3-phase mixer drive motor 1750 RPM with mounting bracket",
-      "SKU-EC-016432 - Motor control contactor 30A 3-pole with 120V coil"
-    ]
-  },
-  {
-    "problem": "The mixing bowl on our spiral mixer won't lift up anymore. Yesterday it was moving really slow, and today it's completely stuck at the bottom. My bakers can't get the dough out without making a huge mess, and we've got orders backing up.",
-    "solution": "Rebuilt the bowl lift mechanism by replacing worn lift chains and adjusting the motor drive assembly.",
-    "parts": [
-      "SKU-BL-009876 - Bowl lift chain assembly 48-inch heavy duty with master links",
-      "SKU-BG-013254 - Lift mechanism bushing set with grease fittings"
-    ]
-  },
-  {
-    "problem": "Our planetary mixer keeps changing speeds on its own - one minute it's going slow like we set it, then suddenly it's whipping everything at high speed and making a mess. The kitchen staff is afraid to use it because batter keeps flying everywhere.",
-    "solution": "Replaced the variable frequency drive controller that was experiencing internal component failures causing erratic speed control.",
-    "parts": [
-      "SKU-VF-018765 - Variable frequency drive 3HP with digital display and speed control potentiometer"
-    ]
-  },
-  {
-    "problem": "The safety guard on our mixer won't stay closed, so the machine won't start. We've been having to hold it down while someone else hits the start button, which I know isn't safe. It's slowing down our bread production and my team is getting frustrated.",
-    "solution": "Replaced the safety interlock switch and adjusted the guard latch mechanism to ensure proper engagement and safety compliance.",
-    "parts": [
-      "SKU-SI-027893 - Safety interlock switch with actuator arm and mounting hardware",
-      "SKU-GD-005432 - Guard latch assembly with spring-loaded mechanism"
-    ]
-  },
-  {
-    "problem": "The dough hook attachment keeps slipping and won't stay locked in place. During mixing, it starts wobbling and eventually falls out completely. We've ruined three batches of bread dough this week because of this.",
-    "solution": "Replaced the worn attachment hub assembly and drive coupling that had excessive wear preventing proper tool retention.",
-    "parts": [
-      "SKU-AH-031287 - Attachment hub assembly with locking collar and drive pins",
-      "SKU-DC-014569 - Drive coupling flexible joint with steel sleeve",
-      "SKU-BG-028741 - Hub bearing set with seals for 2-inch shaft"
-    ]
-  },
-  {
-    "problem": "There's this terrible screeching sound coming from inside our mixer whenever we use it. It's so loud the customers in the dining room can hear it. The sound gets worse when we're mixing heavy dough, and I'm worried something's going to break completely.",
-    "solution": "Replaced the main gearbox bearings and applied proper lubrication to eliminate noise and prevent further damage.",
-    "parts": [
-      "SKU-BG-045612 - Gearbox bearing kit with seals for planetary drive assembly",
-      "SKU-LU-002398 - Food grade gear lubricant 1-quart synthetic blend"
-    ]
-  },
-  {
-    "problem": "Our mixer starts up fine but then just stops running after a few minutes. Sometimes it works for an hour, sometimes only five minutes. The kitchen crew never knows if they'll be able to finish a batch, and it's really affecting our production schedule.",
-    "solution": "Replaced the motor start capacitor and cleaned corroded electrical connections that were causing intermittent power loss.",
-    "parts": [
-      "SKU-CP-019834 - Motor start capacitor 35\u03bcF 440VAC with mounting bracket"
-    ]
-  },
-  {
-    "problem": "The mixing bowl won't lock into position anymore - it keeps turning while the paddle is mixing, which makes everything splash out. We've been having to have someone hold the bowl steady, but that's not working for our bigger batches.",
-    "solution": "Replaced the bowl lock mechanism pins and tightened the locking cam assembly to restore proper bowl retention.",
-    "parts": [
-      "SKU-BL-036789 - Bowl lock pin assembly with spring-loaded mechanism and wear plates"
-    ]
-  },
-  {
-    "problem": "Our mixer keeps tripping the circuit breaker every time we try to start it up. It worked fine yesterday, but now as soon as we hit the power button, the whole kitchen loses electricity for a few seconds. My prep team can't get any mixing done and we're falling behind on our sauce and batter prep.",
-    "solution": "Replaced the damaged motor starter contactor that was drawing excessive current and causing electrical shorts during startup.",
-    "parts": [
-      "SKU-CT-004521 - Motor Starter Contactor 30A 3-Phase with Auxiliary Contacts",
-      "SKU-CP-002847 - Motor Run Capacitor 45\u03bcF 440V Round"
-    ]
-  },
-  {
-    "problem": "The mixer bowl tilts down really slowly now and sometimes gets stuck halfway. It used to move up and down smoothly, but now it takes forever and sometimes we have to push it manually. This is really slowing down our prep work when we need to add ingredients or clean the bowl.",
-    "solution": "Rebuilt the bowl lift mechanism by replacing worn gear teeth and installing new lubrication seals in the lift assembly.",
-    "parts": [
-      "SKU-GB-007293 - Bowl Lift Gear Assembly with Bronze Bushings",
-      "SKU-SL-001654 - Hydraulic Seal Kit for Bowl Lift Cylinder",
-      "SKU-LB-003782 - High-Temperature Gear Lubricant 1-Quart"
-    ]
-  },
-  {
-    "problem": "There's oil leaking all over the floor under our big mixer. It's getting really slippery and dangerous for my staff to walk around. The leak seems to be getting worse each day, and now there's a puddle every morning when we come in.",
-    "solution": "Replaced failed transmission seals and gaskets in the main gearbox housing to eliminate oil leakage.",
-    "parts": [
-      "SKU-GS-005849 - Transmission Main Shaft Seal Kit with O-Rings"
-    ]
-  },
-  {
-    "problem": "The mixer won't stop running when we press the stop button - we have to flip the main power switch to turn it off. This is really dangerous because the mixing paddle keeps spinning and we can't add ingredients or clean it properly. My kitchen manager is worried someone's going to get hurt.",
-    "solution": "Replaced the faulty control relay and cleaned corroded contacts in the motor control panel to restore proper stop function.",
-    "parts": [
-      "SKU-RL-008376 - Control Relay 24V AC DPDT with Socket Base",
-      "SKU-SW-004192 - Emergency Stop Button Red Mushroom Head",
-      "SKU-CC-002551 - Electrical Contact Cleaner Spray 12oz"
-    ]
-  },
-  {
-    "problem": "Our planetary mixer makes this horrible knocking sound from inside the mixing head. It's gotten so bad that we can hear it over all the other kitchen noise. The mixing still works but the sound is driving everyone crazy, and I'm afraid it's going to break down completely during our busy dinner rush.",
-    "solution": "Replaced worn planetary gear bearings and realigned the gear assembly to eliminate mechanical noise and prevent further damage.",
-    "parts": [
-      "SKU-BR-006743 - Planetary Gear Bearing Set with Grease Fittings",
-      "SKU-BH-003421 - Bearing Retainer Housing Assembly"
-    ]
-  },
-  {
-    "problem": "The mixer starts really slow and seems like it's struggling to get up to speed. Even on the highest setting, it barely moves thick dough that it used to handle easily. My bakers are having to mix smaller batches and it's taking twice as long to get our bread production done.",
-    "solution": "Diagnosed and replaced the failing variable frequency drive controller that was limiting motor power output and speed control.",
-    "parts": [
-      "SKU-VF-009284 - Variable Frequency Drive 5HP 480V with Digital Display",
-      "SKU-CB-001827 - Control Cable Assembly 20-Pin Connector"
-    ]
-  },
-  {
-    "problem": "The whisk attachment keeps coming loose and wobbling during mixing. We've tried tightening it but it still works its way loose after a few minutes. Yesterday it actually fell into a batch of meringue and we had to throw the whole thing out.",
-    "solution": "Replaced worn attachment hub drive assembly and installed new locking mechanism with proper torque specifications.",
-    "parts": [
-      "SKU-AH-007651 - Attachment Hub Drive Assembly with Locking Pin",
-      "SKU-SP-004298 - Drive Shaft Spring Washer Set",
-      "SKU-TP-002134 - Torque Pin Stainless Steel with Set Screw"
-    ]
-  },
-  {
-    "problem": "Our mixer won't turn on at all anymore, but all the lights on the control panel are working fine. We've checked that it's plugged in and the circuit breaker isn't tripped. The motor just sits there doing nothing when we press start, and we've got a huge catering order that needs to be prepped today.",
-    "solution": "Replaced the burned-out motor starting capacitor and cleaned oxidized electrical connections in the motor junction box.",
-    "parts": [
-      "SKU-CP-008745 - Motor Start Capacitor 88-108\u03bcF 330V Oval",
-      "SKU-EC-003692 - Electrical Connection Kit with Wire Nuts and Terminal Blocks"
-    ]
-  },
-  {
-    "problem": "The mixer bowl keeps dropping down by itself while we're trying to mix. We'll lift it up to the right position, but within a few minutes it slowly sinks back down and we can't reach the dough properly. My prep cooks are getting frustrated because they have to keep stopping to readjust it, and it's making our morning bread prep take forever.",
-    "solution": "Replaced worn hydraulic cylinder seals and refilled hydraulic fluid to restore proper bowl lift pressure and holding capacity.",
-    "parts": [
-      "SKU-HY-002847 - Hydraulic cylinder seal kit with O-rings and gaskets",
-      "SKU-FL-018923 - Food-grade hydraulic fluid 32 weight 1-gallon container"
-    ]
-  },
-  {
-    "problem": "There's this burning smell coming from our mixer every time we use it, especially when mixing heavy pizza dough. The smell is so strong that customers are starting to notice it in the dining room. I'm worried we're going to have a fire or something, but we need this mixer to keep running for our lunch prep.",
-    "solution": "Replaced overheating motor windings and installed new thermal protection relay to prevent future overheating damage.",
-    "parts": [
-      "SKU-MT-007641 - 3-phase mixer motor 5HP 230V with thermal protection",
-      "SKU-RL-003215 - Thermal overload relay 8-12 amp range",
-      "SKU-CB-009384 - Motor cooling fan assembly with mounting bracket"
-    ]
-  },
-  {
-    "problem": "The speed control on our spiral mixer is completely messed up - when we set it to low speed it goes medium, medium goes super fast, and high speed barely moves at all. My bakers can't get the right mixing action for different types of dough, and we've already over-mixed two batches of delicate pastry this morning.",
-    "solution": "Recalibrated variable frequency drive parameters and replaced faulty speed control potentiometer to restore proper speed mapping.",
-    "parts": [
-      "SKU-VF-012567 - Variable frequency drive controller 5HP 3-phase with display"
-    ]
-  },
-  {
-    "problem": "The mixing arm on our planetary mixer has started wobbling really bad during operation. It used to run smooth, but now it shakes the whole machine and makes this rattling noise that's getting worse every day. The uneven mixing is ruining our cake batters because some parts get over-mixed while others barely get touched.",
-    "solution": "Rebuilt planetary gear assembly with new bearings and replaced worn drive shaft to eliminate wobble and restore smooth operation.",
-    "parts": [
-      "SKU-GR-045128 - Planetary gear assembly complete with housing",
-      "SKU-BR-028463 - Heavy-duty ball bearing set for mixer drive shaft",
-      "SKU-SF-017592 - Drive shaft with keyway for planetary mixer"
-    ]
-  },
-  {
-    "problem": "Our mixer keeps shutting off randomly and showing some kind of error code on the display. Sometimes it runs for twenty minutes, other times it stops after just two minutes of mixing. The kitchen staff never knows if they'll be able to finish a batch, and we've had to hand-mix three batches of cookie dough because we can't rely on this thing anymore.",
-    "solution": "Replaced malfunctioning control board and updated firmware to eliminate random shutdowns and error code generation.",
-    "parts": [
-      "SKU-CB-091235 - Main control board with digital display and programming",
-      "SKU-CA-054789 - Backup capacitor bank for control system memory"
-    ]
-  },
-  {
-    "problem": "The safety cover on our big mixer won't stay latched shut anymore, so the machine thinks it's open and won't start. We've tried pushing it down hard and jiggling the latch, but it just pops back open. My morning shift can't get any mixing done and we're already behind on our soup and sauce prep for lunch service.",
-    "solution": "Adjusted safety interlock switch positioning and replaced worn latch mechanism to ensure proper cover engagement and safety compliance.",
-    "parts": [
-      "SKU-SW-063847 - Magnetic safety interlock switch with mounting bracket",
-      "SKU-LT-029156 - Cover latch assembly with spring-loaded mechanism"
-    ]
-  },
-  {
-    "problem": "There's grease or oil constantly dripping from somewhere inside our mixer onto the floor. It's creating a slippery mess that's dangerous for my staff, and the health inspector is coming next week. The dripping seems to get worse when we're mixing heavy bread dough, and now there's stains on the floor that won't come clean.",
-    "solution": "Replaced leaking gearbox seals and replenished food-grade lubricant to eliminate oil leakage and ensure proper lubrication.",
-    "parts": [
-      "SKU-SL-084721 - Gearbox seal kit with gaskets and O-ring seals",
-      "SKU-LB-037298 - Food-grade gear lubricant NSF certified 2-quart container",
-      "SKU-DR-041853 - Oil drain plug with magnetic chip collector"
-    ]
-  },
-  {
-    "problem": "The paddle attachment on our mixer keeps getting stuck and won't come off when we need to switch to the whisk. We've been using pliers to twist it off, but that's scratching up the attachment hub and making it even harder to remove. It's slowing down our prep work because we can't quickly change between different mixing jobs.",
-    "solution": "Cleaned and regreased attachment hub mechanism and replaced worn quick-release collar to restore smooth attachment changes.",
-    "parts": [
-      "SKU-HB-075394 - Quick-release attachment hub with collar and spring mechanism"
-    ]
-  },
-  {
-    "problem": "Our spiral mixer just died right in the middle of kneading a big batch of pizza dough. The display screen went completely black and now nothing happens when we press any buttons. We've got three more pizza dough batches that need to be made before dinner service and my prep team is starting to panic.",
-    "solution": "Replaced the faulty main control board and updated the programming to restore all mixer functions.",
-    "parts": [
-      "SKU-CB-248751 - Main Control Board Assembly with LCD Display and Programming Chip"
-    ]
-  },
-  {
-    "problem": "The mixer bowl won't come off no matter how hard we try to unlock it. The release handle feels loose and floppy like it's not connected to anything inside. We finished our morning bread mixing but now we can't clean the bowl properly, and there's dried dough stuck all over it that we can't reach.",
-    "solution": "Repaired the bowl release mechanism by replacing the broken linkage rod and adjusting the locking cam assembly.",
-    "parts": [
-      "SKU-LK-157239 - Bowl Release Linkage Rod 12-inch Stainless Steel",
-      "SKU-LK-157240 - Locking Cam Assembly with Spring Actuator"
-    ]
-  },
-  {
-    "problem": "Every time we start mixing something thick like cookie dough, the mixer makes this loud chattering noise and the whole machine vibrates so much it walks across the floor. It's gotten so bad that plates are rattling on the shelves nearby. The mixing still happens but everyone's afraid to get near it when it's running.",
-    "solution": "Replaced worn planetary gear assembly bearings and realigned the drive mechanism to eliminate excessive vibration.",
-    "parts": [
-      "SKU-BG-394827 - Planetary Gear Bearing Set Heavy-Duty Sealed",
-      "SKU-BG-394828 - Drive Shaft Alignment Collar",
-      "SKU-BG-394829 - Gear Housing Mounting Bushing"
-    ]
-  },
-  {
-    "problem": "The mixer keeps shutting itself off after running for just a couple minutes, especially when we're doing heavy mixing. There's no warning or anything - it just stops and won't restart for about ten minutes. My pastry chef is frustrated because she can't finish mixing her cake batters without having to wait around.",
-    "solution": "Replaced the overheating motor capacitor and cleaned the cooling vents to prevent thermal shutdowns.",
-    "parts": [
-      "SKU-CP-671453 - Motor Start Capacitor 45\u00b5F 370V with Mounting Bracket",
-      "SKU-CP-671454 - Motor Run Capacitor 25\u00b5F 440V"
-    ]
-  },
-  {
-    "problem": "There's this weird electrical buzzing sound coming from the control box every time we change speeds. Sometimes when we switch from low to medium, there's actually a little spark we can see through the vents. It's really concerning and my kitchen manager thinks we should stop using it before something bad happens.",
-    "solution": "Replaced the faulty speed control contactor that was arcing and creating electrical hazards.",
-    "parts": [
-      "SKU-CT-582916 - Variable Speed Contactor 30-Amp 3-Phase with Overload Protection"
-    ]
-  },
-  {
-    "problem": "The dough paddle keeps getting stuck in one position and won't rotate around the bowl like it's supposed to. We have to manually push it to get it unstuck, but then it just gets stuck again in a different spot. Our bread dough is coming out unevenly mixed because the paddle isn't reaching all areas of the bowl.",
-    "solution": "Rebuilt the planetary drive mechanism by replacing worn drive gears and lubricating all moving components.",
-    "parts": [
-      "SKU-PG-738294 - Planetary Drive Gear Assembly Cast Steel",
-      "SKU-PG-738295 - Drive Ring Gear with Hardened Teeth",
-      "SKU-LB-738296 - Food-Grade Gear Lubricant 16oz Tube"
-    ]
-  },
-  {
-    "problem": "Our mixer won't start at all when we have the safety cover closed, but it works fine with the cover open which obviously isn't safe. The red warning light stays on no matter what we do. We need to get our morning prep done but can't risk running it without the safety guards in place.",
-    "solution": "Replaced the malfunctioning safety interlock switch and adjusted the guard alignment to ensure proper contact.",
-    "parts": [
-      "SKU-SF-419672 - Magnetic Safety Interlock Switch with Mounting Hardware"
-    ]
-  },
-  {
-    "problem": "The mixer bowl tilts up and down okay, but it won't lock in the mixing position anymore. It slowly drifts down while we're mixing and we have to keep stopping to lift it back up. My prep cook says it's impossible to add ingredients properly when the bowl keeps moving around like that.",
-    "solution": "Replaced the worn bowl lift cylinder seals and recharged the hydraulic system to restore proper holding pressure.",
-    "parts": [
-      "SKU-HL-863527 - Hydraulic Cylinder Seal Kit with O-Rings",
-      "SKU-HL-863528 - Food-Grade Hydraulic Fluid 1-Quart Bottle"
-    ]
-  },
-  {
-    "problem": "Our spiral mixer just completely seized up this morning while my baker was working on focaccia dough. She said it felt like it was getting harder to turn for the past few days, but now the mixing arm won't budge at all. We tried turning it off and back on, but nothing - it's like the whole thing is locked up solid and we can't get any bread production done.",
-    "solution": "Replaced the main gearbox assembly which had suffered complete gear tooth failure due to lack of proper lubrication, and installed new transmission oil.",
-    "parts": [
-      "SKU-GB-248517 - Main spiral mixer gearbox assembly 3-speed with sealed bearings",
-      "SKU-LU-156203 - Food grade transmission oil 2-quart synthetic blend"
-    ]
-  },
-  {
-    "problem": "The timer on our planetary mixer keeps resetting itself back to zero randomly during mixing cycles. Yesterday it happened three times while we were making cookie dough - the mixer would just keep running way past when it should have stopped. My pastry chef had to stand there and watch it constantly because we almost over-mixed an entire batch of delicate cake batter.",
-    "solution": "Replaced the faulty digital timer control module and updated the control board firmware to resolve timing inconsistencies.",
-    "parts": [
-      "SKU-TM-392847 - Digital timer control module 60-minute capacity with memory backup"
-    ]
-  },
-  {
-    "problem": "There's this weird vibration coming from underneath our big Hobart mixer that's getting worse every week. The whole counter shakes now when we're mixing anything heavy like bread dough, and I can feel it through the floor. My prep team is worried something's going to fall off the shelves nearby, and the noise is really annoying during our morning prep.",
-    "solution": "Replaced worn motor mount bushings and installed new vibration dampening pads, then realigned the motor assembly to eliminate excessive movement.",
-    "parts": [
-      "SKU-BU-174638 - Motor mount bushing set heavy-duty rubber with steel sleeves",
-      "SKU-PD-089274 - Anti-vibration pads commercial grade 6-inch square",
-      "SKU-MT-445192 - Motor alignment bracket kit with adjustment bolts"
-    ]
-  },
-  {
-    "problem": "The paddle attachment on our countertop mixer keeps getting stuck and won't come off when we're done mixing. We have to use pliers and really force it, which is scratching up the attachment hub. It's taking forever to switch between different attachments, and my kitchen staff is getting frustrated with how long it takes to clean and change setups.",
-    "solution": "Cleaned and lubricated the attachment hub mechanism, then replaced the worn locking collar that had developed excessive wear patterns.",
-    "parts": [
-      "SKU-HU-527163 - Attachment hub locking collar stainless steel with spring mechanism"
-    ]
-  },
-  {
-    "problem": "Our mixer's emergency stop button got pressed yesterday and now it won't reset properly. The red button is still pushed in and won't pop back out no matter what we do. The mixer won't start at all because of this, and we've got a big wedding cake order that needs to be mixed today. I've tried everything but that stupid button just stays stuck down.",
-    "solution": "Replaced the defective emergency stop switch assembly and tested all safety interlock circuits to ensure proper operation.",
-    "parts": [
-      "SKU-ES-631875 - Emergency stop switch assembly twist-to-release with LED indicator",
-      "SKU-WH-298506 - Safety interlock wiring harness 14-gauge with connectors"
-    ]
-  },
-  {
-    "problem": "The motor on our spiral mixer keeps overheating and shutting down after about 20 minutes of use. It used to run all day without problems, but now it gets so hot you can't even touch the housing. Every time it shuts down, we have to wait an hour for it to cool down before we can use it again, which is killing our production schedule.",
-    "solution": "Replaced the motor cooling fan and cleaned out accumulated flour dust from the motor housing, then installed a new thermal overload protector with proper heat dissipation.",
-    "parts": [
-      "SKU-FN-815792 - Motor cooling fan 12-volt variable speed with dust guards",
-      "SKU-OL-347219 - Thermal overload protector 15-amp auto-reset with temperature sensor"
-    ]
-  },
-  {
-    "problem": "The power light comes on when we turn on our planetary mixer, but the motor won't actually start running. We can hear a humming sound like it's trying to work, but the mixing arm just sits there. This started happening intermittently last week, but now it won't start at all and we can't get any of our daily bread prep done.",
-    "solution": "Replaced the failed motor start capacitor which had lost its electrical capacity, preventing the motor from achieving initial startup torque.",
-    "parts": [
-      "SKU-CP-926481 - Motor start capacitor 35-microfarad 370-volt with mounting bracket"
-    ]
-  },
-  {
-    "problem": "The bowl lift on our big mixer moves up fine, but when we try to lower it down, it drops really fast and slams to the bottom with a loud bang. It's so violent that batter splashes everywhere and my bakers are afraid to put their hands near it. We've been having to guide it down manually, but that's not safe and it's really slowing us down.",
-    "solution": "Rebuilt the hydraulic bowl lift cylinder and replaced the flow control valve to restore proper descent speed control.",
-    "parts": [
-      "SKU-HL-753418 - Hydraulic lift cylinder rebuild kit with seals and springs",
-      "SKU-FV-482937 - Flow control valve adjustable with pressure relief"
-    ]
-  },
-  {
-    "problem": "Our mixer's timer doesn't work anymore - we set it for 10 minutes but it just keeps running forever until we manually shut it off. Yesterday we accidentally over-mixed a batch of cookie dough because nobody noticed it was still going. My bakers are having to stand there and watch it the whole time instead of working on other prep.",
-    "solution": "Replaced the defective timer relay module and recalibrated the control system timing circuits.",
-    "parts": [
-      "SKU-TM-482756 - Timer relay module 24V with 60-minute range",
-      "SKU-EC-593847 - Electronic control board assembly with timer circuits"
-    ]
-  },
-  {
-    "problem": "The mixer keeps overheating and shutting itself down after about 20 minutes of use. The motor housing gets so hot you can't even touch it, and then everything just stops working. We're having to let it cool down for an hour between batches, which is killing our production schedule for dinner prep.",
-    "solution": "Cleaned and replaced the motor cooling fan assembly and installed new thermal protection switches with proper temperature ratings.",
-    "parts": [
-      "SKU-FN-294735 - Motor cooling fan 115V with mounting bracket",
-      "SKU-TS-847362 - Thermal overload switch 40-amp rated"
-    ]
-  },
-  {
-    "problem": "There's grease and oil coming out of the mixing head and dripping into our food. It started as just a few drops, but now it's making our dough and batter taste awful and we can't serve anything mixed in there. The health inspector is coming next week and I'm panicking about this mess.",
-    "solution": "Rebuilt the planetary gear assembly housing with new seals and gaskets, and refilled with food-grade lubricant.",
-    "parts": [
-      "SKU-SL-638291 - Planetary gearbox seal kit with O-rings and gaskets",
-      "SKU-LB-745829 - Food-grade gear lubricant NSF-certified 1-quart",
-      "SKU-GB-382947 - Planetary gear bearing assembly with retainer"
-    ]
-  },
-  {
-    "problem": "Our spiral mixer's bowl won't rotate at all - the mixing arm spins fine but the bowl just sits there completely still. The dough isn't getting mixed properly because it's all bunching up on one side. My head baker says this is ruining the gluten development in our artisan breads.",
-    "solution": "Replaced the bowl rotation drive motor and repaired the damaged gear coupling that connects to the bowl drive mechanism.",
-    "parts": [
-      "SKU-MT-572938 - Bowl rotation drive motor 1/2 HP 3-phase",
-      "SKU-CP-849573 - Flexible gear coupling with steel hubs"
-    ]
-  },
-  {
-    "problem": "The emergency stop button is stuck and won't pop back out when we press it. We can push it in to stop the mixer, but then we have to pry it out with a screwdriver to get the machine running again. This is really dangerous and my insurance company would flip if they saw us doing this.",
-    "solution": "Replaced the emergency stop switch assembly with new actuator mechanism and installed fresh contact blocks.",
-    "parts": [
-      "SKU-ES-736492 - Emergency stop switch mushroom head twist-release"
-    ]
-  },
-  {
-    "problem": "The digital display on our mixer control panel is completely blank - no numbers, no lights, nothing. We have no idea what speed it's running at or how long it's been mixing. The mixer still works if we press buttons, but we're basically guessing at everything and it's making it impossible to follow our recipes properly.",
-    "solution": "Replaced the defective LCD display module and reprogrammed the control board with updated firmware.",
-    "parts": [
-      "SKU-DP-429857 - LCD display module 4-digit with backlight",
-      "SKU-CB-683947 - Main control board with programming interface"
-    ]
-  },
-  {
-    "problem": "There's this constant humming noise coming from the electrical box on our mixer, and sometimes we see little sparks inside when we open the panel. The mixer still runs but I'm terrified we're going to have an electrical fire. The whole kitchen smells like burning plastic near the mixer.",
-    "solution": "Replaced worn electrical contactors and burned capacitors, then cleaned and tightened all electrical connections in the control panel.",
-    "parts": [
-      "SKU-CT-857294 - Main contactor 40-amp 3-pole with auxiliary contacts",
-      "SKU-CP-394756 - Start capacitor 250V 50-microfarad",
-      "SKU-CP-394757 - Run capacitor 440V 30-microfarad"
-    ]
-  },
-  {
-    "problem": "The mixer paddle height is completely wrong now - it's hitting the bottom of the bowl and making this horrible scraping sound. We used to be able to adjust it perfectly, but now even when we raise it all the way up, it's still too low and gouging scratches in our mixing bowls.",
-    "solution": "Recalibrated the mixing head height adjustment mechanism and replaced the worn lift screw assembly with proper positioning stops.",
-    "parts": [
-      "SKU-LA-592847 - Height adjustment screw assembly with lock nuts",
-      "SKU-BS-738594 - Mixing head support bushing set"
-    ]
-  },
-  {
-    "problem": "Our mixer keeps overheating and shutting itself down right in the middle of mixing our pizza dough. It'll work for maybe 20 minutes then just stops with some kind of warning light flashing. We have to wait an hour for it to cool down before we can use it again, which is killing our prep schedule during the lunch rush.",
-    "solution": "Replaced the motor cooling fan and cleaned out accumulated flour dust from the motor housing ventilation screens.",
-    "parts": [
-      "SKU-MT-002847 - Motor Cooling Fan Assembly 12V DC with mounting bracket",
-      "SKU-FL-001923 - Motor Housing Air Filter Screen set of 3"
-    ]
-  },
-  {
-    "problem": "The mixer won't go into reverse anymore, which we need for our spiral dough mixing. It moves forward fine but when we hit the reverse button nothing happens. Our bread dough isn't getting the proper gluten development because we can't do the reverse kneading cycle.",
-    "solution": "Replaced the faulty forward/reverse contactor relay in the electrical control panel that had burned contacts preventing reverse operation.",
-    "parts": [
-      "SKU-EC-004521 - Motor Reversing Contactor 3-phase 25A with auxiliary contacts"
-    ]
-  },
-  {
-    "problem": "There's this metallic grinding sound coming from the gearbox area of our big spiral mixer. It's not super loud but you can definitely hear it over the normal mixing noise. I'm worried it's going to seize up completely and leave us without our main dough mixer during our busiest weekend.",
-    "solution": "Drained and replaced contaminated gear oil and replaced worn intermediate gear bearings in the transmission housing.",
-    "parts": [
-      "SKU-GB-007834 - Food Grade Gear Oil SAE 220 viscosity 5-gallon container",
-      "SKU-BR-003492 - Intermediate Shaft Ball Bearing 6308-2RS sealed",
-      "SKU-BR-003501 - Output Shaft Roller Bearing 22215-E1-K spherical"
-    ]
-  },
-  {
-    "problem": "The timer on our mixer doesn't work right - we set it for 10 minutes but it either runs for way longer or stops after just a couple minutes. My pastry chef can't rely on it anymore and has to stand there watching the whole time instead of working on other prep.",
-    "solution": "Replaced the defective electronic timer module and recalibrated the control system timing parameters.",
-    "parts": [
-      "SKU-CT-001687 - Digital Timer Module 0-60 minutes with relay output"
-    ]
-  },
-  {
-    "problem": "The planetary head on our 20-quart mixer has developed this really bad vibration that gets worse as we increase the speed. It's shaking so much that ingredients are bouncing out of the bowl and the whole machine is walking across the floor. We've had to move it against the wall so it doesn't slide around.",
-    "solution": "Replaced worn planetary gear assembly and rebalanced the mixing head unit with new counterweight.",
-    "parts": [
-      "SKU-PG-005673 - Planetary Gear Assembly complete with ring gear and pinions",
-      "SKU-PG-005689 - Planetary Head Counterweight Balance Ring"
-    ]
-  },
-  {
-    "problem": "Our mixer won't start unless we jiggle the power switch back and forth a bunch of times. Sometimes it takes five minutes of messing with it before it finally kicks on. My morning prep crew is wasting so much time trying to get this thing running that we're behind on everything before we even open.",
-    "solution": "Replaced the worn main power switch and tightened loose electrical connections in the control panel.",
-    "parts": [
-      "SKU-SW-002341 - Main Power Switch heavy-duty 3-phase with LED indicator",
-      "SKU-EC-007821 - Wire Terminal Connector Kit assorted sizes"
-    ]
-  },
-  {
-    "problem": "The bowl lift is making this awful squealing noise every time it goes up or down. It sounds like metal scraping on metal and it's so loud you can hear it in the dining room. The lift still works but the noise is driving everyone crazy and I'm embarrassed when customers hear it.",
-    "solution": "Lubricated the bowl lift mechanism and replaced worn lift chain guides and tensioner assembly.",
-    "parts": [
-      "SKU-BL-004782 - Bowl Lift Chain Guide Set with bronze bushings",
-      "SKU-LB-001234 - Food Grade Chain Lubricant spray 16oz aerosol"
-    ]
-  },
-  {
-    "problem": "The emergency stop button is stuck and won't pop back out after we press it. We have to use a screwdriver to pry it out every time, which is really dangerous because sometimes the mixer is still running when we're trying to reset it. This is definitely not safe for my kitchen staff.",
-    "solution": "Replaced the seized emergency stop switch assembly and cleaned corrosion from the mounting housing.",
-    "parts": [
-      "SKU-ES-003456 - Emergency Stop Switch mushroom head twist-to-reset",
-      "SKU-CL-008901 - Electrical Contact Cleaner degreaser 12oz spray"
-    ]
-  },
-  {
-    "problem": "Our spiral mixer's bowl won't rotate at all anymore. The mixing arm moves fine but the bowl just sits there, so we're not getting any proper mixing action. All our dough comes out with streaks of unmixed flour and the texture is completely wrong for our artisan breads.",
-    "solution": "Replaced the broken bowl drive belt and realigned the bowl rotation motor coupling.",
-    "parts": [
-      "SKU-BT-006723 - Bowl Drive Belt V-type 42-inch circumference heavy-duty"
-    ]
-  },
-  {
-    "problem": "The mixer keeps blowing fuses in the electrical panel - we've gone through six fuses this week already. It'll work for a while then suddenly pop the fuse and everything shuts down. My electrician keeps telling me to call a service tech because he thinks there's a short circuit somewhere inside the mixer.",
-    "solution": "Located and repaired damaged motor winding insulation and replaced the motor start capacitor that was causing overcurrent conditions.",
-    "parts": [
-      "SKU-CP-004587 - Motor Start Capacitor 340-408 MFD 220V with mounting bracket",
-      "SKU-TP-007234 - Electrical Insulation Tape high-temperature rated"
-    ]
-  }
+	{
+		"problem": "Our big Hobart mixer just stopped working in the middle of our dinner prep. It was making this loud grinding noise for a few days, and now it won't turn on at all. The prep cook was mixing pizza dough when it just died - now we're behind on everything and my staff is stressed.",
+		"solution": "Replaced the main drive motor which had seized due to bearing failure and installed new motor control contactor that was also damaged.",
+		"parts": [
+			"SKU-MT-024789 - 5HP 3-phase mixer drive motor 1750 RPM with mounting bracket",
+			"SKU-EC-016432 - Motor control contactor 30A 3-pole with 120V coil"
+		]
+	},
+	{
+		"problem": "The mixing bowl on our spiral mixer won't lift up anymore. Yesterday it was moving really slow, and today it's completely stuck at the bottom. My bakers can't get the dough out without making a huge mess, and we've got orders backing up.",
+		"solution": "Rebuilt the bowl lift mechanism by replacing worn lift chains and adjusting the motor drive assembly.",
+		"parts": [
+			"SKU-BL-009876 - Bowl lift chain assembly 48-inch heavy duty with master links",
+			"SKU-BG-013254 - Lift mechanism bushing set with grease fittings"
+		]
+	},
+	{
+		"problem": "Our planetary mixer keeps changing speeds on its own - one minute it's going slow like we set it, then suddenly it's whipping everything at high speed and making a mess. The kitchen staff is afraid to use it because batter keeps flying everywhere.",
+		"solution": "Replaced the variable frequency drive controller that was experiencing internal component failures causing erratic speed control.",
+		"parts": [
+			"SKU-VF-018765 - Variable frequency drive 3HP with digital display and speed control potentiometer"
+		]
+	},
+	{
+		"problem": "The safety guard on our mixer won't stay closed, so the machine won't start. We've been having to hold it down while someone else hits the start button, which I know isn't safe. It's slowing down our bread production and my team is getting frustrated.",
+		"solution": "Replaced the safety interlock switch and adjusted the guard latch mechanism to ensure proper engagement and safety compliance.",
+		"parts": [
+			"SKU-SI-027893 - Safety interlock switch with actuator arm and mounting hardware",
+			"SKU-GD-005432 - Guard latch assembly with spring-loaded mechanism"
+		]
+	},
+	{
+		"problem": "The dough hook attachment keeps slipping and won't stay locked in place. During mixing, it starts wobbling and eventually falls out completely. We've ruined three batches of bread dough this week because of this.",
+		"solution": "Replaced the worn attachment hub assembly and drive coupling that had excessive wear preventing proper tool retention.",
+		"parts": [
+			"SKU-AH-031287 - Attachment hub assembly with locking collar and drive pins",
+			"SKU-DC-014569 - Drive coupling flexible joint with steel sleeve",
+			"SKU-BG-028741 - Hub bearing set with seals for 2-inch shaft"
+		]
+	},
+	{
+		"problem": "There's this terrible screeching sound coming from inside our mixer whenever we use it. It's so loud the customers in the dining room can hear it. The sound gets worse when we're mixing heavy dough, and I'm worried something's going to break completely.",
+		"solution": "Replaced the main gearbox bearings and applied proper lubrication to eliminate noise and prevent further damage.",
+		"parts": [
+			"SKU-BG-045612 - Gearbox bearing kit with seals for planetary drive assembly",
+			"SKU-LU-002398 - Food grade gear lubricant 1-quart synthetic blend"
+		]
+	},
+	{
+		"problem": "Our mixer starts up fine but then just stops running after a few minutes. Sometimes it works for an hour, sometimes only five minutes. The kitchen crew never knows if they'll be able to finish a batch, and it's really affecting our production schedule.",
+		"solution": "Replaced the motor start capacitor and cleaned corroded electrical connections that were causing intermittent power loss.",
+		"parts": [
+			"SKU-CP-019834 - Motor start capacitor 35\u03bcF 440VAC with mounting bracket"
+		]
+	},
+	{
+		"problem": "The mixing bowl won't lock into position anymore - it keeps turning while the paddle is mixing, which makes everything splash out. We've been having to have someone hold the bowl steady, but that's not working for our bigger batches.",
+		"solution": "Replaced the bowl lock mechanism pins and tightened the locking cam assembly to restore proper bowl retention.",
+		"parts": [
+			"SKU-BL-036789 - Bowl lock pin assembly with spring-loaded mechanism and wear plates"
+		]
+	},
+	{
+		"problem": "Our mixer keeps tripping the circuit breaker every time we try to start it up. It worked fine yesterday, but now as soon as we hit the power button, the whole kitchen loses electricity for a few seconds. My prep team can't get any mixing done and we're falling behind on our sauce and batter prep.",
+		"solution": "Replaced the damaged motor starter contactor that was drawing excessive current and causing electrical shorts during startup.",
+		"parts": [
+			"SKU-CT-004521 - Motor Starter Contactor 30A 3-Phase with Auxiliary Contacts",
+			"SKU-CP-002847 - Motor Run Capacitor 45\u03bcF 440V Round"
+		]
+	},
+	{
+		"problem": "The mixer bowl tilts down really slowly now and sometimes gets stuck halfway. It used to move up and down smoothly, but now it takes forever and sometimes we have to push it manually. This is really slowing down our prep work when we need to add ingredients or clean the bowl.",
+		"solution": "Rebuilt the bowl lift mechanism by replacing worn gear teeth and installing new lubrication seals in the lift assembly.",
+		"parts": [
+			"SKU-GB-007293 - Bowl Lift Gear Assembly with Bronze Bushings",
+			"SKU-SL-001654 - Hydraulic Seal Kit for Bowl Lift Cylinder",
+			"SKU-LB-003782 - High-Temperature Gear Lubricant 1-Quart"
+		]
+	},
+	{
+		"problem": "There's oil leaking all over the floor under our big mixer. It's getting really slippery and dangerous for my staff to walk around. The leak seems to be getting worse each day, and now there's a puddle every morning when we come in.",
+		"solution": "Replaced failed transmission seals and gaskets in the main gearbox housing to eliminate oil leakage.",
+		"parts": ["SKU-GS-005849 - Transmission Main Shaft Seal Kit with O-Rings"]
+	},
+	{
+		"problem": "The mixer won't stop running when we press the stop button - we have to flip the main power switch to turn it off. This is really dangerous because the mixing paddle keeps spinning and we can't add ingredients or clean it properly. My kitchen manager is worried someone's going to get hurt.",
+		"solution": "Replaced the faulty control relay and cleaned corroded contacts in the motor control panel to restore proper stop function.",
+		"parts": [
+			"SKU-RL-008376 - Control Relay 24V AC DPDT with Socket Base",
+			"SKU-SW-004192 - Emergency Stop Button Red Mushroom Head",
+			"SKU-CC-002551 - Electrical Contact Cleaner Spray 12oz"
+		]
+	},
+	{
+		"problem": "Our planetary mixer makes this horrible knocking sound from inside the mixing head. It's gotten so bad that we can hear it over all the other kitchen noise. The mixing still works but the sound is driving everyone crazy, and I'm afraid it's going to break down completely during our busy dinner rush.",
+		"solution": "Replaced worn planetary gear bearings and realigned the gear assembly to eliminate mechanical noise and prevent further damage.",
+		"parts": [
+			"SKU-BR-006743 - Planetary Gear Bearing Set with Grease Fittings",
+			"SKU-BH-003421 - Bearing Retainer Housing Assembly"
+		]
+	},
+	{
+		"problem": "The mixer starts really slow and seems like it's struggling to get up to speed. Even on the highest setting, it barely moves thick dough that it used to handle easily. My bakers are having to mix smaller batches and it's taking twice as long to get our bread production done.",
+		"solution": "Diagnosed and replaced the failing variable frequency drive controller that was limiting motor power output and speed control.",
+		"parts": [
+			"SKU-VF-009284 - Variable Frequency Drive 5HP 480V with Digital Display",
+			"SKU-CB-001827 - Control Cable Assembly 20-Pin Connector"
+		]
+	},
+	{
+		"problem": "The whisk attachment keeps coming loose and wobbling during mixing. We've tried tightening it but it still works its way loose after a few minutes. Yesterday it actually fell into a batch of meringue and we had to throw the whole thing out.",
+		"solution": "Replaced worn attachment hub drive assembly and installed new locking mechanism with proper torque specifications.",
+		"parts": [
+			"SKU-AH-007651 - Attachment Hub Drive Assembly with Locking Pin",
+			"SKU-SP-004298 - Drive Shaft Spring Washer Set",
+			"SKU-TP-002134 - Torque Pin Stainless Steel with Set Screw"
+		]
+	},
+	{
+		"problem": "Our mixer won't turn on at all anymore, but all the lights on the control panel are working fine. We've checked that it's plugged in and the circuit breaker isn't tripped. The motor just sits there doing nothing when we press start, and we've got a huge catering order that needs to be prepped today.",
+		"solution": "Replaced the burned-out motor starting capacitor and cleaned oxidized electrical connections in the motor junction box.",
+		"parts": [
+			"SKU-CP-008745 - Motor Start Capacitor 88-108\u03bcF 330V Oval",
+			"SKU-EC-003692 - Electrical Connection Kit with Wire Nuts and Terminal Blocks"
+		]
+	},
+	{
+		"problem": "The mixer bowl keeps dropping down by itself while we're trying to mix. We'll lift it up to the right position, but within a few minutes it slowly sinks back down and we can't reach the dough properly. My prep cooks are getting frustrated because they have to keep stopping to readjust it, and it's making our morning bread prep take forever.",
+		"solution": "Replaced worn hydraulic cylinder seals and refilled hydraulic fluid to restore proper bowl lift pressure and holding capacity.",
+		"parts": [
+			"SKU-HY-002847 - Hydraulic cylinder seal kit with O-rings and gaskets",
+			"SKU-FL-018923 - Food-grade hydraulic fluid 32 weight 1-gallon container"
+		]
+	},
+	{
+		"problem": "There's this burning smell coming from our mixer every time we use it, especially when mixing heavy pizza dough. The smell is so strong that customers are starting to notice it in the dining room. I'm worried we're going to have a fire or something, but we need this mixer to keep running for our lunch prep.",
+		"solution": "Replaced overheating motor windings and installed new thermal protection relay to prevent future overheating damage.",
+		"parts": [
+			"SKU-MT-007641 - 3-phase mixer motor 5HP 230V with thermal protection",
+			"SKU-RL-003215 - Thermal overload relay 8-12 amp range",
+			"SKU-CB-009384 - Motor cooling fan assembly with mounting bracket"
+		]
+	},
+	{
+		"problem": "The speed control on our spiral mixer is completely messed up - when we set it to low speed it goes medium, medium goes super fast, and high speed barely moves at all. My bakers can't get the right mixing action for different types of dough, and we've already over-mixed two batches of delicate pastry this morning.",
+		"solution": "Recalibrated variable frequency drive parameters and replaced faulty speed control potentiometer to restore proper speed mapping.",
+		"parts": [
+			"SKU-VF-012567 - Variable frequency drive controller 5HP 3-phase with display"
+		]
+	},
+	{
+		"problem": "The mixing arm on our planetary mixer has started wobbling really bad during operation. It used to run smooth, but now it shakes the whole machine and makes this rattling noise that's getting worse every day. The uneven mixing is ruining our cake batters because some parts get over-mixed while others barely get touched.",
+		"solution": "Rebuilt planetary gear assembly with new bearings and replaced worn drive shaft to eliminate wobble and restore smooth operation.",
+		"parts": [
+			"SKU-GR-045128 - Planetary gear assembly complete with housing",
+			"SKU-BR-028463 - Heavy-duty ball bearing set for mixer drive shaft",
+			"SKU-SF-017592 - Drive shaft with keyway for planetary mixer"
+		]
+	},
+	{
+		"problem": "Our mixer keeps shutting off randomly and showing some kind of error code on the display. Sometimes it runs for twenty minutes, other times it stops after just two minutes of mixing. The kitchen staff never knows if they'll be able to finish a batch, and we've had to hand-mix three batches of cookie dough because we can't rely on this thing anymore.",
+		"solution": "Replaced malfunctioning control board and updated firmware to eliminate random shutdowns and error code generation.",
+		"parts": [
+			"SKU-CB-091235 - Main control board with digital display and programming",
+			"SKU-CA-054789 - Backup capacitor bank for control system memory"
+		]
+	},
+	{
+		"problem": "The safety cover on our big mixer won't stay latched shut anymore, so the machine thinks it's open and won't start. We've tried pushing it down hard and jiggling the latch, but it just pops back open. My morning shift can't get any mixing done and we're already behind on our soup and sauce prep for lunch service.",
+		"solution": "Adjusted safety interlock switch positioning and replaced worn latch mechanism to ensure proper cover engagement and safety compliance.",
+		"parts": [
+			"SKU-SW-063847 - Magnetic safety interlock switch with mounting bracket",
+			"SKU-LT-029156 - Cover latch assembly with spring-loaded mechanism"
+		]
+	},
+	{
+		"problem": "There's grease or oil constantly dripping from somewhere inside our mixer onto the floor. It's creating a slippery mess that's dangerous for my staff, and the health inspector is coming next week. The dripping seems to get worse when we're mixing heavy bread dough, and now there's stains on the floor that won't come clean.",
+		"solution": "Replaced leaking gearbox seals and replenished food-grade lubricant to eliminate oil leakage and ensure proper lubrication.",
+		"parts": [
+			"SKU-SL-084721 - Gearbox seal kit with gaskets and O-ring seals",
+			"SKU-LB-037298 - Food-grade gear lubricant NSF certified 2-quart container",
+			"SKU-DR-041853 - Oil drain plug with magnetic chip collector"
+		]
+	},
+	{
+		"problem": "The paddle attachment on our mixer keeps getting stuck and won't come off when we need to switch to the whisk. We've been using pliers to twist it off, but that's scratching up the attachment hub and making it even harder to remove. It's slowing down our prep work because we can't quickly change between different mixing jobs.",
+		"solution": "Cleaned and regreased attachment hub mechanism and replaced worn quick-release collar to restore smooth attachment changes.",
+		"parts": [
+			"SKU-HB-075394 - Quick-release attachment hub with collar and spring mechanism"
+		]
+	},
+	{
+		"problem": "Our spiral mixer just died right in the middle of kneading a big batch of pizza dough. The display screen went completely black and now nothing happens when we press any buttons. We've got three more pizza dough batches that need to be made before dinner service and my prep team is starting to panic.",
+		"solution": "Replaced the faulty main control board and updated the programming to restore all mixer functions.",
+		"parts": [
+			"SKU-CB-248751 - Main Control Board Assembly with LCD Display and Programming Chip"
+		]
+	},
+	{
+		"problem": "The mixer bowl won't come off no matter how hard we try to unlock it. The release handle feels loose and floppy like it's not connected to anything inside. We finished our morning bread mixing but now we can't clean the bowl properly, and there's dried dough stuck all over it that we can't reach.",
+		"solution": "Repaired the bowl release mechanism by replacing the broken linkage rod and adjusting the locking cam assembly.",
+		"parts": [
+			"SKU-LK-157239 - Bowl Release Linkage Rod 12-inch Stainless Steel",
+			"SKU-LK-157240 - Locking Cam Assembly with Spring Actuator"
+		]
+	},
+	{
+		"problem": "Every time we start mixing something thick like cookie dough, the mixer makes this loud chattering noise and the whole machine vibrates so much it walks across the floor. It's gotten so bad that plates are rattling on the shelves nearby. The mixing still happens but everyone's afraid to get near it when it's running.",
+		"solution": "Replaced worn planetary gear assembly bearings and realigned the drive mechanism to eliminate excessive vibration.",
+		"parts": [
+			"SKU-BG-394827 - Planetary Gear Bearing Set Heavy-Duty Sealed",
+			"SKU-BG-394828 - Drive Shaft Alignment Collar",
+			"SKU-BG-394829 - Gear Housing Mounting Bushing"
+		]
+	},
+	{
+		"problem": "The mixer keeps shutting itself off after running for just a couple minutes, especially when we're doing heavy mixing. There's no warning or anything - it just stops and won't restart for about ten minutes. My pastry chef is frustrated because she can't finish mixing her cake batters without having to wait around.",
+		"solution": "Replaced the overheating motor capacitor and cleaned the cooling vents to prevent thermal shutdowns.",
+		"parts": [
+			"SKU-CP-671453 - Motor Start Capacitor 45\u00b5F 370V with Mounting Bracket",
+			"SKU-CP-671454 - Motor Run Capacitor 25\u00b5F 440V"
+		]
+	},
+	{
+		"problem": "There's this weird electrical buzzing sound coming from the control box every time we change speeds. Sometimes when we switch from low to medium, there's actually a little spark we can see through the vents. It's really concerning and my kitchen manager thinks we should stop using it before something bad happens.",
+		"solution": "Replaced the faulty speed control contactor that was arcing and creating electrical hazards.",
+		"parts": [
+			"SKU-CT-582916 - Variable Speed Contactor 30-Amp 3-Phase with Overload Protection"
+		]
+	},
+	{
+		"problem": "The dough paddle keeps getting stuck in one position and won't rotate around the bowl like it's supposed to. We have to manually push it to get it unstuck, but then it just gets stuck again in a different spot. Our bread dough is coming out unevenly mixed because the paddle isn't reaching all areas of the bowl.",
+		"solution": "Rebuilt the planetary drive mechanism by replacing worn drive gears and lubricating all moving components.",
+		"parts": [
+			"SKU-PG-738294 - Planetary Drive Gear Assembly Cast Steel",
+			"SKU-PG-738295 - Drive Ring Gear with Hardened Teeth",
+			"SKU-LB-738296 - Food-Grade Gear Lubricant 16oz Tube"
+		]
+	},
+	{
+		"problem": "Our mixer won't start at all when we have the safety cover closed, but it works fine with the cover open which obviously isn't safe. The red warning light stays on no matter what we do. We need to get our morning prep done but can't risk running it without the safety guards in place.",
+		"solution": "Replaced the malfunctioning safety interlock switch and adjusted the guard alignment to ensure proper contact.",
+		"parts": [
+			"SKU-SF-419672 - Magnetic Safety Interlock Switch with Mounting Hardware"
+		]
+	},
+	{
+		"problem": "The mixer bowl tilts up and down okay, but it won't lock in the mixing position anymore. It slowly drifts down while we're mixing and we have to keep stopping to lift it back up. My prep cook says it's impossible to add ingredients properly when the bowl keeps moving around like that.",
+		"solution": "Replaced the worn bowl lift cylinder seals and recharged the hydraulic system to restore proper holding pressure.",
+		"parts": [
+			"SKU-HL-863527 - Hydraulic Cylinder Seal Kit with O-Rings",
+			"SKU-HL-863528 - Food-Grade Hydraulic Fluid 1-Quart Bottle"
+		]
+	},
+	{
+		"problem": "Our spiral mixer just completely seized up this morning while my baker was working on focaccia dough. She said it felt like it was getting harder to turn for the past few days, but now the mixing arm won't budge at all. We tried turning it off and back on, but nothing - it's like the whole thing is locked up solid and we can't get any bread production done.",
+		"solution": "Replaced the main gearbox assembly which had suffered complete gear tooth failure due to lack of proper lubrication, and installed new transmission oil.",
+		"parts": [
+			"SKU-GB-248517 - Main spiral mixer gearbox assembly 3-speed with sealed bearings",
+			"SKU-LU-156203 - Food grade transmission oil 2-quart synthetic blend"
+		]
+	},
+	{
+		"problem": "The timer on our planetary mixer keeps resetting itself back to zero randomly during mixing cycles. Yesterday it happened three times while we were making cookie dough - the mixer would just keep running way past when it should have stopped. My pastry chef had to stand there and watch it constantly because we almost over-mixed an entire batch of delicate cake batter.",
+		"solution": "Replaced the faulty digital timer control module and updated the control board firmware to resolve timing inconsistencies.",
+		"parts": [
+			"SKU-TM-392847 - Digital timer control module 60-minute capacity with memory backup"
+		]
+	},
+	{
+		"problem": "There's this weird vibration coming from underneath our big Hobart mixer that's getting worse every week. The whole counter shakes now when we're mixing anything heavy like bread dough, and I can feel it through the floor. My prep team is worried something's going to fall off the shelves nearby, and the noise is really annoying during our morning prep.",
+		"solution": "Replaced worn motor mount bushings and installed new vibration dampening pads, then realigned the motor assembly to eliminate excessive movement.",
+		"parts": [
+			"SKU-BU-174638 - Motor mount bushing set heavy-duty rubber with steel sleeves",
+			"SKU-PD-089274 - Anti-vibration pads commercial grade 6-inch square",
+			"SKU-MT-445192 - Motor alignment bracket kit with adjustment bolts"
+		]
+	},
+	{
+		"problem": "The paddle attachment on our countertop mixer keeps getting stuck and won't come off when we're done mixing. We have to use pliers and really force it, which is scratching up the attachment hub. It's taking forever to switch between different attachments, and my kitchen staff is getting frustrated with how long it takes to clean and change setups.",
+		"solution": "Cleaned and lubricated the attachment hub mechanism, then replaced the worn locking collar that had developed excessive wear patterns.",
+		"parts": [
+			"SKU-HU-527163 - Attachment hub locking collar stainless steel with spring mechanism"
+		]
+	},
+	{
+		"problem": "Our mixer's emergency stop button got pressed yesterday and now it won't reset properly. The red button is still pushed in and won't pop back out no matter what we do. The mixer won't start at all because of this, and we've got a big wedding cake order that needs to be mixed today. I've tried everything but that stupid button just stays stuck down.",
+		"solution": "Replaced the defective emergency stop switch assembly and tested all safety interlock circuits to ensure proper operation.",
+		"parts": [
+			"SKU-ES-631875 - Emergency stop switch assembly twist-to-release with LED indicator",
+			"SKU-WH-298506 - Safety interlock wiring harness 14-gauge with connectors"
+		]
+	},
+	{
+		"problem": "The motor on our spiral mixer keeps overheating and shutting down after about 20 minutes of use. It used to run all day without problems, but now it gets so hot you can't even touch the housing. Every time it shuts down, we have to wait an hour for it to cool down before we can use it again, which is killing our production schedule.",
+		"solution": "Replaced the motor cooling fan and cleaned out accumulated flour dust from the motor housing, then installed a new thermal overload protector with proper heat dissipation.",
+		"parts": [
+			"SKU-FN-815792 - Motor cooling fan 12-volt variable speed with dust guards",
+			"SKU-OL-347219 - Thermal overload protector 15-amp auto-reset with temperature sensor"
+		]
+	},
+	{
+		"problem": "The power light comes on when we turn on our planetary mixer, but the motor won't actually start running. We can hear a humming sound like it's trying to work, but the mixing arm just sits there. This started happening intermittently last week, but now it won't start at all and we can't get any of our daily bread prep done.",
+		"solution": "Replaced the failed motor start capacitor which had lost its electrical capacity, preventing the motor from achieving initial startup torque.",
+		"parts": [
+			"SKU-CP-926481 - Motor start capacitor 35-microfarad 370-volt with mounting bracket"
+		]
+	},
+	{
+		"problem": "The bowl lift on our big mixer moves up fine, but when we try to lower it down, it drops really fast and slams to the bottom with a loud bang. It's so violent that batter splashes everywhere and my bakers are afraid to put their hands near it. We've been having to guide it down manually, but that's not safe and it's really slowing us down.",
+		"solution": "Rebuilt the hydraulic bowl lift cylinder and replaced the flow control valve to restore proper descent speed control.",
+		"parts": [
+			"SKU-HL-753418 - Hydraulic lift cylinder rebuild kit with seals and springs",
+			"SKU-FV-482937 - Flow control valve adjustable with pressure relief"
+		]
+	},
+	{
+		"problem": "Our mixer's timer doesn't work anymore - we set it for 10 minutes but it just keeps running forever until we manually shut it off. Yesterday we accidentally over-mixed a batch of cookie dough because nobody noticed it was still going. My bakers are having to stand there and watch it the whole time instead of working on other prep.",
+		"solution": "Replaced the defective timer relay module and recalibrated the control system timing circuits.",
+		"parts": [
+			"SKU-TM-482756 - Timer relay module 24V with 60-minute range",
+			"SKU-EC-593847 - Electronic control board assembly with timer circuits"
+		]
+	},
+	{
+		"problem": "The mixer keeps overheating and shutting itself down after about 20 minutes of use. The motor housing gets so hot you can't even touch it, and then everything just stops working. We're having to let it cool down for an hour between batches, which is killing our production schedule for dinner prep.",
+		"solution": "Cleaned and replaced the motor cooling fan assembly and installed new thermal protection switches with proper temperature ratings.",
+		"parts": [
+			"SKU-FN-294735 - Motor cooling fan 115V with mounting bracket",
+			"SKU-TS-847362 - Thermal overload switch 40-amp rated"
+		]
+	},
+	{
+		"problem": "There's grease and oil coming out of the mixing head and dripping into our food. It started as just a few drops, but now it's making our dough and batter taste awful and we can't serve anything mixed in there. The health inspector is coming next week and I'm panicking about this mess.",
+		"solution": "Rebuilt the planetary gear assembly housing with new seals and gaskets, and refilled with food-grade lubricant.",
+		"parts": [
+			"SKU-SL-638291 - Planetary gearbox seal kit with O-rings and gaskets",
+			"SKU-LB-745829 - Food-grade gear lubricant NSF-certified 1-quart",
+			"SKU-GB-382947 - Planetary gear bearing assembly with retainer"
+		]
+	},
+	{
+		"problem": "Our spiral mixer's bowl won't rotate at all - the mixing arm spins fine but the bowl just sits there completely still. The dough isn't getting mixed properly because it's all bunching up on one side. My head baker says this is ruining the gluten development in our artisan breads.",
+		"solution": "Replaced the bowl rotation drive motor and repaired the damaged gear coupling that connects to the bowl drive mechanism.",
+		"parts": [
+			"SKU-MT-572938 - Bowl rotation drive motor 1/2 HP 3-phase",
+			"SKU-CP-849573 - Flexible gear coupling with steel hubs"
+		]
+	},
+	{
+		"problem": "The emergency stop button is stuck and won't pop back out when we press it. We can push it in to stop the mixer, but then we have to pry it out with a screwdriver to get the machine running again. This is really dangerous and my insurance company would flip if they saw us doing this.",
+		"solution": "Replaced the emergency stop switch assembly with new actuator mechanism and installed fresh contact blocks.",
+		"parts": [
+			"SKU-ES-736492 - Emergency stop switch mushroom head twist-release"
+		]
+	},
+	{
+		"problem": "The digital display on our mixer control panel is completely blank - no numbers, no lights, nothing. We have no idea what speed it's running at or how long it's been mixing. The mixer still works if we press buttons, but we're basically guessing at everything and it's making it impossible to follow our recipes properly.",
+		"solution": "Replaced the defective LCD display module and reprogrammed the control board with updated firmware.",
+		"parts": [
+			"SKU-DP-429857 - LCD display module 4-digit with backlight",
+			"SKU-CB-683947 - Main control board with programming interface"
+		]
+	},
+	{
+		"problem": "There's this constant humming noise coming from the electrical box on our mixer, and sometimes we see little sparks inside when we open the panel. The mixer still runs but I'm terrified we're going to have an electrical fire. The whole kitchen smells like burning plastic near the mixer.",
+		"solution": "Replaced worn electrical contactors and burned capacitors, then cleaned and tightened all electrical connections in the control panel.",
+		"parts": [
+			"SKU-CT-857294 - Main contactor 40-amp 3-pole with auxiliary contacts",
+			"SKU-CP-394756 - Start capacitor 250V 50-microfarad",
+			"SKU-CP-394757 - Run capacitor 440V 30-microfarad"
+		]
+	},
+	{
+		"problem": "The mixer paddle height is completely wrong now - it's hitting the bottom of the bowl and making this horrible scraping sound. We used to be able to adjust it perfectly, but now even when we raise it all the way up, it's still too low and gouging scratches in our mixing bowls.",
+		"solution": "Recalibrated the mixing head height adjustment mechanism and replaced the worn lift screw assembly with proper positioning stops.",
+		"parts": [
+			"SKU-LA-592847 - Height adjustment screw assembly with lock nuts",
+			"SKU-BS-738594 - Mixing head support bushing set"
+		]
+	},
+	{
+		"problem": "Our mixer keeps overheating and shutting itself down right in the middle of mixing our pizza dough. It'll work for maybe 20 minutes then just stops with some kind of warning light flashing. We have to wait an hour for it to cool down before we can use it again, which is killing our prep schedule during the lunch rush.",
+		"solution": "Replaced the motor cooling fan and cleaned out accumulated flour dust from the motor housing ventilation screens.",
+		"parts": [
+			"SKU-MT-002847 - Motor Cooling Fan Assembly 12V DC with mounting bracket",
+			"SKU-FL-001923 - Motor Housing Air Filter Screen set of 3"
+		]
+	},
+	{
+		"problem": "The mixer won't go into reverse anymore, which we need for our spiral dough mixing. It moves forward fine but when we hit the reverse button nothing happens. Our bread dough isn't getting the proper gluten development because we can't do the reverse kneading cycle.",
+		"solution": "Replaced the faulty forward/reverse contactor relay in the electrical control panel that had burned contacts preventing reverse operation.",
+		"parts": [
+			"SKU-EC-004521 - Motor Reversing Contactor 3-phase 25A with auxiliary contacts"
+		]
+	},
+	{
+		"problem": "There's this metallic grinding sound coming from the gearbox area of our big spiral mixer. It's not super loud but you can definitely hear it over the normal mixing noise. I'm worried it's going to seize up completely and leave us without our main dough mixer during our busiest weekend.",
+		"solution": "Drained and replaced contaminated gear oil and replaced worn intermediate gear bearings in the transmission housing.",
+		"parts": [
+			"SKU-GB-007834 - Food Grade Gear Oil SAE 220 viscosity 5-gallon container",
+			"SKU-BR-003492 - Intermediate Shaft Ball Bearing 6308-2RS sealed",
+			"SKU-BR-003501 - Output Shaft Roller Bearing 22215-E1-K spherical"
+		]
+	},
+	{
+		"problem": "The timer on our mixer doesn't work right - we set it for 10 minutes but it either runs for way longer or stops after just a couple minutes. My pastry chef can't rely on it anymore and has to stand there watching the whole time instead of working on other prep.",
+		"solution": "Replaced the defective electronic timer module and recalibrated the control system timing parameters.",
+		"parts": [
+			"SKU-CT-001687 - Digital Timer Module 0-60 minutes with relay output"
+		]
+	},
+	{
+		"problem": "The planetary head on our 20-quart mixer has developed this really bad vibration that gets worse as we increase the speed. It's shaking so much that ingredients are bouncing out of the bowl and the whole machine is walking across the floor. We've had to move it against the wall so it doesn't slide around.",
+		"solution": "Replaced worn planetary gear assembly and rebalanced the mixing head unit with new counterweight.",
+		"parts": [
+			"SKU-PG-005673 - Planetary Gear Assembly complete with ring gear and pinions",
+			"SKU-PG-005689 - Planetary Head Counterweight Balance Ring"
+		]
+	},
+	{
+		"problem": "Our mixer won't start unless we jiggle the power switch back and forth a bunch of times. Sometimes it takes five minutes of messing with it before it finally kicks on. My morning prep crew is wasting so much time trying to get this thing running that we're behind on everything before we even open.",
+		"solution": "Replaced the worn main power switch and tightened loose electrical connections in the control panel.",
+		"parts": [
+			"SKU-SW-002341 - Main Power Switch heavy-duty 3-phase with LED indicator",
+			"SKU-EC-007821 - Wire Terminal Connector Kit assorted sizes"
+		]
+	},
+	{
+		"problem": "The bowl lift is making this awful squealing noise every time it goes up or down. It sounds like metal scraping on metal and it's so loud you can hear it in the dining room. The lift still works but the noise is driving everyone crazy and I'm embarrassed when customers hear it.",
+		"solution": "Lubricated the bowl lift mechanism and replaced worn lift chain guides and tensioner assembly.",
+		"parts": [
+			"SKU-BL-004782 - Bowl Lift Chain Guide Set with bronze bushings",
+			"SKU-LB-001234 - Food Grade Chain Lubricant spray 16oz aerosol"
+		]
+	},
+	{
+		"problem": "The emergency stop button is stuck and won't pop back out after we press it. We have to use a screwdriver to pry it out every time, which is really dangerous because sometimes the mixer is still running when we're trying to reset it. This is definitely not safe for my kitchen staff.",
+		"solution": "Replaced the seized emergency stop switch assembly and cleaned corrosion from the mounting housing.",
+		"parts": [
+			"SKU-ES-003456 - Emergency Stop Switch mushroom head twist-to-reset",
+			"SKU-CL-008901 - Electrical Contact Cleaner degreaser 12oz spray"
+		]
+	},
+	{
+		"problem": "Our spiral mixer's bowl won't rotate at all anymore. The mixing arm moves fine but the bowl just sits there, so we're not getting any proper mixing action. All our dough comes out with streaks of unmixed flour and the texture is completely wrong for our artisan breads.",
+		"solution": "Replaced the broken bowl drive belt and realigned the bowl rotation motor coupling.",
+		"parts": [
+			"SKU-BT-006723 - Bowl Drive Belt V-type 42-inch circumference heavy-duty"
+		]
+	},
+	{
+		"problem": "The mixer keeps blowing fuses in the electrical panel - we've gone through six fuses this week already. It'll work for a while then suddenly pop the fuse and everything shuts down. My electrician keeps telling me to call a service tech because he thinks there's a short circuit somewhere inside the mixer.",
+		"solution": "Located and repaired damaged motor winding insulation and replaced the motor start capacitor that was causing overcurrent conditions.",
+		"parts": [
+			"SKU-CP-004587 - Motor Start Capacitor 340-408 MFD 220V with mounting bracket",
+			"SKU-TP-007234 - Electrical Insulation Tape high-temperature rated"
+		]
+	}
 ]

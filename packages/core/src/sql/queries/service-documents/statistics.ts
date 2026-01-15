@@ -274,5 +274,7 @@ export async function getPartsForMachine(
 		}
 	}
 
-	return Array.from(partsMap.values()).sort((a, b) => b.usageCount - a.usageCount);
+	return Array.from(partsMap.values()).sort(
+		(a, b) => b.usageCount - a.usageCount,
+	);
 }

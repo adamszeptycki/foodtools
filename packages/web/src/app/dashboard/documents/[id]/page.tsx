@@ -1,8 +1,8 @@
 "use client";
 
-import { use } from "react";
-import Link from "next/link";
 import { trpc } from "@foodtools/core-web/src/trpc/client";
+import Link from "next/link";
+import { use } from "react";
 
 export default function DocumentDetailPage({
 	params,
@@ -10,7 +10,11 @@ export default function DocumentDetailPage({
 	params: Promise<{ id: string }>;
 }) {
 	const { id } = use(params);
-	const { data: document, isLoading, error } = trpc.serviceDocuments.get.useQuery({ id });
+	const {
+		data: document,
+		isLoading,
+		error,
+	} = trpc.serviceDocuments.get.useQuery({ id });
 
 	if (isLoading) {
 		return (
@@ -84,7 +88,8 @@ export default function DocumentDetailPage({
 				{document.processingError && (
 					<div className="mt-4 p-3 rounded-md bg-red-900/20 border border-red-800">
 						<p className="text-sm text-red-400">
-							<span className="font-medium">Error:</span> {document.processingError}
+							<span className="font-medium">Error:</span>{" "}
+							{document.processingError}
 						</p>
 					</div>
 				)}
