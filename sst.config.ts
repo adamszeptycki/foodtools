@@ -1,11 +1,13 @@
 /// <reference path="./.sst/platform/config.d.ts" />
 
+import { Stage } from "./infra/stages";
+
 export default $config({
   app(input) {
     return {
       name: "foodtools",
-      removal: input?.stage === "production" ? "retain" : "remove",
-      protect: ["production"].includes(input?.stage),
+      removal: input?.stage === Stage.PROD ? "retain" : "remove",
+      protect: input?.stage === Stage.PROD,
       home: "aws",
     };
   },
