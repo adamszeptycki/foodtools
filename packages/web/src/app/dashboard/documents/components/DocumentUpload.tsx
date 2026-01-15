@@ -177,20 +177,45 @@ export function DocumentUpload() {
 			>
 				<input {...getInputProps()} />
 				<div className="text-slate-400">
-					<svg
-						className="mx-auto h-12 w-12 mb-3"
-						stroke="currentColor"
-						fill="none"
-						viewBox="0 0 48 48"
-						aria-hidden="true"
-					>
-						<path
-							d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-							strokeWidth={2}
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</svg>
+					{/* Icons row */}
+					<div className="flex items-center justify-center gap-6 mb-3">
+						{/* Upload/File icon */}
+						<svg
+							className="h-12 w-12"
+							stroke="currentColor"
+							fill="none"
+							viewBox="0 0 48 48"
+							aria-hidden="true"
+						>
+							<path
+								d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+								strokeWidth={2}
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+						</svg>
+						{/* Camera icon */}
+						<svg
+							className="h-12 w-12"
+							stroke="currentColor"
+							fill="none"
+							viewBox="0 0 24 24"
+							aria-hidden="true"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={1.5}
+								d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"
+							/>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={1.5}
+								d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"
+							/>
+						</svg>
+					</div>
 					{isDragActive ? (
 						<p className="text-blue-400 font-medium">Drop the files here...</p>
 					) : (
@@ -198,7 +223,8 @@ export function DocumentUpload() {
 							<p className="font-medium">
 								Drag & drop PDF files here, or click to browse
 							</p>
-							<p className="text-sm mt-1">Max 10MB per file</p>
+							<p className="text-sm mt-1">You can also use your camera to scan documents</p>
+							<p className="text-sm mt-1 text-slate-500">Max 10MB per file</p>
 						</>
 					)}
 				</div>

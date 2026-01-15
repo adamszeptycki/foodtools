@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,15 +13,32 @@ type DashboardLayoutProps = {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
 	const pathname = usePathname();
+	const [sidebarOpen, setSidebarOpen] = useState(false);
 
 	const isActive = (path: string) => pathname.startsWith(path);
 
 	return (
 		<AuthGuard>
-			<div className="flex min-h-screen bg-slate-950">
+			<div className="flex min-h-screen bg-slate-950 relative">
+				{/* Logo - top right corner */}
+				<div className="absolute top-4 right-4 z-10">
+					<Image
+						src="/logo.jpeg"
+						alt="Logo"
+						width={48}
+						height={48}
+						className="rounded-lg"
+					/>
+				</div>
+
 				{/* Sidebar */}
-				<aside className="w-64 bg-slate-900 border-r border-slate-800">
-					<div className="p-4">
+				<aside
+					className={`
+						${sidebarOpen ? "w-64" : "w-0"}
+						bg-slate-900 border-r border-slate-800 overflow-hidden transition-all duration-300
+					`}
+				>
+					<div className="w-64 p-4">
 						<OrganizationSwitcher />
 						<nav className="mt-6 space-y-2">
 							<Link
@@ -79,7 +96,38 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 				</aside>
 
 				{/* Main content */}
-				<main className="flex-1 p-6 overflow-auto">{children}</main>
+				<main className="flex-1 p-6 overflow-auto hide-scrollbar">
+					{/* Menu toggle button */}
+					<button
+						onClick={() => setSidebarOpen(!sidebarOpen)}
+						className="mb-4 p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+						aria-label={sidebarOpen ? "Close menu" : "Open menu"}
+					>
+						<svg
+							className="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							{sidebarOpen ? (
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth={2}
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							) : (
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth={2}
+									d="M4 6h16M4 12h16M4 18h16"
+								/>
+							)}
+						</svg>
+					</button>
+					{children}
+				</main>
 			</div>
 		</AuthGuard>
 	);
