@@ -1,452 +1,450 @@
 [
   {
-    "problem": "Door-type dishwasher wash pump motor overheating and tripping thermal overload breaker every 15 minutes during operation. Motor draws excessive amperage and makes grinding noise.",
-    "solution": "Replaced failed wash pump motor and damaged impeller housing that was causing motor bind. Cleaned debris from pump chamber and tested electrical connections.",
+    "problem": "Our dishwasher isn't getting the dishes clean anymore - there's still food stuck on plates and grease on the glasses. The servers keep bringing stuff back from the dining room because it looks dirty. We're having to pre-rinse everything twice now which is slowing us down during rush.",
+    "solution": "Replaced clogged spray arms and cleaned mineral deposits from nozzles, then adjusted wash pump pressure to manufacturer specifications.",
     "parts": [
-      "Wash Pump Motor 2 HP 208V 3-phase",
-      "Pump Impeller Housing Assembly",
-      "Thermal Overload Relay 15-amp"
+      "SKU-SP-003421 - Upper Spray Arm Assembly with stainless steel nozzles",
+      "SKU-SP-003422 - Lower Spray Arm Assembly with rotating manifold"
     ]
   },
   {
-    "problem": "Conveyor dishwasher not reaching proper sanitizing temperature of 180\u00b0F, staying at 160\u00b0F. Booster heater element shows no continuity on multimeter test.",
-    "solution": "Replaced burned-out booster heater element and faulty high-limit thermostat that was preventing proper heating cycle. Recalibrated temperature controller settings.",
+    "problem": "The dishwasher door keeps popping open in the middle of cycles and water goes everywhere. My dishwashers are constantly mopping the floor and we've had a couple slips already. It's happening like five times a shift now.",
+    "solution": "Replaced faulty door latch solenoid and adjusted door alignment mechanism to ensure proper sealing during operation.",
     "parts": [
-      "Booster Heater Element 18kW 208V",
-      "High-Limit Thermostat 200\u00b0F",
-      "Temperature Controller Digital Display"
+      "SKU-SO-008934 - Door Latch Solenoid 24V with mounting bracket",
+      "SKU-DM-005672 - Door Hinge Pin Kit with bushings",
+      "SKU-GS-001245 - Door Gasket Seal 36-inch perimeter"
     ]
   },
   {
-    "problem": "Upper spray arm in undercounter dishwasher not rotating and has poor water pressure. Visible food debris blocking multiple nozzles.",
-    "solution": "Disassembled and thoroughly cleaned spray arm assembly, replacing worn bearing and spring mechanism. Cleared all nozzle blockages with wire brush.",
+    "problem": "The dishes aren't getting sanitized properly - the health inspector said our rinse temperature is way too low. We're worried about failing our next inspection and the staff is freaking out about serving dirty dishes to customers.",
+    "solution": "Replaced defective booster heater element and recalibrated thermostat to maintain proper 180\u00b0F sanitizing rinse temperature.",
     "parts": [
-      "Spray Arm Bearing Assembly",
-      "Spray Arm Spring Mechanism",
-      "Nozzle Cleaning Wire Set"
+      "SKU-HE-007823 - Booster Heater Element 6kW 240V with terminals"
     ]
   },
   {
-    "problem": "Chemical dispenser system not injecting detergent into wash cycle. Peristaltic pump motor runs but no chemical flow observed.",
-    "solution": "Replaced cracked chemical feed tubing and worn peristaltic pump rollers that had lost compression. Primed system and adjusted flow rate settings.",
+    "problem": "There's soap everywhere but the dishes still come out dirty - it's like the machine is dumping all the detergent at once instead of dispensing it properly. We're going through way too much chemical and making a mess. The floor is slippery from all the overflow.",
+    "solution": "Replaced malfunctioning chemical dispenser pump and cleaned clogged injection lines to restore proper detergent metering.",
     "parts": [
-      "Chemical Feed Tubing 1/4-inch ID",
-      "Peristaltic Pump Roller Set",
-      "Check Valve 1/4-inch NPT"
+      "SKU-CP-004567 - Chemical Dispenser Pump 120V with flow regulator",
+      "SKU-TU-002134 - Chemical Injection Tubing Kit with fittings",
+      "SKU-VL-008901 - Chemical Metering Valve with adjustment screw"
     ]
   },
   {
-    "problem": "Drain pump not evacuating water from wash tank, causing overflow condition. Pump motor hums but impeller not turning.",
-    "solution": "Removed and replaced seized drain pump with new unit after finding damaged impeller shaft. Cleaned drain lines and tested backflow prevention valve.",
+    "problem": "The dishwasher won't start its cycle anymore - I press all the buttons but nothing happens. My crew is backed up washing everything by hand and we can't keep up with the dinner rush. It was working fine yesterday.",
+    "solution": "Replaced failed cycle controller board and tested all input sensors to restore automatic operation sequencing.",
     "parts": [
-      "Drain Pump 1/2 HP 115V",
-      "Pump Impeller Shaft Assembly",
-      "Backflow Prevention Valve 2-inch"
+      "SKU-CB-009876 - Cycle Controller Board with programming chip",
+      "SKU-SW-003445 - Start Button Switch with LED indicator"
     ]
   },
   {
-    "problem": "Door safety interlock system malfunctioning, allowing operation with door open. Door microswitch shows intermittent continuity.",
-    "solution": "Replaced faulty door microswitch and adjusted door alignment mechanism for proper engagement. Tested all safety interlock circuits for proper operation.",
+    "problem": "Water keeps backing up and overflowing from the dishwasher onto the floor. The drain is gurgling and making weird noises, and now there's standing water that smells terrible. We've had to shut it down twice today.",
+    "solution": "Replaced blocked drain pump and cleared debris from discharge valve to restore proper water evacuation.",
     "parts": [
-      "Door Microswitch SPDT 15-amp",
-      "Door Hinge Pin Set",
-      "Safety Interlock Relay 24VDC"
+      "SKU-DP-005432 - Drain Pump Motor 1/2 HP with impeller",
+      "SKU-VL-007654 - Drain Discharge Valve 2-inch with spring return"
     ]
   },
   {
-    "problem": "Cycle timer stuck on wash phase, not advancing to rinse cycle. Timer motor shows 24V input but gear mechanism not advancing.",
-    "solution": "Replaced defective timer motor assembly with stripped internal gears. Calibrated new timer for proper cycle sequencing and tested all phases.",
+    "problem": "The machine takes forever to fill up with water now - it used to start washing right away but now we're waiting like ten minutes just for it to fill. During lunch rush this is killing our turnaround time on clean dishes.",
+    "solution": "Replaced faulty water fill valve and cleaned sediment from water level sensor to restore normal fill timing.",
     "parts": [
-      "Timer Motor Assembly 24V",
-      "Timer Cam Switch Set",
-      "Timer Drive Gear Assembly"
+      "SKU-WV-002876 - Water Fill Valve 3/4-inch with solenoid actuator",
+      "SKU-WS-004321 - Water Level Sensor with float mechanism",
+      "SKU-FL-001987 - Water Fill Filter Screen stainless steel mesh"
     ]
   },
   {
-    "problem": "Water fill valve not opening, causing low water level alarm and cycle interruption. Solenoid coil measures infinite resistance.",
-    "solution": "Installed new water fill valve with solenoid coil and cleaned mineral deposits from valve seat. Adjusted water level sensor calibration.",
+    "problem": "There's so much steam and humidity coming from the dishwasher that we can barely see in the kitchen. The exhaust fan doesn't seem to be working and everything is getting condensation on it. It's like working in a sauna back there.",
+    "solution": "Replaced burned out exhaust fan motor and cleaned blocked ventilation ducts to restore proper steam evacuation.",
     "parts": [
-      "Water Fill Valve 3/4-inch NPT",
-      "Solenoid Coil 120V AC",
-      "Water Level Sensor Probe"
+      "SKU-FM-008765 - Exhaust Fan Motor 1/3 HP with mounting plate"
     ]
   },
   {
-    "problem": "Exhaust fan motor making excessive noise and vibration, reducing ventilation effectiveness. Fan blade assembly visibly wobbling during operation.",
-    "solution": "Replaced worn exhaust fan motor bearings and rebalanced fan blade assembly. Tightened all mounting hardware and lubricated motor bearings.",
+    "problem": "The wash water is barely warm and definitely not hot enough to clean properly. I can stick my hand right in it without getting burned. Food grease isn't coming off and we're having to rewash everything multiple times.",
+    "solution": "Replaced defective tank heater thermostat and heating element to restore proper 150\u00b0F wash water temperature.",
     "parts": [
-      "Exhaust Fan Motor 1/3 HP 115V",
-      "Fan Blade Assembly 12-inch",
-      "Motor Bearing Set Sealed"
+      "SKU-TS-006543 - Tank Thermostat 150\u00b0F with capillary tube",
+      "SKU-HE-003298 - Tank Heating Element 4.5kW immersion type"
     ]
   },
   {
-    "problem": "Tank heater not maintaining wash water temperature, dropping to 140\u00b0F during heavy use. Thermostat contacts pitted and not making reliable connection.",
-    "solution": "Replaced faulty tank thermostat and cleaned corroded electrical terminals. Tested heater element continuity and insulation resistance.",
+    "problem": "The dishwasher is making this awful grinding noise every time it runs - sounds like metal scraping against metal. It's so loud we can barely hear each other talk in the kitchen, and I'm worried it's going to break completely during our busy weekend. The noise just started yesterday but it's getting worse with each load.",
+    "solution": "Replaced the worn wash pump motor bearings and impeller assembly that had become damaged from debris buildup.",
     "parts": [
-      "Tank Thermostat 160\u00b0F Bulb Type",
-      "Heater Element 12kW 208V",
-      "Terminal Block 3-position"
+      "SKU-MT-428167 - Wash Pump Motor Assembly 3HP 230V with stainless steel impeller",
+      "SKU-BR-103945 - Motor Bearing Kit with seals for dishwasher pump"
     ]
   },
   {
-    "problem": "Rinse aid dispenser not functioning, leaving spots on glassware. Dispenser pump diaphragm cracked and leaking internally.",
-    "solution": "Rebuilt rinse aid dispenser pump with new diaphragm and check valves. Adjusted dispenser timing and flow rate for optimal coverage.",
+    "problem": "The spray arms aren't spinning anymore - I can see them just sitting there while water trickles out weakly. Dishes on the bottom rack still have food stuck all over them because nothing's getting blasted off. We've tried cleaning the holes but it didn't help at all.",
+    "solution": "Rebuilt the spray arm assembly and cleared the blocked internal water channels, then replaced the damaged bearing mechanism.",
     "parts": [
-      "Dispenser Pump Diaphragm Kit",
-      "Check Valve Set 1/8-inch",
-      "Flow Control Orifice 0.5mm"
+      "SKU-SA-592847 - Lower Spray Arm Assembly with bearing housing and nozzles"
     ]
   },
   {
-    "problem": "Door lift mechanism sticking and requiring excessive force to open. Pneumatic cylinder not extending smoothly and making hissing sound.",
-    "solution": "Replaced worn pneumatic cylinder seals and adjusted air pressure regulator. Lubricated all pivot points and tested door balance.",
+    "problem": "The rinse aid dispenser is acting crazy - sometimes no rinse aid comes out and the dishes have water spots everywhere, other times it dumps way too much and leaves a soapy film. The customers are complaining about the taste on their glasses and we look unprofessional. It's been inconsistent for about two weeks now.",
+    "solution": "Replaced the malfunctioning rinse aid dispenser pump and recalibrated the chemical feed system to proper concentration levels.",
     "parts": [
-      "Pneumatic Cylinder Seal Kit",
-      "Air Pressure Regulator 0-100 PSI",
-      "Door Hinge Lubricant Food-Grade"
+      "SKU-CD-367291 - Rinse Aid Dispenser Pump Assembly with flow control valve",
+      "SKU-SN-081564 - Chemical Feed Sensor and calibration kit",
+      "SKU-VL-749823 - Dispenser Check Valve 1/4-inch barbed fitting"
     ]
   },
   {
-    "problem": "Wash water temperature sensor reading incorrectly, showing 200\u00b0F when actual temperature is 150\u00b0F. Sensor probe corroded and giving false readings.",
-    "solution": "Replaced corroded temperature sensor probe and recalibrated temperature controller. Cleaned sensor well and applied thermal compound.",
+    "problem": "The dishwasher keeps stopping mid-cycle and flashing some error code we don't understand. Sometimes it works fine for a few loads, then just quits randomly. My staff doesn't know when it's actually done so dishes are sitting in there getting cold and we're falling behind.",
+    "solution": "Replaced the faulty cycle control board and updated the programming to correct the sensor communication errors.",
     "parts": [
-      "RTD Temperature Sensor PT100",
-      "Sensor Well Thermowell 1/2-inch",
-      "Thermal Compound Food-Safe"
+      "SKU-CB-156489 - Digital Control Board Assembly with display and programming chip"
     ]
   },
   {
-    "problem": "Final rinse water pressure insufficient for proper sanitizing coverage. Pressure regulator valve stuck in partially closed position.",
-    "solution": "Disassembled and cleaned pressure regulator valve, replacing worn internal springs and seals. Adjusted outlet pressure to specification.",
+    "problem": "The booster heater isn't working right - the water coming out for the final rinse is way cooler than it should be. We're not hitting sanitizing temperature and I'm scared the health department will shut us down. The temperature gauge shows it's trying but just can't get hot enough.",
+    "solution": "Replaced the burned-out heating elements in the booster heater and installed a new high-limit thermostat for safety.",
     "parts": [
-      "Pressure Regulator Valve 3/4-inch",
-      "Regulator Spring Set",
-      "Valve Seal Kit Viton"
+      "SKU-HE-834576 - Booster Heater Element 18kW 240V stainless steel",
+      "SKU-TH-291047 - High-Limit Safety Thermostat 180\u00b0F manual reset"
     ]
   },
   {
-    "problem": "Control panel displaying error codes intermittently and cycle buttons not responding consistently. Circuit board showing signs of moisture damage and corrosion.",
-    "solution": "Replaced water-damaged main control board and installed improved ventilation shield. Sealed all electrical connections with marine-grade sealant.",
+    "problem": "There's chemical residue building up all over the inside of the machine - white crusty stuff on the walls and racks. The dishes come out with spots and sometimes a weird smell. I think something's wrong with how the chemicals are mixing but I don't know what to do about it.",
+    "solution": "Descaled the entire system and replaced the clogged detergent injector nozzles that were causing improper chemical dilution.",
     "parts": [
-      "Main Control Board PCB Assembly",
-      "Control Panel Membrane Switch",
-      "Electrical Connection Sealant"
+      "SKU-NZ-647183 - Detergent Injector Nozzle Set with flow restrictors",
+      "SKU-CL-395728 - Descaling Chemical Kit for commercial dishwasher maintenance"
     ]
   },
   {
-    "problem": "Conveyor dishwasher belt motor running continuously but conveyor not moving dishes through machine. Drive chain broken and hanging loose from motor sprocket.",
-    "solution": "Replaced broken drive chain and adjusted chain tension to manufacturer specifications. Lubricated chain guides and verified proper belt tracking alignment.",
+    "problem": "The machine won't drain properly after washing - there's always dirty water sitting in the bottom that smells awful. When we try to run the next load, that nasty water gets pumped around with the clean wash water. It's disgusting and unsanitary.",
+    "solution": "Replaced the failed drain pump motor and cleared the blocked drain valve that was preventing proper water evacuation.",
     "parts": [
-      "Drive Chain #50 Roller 10-foot length",
-      "Chain Master Link #50",
-      "Chain Tensioner Assembly Model CT-240"
+      "SKU-DP-728394 - Drain Pump Motor 1/2HP with impeller and housing",
+      "SKU-VL-452861 - Drain Valve Assembly 2-inch with actuator solenoid",
+      "SKU-GS-168527 - Pump Gasket and Seal Kit"
     ]
   },
   {
-    "problem": "Door-type dishwasher producing excessive foam during wash cycle, causing suds overflow from tank. Detergent concentration too high due to faulty metering system.",
-    "solution": "Calibrated chemical feed pump flow rate and replaced clogged flow restrictor orifice. Adjusted detergent dilution ratio to 1:240 per manufacturer specs.",
+    "problem": "The door won't stay closed during the wash cycle - it pops open randomly and stops everything. We've tried slamming it harder but that doesn't work. Now we have to stand there and hold it shut which is ridiculous when we're trying to get ready for dinner service.",
+    "solution": "Replaced the worn door latch mechanism and adjusted the strike plate alignment to ensure proper door sealing.",
     "parts": [
-      "Flow Restrictor Orifice 0.8mm diameter",
-      "Peristaltic Pump Tubing 6mm ID",
-      "Chemical Feed Pump Calibration Kit"
+      "SKU-DL-516739 - Door Latch Assembly with strike plate and springs"
     ]
   },
   {
-    "problem": "Undercounter dishwasher door seal leaking water onto floor during operation. Rubber door gasket cracked and hardened from heat exposure.",
-    "solution": "Removed old door gasket and installed new heat-resistant silicone seal. Adjusted door alignment and pressure for proper sealing contact.",
+    "problem": "The tank water is staying cold even though the machine has been running for hours. I can feel that it's barely lukewarm when I open it up. Without hot wash water, the grease isn't coming off the plates and pans at all. We're basically just rinsing things with cold water.",
+    "solution": "Replaced the defective tank heating elements and installed a new thermostat control to maintain proper wash water temperature.",
     "parts": [
-      "Door Gasket Silicone 72-inch perimeter",
-      "Gasket Adhesive High-Temp",
-      "Door Hinge Pin Stainless Steel 3/8-inch"
+      "SKU-HE-673942 - Tank Heater Element 12kW 208V with mounting flange",
+      "SKU-TC-287163 - Temperature Controller with digital readout and probe"
     ]
   },
   {
-    "problem": "Booster heater cycling on and off rapidly without reaching setpoint temperature. High limit switch tripping due to scale buildup on heating elements.",
-    "solution": "Descaled heating elements with commercial deliming solution and replaced faulty high limit switch. Adjusted temperature differential to prevent short cycling.",
+    "problem": "The dishwasher is cycling way too fast - it finishes a full wash in like two minutes when it used to take eight or ten. The dishes come out still dirty with soap suds all over them because it's not giving enough time for each step. My dishwashers are having to run everything through twice which defeats the whole purpose of having an automatic machine.",
+    "solution": "Replaced faulty cycle timer control board that was advancing through wash sequences too rapidly, restored proper timing intervals for each cycle phase.",
     "parts": [
-      "High Limit Switch 200\u00b0F Manual Reset",
-      "Heating Element 6kW 240V",
-      "Temperature Control Relay SPDT 240V"
+      "SKU-CT-004521 - Digital cycle timer control board with 8-program memory"
     ]
   },
   {
-    "problem": "Wash arms not receiving adequate water flow, resulting in poor cleaning performance. Internal wash pump impeller damaged and causing cavitation noise.",
-    "solution": "Disassembled wash pump and replaced damaged impeller and worn mechanical seal. Checked pump alignment and motor coupling integrity.",
+    "problem": "The water pressure in our dishwasher is pathetic - it's like a gentle shower instead of the powerful spray it used to have. Plates with dried cheese or sauce aren't getting clean at all. I opened it up during a cycle and barely any water is coming out of the spray holes.",
+    "solution": "Rebuilt wash pump motor and replaced clogged internal filter screen, restoring full water pressure and spray force throughout the system.",
     "parts": [
-      "Pump Impeller 6-inch diameter Bronze",
-      "Mechanical Seal Carbon/Ceramic 1.5-inch",
-      "Pump Coupling Spider Insert Polyurethane"
+      "SKU-WP-007892 - Wash pump motor 1.5HP 3-phase with mounting bracket",
+      "SKU-FS-003417 - Stainless steel mesh filter screen 20-mesh"
     ]
   },
   {
-    "problem": "Final rinse water not hot enough for sanitization, measuring only 165\u00b0F instead of required 180\u00b0F. Mixing valve not blending hot and cold water properly.",
-    "solution": "Rebuilt thermostatic mixing valve with new internal components and calibrated temperature setting. Verified hot water supply temperature at 200\u00b0F minimum.",
+    "problem": "Our conveyor dishwasher belt keeps jamming and stopping in the middle - dishes pile up at the entrance and we can't load anything new. The motor makes a struggling sound like it's trying to move but can't. We've had to pull dishes out by hand and it's backing up our whole dish pit operation.",
+    "solution": "Replaced worn drive chain and lubricated conveyor guide rails that were causing excessive friction and motor strain.",
     "parts": [
-      "Thermostatic Mixing Valve Cartridge",
-      "Mixing Valve Seat Assembly",
-      "Temperature Adjustment Screw M6x20mm"
+      "SKU-DC-009156 - Stainless steel drive chain 48-link with master connector",
+      "SKU-LB-002834 - Food-grade conveyor rail lubricant 16oz bottle",
+      "SKU-GR-005672 - Conveyor guide rail set left and right with mounting hardware"
     ]
   },
   {
-    "problem": "Control system randomly stopping mid-cycle with no error code displayed. Loose wire connections at main control board causing intermittent power loss.",
-    "solution": "Tightened all wire terminal connections and applied dielectric grease to prevent corrosion. Replaced main control board with updated firmware version.",
+    "problem": "The detergent isn't getting mixed properly - sometimes the water is crystal clear with no soap at all, other times it's so thick with detergent you can't see through it. The dishes either don't get clean or come out with a slimy residue that customers definitely notice. It's been totally unpredictable for the past month.",
+    "solution": "Replaced malfunctioning chemical metering pump and recalibrated detergent injection system to maintain consistent concentrate ratios.",
     "parts": [
-      "Main Control Board PCB Assembly",
-      "Wire Terminal Connectors 14-16 AWG",
-      "Dielectric Grease 4oz tube"
+      "SKU-MP-008743 - Peristaltic metering pump 0.5GPH with digital display"
     ]
   },
   {
-    "problem": "Drain valve not opening at end of wash cycle, requiring manual operation to empty tank. Pneumatic actuator diaphragm ruptured and losing air pressure.",
-    "solution": "Replaced pneumatic actuator diaphragm and O-ring seals. Adjusted air pressure regulator to 25 PSI and tested valve operation timing.",
+    "problem": "The upper spray arm fell off during service and crashed into the dishes below, breaking three plates and a coffee mug. Now I can see that the mounting is completely stripped out and loose. We can't run the machine because dishes on the top rack don't get hit with any water at all.",
+    "solution": "Installed new upper spray arm assembly with reinforced mounting hub and replaced stripped mounting threads in the wash chamber ceiling.",
     "parts": [
-      "Pneumatic Actuator Diaphragm 4-inch",
-      "O-Ring Kit Viton High-Temp",
-      "Air Pressure Regulator 0-60 PSI"
+      "SKU-SA-006291 - Upper spray arm assembly with reinforced hub 24-inch diameter",
+      "SKU-MH-004185 - Threaded mounting hub insert with lock washer"
     ]
   },
   {
-    "problem": "Water level sensor giving false high readings, causing overfill conditions and water waste. Sensor probe covered in grease and food particles affecting conductivity.",
-    "solution": "Cleaned sensor probe with degreasing solvent and replaced corroded sensor head assembly. Recalibrated water level control settings to manufacturer specifications.",
+    "problem": "The machine fills up with water but then just sits there forever without starting the wash cycle. All the lights are on and it seems ready to go, but the pump never kicks in. We've been waiting twenty minutes sometimes before giving up and restarting the whole thing. It's killing our productivity during breakfast prep.",
+    "solution": "Replaced defective water level sensor that wasn't sending the proper fill signal to the control system, allowing normal cycle initiation.",
     "parts": [
-      "Water Level Sensor Probe Assembly",
-      "Sensor Head Stainless Steel",
-      "Sensor Cable 10-foot shielded"
+      "SKU-WS-007435 - Ultrasonic water level sensor with mounting bracket and 10ft cable"
     ]
   },
   {
-    "problem": "Prewash spray manifold clogged with grease causing poor pre-rinse performance. Multiple spray nozzles completely blocked with solidified fat deposits.",
-    "solution": "Removed spray manifold and soaked in hot alkaline cleaning solution overnight. Replaced severely clogged nozzles and reinstalled with proper alignment.",
+    "problem": "There's a horrible burning smell coming from the dishwasher and the tank water is way too hot - like scalding hot when it should just be warm. I'm worried it's going to hurt someone or damage the dishes. The smell is so bad we can taste it in the air and customers in the dining room are asking about it.",
+    "solution": "Replaced overheating tank thermostat that was stuck in the ON position and installed new high-temperature safety cutoff switch.",
     "parts": [
-      "Spray Nozzle 15\u00b0 Pattern 1/8 NPT",
-      "Manifold Cleaning Brush Set",
-      "Spray Manifold Gasket Kit"
+      "SKU-TH-003926 - Tank water thermostat 140-180\u00b0F range with capillary bulb",
+      "SKU-SC-001758 - High-temp safety cutoff switch 200\u00b0F automatic reset"
     ]
   },
   {
-    "problem": "Door counterweight cable snapped causing door to slam shut dangerously. Cable frayed due to improper routing over sharp edges on door frame.",
-    "solution": "Installed new stainless steel cable with proper routing guides to prevent chafing. Adjusted counterweight tension for smooth door operation and safety.",
+    "problem": "The final rinse water has no pressure at all - it's just dripping out instead of spraying. The dishes come out with spots and film because they're not getting properly rinsed. I can see the rinse arms trying to move but there's barely any water coming through them.",
+    "solution": "Rebuilt rinse booster pump and replaced clogged rinse aid injection nozzles that were restricting water flow in the final rinse system.",
     "parts": [
-      "Stainless Steel Cable 3/32-inch 10-foot",
-      "Cable End Fittings Swage Type",
-      "Door Weight Assembly 25-pound"
+      "SKU-RB-009847 - Rinse booster pump 0.75HP single phase",
+      "SKU-RN-005123 - Rinse injection nozzle set of 6 with O-rings",
+      "SKU-GA-002641 - Pump rebuild gasket kit with seals and impeller"
     ]
   },
   {
-    "problem": "Scrap accumulator system not removing food debris effectively, causing drain blockages. Scrapper blade worn down and not making contact with conveyor surface.",
-    "solution": "Replaced worn scrapper blade and adjusted height for proper contact pressure. Cleaned debris chute and verified proper waste removal operation.",
+    "problem": "The door handle broke off completely in my dishwasher's hand during dinner rush. Now we can't open or close the door properly and have to use pliers to grab the metal stub. It's dangerous and we're losing time on every single load trying to wrestle with this thing.",
+    "solution": "Replaced broken door handle assembly and reinforced door hinge mounting points that had become loose from repeated stress.",
     "parts": [
-      "Scrapper Blade Polyurethane 24-inch",
-      "Blade Mounting Hardware Kit",
-      "Debris Chute Gasket Rubber"
+      "SKU-DH-004792 - Door handle assembly stainless steel with spring mechanism",
+      "SKU-HP-007358 - Door hinge pin set with bushings and retaining clips"
     ]
   },
   {
-    "problem": "Chemical rinse aid not dispensing consistently, resulting in water spots on dishes. Venturi injector system clogged with mineral deposits from hard water.",
-    "solution": "Disassembled venturi injector and cleaned mineral deposits with acid-based descaler. Replaced worn venturi nozzle and recalibrated injection rate.",
+    "problem": "The machine is using way too much water - it keeps filling and filling like it doesn't know when to stop. Our water bill is going through the roof and there's constantly water overflowing onto the floor. Sometimes it fills for ten minutes straight before we manually shut it off.",
+    "solution": "Replaced faulty water fill solenoid valve that was sticking open and adjusted float switch mechanism to ensure proper fill level detection.",
     "parts": [
-      "Venturi Injector Nozzle 0.6mm orifice",
-      "Venturi Body Assembly Brass",
-      "Chemical Injection Tubing 4mm ID"
+      "SKU-SV-008164 - Water fill solenoid valve 3/4-inch NPT with coil",
+      "SKU-FL-003549 - Float switch assembly with adjustable arm and microswitch"
     ]
   },
   {
-    "problem": "Tank overflow alarm activating falsely during normal operation. Float switch mechanism sticking in up position due to grease accumulation on pivot point.",
-    "solution": "Cleaned float switch assembly and pivot mechanism with degreasing agent. Replaced float switch with sealed magnetic reed switch type for reliability.",
+    "problem": "The dishwasher keeps making this horrible screeching noise when it tries to drain - like nails on a chalkboard. It happens every time we finish a load and the water won't go down properly. My dishwashers are covering their ears and we're worried something is going to burn out completely.",
+    "solution": "Replaced the seized drain pump motor and cleared debris from the impeller housing that was causing the grinding noise and poor drainage.",
     "parts": [
-      "Magnetic Float Switch 250V 10A",
-      "Float Assembly Stainless Steel",
-      "Switch Mounting Bracket Adjustable"
+      "SKU-DP-247891 - Drain Pump Motor 1/3 HP 115V with mounting bracket",
+      "SKU-IM-156734 - Impeller Assembly stainless steel 4-inch diameter"
     ]
   },
   {
-    "problem": "Heated air drying system not functioning, leaving dishes wet at cycle completion. Blower motor seized due to bearing failure and overheating protection activated.",
-    "solution": "Replaced blower motor assembly and cleaned air intake filters. Verified heating element operation and adjusted drying cycle timer for optimal performance.",
+    "problem": "Our dishwasher won't heat up the wash water at all anymore - it's ice cold even after running for an hour. The grease just sits on everything and nothing gets clean. We tried waiting longer but it never gets warm and we're falling way behind on dishes.",
+    "solution": "Replaced the faulty tank heating element and installed a new thermostat that was stuck in the open position.",
     "parts": [
-      "Blower Motor 1/3 HP 115V 1725 RPM",
-      "Motor Mounting Bracket Steel",
-      "Air Filter Washable Aluminum 16x20"
+      "SKU-HE-382945 - Immersion Heating Element 4500W 240V with gasket seal",
+      "SKU-TH-091567 - Tank Thermostat 180\u00b0F high limit with capillary tube"
     ]
   },
   {
-    "problem": "Conveyor dishwasher making loud grinding noise from drive motor compartment and belt speed fluctuating erratically. Motor coupling shows visible wear and misalignment.",
-    "solution": "Replaced worn flexible coupling between motor and gearbox, realigned motor mount, and adjusted belt tension to manufacturer specifications.",
+    "problem": "The detergent dispenser is completely broken - no soap comes out at all during the wash cycle. We've tried refilling it and checking the lines but nothing works. Dishes come out greasy and gross because there's no detergent being used.",
+    "solution": "Rebuilt the detergent dispenser pump mechanism and replaced the clogged injection nozzle in the wash tank.",
     "parts": [
-      "Flexible coupling assembly 1.5-inch bore",
-      "Motor mount bracket kit stainless steel",
-      "V-belt 5L section 48-inch length"
+      "SKU-CD-724538 - Chemical Dispenser Pump 24V with tubing kit"
     ]
   },
   {
-    "problem": "Door-type dishwasher final rinse temperature only reaching 160\u00b0F instead of required 180\u00b0F for sanitization. Booster heater thermostat clicking but elements not energizing.",
-    "solution": "Replaced faulty contactor that was not closing properly to energize heating elements, and calibrated thermostat to correct temperature setpoint.",
+    "problem": "The conveyor belt in our dish machine stopped moving completely in the middle of lunch rush. Dishes are just sitting there getting sprayed in the same spot while we manually push racks through. The motor is running but the belt won't budge and we're totally backed up.",
+    "solution": "Replaced the stripped conveyor drive gear and adjusted the belt tension mechanism that had loosened over time.",
     "parts": [
-      "Contactor 3-pole 30A 240V coil",
-      "Thermostat bulb and capillary 180\u00b0F setpoint",
-      "Heating element 6kW 240V stainless steel"
+      "SKU-CG-459823 - Conveyor Drive Gear assembly hardened steel with keyway",
+      "SKU-CB-678291 - Conveyor Belt food-grade PVC 18-inch width",
+      "SKU-BT-334756 - Belt Tension Adjuster spring-loaded with mounting hardware"
     ]
   },
   {
-    "problem": "Undercounter dishwasher overflow sensor triggering false alarms and stopping cycles prematurely. Sensor probe covered in grease buildup and not detecting actual water level.",
-    "solution": "Cleaned sensor probe thoroughly with degreasing solution, adjusted sensor mounting height, and recalibrated control board sensitivity settings.",
+    "problem": "Every time we open the dishwasher door, scalding hot steam shoots out and almost burned one of my cooks yesterday. There's way too much pressure building up inside and it's dangerous. The exhaust system doesn't seem to be pulling the steam out like it should.",
+    "solution": "Replaced the malfunctioning exhaust fan motor and cleaned out the blocked ventilation ductwork to restore proper airflow.",
     "parts": [
-      "Water level sensor probe 6-inch stainless steel",
-      "Sensor mounting bracket adjustable",
-      "Control board calibration module"
+      "SKU-EF-892134 - Exhaust Fan Motor 1/2 HP 1725 RPM with mounting plate",
+      "SKU-VD-445627 - Ventilation Damper assembly 12-inch diameter with actuator"
     ]
   },
   {
-    "problem": "Conveyor dishwasher wash tank losing temperature rapidly during peak operation hours. Tank insulation damaged and heat exchanger coils showing scale buildup.",
-    "solution": "Replaced deteriorated foam insulation panels around tank walls and descaled heat exchanger coils using commercial descaling solution.",
+    "problem": "The final rinse cycle isn't working at all - dishes come out with soap film and spots everywhere. I can tell it's skipping that step because there's no hot water spray at the end. Customers are complaining about the taste and appearance of their glasses.",
+    "solution": "Replaced the defective rinse cycle solenoid valve and recalibrated the cycle timer to ensure proper rinse activation.",
     "parts": [
-      "Foam insulation panels 2-inch thick fiberglass",
-      "Heat exchanger coil cleaning kit",
-      "Tank insulation adhesive high-temperature"
+      "SKU-SV-671482 - Solenoid Valve 3/4-inch NPT 120V AC with manual override"
     ]
   },
   {
-    "problem": "Door-type dishwasher upper wash arm assembly vibrating excessively and spraying water outside tank area. Bearing assembly worn and arm mounting loose.",
-    "solution": "Replaced worn wash arm bearing assembly, tightened mounting hardware to proper torque specifications, and balanced spray arm rotation.",
+    "problem": "The wash arms are completely clogged up - I can see buildup in all the little holes and barely any water comes out. We've tried poking them clean with toothpicks but there's too much mineral buildup. Nothing on the bottom rack gets clean anymore.",
+    "solution": "Removed and descaled all spray arms, then replaced the severely corroded upper wash arm that couldn't be salvaged.",
     "parts": [
-      "Wash arm bearing assembly stainless steel",
-      "Mounting hardware kit grade 8 bolts",
-      "Wash arm balance weight set"
+      "SKU-WA-558439 - Upper Wash Arm stainless steel with 42 spray holes",
+      "SKU-WB-223781 - Wash Arm Bearing assembly with O-ring seal"
     ]
   },
   {
-    "problem": "Undercounter dishwasher detergent pump running continuously but no soap dispensing into wash water. Pump check valve stuck open causing backflow.",
-    "solution": "Replaced faulty check valve in detergent line and cleaned pump chamber of crystallized detergent deposits that were preventing proper sealing.",
+    "problem": "Our undercounter dishwasher keeps flooding the prep area because water shoots out from underneath during cycles. There's a puddle every time we run it and it's creating a slip hazard. I think there's a leak somewhere but can't tell where it's coming from.",
+    "solution": "Replaced the cracked door seal gasket and tightened loose water line connections at the pump assembly.",
     "parts": [
-      "Check valve 1/4-inch NPT brass",
-      "Detergent pump diaphragm kit",
-      "Pump chamber gasket set"
+      "SKU-DS-334912 - Door Seal Gasket silicone rubber full perimeter",
+      "SKU-WL-778623 - Water Line Connector Kit stainless steel with clamps"
     ]
   },
   {
-    "problem": "Conveyor dishwasher exhaust damper not opening automatically during wash cycles, causing excessive humidity buildup. Damper actuator solenoid not receiving power signal.",
-    "solution": "Repaired broken wire connection to damper solenoid and replaced corroded terminal connections, tested damper operation through full cycle.",
+    "problem": "The temperature gauge shows the booster heater is working but our rinse water is still not hot enough for sanitizing. The health inspector is coming next week and we're panicking about failing inspection. Steam comes out but it's not actually getting to 180 degrees like it should.",
+    "solution": "Replaced the faulty temperature sensor and installed a new booster heater element that had burned out internally.",
     "parts": [
-      "Damper actuator solenoid 24V DC",
-      "Terminal connector kit weatherproof",
-      "Control wire 14 AWG 25-foot length"
+      "SKU-TS-445829 - Temperature Sensor probe RTD with 6-foot cable",
+      "SKU-BH-667134 - Booster Heater Element 9KW 240V triple-pass design"
     ]
   },
   {
-    "problem": "Door-type dishwasher drain valve not sealing properly during wash cycle, causing continuous water loss and poor cleaning results. Valve seat pitted from chemical corrosion.",
-    "solution": "Disassembled drain valve assembly, machined valve seat smooth, and replaced valve disc and spring mechanism for proper sealing.",
+    "problem": "The control panel is going crazy - lights are flashing randomly and it starts cycles on its own without anyone pressing buttons. Sometimes it works normally for a few hours then acts up again. My staff doesn't trust it and we're afraid it'll break down completely.",
+    "solution": "Replaced the malfunctioning control board and updated the cycle timer module that had water damage from steam exposure.",
     "parts": [
-      "Drain valve disc assembly 3-inch diameter",
-      "Valve seat repair kit",
-      "Valve spring stainless steel heavy-duty"
+      "SKU-CB-291847 - Control Board PCB assembly with diagnostic LEDs",
+      "SKU-CT-523691 - Cycle Timer Module programmable 8-cycle with display"
     ]
   },
   {
-    "problem": "Undercounter dishwasher wash pump priming slowly and losing prime between cycles. Air leak in suction line causing cavitation and reduced flow.",
-    "solution": "Located and sealed air leak at pump housing gasket, replaced cracked suction line fitting, and adjusted pump priming sequence timing.",
+    "problem": "Our dishwasher is leaking water all over the floor from somewhere underneath - there's a constant puddle forming and we're going through towels like crazy trying to keep it dry. The leak seems to be getting worse and now it's dripping into the storage area below. My staff is complaining about slipping hazards and we can't figure out where it's coming from.",
+    "solution": "Replaced failed drain valve gasket and tightened loose water supply connections under the unit.",
     "parts": [
-      "Pump housing gasket silicone",
-      "Suction line fitting 1.5-inch NPT",
-      "Pump priming valve assembly"
+      "SKU-GK-002847 - Drain Valve Gasket Kit NBR rubber with stainless clamps",
+      "SKU-FT-001923 - Water Supply Fitting 3/4-inch NPT brass compression"
     ]
   },
   {
-    "problem": "Conveyor dishwasher pre-rinse section not activating when dishes enter detection zone. Photoelectric sensor lens clouded with grease and not detecting product.",
-    "solution": "Cleaned sensor lens with appropriate solvent, adjusted sensor alignment and sensitivity, and replaced sensor housing seal to prevent future contamination.",
+    "problem": "The dishwasher sounds like a jet engine when it's running - the noise is so loud we can't have conversations in the kitchen anymore. Customers in the dining room are complaining about the racket coming from back here. It started making this noise about a week ago and keeps getting louder.",
+    "solution": "Replaced worn wash pump motor bearings and impeller assembly that were causing excessive vibration and noise.",
     "parts": [
-      "Photoelectric sensor lens assembly",
-      "Sensor mounting bracket adjustable",
-      "Housing seal kit O-ring set"
+      "SKU-MT-004561 - Wash Pump Motor 2HP 3-phase with thermal protection",
+      "SKU-IM-003789 - Impeller Assembly stainless steel with wear ring",
+      "SKU-BR-001234 - Motor Bearing Set sealed ball bearings"
     ]
   },
   {
-    "problem": "Door-type dishwasher producing inconsistent wash results with some racks poorly cleaned. Wash pump impeller partially broken and creating uneven flow patterns.",
-    "solution": "Removed wash pump assembly, replaced damaged impeller with new balanced unit, and checked pump housing for wear or damage.",
+    "problem": "The dishes come out with this weird white film all over them that doesn't wipe off easily - glasses look cloudy and plates feel gritty. Customers have sent back drinks because the glasses look dirty even though they just came out of the dishwasher. We've tried running extra rinse cycles but it's not helping.",
+    "solution": "Calibrated chemical dispenser system and replaced malfunctioning rinse aid injection pump.",
     "parts": [
-      "Wash pump impeller 6-inch diameter bronze",
-      "Impeller key stock 1/4-inch",
-      "Pump housing wear ring"
+      "SKU-CD-005672 - Chemical Dispenser Pump 24V with flow sensor"
     ]
   },
   {
-    "problem": "Undercounter dishwasher door gasket hardening and cracking at high-temperature areas near steam vents. Door not sealing properly during operation.",
-    "solution": "Replaced entire door gasket with high-temperature silicone version, adjusted door alignment, and applied food-grade gasket lubricant.",
+    "problem": "The conveyor belt in our dishwasher keeps jamming and stopping - dishes pile up and we have to manually push them through. Sometimes it jerks forward suddenly and breaks plates or glasses. My dishwashers are afraid to load it normally because they don't know when it's going to stop working. We're losing money on broken dishes every day.",
+    "solution": "Replaced worn conveyor drive motor and realigned belt tracking system with new tension rollers.",
     "parts": [
-      "Door gasket high-temp silicone 10-foot length",
-      "Gasket adhesive food-grade",
-      "Door adjustment hardware kit"
+      "SKU-CM-007834 - Conveyor Drive Motor 1HP variable speed",
+      "SKU-TR-002156 - Tension Roller Assembly with adjustable brackets",
+      "SKU-CB-004923 - Conveyor Belt food-grade rubber 18-inch width"
     ]
   },
   {
-    "problem": "Conveyor dishwasher chemical feed lines becoming clogged with crystallized chemicals and causing erratic dispensing. Automatic dilution system not maintaining proper ratios.",
-    "solution": "Flushed all chemical lines with hot water solution, replaced clogged metering orifices, and recalibrated dilution system flow rates.",
+    "problem": "Our undercounter dishwasher gets so hot that nobody can work near it - the whole area becomes unbearable and we're going through ice just to cool down the kitchen. The outside of the machine is burning hot to touch and I'm worried someone's going to get hurt. It never used to heat up the room this much.",
+    "solution": "Replaced faulty thermostat and installed new exhaust blower motor to improve heat ventilation.",
     "parts": [
-      "Metering orifice set various sizes",
-      "Chemical feed line tubing 1/4-inch",
-      "Dilution system calibration kit"
+      "SKU-TH-003421 - Digital Thermostat 150-200\u00b0F with probe",
+      "SKU-BL-006789 - Exhaust Blower Motor 1/3HP with housing"
     ]
   },
   {
-    "problem": "Door-type dishwasher tank heater elements showing signs of scale buildup and reduced heating efficiency. Water temperature taking excessive time to reach setpoint.",
-    "solution": "Descaled heating elements using commercial descaling solution, replaced sacrificial anode rod, and adjusted water treatment system parameters.",
+    "problem": "The wash arms keep getting clogged with food particles even though we scrape the plates - every few hours we have to stop and clean out the holes by hand with a toothpick. It's slowing down our whole operation and the arms don't seem to have enough pressure anymore. Some of the holes look damaged from all the cleaning.",
+    "solution": "Installed upgraded wash arm assembly with larger debris-resistant nozzles and improved filtering system.",
     "parts": [
-      "Sacrificial anode rod magnesium 12-inch",
-      "Descaling solution commercial grade",
-      "Element mounting gaskets high-temp"
+      "SKU-WA-008756 - Upper Wash Arm stainless steel with anti-clog nozzles",
+      "SKU-WA-008757 - Lower Wash Arm reinforced with removable nozzles",
+      "SKU-FL-001567 - Pre-filter Screen mesh stainless steel"
     ]
   },
   {
-    "problem": "Undercounter dishwasher control board randomly resetting during operation and losing programmed cycle parameters. Power supply voltage fluctuating outside acceptable range.",
-    "solution": "Installed voltage stabilizer for control circuit, replaced control board with updated firmware version, and improved electrical connections.",
+    "problem": "The timer on our dishwasher seems totally random - sometimes cycles run for twenty minutes, sometimes they finish in three minutes with dishes still covered in soap. We never know how long to wait and keep opening the door to check, which stops the whole process. My staff is getting frustrated because they can't plan around it.",
+    "solution": "Replaced faulty electronic cycle controller and recalibrated all timing sequences to manufacturer specifications.",
     "parts": [
-      "Voltage stabilizer 120V 5A",
-      "Control board assembly latest revision",
-      "Electrical terminal upgrade kit"
+      "SKU-CC-009123 - Electronic Cycle Controller programmable with display"
     ]
   },
   {
-    "problem": "Door-type dishwasher final rinse temperature inconsistent, fluctuating between 160\u00b0F and 185\u00b0F during cycle. Steam production varies dramatically and dishes not properly sanitized.",
-    "solution": "Replaced faulty mixing valve that was allowing cold water bypass during rinse phase. Calibrated new valve to maintain consistent 180\u00b0F final rinse temperature.",
+    "problem": "There's this terrible chemical smell coming from the dishwasher that makes everyone's eyes water - it's like bleach mixed with something else that burns your nose. We're worried about breathing it in all day and customers are asking what that smell is. The dishes smell weird too even after they're dry.",
+    "solution": "Replaced cracked chemical mixing chamber and recalibrated detergent concentration levels to eliminate over-dosing.",
     "parts": [
-      "Thermostatic Mixing Valve 3/4-inch NPT 180\u00b0F Set Point",
-      "Temperature Sensor RTD Pt100 6-inch Probe",
-      "Valve Actuator 24VAC Spring Return"
+      "SKU-MC-007234 - Chemical Mixing Chamber polypropylene with seals",
+      "SKU-DS-004891 - Detergent Sensor electronic concentration monitor",
+      "SKU-SL-002345 - Seal Kit chemical-resistant for mixing system"
     ]
   },
   {
-    "problem": "Conveyor dishwasher wash tank water level dropping continuously during operation, requiring constant refill. No visible external leaks but water consumption excessive.",
-    "solution": "Located internal tank crack along weld seam near heating element mount. Drained tank, cleaned area, and applied high-temperature epoxy repair followed by stainless steel reinforcement plate.",
+    "problem": "The dishwasher keeps overheating and shutting itself down every couple hours - there's some kind of safety thing kicking in. We'll be in the middle of a busy lunch rush and suddenly it just stops working. My kitchen staff is panicking because we have no clean plates and the machine won't restart for like an hour.",
+    "solution": "Replaced faulty high-limit thermostat that was triggering premature shutdowns and cleaned mineral buildup from temperature sensor probe.",
     "parts": [
-      "High-Temp Epoxy Repair Kit Food Grade 500\u00b0F Rating",
-      "Stainless Steel Reinforcement Plate 6x8-inch 16 Gauge",
-      "Tank Drain Valve 2-inch NPT Ball Valve"
+      "SKU-TH-428561 - High-limit safety thermostat 180\u00b0F with automatic reset",
+      "SKU-TS-193847 - Temperature sensor probe 6-inch stainless steel with 3/8-inch NPT thread"
     ]
   },
   {
-    "problem": "Undercounter dishwasher producing loud banging noise during wash cycle, particularly when spray arms change direction. Customers complaining about noise level in dining area.",
-    "solution": "Diagnosed water hammer caused by worn wash pump check valve allowing backflow. Replaced check valve and installed water hammer arrestor to eliminate pressure spikes.",
+    "problem": "The conveyor belt in our dishwasher is moving way too slow - dishes are taking forever to go through and we're getting a huge backup. What used to take three minutes is now taking like eight or nine minutes per rack. During dinner service we can't keep up with the dirty dishes piling up.",
+    "solution": "Replaced worn conveyor drive motor and adjusted belt tension to restore proper cycle timing.",
     "parts": [
-      "Swing Check Valve 1.5-inch NPT Bronze Disc",
-      "Water Hammer Arrestor Size AA 1/2-inch NPT",
-      "Pump Mounting Isolators Rubber 1/4-20 Thread"
+      "SKU-MT-675239 - Conveyor drive motor 1/2 HP 115V with mounting bracket"
     ]
   },
   {
-    "problem": "Door-type dishwasher control system randomly shutting down mid-cycle with no error codes displayed. Power cycling unit allows restart but problem recurs unpredictably.",
-    "solution": "Found loose connection in main power contactor causing intermittent voltage drop to control board. Tightened all electrical connections and replaced worn contactor with matching amperage rating.",
+    "problem": "Our dishwasher is making this horrible screeching sound every time the wash pump kicks on - it's so loud customers in the dining room are complaining. The noise just started last week but it's getting worse every day. I'm afraid the whole thing is going to seize up and leave us with no way to wash dishes.",
+    "solution": "Replaced wash pump with seized bearings and installed new impeller assembly to eliminate noise and restore proper water circulation.",
     "parts": [
-      "Power Contactor 40A 240VAC 3-Pole NEMA Size 1",
-      "Control Transformer 240V Primary 24V Secondary 100VA",
-      "Terminal Block 12-Position 600V 25A Rating"
+      "SKU-WP-847392 - Wash pump assembly 2 HP with stainless steel housing",
+      "SKU-IM-562174 - Pump impeller with shaft seal kit",
+      "SKU-BG-391847 - Pump bearing set with grease fittings"
     ]
   },
   {
-    "problem": "Conveyor dishwasher chemical sanitizer concentration reading zero on test strips despite dispenser pump running. Health inspector threatening closure due to inadequate sanitization.",
-    "solution": "Discovered sanitizer supply line had developed pinhole leak allowing air infiltration and pump cavitation. Replaced entire supply line and primed system to restore proper chemical injection.",
+    "problem": "The prewash section isn't working at all - no water comes out when dishes first enter the machine. Everything goes straight to the main wash with all the food scraps still stuck on, so nothing comes out clean. My dishwashers are having to scrape every single plate by hand before loading it.",
+    "solution": "Rebuilt prewash pump and replaced clogged manifold to restore proper prewash spray pressure.",
     "parts": [
-      "Chemical Supply Tubing 3/8-inch ID Sanitary Grade 10-foot",
-      "Tube Fitting Barb 3/8-inch to 1/4-inch NPT Polypropylene",
-      "Chemical Injection Check Valve 1/4-inch Spring Loaded"
+      "SKU-PW-729583 - Prewash pump rebuild kit with seals and gaskets",
+      "SKU-MF-481629 - Prewash manifold assembly with integrated spray nozzles"
+    ]
+  },
+  {
+    "problem": "The chemical pumps are going crazy - sometimes no detergent comes out at all, other times it dumps way too much and we get foam everywhere. The inconsistency is driving my staff nuts because they never know if the dishes will actually get clean. We're wasting so much soap when it overdoses.",
+    "solution": "Calibrated chemical feed pumps and replaced worn peristaltic pump tubes to ensure consistent detergent dispensing.",
+    "parts": [
+      "SKU-CP-356218 - Detergent feed pump with variable speed controller",
+      "SKU-PT-194576 - Peristaltic pump tubing set for detergent and rinse aid"
+    ]
+  },
+  {
+    "problem": "Water is leaking out from under the machine and pooling on the floor - there's a steady drip that's getting worse every day. The floor is always wet and slippery now, and I'm worried someone's going to get hurt. Plus all that water is probably damaging the floor underneath.",
+    "solution": "Replaced cracked wash tank drain valve and tightened all pipe connections to eliminate water leakage.",
+    "parts": [
+      "SKU-DV-627439 - Tank drain valve 2-inch with stainless steel body and EPDM seal"
+    ]
+  },
+  {
+    "problem": "The final rinse isn't working right - I can tell because all our glasses have terrible water spots and the silverware looks cloudy. Customers are complaining that everything looks dirty even though it just came out of the dishwasher. The rinse aid dispenser seems empty but we just filled it yesterday.",
+    "solution": "Replaced malfunctioning rinse aid dispenser pump and adjusted flow rate settings to ensure proper spot-free rinsing.",
+    "parts": [
+      "SKU-RA-583647 - Rinse aid dispenser pump with adjustable flow control",
+      "SKU-FS-294831 - Flow sensor for rinse aid system with digital readout"
+    ]
+  },
+  {
+    "problem": "The racks keep jamming up on the conveyor track - they'll move halfway through and then just stop, backing up the whole system. My dishwashers have to manually push them through which is dangerous with all the hot water and steam. It happens multiple times every shift now.",
+    "solution": "Replaced worn conveyor track guides and lubricated all roller bearings to ensure smooth rack movement through the machine.",
+    "parts": [
+      "SKU-TG-738429 - Conveyor track guide set with stainless steel rollers",
+      "SKU-LB-452816 - Food-grade bearing lubricant for high-temperature applications"
+    ]
+  },
+  {
+    "problem": "The dishwasher control panel is acting up - sometimes the buttons don't respond when you press them, other times it starts random cycles we didn't select. Yesterday it got stuck on prewash for twenty minutes straight. My staff doesn't trust it anymore and we're losing efficiency trying to figure out what it's actually doing.",
+    "solution": "Replaced faulty control board and recalibrated all cycle timing parameters to restore reliable operation.",
+    "parts": [
+      "SKU-CB-819357 - Main control board with LCD display and cycle programming",
+      "SKU-KB-674283 - Control panel overlay with waterproof membrane switches"
+    ]
+  },
+  {
+    "problem": "There's not enough water pressure coming into the machine - it takes forever to fill up and when it finally does start washing, the spray is really weak. I can see dirty dishes coming out that obviously didn't get hit with enough water force. The whole cycle seems sluggish and ineffective.",
+    "solution": "Replaced clogged water inlet valve and installed new pressure regulator to ensure adequate water flow and pressure throughout all wash cycles.",
+    "parts": [
+      "SKU-IV-495627 - Water inlet valve 3/4-inch with solenoid actuator",
+      "SKU-PR-382914 - Water pressure regulator with gauge 25-80 PSI range",
+      "SKU-SF-628193 - Inlet water strainer with backwash capability"
     ]
   }
 ]

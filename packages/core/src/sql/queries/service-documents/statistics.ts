@@ -1,6 +1,6 @@
 import { getDb } from "@foodtools/core/src/sql";
 import { machineFixes } from "@foodtools/core/src/sql/schema";
-import { inArray, sql } from "drizzle-orm";
+import { and, inArray, isNotNull, sql } from "drizzle-orm";
 
 /**
  * Get machine statistics aggregated by machine type and model
@@ -92,7 +92,13 @@ export async function getFixesWithParts(userIds: string[]) {
 			labourHours: machineFixes.labourHours,
 		})
 		.from(machineFixes)
-		.where(inArray(machineFixes.userId, userIds));
+		.where(
+			and(
+				inArray(machineFixes.userId, userIds),
+				isNotNull(machineFixes.partsUsed),
+				sql`${machineFixes.partsUsed} != ''`,
+			),
+		);
 
 	return fixes;
 }

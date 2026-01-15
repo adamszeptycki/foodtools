@@ -11,9 +11,9 @@ from pydantic import BaseModel, Field
 # Pydantic models for structured output
 class ServiceIssue(BaseModel):
 	"""A single service issue with problem, solution, and parts."""
-	problem: str = Field(description="Specific technical problem description (1-2 sentences)")
+	problem: str = Field(description="Conversational problem description as a restaurant worker would describe it (2-4 sentences, everyday language, not technical jargon)")
 	solution: str = Field(description="Detailed repair solution applied (1-2 sentences)")
-	parts: list[str] = Field(description="List of 2-3 specific replacement parts with specifications")
+	parts: list[str] = Field(description="List of 1-3 replacement parts, each with SKU prefix format: 'SKU-XX-###### - Part Name with specs'")
 
 
 class ServiceIssueList(BaseModel):
@@ -115,21 +115,34 @@ CATEGORY_CONTEXT = {
 	},
 }
 
-GENERATION_PROMPT = """You are an expert commercial kitchen equipment technician. Generate {count} realistic service repair scenarios for {category}.
+GENERATION_PROMPT = """You are generating service repair scenarios for {category} equipment in commercial kitchens.
 
 Equipment context: {description}
 
 Key subsystems to cover: {subsystems}
 
 For each scenario, provide:
-1. "problem": A specific technical problem description (1-2 sentences, be specific about symptoms)
+1. "problem": A conversational problem description as a RESTAURANT WORKER (not a technician) would describe it. Write 2-4 sentences using everyday language, not technical jargon. Include what they noticed, how it affects their work, and any frustration.
+
+   GOOD example: "The oven won't hold temperature anymore - I set it to 350 but the food keeps coming out burnt on one side and raw on the other. My cooks are complaining they can't get consistent results. It's been getting worse over the past week."
+
+   BAD example: "Convection oven temperature fluctuating wildly between 250°F and 450°F despite thermostat set to 350°F."
+
 2. "solution": The detailed repair solution applied (1-2 sentences, include what was done)
-3. "parts": A list of 2-3 specific replacement parts with specifications (include voltage, size, type, model numbers where appropriate)
+
+3. "parts": A list of 1-3 replacement parts. EACH part MUST include a SKU prefix in this exact format:
+   "SKU-XX-###### - Part Name with specifications"
+
+   Where XX is a 2-letter category code (e.g., TC for thermocouple, MT for motor, HE for heating element) and ###### is a 6-digit number.
+
+   Example: "SKU-TC-001834 - Thermocouple Type K 18-inch with 1/4-inch NPT fitting"
 
 Requirements:
-- Problems should be realistic issues that commercial kitchen technicians actually encounter
-- Solutions must logically fix the stated problem
-- Parts must be specific component names with technical specifications (e.g., "Thermocouple Type K 24-inch", "Motor 1/4 HP 120V")
+- Problems should sound like a restaurant manager or cook describing issues to a repair company
+- Use casual language, mention impact on operations, express frustration naturally
+- Solutions must logically fix the stated problem (these can remain technical)
+- Parts MUST have the SKU-XX-###### prefix format
+- Use 1-3 parts per issue (vary the count)
 - Cover different subsystems - don't repeat the same type of problem
 - Vary the severity (minor adjustments to major repairs)
 {existing_clause}

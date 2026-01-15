@@ -1,452 +1,406 @@
 [
   {
-    "problem": "Walk-in cooler compressor short cycling every 2-3 minutes with high head pressure readings of 350 PSI on R-404A system. Unit unable to maintain temperature below 45\u00b0F.",
-    "solution": "Replaced failed condenser fan motor and cleaned heavily fouled condenser coils with coil cleaner and pressure washing. Adjusted TXV superheat to 8\u00b0F.",
+    "problem": "Our walk-in cooler is barely keeping things cold anymore - it's running at like 45 degrees instead of 38. The lettuce is wilting by lunch and we had to throw out a whole case of chicken yesterday. My staff keeps complaining that drinks aren't cold enough for customers.",
+    "solution": "Replaced the worn compressor start capacitor and cleaned the condenser coils which were heavily clogged with grease and debris, restoring proper cooling capacity.",
     "parts": [
-      "Condenser Fan Motor 1/3 HP 208-230V 1075 RPM",
-      "TXV Valve R-404A 3 Ton Sporlan TFVE-3",
-      "Nu-Calgon Evap Foam No Rinse Coil Cleaner"
+      "SKU-CP-002847 - Start Capacitor 108-130 MFD 370V",
+      "SKU-CL-003921 - Condenser Coil Cleaner Heavy Duty Foaming Agent"
     ]
   },
   {
-    "problem": "Three-door reach-in freezer experiencing ice buildup on evaporator coils with defrost cycle not completing. Temperature rising to 15\u00b0F during peak hours.",
-    "solution": "Replaced faulty defrost heater and defrost termination thermostat, then reprogrammed defrost timer for 4 cycles per 24 hours with 30-minute duration.",
+    "problem": "The freezer door won't stay closed properly and keeps popping open throughout the day. Ice cream is getting soft and we're losing money on spoiled frozen goods. It's driving my kitchen staff crazy having to constantly push it shut.",
+    "solution": "Replaced deteriorated door gaskets and adjusted door hinges to ensure proper seal and alignment.",
     "parts": [
-      "Defrost Heater 240V 800W 18-inch",
-      "Defrost Termination Thermostat 45\u00b0F",
-      "Paragon 8145-00 Defrost Timer"
+      "SKU-GS-001453 - Door Gasket 24x60 inch Magnetic Seal Gray",
+      "SKU-HG-004782 - Heavy Duty Door Hinge Kit Stainless Steel"
     ]
   },
   {
-    "problem": "Display case compressor running continuously with evaporator fan motor making grinding noise and reduced airflow. Case temperature at 42\u00b0F instead of target 35\u00b0F.",
-    "solution": "Replaced seized evaporator fan motor and cleaned debris from fan blade assembly. Checked and topped off refrigerant charge to proper subcooling of 12\u00b0F.",
+    "problem": "There's water all over the floor under our reach-in cooler every morning when we open. It's creating a slip hazard and my prep cooks are slipping around trying to work. The puddle just keeps getting bigger each day.",
+    "solution": "Cleared blocked drain line and replaced malfunctioning drain heater that was allowing ice buildup to obstruct proper drainage.",
     "parts": [
-      "Evaporator Fan Motor 1/25 HP 115V Shaded Pole",
-      "Fan Blade 8-inch CW Rotation",
-      "R-134a Refrigerant 30 lb Cylinder"
+      "SKU-DH-005639 - Drain Heater 120V 50W with Thermostat",
+      "SKU-DL-002918 - Flexible Drain Line Kit 3/4 inch x 6 feet"
     ]
   },
   {
-    "problem": "Walk-in freezer door not sealing properly with visible gaps at corners causing frost buildup around door frame. Internal temperature fluctuating between -5\u00b0F and 5\u00b0F.",
-    "solution": "Replaced worn magnetic door gasket and adjusted door hinges for proper alignment. Applied food-grade silicone sealant to corner gaps.",
+    "problem": "Our display case compressor is making this awful grinding noise that's getting louder every day. Customers are starting to complain about the noise, and I'm worried it's going to break down completely during our busy weekend rush.",
+    "solution": "Replaced failing compressor with hermetic scroll compressor and updated start relay assembly.",
     "parts": [
-      "Magnetic Door Gasket 84-inch x 30-inch Gray",
-      "Stainless Steel Hinge Heavy Duty 6-inch",
-      "Food Grade Silicone Sealant Clear"
+      "SKU-CM-008756 - Hermetic Scroll Compressor 1.5HP R-404A",
+      "SKU-RL-003247 - Start Relay Assembly 120V with Overload Protection",
+      "SKU-MG-001892 - Compressor Mounting Grommets Vibration Dampening"
     ]
   },
   {
-    "problem": "Prep table refrigerator thermostat stuck at maximum cooling setting causing overcooling to 28\u00b0F and freezing stored vegetables. Compressor cycling normally but temperature cannot be adjusted.",
-    "solution": "Replaced faulty mechanical thermostat with digital temperature controller and recalibrated temperature range to 35-38\u00b0F operating band.",
+    "problem": "The freezer is constantly running and never shuts off, which is jacking up our electric bill. The temperature stays okay but you can hear it running all night long. My manager is breathing down my neck about the energy costs.",
+    "solution": "Replaced faulty temperature control thermostat that was not cycling the compressor properly, allowing continuous operation.",
     "parts": [
-      "Digital Temperature Controller Dixell XR10CX",
-      "Temperature Sensor NTC 10K Ohm",
-      "Control Box Enclosure 6x4x2 inch NEMA 4"
+      "SKU-TC-004561 - Temperature Control Thermostat -10 to +50F Range"
     ]
   },
   {
-    "problem": "Ice machine/storage bin combination unit producing ice normally but melting rapidly in storage bin. Drain pan overflowing and water pooling on floor underneath unit.",
-    "solution": "Replaced cracked drain pan and installed new drain heater assembly. Cleared blocked drain line and improved insulation around storage bin walls.",
+    "problem": "Ice keeps building up thick on the evaporator coils in our walk-in freezer and we have to manually defrost it every few days. It's taking forever to defrost and we're losing valuable freezer space. My crew is getting tired of moving everything out constantly.",
+    "solution": "Replaced defective defrost timer and installed new defrost heater elements to restore automatic defrost cycling.",
     "parts": [
-      "Drain Pan Assembly 24-inch Stainless Steel",
-      "Drain Heater 120V 100W",
-      "Rigid Foam Insulation 2-inch R-13"
+      "SKU-DT-007234 - Defrost Timer 120V 6-Hour Cycle Mechanical",
+      "SKU-HE-005891 - Defrost Heater Element 800W 120V Sheathed"
     ]
   },
   {
-    "problem": "Two-door reach-in cooler compressor not starting with start relay clicking repeatedly. Digital display showing error code and internal temperature rising above 50\u00b0F.",
-    "solution": "Diagnosed failed compressor start capacitor and potential relay. Replaced both components and tested amp draw during startup sequence.",
+    "problem": "Our reach-in cooler temperatures keep swinging up and down - sometimes it's too cold and freezes the salad greens, other times it's too warm and the dairy goes bad. The kitchen staff never knows what temperature to expect when they open it up.",
+    "solution": "Replaced malfunctioning thermostatic expansion valve and recharged refrigerant system to proper levels for consistent temperature control.",
     "parts": [
-      "Start Capacitor 88-108 MFD 330V",
-      "Potential Relay 220V Pickup 170V Dropout",
-      "Hard Start Kit 3-in-1 Universal"
+      "SKU-TV-003456 - Thermostatic Expansion Valve R-134a 1/2 inch",
+      "SKU-RF-009123 - R-134a Refrigerant 30lb Cylinder"
     ]
   },
   {
-    "problem": "Deli display case with curved glass front showing heavy condensation on interior glass surface obscuring product visibility. Case maintaining proper temperature but high humidity levels.",
-    "solution": "Replaced malfunctioning anti-sweat heater elements in glass frame and adjusted humidity control settings. Sealed air gaps around glass mounting hardware.",
+    "problem": "The fan in our display case stopped working completely and now the front glass keeps fogging up so customers can't see the food. It's embarrassing and definitely hurting our sales since people can't see what we're offering.",
+    "solution": "Replaced burned out evaporator fan motor and damaged fan blade assembly to restore proper air circulation.",
     "parts": [
-      "Anti-Sweat Heater Element 120V 200W",
-      "Humidity Control Switch 24V",
-      "Structural Glazing Tape 1/4-inch"
+      "SKU-FM-004823 - Evaporator Fan Motor 1/20HP 115V CW Rotation",
+      "SKU-FB-002674 - Fan Blade Assembly 8-inch Diameter Plastic"
     ]
   },
   {
-    "problem": "Walk-in cooler evaporator coil completely iced over with no defrost occurring. Defrost timer motor not advancing and unit running in continuous cooling mode.",
-    "solution": "Replaced seized defrost timer motor and recalibrated timer wheel position. Manually initiated defrost cycle and monitored complete ice removal.",
+    "problem": "Our beer cooler isn't getting cold enough and the bottles are coming out lukewarm. Customers are complaining about warm beer and we're having to give out free drinks. The compressor runs but nothing seems to be happening.",
+    "solution": "Diagnosed and repaired refrigerant leak in condenser coil, recharged system, and replaced damaged liquid line drier.",
     "parts": [
-      "Defrost Timer Motor 120V 60Hz Paragon",
-      "Timer Dial Assembly 24-hour",
-      "Defrost Bi-Metal Switch 35\u00b0F Open"
+      "SKU-LD-006789 - Liquid Line Filter Drier 3/8 inch SAE",
+      "SKU-RF-009123 - R-134a Refrigerant 30lb Cylinder",
+      "SKU-LK-001567 - Refrigerant Leak Sealant Professional Grade"
     ]
   },
   {
-    "problem": "Beverage cooler with glass doors experiencing refrigerant leak at TXV connection with hissing sound audible. System low on charge and struggling to cool below 50\u00b0F.",
-    "solution": "Located and repaired refrigerant leak at TXV flare fitting, evacuated system to 500 microns, and recharged with proper R-134a quantity per nameplate specifications.",
+    "problem": "The compressor on our prep table cooler keeps shutting off randomly throughout the day and then starts back up hours later. My prep cooks are constantly worried about food safety and we've had to move ingredients to other coolers as backup.",
+    "solution": "Replaced overheating compressor overload protector and cleaned condenser fan motor to prevent thermal shutdowns.",
     "parts": [
-      "TXV Valve R-134a 1.5 Ton Danfoss TEN-2",
-      "Flare Fitting 1/2-inch Brass",
-      "R-134a Refrigerant 15 lb Cylinder"
+      "SKU-OP-005432 - Compressor Overload Protector 3-Wire Terminal",
+      "SKU-CF-007891 - Condenser Fan Motor 1/6HP 208-230V"
     ]
   },
   {
-    "problem": "Sandwich prep unit compressor overheating and shutting off on thermal protection with internal overload tripping every 10 minutes. Compressor housing too hot to touch.",
-    "solution": "Cleaned blocked condenser coils and replaced failed condenser fan capacitor causing reduced airflow. Verified proper compressor amp draw and cooling operation.",
+    "problem": "Our walk-in freezer door alarm keeps going off every few minutes even when the door is completely shut. It's driving everyone in the kitchen absolutely nuts and we can't concentrate on cooking. The beeping is so loud that customers in the dining room are starting to ask what's wrong.",
+    "solution": "Replaced the faulty magnetic door switch that was intermittently losing contact and recalibrated the door alarm timer settings.",
     "parts": [
-      "Run Capacitor 40 MFD 370V Oval",
-      "Condenser Fan Blade 12-inch CCW",
-      "Compressor Overload Protector"
+      "SKU-DS-847291 - Magnetic door switch heavy-duty with 6-foot wire leads",
+      "SKU-TM-392847 - Digital door alarm timer 0-10 minute adjustable delay"
     ]
   },
   {
-    "problem": "Four-door freezer section losing temperature overnight with one evaporator fan not operating. Ice crystals forming on non-working fan motor housing.",
-    "solution": "Replaced burned-out evaporator fan motor and damaged wire harness connector. Tested electrical continuity and verified proper voltage supply to motor terminals.",
+    "problem": "The condenser coils on our sandwich prep cooler are completely caked with grease and dust - you can barely see the metal anymore. The unit is running hot and struggling to keep up during lunch rush. My sandwich station is basically unusable when it gets busy because nothing stays cold.",
+    "solution": "Thoroughly cleaned the condenser coils with commercial degreaser and installed a new condenser fan motor that had seized due to debris buildup.",
     "parts": [
-      "Evaporator Fan Motor 1/40 HP 115V",
-      "Wire Harness Connector 4-pin Weatherproof",
-      "Motor Mounting Bracket Adjustable"
+      "SKU-FM-184729 - Condenser fan motor 1/4 HP 115V 1625 RPM with mounting bracket"
     ]
   },
   {
-    "problem": "Salad bar refrigeration system drain line backing up causing water damage to floor and electrical components. Drain heater not warming drain pan adequately.",
-    "solution": "Cleared blocked drain line with CO2 pressure and replaced low-wattage drain heater with higher capacity unit. Installed drain pan overflow alarm.",
+    "problem": "There's this weird chemical smell coming from our display freezer that gets stronger throughout the day. My customers are starting to notice it and a few have asked if the ice cream is still good to eat. I'm worried we might have a refrigerant leak or something serious going on.",
+    "solution": "Located and repaired a small refrigerant leak at the evaporator coil connection and recharged the system with the proper refrigerant amount.",
     "parts": [
-      "Drain Line Heater 120V 200W",
-      "Drain Pan Alarm Float Switch",
-      "PVC Drain Fittings 3/4-inch Kit"
+      "SKU-RF-729384 - R-404A refrigerant 25-pound cylinder",
+      "SKU-SV-485927 - Refrigerant service valve 1/4-inch flare connection",
+      "SKU-CL-637281 - Copper line set 1/4-inch x 3/8-inch 15-foot length"
     ]
   },
   {
-    "problem": "Pizza prep table refrigerator experiencing electrical issues with lights flickering and temperature control display intermittently going blank. Unit cooling inconsistently.",
-    "solution": "Diagnosed loose electrical connections in main control panel and replaced corroded wire terminals. Updated control board firmware and tested all electrical circuits.",
+    "problem": "Our main walk-in cooler light burned out last week and it's pitch black in there. My prep cooks are using flashlights to find ingredients and it's slowing everything down. The light fixture looks old and I think the ballast might be shot too.",
+    "solution": "Replaced the failed fluorescent ballast and installed new LED tube lights with updated fixtures rated for low-temperature environments.",
     "parts": [
-      "Control Board Assembly Universal PCB",
-      "Wire Terminal Kit Insulated Spade",
-      "LED Light Strip 120V 36-inch"
+      "SKU-LT-293847 - LED tube light 4-foot 32W cold-temperature rated",
+      "SKU-BL-847392 - Electronic ballast T8 fluorescent 2-lamp instant start"
     ]
   },
   {
-    "problem": "Wine display cooler maintaining temperature but producing excessive noise from compressor area with vibrations felt throughout cabinet structure. Customer complaints about noise levels.",
-    "solution": "Replaced worn compressor mounting grommets and realigned compressor position. Installed additional vibration dampening pads and sound insulation material.",
+    "problem": "The drain line in our ice machine area is backing up and there's nasty smelling water overflowing onto the floor. It's creating a health hazard and the smell is getting into our dining area. We've tried plunging it but the backup just keeps happening.",
+    "solution": "Cleared the blocked drain line and installed a new condensate drain heater to prevent future ice blockages in the drainage system.",
     "parts": [
-      "Compressor Mounting Grommets Set of 4",
-      "Vibration Dampening Pads 6x6 inch",
-      "Acoustic Foam Insulation 1-inch Thick"
+      "SKU-DH-384759 - Condensate drain heater 120V 50W with thermostat control",
+      "SKU-DL-692847 - Flexible drain line 3/4-inch diameter 10-foot length"
     ]
   },
   {
-    "problem": "Walk-in freezer condenser fan motor seized with bearing failure, causing high head pressure alarms and compressor thermal shutdown. System cycling on high pressure cutout every 5 minutes.",
-    "solution": "Replaced failed condenser fan motor and cleaned condenser coils of grease buildup. Reset high pressure cutout switch and verified proper refrigerant pressures.",
+    "problem": "Our reach-in freezer handle broke off this morning and now we can't get the door open at all. All our frozen inventory is trapped inside and we need it for tonight's dinner service. The handle just snapped right off when my cook tried to open it.",
+    "solution": "Installed a new heavy-duty door handle assembly and reinforced the mounting points with additional hardware to prevent future failures.",
     "parts": [
-      "Condenser Fan Motor 1/2 HP 208-230V 1075 RPM",
-      "High Pressure Cutout Switch R-404A 400/320 PSI",
-      "Motor Mounting Bracket 12-inch Galvanized Steel"
+      "SKU-HD-572938 - Commercial door handle heavy-duty stainless steel with lock",
+      "SKU-MH-847263 - Door handle mounting hardware reinforcement kit"
     ]
   },
   {
-    "problem": "Reach-in cooler expansion valve hunting with temperature swings between 32\u00b0F and 45\u00b0F every 15 minutes. Superheat readings fluctuating between 5\u00b0F and 25\u00b0F at evaporator outlet.",
-    "solution": "Replaced thermostatic expansion valve with correct tonnage rating and adjusted superheat setting to 8-10\u00b0F. Cleaned moisture from refrigerant lines and replaced filter drier.",
+    "problem": "The shelves in our walk-in cooler keep sagging and tilting, causing products to slide off and crash to the floor. We've lost several cases of produce this week and it's becoming a real safety issue. The shelving system seems to be falling apart.",
+    "solution": "Replaced worn shelf brackets and installed new heavy-duty wire shelving rated for commercial refrigeration loads.",
     "parts": [
-      "Thermostatic Expansion Valve R-134A 3-Ton Sporlan TFVE-3",
-      "Liquid Line Filter Drier 3/8 inch SAE Flare",
-      "Sensing Bulb Clamp 7/8 inch Copper Tube"
+      "SKU-SH-748392 - Wire shelf 24x48 inch epoxy-coated commercial grade",
+      "SKU-BR-395847 - Heavy-duty shelf bracket set adjustable height",
+      "SKU-SU-684729 - Shelf support posts 74-inch height with leveling feet"
     ]
   },
   {
-    "problem": "Bakery display case defrost heater elements burned out causing incomplete defrost cycles and ice accumulation blocking airflow. Case struggling to maintain 38\u00b0F during defrost recovery.",
-    "solution": "Replaced all three defrost heater elements and defrost termination thermostat. Reprogrammed defrost timer for 45-minute cycles every 8 hours with 35\u00b0F termination temperature.",
+    "problem": "Our beverage cooler thermostat seems to be stuck and won't respond when we try to adjust the temperature. The drinks are getting way too cold and actually starting to freeze, which is ruining our expensive craft beers. The dial just spins freely without clicking into place.",
+    "solution": "Replaced the faulty mechanical thermostat with a new digital temperature controller and recalibrated the system to proper beverage storage temperatures.",
     "parts": [
-      "Electric Defrost Heater 240V 500W 24-inch Stainless Steel",
-      "Defrost Termination Thermostat 35\u00b0F Cut-in/55\u00b0F Cut-out",
-      "Defrost Timer 8-Hour Cycle 240V SPDT Contacts"
+      "SKU-TC-847293 - Digital temperature controller -10\u00b0F to 50\u00b0F with display",
+      "SKU-TS-392746 - Temperature sensor probe 6-foot cable NTC type"
     ]
   },
   {
-    "problem": "Meat display case refrigeration system losing oil with oil separator malfunctioning and compressor running hot. Low oil pressure alarm triggering after 30 minutes of operation.",
-    "solution": "Replaced faulty oil separator and oil return solenoid valve. Added 32 ounces of POE oil to system and verified oil return operation through sight glass.",
+    "problem": "The insulation around our freezer door is falling apart and there are gaps everywhere that you can feel cold air rushing out of. Our electric bills have been through the roof and ice crystals keep forming around the door frame. It's like trying to cool the entire kitchen.",
+    "solution": "Stripped and replaced all deteriorated door insulation with new foam gasket material and installed magnetic door strips to ensure proper sealing.",
     "parts": [
-      "Oil Separator 1-5/8 inch ODF R-404A Rated",
-      "Oil Return Solenoid Valve 1/4 inch 24V AC",
-      "Polyol Ester Oil POE 32 ISO VG 1-Gallon Container"
+      "SKU-IN-573849 - Door insulation foam gasket 1-inch thick 25-foot roll",
+      "SKU-MG-847562 - Magnetic door seal strip 3/4-inch width 50-foot length"
     ]
   },
   {
-    "problem": "Walk-in cooler door closer mechanism broken with door not self-closing properly, causing warm air infiltration. Internal temperature climbing to 50\u00b0F during busy periods.",
-    "solution": "Replaced hydraulic door closer assembly and adjusted closing speed and latching force. Aligned door frame and replaced worn door strike plate for proper seal engagement.",
+    "problem": "Our prep cooler started making this loud rattling noise yesterday and now it's vibrating so much that it's shaking the whole prep station. My cooks can't work properly because their cutting boards are bouncing around. The noise is getting worse every hour.",
+    "solution": "Replaced the worn compressor mounting isolators and rebalanced the condenser fan assembly that had developed excessive vibration.",
     "parts": [
-      "Hydraulic Door Closer Heavy Duty Commercial Grade",
-      "Door Strike Plate Stainless Steel Adjustable",
-      "Door Closer Mounting Hardware Kit Grade 8 Bolts"
+      "SKU-VI-284759 - Compressor vibration isolator set of 4 heavy-duty rubber",
+      "SKU-FB-647382 - Fan blade assembly 12-inch diameter balanced",
+      "SKU-MB-395847 - Motor mounting bracket anti-vibration design"
     ]
   },
   {
-    "problem": "Ice cream dipping cabinet compressor short cycling on low pressure cutout with refrigerant leak at evaporator coil connection. System charge critically low at 45 PSI suction pressure.",
-    "solution": "Located and repaired pinhole leak in evaporator coil using silver solder. Evacuated system to 500 microns and recharged with proper R-404A refrigerant amount per nameplate.",
+    "problem": "The temperature readout on our walk-in cooler shows 38 degrees but when I check with my own thermometer it's actually running at 32 degrees and freezing everything. All our fresh produce is getting frost damage and the lettuce looks like garbage. My kitchen manager is furious because we're throwing away hundreds of dollars in vegetables every day.",
+    "solution": "Replaced the faulty temperature sensor and recalibrated the digital temperature controller to ensure accurate readings and proper temperature control.",
     "parts": [
-      "Silver Solder Rod 15% Silver 1/8 inch Diameter",
-      "Low Pressure Cutout Switch R-404A 5/25 PSI",
-      "Service Valve Core 1/4 inch SAE Standard"
+      "SKU-TS-248901 - Temperature Sensor RTD Probe 6-inch with digital output",
+      "SKU-TC-156789 - Digital Temperature Controller with display and relay output"
     ]
   },
   {
-    "problem": "Beverage cooler electronic temperature controller displaying 'Sensor Error' code with erratic temperature readings. Actual temperature at 55\u00b0F while display shows -20\u00b0F intermittently.",
-    "solution": "Replaced defective temperature sensor probe and controller display module. Recalibrated temperature settings and verified sensor resistance values at various temperatures.",
+    "problem": "Our chest freezer lid is so heavy that my staff can barely lift it anymore and it slams shut on their hands. The pneumatic arm that's supposed to hold it up just hangs there useless. Two of my prep cooks already got their fingers pinched and now they're scared to use it.",
+    "solution": "Replaced the worn pneumatic lid support cylinder and adjusted the mounting brackets for proper lid operation and safety.",
     "parts": [
-      "Temperature Sensor Probe 10K Ohm Thermistor 6-foot Cable",
-      "Electronic Temperature Controller Digital Display 120V",
-      "Sensor Mounting Well 1/4 inch NPT Brass"
+      "SKU-PS-334567 - Pneumatic Lid Support Cylinder 150lb capacity with mounting hardware"
     ]
   },
   {
-    "problem": "Deli meat slicer refrigerated base losing cooling capacity with evaporator coil frosted over and drain pan heater not functioning. Condensate backing up into cabinet interior.",
-    "solution": "Replaced failed drain pan heater and cleaned blocked drain line with hot water flush. Installed new drain pan with improved slope for proper drainage.",
+    "problem": "The exhaust fan on top of our beverage cooler completely died and now the compressor is overheating constantly. The whole unit shuts down every few hours and we have to wait for it to cool off before it starts working again. Our customers are getting warm sodas and complaining like crazy.",
+    "solution": "Installed new condenser fan motor and cleaned the condenser coils to restore proper airflow and prevent compressor overheating.",
     "parts": [
-      "Drain Pan Heater 120V 80W Silicone Pad Type",
-      "Drain Pan Stainless Steel 18 x 12 x 2 inch",
-      "Drain Line 5/8 inch ID Clear Vinyl Tubing"
+      "SKU-FM-445612 - Condenser Fan Motor 1/6 HP 115V with mounting bracket",
+      "SKU-FB-782134 - Fan Blade 12-inch diameter aluminum with hub"
     ]
   },
   {
-    "problem": "Produce cooler dual temperature system with one zone maintaining 34\u00b0F while other zone running at 50\u00b0F. Zone damper actuator motor not responding to temperature controller signals.",
-    "solution": "Replaced defective zone damper actuator motor and recalibrated damper position sensors. Adjusted airflow balance between zones and verified independent temperature control operation.",
+    "problem": "Our reach-in cooler keeps tripping the circuit breaker in the middle of lunch rush and shutting down completely. It happened three times yesterday and we lost a whole batch of prepped salads. The electrician said the breaker is fine so it must be something with the cooler itself drawing too much power.",
+    "solution": "Replaced the failing compressor start relay and run capacitor which were causing excessive electrical draw and circuit breaker trips.",
     "parts": [
-      "Zone Damper Actuator Motor 24V AC 90 Second Rotation",
-      "Temperature Control Sensor RTD Platinum 100 Ohm",
-      "Damper Blade Assembly 8 x 6 inch Aluminum Frame"
+      "SKU-SR-667890 - Compressor Start Relay 3-in-1 universal type",
+      "SKU-CA-523471 - Run Capacitor 35MFD 370V oval with mounting bracket",
+      "SKU-CA-523472 - Start Capacitor 88-108MFD 125V round"
     ]
   },
   {
-    "problem": "Frozen yogurt machine refrigeration condenser coil heavily blocked with lint and debris causing high ambient cutout trips. Unit shutting down every hour during peak service.",
-    "solution": "Thoroughly cleaned condenser coil using coil cleaning chemicals and high-pressure water rinse. Replaced clogged air filter and adjusted condenser fan speed for improved airflow.",
+    "problem": "The automatic defrost on our display freezer isn't working at all and thick ice is building up on the coils every day. We have to manually turn it off and wait hours for it to melt, which means no frozen desserts during that time. My afternoon customers keep asking where all our ice cream went.",
+    "solution": "Replaced the defrost timer and installed new defrost heater elements to restore automatic defrost cycling and prevent ice buildup.",
     "parts": [
-      "Condenser Coil Cleaner Heavy Duty Alkaline 1-Gallon",
-      "Air Filter Washable Aluminum Mesh 16 x 20 x 1 inch",
-      "Fan Speed Controller Variable 115V 5-Amp Rating"
+      "SKU-DT-789123 - Defrost Timer 6-hour cycle with manual advance",
+      "SKU-DH-445789 - Defrost Heater Element 500W 120V with mounting clips"
     ]
   },
   {
-    "problem": "Walk-in freezer floor heating system not operating with floor ice buildup creating safety hazard. Floor heating cables showing no continuity and moisture intrusion evident.",
-    "solution": "Removed damaged floor heating cables and installed new self-regulating heating cable system. Applied waterproof membrane and sealed all cable entry points to prevent moisture infiltration.",
+    "problem": "Our wine cooler temperature keeps bouncing around between 45 and 65 degrees instead of staying at the 55 we set it to. The expensive wines are getting ruined by the temperature swings and my manager is threatening to take it out of my paycheck. The compressor seems to run randomly with no pattern.",
+    "solution": "Replaced the malfunctioning thermostatic expansion valve and recharged the refrigerant system to restore stable temperature control and proper cooling cycle.",
     "parts": [
-      "Self-Regulating Floor Heating Cable 240V 8 Watts/Foot",
-      "Floor Heating Thermostat 35\u00b0F On/45\u00b0F Off NEMA 4X",
-      "Cable Junction Box Waterproof NEMA 4X Rating"
+      "SKU-TX-334455 - Thermostatic Expansion Valve R-134a with sensing bulb",
+      "SKU-RF-889966 - R-134a Refrigerant 15lb cylinder"
     ]
   },
   {
-    "problem": "Cheese display case refrigeration system experiencing liquid floodback with compressor making knocking sounds during startup. Suction line warm to touch near compressor inlet.",
-    "solution": "Installed suction line accumulator to prevent liquid refrigerant from entering compressor. Adjusted TXV superheat setting higher and insulated suction line to prevent condensation.",
+    "problem": "The bottom drain in our prep sink cooler is completely clogged and gross water is backing up into the food storage area. There's a terrible smell coming from it that's making customers wrinkle their noses when they walk by. My health inspector is coming next week and this will definitely fail us.",
+    "solution": "Cleared the blocked condensate drain line and replaced the drain heater to prevent future ice blockages and ensure proper drainage.",
     "parts": [
-      "Suction Line Accumulator 1-3/8 inch ODF R-134A Rated",
-      "Suction Line Insulation 7/8 inch ID Closed Cell Foam",
-      "TXV Superheat Spring Kit 8-12\u00b0F Range Adjustment"
+      "SKU-DH-778899 - Condensate Drain Heater 25W 120V with thermostat"
     ]
   },
   {
-    "problem": "Prep table refrigerator experiencing electrical power fluctuations with compressor contactor chattering and lights dimming during compressor startup. Voltage dropping to 195V during start.",
-    "solution": "Installed hard start kit with potential relay and start capacitor to reduce inrush current. Upgraded electrical supply wiring to handle compressor starting load and verified proper grounding.",
+    "problem": "Our upright freezer door keeps swinging open by itself even when we make sure to close it tight. The magnetic seal doesn't seem to hold anymore and cold air is pouring out constantly. My frozen food costs are going through the roof because everything keeps thawing out.",
+    "solution": "Replaced the worn door gasket and adjusted the door hinges to ensure proper alignment and magnetic seal contact.",
     "parts": [
-      "Hard Start Kit Potential Relay 330V Pick-up 250V Drop-out",
-      "Start Capacitor 88-108 MFD 330V AC Electrolytic",
-      "Electrical Wire 12 AWG THHN Stranded Copper 25-foot"
+      "SKU-GS-556677 - Door Gasket Magnetic Seal 28-inch gray with corner pieces",
+      "SKU-HG-223344 - Door Hinge Set heavy-duty with adjustment screws"
     ]
   },
   {
-    "problem": "Salad bar sneeze guard refrigeration coils sweating excessively with condensate dripping onto food products. Humidity levels high and air circulation inadequate around coil area.",
-    "solution": "Installed condensate management system with collection trough and improved drainage. Added circulation fan to reduce humidity levels and prevent condensation on cooling coils.",
+    "problem": "The interior light in our salad prep cooler flickers constantly and sometimes goes completely dark for hours. My prep cooks are squinting to see what they're doing and making mistakes with portion sizes. The flickering is giving everyone headaches during the long prep shifts.",
+    "solution": "Replaced the fluorescent ballast and installed new LED conversion kit to provide stable, energy-efficient lighting.",
     "parts": [
-      "Condensate Collection Trough Stainless Steel 48-inch Length",
-      "Circulation Fan 115V 50 CFM Axial Flow",
-      "Humidity Control Damper 6-inch Motorized 24V AC"
+      "SKU-LK-445566 - LED Conversion Kit 18W 4000K with magnetic mounting",
+      "SKU-BL-778822 - Electronic Ballast T8 fluorescent 32W instant start"
     ]
   },
   {
-    "problem": "Blast chiller refrigeration system experiencing oil foaming in sight glass with compressor running erratically and cooling capacity reduced by 40%. System recently serviced with refrigerant added.",
-    "solution": "Evacuated system and found moisture contamination causing oil breakdown. Replaced compressor oil, filter drier, and performed triple evacuation to 250 microns before recharging with dry refrigerant.",
+    "problem": "Our walk-in freezer floor is cracking and buckling up in several spots, making it dangerous to walk on with full sheet pans. One of my bakers already twisted her ankle stepping in a hole yesterday. The floor feels spongy in some areas like the insulation underneath is failing.",
+    "solution": "Removed damaged floor panels and replaced the deteriorated foam insulation underneath, then installed new insulated floor panels with proper vapor barrier.",
     "parts": [
-      "Compressor Oil POE 46 ISO VG 1-Quart Moisture-Free",
-      "Bi-Flow Filter Drier 1/2 inch ODF 100% Activated Alumina",
-      "Vacuum Pump Oil 1-Quart High Vacuum Grade"
+      "SKU-FP-889900 - Insulated Floor Panel 4x8 feet with tongue-and-groove edges",
+      "SKU-IN-334567 - Polyurethane Foam Insulation Board 4-inch thickness",
+      "SKU-VB-556788 - Vapor Barrier Film 6-mil thickness with adhesive backing"
     ]
   },
   {
-    "problem": "Commercial freezer condenser coil severely blocked with grease and debris causing high discharge temperatures of 180\u00b0F and compressor overheating. System shutting down on thermal protection every 20 minutes.",
-    "solution": "Performed thorough condenser coil cleaning with coil cleaner and pressure washing, then installed condenser coil guard to prevent future contamination. Verified proper airflow and normal discharge temperatures.",
+    "problem": "The temperature control knob on our walk-in cooler is completely dead - we can turn it all we want but nothing changes. We're stuck at whatever temperature it was last set to and can't adjust it for different storage needs. My produce is either freezing or going bad because we can't fine-tune the temp anymore.",
+    "solution": "Replaced the faulty electronic thermostat controller and calibrated the temperature settings to proper operating range.",
     "parts": [
-      "Condenser Coil Guard 24x36 inch aluminum mesh",
-      "Coil cleaner concentrate Nu-Calgon Cal-Foam",
-      "High temperature cutout switch 180\u00b0F manual reset"
+      "SKU-TC-847239 - Digital Thermostat Controller with LCD Display 120V",
+      "SKU-SE-293847 - Temperature Sensor Probe 6-foot cable NTC type"
     ]
   },
   {
-    "problem": "Reach-in refrigerator experiencing erratic temperature control with digital thermostat displaying incorrect readings 10\u00b0F higher than actual. Compressor cycling inappropriately based on false readings.",
-    "solution": "Replaced faulty temperature sensor and recalibrated digital controller to factory specifications. Verified accurate temperature readings and proper compressor cycling.",
+    "problem": "Our chest freezer compressor won't start up at all anymore - it just sits there silent while the temperature climbs. We lost a whole shipment of frozen seafood overnight and my boss is furious about the waste. I can hear clicking sounds but the compressor never kicks in.",
+    "solution": "Diagnosed and replaced the failed compressor start relay and overload protector which were preventing the compressor from starting.",
     "parts": [
-      "Temperature sensor probe 10K ohm thermistor 6-foot cable",
-      "Digital temperature controller Dixell XR20CX 120V",
-      "Sensor mounting bracket stainless steel"
+      "SKU-RL-583921 - Start Relay 3-in-1 Universal Compressor",
+      "SKU-OL-749283 - Overload Protector 1/3 HP Thermal Switch",
+      "SKU-CP-192847 - Start Capacitor 88-108 MFD 330V"
     ]
   },
   {
-    "problem": "Walk-in cooler experiencing liquid refrigerant flooding back to compressor with loud knocking sounds and oil foaming in sight glass. Compressor at risk of mechanical damage from liquid slugging.",
-    "solution": "Installed liquid line solenoid valve and adjusted TXV superheat setting to 12\u00b0F to prevent liquid flood-back. Added suction line accumulator for additional protection.",
+    "problem": "There's this gross slimy buildup all over the evaporator coils in our salad cooler and it smells terrible. The cooling isn't working right and my lettuce is wilting faster than usual. The smell is starting to get into the food and customers are noticing.",
+    "solution": "Deep cleaned the evaporator coils with antimicrobial coil cleaner and replaced the clogged air filter to restore proper airflow and eliminate odors.",
     "parts": [
-      "Liquid line solenoid valve Alco 240RA8T4 3/8 inch 120V",
-      "Suction accumulator Parker HAD-164-S 1-5/8 inch",
-      "TXV Sporlan ORIT-6 R-404A 3/8 x 1/2 inch"
+      "SKU-AF-647291 - Antimicrobial Air Filter 16x20x1 MERV-8"
     ]
   },
   {
-    "problem": "Ice maker water curtain freezer showing premature compressor bearing failure with metallic grinding noise and excessive vibration. Compressor amperage drawing 15% above nameplate rating.",
-    "solution": "Replaced failed hermetic compressor and installed vibration dampeners to reduce cabinet stress. Added hard start kit to reduce starting torque on new compressor.",
+    "problem": "Our display case glass keeps getting covered in condensation and water spots no matter how much we wipe it down. Customers can barely see the desserts inside and it looks really unprofessional. The problem seems worst during busy periods when we're opening it a lot.",
+    "solution": "Adjusted the anti-sweat heaters around the glass perimeter and replaced the worn door gaskets to eliminate condensation issues.",
     "parts": [
-      "Hermetic compressor Tecumseh AEA4440EXA 1/2 HP R-404A",
-      "Hard start kit Supco 3-in-1 RCO410",
-      "Vibration dampener mounts rubber 1/4-20 thread"
+      "SKU-AH-938472 - Anti-Sweat Heater Wire 120V 25-watt per foot",
+      "SKU-GS-475829 - Magnetic Door Gasket 78-inch Gray Vinyl",
+      "SKU-DF-283946 - Defrost Heater Element 240V 500W"
     ]
   },
   {
-    "problem": "Salad bar refrigeration unit drain pan heater not functioning causing ice blockage in drain line and water backing up into cabinet. Standing water creating sanitation concerns.",
-    "solution": "Replaced burned out drain pan heater element and installed new drain pan thermostat with proper temperature differential. Cleared ice blockage and sanitized affected areas.",
+    "problem": "The automatic defrost cycle on our freezer seems to have stopped working completely. We're getting huge ice buildups that block the vents and make it impossible to fit our normal inventory. My staff has to chip ice away every few hours just to make space.",
+    "solution": "Replaced the malfunctioning defrost timer and tested the defrost cycle to ensure proper ice removal sequence.",
     "parts": [
-      "Drain pan heater element 120V 50W silicone",
-      "Drain pan thermostat Ranco A30-3210 SPST 35\u00b0F",
-      "Drain line insulation foam tube 1/2 inch ID"
+      "SKU-DT-729485 - Defrost Timer 6-hour cycle 120V Mechanical",
+      "SKU-DH-384759 - Defrost Heater 480V 1200W Finned Element"
     ]
   },
   {
-    "problem": "Beverage merchandiser compressor start capacitor swollen and leaking with compressor failing to start consistently. Unit attempting to start but motor not engaging properly.",
-    "solution": "Replaced failed start capacitor and tested start relay functionality. Verified proper compressor starting sequence and measured correct running amperage.",
+    "problem": "Our reach-in cooler fan motor died completely and there's no air circulation at all inside. The back items are staying cold but everything near the door is warming up fast. It's like having a regular cabinet instead of a refrigerator up front.",
+    "solution": "Installed new evaporator fan motor and balanced the fan blade assembly to restore proper air circulation throughout the unit.",
     "parts": [
-      "Start capacitor 88-108 MFD 330V round",
-      "Start relay Supco 3ARR3-TC73 120V",
-      "Overload protector Tecumseh 9532-007"
+      "SKU-FM-592847 - Evaporator Fan Motor 1/20 HP 115V CCW",
+      "SKU-FB-847293 - Fan Blade 8-inch Plastic 3-blade CW rotation"
     ]
   },
   {
-    "problem": "Deli case evaporator drain system frozen solid with ice dam preventing defrost water drainage. Water overflowing onto product shelves during defrost cycles.",
-    "solution": "Installed higher wattage drain line heater and improved insulation around drain pan. Modified drain slope for better gravity flow and added drain line thermostat.",
+    "problem": "The condenser fan outside our walk-in isn't spinning anymore and the whole system is running way too hot. You can feel the heat radiating off the condenser unit and our cooling has gotten really sluggish. I'm worried the whole system is going to overheat and shut down during dinner rush.",
+    "solution": "Replaced the burned-out condenser fan motor and cleaned the condenser coils to restore proper heat rejection.",
     "parts": [
-      "Drain line heater cable 120V 7W per foot",
-      "Drain pan insulation kit reflective bubble wrap",
-      "Drain slope adjustment brackets stainless steel"
+      "SKU-CF-473829 - Condenser Fan Motor 1/4 HP 208-230V Single Phase"
     ]
   },
   {
-    "problem": "Walk-in freezer insulation panels showing deterioration with visible ice formation between wall panels and significant energy loss. Interior frost patterns indicating thermal bridging.",
-    "solution": "Replaced damaged insulation panels and sealed all joints with appropriate sealant. Installed vapor barrier and verified proper panel alignment to eliminate thermal bridges.",
+    "problem": "Our ice machine cooler has this weird hissing sound coming from somewhere inside and the cooling seems weaker than normal. The beverages aren't getting as cold as they used to and I can hear this constant whisper of air or gas. My bartender thinks we might be losing refrigerant or something.",
+    "solution": "Located and repaired a small refrigerant leak in the evaporator coil, recharged the system with proper refrigerant levels, and replaced the faulty TXV.",
     "parts": [
-      "Insulation panel polyurethane 4-inch thick 4x8 foot",
-      "Panel sealant Dow Corning 732 RTV clear",
-      "Vapor barrier tape aluminum foil 3-inch width"
+      "SKU-TX-638294 - Thermostatic Expansion Valve R-404A 3-ton",
+      "SKU-RF-749283 - R-404A Refrigerant 25-pound cylinder",
+      "SKU-LC-284759 - Leak Lock Sealant Refrigeration Grade"
     ]
   },
   {
-    "problem": "Reach-in cooler condenser fan motor shaft bearing seized causing fan blade wobble and reduced airflow across condenser coils. Head pressure climbing above normal operating range.",
-    "solution": "Replaced condenser fan motor and balanced fan blade assembly. Verified proper motor mounting and measured correct CFM airflow across condenser coil.",
+    "problem": "The drain pan under our prep cooler is overflowing constantly and creating puddles all around the kitchen equipment. My cooks are slipping on the wet floor and we can't keep up with mopping it. The drain seems completely blocked and water is backing up everywhere.",
+    "solution": "Cleared the blocked condensate drain line and installed a new drain pan heater to prevent future ice blockages and ensure proper drainage.",
     "parts": [
-      "Condenser fan motor 1/6 HP 208-230V 1075 RPM",
-      "Fan blade 10-inch diameter 3-blade aluminum",
-      "Motor mounting bracket galvanized steel adjustable"
+      "SKU-DP-847392 - Drain Pan Heater 120V 200W Silicone Pad",
+      "SKU-DL-593847 - Condensate Drain Line Kit 1/2-inch PVC"
     ]
   },
   {
-    "problem": "Pizza prep cooler refrigerant circuit showing signs of moisture contamination with acid formation and copper plating on compressor internals. System performance declining rapidly.",
-    "solution": "Performed complete system evacuation and installed oversized filter drier. Added sight glass with moisture indicator and recharged system with fresh refrigerant after triple evacuation.",
+    "problem": "Our freezer door won't latch properly anymore and keeps swinging open on its own throughout service. The latch mechanism feels loose and doesn't catch like it used to. We're losing tons of cold air and our frozen inventory is at risk during busy periods.",
+    "solution": "Adjusted the door hinges and replaced the worn door latch assembly and strike plate to ensure proper door sealing.",
     "parts": [
-      "Filter drier Sporlan C-164-S 1/2 inch liquid line",
-      "Sight glass Alco AMI-200S with moisture indicator",
-      "Refrigerant R-134a 30 lb cylinder"
+      "SKU-DL-748593 - Door Latch Assembly Heavy Duty Magnetic",
+      "SKU-SP-394857 - Strike Plate Adjustable Stainless Steel",
+      "SKU-DH-857394 - Door Hinge Pin and Bushing Kit"
     ]
   },
   {
-    "problem": "Commercial chest freezer lid gasket torn and compressed allowing warm air infiltration and excessive frost buildup around lid perimeter. Compressor runtime increased 40%.",
-    "solution": "Replaced entire lid gasket and adjusted lid alignment for proper sealing. Cleaned gasket channel and applied food-grade lubricant to maintain seal flexibility.",
+    "problem": "The defrost cycle on our walk-in freezer isn't working right and there's a thick layer of ice covering everything inside. My staff can barely fit product on the shelves anymore and the door is getting harder to close. We're wasting so much space and it's affecting our food storage capacity during our busy season.",
+    "solution": "Replaced the faulty defrost timer that was not initiating defrost cycles and installed a new defrost heater element that had burned out.",
     "parts": [
-      "Lid gasket magnetic strip 72-inch length gray",
-      "Gasket adhesive 3M weather strip adhesive",
-      "Food grade silicone lubricant NSF approved"
+      "SKU-DT-445821 - Defrost Timer 120V 8-hour cycle commercial grade",
+      "SKU-HE-778942 - Defrost Heater Element 1500W 240V with mounting brackets"
     ]
   },
   {
-    "problem": "Reach-in freezer defrost timer mechanical contacts pitted and burned causing irregular defrost initiation. Some defrost cycles skipping entirely leading to coil icing.",
-    "solution": "Upgraded mechanical defrost timer to solid-state electronic controller with programmable defrost intervals. Set appropriate defrost frequency for high-traffic application.",
+    "problem": "Our reach-in cooler's temperature display shows numbers but they don't match what's actually happening inside. Yesterday it said 35 degrees but my thermometer read 50 degrees and all the milk went bad. I can't trust what the digital readout is telling me anymore and my food costs are going crazy.",
+    "solution": "Calibrated and replaced the malfunctioning temperature sensor and reprogrammed the digital controller to ensure accurate temperature readings.",
     "parts": [
-      "Electronic defrost timer Paragon 8145-20 120V 4-wire",
-      "Timer mounting bracket plastic NEMA 1",
-      "Wiring harness adapter 4-pin to terminal strip"
+      "SKU-TS-336719 - Temperature Sensor Probe 10K Ohm NTC thermistor 6-foot cable",
+      "SKU-TC-892014 - Digital Temperature Controller with LED display and alarm functions"
     ]
   },
   {
-    "problem": "Salad bar sneeze guard refrigeration system experiencing short cycling due to oversized TXV causing rapid temperature swings. Evaporator alternating between flooding and starving.",
-    "solution": "Replaced oversized TXV with properly rated valve and adjusted superheat to 8\u00b0F. Installed electronic expansion valve for more precise refrigerant control.",
+    "problem": "There's this gross brown water dripping from underneath our display case and it's staining the floor tiles. The smell is getting pretty bad and customers are starting to notice. My cleaning crew mops it up but it just keeps coming back every few hours.",
+    "solution": "Cleaned out the clogged evaporator drain line and replaced the damaged drain pan that had developed cracks causing the overflow.",
     "parts": [
-      "Electronic expansion valve Danfoss ETS250 R-134A",
-      "EEV controller Danfoss AK-CC55 with display",
-      "Superheat sensor Danfoss AKS41 strap-on type"
+      "SKU-DP-558731 - Stainless Steel Drain Pan 24x18x3 inches with drain fitting"
     ]
   },
   {
-    "problem": "Walk-in cooler evaporator fan blade cracked and unbalanced causing excessive noise and vibration transmission through cabinet structure. Fan motor overworking due to imbalanced load.",
-    "solution": "Replaced damaged fan blade with dynamically balanced replacement and installed vibration isolation mounts on fan motor. Verified smooth operation and reduced noise levels.",
+    "problem": "Our beer walk-in has been running constantly for three days straight and I can hear the compressor struggling and getting really hot. The temperature is holding but barely, and I'm terrified it's going to die right before the weekend when we need it most. The whole unit is vibrating more than usual too.",
+    "solution": "Replaced the worn compressor start capacitor and cleaned the condenser coils which were restricting airflow and causing the compressor to overwork.",
     "parts": [
-      "Evaporator fan blade 12-inch 4-blade plastic balanced",
-      "Vibration isolation mounts rubber 10-32 thread",
-      "Fan guard wire 12-inch diameter powder coated"
+      "SKU-CP-223847 - Start Capacitor 330-396 MFD 250V oval dual terminal",
+      "SKU-CC-445291 - Condenser Coil Cleaning Kit with coil cleaner and brush set"
     ]
   },
   {
-    "problem": "Beverage cooler high pressure cutout switch contacts welded closed from electrical arcing preventing system shutdown during high pressure events. Safety system compromised with potential compressor damage risk.",
-    "solution": "Replaced faulty high pressure switch and installed pressure transducer with electronic monitoring system. Added redundant high pressure protection with manual reset capability.",
+    "problem": "The glass doors on our beverage cooler are completely fogged up on the inside and customers can't see any of the drinks we have. It's been like this for two days and I'm sure we're losing sales because people don't know what's available. Wiping the outside doesn't help at all.",
+    "solution": "Replaced the failed anti-sweat heater elements in the door frames and repaired the broken door seal that was allowing humid air infiltration.",
     "parts": [
-      "High pressure switch Ranco O17-204 automatic reset 400 PSI",
-      "Pressure transducer Sporlan 0-500 PSI 4-20mA output",
-      "Electronic pressure monitor with display and alarm"
+      "SKU-AS-667134 - Anti-Sweat Door Heater 75W 120V flexible heating element",
+      "SKU-DS-881956 - Magnetic Door Gasket 26x72 inches gray vinyl",
+      "SKU-RL-445782 - Door Seal Retainer Strip aluminum with mounting screws"
     ]
   },
   {
-    "problem": "Commercial blast chiller condenser coil completely blocked with grease and debris causing system to trip on high pressure cutout at 425 PSI. Unit shutting down every 8 minutes and unable to pull temperatures below 60\u00b0F.",
-    "solution": "Thoroughly cleaned condenser coil using alkaline coil cleaner and high-pressure wash, then replaced damaged high pressure switch that was chattering. Verified proper airflow and system operation with head pressure stabilized at 280 PSI.",
+    "problem": "Our sandwich prep table isn't cooling the top compartments at all and the lettuce and tomatoes are getting warm by mid-morning. My sandwich makers are having to run to the walk-in constantly to get fresh ingredients. The bottom seems fine but the top rail where we do most of our prep work is useless.",
+    "solution": "Replaced the burned out evaporator fan motor and cleaned the blocked air ducts that distribute cold air to the top rail compartments.",
     "parts": [
-      "High Pressure Switch 425 PSI Cut-Out R-404A 1/4-inch NPT",
-      "Alkaline Coil Cleaner Concentrate 1-Gallon",
-      "Condenser Fan Motor Capacitor 35 MFD 370V"
+      "SKU-FM-334578 - Evaporator Fan Motor 1/20 HP 115V with mounting bracket and blade"
     ]
   },
   {
-    "problem": "Six-door upright freezer experiencing refrigerant migration during off cycles with liquid slugging compressor on startup. Compressor making loud knocking sounds and tripping on current overload after 3-4 minutes of operation.",
-    "solution": "Installed crankcase heater on compressor to prevent refrigerant migration and replaced damaged reed valves in compressor head. Added suction line accumulator to prevent future liquid slugging issues.",
+    "problem": "There's refrigerant leaking somewhere in our ice cream freezer because I can smell that chemical odor and the unit isn't staying cold enough. The ice cream is getting soft and we've had to throw away probably $200 worth of product this week. I'm worried about the health implications too.",
+    "solution": "Located and repaired the refrigerant leak at the thermostatic expansion valve connection, evacuated the system, and recharged with proper refrigerant levels.",
     "parts": [
-      "Crankcase Heater 150W 240V Wrap-Around Style",
-      "Suction Line Accumulator 1-5/8-inch ODF R-404A",
-      "Compressor Reed Valve Set Copeland Discus Series"
+      "SKU-TV-778923 - Thermostatic Expansion Valve R-404A 3/8 inch inlet with equalizer line",
+      "SKU-RF-445891 - R-404A Refrigerant 25-pound cylinder commercial grade"
     ]
   },
   {
-    "problem": "Undercounter refrigerator electronic expansion valve control board failing with erratic superheat control and system short cycling. EEV opening and closing randomly causing temperature swings between 30\u00b0F and 48\u00b0F.",
-    "solution": "Replaced faulty electronic expansion valve controller and recalibrated system parameters for proper superheat control. Updated firmware and performed complete system commissioning with stable 8-10\u00b0F superheat.",
+    "problem": "Our reach-in freezer door won't seal properly anymore and there's a gap along the bottom where you can see light coming through. Frost is building up around the edges and the motor is running way more than it should. My frozen fries are getting freezer burn really quickly.",
+    "solution": "Adjusted the door hinges for proper alignment and replaced the worn door gasket that had lost its magnetic seal and flexibility.",
     "parts": [
-      "Electronic Expansion Valve Controller 24VAC Danfoss AK-CC550",
-      "EEV Stepper Motor ODFR-067G00 1/4-inch ODF",
-      "Superheat Sensor RTD PT1000 6-foot Lead"
+      "SKU-DG-556743 - Door Gasket 23x58 inches black magnetic seal with corner welds"
     ]
   },
   {
-    "problem": "Walk-in cooler using obsolete R-22 refrigerant with major leak at evaporator coil inlet requiring complete refrigerant circuit replacement. System completely out of charge and compressor oil contaminated with moisture.",
-    "solution": "Performed complete refrigerant retrofit to R-407C including new evaporator coil, filter drier, and POE oil change. Installed new TXV sized for R-407C and leak-tested entire system before charging.",
+    "problem": "The compressor on our salad cooler clicks on for about 10 seconds then shuts right back off, over and over again. It's doing this all day long and the temperature keeps climbing. My prep vegetables are wilting and I'm afraid the whole thing is going to burn out from all this cycling.",
+    "solution": "Replaced the faulty compressor start relay that was causing short cycling and installed a new overload protector to prevent future compressor damage.",
     "parts": [
-      "Evaporator Coil R-407C 18,000 BTU 3-Row Fin Spacing",
-      "Thermostatic Expansion Valve R-407C 3-Ton External Equalizer",
-      "POE Refrigeration Oil 1-Gallon Copeland Ultra 32-3MAF"
+      "SKU-SR-223456 - Compressor Start Relay 3-in-1 universal replacement 120V",
+      "SKU-OP-667289 - Overload Protector 1/3 HP compressor with manual reset button"
     ]
   },
   {
-    "problem": "Chest freezer interior light staying on continuously due to faulty door switch causing excessive heat load and internal temperature rising to 12\u00b0F. Light bulb burning out every few days from constant operation.",
-    "solution": "Replaced defective magnetic door switch with heavy-duty commercial grade switch and adjusted mounting bracket for proper alignment. Installed LED bulb to reduce heat generation and verified proper switch operation.",
+    "problem": "Our walk-in cooler floor is getting squishy and soft in one corner and I think the insulation underneath is getting wet somehow. You can actually feel it give when you step on that spot and I'm worried someone's going to fall through. It's been getting worse each week.",
+    "solution": "Removed damaged floor panels and replaced the water-soaked insulation caused by a slow leak in the floor drain assembly, then installed new insulated floor sections.",
     "parts": [
-      "Magnetic Door Switch Heavy-Duty 10A 250VAC SPST",
-      "LED Interior Light Bulb 7W 120V Appliance Base",
-      "Door Switch Mounting Bracket Stainless Steel Adjustable"
+      "SKU-FP-334821 - Insulated Floor Panel 4x8 feet 4-inch thick polyurethane core",
+      "SKU-DR-778445 - Floor Drain Assembly 3-inch stainless steel with trap and gasket",
+      "SKU-IN-556923 - Polyurethane Foam Insulation Board 2x4 feet 2-inch thickness"
     ]
   }
 ]
