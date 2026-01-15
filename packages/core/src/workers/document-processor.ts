@@ -180,6 +180,7 @@ export const handler: SQSHandler = async (event) => {
 			const s3BucketName = record.s3.bucket.name;
 
 			const document = await getDocumentByS3KeyAndBucket(s3Key, s3BucketName);
+			console.log(`Found document ${document.id} for S3 key: ${s3Key}`);
 			await processDocument(document.id);
 		}
 	}

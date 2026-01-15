@@ -6,19 +6,40 @@ import Link from "next/link";
 
 const PAGE_SIZE = 10;
 
+type StatusFilter = "all" | "pending" | "processing" | "completed" | "failed";
+
+const TAB_CONFIG: { key: StatusFilter; label: string }[] = [
+	{ key: "all", label: "All" },
+	{ key: "pending", label: "Pending" },
+	{ key: "processing", label: "Processing" },
+	{ key: "completed", label: "Completed" },
+	{ key: "failed", label: "Failed" },
+];
+
 export function DocumentList() {
 	const [page, setPage] = useState(0);
+	const [activeStatus, setActiveStatus] = useState<StatusFilter>("all");
 	const utils = trpc.useUtils();
+
+	const { data: statusCounts } = trpc.serviceDocuments.statusCounts.useQuery();
+
 	const { data, isLoading } = trpc.serviceDocuments.list.useQuery({
 		limit: PAGE_SIZE,
 		offset: page * PAGE_SIZE,
+		status: activeStatus === "all" ? undefined : activeStatus,
 	});
 
 	const reprocessMutation = trpc.serviceDocuments.reprocess.useMutation({
 		onSuccess: () => {
 			utils.serviceDocuments.list.invalidate();
+			utils.serviceDocuments.statusCounts.invalidate();
 		},
 	});
+
+	const handleStatusChange = (status: StatusFilter) => {
+		setActiveStatus(status);
+		setPage(0);
+	};
 
 	const handleReprocess = (
 		e: React.MouseEvent,
@@ -29,14 +50,54 @@ export function DocumentList() {
 		reprocessMutation.mutate({ documentId });
 	};
 
+	const renderTabs = () => (
+		<div className="flex border-b border-slate-700 mb-4">
+			{TAB_CONFIG.map(({ key, label }) => (
+				<button
+					key={key}
+					onClick={() => handleStatusChange(key)}
+					className={`px-4 py-2 text-sm font-medium transition-colors flex items-center gap-2 ${
+						activeStatus === key
+							? "text-white border-b-2 border-blue-500 -mb-px"
+							: "text-slate-400 hover:text-slate-200"
+					}`}
+				>
+					{label}
+					{statusCounts && (
+						<span
+							className={`px-2 py-0.5 text-xs rounded-full ${
+								activeStatus === key
+									? "bg-blue-600 text-white"
+									: "bg-slate-700 text-slate-300"
+							}`}
+						>
+							{statusCounts[key]}
+						</span>
+					)}
+				</button>
+			))}
+		</div>
+	);
+
 	if (isLoading) {
-		return <div className="text-slate-400">Loading documents...</div>;
+		return (
+			<div>
+				{renderTabs()}
+				<div className="text-slate-400">Loading documents...</div>
+			</div>
+		);
 	}
 
 	if (!data || data.documents.length === 0) {
+		const emptyMessage =
+			activeStatus === "all"
+				? "No documents uploaded yet"
+				: `No ${activeStatus} documents`;
+
 		return (
-			<div className="text-slate-400 text-center py-8">
-				No documents uploaded yet
+			<div>
+				{renderTabs()}
+				<div className="text-slate-400 text-center py-8">{emptyMessage}</div>
 			</div>
 		);
 	}
@@ -48,6 +109,7 @@ export function DocumentList() {
 
 	return (
 		<div className="space-y-4">
+			{renderTabs()}
 			<div className="space-y-3">
 				{documents.map((doc) => (
 					<Link

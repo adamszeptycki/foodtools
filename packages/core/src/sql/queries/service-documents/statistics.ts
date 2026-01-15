@@ -1,6 +1,6 @@
 import { getDb } from "@foodtools/core/src/sql";
 import { machineFixes } from "@foodtools/core/src/sql/schema";
-import { and, inArray, isNotNull, sql } from "drizzle-orm";
+import { and, inArray, isNotNull, isNull, sql } from "drizzle-orm";
 
 /**
  * Get machine statistics aggregated by machine type and model
@@ -203,4 +203,76 @@ export async function getPartsSummary(userIds: string[]) {
 		totalPartUsages: partStats.reduce((sum, p) => sum + p.usageCount, 0),
 		totalHoursOnParts: partStats.reduce((sum, p) => sum + p.totalHours, 0),
 	};
+}
+
+/**
+ * Get parts used by a specific machine type/model with usage counts
+ */
+export async function getPartsForMachine(
+	userIds: string[],
+	machineType: string | null,
+	machineModel: string | null,
+) {
+	if (userIds.length === 0) {
+		return [];
+	}
+
+	const db = getDb();
+
+	// Build where conditions
+	const conditions = [inArray(machineFixes.userId, userIds)];
+
+	if (machineType) {
+		conditions.push(sql`${machineFixes.machineType} = ${machineType}`);
+	} else {
+		conditions.push(isNull(machineFixes.machineType));
+	}
+
+	if (machineModel) {
+		conditions.push(sql`${machineFixes.machineModel} = ${machineModel}`);
+	} else {
+		conditions.push(isNull(machineFixes.machineModel));
+	}
+
+	// Get fixes for this machine with parts
+	const fixes = await db
+		.select({
+			partsUsed: machineFixes.partsUsed,
+		})
+		.from(machineFixes)
+		.where(
+			and(
+				...conditions,
+				isNotNull(machineFixes.partsUsed),
+				sql`${machineFixes.partsUsed} != ''`,
+			),
+		);
+
+	// Aggregate parts with counts
+	const partsMap = new Map<string, { partName: string; usageCount: number }>();
+
+	for (const fix of fixes) {
+		if (!fix.partsUsed) continue;
+
+		const parts = fix.partsUsed
+			.split(",")
+			.map((p) => p.trim())
+			.filter((p) => p.length > 0);
+
+		for (const partName of parts) {
+			const normalizedPart = partName.toLowerCase();
+			const existing = partsMap.get(normalizedPart);
+
+			if (existing) {
+				existing.usageCount++;
+			} else {
+				partsMap.set(normalizedPart, {
+					partName: partName,
+					usageCount: 1,
+				});
+			}
+		}
+	}
+
+	return Array.from(partsMap.values()).sort((a, b) => b.usageCount - a.usageCount);
 }

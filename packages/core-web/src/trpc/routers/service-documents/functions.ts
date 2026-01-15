@@ -37,6 +37,7 @@ import {
 } from "@foodtools/core/src/sql/queries/service-documents/mutations";
 import {
 	getDocumentById,
+	getDocumentStatusCounts,
 	getDocumentWithFixes,
 	listAllFixes,
 	listDocumentsByUser,
@@ -146,18 +147,29 @@ export async function initiateUploadBatch(
 	return results;
 }
 
+type ProcessingStatus = "pending" | "processing" | "completed" | "failed";
+
 /**
- * List all documents for the current user with pagination
+ * List all documents for the current user with pagination and optional status filter
  */
 export async function listDocuments(
 	ctx: ProtectedContext,
-	input: { limit?: number; offset?: number },
+	input: { limit?: number; offset?: number; status?: ProcessingStatus },
 ) {
 	const userId = ctx.session.user.id;
 	return listDocumentsByUser(userId, {
 		limit: input.limit ?? 10,
 		offset: input.offset ?? 0,
+		status: input.status,
 	});
+}
+
+/**
+ * Get document counts by status for the current user
+ */
+export async function getStatusCounts(ctx: ProtectedContext) {
+	const userId = ctx.session.user.id;
+	return getDocumentStatusCounts(userId);
 }
 
 /**

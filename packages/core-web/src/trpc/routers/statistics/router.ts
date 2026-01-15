@@ -2,8 +2,8 @@ import {
 	protectedProcedureWithOrganization,
 	router,
 } from "@foodtools/core-web/src/trpc/trpc";
-import { getMachineStats, getPartStats, getDashboardStats } from "./functions";
-import { getPartStatsSchema } from "./schema";
+import { getMachineStats, getPartStats, getDashboardStats, getMachineParts } from "./functions";
+import { getPartStatsSchema, getMachinePartsSchema } from "./schema";
 
 export const statisticsRouter = router({
 	/**
@@ -28,4 +28,13 @@ export const statisticsRouter = router({
 	dashboard: protectedProcedureWithOrganization.query(async ({ ctx }) => {
 		return getDashboardStats(ctx);
 	}),
+
+	/**
+	 * Get parts used by a specific machine
+	 */
+	machineParts: protectedProcedureWithOrganization
+		.input(getMachinePartsSchema)
+		.query(async ({ ctx, input }) => {
+			return getMachineParts(ctx, input);
+		}),
 });

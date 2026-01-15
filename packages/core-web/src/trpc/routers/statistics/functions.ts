@@ -2,6 +2,7 @@ import type { Context } from "@foodtools/core-web/src/trpc/context";
 import {
 	getMachineStatistics,
 	getMachineSummary,
+	getPartsForMachine,
 	getPartStatistics,
 	getPartsSummary,
 } from "@foodtools/core/src/sql/queries/service-documents/statistics";
@@ -82,4 +83,15 @@ export async function getDashboardStats(ctx: ProtectedContextWithOrganization) {
 		machines: machineSummary,
 		parts: partsSummary,
 	};
+}
+
+/**
+ * Get parts used by a specific machine
+ */
+export async function getMachineParts(
+	ctx: ProtectedContextWithOrganization,
+	input: { machineType: string | null; machineModel: string | null },
+) {
+	const memberIds = getOrganizationMemberIds(ctx);
+	return getPartsForMachine(memberIds, input.machineType, input.machineModel);
 }

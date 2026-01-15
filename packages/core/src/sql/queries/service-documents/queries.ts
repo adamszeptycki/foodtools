@@ -46,34 +46,74 @@ export async function getDocumentByS3KeyAndBucket(s3Key: string, s3Bucket: strin
 	return doc;
 }
 
+type ProcessingStatus = "pending" | "processing" | "completed" | "failed";
+
 /**
- * List documents for a specific user with pagination
+ * List documents for a specific user with pagination and optional status filter
  */
 export async function listDocumentsByUser(
 	userId: string,
-	options: { limit?: number; offset?: number } = {},
+	options: { limit?: number; offset?: number; status?: ProcessingStatus } = {},
 ) {
 	const db = getDb();
-	const { limit = 10, offset = 0 } = options;
+	const { limit = 10, offset = 0, status } = options;
+
+	const whereCondition = status
+		? and(
+				eq(serviceDocuments.userId, userId),
+				eq(serviceDocuments.processingStatus, status),
+			)
+		: eq(serviceDocuments.userId, userId);
 
 	const [documents, countResult] = await Promise.all([
 		db
 			.select()
 			.from(serviceDocuments)
-			.where(eq(serviceDocuments.userId, userId))
+			.where(whereCondition)
 			.orderBy(desc(serviceDocuments.createdAt))
 			.limit(limit)
 			.offset(offset),
 		db
 			.select({ count: sql<number>`count(*)::int` })
 			.from(serviceDocuments)
-			.where(eq(serviceDocuments.userId, userId)),
+			.where(whereCondition),
 	]);
 
 	return {
 		documents,
 		total: countResult[0]?.count ?? 0,
 	};
+}
+
+/**
+ * Get document counts grouped by processing status for a user
+ */
+export async function getDocumentStatusCounts(userId: string) {
+	const db = getDb();
+
+	const result = await db
+		.select({
+			status: serviceDocuments.processingStatus,
+			count: sql<number>`count(*)::int`,
+		})
+		.from(serviceDocuments)
+		.where(eq(serviceDocuments.userId, userId))
+		.groupBy(serviceDocuments.processingStatus);
+
+	const counts = {
+		all: 0,
+		pending: 0,
+		processing: 0,
+		completed: 0,
+		failed: 0,
+	};
+
+	for (const row of result) {
+		counts[row.status as keyof typeof counts] = row.count;
+		counts.all += row.count;
+	}
+
+	return counts;
 }
 
 /**

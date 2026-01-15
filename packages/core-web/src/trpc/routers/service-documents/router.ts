@@ -9,6 +9,7 @@ import {
 	semanticSearch,
 	reprocessDocument,
 	getDocumentUrl,
+	getStatusCounts,
 } from "./functions";
 import {
 	initiateUploadSchema,
@@ -51,6 +52,13 @@ export const serviceDocumentsRouter = router({
 		.query(async ({ ctx, input }) => {
 			return listDocuments(ctx, input || {});
 		}),
+
+	/**
+	 * Get document counts by status for current user
+	 */
+	statusCounts: protectedProcedure.query(async ({ ctx }) => {
+		return getStatusCounts(ctx);
+	}),
 
 	/**
 	 * Get a specific document with its fixes

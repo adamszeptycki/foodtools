@@ -1,5 +1,14 @@
 import { z } from "zod";
 
+export const processingStatusSchema = z.enum([
+	"pending",
+	"processing",
+	"completed",
+	"failed",
+]);
+
+export type ProcessingStatus = z.infer<typeof processingStatusSchema>;
+
 export const getDocumentSchema = z.object({
 	id: z.string().uuid(),
 });
@@ -11,6 +20,7 @@ export const deleteDocumentSchema = z.object({
 export const listDocumentsSchema = z.object({
 	limit: z.number().optional(),
 	offset: z.number().optional(),
+	status: processingStatusSchema.optional(),
 });
 
 export const semanticSearchSchema = z.object({
