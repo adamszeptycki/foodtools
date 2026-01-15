@@ -55,6 +55,16 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 								Search Service Reports
 							</Link>
 							<Link
+								href="/dashboard/statistics"
+								className={`block px-4 py-2 rounded-md transition-colors ${
+									isActive("/dashboard/statistics")
+										? "bg-blue-600 text-white"
+										: "text-slate-300 hover:bg-slate-800"
+								}`}
+							>
+								Statistics
+							</Link>
+							<Link
 								href="/dashboard/settings"
 								className={`block px-4 py-2 rounded-md transition-colors ${
 									isActive("/dashboard/settings")

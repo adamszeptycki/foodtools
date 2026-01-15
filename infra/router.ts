@@ -8,7 +8,7 @@ export function getDomain({
 	switch ($app.stage) {
 		case "adam":
 		case "justme":
-			if(skipLocalhost) {
+			if (skipLocalhost) {
 				result = baseUrl;
 			} else {
 				result = "https://localhost:3000"
@@ -27,10 +27,13 @@ export function getDomain({
 }
 
 const domain = getDomain({ skipLocalhost: true });
-
+const isProd = $app.stage === "production"
 export const router = new sst.aws.Router("FoodToolsRouter", {
-	domain: {
+	domain: isProd ? {
 		name: domain,
-		aliases: [`*.${domain}`],
-	},
+			aliases: [`*.${domain}`],
+		}
+		: undefined,
 });
+
+
