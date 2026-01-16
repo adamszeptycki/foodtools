@@ -11,7 +11,7 @@ export const documentProcessingQueue = new sst.aws.Queue("DocumentProcessingQueu
 
 documentProcessingQueue.subscribe({
 	handler: "packages/core/src/workers/document-processor.handler",
-	timeout: "5 minutes",
+	timeout: "1 minutes",
 	link: [documentsBucket, dbUrl, openAiApiKey],
 
 	concurrency: {
