@@ -15,6 +15,13 @@
       "when": 1768243411286,
       "tag": "0001_violet_the_twelve",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1768566171690,
+      "tag": "0002_mighty_omega_sentinel",
+      "breakpoints": true
     }
   ]
 }

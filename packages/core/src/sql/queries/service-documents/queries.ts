@@ -246,3 +246,171 @@ export async function searchFixesBySubstring(
 
 	return results;
 }
+
+/**
+ * Search for fixes using dual embedding similarity
+ * Matches against BOTH original and summarized embeddings using OR logic
+ * Returns the best similarity score from either embedding
+ */
+export async function searchFixesByDualSimilarity(
+	userId: string,
+	queryEmbedding: number[],
+	limit: number = 10,
+	minSimilarity: number = 0.5,
+) {
+	const db = getDb();
+	const embeddingStr = JSON.stringify(queryEmbedding);
+
+	// Use GREATEST to get the best similarity from either embedding
+	// COALESCE handles null embeddings (for records that don't have summarized embeddings yet)
+	const results = await db
+		.select({
+			id: machineFixes.id,
+			documentId: machineFixes.documentId,
+			machineModel: machineFixes.machineModel,
+			machineType: machineFixes.machineType,
+			problemDescription: machineFixes.problemDescription,
+			solutionApplied: machineFixes.solutionApplied,
+			partsUsed: machineFixes.partsUsed,
+			labourHours: machineFixes.labourHours,
+			clientName: machineFixes.clientName,
+			serviceDate: machineFixes.serviceDate,
+			createdAt: machineFixes.createdAt,
+			similarity: sql<number>`GREATEST(
+				COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0),
+				COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)
+			)`,
+			originalSimilarity: sql<number>`COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0)`,
+			summarizedSimilarity: sql<number>`COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)`,
+		})
+		.from(machineFixes)
+		.where(
+			sql`${machineFixes.userId} = ${userId} AND GREATEST(
+				COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0),
+				COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)
+			) > ${minSimilarity}`,
+		)
+		.orderBy(
+			sql`GREATEST(
+				COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0),
+				COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)
+			) DESC`,
+		)
+		.limit(limit);
+
+	return results;
+}
+
+/**
+ * Search for fixes using PostgreSQL full-text search (BM25-style ranking)
+ * Uses ts_rank with normalization option 32 for document length normalization
+ */
+export async function searchFixesByFullText(
+	userId: string,
+	query: string,
+	limit: number = 10,
+) {
+	const db = getDb();
+
+	const results = await db
+		.select({
+			id: machineFixes.id,
+			documentId: machineFixes.documentId,
+			machineModel: machineFixes.machineModel,
+			machineType: machineFixes.machineType,
+			problemDescription: machineFixes.problemDescription,
+			solutionApplied: machineFixes.solutionApplied,
+			partsUsed: machineFixes.partsUsed,
+			labourHours: machineFixes.labourHours,
+			clientName: machineFixes.clientName,
+			serviceDate: machineFixes.serviceDate,
+			createdAt: machineFixes.createdAt,
+			rank: sql<number>`ts_rank(${machineFixes.searchVector}, plainto_tsquery('english', ${query}), 32)`,
+		})
+		.from(machineFixes)
+		.where(
+			sql`${machineFixes.userId} = ${userId}
+				AND ${machineFixes.searchVector} IS NOT NULL
+				AND ${machineFixes.searchVector} @@ plainto_tsquery('english', ${query})`,
+		)
+		.orderBy(
+			sql`ts_rank(${machineFixes.searchVector}, plainto_tsquery('english', ${query}), 32) DESC`,
+		)
+		.limit(limit);
+
+	return results;
+}
+
+/**
+ * Hybrid search combining embedding similarity and full-text search
+ * Uses Reciprocal Rank Fusion (RRF) to combine rankings
+ *
+ * @param embeddingWeight - Weight for embedding results (default 0.6)
+ * @param textWeight - Weight for full-text results (default 0.4)
+ * @param k - RRF constant (default 60, higher values give more weight to lower ranks)
+ */
+export async function searchFixesHybrid(
+	userId: string,
+	queryEmbedding: number[],
+	queryText: string,
+	limit: number = 10,
+	embeddingWeight: number = 0.6,
+	textWeight: number = 0.4,
+) {
+	const db = getDb();
+	const embeddingStr = JSON.stringify(queryEmbedding);
+	const k = 60; // RRF constant
+
+	// Combined query using RRF scoring
+	// RRF score = sum(weight / (k + rank)) for each ranking source
+	const results = await db
+		.select({
+			id: machineFixes.id,
+			documentId: machineFixes.documentId,
+			machineModel: machineFixes.machineModel,
+			machineType: machineFixes.machineType,
+			problemDescription: machineFixes.problemDescription,
+			solutionApplied: machineFixes.solutionApplied,
+			partsUsed: machineFixes.partsUsed,
+			labourHours: machineFixes.labourHours,
+			clientName: machineFixes.clientName,
+			serviceDate: machineFixes.serviceDate,
+			createdAt: machineFixes.createdAt,
+			embeddingSimilarity: sql<number>`GREATEST(
+				COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0),
+				COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)
+			)`,
+			textRank: sql<number>`COALESCE(
+				ts_rank(${machineFixes.searchVector}, plainto_tsquery('english', ${queryText}), 32),
+				0
+			)`,
+			// Combined RRF-style score using normalized ranks
+			rrfScore: sql<number>`(
+				${embeddingWeight} * GREATEST(
+					COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0),
+					COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)
+				) +
+				${textWeight} * COALESCE(
+					ts_rank(${machineFixes.searchVector}, plainto_tsquery('english', ${queryText}), 32),
+					0
+				)
+			)`,
+		})
+		.from(machineFixes)
+		.where(sql`${machineFixes.userId} = ${userId}`)
+		.orderBy(
+			sql`(
+				${embeddingWeight} * GREATEST(
+					COALESCE(1 - (${machineFixes.embedding} <=> ${embeddingStr}::vector), 0),
+					COALESCE(1 - (${machineFixes.embeddingSummarized} <=> ${embeddingStr}::vector), 0)
+				) +
+				${textWeight} * COALESCE(
+					ts_rank(${machineFixes.searchVector}, plainto_tsquery('english', ${queryText}), 32),
+					0
+				)
+			) DESC`,
+		)
+		.limit(limit);
+
+	return results;
+}
