@@ -1,19 +1,13 @@
-import { getSecret } from "@foodtools/core/src/config/secret";
-
 type DatabaseCredentials = {
 	databaseUrl: string;
 };
 
 const getDatabaseCredentials = (): DatabaseCredentials => {
-	if (process.env.DATABASE_URL) {
-		return {
-			databaseUrl: process.env.DATABASE_URL,
-		};
+	const url = process.env.DATABASE_URL;
+	if (!url) {
+		throw new Error("DATABASE_URL not set for local development");
 	}
-	const dbUrl = getSecret("DB_URL");
-	if (!dbUrl) throw new Error("DB credentials not found");
-	return {
-		databaseUrl: dbUrl,
-	};
+	return { databaseUrl: url };
 };
+
 export { getDatabaseCredentials };

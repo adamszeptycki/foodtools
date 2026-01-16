@@ -1,4 +1,6 @@
-import { dbUrl, openAiApiKey } from "./config";
+import { openAiApiKey } from "./config";
+import { database } from "./database";
+import { vpc } from "./vpc";
 import { documentsBucket } from "./storage";
 
 const MAX_RESERVED_CONCURENCY_FOR_SQS_TASK = 2;
@@ -12,8 +14,8 @@ export const documentProcessingQueue = new sst.aws.Queue("DocumentProcessingQueu
 documentProcessingQueue.subscribe({
 	handler: "packages/core/src/workers/document-processor.handler",
 	timeout: "5 minutes",
-	link: [documentsBucket, dbUrl, openAiApiKey],
-
+	link: [documentsBucket, database, openAiApiKey],
+	vpc,
 	concurrency: {
 		reserved: MAX_RESERVED_CONCURENCY_FOR_SQS_TASK,
 	},
