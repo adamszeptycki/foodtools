@@ -43,6 +43,8 @@ import {
 	listDocumentsByUser,
 	searchFixesBySimilarity,
 	searchFixesBySubstring,
+	searchFixesByDualSimilarity,
+	searchFixesByFullText,
 } from "@foodtools/core/src/sql/queries/service-documents/queries";
 
 type ProtectedContext = Context & {
@@ -233,8 +235,12 @@ export async function listFixes(
 }
 
 /**
- * Semantic search for similar fixes using vector embeddings
- * Also performs substring matching on key fields, prioritizing exact matches
+ * Semantic search for similar fixes using multiple search strategies:
+ * 1. Substring matching (ILIKE) - highest priority for exact matches
+ * 2. Dual embedding search (original + summarized) - semantic similarity
+ * 3. BM25 full-text search - keyword matching with ranking
+ *
+ * Results are combined and deduplicated, with scoring metadata included
  */
 export async function semanticSearch(
 	ctx: ProtectedContext,
@@ -242,33 +248,90 @@ export async function semanticSearch(
 ) {
 	const userId = ctx.session.user.id;
 
-	// 1. Substring search (exact ILIKE matches) - these get priority
-	const substringResults = await searchFixesBySubstring(
-		userId,
-		input.query,
-		input.limit,
-	);
-	const substringWithSimilarity = substringResults.map((r) => ({
-		...r,
-		similarity: 1.0,
-	}));
-	const substringIds = new Set(substringResults.map((r) => r.id));
-
-	// 2. Semantic search (vector similarity)
+	// Generate embedding for semantic search (needed for steps 2 and 3)
 	const queryEmbedding = await generateEmbeddings(input.query);
-	const semanticResults = await searchFixesBySimilarity(
-		userId,
-		queryEmbedding,
-		input.limit,
-		0.5,
-		// input.minSimilarity ,
-	);
 
-	// 3. Combine: substring matches first (deduplicated), then semantic results
-	const filteredSemantic = semanticResults.filter(
-		(r) => !substringIds.has(r.id),
-	);
-	const combined = [...substringWithSimilarity, ...filteredSemantic];
+	// Run all three search strategies in parallel
+	const [substringResults, dualEmbeddingResults, fullTextResults] = await Promise.all([
+		// 1. Substring search (exact ILIKE matches) - highest priority
+		searchFixesBySubstring(userId, input.query, input.limit),
+
+		// 2. Dual embedding search (original + summarized embeddings)
+		searchFixesByDualSimilarity(userId, queryEmbedding, input.limit, 0.5),
+
+		// 3. BM25 full-text search
+		searchFixesByFullText(userId, input.query, input.limit),
+	]);
+
+	// Track seen IDs for deduplication
+	const seenIds = new Set<string>();
+	const combined: Array<{
+		id: string;
+		documentId: string;
+		machineModel: string | null;
+		machineType: string | null;
+		problemDescription: string;
+		solutionApplied: string;
+		partsUsed: string | null;
+		labourHours: number | null;
+		clientName: string | null;
+		serviceDate: Date | null;
+		createdAt: Date;
+		similarity: number;
+		matchType: "substring" | "embedding" | "fulltext";
+	}> = [];
+
+	// Add substring matches first (similarity = 1.0, highest priority)
+	for (const result of substringResults) {
+		if (!seenIds.has(result.id)) {
+			seenIds.add(result.id);
+			combined.push({
+				...result,
+				similarity: 1.0,
+				matchType: "substring",
+			});
+		}
+	}
+
+	// Add dual embedding results (use best similarity from either embedding)
+	for (const result of dualEmbeddingResults) {
+		if (!seenIds.has(result.id)) {
+			seenIds.add(result.id);
+			combined.push({
+				id: result.id,
+				documentId: result.documentId,
+				machineModel: result.machineModel,
+				machineType: result.machineType,
+				problemDescription: result.problemDescription,
+				solutionApplied: result.solutionApplied,
+				partsUsed: result.partsUsed,
+				labourHours: result.labourHours,
+				clientName: result.clientName,
+				serviceDate: result.serviceDate,
+				createdAt: result.createdAt,
+				similarity: result.similarity,
+				matchType: "embedding",
+			});
+		}
+	}
+
+	// Add full-text results (normalize rank to 0-1 range, with cap at 0.9)
+	for (const result of fullTextResults) {
+		if (!seenIds.has(result.id)) {
+			seenIds.add(result.id);
+			// ts_rank typically returns values between 0 and 1, but can exceed 1
+			// Normalize and cap at 0.9 to prioritize embedding matches
+			const normalizedRank = Math.min(result.rank, 0.9);
+			combined.push({
+				...result,
+				similarity: normalizedRank,
+				matchType: "fulltext",
+			});
+		}
+	}
+
+	// Sort by similarity (descending) and return top results
+	combined.sort((a, b) => b.similarity - a.similarity);
 
 	return combined.slice(0, input.limit);
 }

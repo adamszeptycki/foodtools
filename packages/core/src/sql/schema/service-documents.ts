@@ -33,6 +33,22 @@ export const vector = customType<{
 	},
 });
 
+// Custom tsvector type for full-text search
+export const tsvector = customType<{
+	data: string;
+	driverData: string;
+}>({
+	dataType() {
+		return "tsvector";
+	},
+	fromDriver(value: string): string {
+		return value;
+	},
+	toDriver(value: string): string {
+		return value;
+	},
+});
+
 // Processing status enum
 export const processingStatusEnum = pgEnum("processing_status", [
 	"pending",
@@ -112,6 +128,12 @@ export const machineFixes = pgTable("machine_fixes", {
 	// Embedding and search
 	embedding: vector("embedding", { dimensions: 1536 }),
 	embeddingModel: text("embedding_model").default("text-embedding-3-small"),
+
+	// Dual embeddings and full-text search
+	searchableText: text("searchable_text"), // Original problem description
+	summarizedSearchableText: text("summarized_searchable_text"), // LLM-generated summary
+	embeddingSummarized: vector("embedding_summarized", { dimensions: 1536 }), // Embedding of summarized text
+	searchVector: tsvector("search_vector"), // Full-text search vector for BM25-style search
 
 	// Metadata
 	extractionConfidence: integer("extraction_confidence"),

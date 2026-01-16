@@ -1,6 +1,7 @@
 import { GetObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { extractStructuredData } from "@foodtools/core/src/domain/ai/extract-structured-data";
 import { generateEmbeddings } from "@foodtools/core/src/domain/ai/generate-embeddings";
+import { summarizeProblemDescription } from "@foodtools/core/src/domain/ai/summarize-problem";
 import { extractTextFromPDF } from "@foodtools/core/src/domain/pdf/extract-text";
 import { getDb } from "@foodtools/core/src/sql";
 import { getDocumentByS3KeyAndBucket } from "@foodtools/core/src/sql/queries/service-documents/queries";
@@ -9,7 +10,7 @@ import {
 	serviceDocuments,
 } from "@foodtools/core/src/sql/schema";
 import type { S3Event, SQSHandler } from "aws-lambda";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm";
 
 const s3 = new S3Client({});
 
@@ -95,17 +96,37 @@ export async function processDocument(documentId: string): Promise<void> {
 		// Step 8: Generate embeddings and store each fix
 		for (const fix of fixes) {
 			// Create searchable text from fix data for embedding
-			const searchableText = `
-${fix.problemDescription}
-      `.trim();
+			const searchableText = fix.problemDescription.trim();
 
-			console.log(`Generating embeddings for fix: ${fix.problemDescription.substring(0, 50)}...`);
+			console.log(`Generating embeddings for fix: ${searchableText.substring(0, 50)}...`);
 
-			// Generate embedding
-			const embedding = await generateEmbeddings(searchableText);
+			// Generate summarized version for better semantic matching
+			console.log("Generating problem summary...");
+			const summarizedSearchableText = await summarizeProblemDescription(searchableText);
+			console.log(`Summary: ${summarizedSearchableText.substring(0, 100)}...`);
 
-			// Store fix with embedding in database
-			await db.insert(machineFixes).values({
+			// Generate embeddings for both original and summarized text in parallel
+			console.log("Generating dual embeddings...");
+			const [embedding, embeddingSummarized] = await Promise.all([
+				generateEmbeddings(searchableText),
+				generateEmbeddings(summarizedSearchableText),
+			]);
+
+			// Build full-text search content from all relevant fields
+			const fullTextSearchContent = [
+				fix.problemDescription,
+				fix.solutionApplied,
+				fix.machineModel,
+				fix.machineType,
+				fix.clientName,
+				fix.partsUsed,
+				fix.serialNumber,
+			]
+				.filter(Boolean)
+				.join(" ");
+
+			// Store fix with both embeddings in database
+			const [insertedFix] = await db.insert(machineFixes).values({
 				documentId: doc.id,
 				userId: doc.userId,
 				// Client Info
@@ -126,12 +147,24 @@ ${fix.problemDescription}
 				technicianId: fix.technicianId,
 				// Labour
 				labourHours: fix.labourHours,
-				// Embedding
+				// Embeddings
 				embedding,
 				embeddingModel: "text-embedding-3-small",
-			});
+				// Dual embeddings and search fields
+				searchableText,
+				summarizedSearchableText,
+				embeddingSummarized,
+			}).returning();
 
-			console.log(`Stored fix in database with embedding`);
+			// Update search_vector using PostgreSQL's to_tsvector
+			await db
+				.update(machineFixes)
+				.set({
+					searchVector: sql`to_tsvector('english', ${fullTextSearchContent})`,
+				})
+				.where(eq(machineFixes.id, insertedFix.id));
+
+			console.log(`Stored fix in database with dual embeddings and search vector`);
 		}
 
 		// Step 9: Mark document as completed
