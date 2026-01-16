@@ -13,6 +13,8 @@ export default $config({
     };
   },
   async run() {
+    await import("./infra/vpc");
+    await import("./infra/database");
     await import("./infra/config");
     await import("./infra/storage");
     await import("./infra/queue");
