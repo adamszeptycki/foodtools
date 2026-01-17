@@ -7,8 +7,8 @@ export default $config({
     const  { Stage }  = await import( "./infra/stages");
     return {
       name: "foodtools",
-      removal: input?.stage === Stage.PROD ? "retain" : "remove",
-      protect: input?.stage === Stage.PROD,
+      // removal: input?.stage === Stage.PROD ? "retain" : "remove",
+      // protect: input?.stage === Stage.PROD,
       home: "aws",
     };
   },

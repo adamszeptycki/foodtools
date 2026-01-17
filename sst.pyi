@@ -18,12 +18,6 @@ class Resource:
     class DocumentProcessingQueueDLQ:
         type: str
         url: str
-    class FoodToolsRouter:
-        type: str
-        url: str
-    class FoodToolsWeb:
-        type: str
-        url: str
     class OPENAI_API_KEY:
         type: str
         value: str

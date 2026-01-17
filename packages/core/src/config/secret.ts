@@ -9,9 +9,9 @@ const getSecret = (name: SecretName): string => {
 		case "DB_URL":
 			return Resource.DB_URL.value;
 		case "BETTER_AUTH_SECRET":
-			return "foodtools-better-auth-secret";
+			return Resource.BETTER_AUTH_SECRET.value;
 		case "RESEND_API_KEY":
-			return "resend-api-placeholder";
+			return Resource.RESEND_API_KEY.value;
 	}
 };
 
