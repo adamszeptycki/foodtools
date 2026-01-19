@@ -70,10 +70,35 @@ function StatusBar() {
 }
 
 export function IPadFrame({ children }: IPadFrameProps) {
+	const [scale, setScale] = useState(1);
+
+	useEffect(() => {
+		const calculateScale = () => {
+			const viewportWidth = window.innerWidth;
+			const viewportHeight = window.innerHeight;
+			const iPadWidth = 834;
+			const iPadHeight = 1194;
+			const padding = 40;
+
+			const scaleX = (viewportWidth - padding) / iPadWidth;
+			const scaleY = (viewportHeight - padding) / iPadHeight;
+			const newScale = Math.min(scaleX, scaleY, 1);
+
+			setScale(newScale);
+		};
+
+		calculateScale();
+		window.addEventListener("resize", calculateScale);
+		return () => window.removeEventListener("resize", calculateScale);
+	}, []);
+
 	return (
 		<div className="ipad-background fixed inset-0 flex items-center justify-center overflow-hidden">
 			{/* iPad Device Frame */}
-			<div className="ipad-device relative flex flex-col">
+			<div
+				className="ipad-device relative flex flex-col"
+				style={{ transform: `scale(${scale})` }}
+			>
 				{/* Camera notch */}
 				<div className="absolute top-3 left-1/2 -translate-x-1/2 z-10">
 					<div className="w-2.5 h-2.5 rounded-full bg-slate-800 border border-slate-700" />
