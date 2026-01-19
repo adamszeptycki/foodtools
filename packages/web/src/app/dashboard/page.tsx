@@ -34,13 +34,13 @@ export default function DashboardPage() {
 
 			<div className="flex items-center gap-4 pt-2">
 				<Link
-					href="/search"
+					href="/dashboard/search"
 					className="rounded bg-blue-600 px-6 py-2.5 font-medium text-white transition-colors hover:bg-blue-700"
 				>
 					Start Search
 				</Link>
 				<Link
-					href="/documents"
+					href="/dashboard/documents"
 					className="rounded border border-slate-600 px-4 py-2 text-sm text-slate-300 transition-colors hover:bg-slate-800"
 				>
 					Upload Documents
