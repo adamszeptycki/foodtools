@@ -5,12 +5,14 @@ import { useState } from "react";
 
 export default function CreateTenantPage() {
 	const router = useRouter();
+	const utils = trpc.useUtils();
 	const [name, setName] = useState("");
 	const [slug, setSlug] = useState("");
 	const [error, setError] = useState<string | null>(null);
 
 	const createOrg = trpc.organization.create.useMutation({
-		onSuccess: () => {
+		onSuccess: async () => {
+			await utils.invalidate();
 			router.push("/dashboard");
 		},
 		onError: (err) => {
