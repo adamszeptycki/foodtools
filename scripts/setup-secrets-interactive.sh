@@ -26,8 +26,9 @@ select_stages() {
     echo ""
     echo "  1) dev"
     echo "  2) prod"
-    echo "  3) adam"
-    echo "  4) justme"
+    echo "  3) production"
+    echo "  4) adam"
+    echo "  5) justme"
     echo ""
     read -p "Enter your choices: " stage_choices
 
@@ -40,8 +41,9 @@ select_stages() {
         case $choice in
             1) SELECTED_STAGES+=("dev") ;;
             2) SELECTED_STAGES+=("prod") ;;
-            3) SELECTED_STAGES+=("adam") ;;
-            4) SELECTED_STAGES+=("justme") ;;
+            3) SELECTED_STAGES+=("production") ;;
+            4) SELECTED_STAGES+=("adam") ;;
+            5) SELECTED_STAGES+=("justme") ;;
             *)
                 echo -e "${RED}Invalid choice: $choice (skipping)${NC}"
                 ;;
