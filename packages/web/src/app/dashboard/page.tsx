@@ -8,12 +8,11 @@ export default function DashboardPage() {
 		<div className="space-y-6 rounded-lg border border-slate-800 bg-slate-900/60 p-6">
 			<div className="flex justify-center py-4">
 				<Image
-					src="https://foodtools.com/wp-content/uploads/2020/01/FoodTools-Header-Logo-Retina.png"
+					src="/foodtools-logo.png"
 					alt="FoodTools Logo"
 					width={300}
 					height={80}
 					className="object-contain"
-					unoptimized
 				/>
 			</div>
 
