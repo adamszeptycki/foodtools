@@ -21,6 +21,14 @@ declare module "sst" {
       "type": "sst.aws.Queue"
       "url": string
     }
+    "FoodToolsRouter": {
+      "type": "sst.aws.Router"
+      "url": string
+    }
+    "FoodToolsWeb": {
+      "type": "sst.aws.Nextjs"
+      "url": string
+    }
     "OPENAI_API_KEY": {
       "type": "sst.sst.Secret"
       "value": string

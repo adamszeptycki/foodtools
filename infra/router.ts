@@ -1,6 +1,6 @@
 import { Stage } from "./stages";
 
-const baseUrl = "foodtools.jetbridge.click"
+const baseUrl = "foodtools.last10.ai"
 export function getDomain({
 	protocol,
 	skipLocalhost,
@@ -34,7 +34,7 @@ const isProd = $app.stage === Stage.PROD
 export const router = new sst.aws.Router("FoodToolsRouter", {
 	domain: isProd ? {
 		name: domain,
-			aliases: [`*.${domain}`],
+			// aliases: [`*.${domain}`],
 		}
 		: undefined,
 });

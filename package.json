@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "dev": "pnpm dev:adam",
-    "deploy:prod": "dotenvx run -f .env.prod -- sst deploy --stage prod",
+    "deploy:prod": "dotenvx run -f .env.prod -- sst deploy --stage production",
     "dev:adam": "dotenvx run -f .env.dev -- sst dev --stage adam",
     "typecheck": "pnpm -r run typecheck",
     "test": "pnpm -r run test",

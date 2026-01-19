@@ -5,7 +5,7 @@
   "scripts": {
     "test": "vitest",
     "typecheck": "tsc --noEmit --strict",
-    "db:migrate:prod": "sst shell --stage prod drizzle-kit migrate",
+    "db:migrate:prod": "sst shell --stage production drizzle-kit migrate",
     "db:nuke:up": "pnpm db:nuke && pnpm db:up",
     "db:nuke:up:migrate": "pnpm db:nuke && pnpm db:up && pnpm db:migrate:local",
     "db:nuke": "docker-compose down --volumes --remove-orphans",

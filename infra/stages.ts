@@ -1,7 +1,7 @@
 export const Stage = {
 	ADAM: "adam",
 	JUSTME: "justme",
-	PROD: "prod",
+	PROD: "production",
 	DEV: "dev",
 } as const;
 
