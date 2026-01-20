@@ -8,7 +8,7 @@ export default function DashboardPage() {
 		<div className="space-y-6 rounded-lg border border-slate-800 bg-slate-900/60 p-6">
 			<div className="flex justify-center py-4">
 				<Image
-					src="/foodtools-logo.png"
+					src="/foodtools_logo.jpeg"
 					alt="FoodTools Logo"
 					width={300}
 					height={80}
